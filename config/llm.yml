@@ -4,12 +4,14 @@
 provider: gemini
 endpoint: https://generativelanguage.googleapis.com/v1beta/models
 
-# 型号策略：轻量任务用 flash，复杂归类用 pro
-# 型号名以启用时官方可用列表为准，见 https://ai.google.dev/gemini-api/docs/models
+# 型号策略：高频轻量任务用 flash-lite（便宜快），摘要用 flash（质量更好）
+# 型号名会随官方弃用而失效，核对入口：https://ai.google.dev/gemini-api/docs/models
+#   2026-10-20：gemini-2.5-* 已弃用，替换为 gemini-3.8-flash / gemini-3.5-flash-lite
+#   若日志出现 Gemini HTTP 404/400，先来这里核对型号
 models:
-  classify: gemini-2.0-flash
-  summarize: gemini-2.0-flash
-  review: gemini-2.0-pro
+  classify: gemini-3.5-flash-lite
+  summarize: gemini-3.8-flash
+  review: gemini-3.8-flash
 
 params:
   temperature: 0.2

@@ -8,6 +8,7 @@ import json
 import os
 import re
 import threading
+import urllib.error
 import urllib.request
 
 from . import util
@@ -59,7 +60,7 @@ def generate(prompt: str, cfg: dict, purpose: str = "summarize") -> str | None:
         headers={"Content-Type": "application/json"},
         method="POST",
     )
-    for _ in range(int(params.get("max_retry", 2))):
+    for attempt in range(int(params.get("max_retry", 2))):
         try:
             with urllib.request.urlopen(req, timeout=int(params.get("timeout_sec", 30))) as r:
                 payload = json.loads(r.read().decode("utf-8"))
@@ -68,9 +69,15 @@ def generate(prompt: str, cfg: dict, purpose: str = "summarize") -> str | None:
             _record(int(usage.get("promptTokenCount", 0)),
                     int(usage.get("candidatesTokenCount", 0)), cfg)
             return text.strip()
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "ignore")[:220].replace("\n", " ")
+            util.log(f"  Gemini HTTP {e.code}（{purpose}/{model}）：{detail}")
+            # 4xx 是确定性错误（型号不存在、密钥无效、地区不支持），重试无意义
+            if 400 <= e.code < 500:
+                return None
         except Exception as e:  # noqa: BLE001
-            util.log(f"  Gemini 调用失败（{type(e).__name__}），重试中")
-            continue
+            util.log(f"  Gemini 调用异常（{type(e).__name__}: {str(e)[:80]}），"
+                     f"第 {attempt + 1} 次")
     return None
 
 
