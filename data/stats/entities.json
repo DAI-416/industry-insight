@@ -1,62 +1,118 @@
 [
  {
-  "name": "Microsoft",
+  "name": "美联储",
   "count": 8
  },
  {
   "name": "Google",
-  "count": 5
+  "count": 4
  },
  {
-  "name": "Security",
+  "name": "加息",
   "count": 4
+ },
+ {
+  "name": "Microsoft",
+  "count": 4
+ },
+ {
+  "name": "收购",
+  "count": 3
  },
  {
   "name": "Amazon",
-  "count": 4
- },
- {
-  "name": "Alexa",
-  "count": 4
+  "count": 3
  },
  {
   "name": "Anthropic",
-  "count": 4
- },
- {
-  "name": "United",
-  "count": 4
- },
- {
-  "name": "States",
-  "count": 4
- },
- {
-  "name": "Holdings",
-  "count": 4
- },
- {
-  "name": "IEEE",
-  "count": 4
- },
- {
-  "name": "Court",
   "count": 3
+ },
+ {
+  "name": "融资",
+  "count": 3
+ },
+ {
+  "name": "美国经济",
+  "count": 2
+ },
+ {
+  "name": "目标价",
+  "count": 2
+ },
+ {
+  "name": "上市",
+  "count": 2
+ },
+ {
+  "name": "欧洲央行",
+  "count": 2
+ },
+ {
+  "name": "芯片",
+  "count": 2
+ },
+ {
+  "name": "光模块",
+  "count": 2
+ },
+ {
+  "name": "算力",
+  "count": 2
+ },
+ {
+  "name": "GPU",
+  "count": 2
+ },
+ {
+  "name": "Instacart",
+  "count": 2
  },
  {
   "name": "DoorDash",
-  "count": 3
+  "count": 2
  },
  {
-  "name": "Apple",
-  "count": 3
+  "name": "Alexa",
+  "count": 2
  },
  {
   "name": "MacBook",
-  "count": 3
+  "count": 2
+ },
+ {
+  "name": "Apple",
+  "count": 2
+ },
+ {
+  "name": "漏洞",
+  "count": 2
+ },
+ {
+  "name": "原油",
+  "count": 2
+ },
+ {
+  "name": "Build",
+  "count": 2
  },
  {
   "name": "Singaporean",
-  "count": 3
+  "count": 2
+ },
+ {
+  "name": "联邦基金利率",
+  "count": 2
+ },
+ {
+  "name": "Gemini",
+  "count": 2
+ },
+ {
+  "name": "Search",
+  "count": 2
+ },
+ {
+  "name": "Homeland",
+  "count": 2
  }
 ]

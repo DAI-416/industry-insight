@@ -38,6 +38,23 @@ EN_STOP = {
     # 泛化词
     "report", "reports", "news", "said", "says", "according", "company",
     "companies", "business", "market", "markets", "analyst", "analysts",
+    # 公司名片段与国名拆分残留（United States 会被拆成两个词）
+    "united", "states", "security", "court", "holdings", "group", "capital",
+    "partners", "ventures", "technologies", "systems", "labs", "global",
+    "daily", "times", "post", "journal", "week", "weekend", "morning",
+    "street", "week", "review", "digest", "insight", "media", "hold",
+    "gp", "lp", "wang", "president", "minister", "chief", "chairman",
+    "asean", "indonesian", "malaysian", "thai", "vietnamese",
+    "says", "told", "adds", "update", "live", "video", "photo",
+}
+
+# 术语表里存在但做热词没有信息量的缩写
+TERM_SKIP = {"GP", "LP", "PC", "AR", "VR", "MR", "XR", "IDC", "IP核", "L2", "L3", "L4"}
+
+# 中文低信息词：纯判断语气词，做热词没有意义
+CN_SKIP = {
+    "上调", "下调", "预计", "看好", "认为", "表示", "判断", "值得关注",
+    "建议关注", "分析认为", "坦言", "预期", "展望", "点评",
 }
 EN_ENTITY = re.compile(r"\b([A-Z][A-Za-z0-9&.\-]{2,})\b")
 
@@ -47,21 +64,27 @@ def activity(facts: list[dict]) -> float:
                  + len(facts) * W_COUNT, 1)
 
 
-def _entities(items: list[dict], tax: dict, limit: int = 15) -> list[dict]:
-    """高频实体/主题词：英文专名 + 赛道强关键词命中频次。"""
-    counter: Counter[str] = Counter()
+def _entities(items: list[dict], tax: dict, limit: int = 40) -> list[dict]:
+    """本周热词：按「出现在多少条新闻里」计数（文档频次），而非词频总数。
+
+    用文档频次而非出现次数，避免单条长文反复提及同一个词就把榜单刷满。
+    候选词 = 赛道术语（领域内专有名词）+ 英文专名。
+    """
+    df: Counter[str] = Counter()
     for it in items:
-        text = f"{it.get('title','')} {it.get('ai_summary','')}"
+        text = f"{it.get('title', '')} {it.get('ai_summary', '')}"
+        seen: set[str] = set()
+        for tr in tax["tracks"]:
+            for kw in (tr.get("strong") or []) + (tr.get("keywords") or []):
+                if len(kw) >= 2 and kw not in CN_SKIP and kw not in TERM_SKIP and kw in text:
+                    seen.add(kw)
         for m in EN_ENTITY.finditer(text):
             word = m.group(1).strip(".")
             if len(word) >= 4 and word.lower() not in EN_STOP:
-                counter[word] += 1
-        for t in tax["tracks"]:
-            for kw in t.get("strong", []) or []:
-                if len(kw) >= 2 and kw in text:
-                    counter[kw] += 1
-    # 阈值 3：出现 1-2 次的词多为噪声，不足以构成"本周高频"
-    return [{"name": k, "count": v} for k, v in counter.most_common(limit * 2) if v >= 3][:limit]
+                seen.add(word)
+        for word in seen:
+            df[word] += 1
+    return [{"name": k, "count": v} for k, v in df.most_common(limit) if v >= 2]
 
 
 def weekly(items: list[dict], week: str, tax: dict) -> dict:

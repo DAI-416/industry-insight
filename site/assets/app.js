@@ -1,7 +1,8 @@
 
 (function(){
-  // ---------- 市场筛选（跨页持久化） ----------
-  var MK_KEY = 'ii_market';
+  var MK_KEY = 'ii_market_v2';
+
+  // ---------- 市场筛选 ----------
   function applyMarket(m){
     document.querySelectorAll('[data-market]').forEach(function(el){
       var mk = el.getAttribute('data-market');
@@ -19,29 +20,68 @@
         var m = b.getAttribute('data-m');
         localStorage.setItem(MK_KEY, m);
         applyMarket(m);
-        if (window.__recount) window.__recount();
       });
     });
   }
 
+  // ---------- 打字机（40 字/秒，连续点击跳过） ----------
+  var typer = {timer:null, full:'', el:null};
+  function typeText(el, text){
+    clearInterval(typer.timer);
+    el.textContent = '';
+    var i = 0, caret = document.createElement('span');
+    caret.className = 'caret'; caret.textContent = '\u25BC';
+    el.appendChild(caret);
+    typer.el = el; typer.full = text;
+    typer.timer = setInterval(function(){
+      if (i >= text.length){
+        clearInterval(typer.timer);
+        return;
+      }
+      i++;
+      el.textContent = text.slice(0, i);
+      el.appendChild(caret);
+    }, 25);   // 25ms ≈ 40 字/秒
+  }
+  function skipType(){
+    if (!typer.el) return false;
+    clearInterval(typer.timer);
+    typer.el.textContent = typer.full;
+    var caret = document.createElement('span');
+    caret.className = 'caret'; caret.textContent = '\u25BC';
+    typer.el.appendChild(caret);
+    typer.el.scrollTop = 0;
+    return true;
+  }
+
   // ---------- 抽屉 ----------
-  var mask = document.querySelector('.drawer-mask');
-  var drawer = document.querySelector('.drawer');
-  var DATA_MAP = {};
+  var mask, drawer, DATA_MAP = {};
   if(window.__DATA){ window.__DATA.forEach(function(d){ DATA_MAP[d.i] = d; }); }
+
   function openDrawer(id){
     if(!drawer) return;
     var src = document.getElementById('d-' + id);
     var html = src ? src.innerHTML : (DATA_MAP[id] || {}).h;
     if(!html) return;
     drawer.innerHTML = html +
-      '<button class="close" aria-label="关闭" onclick="window.__closeDrawer()">&times;</button>';
+      '<button class="close" aria-label="关闭" onclick="window.__closeDrawer()">X</button>';
     drawer.classList.add('on');
     if(mask) mask.classList.add('on');
     document.body.style.overflow = 'hidden';
+    drawer.scrollTop = 0;
+    // 摘要打字机
+    var sum = drawer.querySelector('.sum');
+    if(sum){
+      var full = sum.getAttribute('data-text') || sum.textContent;
+      typeText(sum, full);
+    }
   }
-  window.__openDrawer = openDrawer;
+  window.__openDrawer = function(id){
+    if (skipType()) return;   // 已开着的先跳过动画
+    openDrawer(id);
+  };
   window.__closeDrawer = function(){
+    clearInterval(typer.timer);
     if(!drawer) return;
     drawer.classList.remove('on');
     if(mask) mask.classList.remove('on');
@@ -52,28 +92,11 @@
     if(e.key === 'Escape') window.__closeDrawer();
   });
 
-  // ---------- 看板时间范围切换 ----------
-  window.__range = function(n){
-    document.querySelectorAll('[data-range]').forEach(function(el){
-      el.style.display = el.getAttribute('data-range') === String(n) ? '' : 'none';
-    });
-    document.querySelectorAll('.range-btn').forEach(function(b){
-      b.classList.toggle('on', b.getAttribute('data-r') === String(n));
-    });
-  };
-  function initRange(){
-    if(!document.querySelector('[data-range]')) return;
-    document.querySelectorAll('.range-btn').forEach(function(b){
-      b.addEventListener('click', function(){ window.__range(b.getAttribute('data-r')); });
-    });
-  }
-
   // ---------- 检索 ----------
   function initSearch(){
     var box = document.getElementById('q');
     if(!box || !window.__DATA) return;
-    var data = window.__DATA;
-    var list = document.getElementById('results');
+    var data = window.__DATA, list = document.getElementById('results');
     var cnt = document.getElementById('rcount');
     var fTrack = document.getElementById('f-track');
     var fMarket = document.getElementById('f-market');
@@ -89,23 +112,23 @@
         if(fType && fType.value && d.y !== fType.value) return false;
         if(fLevel && fLevel.value && d.l !== fLevel.value) return false;
         return true;
-      }).slice(0, 200);
+      }).slice(0, 120);
 
-      cnt.textContent = '命中 ' + rows.length + ' 条' + (rows.length >= 200 ? '（仅显示前 200）' : '');
+      cnt.textContent = '> ' + rows.length + ' HITS' + (rows.length >= 120 ? ' (TOP 120)' : '');
       if(!rows.length){
-        list.innerHTML = '<div class="empty"><b>没有匹配的条目</b>试试换关键词，或放宽时间与筛选条件</div>';
+        list.innerHTML = '<div class="empty"><b>NO MATCH</b>换个关键词或放宽筛选条件</div>';
         return;
       }
       list.innerHTML = rows.map(function(d){
         var lv = d.l === 'critical' ? 'critical' : d.l === 'important' ? 'important' : '';
-        var badgeType = d.y === 'opinion' ? '<span class="badge opinion">观点</span>' : '';
-        var badgeConf = d.c && d.c < 0.65 ? '<span class="badge lowconf">低置信归类</span>' : '';
-        return '<div class="item"><div class="score ' + lv + '">' + (d.v || '—') +
+        var t = d.y === 'opinion' ? '<span class="badge opinion">观点</span>' : '';
+        var c = d.c && d.c < 0.65 ? '<span class="badge lowconf">低置信</span>' : '';
+        return '<div class="item"><div class="score ' + lv + '">' + (d.v || '--') +
           '<small>' + d.w + '</small></div><div>' +
           '<div class="i-title" onclick="window.__openDrawer(\'' + d.i + '\')">' + d.t + '</div>' +
           '<div class="i-sum">' + (d.s || '') + '</div>' +
-          '<div class="i-meta"><span class="badge">' + d.n + '</span>' + badgeType +
-          '<span>' + d.o + '</span>' + badgeConf + '</div></div></div>';
+          '<div class="i-meta"><span class="badge">' + d.n + '</span>' + t +
+          '<span>' + d.o + '</span>' + c + '</div></div></div>';
       }).join('');
     }
     [box, fTrack, fMarket, fType, fLevel].forEach(function(el){
@@ -115,6 +138,8 @@
   }
 
   document.addEventListener('DOMContentLoaded', function(){
-    initMarket(); initRange(); initSearch();
+    mask = document.querySelector('.drawer-mask');
+    drawer = document.querySelector('.drawer');
+    initMarket(); initSearch();
   });
 })();

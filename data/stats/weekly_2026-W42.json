@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W42",
- "generated_at": "2026-10-30T00:43:46+08:00",
+ "generated_at": "2026-10-30T01:54:20+08:00",
  "total": 0,
  "fact_count": 0,
  "opinion_count": 0,
@@ -78,15 +78,6 @@
    "score": 0.0
   },
   {
-   "track_id": "TEC-BCI",
-   "name": "脑机接口",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
-  },
-  {
    "track_id": "TEC-SEMI",
    "name": "半导体",
    "domain": "tech",
@@ -132,26 +123,8 @@
    "score": 0.0
   },
   {
-   "track_id": "TEC-NET",
-   "name": "通信与网络",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
-  },
-  {
    "track_id": "TEC-SEC",
    "name": "网络安全",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
-  },
-  {
-   "track_id": "TEC-QUANT",
-   "name": "量子计算",
    "domain": "tech",
    "is_focus": false,
    "count": 0,

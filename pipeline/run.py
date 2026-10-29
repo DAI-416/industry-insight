@@ -130,6 +130,17 @@ def main() -> int:
     all_events, ov_stat = overrides.apply(all_events, current_week)
     run_log["stages"]["overrides"] = ov_stat
 
+    # 失效赛道兜底：taxonomy 删过赛道后，历史数据可能指向已不存在的 id
+    valid_tracks = {x["id"] for x in util.load_taxonomy()["tracks"]}
+    stale = 0
+    for e in all_events:
+        if e.get("track_id") not in valid_tracks:
+            e["prev_track_id"] = e.get("track_id")
+            e["track_id"] = "OTHER-1"
+            stale += 1
+    if stale:
+        util.log(f"失效赛道兜底：{stale} 条重新归入 OTHER-1（原赛道已从配置删除）")
+
     # 重新按周写回（overrides 可能改变归属周）
     by_week: dict[str, list[dict]] = defaultdict(list)
     for e in all_events:

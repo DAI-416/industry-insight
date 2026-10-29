@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-10-30T00:43:46+08:00",
+ "generated_at": "2026-10-30T01:54:20+08:00",
  "total": 153,
  "fact_count": 136,
  "opinion_count": 17,
@@ -195,33 +195,6 @@
    "score": 0.0
   },
   {
-   "track_id": "TEC-BCI",
-   "name": "脑机接口",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
-  },
-  {
-   "track_id": "TEC-NET",
-   "name": "通信与网络",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
-  },
-  {
-   "track_id": "TEC-QUANT",
-   "name": "量子计算",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
-  },
-  {
    "track_id": "MAC-FP",
    "name": "财政与产业政策",
    "domain": "macro",
@@ -253,64 +226,120 @@
  },
  "top_entities": [
   {
-   "name": "Microsoft",
+   "name": "美联储",
    "count": 8
   },
   {
    "name": "Google",
-   "count": 5
+   "count": 4
   },
   {
-   "name": "Security",
+   "name": "加息",
    "count": 4
+  },
+  {
+   "name": "Microsoft",
+   "count": 4
+  },
+  {
+   "name": "收购",
+   "count": 3
   },
   {
    "name": "Amazon",
-   "count": 4
-  },
-  {
-   "name": "Alexa",
-   "count": 4
+   "count": 3
   },
   {
    "name": "Anthropic",
-   "count": 4
-  },
-  {
-   "name": "United",
-   "count": 4
-  },
-  {
-   "name": "States",
-   "count": 4
-  },
-  {
-   "name": "Holdings",
-   "count": 4
-  },
-  {
-   "name": "IEEE",
-   "count": 4
-  },
-  {
-   "name": "Court",
    "count": 3
+  },
+  {
+   "name": "融资",
+   "count": 3
+  },
+  {
+   "name": "美国经济",
+   "count": 2
+  },
+  {
+   "name": "目标价",
+   "count": 2
+  },
+  {
+   "name": "上市",
+   "count": 2
+  },
+  {
+   "name": "欧洲央行",
+   "count": 2
+  },
+  {
+   "name": "芯片",
+   "count": 2
+  },
+  {
+   "name": "光模块",
+   "count": 2
+  },
+  {
+   "name": "算力",
+   "count": 2
+  },
+  {
+   "name": "GPU",
+   "count": 2
+  },
+  {
+   "name": "Instacart",
+   "count": 2
   },
   {
    "name": "DoorDash",
-   "count": 3
+   "count": 2
   },
   {
-   "name": "Apple",
-   "count": 3
+   "name": "Alexa",
+   "count": 2
   },
   {
    "name": "MacBook",
-   "count": 3
+   "count": 2
+  },
+  {
+   "name": "Apple",
+   "count": 2
+  },
+  {
+   "name": "漏洞",
+   "count": 2
+  },
+  {
+   "name": "原油",
+   "count": 2
+  },
+  {
+   "name": "Build",
+   "count": 2
   },
   {
    "name": "Singaporean",
-   "count": 3
+   "count": 2
+  },
+  {
+   "name": "联邦基金利率",
+   "count": 2
+  },
+  {
+   "name": "Gemini",
+   "count": 2
+  },
+  {
+   "name": "Search",
+   "count": 2
+  },
+  {
+   "name": "Homeland",
+   "count": 2
   }
  ],
  "total_score": 3253.6,
