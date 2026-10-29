@@ -351,34 +351,81 @@ tracks:
   - 外资准入
   scope: IPO 政策、创投与私募政策、外资准入、资本税
 - id: TEC-AI
-  name: AI 与大模型
+  name: AI 应用与智能体
+  domain: tech
+  is_focus: true
+  keywords:
+  - 生成式AI
+  - AIGC
+  - 智能体
+  - Agent
+  - 多模态
+  - AI应用
+  - AI编程
+  - Copilot
+  - 提示词
+  - AI搜索
+  - RAG
+  - 工作流
+  - AI落地
+  - 场景落地
+  - AI产品
+  - AI原生
+  - 插件
+  strong:
+  - 智能体
+  - AIGC
+  - AI应用
+  - AI编程
+  - AI原生
+  scope: AI 应用落地、智能体、多模态产品、AI 编程
+- id: LLM
+  name: 大模型
   domain: tech
   is_focus: true
   keywords:
   - 大模型
-  - 生成式AI
-  - 生成式人工智能
-  - GPT
-  - LLM
-  - 智能体
-  - Agent
-  - 多模态
-  - 推理模型
-  - 开源模型
-  - 训练
-  - 微调
-  - 提示词
   - 大语言模型
-  - AIGC
-  - AI应用
-  - 算力租赁
+  - 语言模型
+  - GPT
+  - Claude
+  - Gemini
+  - Qwen
+  - DeepSeek
+  - Kimi
+  - GLM
+  - 豆包
+  - Llama
+  - Mistral
+  - Grok
+  - 参数量
+  - 上下文窗口
+  - 预训练
+  - 后训练
+  - 微调
+  - 推理模型
+  - 基准测试
+  - 跑分
+  - 榜单
+  - 训练成本
+  - 开源模型
+  - 模型权重
+  - 蒸馏
+  - MoE
+  - 对齐
+  - 幻觉
   strong:
   - 大模型
   - 大语言模型
-  - 生成式人工智能
-  - 智能体
-  - 多模态
-  scope: 模型发布、能力突破、AI 应用落地
+  - GPT
+  - Claude
+  - Gemini
+  - DeepSeek
+  - Qwen
+  - Kimi
+  - GLM
+  - 豆包
+  scope: 主流大模型的版本迭代、能力评测、厂商动态与技术原理
 - id: TEC-ROBO
   name: 人形机器人与具身智能
   domain: tech

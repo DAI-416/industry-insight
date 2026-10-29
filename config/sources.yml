@@ -397,6 +397,128 @@ sources:
   - M-GL
   interval_hour: 6
   status: active
+- id: openai-blog
+  name: OpenAI 官方博客
+  host: openai.com
+  url: https://openai.com/blog/rss.xml
+  type: rss
+  level: B
+  tracks:
+  - LLM
+  markets:
+  - M-GL
+  interval_hour: 3
+  status: active
+- id: google-ai
+  name: Google AI 博客
+  host: blog.google
+  url: https://blog.google/technology/ai/rss/
+  type: rss
+  level: B
+  tracks:
+  - LLM
+  markets:
+  - M-GL
+  interval_hour: 3
+  status: active
+- id: deepmind
+  name: Google DeepMind
+  host: deepmind.google
+  url: https://deepmind.google/blog/rss.xml
+  type: rss
+  level: B
+  tracks:
+  - LLM
+  markets:
+  - M-GL
+  interval_hour: 3
+  status: active
+- id: huggingface
+  name: Hugging Face
+  host: huggingface.co
+  url: https://huggingface.co/blog/feed.xml
+  type: rss
+  level: B
+  tracks:
+  - LLM
+  - TEC-AI
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+- id: marktechpost
+  name: MarkTechPost
+  host: marktechpost.com
+  url: https://www.marktechpost.com/feed/
+  type: rss
+  level: D
+  tracks:
+  - LLM
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+- id: the-decoder
+  name: The Decoder
+  host: the-decoder.com
+  url: https://the-decoder.com/feed/
+  type: rss
+  level: B
+  tracks:
+  - LLM
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+- id: infoq-cn
+  name: InfoQ 中文
+  host: infoq.cn
+  url: https://www.infoq.cn/feed
+  type: rss
+  level: B
+  tracks:
+  - TEC-AI
+  - LLM
+  markets:
+  - M-A
+  interval_hour: 6
+  status: active
+- id: mit-tr
+  name: MIT 科技评论
+  host: technologyreview.com
+  url: https://www.technologyreview.com/feed/
+  type: rss
+  level: D
+  tracks:
+  - TEC-AI
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+- id: techmeme
+  name: Techmeme
+  host: techmeme.com
+  url: https://www.techmeme.com/feed.xml
+  type: rss
+  level: D
+  tracks:
+  - LLM
+  markets:
+  - M-GL
+  interval_hour: 3
+  status: active
+- id: simonwillison
+  name: Simon Willison
+  host: simonwillison.net
+  url: https://simonwillison.net/atom/everything/
+  type: rss
+  level: E
+  tracks:
+  - LLM
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
 alternatives:
 - name: 彭博社
   host: bloomberg.com

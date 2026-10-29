@@ -383,6 +383,58 @@ a{color:inherit;text-decoration:none}
 }
 .caliber b{color:var(--e-amber);font-weight:400}
 
+/* ================= 大模型专栏 ================= */
+.tab-row{display:flex;gap:var(--u);margin-bottom:calc(var(--u)*5)}
+.tab-btn{
+  font-family:var(--font-ui);font-size:10px;
+  background:var(--e-deep);border:var(--u) solid var(--e-dark);
+  color:var(--e-silver);padding:calc(var(--u)*2) calc(var(--u)*4);
+  cursor:inherit;text-shadow:none;letter-spacing:1px;
+}
+.tab-btn:hover{border-color:var(--e-silver);color:var(--e-light)}
+.tab-btn.on{
+  background:var(--accent);border-color:var(--accent);
+  color:var(--e-black);font-weight:700;
+}
+
+.vendor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--u)*4)}
+.vendor-card{
+  background:var(--e-deep);border:var(--u) solid var(--e-dark);
+  padding:calc(var(--u)*4);position:relative;
+}
+.vendor-card:hover{border-color:var(--accent)}
+.vc-head{display:flex;justify-content:space-between;align-items:baseline;gap:calc(var(--u)*2)}
+.vc-name{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.5px}
+.vc-count{font-family:var(--font-ui);font-size:10px;color:var(--e-silver)}
+.vc-bar{
+  height:calc(var(--u)*2);background:var(--e-black);
+  margin:calc(var(--u)*3) 0 calc(var(--u)*2);
+  border:var(--u) solid var(--e-dark);
+}
+.vc-bar i{display:block;height:100%;background:var(--e-red)}
+.vc-meta{font-size:9px;color:var(--e-slate);text-shadow:none;margin-bottom:calc(var(--u)*2)}
+.vc-latest{
+  font-size:10px;color:var(--e-light);line-height:1.5;cursor:inherit;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.vc-latest:hover{color:var(--accent)}
+
+/* ---------- 词云 16-bit 交互 ---------- */
+.cw{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='18'%3E%3Cpath d='M2 0h2v10H2zM4 2h2v4H4zM0 8h2v8H0zM2 14h10v2H2z' fill='%23181425'/%3E%3Cpath d='M2 1h1v9H2zM4 3h1v3H4zM1 9h1v6H1zM3 15h8v1H3z' fill='%23fee761'/%3E%3C/svg%3E") 2 0, pointer}
+.cw .cw-main{transition:none}
+.cw:hover .cw-main{fill:var(--accent) !important}
+.cw:hover .cw-shadow{fill:var(--e-crimson)}
+.cw:hover{
+  animation:jitter .25s steps(2,end) infinite;
+}
+@keyframes jitter{
+  0%{transform:translate(0,0)}
+  50%{transform:translate(1px,-1px)}
+  100%{transform:translate(0,0)}
+}
+.cw:focus{outline:none}
+.cw:focus .cw-main{fill:var(--accent) !important}
+
 /* ================= 检索 ================= */
 .search-box{display:flex;gap:calc(var(--u)*4);margin-bottom:calc(var(--u)*5)}
 .search-box input{
@@ -588,10 +640,29 @@ JS = """
     [box, fTrack, fMarket, fType, fLevel].forEach(function(el){
       if(el) el.addEventListener(el === box ? 'input' : 'change', render);
     });
+    // 支持从词云/链接带入关键词
+    var preset = new URLSearchParams(location.search).get('q');
+    if(preset){ box.value = preset; }
     render();
   }
 
+  // ---------- 标签页切换（跑分维度） ----------
+  function initTabs(){
+    var btns = document.querySelectorAll('.tab-btn');
+    if(!btns.length) return;
+    btns.forEach(function(b){
+      b.addEventListener('click', function(){
+        var key = b.getAttribute('data-tab');
+        btns.forEach(function(x){ x.classList.toggle('on', x === b); });
+        document.querySelectorAll('[data-panel]').forEach(function(p){
+          p.style.display = p.getAttribute('data-panel') === key ? '' : 'none';
+        });
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function(){
+    initTabs();
     mask = document.querySelector('.drawer-mask');
     drawer = document.querySelector('.drawer');
     initMarket(); initSearch();

@@ -134,10 +134,29 @@
     [box, fTrack, fMarket, fType, fLevel].forEach(function(el){
       if(el) el.addEventListener(el === box ? 'input' : 'change', render);
     });
+    // 支持从词云/链接带入关键词
+    var preset = new URLSearchParams(location.search).get('q');
+    if(preset){ box.value = preset; }
     render();
   }
 
+  // ---------- 标签页切换（跑分维度） ----------
+  function initTabs(){
+    var btns = document.querySelectorAll('.tab-btn');
+    if(!btns.length) return;
+    btns.forEach(function(b){
+      b.addEventListener('click', function(){
+        var key = b.getAttribute('data-tab');
+        btns.forEach(function(x){ x.classList.toggle('on', x === b); });
+        document.querySelectorAll('[data-panel]').forEach(function(p){
+          p.style.display = p.getAttribute('data-panel') === key ? '' : 'none';
+        });
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function(){
+    initTabs();
     mask = document.querySelector('.drawer-mask');
     drawer = document.querySelector('.drawer');
     initMarket(); initSearch();

@@ -1,10 +1,28 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-10-30T01:54:20+08:00",
- "total": 10,
- "fact_count": 7,
- "opinion_count": 3,
+ "generated_at": "2026-10-30T02:33:04+08:00",
+ "total": 41,
+ "fact_count": 41,
+ "opinion_count": 0,
  "track_activity": [
+  {
+   "track_id": "LLM",
+   "name": "大模型",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 33,
+   "opinion_count": 0,
+   "score": 850.8
+  },
+  {
+   "track_id": "TEC-ROBO",
+   "name": "人形机器人与具身智能",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 4,
+   "opinion_count": 0,
+   "score": 114.4
+  },
   {
    "track_id": "MAC-DATA",
    "name": "增长与景气数据",
@@ -15,44 +33,17 @@
    "score": 60.2
   },
   {
-   "track_id": "MAC-CMD",
-   "name": "大宗商品与能源",
-   "domain": "macro",
+   "track_id": "INV-FUND",
+   "name": "基金与募资",
+   "domain": "investment",
    "is_focus": false,
    "count": 1,
    "opinion_count": 0,
    "score": 31.0
   },
   {
-   "track_id": "TEC-AI",
-   "name": "AI 与大模型",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 1,
-   "opinion_count": 1,
-   "score": 27.4
-  },
-  {
-   "track_id": "MAC-FP",
-   "name": "财政与产业政策",
-   "domain": "macro",
-   "is_focus": false,
-   "count": 1,
-   "opinion_count": 0,
-   "score": 24.4
-  },
-  {
    "track_id": "INV-VC",
    "name": "一级市场投融资",
-   "domain": "investment",
-   "is_focus": false,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
-  },
-  {
-   "track_id": "INV-FUND",
-   "name": "基金与募资",
    "domain": "investment",
    "is_focus": false,
    "count": 0,
@@ -96,8 +87,8 @@
    "score": 0.0
   },
   {
-   "track_id": "TEC-ROBO",
-   "name": "人形机器人与具身智能",
+   "track_id": "TEC-AI",
+   "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
    "count": 0,
@@ -137,7 +128,7 @@
    "domain": "tech",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 1,
+   "opinion_count": 0,
    "score": 0.0
   },
   {
@@ -168,6 +159,15 @@
    "score": 0.0
   },
   {
+   "track_id": "MAC-FP",
+   "name": "财政与产业政策",
+   "domain": "macro",
+   "is_focus": false,
+   "count": 0,
+   "opinion_count": 0,
+   "score": 0.0
+  },
+  {
    "track_id": "MAC-PROP",
    "name": "地产与信贷周期",
    "domain": "macro",
@@ -179,6 +179,15 @@
   {
    "track_id": "MAC-FX",
    "name": "汇率与资本流动",
+   "domain": "macro",
+   "is_focus": false,
+   "count": 0,
+   "opinion_count": 0,
+   "score": 0.0
+  },
+  {
+   "track_id": "MAC-CMD",
+   "name": "大宗商品与能源",
    "domain": "macro",
    "is_focus": false,
    "count": 0,
@@ -205,18 +214,33 @@
   }
  ],
  "market_dist": {
-  "M-GL": 7,
-  "M-A": 3
+  "M-GL": 41
  },
  "importance_dist": {
-  "normal": 3,
-  "low": 4
+  "normal": 9,
+  "low": 32
  },
  "source_dist": {
   "IEEE Spectrum": 7,
-  "国家统计局": 3
+  "国家统计局": 3,
+  "Simon Willison": 12,
+  "OpenAI 官方博客": 17,
+  "Google DeepMind": 1,
+  "Google AI 博客": 1
  },
  "top_entities": [
+  {
+   "name": "OpenAI",
+   "count": 13
+  },
+  {
+   "name": "GPT",
+   "count": 7
+  },
+  {
+   "name": "ChatGPT",
+   "count": 5
+  },
   {
    "name": "IEEE",
    "count": 3
@@ -228,9 +252,45 @@
   {
    "name": "Engineering",
    "count": 2
+  },
+  {
+   "name": "Tool",
+   "count": 2
+  },
+  {
+   "name": "Release",
+   "count": 2
+  },
+  {
+   "name": "Learn",
+   "count": 2
+  },
+  {
+   "name": "GPT-6",
+   "count": 2
+  },
+  {
+   "name": "Agent",
+   "count": 2
+  },
+  {
+   "name": "Work",
+   "count": 2
+  },
+  {
+   "name": "Battle",
+   "count": 2
+  },
+  {
+   "name": "Drones",
+   "count": 2
+  },
+  {
+   "name": "Google",
+   "count": 2
   }
  ],
- "total_score": 143.0,
- "other_count": 2,
- "other_opinion_count": 1
+ "total_score": 1056.4,
+ "other_count": 1,
+ "other_opinion_count": 0
 }

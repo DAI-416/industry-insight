@@ -1,11 +1,39 @@
 [
  {
+  "name": "OpenAI",
+  "count": 17
+ },
+ {
+  "name": "Google",
+  "count": 10
+ },
+ {
+  "name": "GPT",
+  "count": 10
+ },
+ {
   "name": "美联储",
   "count": 8
  },
  {
-  "name": "Google",
-  "count": 4
+  "name": "Anthropic",
+  "count": 7
+ },
+ {
+  "name": "Model",
+  "count": 6
+ },
+ {
+  "name": "Agent",
+  "count": 5
+ },
+ {
+  "name": "Nvidia",
+  "count": 5
+ },
+ {
+  "name": "Gemini",
+  "count": 5
  },
  {
   "name": "加息",
@@ -16,6 +44,34 @@
   "count": 4
  },
  {
+  "name": "Quoting",
+  "count": 4
+ },
+ {
+  "name": "GPT-6",
+  "count": 4
+ },
+ {
+  "name": "Bloomberg",
+  "count": 4
+ },
+ {
+  "name": "ChatGPT",
+  "count": 4
+ },
+ {
+  "name": "Codex",
+  "count": 4
+ },
+ {
+  "name": "算力",
+  "count": 3
+ },
+ {
+  "name": "芯片",
+  "count": 3
+ },
+ {
   "name": "收购",
   "count": 3
  },
@@ -24,11 +80,59 @@
   "count": 3
  },
  {
-  "name": "Anthropic",
+  "name": "Meet",
+  "count": 3
+ },
+ {
+  "name": "MacBook",
+  "count": 3
+ },
+ {
+  "name": "Apple",
   "count": 3
  },
  {
   "name": "融资",
+  "count": 3
+ },
+ {
+  "name": "Carbon",
+  "count": 3
+ },
+ {
+  "name": "Alphabet",
+  "count": 3
+ },
+ {
+  "name": "AI-powered",
+  "count": 3
+ },
+ {
+  "name": "Mistral",
+  "count": 3
+ },
+ {
+  "name": "Astra",
+  "count": 3
+ },
+ {
+  "name": "Download",
+  "count": 3
+ },
+ {
+  "name": "Coding",
+  "count": 3
+ },
+ {
+  "name": "Index",
+  "count": 3
+ },
+ {
+  "name": "Releases",
+  "count": 3
+ },
+ {
+  "name": "DeepMind",
   "count": 3
  },
  {
@@ -40,15 +144,7 @@
   "count": 2
  },
  {
-  "name": "上市",
-  "count": 2
- },
- {
   "name": "欧洲央行",
-  "count": 2
- },
- {
-  "name": "芯片",
   "count": 2
  },
  {
@@ -56,63 +152,11 @@
   "count": 2
  },
  {
-  "name": "算力",
+  "name": "Jeff",
   "count": 2
  },
  {
-  "name": "GPU",
-  "count": 2
- },
- {
-  "name": "Instacart",
-  "count": 2
- },
- {
-  "name": "DoorDash",
-  "count": 2
- },
- {
-  "name": "Alexa",
-  "count": 2
- },
- {
-  "name": "MacBook",
-  "count": 2
- },
- {
-  "name": "Apple",
-  "count": 2
- },
- {
-  "name": "漏洞",
-  "count": 2
- },
- {
-  "name": "原油",
-  "count": 2
- },
- {
-  "name": "Build",
-  "count": 2
- },
- {
-  "name": "Singaporean",
-  "count": 2
- },
- {
-  "name": "联邦基金利率",
-  "count": 2
- },
- {
-  "name": "Gemini",
-  "count": 2
- },
- {
-  "name": "Search",
-  "count": 2
- },
- {
-  "name": "Homeland",
+  "name": "Wabi",
   "count": 2
  }
 ]

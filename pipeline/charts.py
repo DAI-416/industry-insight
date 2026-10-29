@@ -33,7 +33,7 @@ MUTED = SILVER
 LINE = DARK
 TEXT = PAPER
 
-FONT = "font-family:'Silkscreen','DotGothic16',monospace"
+FONT = "font-family:'DotGothic16','Silkscreen',monospace"
 
 
 def _esc(s) -> str:
@@ -71,7 +71,8 @@ def _text_w(s: str, size: float, fullwidth: bool = False) -> float:
 # ---------------- 横向条形 ----------------
 
 def hbar(data: list[dict], title: str, unit: str = "", w: int | None = None,
-         highlight: set[str] | None = None, label_w: int = 132) -> str:
+         highlight: set[str] | None = None, label_w: int = 132,
+         label_limit: int = 9) -> str:
     if not data:
         return _empty(title)
     highlight = highlight or set()
@@ -93,7 +94,7 @@ def hbar(data: list[dict], title: str, unit: str = "", w: int | None = None,
         parts.append(
             f'<g><title>{_esc(tip)}</title>'
             f'<text x="{label_w - 8}" y="{y + 15}" text-anchor="end" font-size="11" '
-            f'fill="{LIGHT}">{_esc(_short(d["name"]))}</text>'
+            f'fill="{LIGHT}">{_esc(_short(d["name"], label_limit))}</text>'
             # 1px 硬阴影 + 实心块，模拟像素条
             f'<rect x="{bar_x}" y="{y + 6}" width="{bw:.0f}" height="10" fill="{CRIMSON}"/>'
             f'<rect x="{bar_x}" y="{y + 5}" width="{bw:.0f}" height="10" fill="{color}"/>'
@@ -278,8 +279,8 @@ def diverging(data: list[dict], title: str, w: int = 680) -> str:
 CLOUD_COLORS = [RED, ORANGE, YELLOW, BLUE, LIGHT, SILVER]
 
 
-def wordcloud(words: list[dict], title: str, w: int = 680, h: int = 340,
-              limit: int = 34) -> str:
+def wordcloud(words: list[dict], title: str, w: int = 680, h: int = 400,
+              limit: int = 52, search_url: str = "search.html") -> str:
     """按出现条数排行渲染词云。
 
     布局：由内向外螺旋，字号分四档；宽度按全角字符估算，保证中文英文都不重叠。
@@ -292,14 +293,17 @@ def wordcloud(words: list[dict], title: str, w: int = 680, h: int = 340,
     span = max(1, max_c - min_c)
 
     def size_of(c: int) -> int:
+        """五档字号，刻意拉大首尾差距：最大 40px / 最小 10px = 4 倍。"""
         r = (c - min_c) / span
-        if r > 0.88:
-            return 30
-        if r > 0.66:
-            return 23
-        if r > 0.36:
-            return 17
-        return 12
+        if r > 0.90:
+            return 40
+        if r > 0.72:
+            return 29
+        if r > 0.50:
+            return 21
+        if r > 0.26:
+            return 15
+        return 10
 
     placed: list[tuple[float, float, float, float]] = []
     parts: list[str] = []
@@ -337,13 +341,15 @@ def wordcloud(words: list[dict], title: str, w: int = 680, h: int = 340,
             continue
         x, y = spot
         placed.append((x, y, tw, th))
-        tip = f"{text}：{wd['count']} 条新闻提及"
+        tip = f"{text}：{wd['count']} 条新闻提及 · 点击检索"
         parts.append(
-            f'<g><title>{_esc(tip)}</title>'
-            f'<text x="{x + 1:.0f}" y="{y + size:.0f}" font-size="{size}" fill="{DEEP}" '
-            f'font-family="DotGothic16,monospace">{_esc(text)}</text>'
-            f'<text x="{x:.0f}" y="{y + size - 1:.0f}" font-size="{size}" fill="{color}" '
-            f'font-family="DotGothic16,monospace">{_esc(text)}</text></g>'
+            f'<g class="cw" role="link" tabindex="0" '
+            f"onclick=\"location.href='{search_url}?q={_esc(text)}'\" "
+            f'style="cursor:inherit"><title>{_esc(tip)}</title>'
+            f'<text class="cw-shadow" x="{x + 1:.0f}" y="{y + size:.0f}" font-size="{size}" '
+            f'fill="{DEEP}" font-family="DotGothic16,monospace">{_esc(text)}</text>'
+            f'<text class="cw-main" x="{x:.0f}" y="{y + size - 1:.0f}" font-size="{size}" '
+            f'fill="{color}" font-family="DotGothic16,monospace">{_esc(text)}</text></g>'
         )
     return _wrap("".join(parts), w, h, title)
 

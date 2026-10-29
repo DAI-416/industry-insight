@@ -64,8 +64,8 @@ def _ts() -> str:
 # ---------------- 页面骨架 ----------------
 
 def page(title: str, active: str, body: str, root: str = ".", week_label: str = "--") -> str:
-    nav = [("index.html", "首页", "home"), ("analytics.html", "数据看板", "analytics"),
-           ("search.html", "检索", "search")]
+    nav = [("index.html", "首页", "home"), ("models.html", "大模型", "models"),
+           ("analytics.html", "数据看板", "analytics"), ("search.html", "检索", "search")]
     nav_html = "".join(
         f'<a href="{root}/{href}" class="{"on" if key == active else ""}">{label}</a>'
         for href, label, key in nav
@@ -586,6 +586,151 @@ def build_search(events: list[dict], tax: dict, week: str) -> str:
                         f'<div class="top-right">{topbar_extra(week, _ts())}</div>')
 
 
+# ---------------- 大模型专栏 ----------------
+
+def load_models_cfg() -> dict:
+    cfp = util.CONFIG_DIR / "models.yml"
+    if not cfp.exists():
+        return {}
+    try:
+        import yaml
+        return yaml.safe_load(cfp.read_text(encoding="utf-8")) or {}
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def _vendor_hits(items: list[dict], models_cfg: dict) -> list[dict]:
+    """统计本周各大模型厂商被提及的条数。"""
+    models = models_cfg.get("models", [])
+    by_vendor: dict[str, list[dict]] = {}
+    for m in models:
+        by_vendor.setdefault(m["vendor"], []).append(m)
+
+    out = []
+    for vendor, ms in by_vendor.items():
+        needles = {vendor.split()[0]} | {m["name"] for m in ms}
+        # 去掉厂商中文名里的括号说明
+        needles |= {w for w in vendor.replace("（", " ").replace("）", " ").split() if len(w) > 1}
+        hits = []
+        for it in items:
+            text = f"{it.get('title', '')} {it.get('ai_summary', '')}"
+            if any(n and n in text for n in needles):
+                hits.append(it)
+        best = max(ms, key=lambda x: x["index"])
+        out.append({
+            "vendor": vendor,
+            "count": len(hits),
+            "top_model": best["name"],
+            "top_index": best["index"],
+            "latest": hits[0]["title"] if hits else "",
+            "latest_id": hits[0].get("id", "") if hits else "",
+        })
+    out.sort(key=lambda x: (-x["count"], -x["top_index"]))
+    return out
+
+
+def build_models(events: list[dict], stats: dict, tax: dict, week: str) -> str:
+    track_map = {x["id"]: x for x in tax["tracks"]}
+    cfg = load_models_cfg()
+    models = cfg.get("models", [])
+    as_of = cfg.get("as_of", "—")
+    source = cfg.get("source", "")
+    source_url = cfg.get("source_url", "")
+
+    week_items = [e for e in events if e.get("week_key") == week and e.get("status") == "published"]
+    llm_items = sorted([e for e in week_items if e.get("track_id") == "LLM"],
+                       key=lambda x: (-int(x.get("pinned", False)), -x.get("importance_score", 0)))
+
+    # ---- 跑分图：三个维度，前端切换 ----
+    if models:
+        by_index = sorted(models, key=lambda m: -m["index"])[:16]
+        chart_index = charts.hbar(
+            [{"name": f"{m['name']}", "value": m["index"], "key": m["vendor"],
+              "sub": m["vendor"]} for m in by_index],
+            "综合智能指数", label_w=236, label_limit=17)
+
+        by_ctx = sorted(models, key=lambda m: -(m.get("context_k") or 0))[:16]
+        chart_ctx = charts.hbar(
+            [{"name": m["name"], "value": m.get("context_k") or 0, "key": m["vendor"],
+              "sub": m["vendor"]} for m in by_ctx],
+            "上下文窗口", unit="k", label_w=236, label_limit=17)
+
+        priced = [m for m in models if m.get("price_out")]
+        by_price = sorted(priced, key=lambda m: m["price_out"])[:16]
+        chart_price = charts.hbar(
+            [{"name": m["name"], "value": round(m["price_out"], 2), "key": m["vendor"],
+              "sub": m["vendor"]} for m in by_price],
+            "输出价格", unit=" $/M", label_w=236, label_limit=17)
+
+        charts_html = f"""
+    <div class="chart-card">
+      <h3>跑分排行</h3>
+      <div class="caliber">
+        数据源：<a href="{_e(source_url)}" target="_blank" rel="noopener">{_e(source)}</a>　
+        截至 {_e(as_of)}　·　{_e(cfg.get("note", ""))}
+      </div>
+      <div class="tab-row">
+        <button class="tab-btn on" data-tab="idx">综合指数</button>
+        <button class="tab-btn" data-tab="ctx">上下文</button>
+        <button class="tab-btn" data-tab="price">输出价格</button>
+      </div>
+      <div data-panel="idx">{chart_index}</div>
+      <div data-panel="ctx" style="display:none">{chart_ctx}</div>
+      <div data-panel="price" style="display:none">{chart_price}</div>
+    </div>"""
+    else:
+        charts_html = """
+    <div class="chart-card">
+      <h3>跑分排行</h3>
+      <div class="empty"><b>暂无跑分数据</b>
+        运行 <code>python3 tools/update_benchmarks.py</code> 抓取，或手工填写 config/models.yml</div>
+    </div>"""
+
+    # ---- 厂商动态 ----
+    vendors = _vendor_hits(week_items, cfg) if models else []
+    vendor_cards = "".join(
+        f"""<div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">{_e(v['vendor'])}</span>
+    <span class="vc-count">{v['count']} 条</span></div>
+  <div class="vc-bar"><i style="width:{min(100, v['count'] / max(1, vendors[0]['count']) * 100):.0f}%"></i></div>
+  <div class="vc-meta">旗舰 {_e(v['top_model'])} · {v['top_index']}</div>
+  <div class="vc-latest" onclick="window.__openDrawer('{_e(v['latest_id'])}')">{_e(util.truncate(v['latest'], 46)) or '本周无相关资讯'}</div>
+</div>"""
+        for v in vendors[:12]
+    ) or '<div class="empty"><b>本周无模型厂商动态</b></div>'
+
+    # ---- 资讯流 ----
+    stream = "".join(item_html(e, track_map, show_track=False) for e in llm_items[:40]) or \
+        '<div class="empty"><b>本周暂无大模型资讯</b>检查 config/sources.yml 中 LLM 相关信源是否可用</div>'
+
+    body = f"""
+<div class="wrap">
+  <div class="section">
+    <div class="section-head"><h2>大模型专栏</h2>
+      <span class="note">版本迭代 · 能力评测 · 厂商动态　{_e(week)}</span></div>
+    {charts_html}
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>厂商动态</h2>
+      <span class="note">按本周被提及条数排序</span></div>
+    <div class="vendor-grid">{vendor_cards}</div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>本周大模型资讯</h2>
+      <span class="note">共 {len(llm_items)} 条 · 关于模型本身而非应用</span></div>
+    {stream}
+  </div>
+</div>
+<div class="drawer-mask"></div><aside class="drawer"></aside>
+{''.join(drawer_html(e, track_map) for e in llm_items[:40])}
+"""
+    html = page("大模型 · 行业洞察", "models", body, week_label=week)
+    return html.replace('<div class="top-right"></div>',
+                        f'<div class="top-right">{topbar_extra(week, _ts())}</div>')
+
+
 # ---------------- 资产与入口 ----------------
 
 def write_assets(site_dir) -> None:
@@ -612,10 +757,11 @@ def run(events: list[dict], stats: dict, weeks: list[str], current_week: str) ->
     (site / "index.html").write_text(build_index(events, stats, tax, display_week), encoding="utf-8")
     (site / "analytics.html").write_text(build_analytics(events, stats, tax, display_week), encoding="utf-8")
     (site / "search.html").write_text(build_search(events, tax, display_week), encoding="utf-8")
+    (site / "models.html").write_text(build_models(events, stats, tax, display_week), encoding="utf-8")
 
     for t in tax["tracks"]:
         (track_dir / f"{t['id']}.html").write_text(
             build_track(t, events, stats, tax, display_week), encoding="utf-8")
 
     (site / ".nojekyll").write_text("", encoding="utf-8")
-    util.log(f"P9 建站完成：首页 + {len(tax['tracks'])} 个赛道页 + 看板 + 检索（展示周 {display_week}）")
+    util.log(f"P9 建站完成：首页 + 大模型专栏 + {len(tax['tracks'])} 个赛道页 + 看板 + 检索（展示周 {display_week}）")

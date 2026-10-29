@@ -5,14 +5,26 @@
  },
  {
   "name": "南华早报",
-  "count": 51
+  "count": 52
+ },
+ {
+  "name": "OpenAI 官方博客",
+  "count": 32
  },
  {
   "name": "TechCrunch",
+  "count": 25
+ },
+ {
+  "name": "Simon Willison",
   "count": 22
  },
  {
   "name": "The Verge",
+  "count": 19
+ },
+ {
+  "name": "Techmeme",
   "count": 15
  },
  {
@@ -20,7 +32,11 @@
   "count": 13
  },
  {
-  "name": "国家统计局",
-  "count": 4
+  "name": "The Decoder",
+  "count": 10
+ },
+ {
+  "name": "MarkTechPost",
+  "count": 10
  }
 ]

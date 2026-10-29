@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>大模型 · 行业洞察</title>
+<meta name="description" content="投资 · 科技 · 宏观 三域行业动态周报，聚焦 AI、人形机器人、脑机接口、半导体">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="./index.html">行业洞察<small>三域周报</small></a>
+  <nav class="nav"><a href="./index.html" class="">首页</a><a href="./models.html" class="on">大模型</a><a href="./analytics.html" class="">数据看板</a><a href="./search.html" class="">检索</a></nav>
+  <div class="top-right"><div class="market-filter">
+  <button data-m="ALL" class="on">ALL</button>
+  <button data-m="M-A">A股</button>
+  <button data-m="M-HK">港股</button>
+  <button data-m="M-CN">中概</button>
+  <button data-m="M-GL">全球</button>
+</div><span>WEEK 2026 W44</span><span>UPD 2026-10-30 02:33</span></div>
+</div></header>
+
+<div class="wrap">
+  <div class="section">
+    <div class="section-head"><h2>大模型专栏</h2>
+      <span class="note">版本迭代 · 能力评测 · 厂商动态　2026-W44</span></div>
+    
+    <div class="chart-card">
+      <h3>跑分排行</h3>
+      <div class="caliber">
+        数据源：<a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener">Artificial Analysis 排行榜（intelligenceIndex）</a>　
+        截至 2026-10-30 02:27　·　第三方综合评测，与厂商自报跑分口径不同，仅作横向参考
+      </div>
+      <div class="tab-row">
+        <button class="tab-btn on" data-tab="idx">综合指数</button>
+        <button class="tab-btn" data-tab="ctx">上下文</button>
+        <button class="tab-btn" data-tab="price">输出价格</button>
+      </div>
+      <div data-panel="idx"><svg viewBox="0 0 680 402" width="100%" role="img" aria-label="综合智能指数" shape-rendering="crispEdges" style="display:block;max-width:680px;margin:0 auto;font-family:'DotGothic16','Silkscreen',monospace"><title>综合智能指数</title><g><title>Gemini 4 Carbon：59.4（Google）</title><text x="228" y="23" text-anchor="end" font-size="11" fill="#c0cbdc">Gemini 4 Carbon</text><rect x="236" y="14" width="378" height="10" fill="#a22633"/><rect x="236" y="13" width="378" height="10" fill="#8b9bb4"/><text x="622" y="23" font-size="10" fill="#ead4aa">59.4</text></g><g><title>Claude Opus 5.5：58.4（Anthropic）</title><text x="228" y="47" text-anchor="end" font-size="11" fill="#c0cbdc">Claude Opus 5.5</text><rect x="236" y="38" width="372" height="10" fill="#a22633"/><rect x="236" y="37" width="372" height="10" fill="#8b9bb4"/><text x="616" y="47" font-size="10" fill="#ead4aa">58.4</text></g><g><title>GPT-6 Astra：56.9（OpenAI）</title><text x="228" y="71" text-anchor="end" font-size="11" fill="#c0cbdc">GPT-6 Astra</text><rect x="236" y="62" width="362" height="10" fill="#a22633"/><rect x="236" y="61" width="362" height="10" fill="#8b9bb4"/><text x="606" y="71" font-size="10" fill="#ead4aa">56.9</text></g><g><title>GPT-6.1 Sol：54.5（OpenAI）</title><text x="228" y="95" text-anchor="end" font-size="11" fill="#c0cbdc">GPT-6.1 Sol</text><rect x="236" y="86" width="347" height="10" fill="#a22633"/><rect x="236" y="85" width="347" height="10" fill="#8b9bb4"/><text x="591" y="95" font-size="10" fill="#ead4aa">54.5</text></g><g><title>Claude Sonnet 5.5：54.2（Anthropic）</title><text x="228" y="119" text-anchor="end" font-size="11" fill="#c0cbdc">Claude Sonnet 5.5</text><rect x="236" y="110" width="345" height="10" fill="#a22633"/><rect x="236" y="109" width="345" height="10" fill="#8b9bb4"/><text x="589" y="119" font-size="10" fill="#ead4aa">54.2</text></g><g><title>GPT-6.1 Terra：51（OpenAI）</title><text x="228" y="143" text-anchor="end" font-size="11" fill="#c0cbdc">GPT-6.1 Terra</text><rect x="236" y="134" width="325" height="10" fill="#a22633"/><rect x="236" y="133" width="325" height="10" fill="#8b9bb4"/><text x="569" y="143" font-size="10" fill="#ead4aa">51</text></g><g><title>Gemini 4 Argon：50.4（Google）</title><text x="228" y="167" text-anchor="end" font-size="11" fill="#c0cbdc">Gemini 4 Argon</text><rect x="236" y="158" width="321" height="10" fill="#a22633"/><rect x="236" y="157" width="321" height="10" fill="#8b9bb4"/><text x="565" y="167" font-size="10" fill="#ead4aa">50.4</text></g><g><title>Claude Fable 5.1：49.7（Anthropic）</title><text x="228" y="191" text-anchor="end" font-size="11" fill="#c0cbdc">Claude Fable 5.1</text><rect x="236" y="182" width="316" height="10" fill="#a22633"/><rect x="236" y="181" width="316" height="10" fill="#8b9bb4"/><text x="560" y="191" font-size="10" fill="#ead4aa">49.7</text></g><g><title>Muse Wonder Full：49.7（Meta）</title><text x="228" y="215" text-anchor="end" font-size="11" fill="#c0cbdc">Muse Wonder Full</text><rect x="236" y="206" width="316" height="10" fill="#a22633"/><rect x="236" y="205" width="316" height="10" fill="#8b9bb4"/><text x="560" y="215" font-size="10" fill="#ead4aa">49.7</text></g><g><title>Kimi K3.1 Pro：46（月之暗面 Kimi）</title><text x="228" y="239" text-anchor="end" font-size="11" fill="#c0cbdc">Kimi K3.1 Pro</text><rect x="236" y="230" width="293" height="10" fill="#a22633"/><rect x="236" y="229" width="293" height="10" fill="#8b9bb4"/><text x="537" y="239" font-size="10" fill="#ead4aa">46</text></g><g><title>Muse Wonder：43.3（Meta）</title><text x="228" y="263" text-anchor="end" font-size="11" fill="#c0cbdc">Muse Wonder</text><rect x="236" y="254" width="276" height="10" fill="#a22633"/><rect x="236" y="253" width="276" height="10" fill="#8b9bb4"/><text x="520" y="263" font-size="10" fill="#ead4aa">43.3</text></g><g><title>Grok 4.7：35（xAI）</title><text x="228" y="287" text-anchor="end" font-size="11" fill="#c0cbdc">Grok 4.7</text><rect x="236" y="278" width="223" height="10" fill="#a22633"/><rect x="236" y="277" width="223" height="10" fill="#8b9bb4"/><text x="467" y="287" font-size="10" fill="#ead4aa">35</text></g><g><title>Qwen3.8 Max：33.6（阿里 Qwen）</title><text x="228" y="311" text-anchor="end" font-size="11" fill="#c0cbdc">Qwen3.8 Max</text><rect x="236" y="302" width="214" height="10" fill="#a22633"/><rect x="236" y="301" width="214" height="10" fill="#8b9bb4"/><text x="458" y="311" font-size="10" fill="#ead4aa">33.6</text></g><g><title>DeepSeek V4.1 Flash 1017：32.5（深度求索 DeepSeek）</title><text x="228" y="335" text-anchor="end" font-size="11" fill="#c0cbdc">DeepSeek V4.1 Fl…</text><rect x="236" y="326" width="207" height="10" fill="#a22633"/><rect x="236" y="325" width="207" height="10" fill="#8b9bb4"/><text x="451" y="335" font-size="10" fill="#ead4aa">32.5</text></g><g><title>GLM-5.3：31.7（智谱 GLM）</title><text x="228" y="359" text-anchor="end" font-size="11" fill="#c0cbdc">GLM-5.3</text><rect x="236" y="350" width="202" height="10" fill="#a22633"/><rect x="236" y="349" width="202" height="10" fill="#8b9bb4"/><text x="446" y="359" font-size="10" fill="#ead4aa">31.7</text></g><g><title>Gemini 3.8 Flash：30.5（Google）</title><text x="228" y="383" text-anchor="end" font-size="11" fill="#c0cbdc">Gemini 3.8 Flash</text><rect x="236" y="374" width="194" height="10" fill="#a22633"/><rect x="236" y="373" width="194" height="10" fill="#8b9bb4"/><text x="438" y="383" font-size="10" fill="#ead4aa">30.5</text></g></svg></div>
+      <div data-panel="ctx" style="display:none"><svg viewBox="0 0 680 402" width="100%" role="img" aria-label="上下文窗口" shape-rendering="crispEdges" style="display:block;max-width:680px;margin:0 auto;font-family:'DotGothic16','Silkscreen',monospace"><title>上下文窗口</title><g><title>Muse Wonder：1049k（Meta）</title><text x="228" y="23" text-anchor="end" font-size="11" fill="#c0cbdc">Muse Wonder</text><rect x="236" y="14" width="378" height="10" fill="#a22633"/><rect x="236" y="13" width="378" height="10" fill="#8b9bb4"/><text x="622" y="23" font-size="10" fill="#ead4aa">1049k</text></g><g><title>Muse Spark Open：1049k（Meta）</title><text x="228" y="47" text-anchor="end" font-size="11" fill="#c0cbdc">Muse Spark Open</text><rect x="236" y="38" width="378" height="10" fill="#a22633"/><rect x="236" y="37" width="378" height="10" fill="#8b9bb4"/><text x="622" y="47" font-size="10" fill="#ead4aa">1049k</text></g><g><title>Gemini 4 Carbon：1000k（Google）</title><text x="228" y="71" text-anchor="end" font-size="11" fill="#c0cbdc">Gemini 4 Carbon</text><rect x="236" y="62" width="360" height="10" fill="#a22633"/><rect x="236" y="61" width="360" height="10" fill="#8b9bb4"/><text x="604" y="71" font-size="10" fill="#ead4aa">1000k</text></g><g><title>Claude Opus 5.5：1000k（Anthropic）</title><text x="228" y="95" text-anchor="end" font-size="11" fill="#c0cbdc">Claude Opus 5.5</text><rect x="236" y="86" width="360" height="10" fill="#a22633"/><rect x="236" y="85" width="360" height="10" fill="#8b9bb4"/><text x="604" y="95" font-size="10" fill="#ead4aa">1000k</text></g><g><title>GPT-6 Astra：1000k（OpenAI）</title><text x="228" y="119" text-anchor="end" font-size="11" fill="#c0cbdc">GPT-6 Astra</text><rect x="236" y="110" width="360" height="10" fill="#a22633"/><rect x="236" y="109" width="360" height="10" fill="#8b9bb4"/><text x="604" y="119" font-size="10" fill="#ead4aa">1000k</text></g><g><title>GPT-6.1 Sol：1000k（OpenAI）</title><text x="228" y="143" text-anchor="end" font-size="11" fill="#c0cbdc">GPT-6.1 Sol</text><rect x="236" y="134" width="360" height="10" fill="#a22633"/><rect x="236" y="133" width="360" height="10" fill="#8b9bb4"/><text x="604" y="143" font-size="10" fill="#ead4aa">1000k</text></g><g><title>Claude Sonnet 5.5：1000k（Anthropic）</title><text x="228" y="167" text-anchor="end" font-size="11" fill="#c0cbdc">Claude Sonnet 5.5</text><rect x="236" y="158" width="360" height="10" fill="#a22633"/><rect x="236" y="157" width="360" height="10" fill="#8b9bb4"/><text x="604" y="167" font-size="10" fill="#ead4aa">1000k</text></g><g><title>GPT-6.1 Terra：1000k（OpenAI）</title><text x="228" y="191" text-anchor="end" font-size="11" fill="#c0cbdc">GPT-6.1 Terra</text><rect x="236" y="182" width="360" height="10" fill="#a22633"/><rect x="236" y="181" width="360" height="10" fill="#8b9bb4"/><text x="604" y="191" font-size="10" fill="#ead4aa">1000k</text></g><g><title>Gemini 4 Argon：1000k（Google）</title><text x="228" y="215" text-anchor="end" font-size="11" fill="#c0cbdc">Gemini 4 Argon</text><rect x="236" y="206" width="360" height="10" fill="#a22633"/><rect x="236" y="205" width="360" height="10" fill="#8b9bb4"/><text x="604" y="215" font-size="10" fill="#ead4aa">1000k</text></g><g><title>Claude Fable 5.1：1000k（Anthropic）</title><text x="228" y="239" text-anchor="end" font-size="11" fill="#c0cbdc">Claude Fable 5.1</text><rect x="236" y="230" width="360" height="10" fill="#a22633"/><rect x="236" y="229" width="360" height="10" fill="#8b9bb4"/><text x="604" y="239" font-size="10" fill="#ead4aa">1000k</text></g><g><title>Muse Wonder Full：1000k（Meta）</title><text x="228" y="263" text-anchor="end" font-size="11" fill="#c0cbdc">Muse Wonder Full</text><rect x="236" y="254" width="360" height="10" fill="#a22633"/><rect x="236" y="253" width="360" height="10" fill="#8b9bb4"/><text x="604" y="263" font-size="10" fill="#ead4aa">1000k</text></g><g><title>Kimi K3.1 Pro：1000k（月之暗面 Kimi）</title><text x="228" y="287" text-anchor="end" font-size="11" fill="#c0cbdc">Kimi K3.1 Pro</text><rect x="236" y="278" width="360" height="10" fill="#a22633"/><rect x="236" y="277" width="360" height="10" fill="#8b9bb4"/><text x="604" y="287" font-size="10" fill="#ead4aa">1000k</text></g><g><title>DeepSeek V4.1 Flash 1017：1000k（深度求索 DeepSeek）</title><text x="228" y="311" text-anchor="end" font-size="11" fill="#c0cbdc">DeepSeek V4.1 Fl…</text><rect x="236" y="302" width="360" height="10" fill="#a22633"/><rect x="236" y="301" width="360" height="10" fill="#8b9bb4"/><text x="604" y="311" font-size="10" fill="#ead4aa">1000k</text></g><g><title>GLM-5.3：1000k（智谱 GLM）</title><text x="228" y="335" text-anchor="end" font-size="11" fill="#c0cbdc">GLM-5.3</text><rect x="236" y="326" width="360" height="10" fill="#a22633"/><rect x="236" y="325" width="360" height="10" fill="#8b9bb4"/><text x="604" y="335" font-size="10" fill="#ead4aa">1000k</text></g><g><title>Gemini 3.8 Flash：1000k（Google）</title><text x="228" y="359" text-anchor="end" font-size="11" fill="#c0cbdc">Gemini 3.8 Flash</text><rect x="236" y="350" width="360" height="10" fill="#a22633"/><rect x="236" y="349" width="360" height="10" fill="#8b9bb4"/><text x="604" y="359" font-size="10" fill="#ead4aa">1000k</text></g><g><title>MiniMax-M3.1-Flash：1000k（MiniMax）</title><text x="228" y="383" text-anchor="end" font-size="11" fill="#c0cbdc">MiniMax-M3.1-Fla…</text><rect x="236" y="374" width="360" height="10" fill="#a22633"/><rect x="236" y="373" width="360" height="10" fill="#8b9bb4"/><text x="604" y="383" font-size="10" fill="#ead4aa">1000k</text></g></svg></div>
+      <div data-panel="price" style="display:none"><svg viewBox="0 0 680 402" width="100%" role="img" aria-label="输出价格" shape-rendering="crispEdges" style="display:block;max-width:680px;margin:0 auto;font-family:'DotGothic16','Silkscreen',monospace"><title>输出价格</title><g><title>MiniMax-M3.1-Flash：0.6 $/M（MiniMax）</title><text x="228" y="23" text-anchor="end" font-size="11" fill="#c0cbdc">MiniMax-M3.1-Fla…</text><rect x="236" y="14" width="11" height="10" fill="#a22633"/><rect x="236" y="13" width="11" height="10" fill="#8b9bb4"/><text x="255" y="23" font-size="10" fill="#ead4aa">0.6 $/M</text></g><g><title>DeepSeek V4.1 Flash 1017：1.2 $/M（深度求索 DeepSeek）</title><text x="228" y="47" text-anchor="end" font-size="11" fill="#c0cbdc">DeepSeek V4.1 Fl…</text><rect x="236" y="38" width="23" height="10" fill="#a22633"/><rect x="236" y="37" width="23" height="10" fill="#8b9bb4"/><text x="267" y="47" font-size="10" fill="#ead4aa">1.2 $/M</text></g><g><title>MiniMax-M3：1.2 $/M（MiniMax）</title><text x="228" y="71" text-anchor="end" font-size="11" fill="#c0cbdc">MiniMax-M3</text><rect x="236" y="62" width="23" height="10" fill="#a22633"/><rect x="236" y="61" width="23" height="10" fill="#8b9bb4"/><text x="267" y="71" font-size="10" fill="#ead4aa">1.2 $/M</text></g><g><title>Mistral Large 4：2.1 $/M（Mistral）</title><text x="228" y="95" text-anchor="end" font-size="11" fill="#c0cbdc">Mistral Large 4</text><rect x="236" y="86" width="40" height="10" fill="#a22633"/><rect x="236" y="85" width="40" height="10" fill="#8b9bb4"/><text x="284" y="95" font-size="10" fill="#ead4aa">2.1 $/M</text></g><g><title>Qwen3.8 27B：3 $/M（阿里 Qwen）</title><text x="228" y="119" text-anchor="end" font-size="11" fill="#c0cbdc">Qwen3.8 27B</text><rect x="236" y="110" width="57" height="10" fill="#a22633"/><rect x="236" y="109" width="57" height="10" fill="#8b9bb4"/><text x="301" y="119" font-size="10" fill="#ead4aa">3 $/M</text></g><g><title>Gemini 3.8 Flash：3.75 $/M（Google）</title><text x="228" y="143" text-anchor="end" font-size="11" fill="#c0cbdc">Gemini 3.8 Flash</text><rect x="236" y="134" width="71" height="10" fill="#a22633"/><rect x="236" y="133" width="71" height="10" fill="#8b9bb4"/><text x="315" y="143" font-size="10" fill="#ead4aa">3.75 $/M</text></g><g><title>DeepSeek V4 Pro 0813：3.96 $/M（深度求索 DeepSeek）</title><text x="228" y="167" text-anchor="end" font-size="11" fill="#c0cbdc">DeepSeek V4 Pro …</text><rect x="236" y="158" width="75" height="10" fill="#a22633"/><rect x="236" y="157" width="75" height="10" fill="#8b9bb4"/><text x="319" y="167" font-size="10" fill="#ead4aa">3.96 $/M</text></g><g><title>Muse Spark Open：4.25 $/M（Meta）</title><text x="228" y="191" text-anchor="end" font-size="11" fill="#c0cbdc">Muse Spark Open</text><rect x="236" y="182" width="80" height="10" fill="#a22633"/><rect x="236" y="181" width="80" height="10" fill="#8b9bb4"/><text x="324" y="191" font-size="10" fill="#ead4aa">4.25 $/M</text></g><g><title>GLM-5.3：4.4 $/M（智谱 GLM）</title><text x="228" y="215" text-anchor="end" font-size="11" fill="#c0cbdc">GLM-5.3</text><rect x="236" y="206" width="83" height="10" fill="#a22633"/><rect x="236" y="205" width="83" height="10" fill="#8b9bb4"/><text x="327" y="215" font-size="10" fill="#ead4aa">4.4 $/M</text></g><g><title>GPT-6.1 Terra：5 $/M（OpenAI）</title><text x="228" y="239" text-anchor="end" font-size="11" fill="#c0cbdc">GPT-6.1 Terra</text><rect x="236" y="230" width="94" height="10" fill="#a22633"/><rect x="236" y="229" width="94" height="10" fill="#8b9bb4"/><text x="338" y="239" font-size="10" fill="#ead4aa">5 $/M</text></g><g><title>Grok 4.7：6 $/M（xAI）</title><text x="228" y="263" text-anchor="end" font-size="11" fill="#c0cbdc">Grok 4.7</text><rect x="236" y="254" width="113" height="10" fill="#a22633"/><rect x="236" y="253" width="113" height="10" fill="#8b9bb4"/><text x="357" y="263" font-size="10" fill="#ead4aa">6 $/M</text></g><g><title>Qwen3.8 Max：6 $/M（阿里 Qwen）</title><text x="228" y="287" text-anchor="end" font-size="11" fill="#c0cbdc">Qwen3.8 Max</text><rect x="236" y="278" width="113" height="10" fill="#a22633"/><rect x="236" y="277" width="113" height="10" fill="#8b9bb4"/><text x="357" y="287" font-size="10" fill="#ead4aa">6 $/M</text></g><g><title>GPT-6.1 Sol：10 $/M（OpenAI）</title><text x="228" y="311" text-anchor="end" font-size="11" fill="#c0cbdc">GPT-6.1 Sol</text><rect x="236" y="302" width="189" height="10" fill="#a22633"/><rect x="236" y="301" width="189" height="10" fill="#8b9bb4"/><text x="433" y="311" font-size="10" fill="#ead4aa">10 $/M</text></g><g><title>Claude Sonnet 5.5：10 $/M（Anthropic）</title><text x="228" y="335" text-anchor="end" font-size="11" fill="#c0cbdc">Claude Sonnet 5.5</text><rect x="236" y="326" width="189" height="10" fill="#a22633"/><rect x="236" y="325" width="189" height="10" fill="#8b9bb4"/><text x="433" y="335" font-size="10" fill="#ead4aa">10 $/M</text></g><g><title>Kimi K3.1 Pro：10 $/M（月之暗面 Kimi）</title><text x="228" y="359" text-anchor="end" font-size="11" fill="#c0cbdc">Kimi K3.1 Pro</text><rect x="236" y="350" width="189" height="10" fill="#a22633"/><rect x="236" y="349" width="189" height="10" fill="#8b9bb4"/><text x="433" y="359" font-size="10" fill="#ead4aa">10 $/M</text></g><g><title>Gemini 4 Carbon：20 $/M（Google）</title><text x="228" y="383" text-anchor="end" font-size="11" fill="#c0cbdc">Gemini 4 Carbon</text><rect x="236" y="374" width="378" height="10" fill="#a22633"/><rect x="236" y="373" width="378" height="10" fill="#8b9bb4"/><text x="622" y="383" font-size="10" fill="#ead4aa">20 $/M</text></g></svg></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>厂商动态</h2>
+      <span class="note">按本周被提及条数排序</span></div>
+    <div class="vendor-grid"><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">OpenAI</span>
+    <span class="vc-count">20 条</span></div>
+  <div class="vc-bar"><i style="width:100%"></i></div>
+  <div class="vc-meta">旗舰 GPT-6 Astra · 56.9</div>
+  <div class="vc-latest" onclick="window.__openDrawer('90b267becbf2')">Microsoft recorded $10 billion in revenue fro…</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">Google</span>
+    <span class="vc-count">11 条</span></div>
+  <div class="vc-bar"><i style="width:55%"></i></div>
+  <div class="vc-meta">旗舰 Gemini 4 Carbon · 59.4</div>
+  <div class="vc-latest" onclick="window.__openDrawer('17b377e83d7b')">Agent identity startup Mintive lands Cowboy V…</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">Anthropic</span>
+    <span class="vc-count">8 条</span></div>
+  <div class="vc-bar"><i style="width:40%"></i></div>
+  <div class="vc-meta">旗舰 Claude Opus 5.5 · 58.4</div>
+  <div class="vc-latest" onclick="window.__openDrawer('d8aca26eb469')">野村：Anthropic和SK海力士双重提振，美股已“摆脱恐慌”并“关键性企稳”</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">Mistral</span>
+    <span class="vc-count">3 条</span></div>
+  <div class="vc-bar"><i style="width:15%"></i></div>
+  <div class="vc-meta">旗舰 Mistral Large 4 · 26.0</div>
+  <div class="vc-latest" onclick="window.__openDrawer('bcae5e5bffd4')">Mistral releases weights for its trillion-par…</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">Meta</span>
+    <span class="vc-count">1 条</span></div>
+  <div class="vc-bar"><i style="width:5%"></i></div>
+  <div class="vc-meta">旗舰 Muse Wonder Full · 49.7</div>
+  <div class="vc-latest" onclick="window.__openDrawer('5186e78f16c0')">报道：AI融资弄潮儿Pimco见好就收，砍半Meta和甲骨文债券仓位，躲过大跌</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">智谱 GLM</span>
+    <span class="vc-count">1 条</span></div>
+  <div class="vc-bar"><i style="width:5%"></i></div>
+  <div class="vc-meta">旗舰 GLM-5.3 · 31.7</div>
+  <div class="vc-latest" onclick="window.__openDrawer('095c2e4a7f3c')">Mistral releases the weights for Mistral Larg…</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">MiniMax</span>
+    <span class="vc-count">1 条</span></div>
+  <div class="vc-bar"><i style="width:5%"></i></div>
+  <div class="vc-meta">旗舰 MiniMax-M3.1-Flash · 28.9</div>
+  <div class="vc-latest" onclick="window.__openDrawer('d8fb4e7732a4')">MiniMax Open-Sources MCode Stack: 15 Agent Sk…</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">月之暗面 Kimi</span>
+    <span class="vc-count">0 条</span></div>
+  <div class="vc-bar"><i style="width:0%"></i></div>
+  <div class="vc-meta">旗舰 Kimi K3.1 Pro · 46.0</div>
+  <div class="vc-latest" onclick="window.__openDrawer('')">本周无相关资讯</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">xAI</span>
+    <span class="vc-count">0 条</span></div>
+  <div class="vc-bar"><i style="width:0%"></i></div>
+  <div class="vc-meta">旗舰 Grok 4.7 · 35.0</div>
+  <div class="vc-latest" onclick="window.__openDrawer('')">本周无相关资讯</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">阿里 Qwen</span>
+    <span class="vc-count">0 条</span></div>
+  <div class="vc-bar"><i style="width:0%"></i></div>
+  <div class="vc-meta">旗舰 Qwen3.8 Max · 33.6</div>
+  <div class="vc-latest" onclick="window.__openDrawer('')">本周无相关资讯</div>
+</div><div class="vendor-card" data-market="">
+  <div class="vc-head"><span class="vc-name">深度求索 DeepSeek</span>
+    <span class="vc-count">0 条</span></div>
+  <div class="vc-bar"><i style="width:0%"></i></div>
+  <div class="vc-meta">旗舰 DeepSeek V4.1 Flash 1017 · 32.5</div>
+  <div class="vc-latest" onclick="window.__openDrawer('')">本周无相关资讯</div>
+</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>本周大模型资讯</h2>
+      <span class="note">共 61 条 · 关于模型本身而非应用</span></div>
+    <div class="item" data-market="M-GL">
+  <div class="score important">69<small>重要</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('41da11ce2065')">谷歌“网安高手”Gemini 4 Carbon登顶AI智能榜，漏洞检测得分88.2%，标准价持平Argon</div>
+    <div class="i-sum">谷歌发布新一代旗舰模型Gemini 4 Carbon，在Artificial Analysis智能指数中以59分排名第一，漏洞检测得分达88.</div>
+    <div class="i-meta"><span>华尔街见闻</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">48<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('7bf0065ceb16')">An updated Model Spec for more capable and beneficial AI</div>
+    <div class="i-sum">OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to hum…</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>OpenAI 官方博客</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">48<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('3b4fe0946b63')">Paris-based Mistral releases &quot;Le Chonk,&quot; a strong coding model that still trails China overall</div>
+    <div class="i-sum">Mistral has released the weights for Large 4, aka &quot;Le Chonk,&quot; a trillion-parameter model trained entirely in Europe.</div>
+    <div class="i-meta"><span>The Decoder</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">48<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('a5980a6c5a8c')">US antitrust regulators are scrutinizing Nvidia&#x27;s Hugging Face deal and sales practices</div>
+    <div class="i-sum">The US Justice Department is looking into Nvidia&#x27;s planned acquisition of open-source platform Hugging Face.</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>The Decoder</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">48<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('01c6f1f45331')">Chinese spies targeted Nvidia CEO Jensen Huang, according to The New York Times</div>
+    <div class="i-sum">US intelligence agencies believe an executive in Nvidia CEO Jensen Huang&#x27;s circle is an informant for China.</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>The Decoder</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">48<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('9f18f7245411')">OpenAI&#x27;s Astra becomes the main target for Chinese AI labs after Anthropic tightens its defenses</div>
+    <div class="i-sum">Chinese AI labs are now mainly tapping OpenAI&#x27;s most powerful model, GPT-6 Astra, instead of Anthropic&#x27;s Claude.</div>
+    <div class="i-meta"><span>The Decoder</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">48<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('ec5ac67c7615')">Google&#x27;s AI search problem finally shows up in the earnings report, some investors believe</div>
+    <div class="i-sum">Google&#x27;s stock dropped as much as ten percent after its quarterly earnings.</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>The Decoder</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">48<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('d28967fce9c6')">How we detect frontier model misalignment</div>
+    <div class="i-sum">OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before inc…</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>OpenAI 官方博客</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">48<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('2d9928289658')">How Ropes &amp; Gray is developing AI for transactional diligence</div>
+    <div class="i-sum">Ropes &amp; Gray is developing AI for transactional diligence with OpenAI.</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>OpenAI 官方博客</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">48<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('2caeea9abb48')">Google Deepmind releases Gemini 4 Carbon just two weeks after Argon with gains across the board</div>
+    <div class="i-sum">Just two weeks after Gemini 4 Argon, Google DeepMind is releasing Gemini 4 Carbon, which tops the Artificial Analysis Intelligence Index v5…</div>
+    <div class="i-meta"><span>The Decoder</span>
+      <span>2026-10-28</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('bcae5e5bffd4')">Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity</div>
+    <div class="i-sum">Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can&#x27;t.</div>
+    <div class="i-meta"><span>TechCrunch</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('686011254b7a')">OpenAI updates Model Spec to reorganize it around five values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care (OpenAI)</div>
+    <div class="i-sum">OpenAI:
+
+OpenAI updates Model Spec to reorganize it around five values: faithfulness to human intent, harm minimization, honesty and transp…</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('731f99f61152')">SuperMe, which generates AI-powered chats with simulated profiles of prominent industry experts to let users ask questions, raised $20M (Ivan Mehta/TechCrunch)</div>
+    <div class="i-sum">Ivan Mehta / TechCrunch:
+
+SuperMe, which generates AI-powered chats with simulated profiles of prominent industry experts to let users ask …</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('b59aa88c2ad5')">Source: Dulo, a startup co-founded by Google veteran Sebastian Thrun to build &quot;foundation models for hardware design&quot;, raised a $130M seed (Rocket Drew/The Information)</div>
+    <div class="i-sum">Rocket Drew / The Information:
+
+Source: Dulo, a startup co-founded by Google veteran Sebastian Thrun to build “foundation models for hardwa…</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('0294a12d353e')">Alphabet discloses $1T+ in purchase commitments, future leases, and other obligations; its Q3 filing shows $98.5B in contingent commitments, up ~$23B from Q2 (Davey Alba/Bloomberg)</div>
+    <div class="i-sum">Davey Alba / Bloomberg:
+
+Alphabet discloses $1T+ in purchase commitments, future leases, and other obligations;</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('519a854e37bf')">Alphabet&#x27;s stock falls 12%+, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%+ (Stephen Morris/Financial Times)</div>
+    <div class="i-sum">Stephen Morris / Financial Times:
+
+Alphabet&#x27;s stock falls 12%+, wiping a record $500B from its market cap, after reporting negative cash fl…</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('1fe7b9022d49')">Airbnb spent $12.6M+ since 2025 to become a top LA political contributor, backing Mayor Karen Bass and pushing for friendlier rules ahead of the 2028 Olympics (Liam Dillon/Politico)</div>
+    <div class="i-sum">Liam Dillon / Politico:
+
+Airbnb spent $12.</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('6b836c095774')">Canada-based Cohere completes the first close of a round that it expects to total up to $5B, with Canada agreeing to invest up to $1.14B, at a $20.5B valuation (Bloomberg)</div>
+    <div class="i-sum">Bloomberg:
+
+Canada-based Cohere completes the first close of a round that it expects to total up to $5B, with Canada agreeing to invest up …</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('6e3c4be14540')">Sources: Situational Awareness is pitching clients to invest in Fluidstack alongside it in a round that values the neocloud at $40B, up from $18B in September (Bloomberg)</div>
+    <div class="i-sum">Bloomberg:
+
+Sources: Situational Awareness is pitching clients to invest in Fluidstack alongside it in a round that values the neocloud at …</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('faa3930cf46e')">The UK FCA, which sued Justin Sun-linked crypto exchange HTX in 2025 for &quot;unlawfully promoting crypto asset services&quot;, says HTX will exit the UK in a settlement (Financial Times)</div>
+    <div class="i-sum">Financial Times:
+
+The UK FCA, which sued Justin Sun-linked crypto exchange HTX in 2025 for “unlawfully promoting crypto asset services”, sa…</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('2083966ee62f')">Collective, which uses AI to automate bookkeeping for solo business owners, raised a $40M Series B and $60M in nondilutive capital from GC&#x27;s Customer Value Fund (Natalie Breymeyer/Axios)</div>
+    <div class="i-sum">Natalie Breymeyer / Axios:
+
+Collective, which uses AI to automate bookkeeping for solo business owners, raised a $40M Series B and $60M in …</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('df7022eaa03c')">Ottawa-based Solink, which uses AI to pull data from already-installed security cameras, raised $100M+ led by Vertu Capital, bringing its total raised to $198M+ (Duncan Riley/SiliconANGLE)</div>
+    <div class="i-sum">Duncan Riley / SiliconANGLE:
+
+Ottawa-based Solink, which uses AI to pull data from already-installed security cameras, raised $100M+ led by…</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('07feb0865eba')">Thrive Holdings agrees to acquire ADT in an all-cash take-private deal, valuing ADT at ~$7.6B in equity value, a ~46% premium over its October 27 closing price (Claire Rychlewski/Axios)</div>
+    <div class="i-sum">Claire Rychlewski / Axios:
+
+Thrive Holdings agrees to acquire ADT in an all-cash take-private deal, valuing ADT at ~$7.</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('095c2e4a7f3c')">Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index (Radhika Rajkumar/ZDNET)</div>
+    <div class="i-sum">Radhika Rajkumar / ZDNET:
+
+Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.</div>
+    <div class="i-meta"><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('0e2174f081b0')">Serval, which offers AI agents for enterprise IT operations like access management, raised $150M led by Sequoia at a $3B valuation, up from $1B in December 2025 (Harshita Mary Varghese/Reuters)</div>
+    <div class="i-sum">Harshita Mary Varghese / Reuters:
+
+Serval, which offers AI agents for enterprise IT operations like access management, raised $150M led by …</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('db0f9bb921c3')">Wabi, which is building an AI assistant that integrates into group chats and can take actions like booking appointments, raised $55M at a $1.25B valuation (Micah Barkley/Bloomberg)</div>
+    <div class="i-sum">Micah Barkley / Bloomberg:
+
+Wabi, which is building an AI assistant that integrates into group chats and can take actions like booking appo…</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Techmeme</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('c8889526df5c')">Infini-AI-Lab Releases Hermit, an Open-Source Harness Adapter Framework for AI Agents</div>
+    <div class="i-sum">Infini-AI-Lab has released Hermit, an open-source harness adapter framework for AI agents.</div>
+    <div class="i-meta"><span>MarkTechPost</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('02aebfc3f398')">NVIDIA Releases Nemotron 3.5 Transcribe: An Open 30B MoE Model for 40-Language Transcription with ~4B Active Parameters</div>
+    <div class="i-sum">NVIDIA has released Nemotron 3.</div>
+    <div class="i-meta"><span>MarkTechPost</span>
+      <span>2026-10-29</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('becd12354f28')">Google opens Android development to third-party AI agents and unveils new Gemini APIs</div>
+    <div class="i-sum">Google is opening up Android Studio to third-party AI agents.</div>
+    <div class="i-meta"><span>The Decoder</span>
+      <span>2026-10-28</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('ee31e0102e56')">OpenAI teases Dots for Europe, but its Berlin DevDay was really about building a platform</div>
+    <div class="i-sum">At DevDay Exchange in Berlin, OpenAI mostly repeated what it had already announced, but it did share a few new details.</div>
+    <div class="i-meta"><span>The Decoder</span>
+      <span>2026-10-28</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('690be7f28dbe')">Claude for Legal now verifies sources automatically, then hands the file to a lawyer</div>
+    <div class="i-sum">Anthropic is adding pre-built templates to Claude for Legal.</div>
+    <div class="i-meta"><span>The Decoder</span>
+      <span>2026-10-28</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('09e3fdf794ae')">Nvidia&#x27;s open Nemotron 3.5 Transcribe combines transcription, translation, and speaker recognition</div>
+    <div class="i-sum">Nvidia has released Nemotron 3.</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>The Decoder</span>
+      <span>2026-10-28</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('75e2017ed4c5')">OpenAI and ServiceNow expand partnership across enterprise workflows</div>
+    <div class="i-sum">OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and …</div>
+    <div class="i-meta"><span>OpenAI 官方博客</span>
+      <span>2026-10-28</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('0dc3cf0b7c98')">The future of the firm</div>
+    <div class="i-sum">How AI might enter the org chart—beneath, beside, and between us.</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>OpenAI 官方博客</span>
+      <span>2026-10-28</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('41c97fe8dc29')">Legora is building the agentic operating system for legal work</div>
+    <div class="i-sum">See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on…</div>
+    <div class="i-meta"><span>OpenAI 官方博客</span>
+      <span>2026-10-28</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('d17d13a0006a')">Genie 4: A new generation of world simulation</div>
+    <div class="i-sum">Genie 4: our new world model unlocking unprecedented realism in real-time simulation.</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>Google DeepMind</span>
+      <span>2026-10-27</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('d42fb1eb3362')">Retell uses OpenAI models to help power 100M monthly calls</div>
+    <div class="i-sum">GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.</div>
+    <div class="i-meta"><span>OpenAI 官方博客</span>
+      <span>2026-10-27</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('a3a879144b29')">OpenAI expands partnership with Oracle to bring its apps to ChatGPT</div>
+    <div class="i-sum">OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.</div>
+    <div class="i-meta"><span>OpenAI 官方博客</span>
+      <span>2026-10-27</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('8cb333260a17')">How Check Point accelerates vulnerability research with Daybreak</div>
+    <div class="i-sum">With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intel…</div>
+    <div class="i-meta"><span class="badge">按信源归类</span><span>OpenAI 官方博客</span>
+      <span>2026-10-27</span>
+      <span>全球</span></div>
+  </div>
+</div><div class="item" data-market="M-GL">
+  <div class="score ">43<small>一般</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('250e5d8f3024')">Greptile takes bug detection beyond code review with GPT-6 Astra</div>
+    <div class="i-sum">How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.</div>
+    <div class="i-meta"><span>OpenAI 官方博客</span>
+      <span>2026-10-26</span>
+      <span>全球</span></div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="drawer-mask"></div><aside class="drawer"></aside>
+<div id="d-41da11ce2065" style="display:none"><h3>谷歌“网安高手”Gemini 4 Carbon登顶AI智能榜，漏洞检测得分88.2%，标准价持平Argon</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>技术突破</span><span>重要度 69</span><span>2026-10-29 06:10</span></div>
+  <div class="sum" data-text="谷歌发布新一代旗舰模型Gemini 4 Carbon，在Artificial Analysis智能指数中以59分排名第一，漏洞检测得分达88.">谷歌发布新一代旗舰模型Gemini 4 Carbon，在Artificial Analysis智能指数中以59分排名第一，漏洞检测得分达88.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[A] 华尔街见闻　<a href="https://wallstreetcn.com/articles/3784715" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-7bf0065ceb16" style="display:none"><h3>An updated Model Spec for more capable and beneficial AI</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 48</span><span>2026-10-29 17:00</span></div>
+  <div class="sum" data-text="OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to hum…">OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to hum…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/updated-model-spec" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-3b4fe0946b63" style="display:none"><h3>Paris-based Mistral releases &quot;Le Chonk,&quot; a strong coding model that still trails China overall</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 48</span><span>2026-10-29 15:25</span></div>
+  <div class="sum" data-text="Mistral has released the weights for Large 4, aka &quot;Le Chonk,&quot; a trillion-parameter model trained entirely in Europe.">Mistral has released the weights for Large 4, aka &quot;Le Chonk,&quot; a trillion-parameter model trained entirely in Europe.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/paris-based-mistral-releases-le-chonk-a-strong-coding-model-that-still-trails-china-overall/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-a5980a6c5a8c" style="display:none"><h3>US antitrust regulators are scrutinizing Nvidia&#x27;s Hugging Face deal and sales practices</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 48</span><span>2026-10-29 14:07</span></div>
+  <div class="sum" data-text="The US Justice Department is looking into Nvidia&#x27;s planned acquisition of open-source platform Hugging Face.">The US Justice Department is looking into Nvidia&#x27;s planned acquisition of open-source platform Hugging Face.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/us-antitrust-regulators-are-scrutinizing-nvidias-hugging-face-deal-and-sales-practices/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-01c6f1f45331" style="display:none"><h3>Chinese spies targeted Nvidia CEO Jensen Huang, according to The New York Times</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 48</span><span>2026-10-29 13:42</span></div>
+  <div class="sum" data-text="US intelligence agencies believe an executive in Nvidia CEO Jensen Huang&#x27;s circle is an informant for China.">US intelligence agencies believe an executive in Nvidia CEO Jensen Huang&#x27;s circle is an informant for China.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-9f18f7245411" style="display:none"><h3>OpenAI&#x27;s Astra becomes the main target for Chinese AI labs after Anthropic tightens its defenses</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 48</span><span>2026-10-29 13:20</span></div>
+  <div class="sum" data-text="Chinese AI labs are now mainly tapping OpenAI&#x27;s most powerful model, GPT-6 Astra, instead of Anthropic&#x27;s Claude.">Chinese AI labs are now mainly tapping OpenAI&#x27;s most powerful model, GPT-6 Astra, instead of Anthropic&#x27;s Claude.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/openais-astra-becomes-the-main-target-for-chinese-ai-labs-after-anthropic-tightens-its-defenses/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-ec5ac67c7615" style="display:none"><h3>Google&#x27;s AI search problem finally shows up in the earnings report, some investors believe</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 48</span><span>2026-10-29 10:16</span></div>
+  <div class="sum" data-text="Google&#x27;s stock dropped as much as ten percent after its quarterly earnings.">Google&#x27;s stock dropped as much as ten percent after its quarterly earnings.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/googles-ai-search-problem-finally-shows-up-in-the-earnings-report-some-investors-believe/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-d28967fce9c6" style="display:none"><h3>How we detect frontier model misalignment</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 48</span><span>2026-10-29 09:00</span></div>
+  <div class="sum" data-text="OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before inc…">OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before inc…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/how-we-detect-frontier-model-misalignment" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-2d9928289658" style="display:none"><h3>How Ropes &amp; Gray is developing AI for transactional diligence</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 48</span><span>2026-10-29 07:00</span></div>
+  <div class="sum" data-text="Ropes &amp; Gray is developing AI for transactional diligence with OpenAI.">Ropes &amp; Gray is developing AI for transactional diligence with OpenAI.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/ropes-gray-ai-diligence" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-2caeea9abb48" style="display:none"><h3>Google Deepmind releases Gemini 4 Carbon just two weeks after Argon with gains across the board</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 48</span><span>2026-10-28 19:17</span></div>
+  <div class="sum" data-text="Just two weeks after Gemini 4 Argon, Google DeepMind is releasing Gemini 4 Carbon, which tops the Artificial Analysis Intelligence Index v5…">Just two weeks after Gemini 4 Argon, Google DeepMind is releasing Gemini 4 Carbon, which tops the Artificial Analysis Intelligence Index v5…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-bcae5e5bffd4" style="display:none"><h3>Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 17:00</span></div>
+  <div class="sum" data-text="Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can&#x27;t.">Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can&#x27;t.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] TechCrunch　<a href="https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-686011254b7a" style="display:none"><h3>OpenAI updates Model Spec to reorganize it around five values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care (OpenAI)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 14:00</span></div>
+  <div class="sum" data-text="OpenAI:
+
+OpenAI updates Model Spec to reorganize it around five values: faithfulness to human intent, harm minimization, honesty and transp…">OpenAI:
+
+OpenAI updates Model Spec to reorganize it around five values: faithfulness to human intent, harm minimization, honesty and transp…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p42#a261029p42" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-731f99f61152" style="display:none"><h3>SuperMe, which generates AI-powered chats with simulated profiles of prominent industry experts to let users ask questions, raised $20M (Ivan Mehta/TechCrunch)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 12:55</span></div>
+  <div class="sum" data-text="Ivan Mehta / TechCrunch:
+
+SuperMe, which generates AI-powered chats with simulated profiles of prominent industry experts to let users ask …">Ivan Mehta / TechCrunch:
+
+SuperMe, which generates AI-powered chats with simulated profiles of prominent industry experts to let users ask …</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p41#a261029p41" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-b59aa88c2ad5" style="display:none"><h3>Source: Dulo, a startup co-founded by Google veteran Sebastian Thrun to build &quot;foundation models for hardware design&quot;, raised a $130M seed (Rocket Drew/The Information)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 12:45</span></div>
+  <div class="sum" data-text="Rocket Drew / The Information:
+
+Source: Dulo, a startup co-founded by Google veteran Sebastian Thrun to build “foundation models for hardwa…">Rocket Drew / The Information:
+
+Source: Dulo, a startup co-founded by Google veteran Sebastian Thrun to build “foundation models for hardwa…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p40#a261029p40" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-0294a12d353e" style="display:none"><h3>Alphabet discloses $1T+ in purchase commitments, future leases, and other obligations; its Q3 filing shows $98.5B in contingent commitments, up ~$23B from Q2 (Davey Alba/Bloomberg)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 12:30</span></div>
+  <div class="sum" data-text="Davey Alba / Bloomberg:
+
+Alphabet discloses $1T+ in purchase commitments, future leases, and other obligations;">Davey Alba / Bloomberg:
+
+Alphabet discloses $1T+ in purchase commitments, future leases, and other obligations;</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p39#a261029p39" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-519a854e37bf" style="display:none"><h3>Alphabet&#x27;s stock falls 12%+, wiping a record $500B from its market cap, after reporting negative cash flow amid its AI spending; the Nasdaq falls 1.4%+ (Stephen Morris/Financial Times)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 12:25</span></div>
+  <div class="sum" data-text="Stephen Morris / Financial Times:
+
+Alphabet&#x27;s stock falls 12%+, wiping a record $500B from its market cap, after reporting negative cash fl…">Stephen Morris / Financial Times:
+
+Alphabet&#x27;s stock falls 12%+, wiping a record $500B from its market cap, after reporting negative cash fl…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p38#a261029p38" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-1fe7b9022d49" style="display:none"><h3>Airbnb spent $12.6M+ since 2025 to become a top LA political contributor, backing Mayor Karen Bass and pushing for friendlier rules ahead of the 2028 Olympics (Liam Dillon/Politico)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 12:15</span></div>
+  <div class="sum" data-text="Liam Dillon / Politico:
+
+Airbnb spent $12.">Liam Dillon / Politico:
+
+Airbnb spent $12.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p37#a261029p37" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-6b836c095774" style="display:none"><h3>Canada-based Cohere completes the first close of a round that it expects to total up to $5B, with Canada agreeing to invest up to $1.14B, at a $20.5B valuation (Bloomberg)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 12:10</span></div>
+  <div class="sum" data-text="Bloomberg:
+
+Canada-based Cohere completes the first close of a round that it expects to total up to $5B, with Canada agreeing to invest up …">Bloomberg:
+
+Canada-based Cohere completes the first close of a round that it expects to total up to $5B, with Canada agreeing to invest up …</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p36#a261029p36" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-6e3c4be14540" style="display:none"><h3>Sources: Situational Awareness is pitching clients to invest in Fluidstack alongside it in a round that values the neocloud at $40B, up from $18B in September (Bloomberg)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 12:05</span></div>
+  <div class="sum" data-text="Bloomberg:
+
+Sources: Situational Awareness is pitching clients to invest in Fluidstack alongside it in a round that values the neocloud at …">Bloomberg:
+
+Sources: Situational Awareness is pitching clients to invest in Fluidstack alongside it in a round that values the neocloud at …</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p35#a261029p35" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-faa3930cf46e" style="display:none"><h3>The UK FCA, which sued Justin Sun-linked crypto exchange HTX in 2025 for &quot;unlawfully promoting crypto asset services&quot;, says HTX will exit the UK in a settlement (Financial Times)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 11:25</span></div>
+  <div class="sum" data-text="Financial Times:
+
+The UK FCA, which sued Justin Sun-linked crypto exchange HTX in 2025 for “unlawfully promoting crypto asset services”, sa…">Financial Times:
+
+The UK FCA, which sued Justin Sun-linked crypto exchange HTX in 2025 for “unlawfully promoting crypto asset services”, sa…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p34#a261029p34" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-2083966ee62f" style="display:none"><h3>Collective, which uses AI to automate bookkeeping for solo business owners, raised a $40M Series B and $60M in nondilutive capital from GC&#x27;s Customer Value Fund (Natalie Breymeyer/Axios)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 11:15</span></div>
+  <div class="sum" data-text="Natalie Breymeyer / Axios:
+
+Collective, which uses AI to automate bookkeeping for solo business owners, raised a $40M Series B and $60M in …">Natalie Breymeyer / Axios:
+
+Collective, which uses AI to automate bookkeeping for solo business owners, raised a $40M Series B and $60M in …</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p33#a261029p33" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-df7022eaa03c" style="display:none"><h3>Ottawa-based Solink, which uses AI to pull data from already-installed security cameras, raised $100M+ led by Vertu Capital, bringing its total raised to $198M+ (Duncan Riley/SiliconANGLE)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 11:05</span></div>
+  <div class="sum" data-text="Duncan Riley / SiliconANGLE:
+
+Ottawa-based Solink, which uses AI to pull data from already-installed security cameras, raised $100M+ led by…">Duncan Riley / SiliconANGLE:
+
+Ottawa-based Solink, which uses AI to pull data from already-installed security cameras, raised $100M+ led by…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p32#a261029p32" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-07feb0865eba" style="display:none"><h3>Thrive Holdings agrees to acquire ADT in an all-cash take-private deal, valuing ADT at ~$7.6B in equity value, a ~46% premium over its October 27 closing price (Claire Rychlewski/Axios)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 10:40</span></div>
+  <div class="sum" data-text="Claire Rychlewski / Axios:
+
+Thrive Holdings agrees to acquire ADT in an all-cash take-private deal, valuing ADT at ~$7.">Claire Rychlewski / Axios:
+
+Thrive Holdings agrees to acquire ADT in an all-cash take-private deal, valuing ADT at ~$7.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p31#a261029p31" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-095c2e4a7f3c" style="display:none"><h3>Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.3 on the Artificial Analysis Coding Agent Index (Radhika Rajkumar/ZDNET)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 10:30</span></div>
+  <div class="sum" data-text="Radhika Rajkumar / ZDNET:
+
+Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.">Radhika Rajkumar / ZDNET:
+
+Mistral releases the weights for Mistral Large 4, or Le Chonk, and says it rivals top open models such as GLM-5.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p30#a261029p30" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-0e2174f081b0" style="display:none"><h3>Serval, which offers AI agents for enterprise IT operations like access management, raised $150M led by Sequoia at a $3B valuation, up from $1B in December 2025 (Harshita Mary Varghese/Reuters)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 09:55</span></div>
+  <div class="sum" data-text="Harshita Mary Varghese / Reuters:
+
+Serval, which offers AI agents for enterprise IT operations like access management, raised $150M led by …">Harshita Mary Varghese / Reuters:
+
+Serval, which offers AI agents for enterprise IT operations like access management, raised $150M led by …</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p29#a261029p29" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-db0f9bb921c3" style="display:none"><h3>Wabi, which is building an AI assistant that integrates into group chats and can take actions like booking appointments, raised $55M at a $1.25B valuation (Micah Barkley/Bloomberg)</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 09:45</span></div>
+  <div class="sum" data-text="Micah Barkley / Bloomberg:
+
+Wabi, which is building an AI assistant that integrates into group chats and can take actions like booking appo…">Micah Barkley / Bloomberg:
+
+Wabi, which is building an AI assistant that integrates into group chats and can take actions like booking appo…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] Techmeme　<a href="https://www.techmeme.com/261029/p28#a261029p28" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-c8889526df5c" style="display:none"><h3>Infini-AI-Lab Releases Hermit, an Open-Source Harness Adapter Framework for AI Agents</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 08:24</span></div>
+  <div class="sum" data-text="Infini-AI-Lab has released Hermit, an open-source harness adapter framework for AI agents.">Infini-AI-Lab has released Hermit, an open-source harness adapter framework for AI agents.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] MarkTechPost　<a href="https://www.marktechpost.com/2026/10/29/infini-ai-lab-hermit-harness-adapter-framework/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-02aebfc3f398" style="display:none"><h3>NVIDIA Releases Nemotron 3.5 Transcribe: An Open 30B MoE Model for 40-Language Transcription with ~4B Active Parameters</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-29 04:41</span></div>
+  <div class="sum" data-text="NVIDIA has released Nemotron 3.">NVIDIA has released Nemotron 3.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[D] MarkTechPost　<a href="https://www.marktechpost.com/2026/10/28/nvidia-nemotron-3-5-transcribe-open-speech-llm/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-becd12354f28" style="display:none"><h3>Google opens Android development to third-party AI agents and unveils new Gemini APIs</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-28 16:59</span></div>
+  <div class="sum" data-text="Google is opening up Android Studio to third-party AI agents.">Google is opening up Android Studio to third-party AI agents.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-ee31e0102e56" style="display:none"><h3>OpenAI teases Dots for Europe, but its Berlin DevDay was really about building a platform</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-28 16:25</span></div>
+  <div class="sum" data-text="At DevDay Exchange in Berlin, OpenAI mostly repeated what it had already announced, but it did share a few new details.">At DevDay Exchange in Berlin, OpenAI mostly repeated what it had already announced, but it did share a few new details.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/openai-teases-dots-for-europe-but-its-berlin-devday-was-really-about-building-a-platform/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-690be7f28dbe" style="display:none"><h3>Claude for Legal now verifies sources automatically, then hands the file to a lawyer</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-28 16:20</span></div>
+  <div class="sum" data-text="Anthropic is adding pre-built templates to Claude for Legal.">Anthropic is adding pre-built templates to Claude for Legal.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/claude-for-legal-now-verifies-sources-automatically-then-hands-the-file-to-a-lawyer/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-09e3fdf794ae" style="display:none"><h3>Nvidia&#x27;s open Nemotron 3.5 Transcribe combines transcription, translation, and speaker recognition</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-28 15:49</span></div>
+  <div class="sum" data-text="Nvidia has released Nemotron 3.">Nvidia has released Nemotron 3.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] The Decoder　<a href="https://the-decoder.com/nvidias-open-nemotron-3-5-transcribe-combines-transcription-translation-and-speaker-recognition/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-75e2017ed4c5" style="display:none"><h3>OpenAI and ServiceNow expand partnership across enterprise workflows</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-28 13:15</span></div>
+  <div class="sum" data-text="OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and …">OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and …</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/openai-servicenow-partnership-expansion" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-0dc3cf0b7c98" style="display:none"><h3>The future of the firm</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-28 10:00</span></div>
+  <div class="sum" data-text="How AI might enter the org chart—beneath, beside, and between us.">How AI might enter the org chart—beneath, beside, and between us.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/the-future-of-the-firm" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-41c97fe8dc29" style="display:none"><h3>Legora is building the agentic operating system for legal work</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-28 09:30</span></div>
+  <div class="sum" data-text="See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on…">See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/legora" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-d17d13a0006a" style="display:none"><h3>Genie 4: A new generation of world simulation</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-27 16:01</span></div>
+  <div class="sum" data-text="Genie 4: our new world model unlocking unprecedented realism in real-time simulation.">Genie 4: our new world model unlocking unprecedented realism in real-time simulation.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] Google DeepMind　<a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-d42fb1eb3362" style="display:none"><h3>Retell uses OpenAI models to help power 100M monthly calls</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-27 15:00</span></div>
+  <div class="sum" data-text="GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.">GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/retell-ai" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-a3a879144b29" style="display:none"><h3>OpenAI expands partnership with Oracle to bring its apps to ChatGPT</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-27 07:00</span></div>
+  <div class="sum" data-text="OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.">OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/oracle-apps-in-chatgpt" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-8cb333260a17" style="display:none"><h3>How Check Point accelerates vulnerability research with Daybreak</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-27 00:00</span></div>
+  <div class="sum" data-text="With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intel…">With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intel…</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/check-point-daybreak" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div><div id="d-250e5d8f3024" style="display:none"><h3>Greptile takes bug detection beyond code review with GPT-6 Astra</h3>
+  <div class="meta"><span>全球</span><span>大模型</span><span>常规经营</span><span>重要度 43</span><span>2026-10-26 22:00</span></div>
+  <div class="sum" data-text="How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.">How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.</div>
+  <h4>原文来源（1 个）</h4>
+  <div class="src">[B] OpenAI 官方博客　<a href="https://openai.com/index/greptile-code-review-codex-astra" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>
+  <div class="audit"><span class="ok">✓ 已通过校验</span>（原文首句，数字可在原文定位）</div>
+</div>
+
+
+<footer>
+  <div class="wrap">
+    <div class="save-slot">
+      <span class="slot-no">SAVE SLOT 01</span>
+      <b>2026-W44</b>
+      <span>最后存档 2026-10-30 02:33</span>
+    </div><br>
+    <b class="hl">口径</b>　赛道活跃度 = Σ(事实类重要度分) × 0.6 + 条目数 × 4；重要度满分 100，核心关注赛道 ×1.15。<br>
+    <b class="hl">重要</b>　活跃度反映<b>报道密集度</b>，不等同于行业景气度。媒体密集报道可能仅因单一热点事件，
+    不代表行业基本面好转。本页仅聚合公开资讯摘要并保留原文链接，不构成投资建议。<br>
+    <b class="hl">来源</b>　公开 RSS 源；摘要由模型生成或取原文首句，每条均可回溯原文。
+  </div>
+</footer>
+
+<script src="./assets/app.js"></script>
+</body></html>
