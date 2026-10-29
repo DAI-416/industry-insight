@@ -101,7 +101,7 @@ def classify_by_llm(item: dict, tax: dict, cfg: dict) -> dict | None:
     prompt = PROMPT.format(
         tracks=track_lines,
         title=item["title"],
-        body=(item.get("content") or item.get("summary") or "")[:800],
+        body=(item.get("content") or item.get("summary") or "")[:500],
     )
     raw = gemini.generate(prompt, cfg, purpose="classify")
     data = gemini.extract_json(raw)

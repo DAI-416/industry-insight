@@ -4,20 +4,21 @@
 provider: gemini
 endpoint: https://generativelanguage.googleapis.com/v1beta/models
 
-# 型号策略：高频轻量任务用 flash-lite（便宜快），摘要用 flash（质量更好）
+# 型号策略：分类与摘要都用 flash-lite —— 实测 3.8-flash 单条要 10s+，
+# 152 条并发 3 要跑 18 分钟；flash-lite 同样任务快 3-5 倍，质量对本场景足够
 # 型号名会随官方弃用而失效，核对入口：https://ai.google.dev/gemini-api/docs/models
 #   2026-10-20：gemini-2.5-* 已弃用，替换为 gemini-3.8-flash / gemini-3.5-flash-lite
 #   若日志出现 Gemini HTTP 404/400，先来这里核对型号
 models:
   classify: gemini-3.5-flash-lite
-  summarize: gemini-3.8-flash
+  summarize: gemini-3.5-flash-lite
   review: gemini-3.8-flash
 
 params:
   temperature: 0.2
   max_output_tokens: 512
-  timeout_sec: 30
-  concurrency: 3
+  timeout_sec: 20
+  concurrency: 8
   max_retry: 2
 
 # 成本守门：达到上限后自动降级为「仅采集不摘要」
