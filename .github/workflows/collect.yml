@@ -46,6 +46,14 @@ jobs:
             -d '{"contents":[{"parts":[{"text":"用一个词回答：你好"}]}]}' || echo "curl 失败"
           head -c 400 /tmp/gen.json 2>/dev/null; echo
 
+      - name: 更新大模型跑分（每周一）
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+        continue-on-error: true
+        run: |
+          if [ "$(date -u +%u)" = "1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python3 tools/update_benchmarks.py || echo "跑分抓取失败，保留旧数据"
+          fi
+
       - name: 运行管线（采集 → 分类 → 打分 → 摘要 → 统计 → 建站）
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

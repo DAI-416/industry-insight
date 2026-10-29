@@ -4,6 +4,7 @@
 全自动采集 → 分类打分 → 摘要校验 → 数据看板，部署在 GitHub Pages。
 
 - 线上地址：**https://dai-416.github.io/industry-insight/**
+- 页面：首页 / 大模型专栏 / 数据看板 / 检索 / 24 个赛道详情
 - 需求文档：[行业洞察周报_PRD_v3.1.md](行业洞察周报_PRD_v3.1.md)
 - 仓库：https://github.com/DAI-416/industry-insight
 
@@ -103,7 +104,7 @@ python3 tools/check_sources.py --dry-run  # 只看结果不写回
 
 ## 四、当前信源状态（实测，2026-10-29）
 
-30 个源中 **10 个 RSS 可用**：
+40 个源中 **20 个 RSS 可用**（含新增的 10 个 AI 信源）：
 
 | 源 | 覆盖 | 级别 |
 |---|---|---|
@@ -117,6 +118,16 @@ python3 tools/check_sources.py --dry-run  # 只看结果不写回
 | The Verge | AI、消费电子 | D |
 | TechCrunch | AI 创投、融资 | D |
 | SEMI | 半导体产业 | B |
+| OpenAI 官方博客 | 大模型版本与能力 | B |
+| Google AI 博客 | Gemini 与 AI 研究 | B |
+| Google DeepMind | 前沿模型研究 | B |
+| Hugging Face | 开源模型与权重发布 | B |
+| The Decoder | AI 产业深度 | B |
+| MarkTechPost | AI 技术快讯 | D |
+| InfoQ 中文 | 国内 AI 工程实践 | B |
+| MIT 科技评论 | AI 与社会 | D |
+| Techmeme | 科技聚合（AI 占比高） | D |
+| Simon Willison | AI 工程实践个人博客 | E |
 
 **20 个不可用**，原因分三类：
 
@@ -142,6 +153,18 @@ python3 tools/check_sources.py --dry-run  # 只看结果不写回
 规则模式下，页面会用「低置信归类」徽标标出 `confidence < 0.7` 的条目——**看到这个标就说明该条归类不可靠**。
 
 ---
+
+## 五又四分之一、大模型专栏
+
+独立页面 `models.html`，聚焦「模型本身」而非应用落地：
+
+| 模块 | 内容 | 数据来源 |
+|---|---|---|
+| 跑分排行 | 综合智能指数 / 上下文窗口 / 输出价格三个维度，可切换 | Artificial Analysis，`tools/update_benchmarks.py` 抓取 |
+| 厂商动态 | 本周被提及条数排序，显示旗舰型号与最新动态 | 本地事件库统计 |
+| 本周资讯 | LLM 赛道条目流（模型版本、能力评测、厂商动作） | 信源采集 |
+
+跑分数据每周一自动更新（`collect.yml` 内的条件步骤）。**抓取失败时保留旧文件**，页面显示「截至 X」，不会出现空白或编造数据。
 
 ## 五半、视觉体系（16-bit 像素 RPG）
 
