@@ -36,7 +36,15 @@
   "count": 5
  },
  {
+  "name": "收购",
+  "count": 4
+ },
+ {
   "name": "加息",
+  "count": 4
+ },
+ {
+  "name": "融资",
   "count": 4
  },
  {
@@ -64,15 +72,7 @@
   "count": 4
  },
  {
-  "name": "算力",
-  "count": 3
- },
- {
   "name": "芯片",
-  "count": 3
- },
- {
-  "name": "收购",
   "count": 3
  },
  {
@@ -89,10 +89,6 @@
  },
  {
   "name": "Apple",
-  "count": 3
- },
- {
-  "name": "融资",
   "count": 3
  },
  {
@@ -136,6 +132,10 @@
   "count": 3
  },
  {
+  "name": "数据中心",
+  "count": 2
+ },
+ {
   "name": "美国经济",
   "count": 2
  },
@@ -148,15 +148,15 @@
   "count": 2
  },
  {
+  "name": "算力",
+  "count": 2
+ },
+ {
   "name": "光模块",
   "count": 2
  },
  {
   "name": "Jeff",
-  "count": 2
- },
- {
-  "name": "Wabi",
   "count": 2
  }
 ]
