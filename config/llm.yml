@@ -1,0 +1,32 @@
+# LLM 配置（Google Gemini）
+# 密钥经环境变量 GEMINI_API_KEY 注入，绝不写入本文件或入库
+
+provider: gemini
+endpoint: https://generativelanguage.googleapis.com/v1beta/models
+
+# 型号策略：轻量任务用 flash，复杂归类用 pro
+# 型号名以启用时官方可用列表为准，见 https://ai.google.dev/gemini-api/docs/models
+models:
+  classify: gemini-2.0-flash
+  summarize: gemini-2.0-flash
+  review: gemini-2.0-pro
+
+params:
+  temperature: 0.2
+  max_output_tokens: 512
+  timeout_sec: 30
+  concurrency: 3
+  max_retry: 2
+
+# 成本守门：达到上限后自动降级为「仅采集不摘要」
+budget:
+  monthly_cny_limit: 100
+  cny_per_1k_input_tokens: 0.001
+  cny_per_1k_output_tokens: 0.004
+
+# 降级策略：无 API Key 或预算耗尽时启用
+fallback:
+  classify: rules       # 关键词规则分类
+  summarize: first_sentence   # 取正文首句截断
+  # 置信度低于该阈值的分类结果进入待人工归类队列
+  min_confidence: 0.6

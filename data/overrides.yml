@@ -1,0 +1,40 @@
+# 人工修正层（PRD §6.4）
+# 修改后提交，Actions 会在 5 分钟内重建站点
+#
+# 可用操作：
+#   pin            置顶（在同类列表里优先展示）
+#   recategorize   改赛道 / 市场 / 内容类型
+#   rescore        改重要度分（0-100，等级自动重算）
+#   delete         删除（从发布态移出，保留记录）
+#   add            补录一条（也可写在 data/manual/*.md）
+#
+# 条目 id 可在页面上打开抽屉后查看，或查阅 data/events/YYYY-Www.json
+#
+# 示例（取消注释即可生效）：
+#
+# - op: recategorize
+#   id: evt_2026W44_0137
+#   track: TEC-SEMI
+#   market: M-GL
+#   content_type: fact
+#
+# - op: rescore
+#   id: evt_2026W44_0201
+#   score: 85
+#
+# - op: pin
+#   id: evt_2026W44_0088
+#
+# - op: delete
+#   id: evt_2026W44_0455
+#   reason: 荐股内容
+#
+# - op: add
+#   week: 2026-W44
+#   title: 某脑机接口公司完成临床试验入组
+#   url: https://example.com/news/123
+#   track: TEC-BCI
+#   market: M-A
+#   type: fact
+#   score: 70
+#   summary: 一句话摘要（人工撰写）

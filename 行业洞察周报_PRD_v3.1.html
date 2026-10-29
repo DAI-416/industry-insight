@@ -1,0 +1,2414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>行业洞察周报_PRD_v3.1</title>
+<style>
+:root{
+  --ink:#1B3A5C; --ink-soft:#3E5871; --muted:#5A6B7B; --line:#E3E8ED;
+  --bg:#FFFFFF; --card:#F7F9FB; --crit:#B03030; --warn:#C98A2E; --up:#2E7D5B;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#24313D;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,sans-serif;
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:980px;margin:0 auto;padding:48px 32px 96px}
+h1{font-size:28px;color:var(--ink);font-weight:600;letter-spacing:.3px;
+  margin:0 0 8px;padding-bottom:16px;border-bottom:2px solid var(--ink)}
+h2{font-size:20px;color:var(--ink);font-weight:600;margin:44px 0 14px;
+  padding-left:11px;border-left:4px solid var(--ink)}
+h3{font-size:16px;color:var(--ink-soft);font-weight:600;margin:26px 0 10px}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:4px 0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:13.5px}
+th{background:var(--card);color:var(--ink);font-weight:600;text-align:left;
+  padding:9px 12px;border:1px solid var(--line);white-space:nowrap}
+td{padding:8px 12px;border:1px solid var(--line);vertical-align:top}
+tbody tr:nth-child(even){background:#FBFCFD}
+code{background:var(--card);padding:1px 5px;border-radius:3px;
+  font-family:"SF Mono",Menlo,Consolas,monospace;font-size:13px;color:var(--ink)}
+pre{background:var(--card);padding:14px 16px;border:1px solid var(--line);
+  border-radius:6px;overflow-x:auto;line-height:1.55}
+pre code{background:none;padding:0}
+blockquote{margin:16px 0;padding:12px 18px;background:var(--card);
+  border-left:3px solid var(--warn);color:var(--ink-soft)}
+blockquote p{margin:4px 0}
+strong{color:var(--ink);font-weight:600}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+a{color:var(--ink)}
+@media(max-width:768px){.wrap{padding:28px 16px 64px}table{font-size:12.5px}}
+@media print{
+  .wrap{max-width:none;padding:0}
+  h2{page-break-after:avoid} table{page-break-inside:avoid}
+  body{font-size:11pt}
+}
+</style>
+</head>
+<body><div class="wrap">
+<h1>行业洞察周报 产品需求文档（PRD v3.1）</h1>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文档名称</td>
+<td>行业洞察周报 PRD</td>
+</tr>
+<tr>
+<td>版本</td>
+<td>v3.1（替代 v3.0）</td>
+</tr>
+<tr>
+<td>撰写日期</td>
+<td>2026-10-29</td>
+</tr>
+<tr>
+<td>文档状态</td>
+<td>已确认 · 待确认项全部关闭，可进入 M0</td>
+</tr>
+<tr>
+<td>产品定位</td>
+<td>个人投研自用 · 投资/科技/宏观三域周度动态追踪 + 数据看板</td>
+</tr>
+<tr>
+<td>部署形态</td>
+<td>公开 GitHub 仓库 + GitHub Actions + GitHub Pages</td>
+</tr>
+<tr>
+<td>LLM</td>
+<td>Google Gemini API</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>0. 修订记录</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>修改内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1.0</td>
+<td>2026-10-29</td>
+<td>首版：31 个申万一级行业全行业覆盖，自建服务 + 登录后台</td>
+</tr>
+<tr>
+<td>v2.0</td>
+<td>2026-10-29</td>
+<td>收敛为金融/科技/宏观三域；纳入市场维度；改 GitHub 静态站；固化 30 信源；取消邮件推送；保留观点类</td>
+</tr>
+<tr>
+<td>v3.0</td>
+<td>2026-10-29</td>
+<td><strong>四项变更</strong>：① 金融域重构为「投资」域（投资方向 + 赛道观点）；② 部署方案定为公开仓库 + Pages；③ LLM 定为 Gemini；④ 新增数据可视化看板</td>
+</tr>
+<tr>
+<td>v3.1</td>
+<td>2026-10-29</td>
+<td>关闭最后三项待确认：Q9 投资域不收录宏观利率/流动性条目；Q10 高频实体合并排行；Q11 核心关注赛道固定为四个</td>
+</tr>
+</tbody>
+</table>
+<h3>0.1 v3.1 变更摘要</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>变更</th>
+<th>影响范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1</td>
+<td>投资域不收录「宏观利率/流动性」类条目，统一归 MAC-MP</td>
+<td>§2.1 边界判定表、验收 A6</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>V9 高频实体合并排行，不分公司/机构/技术词</td>
+<td>§7.2</td>
+</tr>
+<tr>
+<td>C3</td>
+<td>核心关注赛道固定为四个，不做产品化动态调整入口</td>
+<td>§2.2</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>全部待确认问题（Q1-Q11）关闭，文档转为可开发状态</td>
+<td>§14.2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1. 背景与目标</h2>
+<h3>1.1 背景</h3>
+<p>投研与金融科技从业者需要持续跟踪行业运行状况，但信息获取存在三个结构性痛点：</p>
+<ul>
+<li><strong>信息过载与碎片化</strong>：关注领域每天产生大量资讯，散落在新闻客户端、公众号、研报平台、监管公告、海外媒体等多个渠道，人工跨平台搜集成本高。</li>
+<li><strong>缺乏横截面视角</strong>：单点新闻只能回答"发生了什么"，无法回答"本周哪个赛道在发生密集变化"。</li>
+<li><strong>缺乏量化回顾</strong>：看过的资讯无法沉淀为可比较的时序数据，景气度迁移、赛道冷热变化只能凭印象，无法回顾验证。</li>
+</ul>
+<h3>1.2 产品目标</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>目标</th>
+<th>衡量方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G1</td>
+<td>自动产出三域周度动态概览，替代人工跨平台搜集</td>
+<td>人工搜集耗时从每周 4-6 小时降至 ≤30 分钟（仅复核）</td>
+</tr>
+<tr>
+<td>G2</td>
+<td>对 AI、人形机器人、脑机接口、半导体四个赛道提供高灵敏度追踪</td>
+<td>四赛道重大事件 3 小时内进入页面</td>
+</tr>
+<tr>
+<td>G3</td>
+<td>建立横截面比较能力，快速定位本周"变化最密集"的赛道</td>
+<td>60 秒内判断本周 Top 5 活跃赛道及驱动事件</td>
+</tr>
+<tr>
+<td>G4</td>
+<td>每条动态可回溯原文，杜绝无源结论</td>
+<td>100% 条目携带 ≥1 条原始链接</td>
+</tr>
+<tr>
+<td>G5</td>
+<td>形成可检索的历史知识库</td>
+<td>支持检索 52 周以上历史条目</td>
+</tr>
+<tr>
+<td><strong>G6</strong></td>
+<td><strong>通过可视化图表呈现赛道景气迁移与结构变化</strong>（v3.0 新增）</td>
+<td>可在 30 秒内从看板读出近 12 周赛道冷热变化</td>
+</tr>
+</tbody>
+</table>
+<h3>1.3 非目标（本期明确不做）</h3>
+<ul>
+<li><strong>不做行情与量化数据</strong>：不接入股价、K 线、财务数据、估值指标。本产品解决"事件与叙事"，不解决"定价"。</li>
+<li><strong>不做投资建议输出</strong>：不生成买卖信号、不做标的推荐。</li>
+<li><strong>不做金融机构日常经营跟踪</strong>（v3.0 新增边界）：银行的存贷数据、保险保费、券商经纪业务等<strong>金融机构经营动态不属于收录范围</strong>，除非该事件直接指向"资金流向变化"或"对某赛道的投资观点"。此边界用于避免投资域又退回成金融行业域。</li>
+<li><strong>不做多用户协作与权限体系</strong>。</li>
+<li><strong>不做移动端原生 App</strong>：仅保证移动端浏览器可用。</li>
+<li><strong>不做邮件/消息推送</strong>。</li>
+</ul>
+<h3>1.4 使用场景</h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>描述</th>
+<th>频次</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1 周度扫读</td>
+<td>每周固定时间（周一晨间）打开首页，10 分钟内扫完三域本周要点</td>
+<td>每周 1 次</td>
+</tr>
+<tr>
+<td>S2 核心赛道深挖</td>
+<td>对四个核心赛道随时查看最新进展与事件脉络</td>
+<td>每日/每周数次</td>
+</tr>
+<tr>
+<td>S3 看板回顾（新增）</td>
+<td>打开数据看板，看近 12 周赛道景气迁移、市场结构变化</td>
+<td>每周/每月 1 次</td>
+</tr>
+<tr>
+<td>S4 回溯检索</td>
+<td>面试/写作/研究时检索"某赛道某时间段发生了什么"</td>
+<td>按需</td>
+</tr>
+<tr>
+<td>S5 临时补充与修正</td>
+<td>补录管线漏掉的信息，或修正错误归类</td>
+<td>每周 1-2 次</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. 分类体系</h2>
+<p>采用 <strong>三维分类</strong>：<code>域 × 赛道</code> 定内容归属，<code>市场</code> 定主体地域，<code>内容类型</code> 定事实/观点。</p>
+<h3>2.1 域与赛道</h3>
+<h4>域一：投资（Investment）— v3.0 重构</h4>
+<blockquote>
+<p><strong>重构说明</strong>：原「金融」域按机构类型切分（银行/券商/保险/金融科技/另类/监管），v3.0 改为<strong>按投资视角切分</strong>——只回答两个问题：<strong>钱往哪去</strong>、<strong>市场对赛道怎么看</strong>。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>赛道 ID</th>
+<th>赛道名</th>
+<th>收录范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INV-VC</td>
+<td>一级市场投融资</td>
+<td>融资事件、轮次与金额、独角兽、战投、CVC</td>
+</tr>
+<tr>
+<td>INV-FUND</td>
+<td>基金与募资</td>
+<td>新基金设立、LP 动向、政府引导基金、母基金、募资规模</td>
+</tr>
+<tr>
+<td>INV-EXIT</td>
+<td>退出与并购</td>
+<td>IPO、并购重组、股权转让、S 基金、退出回报</td>
+</tr>
+<tr>
+<td>INV-FLOW</td>
+<td>资金流向与配置</td>
+<td>北向/南向资金、公募与私募配置变化、板块资金流、机构仓位</td>
+</tr>
+<tr>
+<td>INV-VIEW</td>
+<td>赛道投资观点</td>
+<td>机构研报观点、投资人判断、估值与性价比讨论（<strong>默认归入 opinion</strong>）</td>
+</tr>
+<tr>
+<td>INV-POLICY</td>
+<td>投资政策与监管</td>
+<td>IPO 政策、创投与私募政策、外资准入、资本利得税等影响投资的政策</td>
+</tr>
+</tbody>
+</table>
+<p><strong>边界判定规则</strong>（供 LLM 分类与人工复核使用）：</p>
+<table>
+<thead>
+<tr>
+<th>事件示例</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>某 AI 芯片公司完成 B 轮融资</td>
+<td>INV-VC ✅</td>
+</tr>
+<tr>
+<td>某省设立 100 亿人工智能产业基金</td>
+<td>INV-FUND ✅</td>
+</tr>
+<tr>
+<td>某券商发布研报看好人形机器人</td>
+<td>INV-VIEW ✅（opinion）</td>
+</tr>
+<tr>
+<td>某银行公布年度净利润增长 5%</td>
+<td>❌ 不收录（金融经营，非投资视角）</td>
+</tr>
+<tr>
+<td>某保险公司保费收入同比下滑</td>
+<td>❌ 不收录</td>
+</tr>
+<tr>
+<td>证监会优化 IPO 审核节奏</td>
+<td>INV-POLICY ✅</td>
+</tr>
+<tr>
+<td>北向资金净买入半导体板块</td>
+<td>INV-FLOW ✅</td>
+</tr>
+<tr>
+<td>央行下调 MLF 利率 / 流动性投放</td>
+<td>❌ 投资域不收录，归 MAC-MP（v3.1 确认）</td>
+</tr>
+<tr>
+<td>市场利率下行导致某赛道估值抬升的分析</td>
+<td>INV-VIEW ✅（opinion）</td>
+</tr>
+</tbody>
+</table>
+<h4>域二：科技（Tech）— 不变</h4>
+<table>
+<thead>
+<tr>
+<th>赛道 ID</th>
+<th>赛道名</th>
+<th>核心关注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TEC-AI</td>
+<td>AI 与大模型</td>
+<td>⭐ 核心关注</td>
+</tr>
+<tr>
+<td>TEC-ROBO</td>
+<td>人形机器人与具身智能</td>
+<td>⭐ 核心关注</td>
+</tr>
+<tr>
+<td>TEC-BCI</td>
+<td>脑机接口</td>
+<td>⭐ 核心关注</td>
+</tr>
+<tr>
+<td>TEC-SEMI</td>
+<td>半导体</td>
+<td>⭐ 核心关注</td>
+</tr>
+<tr>
+<td>TEC-COMPUTE</td>
+<td>算力与基础设施</td>
+<td>数据中心、GPU/ASIC、光模块、先进封装</td>
+</tr>
+<tr>
+<td>TEC-CLOUD</td>
+<td>云计算与软件</td>
+<td>云服务、SaaS、企业软件、开源生态</td>
+</tr>
+<tr>
+<td>TEC-CE</td>
+<td>消费电子与智能硬件</td>
+<td>手机、PC、可穿戴、XR</td>
+</tr>
+<tr>
+<td>TEC-AUTO</td>
+<td>自动驾驶与智能车</td>
+<td>智驾、车规芯片、智能化</td>
+</tr>
+<tr>
+<td>TEC-NET</td>
+<td>通信与网络</td>
+<td>5G/6G、卫星互联网、光通信</td>
+</tr>
+<tr>
+<td>TEC-SEC</td>
+<td>网络安全</td>
+<td>—</td>
+</tr>
+<tr>
+<td>TEC-QUANT</td>
+<td>量子计算</td>
+<td>低优先级，可关闭</td>
+</tr>
+</tbody>
+</table>
+<h4>域三：宏观经济（Macro）— 不变</h4>
+<table>
+<thead>
+<tr>
+<th>赛道 ID</th>
+<th>赛道名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MAC-MP</td>
+<td>货币政策与利率</td>
+</tr>
+<tr>
+<td>MAC-FP</td>
+<td>财政与产业政策</td>
+</tr>
+<tr>
+<td>MAC-DATA</td>
+<td>增长与景气数据（GDP/PMI/通胀/就业/社融）</td>
+</tr>
+<tr>
+<td>MAC-PROP</td>
+<td>地产与信贷周期</td>
+</tr>
+<tr>
+<td>MAC-FX</td>
+<td>汇率与资本流动</td>
+</tr>
+<tr>
+<td>MAC-CMD</td>
+<td>大宗商品与能源</td>
+</tr>
+<tr>
+<td>MAC-TRADE</td>
+<td>国际贸易与地缘（关税、出口管制，与半导体强关联）</td>
+</tr>
+<tr>
+<td>MAC-GLOBAL</td>
+<td>全球宏观（美欧日主要经济体）</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 核心关注机制</h3>
+<p>TEC-AI / TEC-ROBO / TEC-BCI / TEC-SEMI 标记 <code>focus: true</code>：</p>
+<ol>
+<li><strong>首页置顶</strong>：大卡片置于页面最上方。</li>
+<li><strong>采集加权</strong>：采集频率每 3 小时（其他每 6 小时）。</li>
+<li><strong>重要度加成</strong>：× 1.15（上限 100）。</li>
+<li><strong>看板突出</strong>（v3.0 新增）：数据看板中核心赛道使用主色 <code>#1B3A5C</code>，其余使用灰蓝。</li>
+<li><strong>固定不变</strong>（v3.1 确认）：核心关注赛道固定为上述四个，<strong>不提供产品化的动态调整入口</strong>；确需变更时直接修改 <code>config/taxonomy.yml</code> 中的 <code>is_focus</code> 字段。</li>
+</ol>
+<h3>2.3 市场维度</h3>
+<table>
+<thead>
+<tr>
+<th>市场 ID</th>
+<th>名称</th>
+<th>覆盖范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M-A</td>
+<td>A 股</td>
+<td>沪深上市公司、国内政策与产业</td>
+</tr>
+<tr>
+<td>M-HK</td>
+<td>港股</td>
+<td>港交所、港股公司、南向资金</td>
+</tr>
+<tr>
+<td>M-CN</td>
+<td>美股中概</td>
+<td>中概股、美股上市中国资产</td>
+</tr>
+<tr>
+<td>M-GL</td>
+<td>全球</td>
+<td>海外科技巨头、海外央行、国际机构、非中概海外主体</td>
+</tr>
+</tbody>
+</table>
+<p>每个条目必须标注 <strong>1 个主市场</strong>，可附加 <strong>0-N 个关联市场</strong>。</p>
+<h3>2.4 内容类型</h3>
+<table>
+<thead>
+<tr>
+<th>类型 ID</th>
+<th>名称</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fact</code></td>
+<td>事实事件</td>
+<td>参与活跃度计算，进入主列表</td>
+</tr>
+<tr>
+<td><code>opinion</code></td>
+<td>观点与解读</td>
+<td>不参与活跃度计算，进入「观点与解读」区块</td>
+</tr>
+</tbody>
+</table>
+<p>INV-VIEW 赛道条目默认判定为 <code>opinion</code>（除非是实际的投资决策事实，如"某基金完成对某赛道 10 亿元投资"则判 fact）。</p>
+<hr />
+<h2>3. 信息架构</h2>
+<pre><code>首页 (Home)
+├── 顶栏：周次 / 更新时间 / 市场筛选 / 导航（首页 · 数据看板 · 检索）
+├── 【置顶】核心关注区：AI · 人形机器人 · 脑机接口 · 半导体
+├── 三域分区：投资 / 科技 / 宏观
+├── 本周关键信号（重要度 ≥75，最多 10 条）
+├── 观点与解读（最多 5 条，可折叠）
+└── 本周实时流（本周至今全部条目，时间倒序）
+         │
+         ├── 赛道详情页 (Track)
+         │      ├── 本周事实类条目（按重要度）
+         │      ├── 近 8 周活跃度迷你走势（v3.0 升级为可交互图）
+         │      ├── 观点与解读分区
+         │      └── 市场分布
+         │             └── 事件详情（右侧抽屉）
+         │
+         ├── 数据看板 (Analytics) ← v3.0 新增
+         │      ├── 本周数据摘要（自动生成，代码统计）
+         │      ├── 本周快照：赛道活跃度排行 · 市场分布 · 内容类型 · 重要度分布
+         │      ├── 时序趋势：核心赛道走势 · 赛道×周热力矩阵 · 环比涨跌
+         │      └── 结构与来源：信源贡献 · 高频实体
+         │
+         └── 检索层：按关键词/域/赛道/市场/重要度/类型/信源筛选
+</code></pre>
+<hr />
+<h2>4. 数据源清单（30 个）</h2>
+<h3>4.1 信源分级</h3>
+<table>
+<thead>
+<tr>
+<th>级别</th>
+<th>类型</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S</td>
+<td>官方与监管机构</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>A</td>
+<td>主流财经媒体</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>B</td>
+<td>行业垂直媒体 / 产业组织</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>C</td>
+<td>公司公告与 IR</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>D</td>
+<td>海外媒体</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>E</td>
+<td>自媒体 / 社媒</td>
+<td>0.3</td>
+</tr>
+</tbody>
+</table>
+<h3>4.2 30 个信源</h3>
+<p><strong>A. 官方与监管（8）</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>信源</th>
+<th>域名</th>
+<th>级别</th>
+<th>主要覆盖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>中国政府网</td>
+<td>gov.cn</td>
+<td>S</td>
+<td>宏观与产业政策</td>
+</tr>
+<tr>
+<td>2</td>
+<td>中国人民银行</td>
+<td>pbc.gov.cn</td>
+<td>S</td>
+<td>货币政策</td>
+</tr>
+<tr>
+<td>3</td>
+<td>国家金融监督管理总局</td>
+<td>nfra.gov.cn</td>
+<td>S</td>
+<td>金融监管</td>
+</tr>
+<tr>
+<td>4</td>
+<td>中国证监会</td>
+<td>csrc.gov.cn</td>
+<td>S</td>
+<td>IPO、资本市场政策（→ INV-POLICY）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>国家统计局</td>
+<td>stats.gov.cn</td>
+<td>S</td>
+<td>宏观数据</td>
+</tr>
+<tr>
+<td>6</td>
+<td>国家发改委</td>
+<td>ndrc.gov.cn</td>
+<td>S</td>
+<td>产业政策</td>
+</tr>
+<tr>
+<td>7</td>
+<td>美联储</td>
+<td>federalreserve.gov</td>
+<td>S</td>
+<td>全球货币政策</td>
+</tr>
+<tr>
+<td>8</td>
+<td>国际货币基金组织</td>
+<td>imf.org</td>
+<td>S</td>
+<td>全球宏观</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. 国内财经媒体（8）</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>信源</th>
+<th>域名</th>
+<th>级别</th>
+<th>主要覆盖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>财新</td>
+<td>caixin.com</td>
+<td>A</td>
+<td>金融、宏观深度、一级市场</td>
+</tr>
+<tr>
+<td>10</td>
+<td>第一财经</td>
+<td>yicai.com</td>
+<td>A</td>
+<td>财经综合</td>
+</tr>
+<tr>
+<td>11</td>
+<td>财联社</td>
+<td>cls.cn</td>
+<td>A</td>
+<td>快讯、A股、资金流向</td>
+</tr>
+<tr>
+<td>12</td>
+<td>华尔街见闻</td>
+<td>wallstreetcn.com</td>
+<td>A</td>
+<td>全球宏观、市场</td>
+</tr>
+<tr>
+<td>13</td>
+<td>上海证券报</td>
+<td>cnstock.com</td>
+<td>A</td>
+<td>资本市场、IPO</td>
+</tr>
+<tr>
+<td>14</td>
+<td>证券时报</td>
+<td>stcn.com</td>
+<td>A</td>
+<td>资本市场、公司</td>
+</tr>
+<tr>
+<td>15</td>
+<td>21 世纪经济报道</td>
+<td>21jingji.com</td>
+<td>A</td>
+<td>财经综合</td>
+</tr>
+<tr>
+<td>16</td>
+<td>经济观察报</td>
+<td>eeo.com.cn</td>
+<td>A</td>
+<td>宏观、产业深度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. 国内科技垂直（6）</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>信源</th>
+<th>域名</th>
+<th>级别</th>
+<th>主要覆盖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17</td>
+<td>机器之心</td>
+<td>jiqizhixin.com</td>
+<td>B</td>
+<td>⭐ AI、人形机器人、脑机接口</td>
+</tr>
+<tr>
+<td>18</td>
+<td>量子位</td>
+<td>qbitai.com</td>
+<td>B</td>
+<td>⭐ AI</td>
+</tr>
+<tr>
+<td>19</td>
+<td>智东西</td>
+<td>zhidx.com</td>
+<td>B</td>
+<td>⭐ 智能硬件、机器人</td>
+</tr>
+<tr>
+<td>20</td>
+<td>集微网</td>
+<td>ijiwei.com</td>
+<td>B</td>
+<td>⭐ 半导体</td>
+</tr>
+<tr>
+<td>21</td>
+<td>36 氪</td>
+<td>36kr.com</td>
+<td>B</td>
+<td>创投与融资（→ INV-VC）</td>
+</tr>
+<tr>
+<td>22</td>
+<td>虎嗅</td>
+<td>huxiu.com</td>
+<td>E</td>
+<td>观点评论（→ opinion 池）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>D. 海外媒体与机构（8）</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>信源</th>
+<th>域名</th>
+<th>级别</th>
+<th>主要覆盖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>23</td>
+<td>路透社</td>
+<td>reuters.com</td>
+<td>D</td>
+<td>全球财经、宏观</td>
+</tr>
+<tr>
+<td>24</td>
+<td>日经亚洲</td>
+<td>asia.nikkei.com</td>
+<td>D</td>
+<td>亚洲科技、半导体供应链</td>
+</tr>
+<tr>
+<td>25</td>
+<td>南华早报</td>
+<td>scmp.com</td>
+<td>D</td>
+<td>中国科技与产业（港股视角）</td>
+</tr>
+<tr>
+<td>26</td>
+<td>IEEE Spectrum</td>
+<td>spectrum.ieee.org</td>
+<td>B</td>
+<td>⭐ 机器人、脑机接口</td>
+</tr>
+<tr>
+<td>27</td>
+<td>The Verge</td>
+<td>theverge.com</td>
+<td>D</td>
+<td>⭐ AI、消费电子</td>
+</tr>
+<tr>
+<td>28</td>
+<td>TechCrunch</td>
+<td>techcrunch.com</td>
+<td>D</td>
+<td>⭐ AI 创投、科技融资</td>
+</tr>
+<tr>
+<td>29</td>
+<td>TrendForce</td>
+<td>trendforce.com</td>
+<td>B</td>
+<td>⭐ 半导体、存储研究</td>
+</tr>
+<tr>
+<td>30</td>
+<td>SEMI</td>
+<td>semi.org</td>
+<td>B</td>
+<td>⭐ 半导体产业组织</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备选池</strong>（失效时替换）：彭博社、金融时报、CNBC、The Robot Report、Caixin Global、半导体行业观察、HKEXnews 港交所公告、投中网（一级市场）、清科研究中心（私募数据）。</p>
+<h3>4.3 采集规则</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>采集方式</td>
+<td>优先 RSS/RSSHub；无 RSS 走结构化抓取；不可用则标记并告警</td>
+</tr>
+<tr>
+<td>采集频率</td>
+<td>核心关注赛道相关源每 3 小时；其余每 6 小时</td>
+</tr>
+<tr>
+<td>时间窗口</td>
+<td>仅采集最近 10 天内内容</td>
+</tr>
+<tr>
+<td>去重</td>
+<td>三级：URL 精确 → 标题相似度 → 语义相似度（embedding 余弦 &gt;0.92）</td>
+</tr>
+<tr>
+<td>失败处理</td>
+<td>单源连续失败 3 次进入冷却；连续 7 天全部失败标记"待替换"</td>
+</tr>
+<tr>
+<td>验证要求</td>
+<td>M0 阶段逐个验证 30 个源的 RSS 可用性与 Actions 环境可访问性</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. 处理管线（Pipeline）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>阶段</th>
+<th>关键规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>采集</td>
+<td>见 §4.3</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>清洗</td>
+<td>提取标题/正文/时间/作者/URL；剔除 &lt;200 字、广告、荐股内容</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>去重</td>
+<td>三级去重，生成归并组</td>
+</tr>
+<tr>
+<td>P4</td>
+<td>分类</td>
+<td>Gemini 判定 <code>域×赛道</code> + <code>市场</code> + <code>内容类型</code>；置信度 &lt;0.6 进入待人工归类队列</td>
+</tr>
+<tr>
+<td>P5</td>
+<td>打分</td>
+<td>见 §5.1；核心赛道 ×1.15；&lt;40 进入低优先级池</td>
+</tr>
+<tr>
+<td>P6</td>
+<td>摘要</td>
+<td>Gemini 生成 1-2 句客观摘要；禁止推断、禁止补写原文没有的数字</td>
+</tr>
+<tr>
+<td>P7</td>
+<td>校验</td>
+<td>校验原文链接可访问 + 摘要实体可在原文定位；失败回退重试一次，仍失败丢弃</td>
+</tr>
+<tr>
+<td>P8</td>
+<td>统计</td>
+<td><strong>v3.0 新增</strong>：由代码（非 LLM）计算看板所需的全部统计指标，输出 <code>data/stats/*.json</code></td>
+</tr>
+<tr>
+<td>P9</td>
+<td>构建发布</td>
+<td>应用 overrides → 生成静态页面与图表 → 提交 → 部署</td>
+</tr>
+</tbody>
+</table>
+<h3>5.1 重要度评分模型（满分 100 · 仅事实类）</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>权重</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>信源等级</td>
+<td>25</td>
+<td>S/A/B/C/D/E → 25/20/17/15/12/8</td>
+</tr>
+<tr>
+<td>事件类型</td>
+<td>25</td>
+<td>政策出台/重大并购/业绩暴雷/技术突破 = 25；常规经营 = 10</td>
+</tr>
+<tr>
+<td>影响广度</td>
+<td>20</td>
+<td>影响全赛道 = 20；单一公司 = 5</td>
+</tr>
+<tr>
+<td>报道密度</td>
+<td>20</td>
+<td>N 个独立信源报道，上限 20</td>
+</tr>
+<tr>
+<td>时效性</td>
+<td>10</td>
+<td>24h = 10；7 天内 = 5；更早 = 2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>分级</strong>：<code>≥75</code> 关键信号｜<code>60-74</code> 重要｜<code>40-59</code> 一般｜<code>&lt;40</code> 低优先级</p>
+<p><strong>核心关注加成</strong> ×1.15（上限 100）；观点类不参与本模型。</p>
+<h3>5.2 活跃度口径</h3>
+<pre><code>赛道周活跃度 = Σ(事实类条目重要度分) × 0.6 + 事实类条目数 × 10 × 0.4
+趋势判定：与上周比较，变动 &gt;±15% 记为 up/down，否则 flat
+</code></pre>
+<p>口径固化并展示在看板页脚。</p>
+<h3>5.3 反幻觉约束（硬性）</h3>
+<ol>
+<li>每条发布态条目必须携带 ≥1 条可访问原文 URL，无源不发布。</li>
+<li>摘要中所有数字、主体、时间必须可在原文定位；P7 实体级校验。</li>
+<li>分类置信度不足进入人工队列，不得猜测归类。</li>
+<li>AI 生成内容显式标注生成标识与时间，摘要与原文可一键对照。</li>
+<li><strong>看板的统计结论由代码计算，不由 LLM 生成</strong>（v3.0 新增）——避免统计类数字出现幻觉。</li>
+</ol>
+<hr />
+<h2>6. 部署架构</h2>
+<h3>6.1 方案（已确定）：公开仓库 + GitHub Pages + Actions</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>选择</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>仓库可见性</td>
+<td><strong>Public</strong>（Free 账户的 Pages 仅对公开仓库开放）</td>
+</tr>
+<tr>
+<td>静态托管</td>
+<td>GitHub Pages（仓库 gh-pages 分支或 /docs）</td>
+</tr>
+<tr>
+<td>定时管线</td>
+<td>GitHub Actions（公开仓库免费额度不限）</td>
+</tr>
+<tr>
+<td>成本</td>
+<td>0 元（托管）+ LLM 费用</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>已知代价</strong>：站点内容任何人可访问。缓解判断——内容全部是公开新闻的 AI 摘要 + 原文链接，不含持仓、不含个人笔记，实际暴露面很小。若后续在意，可迁移至「私有仓库 + Cloudflare Pages + Access」，静态站迁移成本低。</p>
+</blockquote>
+<h3>6.2 LLM：Google Gemini</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供应商</td>
+<td>Google Gemini API</td>
+</tr>
+<tr>
+<td>密钥管理</td>
+<td>存于仓库 Settings → Secrets（<code>GEMINI_API_KEY</code>），<strong>绝不入库</strong>，工作流中以环境变量注入</td>
+</tr>
+<tr>
+<td>型号策略</td>
+<td>高频轻量任务（分类、摘要）用轻量型号；复杂归类与低置信度复核用能力更强的型号。具体型号在 <code>config</code> 中指定，按启用时官方可用列表确定</td>
+</tr>
+<tr>
+<td>成本上限</td>
+<td>月度预算上限（建议 ≤￥100），超限自动降级为"仅采集不摘要"</td>
+</tr>
+<tr>
+<td>网络可达性</td>
+<td>Gemini API 在中国大陆网络环境通常不可直接访问，但 <strong>GitHub Actions 运行于境外，天然可达</strong>，无需代理</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>待办（启用前确认）</strong>：Gemini API 免费层的数据使用条款（是否用于模型改进）与速率限制，需在使用前确认当期政策；若条款不接受，改用付费层。</p>
+</blockquote>
+<h3>6.3 仓库结构</h3>
+<pre><code>repo/
+├── .github/workflows/
+│   ├── collect.yml       # 每 3/6 小时：采集 → 处理 → 统计 → 写入 data/ → commit
+│   └── build.yml         # 数据变更或周一 07:00：构建静态站 → 部署 Pages
+├── pipeline/             # Python：fetch / dedupe / classify / score / summarize / verify / stats
+├── config/
+│   ├── sources.yml       # 30 个信源
+│   ├── taxonomy.yml      # 域 / 赛道 / 市场 / 内容类型 / 核心关注标记
+│   └── llm.yml           # Gemini 型号、温度、超时、并发、预算上限
+├── data/
+│   ├── overrides.yml     # 人工修正层
+│   ├── manual/           # 人工补录（Markdown）
+│   ├── events/           # 按周事件 JSON
+│   ├── stats/            # 看板统计 JSON（v3.0 新增）
+│   └── runs/             # 运行日志（90 天）
+├── site/                 # 静态站产出
+└── docs/PRD.md
+</code></pre>
+<h3>6.4 修正层：文件级替代后台 UI</h3>
+<blockquote>
+<p>GitHub Pages 为纯静态托管，无服务端与数据库，传统登录后台不成立。单人使用场景下改为编辑配置文件 + 提交触发重建。</p>
+</blockquote>
+<p><code>data/overrides.yml</code> 支持五种操作：</p>
+<pre><code class="language-yaml">- op: pin
+  id: evt_2026W44_0137
+  week: 2026-W44
+
+- op: recategorize
+  id: evt_2026W44_0201
+  track: TEC-SEMI
+  market: M-GL
+  content_type: fact
+
+- op: rescore
+  id: evt_2026W44_0088
+  score: 82
+
+- op: delete
+  id: evt_2026W44_0455
+  reason: 荐股内容
+
+- op: add
+  week: 2026-W44
+  title: 某脑机接口公司完成临床试验入组
+  url: https://...
+  track: TEC-BCI
+  market: M-A
+  score: 70
+  summary: 人工撰写摘要（标记来源为&quot;人工补录&quot;）
+</code></pre>
+<p>提交后 Actions 自动重建，5 分钟内生效。</p>
+<h3>6.5 更新节奏</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>采集</td>
+<td>核心赛道每 3 小时；其余每 6 小时</td>
+</tr>
+<tr>
+<td>页面重建</td>
+<td>采集产生新条目后自动触发；无变化不触发</td>
+</tr>
+<tr>
+<td>数据延迟</td>
+<td>核心赛道 ≤3 小时，其余 ≤6 小时</td>
+</tr>
+<tr>
+<td>周报快照</td>
+<td>每周一 07:00（Asia/Shanghai）冻结上一周数据</td>
+</tr>
+<tr>
+<td>实时流</td>
+<td>首页实时流始终展示本周至今全部条目</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>GitHub Actions cron 不保证精确触发，高峰期可能延迟数分钟至数十分钟，周报场景可接受。采集任务每次 commit 数据，天然维持仓库活跃，避免 scheduled workflow 因长期无活动被禁用。</p>
+</blockquote>
+<hr />
+<h2>7. 数据可视化看板（v3.0 新增）</h2>
+<h3>7.1 设计原则</h3>
+<table>
+<thead>
+<tr>
+<th>原则</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>口径优先</td>
+<td>每张图下方标注计算口径，避免误读</td>
+</tr>
+<tr>
+<td>统计不幻觉</td>
+<td>所有指标由代码在构建期计算，不使用 LLM 生成数字</td>
+</tr>
+<tr>
+<td>无外部依赖</td>
+<td>图表以<strong>自绘 SVG</strong> 输出，不引入 ECharts/D3 等外部库，保证加载快、体积小（仓库 1GB 上限）、风格统一</td>
+</tr>
+<tr>
+<td>可下钻</td>
+<td>点击图表中任一赛道跳转至该赛道详情页</td>
+</tr>
+<tr>
+<td>核心突出</td>
+<td>四个核心关注赛道用主色 <code>#1B3A5C</code>，其余用灰蓝</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>技术选型判断</strong>：本项目图表类型仅为条形图、折线图、热力矩阵、堆叠条四类，自绘 SVG 完全覆盖，且省去约 1MB 的库体积与 CDN 依赖。若后续需要缩放、联动等复杂交互，再引入轻量图表库，届时只需替换渲染层。</p>
+</blockquote>
+<h3>7.2 图表清单（10 张）</h3>
+<p><strong>A. 本周快照</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>图表</th>
+<th>类型</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V1</td>
+<td>赛道活跃度排行</td>
+<td>横向条形</td>
+<td>本周全部赛道按活跃度降序，核心赛道高亮；与上周对比显示升降</td>
+</tr>
+<tr>
+<td>V5</td>
+<td>市场分布</td>
+<td>堆叠条</td>
+<td>A股/港股/中概/全球 的条目数占比</td>
+</tr>
+<tr>
+<td>V6</td>
+<td>内容类型分布</td>
+<td>环形/堆叠条</td>
+<td>事实 vs 观点条目数</td>
+</tr>
+<tr>
+<td>V7</td>
+<td>重要度分布</td>
+<td>堆叠条</td>
+<td>关键信号/重要/一般/低优先级 四档条目数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. 时序趋势</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>图表</th>
+<th>类型</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V2</td>
+<td>核心赛道活跃度走势</td>
+<td>多序列折线</td>
+<td>四个核心赛道近 12 周活跃度曲线，可切换 4/12/26/52 周</td>
+</tr>
+<tr>
+<td>V3</td>
+<td>赛道 × 周活跃度热力矩阵</td>
+<td>热力图</td>
+<td>纵轴赛道、横轴周次、色深表示活跃度，近 12 周（<strong>看板核心图，用于识别景气迁移</strong>）</td>
+</tr>
+<tr>
+<td>V4</td>
+<td>活跃度环比涨跌</td>
+<td>分歧条形图（diverging bar）</td>
+<td>本周相对上周的活跃度变化百分比，涨绿跌灰</td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. 结构与来源</strong></p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>图表</th>
+<th>类型</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V8</td>
+<td>信源贡献排行</td>
+<td>横向条形</td>
+<td>近 4 周各信源被采用条目数 Top 10（用于评估信源质量）</td>
+</tr>
+<tr>
+<td>V9</td>
+<td>高频实体排行</td>
+<td>横向条形</td>
+<td>本周提及频次最高的实体 Top 15；公司/机构/技术词<strong>合并排行，不分类拆分</strong>（v3.1 确认）</td>
+</tr>
+<tr>
+<td>V10</td>
+<td>年度累计活跃度</td>
+<td>横向条形</td>
+<td>数据满 13 周后启用，累计活跃度排名</td>
+</tr>
+</tbody>
+</table>
+<h3>7.3 自动数据摘要</h3>
+<p>看板顶部自动生成 <strong>4-6 条文字结论</strong>，全部由代码统计得出：</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>摘要项</th>
+<th>计算方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1</td>
+<td>本周最活跃赛道 Top 3</td>
+<td>按活跃度降序取前三，附环比变化</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>环比上升最快的赛道</td>
+<td>活跃度环比增幅最大者（排除基数 &lt;3 条的赛道）</td>
+</tr>
+<tr>
+<td>D3</td>
+<td>环比下降最快的赛道</td>
+<td>活跃度环比降幅最大者</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>本周条目总量与结构</td>
+<td>事实 x 条 / 观点 y 条，较上周 ±n%</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>本周市场分布</td>
+<td>四市场占比与占主导的市场</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>核心赛道提示</td>
+<td>四个核心赛道中本周有关键信号（≥75 分）的数量</td>
+</tr>
+</tbody>
+</table>
+<h3>7.4 数据产出</h3>
+<p>构建期生成 <code>data/stats/</code> 下的 JSON：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>weekly_YYYY-Wxx.json</code></td>
+<td>单周各赛道活跃度、市场分布、类型分布、重要度分布、高频实体</td>
+</tr>
+<tr>
+<td><code>timeseries.json</code></td>
+<td>全部赛道按周的活跃度序列（供 V2/V3/V4）</td>
+</tr>
+<tr>
+<td><code>sources.json</code></td>
+<td>信源采用统计（供 V8）</td>
+</tr>
+<tr>
+<td><code>summary_YYYY-Wxx.json</code></td>
+<td>D1-D6 自动摘要</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. 功能需求（EARS 格式）</h2>
+<h3>FR-1 周度总览页</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-1.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 在页面顶部展示当前周次（ISO 周编号）、日期区间与数据更新时间戳。</td>
+</tr>
+<tr>
+<td>FR-1.2</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供市场筛选控件（全部/A股/港股/中概/全球），对全站生效并持久化选择。</td>
+</tr>
+<tr>
+<td>FR-1.3</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供顶部导航，包含首页、数据看板、检索三个入口。</td>
+</tr>
+<tr>
+<td>FR-1.4</td>
+<td>Ubiquitous</td>
+<td>The system shall 在置顶区展示四个核心关注赛道大卡片，每张显示赛道名、本周条目数、活跃度变化方向、Top 2 要点。</td>
+</tr>
+<tr>
+<td>FR-1.5</td>
+<td>Ubiquitous</td>
+<td>The system shall 按投资 / 科技 / 宏观三个域分区展示全部赛道行，每行显示赛道名、条目数、Top 1 要点。</td>
+</tr>
+<tr>
+<td>FR-1.6</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供「本周关键信号」区块，聚合重要度 ≥75 的事实类条目，降序展示，最多 10 条。</td>
+</tr>
+<tr>
+<td>FR-1.7</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供「观点与解读」区块，展示本周观点类条目，最多 5 条，默认展开且可折叠。</td>
+</tr>
+<tr>
+<td>FR-1.8</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供「本周实时流」区块，按时间倒序展示本周至今全部条目。</td>
+</tr>
+<tr>
+<td>FR-1.9</td>
+<td>Event-driven</td>
+<td>When 用户点击赛道卡片或赛道行，the system shall 展开该赛道本周要点列表（最多 5 条），无需跳转页面。</td>
+</tr>
+<tr>
+<td>FR-1.10</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供周次切换控件，支持查看历史任意周次。</td>
+</tr>
+<tr>
+<td>FR-1.11</td>
+<td>State-driven</td>
+<td>While 某赛道本周条目数为 0，the system shall 将该赛道置灰并标注"本周无重大动态"。</td>
+</tr>
+<tr>
+<td>FR-1.12</td>
+<td>Unwanted</td>
+<td>If 某周次数据未生成或生成失败，then the system shall 显示明确空状态与"数据生成中/失败"提示，不得展示空白区块。</td>
+</tr>
+</tbody>
+</table>
+<h3>FR-2 赛道详情页</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-2.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 为每个赛道提供独立详情页，展示本周全部事实类条目，按重要度降序。</td>
+</tr>
+<tr>
+<td>FR-2.2</td>
+<td>Ubiquitous</td>
+<td>The system shall 展示该赛道近 8 周活跃度走势迷你图。</td>
+</tr>
+<tr>
+<td>FR-2.3</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供独立的「观点与解读」分区，与事实类条目视觉分离。</td>
+</tr>
+<tr>
+<td>FR-2.4</td>
+<td>Ubiquitous</td>
+<td>The system shall 展示该赛道本周条目的市场分布。</td>
+</tr>
+<tr>
+<td>FR-2.5</td>
+<td>Event-driven</td>
+<td>When 用户点击某条目，the system shall 以右侧抽屉展示事件详情，不离开当前页面。</td>
+</tr>
+<tr>
+<td>FR-2.6</td>
+<td>Unwanted</td>
+<td>If 该赛道本周无条目，then the system shall 展示最近一次有内容的周次摘要并提示"本周无更新"。</td>
+</tr>
+</tbody>
+</table>
+<h3>FR-3 事件详情层</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-3.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 展示事件完整信息：标题、摘要、发布时间、赛道、市场、内容类型、重要度分、信源名称与等级。</td>
+</tr>
+<tr>
+<td>FR-3.2</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供原文链接，点击在新标签页打开。</td>
+</tr>
+<tr>
+<td>FR-3.3</td>
+<td>State-driven</td>
+<td>While 同一事件被多个信源报道，the system shall 展示全部信源列表并标注"N 个来源报道"。</td>
+</tr>
+<tr>
+<td>FR-3.4</td>
+<td>Ubiquitous</td>
+<td>The system shall 展示关联条目（同赛道近 4 周 + 同市场近 2 周），最多 5 条。</td>
+</tr>
+<tr>
+<td>FR-3.5</td>
+<td>Event-driven</td>
+<td>When 用户点击「摘要对照」，the system shall 并排展示 AI 摘要与原文首段。</td>
+</tr>
+<tr>
+<td>FR-3.6</td>
+<td>Ubiquitous</td>
+<td>The system shall 对 AI 生成内容显示生成标识与时间；人工补录条目标注"人工补录"。</td>
+</tr>
+<tr>
+<td>FR-3.7</td>
+<td>Unwanted</td>
+<td>If 原文链接失效，then the system shall 展示失效标记并保留条目其余信息，不得静默删除。</td>
+</tr>
+</tbody>
+</table>
+<h3>FR-4 检索与筛选</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-4.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供全站搜索，支持标题与摘要关键词匹配。</td>
+</tr>
+<tr>
+<td>FR-4.2</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持组合筛选：域、赛道（多选）、市场（多选）、时间范围、重要度等级、内容类型、信源等级。</td>
+</tr>
+<tr>
+<td>FR-4.3</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持按相关度、时间、重要度排序。</td>
+</tr>
+<tr>
+<td>FR-4.4</td>
+<td>Unwanted</td>
+<td>If 搜索无结果，then the system shall 展示空状态与放宽条件的建议。</td>
+</tr>
+</tbody>
+</table>
+<h3>FR-5 自动采集与调度</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-5.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 按配置周期（核心赛道 3h / 其余 6h）自动执行采集，无需人工触发。</td>
+</tr>
+<tr>
+<td>FR-5.2</td>
+<td>Event-driven</td>
+<td>When 每周一 07:00（Asia/Shanghai）到达，the system shall 冻结上一周数据生成周报快照与看板统计。</td>
+</tr>
+<tr>
+<td>FR-5.3</td>
+<td>Event-driven</td>
+<td>When 采集产生新条目或 overrides 变更，the system shall 自动触发静态站重建与部署。</td>
+</tr>
+<tr>
+<td>FR-5.4</td>
+<td>Ubiquitous</td>
+<td>The system shall 记录每次管线运行日志（起止时间、各阶段输入输出条目数、失败数与原因），保留 90 天。</td>
+</tr>
+<tr>
+<td>FR-5.5</td>
+<td>Unwanted</td>
+<td>If 管线某阶段失败，then the system shall 中止本次发布、保留上一版本页面可访问，并标记失败，不得发布部分数据。</td>
+</tr>
+<tr>
+<td>FR-5.6</td>
+<td>Unwanted</td>
+<td>If Gemini API 不可用或超时，then the system shall 将条目暂存为"待处理"并在下次运行自动重试，不得丢弃原始数据。</td>
+</tr>
+<tr>
+<td>FR-5.7</td>
+<td>Unwanted</td>
+<td>If 某信源连续 7 天采集全部失败，then the system shall 标记该源为"待替换"并提示。</td>
+</tr>
+<tr>
+<td>FR-5.8</td>
+<td>Unwanted</td>
+<td>If 当月 LLM 调用达到预算上限，then the system shall 自动降级为"仅采集不摘要"模式，并在页面标注"摘要暂不可用"，不得中断采集。</td>
+</tr>
+<tr>
+<td>FR-5.9</td>
+<td>Ubiquitous</td>
+<td>The system shall 保留每周数据快照，支持回滚查看任意历史版本。</td>
+</tr>
+</tbody>
+</table>
+<h3>FR-6 修正层</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-6.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持通过编辑 <code>data/overrides.yml</code> 执行置顶、重新分类、调整重要度、删除、补录五种操作。</td>
+</tr>
+<tr>
+<td>FR-6.2</td>
+<td>Event-driven</td>
+<td>When <code>data/overrides.yml</code> 发生提交变更，the system shall 自动重建站点并在 5 分钟内生效。</td>
+</tr>
+<tr>
+<td>FR-6.3</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持通过 <code>data/manual/</code> 目录下 Markdown 文件批量补录条目。</td>
+</tr>
+<tr>
+<td>FR-6.4</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持通过编辑 <code>config/sources.yml</code> 新增、停用信源或调整信源等级。</td>
+</tr>
+<tr>
+<td>FR-6.5</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持关键词屏蔽规则（如"荐股""涨停预测"）与白名单规则。</td>
+</tr>
+<tr>
+<td>FR-6.6</td>
+<td>State-driven</td>
+<td>While 存在"待人工归类"队列条目，the system shall 在页面显著位置显示待处理数量提示。</td>
+</tr>
+<tr>
+<td>FR-6.7</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供本地 CLI 脚本，支持命令行执行置顶、归类、补录。</td>
+</tr>
+<tr>
+<td>FR-6.8</td>
+<td>Unwanted</td>
+<td>If overrides 文件格式错误或引用不存在的条目 ID，then the system shall 跳过该规则并在日志报错，不得导致构建失败。</td>
+</tr>
+</tbody>
+</table>
+<h3>FR-7 数据展示与导出</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-7.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持将当前视图导出为 Markdown 与 CSV。</td>
+</tr>
+<tr>
+<td>FR-7.2</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持一键复制某赛道本周要点为纯文本。</td>
+</tr>
+<tr>
+<td>FR-7.3</td>
+<td>Optional</td>
+<td>Where 用户需要打印，the system shall 提供适配 A4 的打印样式。</td>
+</tr>
+</tbody>
+</table>
+<h3>FR-8 质量与溯源</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-8.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 保证所有发布态条目均携带至少一条有效原文 URL。</td>
+</tr>
+<tr>
+<td>FR-8.2</td>
+<td>Unwanted</td>
+<td>If 条目摘要包含原文未出现的数字或实体，then the system shall 拦截该条目并转入待复核队列。</td>
+</tr>
+<tr>
+<td>FR-8.3</td>
+<td>Ubiquitous</td>
+<td>The system shall 在每条 AI 生成内容旁显示来源标识与生成时间。</td>
+</tr>
+<tr>
+<td>FR-8.4</td>
+<td>State-driven</td>
+<td>While 条目被人工修正过，the system shall 保留 AI 原始输出版本，可切换查看。</td>
+</tr>
+</tbody>
+</table>
+<h3>FR-9 系统配置</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-9.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持在 <code>taxonomy.yml</code> 配置域、赛道、市场、内容类型与核心关注标记。</td>
+</tr>
+<tr>
+<td>FR-9.2</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持配置采集频率、周报生成时点与周起始日。</td>
+</tr>
+<tr>
+<td>FR-9.3</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持配置 Gemini 型号、温度、超时、并发与月度预算上限，密钥经仓库 Secrets 注入，不得硬编码或入库。</td>
+</tr>
+<tr>
+<td>FR-9.4</td>
+<td>Ubiquitous</td>
+<td>The system shall 支持配置评分模型权重与分级阈值，调整后可选择是否对历史数据重算。</td>
+</tr>
+</tbody>
+</table>
+<h3>FR-10 数据可视化看板（v3.0 新增）</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>需求描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-10.1</td>
+<td>Ubiquitous</td>
+<td>The system shall 提供独立的数据看板页面，包含本周快照、时序趋势、结构与来源三个区块。</td>
+</tr>
+<tr>
+<td>FR-10.2</td>
+<td>Ubiquitous</td>
+<td>The system shall 在 P8 阶段由代码计算全部统计指标并输出为 JSON，不得使用 LLM 生成任何统计数字。</td>
+</tr>
+<tr>
+<td>FR-10.3</td>
+<td>Ubiquitous</td>
+<td>The system shall 以自绘 SVG 渲染全部图表，不依赖外部图表库与 CDN 资源。</td>
+</tr>
+<tr>
+<td>FR-10.4</td>
+<td>Ubiquitous</td>
+<td>The system shall 渲染 V1-V10 共 10 张图表（定义见 §7.2）。</td>
+</tr>
+<tr>
+<td>FR-10.5</td>
+<td>Ubiquitous</td>
+<td>The system shall 在每张图表下方或图例中标注该指标的计算口径。</td>
+</tr>
+<tr>
+<td>FR-10.6</td>
+<td>Ubiquitous</td>
+<td>The system shall 对四个核心关注赛道使用主色 <code>#1B3A5C</code>，其余赛道使用灰蓝色，保持视觉区分。</td>
+</tr>
+<tr>
+<td>FR-10.7</td>
+<td>Ubiquitous</td>
+<td>The system shall 在看板顶部展示 D1-D6 自动数据摘要（定义见 §7.3）。</td>
+</tr>
+<tr>
+<td>FR-10.8</td>
+<td>Event-driven</td>
+<td>When 用户点击图表中的某一赛道，the system shall 跳转至该赛道的详情页。</td>
+</tr>
+<tr>
+<td>FR-10.9</td>
+<td>Ubiquitous</td>
+<td>The system shall 为 V2、V3 提供时间范围切换（4 / 12 / 26 / 52 周）。</td>
+</tr>
+<tr>
+<td>FR-10.10</td>
+<td>Event-driven</td>
+<td>When 用户将鼠标悬停于图表元素，the system shall 显示该元素的数值与对应条目数。</td>
+</tr>
+<tr>
+<td>FR-10.11</td>
+<td>State-driven</td>
+<td>While 可用历史数据不足 13 周，the system shall 隐藏 V10 并提示"数据积累中，需满 13 周"。</td>
+</tr>
+<tr>
+<td>FR-10.12</td>
+<td>Unwanted</td>
+<td>If 某赛道在某周无任何条目，then the system shall 在热力矩阵中将对应格子渲染为空白（而非 0 值着色），避免与"有条目但活跃度低"混淆。</td>
+</tr>
+<tr>
+<td>FR-10.13</td>
+<td>Unwanted</td>
+<td>If 统计计算阶段失败，then the system shall 保留上一版本的看板数据并标记"统计暂未更新"，不得展示错误或空白图表。</td>
+</tr>
+<tr>
+<td>FR-10.14</td>
+<td>Optional</td>
+<td>Where 用户需要引用，the system shall 支持将单张图表导出为 SVG 文件。</td>
+</tr>
+<tr>
+<td>FR-10.15</td>
+<td>Ubiquitous</td>
+<td>The system shall 在看板中同时响应用户在首页选择的市场筛选条件。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. 数据模型</h2>
+<p><strong>Event（事件）</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>dedup_group_id</td>
+<td>string</td>
+<td>归并组</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>标题</td>
+</tr>
+<tr>
+<td>ai_summary / ai_summary_raw</td>
+<td>text</td>
+<td>AI 摘要 / 原始输出</td>
+</tr>
+<tr>
+<td>domain</td>
+<td>enum</td>
+<td>investment / tech / macro</td>
+</tr>
+<tr>
+<td>track_id</td>
+<td>string</td>
+<td>赛道 ID（恰好 1 个）</td>
+</tr>
+<tr>
+<td>market_primary</td>
+<td>enum</td>
+<td>M-A / M-HK / M-CN / M-GL</td>
+</tr>
+<tr>
+<td>market_related</td>
+<td>array</td>
+<td>关联市场</td>
+</tr>
+<tr>
+<td>content_type</td>
+<td>enum</td>
+<td>fact / opinion</td>
+</tr>
+<tr>
+<td>is_focus</td>
+<td>bool</td>
+<td>核心关注赛道</td>
+</tr>
+<tr>
+<td>importance_score</td>
+<td>int</td>
+<td>0-100（事实类）</td>
+</tr>
+<tr>
+<td>importance_level</td>
+<td>enum</td>
+<td>critical / important / normal / low</td>
+</tr>
+<tr>
+<td>source_ids / source_count</td>
+<td>array / int</td>
+<td>信源</td>
+</tr>
+<tr>
+<td>status</td>
+<td>enum</td>
+<td>published / pending_review / pending_classify / discarded / human_edited</td>
+</tr>
+<tr>
+<td>week_key</td>
+<td>string</td>
+<td>ISO 周</td>
+</tr>
+<tr>
+<td>url</td>
+<td>string</td>
+<td>原文链接（必填）</td>
+</tr>
+<tr>
+<td>entities</td>
+<td>array</td>
+<td>抽取的实体（供 V9 高频实体统计）</td>
+</tr>
+<tr>
+<td>generated_at / edited_at</td>
+<td>datetime</td>
+<td>生成 / 修正时间</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Source（信源）</strong>：id / name / url / level / tracks / markets / fetch_interval / status / last_success_at</p>
+<p><strong>Track（赛道）</strong>：id / name / domain / is_focus / sort_order</p>
+<p><strong>WeeklyStats（周统计 · v3.0 新增）</strong>：week_key / track_activity[track_id → score, count, trend] / market_dist / type_dist / importance_dist / top_entities / source_dist</p>
+<p><strong>WeeklySnapshot（周快照）</strong>：week_key / track_id / event_count / activity_score / trend / pipeline_run_id</p>
+<p><strong>PipelineRun（运行记录）</strong>：id / started_at / finished_at / stage_logs(json) / status / error_message</p>
+<hr />
+<h2>10. 非功能需求</h2>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>性能</td>
+<td>首页首屏 ≤2s；赛道详情 ≤1.5s；看板页含 10 张 SVG 图 ≤2.5s；搜索 ≤500ms</td>
+</tr>
+<tr>
+<td>可用性</td>
+<td>管线月度成功率 ≥95%；单源故障不影响整体；构建失败保留上一版本</td>
+</tr>
+<tr>
+<td>容量</td>
+<td>支持累计 ≥3 年数据；仓库体积控制在 1GB（Pages 上限）以内</td>
+</tr>
+<tr>
+<td>成本</td>
+<td>托管 0 元；Gemini 月度预算上限（建议 ≤￥100），超限降级</td>
+</tr>
+<tr>
+<td>合规</td>
+<td>仅采集公开内容；遵守 robots.txt；控制抓取频率；只做摘要与链接、不做全文转载、标注来源</td>
+</tr>
+<tr>
+<td>安全</td>
+<td>Gemini 密钥存 Secrets，绝不入库；所有渲染内容转义防 XSS</td>
+</tr>
+<tr>
+<td>兼容</td>
+<td>桌面端优先；移动端浏览器可用（断点 768px）；Chrome/Safari 最新两个大版本；图表在移动端改为纵向排列</td>
+</tr>
+<tr>
+<td>可维护</td>
+<td>配置与代码分离；管线各阶段可单独重跑；日志保留 90 天</td>
+</tr>
+<tr>
+<td>平台限制</td>
+<td>公开仓库 Actions 免费额度不限；Pages 站点 ≤1GB；10 builds/hour 软限</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>11. 视觉与交互规范</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>规范</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整体风格</td>
+<td>学术简约风，克制用色，信息密度优先</td>
+</tr>
+<tr>
+<td>主色</td>
+<td><code>#1B3A5C</code>（深蓝）：标题、导航、核心关注赛道、核心图表序列</td>
+</tr>
+<tr>
+<td>辅助色</td>
+<td>关键信号 <code>#B03030</code>｜重要 <code>#C98A2E</code>｜一般 <code>#5A6B7B</code>｜上升 <code>#2E7D5B</code>｜下降 <code>#8C8C8C</code></td>
+</tr>
+<tr>
+<td>图表配色</td>
+<td>单序列用主色；分类序列用主色明度梯度（<code>#1B3A5C</code> → <code>#4A6E8F</code> → <code>#8AA7BF</code> → <code>#C5D3DE</code>）；热力矩阵用主色单色渐变，禁用彩虹色</td>
+</tr>
+<tr>
+<td>背景</td>
+<td>主背景 <code>#FFFFFF</code>，卡片 <code>#F7F9FB</code>，分隔线 <code>#E3E8ED</code></td>
+</tr>
+<tr>
+<td>字体</td>
+<td>中文 PingFang SC；数字用等宽保证对齐；图表标签字号 ≥11px</td>
+</tr>
+<tr>
+<td>卡片</td>
+<td>圆角 6px，1px 边框，极轻阴影；hover 边框加深</td>
+</tr>
+<tr>
+<td>动效</td>
+<td>过渡 150-200ms；图表 hover 高亮，禁用装饰动画</td>
+</tr>
+<tr>
+<td>空状态</td>
+<td>所有空状态需文案与下一步指引</td>
+</tr>
+<tr>
+<td>无障碍</td>
+<td>图表需提供数值标签或 tooltip，不得仅靠颜色传递信息（色盲友好：升降同时用箭头符号）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>12. 验收标准</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>验收项</th>
+<th>通过条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td>自动采集</td>
+<td>30 个源中 ≥25 个成功入库，24h 内无人工干预完成 ≥1 轮</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>周报生成</td>
+<td>周一 07:00 自动生成上周快照与看板统计</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>溯源完整性</td>
+<td>随机抽 50 条已发布条目，100% 携带可访问原文链接</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>摘要准确性</td>
+<td>随机抽 30 条人工核对，数字/主体/时间错误率 ≤5%</td>
+</tr>
+<tr>
+<td>A5</td>
+<td>分类准确性</td>
+<td>随机抽 50 条，赛道归类正确率 ≥90%，市场标注 ≥85%</td>
+</tr>
+<tr>
+<td>A6</td>
+<td>投资域边界</td>
+<td>随机抽 20 条金融类新闻，银行/保险经营类动态被正确排除的比例 ≥90%；且宏观利率/流动性类条目 100% 归入 MAC-MP，不得在投资域重复计入</td>
+</tr>
+<tr>
+<td>A7</td>
+<td>核心赛道灵敏度</td>
+<td>四个核心赛道各注入一条测试事件，均 3 小时内出现在页面</td>
+</tr>
+<tr>
+<td>A8</td>
+<td>去重有效性</td>
+<td>同一事件多源报道在 L3 归并为一条，抽查 20 组无重复展示</td>
+</tr>
+<tr>
+<td>A9</td>
+<td>修正生效</td>
+<td>修改 overrides.yml 并提交后，5 分钟内前台同步更新</td>
+</tr>
+<tr>
+<td>A10</td>
+<td>观点分离</td>
+<td>观点类不出现在活跃度计算与关键信号区</td>
+</tr>
+<tr>
+<td>A11</td>
+<td>历史回溯</td>
+<td>可查看 ≥8 周历史周报，数据完整</td>
+</tr>
+<tr>
+<td>A12</td>
+<td>检索</td>
+<td>关键词可命中，响应 ≤500ms</td>
+</tr>
+<tr>
+<td>A13</td>
+<td>故障处理</td>
+<td>模拟 Gemini 中断，系统保留原始数据并重试，不丢数据、不发布半截数据</td>
+</tr>
+<tr>
+<td><strong>A14</strong></td>
+<td><strong>看板完整性</strong></td>
+<td><strong>V1-V10 全部渲染成功（V10 在数据不足 13 周时正确隐藏），无空白或错位图表</strong></td>
+</tr>
+<tr>
+<td><strong>A15</strong></td>
+<td><strong>看板数值准确性</strong></td>
+<td><strong>随机抽 3 张图表，手工核算底层数据，图表数值与原始条目统计完全一致（误差 0）</strong></td>
+</tr>
+<tr>
+<td><strong>A16</strong></td>
+<td><strong>摘要与图表一致</strong></td>
+<td><strong>D1-D6 自动摘要中的数字与对应图表数值一致</strong></td>
+</tr>
+<tr>
+<td><strong>A17</strong></td>
+<td><strong>图表交互</strong></td>
+<td><strong>点击赛道可跳转详情页；V2/V3 时间范围切换正常；hover 显示数值</strong></td>
+</tr>
+<tr>
+<td>A18</td>
+<td>部署可用性</td>
+<td>站点可通过 URL 直接访问，移动端布局正常</td>
+</tr>
+</tbody>
+</table>
+<h3>12.1 上线门槛（阻断级）</h3>
+<ul>
+<li>摘要错误率 &gt;10%</li>
+<li>溯源链接缺失率 &gt;0</li>
+<li><strong>看板图表数值与底层数据不一致（v3.0 新增阻断项）</strong></li>
+<li>管线连续 2 次周报生成失败</li>
+<li>存在未修复的 XSS 风险或密钥泄露风险</li>
+</ul>
+<hr />
+<h2>13. 里程碑</h2>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>内容</th>
+<th>交付物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M0</td>
+<td>验证 30 个信源 RSS 可用性与 Actions 可访问性；确认 Gemini 型号与条款；初始化公开仓库</td>
+<td>可用信源清单、仓库、Secrets 配置</td>
+</tr>
+<tr>
+<td>M1</td>
+<td>采集与存储管线（P1-P3）</td>
+<td>采集脚本 + data/ 结构 + 运行日志</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>Gemini 处理链路（P4-P7）</td>
+<td>分类/打分/摘要/校验 + 待复核队列</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>静态站页面（首页 + 赛道详情 + 检索）</td>
+<td>可浏览网页</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>修正层（overrides + manual + CLI）</td>
+<td>修正与补录能力</td>
+</tr>
+<tr>
+<td><strong>M5</strong></td>
+<td><strong>统计与数据看板（P8 + V1-V10 + D1-D6）</strong></td>
+<td><strong>可视化看板页</strong></td>
+</tr>
+<tr>
+<td>M6</td>
+<td>定时调度与告警</td>
+<td>Actions 定时 + 失败标记 + 快照回滚</td>
+</tr>
+<tr>
+<td>M7</td>
+<td>试运行与调参</td>
+<td>连续跑满 4 周，按反馈调权重与信源</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>看板依赖至少 2-3 周数据才有意义（V3 热力矩阵、V4 环比需要时序），建议 M5 排在 M3 之后、与 M6 并行推进。<strong>M3 完成即开始真实使用</strong>，不要等全部做完。</p>
+</blockquote>
+<hr />
+<h2>14. 风险与待确认问题</h2>
+<h3>14.1 风险清单</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>风险</th>
+<th>影响</th>
+<th>应对</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>全自动下 LLM 摘要产生幻觉数字且无人复核</td>
+<td>高</td>
+<td>P7 实体校验 + 无源不发布 + 每周抽检 10 条；前 4 周保持人工抽检</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>部分信源无 RSS、有反爬或封禁 Actions 出口 IP</td>
+<td>中</td>
+<td>M0 逐个验证；每赛道 ≥2 个独立源；失效从备选池替换</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>跨赛道误分类（如 AI 芯片归半导体还是 AI；融资归 INV-VC 还是 TEC-AI）</td>
+<td>中</td>
+<td>置信度阈值 + 人工队列 + 支持重分类；投资域与科技域的交叉事件按"事件主体性质"判定</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>管线"看起来在跑"但质量持续劣化</td>
+<td>高</td>
+<td>日志展示每周条目数/采用率/丢弃率趋势；看板 V8 信源贡献可发现信源失效</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Actions cron 延迟或被禁用</td>
+<td>中</td>
+<td>采集每次 commit 天然保活；延迟可接受</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>LLM 成本失控</td>
+<td>中</td>
+<td>月度预算上限 + 超限降级为仅采集不摘要</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>冷启动期数据稀疏，前几周看板无意义</td>
+<td>中</td>
+<td>V10 延迟启用；首期手动补录种子数据</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>公开仓库导致站点内容任何人可见</td>
+<td>低</td>
+<td>内容均为公开新闻摘要，无敏感信息；在意则迁移 Cloudflare Pages</td>
+</tr>
+<tr>
+<td><strong>R9</strong></td>
+<td><strong>Gemini 免费层的数据使用条款与速率限制不明</strong></td>
+<td><strong>中</strong></td>
+<td><strong>启用前确认当期政策；速率限制通过并发控制与重试退避应对</strong></td>
+</tr>
+<tr>
+<td><strong>R10</strong></td>
+<td><strong>看板图表口径被误读（如把活跃度当景气度）</strong></td>
+<td><strong>中</strong></td>
+<td><strong>每张图标注口径 + 看板页脚统一说明"活跃度反映报道密集度，不等同于行业景气度"</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>14.2 待确认问题</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>问题</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1</td>
+<td>港股/美股中概映射</td>
+<td>✅ 已确认：扩展为 A股/港股/中概/全球 四值</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>信源清单</td>
+<td>✅ 已固化 30 个，M0 验证可用性</td>
+</tr>
+<tr>
+<td>Q3</td>
+<td>更新时点</td>
+<td>✅ 周一 07:00，周一为周起始</td>
+</tr>
+<tr>
+<td>Q4</td>
+<td>部署方式</td>
+<td>✅ 公开仓库 + Pages + Actions</td>
+</tr>
+<tr>
+<td>Q5</td>
+<td>邮件推送</td>
+<td>✅ 不做</td>
+</tr>
+<tr>
+<td>Q6</td>
+<td>观点评论类</td>
+<td>✅ 保留，独立成区</td>
+</tr>
+<tr>
+<td>Q7</td>
+<td>部署方案 A/B</td>
+<td>✅ 已定 A</td>
+</tr>
+<tr>
+<td>Q8</td>
+<td>LLM 供应商</td>
+<td>✅ 已定 Gemini</td>
+</tr>
+<tr>
+<td>Q9</td>
+<td>投资域是否保留「宏观利率/流动性」条目</td>
+<td>✅ 已定（v3.1）：<strong>不保留</strong>，统一归 MAC-MP，投资域不重复收录</td>
+</tr>
+<tr>
+<td>Q10</td>
+<td>V9 高频实体是否按公司/机构/技术词分类排行</td>
+<td>✅ 已定（v3.1）：<strong>合并排行，不拆分</strong></td>
+</tr>
+<tr>
+<td>Q11</td>
+<td>四个核心赛道是否随研究重心动态调整</td>
+<td>✅ 已定（v3.1）：<strong>固定为四个</strong>，不做产品化调整入口</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Q1-Q11 全部关闭，无阻塞项。文档可交付开发，下一步进入 M0：验证 30 个信源的 RSS 可用性与 Actions 环境可访问性。</strong></p>
+</blockquote>
+<hr />
+<h2>附录 A：术语表</h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>域</td>
+<td>一级分类：投资 / 科技 / 宏观</td>
+</tr>
+<tr>
+<td>赛道</td>
+<td>二级分类，共 25 个（6 投资 + 11 科技 + 8 宏观）</td>
+</tr>
+<tr>
+<td>核心关注</td>
+<td>AI、人形机器人、脑机接口、半导体，享置顶/高频采集/得分加成/看板高亮</td>
+</tr>
+<tr>
+<td>市场</td>
+<td>A股 / 港股 / 美股中概 / 全球</td>
+</tr>
+<tr>
+<td>内容类型</td>
+<td>fact（事实事件）/ opinion（观点与解读）</td>
+</tr>
+<tr>
+<td>活跃度</td>
+<td>赛道的加权热度得分，口径见 §5.2，<strong>反映报道密集度，不等同于行业景气度</strong></td>
+</tr>
+<tr>
+<td>归并组</td>
+<td>同一事件多源报道合并的逻辑单元</td>
+</tr>
+<tr>
+<td>修正层</td>
+<td>通过 overrides.yml 修正与补录，替代传统后台 UI</td>
+</tr>
+<tr>
+<td>看板</td>
+<td>数据可视化页面，10 张图表 + 6 条自动摘要</td>
+</tr>
+</tbody>
+</table>
+</div></body></html>

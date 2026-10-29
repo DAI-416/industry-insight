@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+
+# 原始采集快照不入库（体积大，且可由 events/ 回溯）
+data/raw/*.jsonl
+
+# 运行日志保留最近若干条即可，不入库
+data/runs/*.json
+
+# 个人记忆与工具目录不入库
+.workbuddy/
+archive/

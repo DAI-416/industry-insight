@@ -1,0 +1,427 @@
+version: 1
+settings:
+  window_days: 10
+  timeout_sec: 15
+  retry: 2
+  user_agent: Mozilla/5.0 (compatible; IndustryInsightBot/1.0)
+  cooldown_after_fail: 3
+sources:
+- id: gov-cn
+  name: 中国政府网
+  host: gov.cn
+  url: https://www.gov.cn/zhengce/zuixin.htm
+  type: html
+  level: S
+  tracks:
+  - MAC-FP
+  - INV-POLICY
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: pbc
+  name: 中国人民银行
+  host: pbc.gov.cn
+  url: http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html
+  type: html
+  level: S
+  tracks:
+  - MAC-MP
+  - INV-POLICY
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: nfra
+  name: 国家金融监督管理总局
+  host: nfra.gov.cn
+  url: https://www.nfra.gov.cn/cn/view/pages/ItemList.html?itemPId=923
+  type: html
+  level: S
+  tracks:
+  - INV-POLICY
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: csrc
+  name: 中国证监会
+  host: csrc.gov.cn
+  url: http://www.csrc.gov.cn/csrc/c100028/common_list.shtml
+  type: html
+  level: S
+  tracks:
+  - INV-POLICY
+  - INV-EXIT
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: stats-gov
+  name: 国家统计局
+  host: stats.gov.cn
+  url: https://www.stats.gov.cn/sj/zxfb/rss.xml
+  type: rss
+  level: S
+  tracks:
+  - MAC-DATA
+  markets:
+  - M-A
+  interval_hour: 6
+  status: active
+- id: ndrc
+  name: 国家发改委
+  host: ndrc.gov.cn
+  url: https://www.ndrc.gov.cn/xxgk/zcfb/
+  type: html
+  level: S
+  tracks:
+  - MAC-FP
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: fed
+  name: 美联储
+  host: federalreserve.gov
+  url: https://www.federalreserve.gov/feeds/press_all.xml
+  type: rss
+  level: S
+  tracks:
+  - MAC-MP
+  - MAC-GLOBAL
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+- id: imf
+  name: 国际货币基金组织
+  host: imf.org
+  url: https://www.imf.org/en/News/RSS
+  type: html
+  level: S
+  tracks:
+  - MAC-GLOBAL
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: pending
+- id: caixin
+  name: 财新
+  host: caixin.com
+  url: https://www.caixin.com/rss/all.xml
+  type: rss
+  level: A
+  tracks:
+  - INV-VC
+  - INV-FUND
+  - MAC-FP
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: yicai
+  name: 第一财经
+  host: yicai.com
+  url: https://www.yicai.com/api/ajax/getlistbycid?cid=0
+  type: html
+  level: A
+  tracks:
+  - INV-FLOW
+  - MAC-DATA
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: cls
+  name: 财联社
+  host: cls.cn
+  url: https://www.cls.cn/telegraph
+  type: html
+  level: A
+  tracks:
+  - INV-FLOW
+  - MAC-MP
+  markets:
+  - M-A
+  interval_hour: 3
+  status: pending
+- id: wallstreetcn
+  name: 华尔街见闻
+  host: wallstreetcn.com
+  url: https://dedicated.wallstreetcn.com/rss.xml
+  type: rss
+  level: A
+  tracks:
+  - MAC-GLOBAL
+  - MAC-MP
+  markets:
+  - M-GL
+  - M-A
+  interval_hour: 6
+  status: active
+- id: cnstock
+  name: 上海证券报
+  host: cnstock.com
+  url: https://www.cnstock.com/commonDetail/rss
+  type: html
+  level: A
+  tracks:
+  - INV-EXIT
+  - INV-VIEW
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: stcn
+  name: 证券时报
+  host: stcn.com
+  url: https://www.stcn.com/rss/index.xml
+  type: rss
+  level: A
+  tracks:
+  - INV-EXIT
+  - INV-FLOW
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: 21jingji
+  name: 21 世纪经济报道
+  host: 21jingji.com
+  url: https://www.21jingji.com/rss/
+  type: rss
+  level: A
+  tracks:
+  - INV-VC
+  - MAC-PROP
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: eeo
+  name: 经济观察报
+  host: eeo.com.cn
+  url: https://www.eeo.com.cn/rss/
+  type: rss
+  level: A
+  tracks:
+  - MAC-FP
+  - INV-VIEW
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: jiqizhixin
+  name: 机器之心
+  host: jiqizhixin.com
+  url: https://www.jiqizhixin.com/rss
+  type: rss
+  level: B
+  tracks:
+  - TEC-AI
+  - TEC-ROBO
+  - TEC-BCI
+  markets:
+  - M-GL
+  - M-A
+  interval_hour: 3
+  status: pending
+- id: qbitai
+  name: 量子位
+  host: qbitai.com
+  url: https://www.qbitai.com/feed
+  type: rss
+  level: B
+  tracks:
+  - TEC-AI
+  markets:
+  - M-GL
+  - M-A
+  interval_hour: 3
+  status: active
+- id: zhidx
+  name: 智东西
+  host: zhidx.com
+  url: https://zhidx.com/feed
+  type: rss
+  level: B
+  tracks:
+  - TEC-ROBO
+  - TEC-CE
+  - TEC-AI
+  markets:
+  - M-A
+  interval_hour: 3
+  status: pending
+- id: ijiwei
+  name: 集微网
+  host: ijiwei.com
+  url: https://www.ijiwei.com/rss
+  type: rss
+  level: B
+  tracks:
+  - TEC-SEMI
+  markets:
+  - M-A
+  - M-GL
+  interval_hour: 3
+  status: pending
+- id: 36kr
+  name: 36 氪
+  host: 36kr.com
+  url: https://36kr.com/feed
+  type: rss
+  level: B
+  tracks:
+  - INV-VC
+  - TEC-AI
+  markets:
+  - M-A
+  interval_hour: 3
+  status: pending
+- id: huxiu
+  name: 虎嗅
+  host: huxiu.com
+  url: https://www.huxiu.com/rss/0.xml
+  type: rss
+  level: E
+  tracks:
+  - INV-VIEW
+  markets:
+  - M-A
+  interval_hour: 6
+  status: pending
+- id: reuters
+  name: 路透社
+  host: reuters.com
+  url: https://www.reutersagency.com/feed/
+  type: rss
+  level: D
+  tracks:
+  - MAC-GLOBAL
+  - MAC-TRADE
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: pending
+- id: nikkei
+  name: 日经亚洲
+  host: asia.nikkei.com
+  url: https://asia.nikkei.com/rss/feed/nar
+  type: rss
+  level: D
+  tracks:
+  - TEC-SEMI
+  - MAC-TRADE
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+- id: scmp
+  name: 南华早报
+  host: scmp.com
+  url: https://www.scmp.com/rss/91/feed
+  type: rss
+  level: D
+  tracks:
+  - TEC-AI
+  - INV-EXIT
+  markets:
+  - M-HK
+  - M-CN
+  interval_hour: 6
+  status: active
+- id: ieee-spectrum
+  name: IEEE Spectrum
+  host: spectrum.ieee.org
+  url: https://spectrum.ieee.org/feeds/feed.rss
+  type: rss
+  level: B
+  tracks:
+  - TEC-ROBO
+  - TEC-BCI
+  - TEC-QUANT
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+- id: theverge
+  name: The Verge
+  host: theverge.com
+  url: https://www.theverge.com/rss/index.xml
+  type: rss
+  level: D
+  tracks:
+  - TEC-AI
+  - TEC-CE
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+- id: techcrunch
+  name: TechCrunch
+  host: techcrunch.com
+  url: https://techcrunch.com/feed/
+  type: rss
+  level: D
+  tracks:
+  - TEC-AI
+  - INV-VC
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+- id: trendforce
+  name: TrendForce
+  host: trendforce.com
+  url: https://www.trendforce.com/presscenter/rss
+  type: rss
+  level: B
+  tracks:
+  - TEC-SEMI
+  - TEC-COMPUTE
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: pending
+- id: semi
+  name: SEMI
+  host: semi.org
+  url: https://www.semi.org/en/rss.xml
+  type: rss
+  level: B
+  tracks:
+  - TEC-SEMI
+  markets:
+  - M-GL
+  interval_hour: 6
+  status: active
+alternatives:
+- name: 彭博社
+  host: bloomberg.com
+  level: D
+- name: 金融时报
+  host: ft.com
+  level: D
+- name: CNBC
+  host: cnbc.com
+  level: D
+- name: The Robot Report
+  host: therobotreport.com
+  level: B
+- name: Caixin Global
+  host: caixinglobal.com
+  level: D
+- name: 半导体行业观察
+  host: semiconductor-engineering.com
+  level: B
+- name: 港交所披露易
+  host: hkexnews.hk
+  level: C
+- name: 投中网
+  host: chinaventure.com.cn
+  level: B
+- name: 清科研究中心
+  host: zero2ipo.com.cn
+  level: B

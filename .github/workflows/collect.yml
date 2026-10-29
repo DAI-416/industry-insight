@@ -1,0 +1,52 @@
+name: collect
+
+# 采集 + 处理 + 建站 + 提交数据
+# 核心关注赛道（AI/机器人/脑机/半导体）相关源每 3 小时，其余每 6 小时。
+# GitHub Actions 的 cron 为 UTC，且不保证准点触发（高峰期可能延迟数十分钟）。
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"    # 每 3 小时（覆盖核心赛道）
+  workflow_dispatch:
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 运行管线（采集 → 分类 → 打分 → 摘要 → 统计 → 建站）
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m pipeline.run --weeks 12
+
+      - name: 提交数据与站点
+        run: |
+          git config user.name "industry-insight-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data site
+          if git diff --staged --quiet; then
+            echo "无变化，跳过提交"
+          else
+            git commit -m "chore: 数据更新 $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - name: 失败汇总
+        if: failure()
+        run: |
+          echo "::error::管线运行失败，请查看上方日志与 data/runs/ 下的记录"

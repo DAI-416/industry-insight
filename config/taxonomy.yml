@@ -1,0 +1,805 @@
+version: 1
+domains:
+- id: investment
+  name: 投资
+  desc: 钱往哪去 · 市场对赛道怎么看
+  order: 1
+- id: tech
+  name: 科技
+  desc: 技术进展与产业化
+  order: 2
+- id: macro
+  name: 宏观经济
+  desc: 政策 · 数据 · 全球环境
+  order: 3
+markets:
+- id: M-A
+  name: A 股
+  keywords:
+  - A股
+  - A 股
+  - 沪深
+  - 上证
+  - 深证
+  - 创业板
+  - 科创板
+  - 北交所
+  - 证监会
+  - 上交所
+  - 深交所
+  - 北向资金
+  - 人民币普通股
+  - 新三板
+  - 中国
+  - 国内
+  - 我国
+  - 人民币
+  - 中证
+  - 沪深300
+  - 央企
+  - 国企
+  - 国资委
+  - 工信部
+  - 财政部
+  - 国务院
+  - 商务部
+  - 地方政府
+  - 国产
+  - 本土厂商
+  - 出口
+  - 内需
+  strong:
+  - 上证指数
+  - 深证成指
+  - 创业板指
+  - 科创板
+  - 北交所
+- id: M-HK
+  name: 港股
+  keywords:
+  - 港股
+  - 港交所
+  - 恒生
+  - 恒指
+  - 南向资金
+  - 香港上市
+  - H股
+  - 中环
+  - 香港
+  - 港府
+  - 李家超
+  - 财政司
+  strong:
+  - 港交所
+  - 恒生指数
+  - 南向资金
+- id: M-CN
+  name: 美股中概
+  keywords:
+  - 中概股
+  - 中概
+  - 纳斯达克中国
+  - 阿里巴巴
+  - 拼多多
+  - 京东
+  - 百度
+  - 蔚来
+  - 小鹏
+  - 理想汽车
+  - 网易
+  - 携程
+  - 贝壳
+  - 好未来
+  - 富途
+  - 老虎证券
+  strong:
+  - 中概股
+  - 纳斯达克中国
+- id: M-GL
+  name: 全球
+  keywords: []
+  strong: []
+content_types:
+- id: fact
+  name: 事实
+- id: opinion
+  name: 观点
+opinion_markers:
+- 认为
+- 预计
+- 预期
+- 看好
+- 看空
+- 看多
+- 展望
+- 点评
+- 研报
+- 评级
+- 目标价
+- 观点
+- 分析认为
+- 判断
+- 值得关注
+- 建议关注
+- 坦言
+- 表示
+event_types:
+- name: 政策与监管
+  score: 25
+  keywords:
+  - 出台
+  - 印发
+  - 发布通知
+  - 征求意见
+  - 新政
+  - 监管新规
+  - 降准
+  - 降息
+  - 加息
+  - 立法
+  - 试点方案
+  - 管理办法
+  - 指导意见
+  - 白名单
+  - 出口管制
+  - 关税
+- name: 并购重组
+  score: 25
+  keywords:
+  - 收购
+  - 并购
+  - 合并
+  - 重组
+  - 要约收购
+  - 借壳
+  - 私有化
+  - 股权转让
+- name: 技术突破
+  score: 25
+  keywords:
+  - 突破
+  - 首次实现
+  - 全球首个
+  - 量产
+  - 首发
+  - 刷新纪录
+  - 创纪录
+  - 通过临床
+  - 获批上市
+  - 流片成功
+  - 发布新模型
+- name: 业绩与风险
+  score: 25
+  keywords:
+  - 暴雷
+  - 巨亏
+  - 亏损扩大
+  - 业绩预警
+  - 违约
+  - 退市
+  - 立案调查
+  - 处罚
+  - 暴跌
+  - 崩盘
+  - 裁员
+- name: 资本动作
+  score: 20
+  keywords:
+  - 融资
+  - 完成A轮
+  - 完成B轮
+  - 完成C轮
+  - 战略投资
+  - 增资
+  - IPO
+  - 上市辅导
+  - 递表
+  - 过会
+  - 定增
+  - 募资
+- name: 常规经营
+  score: 10
+  keywords: []
+- name: 观点评论
+  score: 5
+  keywords: []
+tracks:
+- id: INV-VC
+  name: 一级市场投融资
+  domain: investment
+  is_focus: false
+  keywords:
+  - 融资
+  - 天使轮
+  - A轮
+  - B轮
+  - C轮
+  - D轮
+  - 种子轮
+  - 战略投资
+  - 估值
+  - 独角兽
+  - 领投
+  - 跟投
+  - 完成融资
+  - 亿元融资
+  strong:
+  - 完成融资
+  - 天使轮
+  - 领投
+  - 独角兽
+  scope: 融资事件、轮次与金额、战投、CVC
+- id: INV-FUND
+  name: 基金与募资
+  domain: investment
+  is_focus: false
+  keywords:
+  - 新基金
+  - 基金设立
+  - 募资
+  - LP
+  - GP
+  - 母基金
+  - 政府引导基金
+  - 产业基金
+  - 创投基金
+  - 首关
+  - 关账
+  - 出资
+  strong:
+  - 政府引导基金
+  - 母基金
+  - 基金设立
+  - 首关
+  scope: 新基金设立、LP 动向、引导基金、募资规模
+- id: INV-EXIT
+  name: 退出与并购
+  domain: investment
+  is_focus: false
+  keywords:
+  - IPO
+  - 上市
+  - 递表
+  - 过会
+  - 注册生效
+  - 并购
+  - 收购
+  - 股权转让
+  - 退出
+  - S基金
+  - 借壳
+  - 私有化
+  strong:
+  - 递表
+  - 过会
+  - 注册生效
+  - S基金
+  - 私有化
+  scope: IPO、并购重组、股权转让、退出回报
+- id: INV-FLOW
+  name: 资金流向与配置
+  domain: investment
+  is_focus: false
+  keywords:
+  - 北向资金
+  - 南向资金
+  - 净流入
+  - 净流出
+  - 持仓
+  - 加仓
+  - 减仓
+  - 仓位
+  - 配置
+  - 资金流向
+  - 主力资金
+  - ETF
+  - 份额变化
+  strong:
+  - 北向资金
+  - 南向资金
+  - 主力资金
+  - 仓位
+  scope: 北向南向、公私募配置、板块资金流、机构仓位
+- id: INV-VIEW
+  name: 赛道投资观点
+  domain: investment
+  is_focus: false
+  keywords:
+  - 研报
+  - 评级
+  - 目标价
+  - 看好
+  - 看空
+  - 估值
+  - 性价比
+  - 机构观点
+  - 首席
+  - 分析师
+  - 投资逻辑
+  - 上调
+  - 下调
+  strong:
+  - 研报
+  - 目标价
+  - 评级上调
+  - 评级下调
+  scope: 机构研报观点、投资人判断、估值讨论（多为 opinion）
+- id: INV-POLICY
+  name: 投资政策与监管
+  domain: investment
+  is_focus: false
+  keywords:
+  - IPO政策
+  - 创投政策
+  - 私募新规
+  - 基金监管
+  - 外资准入
+  - 资本利得税
+  - 减持新规
+  - 再融资
+  - 注册制
+  - 备案
+  - 中基协
+  strong:
+  - 私募新规
+  - 减持新规
+  - 创投政策
+  - 外资准入
+  scope: IPO 政策、创投与私募政策、外资准入、资本税
+- id: TEC-AI
+  name: AI 与大模型
+  domain: tech
+  is_focus: true
+  keywords:
+  - 大模型
+  - 生成式AI
+  - 生成式人工智能
+  - GPT
+  - LLM
+  - 智能体
+  - Agent
+  - 多模态
+  - 推理模型
+  - 开源模型
+  - 训练
+  - 微调
+  - 提示词
+  - 大语言模型
+  - AIGC
+  - AI应用
+  - 算力租赁
+  strong:
+  - 大模型
+  - 大语言模型
+  - 生成式人工智能
+  - 智能体
+  - 多模态
+  scope: 模型发布、能力突破、AI 应用落地
+- id: TEC-ROBO
+  name: 人形机器人与具身智能
+  domain: tech
+  is_focus: true
+  keywords:
+  - 人形机器人
+  - 具身智能
+  - 灵巧手
+  - 关节模组
+  - 减速器
+  - 伺服
+  - 丝杠
+  - 本体厂商
+  - 运动控制
+  - 机器人本体
+  - 双足
+  - 四足
+  - 遥操作
+  strong:
+  - 人形机器人
+  - 具身智能
+  - 灵巧手
+  scope: 本体、零部件、量产进展、场景落地
+- id: TEC-BCI
+  name: 脑机接口
+  domain: tech
+  is_focus: true
+  keywords:
+  - 脑机接口
+  - BCI
+  - 神经接口
+  - 侵入式
+  - 非侵入式
+  - 电极阵列
+  - 神经信号
+  - 脑电
+  - 皮层
+  - 临床试验
+  - 植入
+  strong:
+  - 脑机接口
+  - 神经接口
+  - 电极阵列
+  - 侵入式
+  scope: 技术路线、临床试验、监管审批、产品化
+- id: TEC-SEMI
+  name: 半导体
+  domain: tech
+  is_focus: true
+  keywords:
+  - 半导体
+  - 芯片
+  - 晶圆
+  - 制程
+  - 光刻
+  - 刻蚀
+  - 封装
+  - 先进封装
+  - EDA
+  - IP核
+  - 存储芯片
+  - DRAM
+  - NAND
+  - 功率器件
+  - 第三代半导体
+  - 碳化硅
+  - 氮化镓
+  - 代工
+  - 良率
+  strong:
+  - 晶圆
+  - 光刻
+  - 先进封装
+  - 制程
+  - 碳化硅
+  - EDA
+  scope: 设计、制造、封测、设备材料、存储
+- id: TEC-COMPUTE
+  name: 算力与基础设施
+  domain: tech
+  is_focus: false
+  keywords:
+  - 算力
+  - 数据中心
+  - IDC
+  - GPU
+  - ASIC
+  - 光模块
+  - 液冷
+  - 服务器
+  - 交换机
+  - 智算中心
+  - 超算
+  - 集群
+  - 带宽
+  - 800G
+  - 1.6T
+  strong:
+  - 智算中心
+  - 液冷
+  - 光模块
+  - 800G
+  scope: 数据中心、GPU/ASIC、光模块、先进封装
+- id: TEC-CLOUD
+  name: 云计算与软件
+  domain: tech
+  is_focus: false
+  keywords:
+  - 云计算
+  - SaaS
+  - 公有云
+  - 私有云
+  - 企业软件
+  - 数据库
+  - 中间件
+  - 开源
+  - 云原生
+  - 微服务
+  - ERP
+  - 办公软件
+  - 订阅制
+  strong:
+  - SaaS
+  - 云原生
+  - 公有云
+  scope: 云服务、SaaS、企业软件、开源生态
+- id: TEC-CE
+  name: 消费电子与智能硬件
+  domain: tech
+  is_focus: false
+  keywords:
+  - 消费电子
+  - 智能手机
+  - 折叠屏
+  - PC
+  - 可穿戴
+  - 智能手表
+  - TWS
+  - AR
+  - VR
+  - MR
+  - 眼镜
+  - XR
+  - 摄像头
+  - 出货量
+  strong:
+  - 折叠屏
+  - VR
+  - MR
+  - 可穿戴
+  - 出货量
+  scope: 手机、PC、可穿戴、XR
+- id: TEC-AUTO
+  name: 自动驾驶与智能车
+  domain: tech
+  is_focus: false
+  keywords:
+  - 自动驾驶
+  - 智能驾驶
+  - 智驾
+  - 激光雷达
+  - 车规芯片
+  - L2
+  - L3
+  - L4
+  - 无人驾驶
+  - Robotaxi
+  - 汽车电子
+  - 域控制器
+  - 新能源车
+  - 智能座舱
+  strong:
+  - 自动驾驶
+  - Robotaxi
+  - 激光雷达
+  - 智驾
+  scope: 智驾方案、车规芯片、智能化
+- id: TEC-NET
+  name: 通信与网络
+  domain: tech
+  is_focus: false
+  keywords:
+  - 5G
+  - 6G
+  - 卫星互联网
+  - 低轨卫星
+  - 光通信
+  - 光纤
+  - 基站
+  - 射频
+  - 天线
+  - 星链
+  - 通信设备
+  - 物联网
+  - NB-IoT
+  strong:
+  - 6G
+  - 卫星互联网
+  - 低轨卫星
+  - 星链
+  scope: 5G/6G、卫星互联网、光通信
+- id: TEC-SEC
+  name: 网络安全
+  domain: tech
+  is_focus: false
+  keywords:
+  - 网络安全
+  - 数据安全
+  - 信息安全
+  - 零信任
+  - 攻防
+  - 漏洞
+  - 勒索软件
+  - 等保
+  - 密码
+  - 隐私计算
+  strong:
+  - 零信任
+  - 勒索软件
+  - 等保
+  scope: 安全产品、合规、攻防事件
+- id: TEC-QUANT
+  name: 量子计算
+  domain: tech
+  is_focus: false
+  keywords:
+  - 量子计算
+  - 量子比特
+  - 超导量子
+  - 量子纠错
+  - 量子优势
+  - 量子通信
+  - 量子密钥
+  strong:
+  - 量子比特
+  - 量子纠错
+  - 量子优势
+  scope: 硬件进展、纠错、应用探索
+- id: MAC-MP
+  name: 货币政策与利率
+  domain: macro
+  is_focus: false
+  keywords:
+  - 货币政策
+  - 降准
+  - 降息
+  - 加息
+  - 逆回购
+  - MLF
+  - LPR
+  - 公开市场操作
+  - 流动性
+  - 存款准备金
+  - 美联储
+  - 议息
+  - 联邦基金利率
+  - 缩表
+  - 扩表
+  strong:
+  - 降准
+  - 降息
+  - LPR
+  - MLF
+  - 议息
+  - 联邦基金利率
+  scope: 央行操作、利率、流动性
+- id: MAC-FP
+  name: 财政与产业政策
+  domain: macro
+  is_focus: false
+  keywords:
+  - 财政政策
+  - 专项债
+  - 特别国债
+  - 减税
+  - 降费
+  - 补贴
+  - 产业规划
+  - 五年规划
+  - 中央经济工作会议
+  - 政治局会议
+  - 政府工作报告
+  - 以旧换新
+  strong:
+  - 特别国债
+  - 专项债
+  - 中央经济工作会议
+  - 政府工作报告
+  scope: 财政发力、产业规划、补贴
+- id: MAC-DATA
+  name: 增长与景气数据
+  domain: macro
+  is_focus: false
+  keywords:
+  - GDP
+  - CPI
+  - PPI
+  - PMI
+  - 社融
+  - 信贷数据
+  - 工业增加值
+  - 固定资产投资
+  - 社零
+  - 失业率
+  - 进出口数据
+  - 经济数据
+  - 景气指数
+  strong:
+  - GDP
+  - CPI
+  - PPI
+  - PMI
+  - 社融
+  scope: GDP、PMI、通胀、就业、社融
+- id: MAC-PROP
+  name: 地产与信贷周期
+  domain: macro
+  is_focus: false
+  keywords:
+  - 房地产
+  - 楼市
+  - 房价
+  - 销售面积
+  - 土地出让
+  - 房企
+  - 保交楼
+  - 房贷利率
+  - 限购
+  - 城中村改造
+  - 保障房
+  - 开发投资
+  strong:
+  - 保交楼
+  - 限购
+  - 城中村改造
+  - 房贷利率
+  scope: 地产销售投资、信贷、政策
+- id: MAC-FX
+  name: 汇率与资本流动
+  domain: macro
+  is_focus: false
+  keywords:
+  - 汇率
+  - 人民币汇率
+  - 美元指数
+  - 离岸人民币
+  - 中间价
+  - 资本流动
+  - 跨境资金
+  - 外汇储备
+  - 结售汇
+  - 汇率贬值
+  - 汇率升值
+  strong:
+  - 人民币汇率
+  - 美元指数
+  - 中间价
+  - 外汇储备
+  scope: 汇率、跨境资本流动
+- id: MAC-CMD
+  name: 大宗商品与能源
+  domain: macro
+  is_focus: false
+  keywords:
+  - 原油
+  - 布伦特
+  - 黄金
+  - 铜价
+  - 铁矿石
+  - 煤炭价格
+  - 天然气
+  - 锂价
+  - 碳酸锂
+  - 大宗商品
+  - 期货价格
+  - OPEC
+  - 减产
+  strong:
+  - 布伦特
+  - 碳酸锂
+  - OPEC
+  - 锂价
+  scope: 能源、金属、农产品价格
+- id: MAC-TRADE
+  name: 国际贸易与地缘
+  domain: macro
+  is_focus: false
+  keywords:
+  - 关税
+  - 出口管制
+  - 实体清单
+  - 贸易摩擦
+  - 反倾销
+  - 供应链
+  - 断供
+  - 制裁
+  - 自由贸易协定
+  - 出口限制
+  - 技术封锁
+  - 脱钩
+  strong:
+  - 出口管制
+  - 实体清单
+  - 技术封锁
+  - 关税
+  scope: 关税、出口管制、供应链（与半导体强关联）
+- id: MAC-GLOBAL
+  name: 全球宏观
+  domain: macro
+  is_focus: false
+  keywords:
+  - 美国经济
+  - 欧元区
+  - 日本央行
+  - 欧洲央行
+  - 全球经济
+  - 国际货币基金组织
+  - 世界银行
+  - 经济衰退
+  - 通胀预期
+  - 就业数据
+  - 非农
+  strong:
+  - 欧洲央行
+  - 日本央行
+  - 非农
+  - 经济衰退
+  scope: 美欧日主要经济体动向

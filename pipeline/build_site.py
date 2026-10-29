@@ -1,0 +1,612 @@
+"""P9 站点构建：生成静态页面与图表。
+
+页面：首页 / 25 个赛道详情 / 数据看板 / 检索
+"""
+from __future__ import annotations
+
+from collections import Counter, defaultdict
+from html import escape
+
+from . import charts, site_assets, util
+
+MARKET_NAME = {"M-A": "A股", "M-HK": "港股", "M-CN": "中概", "M-GL": "全球"}
+LEVEL_NAME = {"critical": "关键", "important": "重要", "normal": "一般", "low": "低"}
+DOMAIN_ORDER = ["investment", "tech", "macro"]
+
+FOOTER = """
+<footer>
+  <div class="wrap">
+    <b>口径说明</b>　赛道活跃度 = Σ(事实类条目重要度分) × 0.6 + 事实类条目数 × 10 × 0.4；
+    重要度满分 100，核心关注赛道 ×1.15。<br>
+    <b>重要提示</b>　活跃度反映的是<b>报道密集度</b>，不等同于行业景气度。媒体密集报道可能仅因单一热点事件，
+    不代表行业基本面好转。本页仅聚合公开资讯摘要并保留原文链接，不构成投资建议。<br>
+    <b>数据来源</b>　公开 RSS 源，摘要由模型生成或取原文首句，每条均可回溯原文。
+    生成时间 {ts}
+  </div>
+</footer>
+"""
+
+
+def _e(s) -> str:
+    return escape(str(s or ""), quote=True)
+
+
+def _ts() -> str:
+    return f"{util.now():%Y-%m-%d %H:%M}"
+
+
+# ---------------- 页面骨架 ----------------
+
+def page(title: str, active: str, body: str, root: str = ".") -> str:
+    nav = [("index.html", "首页", "home"), ("analytics.html", "数据看板", "analytics"),
+           ("search.html", "检索", "search")]
+    nav_html = "".join(
+        f'<a href="{root}/{href}" class="{"on" if key == active else ""}">{label}</a>'
+        for href, label, key in nav
+    )
+    return f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{_e(title)}</title>
+<meta name="description" content="投资 · 科技 · 宏观 三域行业动态周报，聚焦 AI、人形机器人、脑机接口、半导体">
+<link rel="stylesheet" href="{root}/assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="{root}/index.html">行业洞察<small>三域周报</small></a>
+  <nav class="nav">{nav_html}</nav>
+  <div class="top-right"></div>
+</div></header>
+{body}
+{FOOTER.replace("{ts}", _ts())}
+<script src="{root}/assets/app.js"></script>
+</body></html>"""
+
+
+def topbar_extra(week: str, updated: str, root: str = ".") -> str:
+    return f"""<div class="market-filter">
+  <button data-m="ALL" class="on">全部</button>
+  <button data-m="M-A">A股</button>
+  <button data-m="M-HK">港股</button>
+  <button data-m="M-CN">中概</button>
+  <button data-m="M-GL">全球</button>
+</div><span>{_e(week)}　更新 {_e(updated)}</span>"""
+
+
+# ---------------- 条目渲染 ----------------
+
+def item_html(e: dict, track_map: dict, show_track: bool = True) -> str:
+    lvl = e.get("importance_level", "low")
+    score = e.get("importance_score", 0)
+    score_cls = "critical" if lvl == "critical" else "important" if lvl == "important" else ""
+    score_txt = "—" if e.get("content_type") == "opinion" else str(score)
+    track = track_map.get(e.get("track_id", ""), {})
+    market = MARKET_NAME.get(e.get("market_primary", ""), "全球")
+
+    badges = []
+    if e.get("pinned"):
+        badges.append('<span class="pin">★ 置顶</span>')
+    if show_track and track:
+        badges.append(f'<span class="badge">{_e(track["name"])}</span>')
+    if e.get("content_type") == "opinion":
+        badges.append('<span class="badge opinion">观点</span>')
+    conf = e.get("classify_confidence")
+    if conf is not None and conf < 0.7:
+        # 按信源推断是「有依据但精度有限」，用中性徽标；纯规则低分才标红
+        if e.get("classify_method") == "rules:source_hint":
+            badges.append('<span class="badge">按信源归类</span>')
+        else:
+            badges.append('<span class="badge lowconf">低置信归类</span>')
+    if e.get("is_manual"):
+        badges.append('<span class="badge">人工补录</span>')
+
+    return f"""<div class="item" data-market="{_e(_market_id(e))}">
+  <div class="score {score_cls}">{score_txt}<small>{_e(LEVEL_NAME.get(lvl, ""))}</small></div>
+  <div>
+    <div class="i-title" onclick="window.__openDrawer('{_e(e.get('id',''))}')">{_e(e.get('title',''))}</div>
+    <div class="i-sum">{_e(e.get('ai_summary',''))}</div>
+    <div class="i-meta">{''.join(badges)}<span>{_e(e.get('source_name',''))}</span>
+      <span>{_e(util.truncate(e.get('published_at','')[:10], 10))}</span>
+      <span>{_e(market)}</span></div>
+  </div>
+</div>"""
+
+
+def _market_id(e: dict) -> str:
+    return e.get("market_primary", "")
+
+
+def drawer_inner(e: dict, track_map: dict) -> str:
+    """抽屉内部 HTML（不含外层容器，供页面内嵌或前端按需渲染）"""
+    track = track_map.get(e.get("track_id", ""), {})
+    sources = e.get("sources") or [{
+        "name": e.get("source_name", ""), "url": e.get("url", ""),
+        "level": e.get("source_level", ""), "title": e.get("title", ""),
+    }]
+    src_rows = "".join(
+        f'<div class="src">[{_e(s.get("level",""))}] {_e(s.get("name",""))}　'
+        f'<a href="{_e(s.get("url",""))}" target="_blank" rel="noopener noreferrer">查看原文 ↗</a></div>'
+        for s in sources[:6]
+    )
+    audit = e.get("audit") or {}
+    if e.get("is_manual"):
+        audit_txt = "人工补录，摘要由人工撰写"
+    elif audit.get("pass"):
+        method = {"llm": "模型生成", "first_sentence": "原文首句", "fallback": "安全降级"}.get(
+            e.get("summary_method", ""), "原文首句")
+        audit_txt = f'<span class="ok">✓ 已通过校验</span>（{method}，数字可在原文定位）'
+    else:
+        audit_txt = f'<span class="warn">⚠ 校验未通过，已降级处理</span>（{", ".join(audit.get("issues", []))}）'
+
+    meta = [MARKET_NAME.get(e.get("market_primary", ""), "全球")]
+    if track:
+        meta.append(track["name"])
+    if e.get("event_type"):
+        meta.append(e["event_type"])
+    if e.get("content_type") == "fact":
+        meta.append(f"重要度 {e.get('importance_score', 0)}")
+    meta.append(util.truncate(e.get("published_at", "")[:16].replace("T", " "), 16))
+
+    return f"""<h3>{_e(e.get('title',''))}</h3>
+  <div class="meta">{''.join(f"<span>{_e(m)}</span>" for m in meta)}</div>
+  <div class="sum">{_e(e.get('ai_summary',''))}</div>
+  <h4>原文来源（{e.get('source_count', 1)} 个）</h4>
+  {src_rows}
+  <div class="audit">{audit_txt}</div>
+"""
+
+
+def drawer_html(e: dict, track_map: dict) -> str:
+    return (f'<div id="d-{_e(e.get("id", ""))}" style="display:none">'
+            f'{drawer_inner(e, track_map)}</div>')
+
+
+# ---------------- 首页 ----------------
+
+def build_index(events: list[dict], stats: dict, tax: dict, week: str) -> str:
+    track_map = {t["id"]: t for t in tax["tracks"]}
+    wk = stats["weekly"].get(week, {})
+    track_act = {t["track_id"]: t for t in wk.get("track_activity", [])}
+    prev_week = util.prev_week(week)
+    prev_act = {t["track_id"]: t for t in stats["weekly"].get(prev_week, {}).get("track_activity", [])}
+
+    week_events = [e for e in events if e.get("week_key") == week and e.get("status") == "published"]
+    notice = ""
+    if not week_events:
+        # 本周尚无数据时回退到上一周
+        week = prev_week
+        week_events = [e for e in events if e.get("week_key") == week and e.get("status") == "published"]
+        notice = f'<div class="empty" style="margin-bottom:18px"><b>本周数据积累中</b>以下展示上周（{_e(week)}）内容</div>'
+
+    facts = [e for e in week_events if e.get("content_type") == "fact"]
+    opinions = [e for e in week_events if e.get("content_type") == "opinion"]
+
+    def trend_html(tid: str) -> str:
+        cur = track_act.get(tid, {}).get("score", 0)
+        prv = prev_act.get(tid, {}).get("score", 0)
+        if prv <= 0:
+            return '<span class="trend-down">—</span>'
+        delta = (cur - prv) / prv * 100
+        if delta > 15:
+            return f'<span class="trend-up">↑ {delta:.0f}%</span>'
+        if delta < -15:
+            return f'<span class="trend-down">↓ {abs(delta):.0f}%</span>'
+        return '<span class="trend-down">持平</span>'
+
+    def top_points(tid: str, n: int) -> list[dict]:
+        rows = [e for e in facts if e.get("track_id") == tid]
+        rows.sort(key=lambda x: (-int(x.get("pinned", False)), -x.get("importance_score", 0)))
+        return rows[:n]
+
+    # --- 核心关注 ---
+    focus_cards = []
+    for t in [x for x in tax["tracks"] if x.get("is_focus")]:
+        pts = top_points(t["id"], 2)
+        act = track_act.get(t["id"], {})
+        li = "".join(
+            f'<li onclick="window.__openDrawer(\'{_e(p.get("id",""))}\')" style="cursor:pointer">'
+            f'{_e(util.truncate(p.get("title",""), 42))}</li>' for p in pts
+        ) or '<li class="empty">本周无重大动态</li>'
+        focus_cards.append(f"""<div class="focus-card" data-market="{_e(_dominant_market(pts))}">
+  <span class="tag">核心</span>
+  <div class="fc-name"><a href="track/{_e(t['id'])}.html">{_e(t['name'])}</a></div>
+  <div class="fc-meta"><span>本周 {act.get('count', 0)} 条</span>{trend_html(t['id'])}</div>
+  <ul class="fc-points">{li}</ul>
+</div>""")
+
+    # --- 三域 ---
+    domains_html = []
+    for did in DOMAIN_ORDER:
+        dom = next((d for d in tax["domains"] if d["id"] == did), None)
+        if not dom:
+            continue
+        rows = []
+        for t in [x for x in tax["tracks"] if x["domain"] == did]:
+            pts = top_points(t["id"], 1)
+            act = track_act.get(t["id"], {})
+            top_txt = (f'<span style="cursor:pointer" onclick="window.__openDrawer(\'{_e(pts[0].get("id",""))}\')">'
+                       f'{_e(util.truncate(pts[0].get("title",""), 60))}</span>') if pts \
+                else '<span style="color:var(--ink5)">本周无动态</span>'
+            dot = '<span class="focus-dot"></span>' if t.get("is_focus") else ""
+            rows.append(f"""<div class="track-row" data-market="{_e(_dominant_market(pts))}">
+  <div class="tr-name">{dot}<a href="track/{_e(t['id'])}.html">{_e(t['name'])}</a></div>
+  <div class="tr-top">{top_txt}</div>
+  <div class="tr-stat"><b>{act.get('count', 0)}</b>{trend_html(t['id'])}</div>
+</div>""")
+        domains_html.append(f"""<div class="domain">
+  <div class="domain-head"><h3>{_e(dom['name'])}</h3><span>{_e(dom['desc'])}</span></div>
+  {''.join(rows)}
+</div>""")
+
+    # --- 关键信号 ---
+    signals = sorted([e for e in facts if e.get("importance_level") == "critical"],
+                     key=lambda x: (-int(x.get("pinned", False)), -x.get("importance_score", 0)))[:10]
+    signals_html = "".join(item_html(e, track_map) for e in signals) or \
+        '<div class="empty"><b>本周暂无关键信号</b>重要度 ≥75 的事件会出现在这里</div>'
+
+    # --- 观点 ---
+    opinions_sorted = sorted(opinions, key=lambda x: x.get("published_at", ""), reverse=True)[:5]
+    opinions_html = "".join(item_html(e, track_map) for e in opinions_sorted) or \
+        '<div class="empty"><b>本周暂无观点内容</b>研报与评论类条目会归入这里</div>'
+
+    # --- 实时流 ---
+    live = sorted(week_events, key=lambda x: x.get("published_at", ""), reverse=True)[:60]
+    live_html = "".join(item_html(e, track_map) for e in live) or \
+        '<div class="empty"><b>本周尚无条目</b>采集任务每 3-6 小时运行一次</div>'
+
+    drawers = "".join(drawer_html(e, track_map) for e in live)
+
+    body = f"""
+<div class="wrap">
+  {notice}
+  <div class="section">
+    <div class="section-head"><h2>核心关注</h2>
+      <span class="note">AI · 人形机器人 · 脑机接口 · 半导体</span></div>
+    <div class="focus-grid">{''.join(focus_cards)}</div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>三域动态</h2>
+      <span class="note">投资 → 钱往哪去 · 科技 → 技术进展 · 宏观 → 政策与数据</span></div>
+    {''.join(domains_html)}
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>本周关键信号</h2>
+      <span class="note">重要度 ≥ 75，最多 10 条</span></div>
+    {signals_html}
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>观点与解读</h2>
+      <span class="note">不参与活跃度计算</span></div>
+    {opinions_html}
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>本周实时流</h2>
+      <span class="note">本周至今全部条目，按时间倒序</span></div>
+    {live_html}
+  </div>
+</div>
+<div class="drawer-mask"></div><aside class="drawer"></aside>
+{drawers}
+"""
+    html = page(f"行业洞察 · {week}", "home", body)
+    # 顶栏右侧注入市场筛选
+    html = html.replace('<div class="top-right"></div>',
+                        f'<div class="top-right">{topbar_extra(week, _ts())}</div>')
+    return html
+
+
+def _dominant_market(items: list[dict]) -> str:
+    if not items:
+        return ""
+    return Counter(i.get("market_primary", "M-GL") for i in items).most_common(1)[0][0]
+
+
+# ---------------- 赛道详情 ----------------
+
+def build_track(t: dict, events: list[dict], stats: dict, tax: dict, week: str) -> str:
+    track_map = {x["id"]: x for x in tax["tracks"]}
+    wk = stats["weekly"].get(week, {})
+    act = next((x for x in wk.get("track_activity", []) if x["track_id"] == t["id"]), {})
+
+    rows = sorted([e for e in events if e.get("track_id") == t["id"] and e.get("week_key") == week
+                   and e.get("status") == "published"],
+                  key=lambda x: (-int(x.get("pinned", False)), -x.get("importance_score", 0)))
+    facts = [e for e in rows if e.get("content_type") == "fact"]
+    ops = [e for e in rows if e.get("content_type") == "opinion"]
+
+    # 近 8 周迷你折线
+    weeks8 = util.last_n_weeks(week, 8)
+    series_vals = []
+    for w in weeks8:
+        d = stats["weekly"].get(w, {})
+        a = next((x for x in d.get("track_activity", []) if x["track_id"] == t["id"]), None)
+        series_vals.append(a["score"] if a else 0)
+    mini = charts.multiline(
+        [{"name": t["name"], "values": series_vals}], weeks8,
+        f"{t['name']} 近 8 周活跃度", w=680, h=180)
+
+    market_dist = Counter(e.get("market_primary", "M-GL") for e in rows)
+    stack = charts.stacked(
+        [{"name": MARKET_NAME.get(k, k), "value": v} for k, v in market_dist.most_common()],
+        f"{t['name']} 本周市场分布", w=680)
+
+    facts_html = "".join(item_html(e, track_map, show_track=False) for e in facts) or \
+        '<div class="empty"><b>本周该赛道无事实类条目</b></div>'
+    ops_html = "".join(item_html(e, track_map, show_track=False) for e in ops) or \
+        '<div class="empty"><b>本周该赛道无观点内容</b></div>'
+
+    body = f"""
+<div class="wrap">
+  <div class="section">
+    <div class="section-head">
+      <h2>{_e(t['name'])}</h2>
+      <span class="note">{_e(t.get('scope',''))}　·　本周 {act.get('count',0)} 条事实 / {act.get('opinion_count',0)} 条观点　·　活跃度 {act.get('score',0):g}</span>
+    </div>
+    <div class="chart-card"><h3>近 8 周活跃度走势</h3>
+      <div class="caliber">口径：Σ重要度分 × 0.6 + 条目数 × 4</div>{mini}</div>
+    <div class="chart-card"><h3>本周市场分布</h3>
+      <div class="caliber">按条目主市场统计</div>{stack}</div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>本周事实动态</h2><span class="note">按重要度排序</span></div>
+    {facts_html}
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>观点与解读</h2><span class="note">不参与活跃度计算</span></div>
+    {ops_html}
+  </div>
+</div>
+<div class="drawer-mask"></div><aside class="drawer"></aside>
+{''.join(drawer_html(e, track_map) for e in rows)}
+"""
+    html = page(f"{t['name']} · 行业洞察", "home", body, root="..")
+    return html.replace('<div class="top-right"></div>',
+                        f'<div class="top-right">{topbar_extra(week, _ts(), root="..")}</div>')
+
+
+# ---------------- 数据看板 ----------------
+
+def build_analytics(events: list[dict], stats: dict, tax: dict, week: str) -> str:
+    track_map = {x["id"]: x for x in tax["tracks"]}
+    wk = stats["weekly"].get(week, {})
+    prev = stats["weekly"].get(util.prev_week(week), {})
+    act = wk.get("track_activity", [])
+    prev_map = {x["track_id"]: x for x in prev.get("track_activity", [])}
+    focus_ids = {x["id"] for x in tax["tracks"] if x.get("is_focus")}
+
+    summaries = stats["summaries"].get(week, {}).get("items", [])
+    sum_html = "".join(f'<li><b>{_e(s["id"])}</b>{_e(s["text"])}</li>' for s in summaries) or \
+        '<li><b>—</b>本周数据不足，暂无自动摘要</li>'
+
+    # V1 活跃度排行
+    v1_data = [{"name": x["name"], "value": x["score"], "key": x["track_id"],
+                "sub": f"{x['count']} 条"} for x in act if x["count"] > 0][:14]
+    v1 = charts.hbar(v1_data, "本周赛道活跃度排行", highlight=focus_ids)
+
+    # V5 / V6 / V7
+    md = wk.get("market_dist", {})
+    v5 = charts.stacked([{"name": MARKET_NAME.get(k, k), "value": v} for k, v in
+                         sorted(md.items(), key=lambda kv: -kv[1])], "本周市场分布")
+    v6 = charts.donut([{"name": "事实", "value": wk.get("fact_count", 0)},
+                       {"name": "观点", "value": wk.get("opinion_count", 0)}], "内容类型分布")
+    imp = wk.get("importance_dist", {})
+    imp_order = [("critical", "关键信号"), ("important", "重要"), ("normal", "一般"), ("low", "低优先级")]
+    v7_parts = [{"name": label, "value": imp.get(k, 0)} for k, label in imp_order if imp.get(k, 0) > 0]
+    v7 = charts.stacked(v7_parts or [{"name": "无数据", "value": 1}], "重要度等级分布")
+
+    # V2 核心赛道走势
+    def v2_for(n: int) -> str:
+        weeks = util.last_n_weeks(week, n)
+        series = []
+        for t in tax["tracks"]:
+            if t["id"] not in focus_ids:
+                continue
+            vals = []
+            for w in weeks:
+                a = next((x for x in stats["weekly"].get(w, {}).get("track_activity", [])
+                          if x["track_id"] == t["id"]), None)
+                vals.append(a["score"] if a else 0)
+            name = "人形机器人" if t["id"] == "TEC-ROBO" else t["name"]
+            series.append({"name": name, "values": vals})
+        return charts.multiline(series, weeks, "核心赛道活跃度走势", w=680, h=250)
+
+    v2_4, v2_12 = v2_for(4), v2_for(12)
+
+    # V3 热力矩阵
+    def v3_for(n: int) -> str:
+        weeks = util.last_n_weeks(week, n)
+        order = [x["track_id"] for x in act if x["count"] > 0][:12] or [t["id"] for t in tax["tracks"]][:8]
+        rows = [{"name": track_map[tid]["name"], "is_focus": tid in focus_ids} for tid in order]
+        matrix = []
+        for tid in order:
+            line = []
+            for w in weeks:
+                a = next((x for x in stats["weekly"].get(w, {}).get("track_activity", [])
+                          if x["track_id"] == tid), None)
+                line.append(a["score"] if (a and a["count"] > 0) else None)
+            matrix.append(line)
+        return charts.heatmap(rows, weeks, matrix, "赛道 × 周 活跃度热力矩阵", w=680)
+
+    v3_4, v3_12 = v3_for(4), v3_for(12)
+
+    # V4 环比
+    deltas = []
+    for x in act:
+        p = prev_map.get(x["track_id"])
+        if not p or p["score"] <= 0 or x["count"] < 3:
+            continue
+        deltas.append({"name": x["name"],
+                       "value": round((x["score"] - p["score"]) / p["score"] * 100, 1)})
+    deltas.sort(key=lambda d: -abs(d["value"]))
+    v4 = charts.diverging(deltas[:10], "活跃度环比变化（本周 vs 上周）")
+
+    # V8 / V9
+    v8 = charts.hbar([{"name": s["name"], "value": s["count"]} for s in stats["sources"]],
+                     "近 4 周信源贡献 Top 10", unit=" 条", label_w=112)
+    ents = wk.get("top_entities", [])
+    v9 = charts.hbar([{"name": e["name"], "value": e["count"]} for e in ents],
+                     "本周高频实体 / 主题词 Top 15", unit=" 次", label_w=124)
+
+    # V10 年度累计
+    weeks_all = stats["timeseries"]["weeks"]
+    if len(weeks_all) >= 13:
+        acc = [{"name": track_map[tid]["name"], "value": round(sum(vals), 1), "key": tid}
+               for tid, vals in stats["timeseries"]["tracks"].items() if sum(vals) > 0]
+        acc.sort(key=lambda x: -x["value"])
+        v10 = ('<div class="chart-card"><h3>V10 · 年度累计活跃度</h3>'
+               '<div class="caliber">口径：窗口内各周活跃度求和</div>'
+               + charts.hbar(acc[:12], "累计活跃度", highlight=focus_ids) + '</div>')
+    else:
+        v10 = ('<div class="chart-card"><h3>V10 · 年度累计活跃度</h3>'
+               '<div class="caliber">数据积累中，需满 13 周后启用</div>'
+               '<div class="empty"><b>暂无足够历史</b>当前仅 ' + str(len(weeks_all)) +
+               ' 周数据，满 13 周后自动显示</div></div>')
+
+    body = f"""
+<div class="wrap">
+  <div class="section">
+    <div class="section-head"><h2>本周数据摘要</h2>
+      <span class="note">全部由代码统计生成，非模型撰写 · {_e(week)}</span></div>
+    <ul class="sum-list">{sum_html}</ul>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>本周快照</h2><span class="note">横截面比较</span></div>
+    <div class="chart-card"><h3>V1 · 赛道活跃度排行</h3>
+      <div class="caliber">口径：Σ事实类重要度分 × 0.6 + 事实类条目数 × 4；深色为核心关注赛道</div>{v1}</div>
+    <div class="chart-grid">
+      <div class="chart-card"><h3>V5 · 市场分布</h3>
+        <div class="caliber">按条目主市场统计，悬停查看条数</div>{v5}</div>
+      <div class="chart-card"><h3>V6 · 内容类型分布</h3>
+        <div class="caliber">事实类参与活跃度计算，观点类不计入</div>{v6}</div>
+    </div>
+    <div class="chart-card"><h3>V7 · 重要度等级分布</h3>
+      <div class="caliber">关键 ≥75｜重要 60-74｜一般 40-59｜低优先级 &lt;40</div>{v7}</div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>时序趋势</h2>
+      <span class="range-switch">
+        <button class="range-btn on" data-r="12">12 周</button>
+        <button class="range-btn" data-r="4">4 周</button>
+      </span></div>
+    <div class="chart-card"><h3>V2 · 核心赛道活跃度走势</h3>
+      <div class="caliber">四个核心关注赛道逐周活跃度，用于判断热度趋势</div>
+      <div data-range="12">{v2_12}</div><div data-range="4" style="display:none">{v2_4}</div></div>
+    <div class="chart-card"><h3>V3 · 赛道 × 周 活跃度热力矩阵</h3>
+      <div class="caliber">色深 = 活跃度高低；<b>空白格 = 该周无任何条目</b>（与「有条目但分数低」区分）</div>
+      <div data-range="12">{v3_12}</div><div data-range="4" style="display:none">{v3_4}</div></div>
+    <div class="chart-card"><h3>V4 · 活跃度环比变化</h3>
+      <div class="caliber">仅统计本周条目 ≥3 条且上周有数据的赛道；↑绿 ↓灰</div>{v4}</div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><h2>结构与来源</h2><span class="note">用于评估信源质量与内容结构</span></div>
+    <div class="chart-card"><h3>V8 · 信源贡献</h3>
+      <div class="caliber">近 4 周各信源被采用的条目数；某源骤降可能意味着采集失效</div>{v8}</div>
+    <div class="chart-card"><h3>V9 · 高频实体 / 主题词</h3>
+      <div class="caliber">本周标题与摘要中高频出现的英文专名与赛道关键词，合并排行</div>{v9}</div>
+    {v10}
+  </div>
+</div>
+"""
+    html = page("数据看板 · 行业洞察", "analytics", body)
+    return html.replace('<div class="top-right"></div>',
+                        f'<div class="top-right">{topbar_extra(week, _ts())}</div>')
+
+
+# ---------------- 检索页 ----------------
+
+SEARCH_TPL = """
+<div class="wrap">
+  <div class="section">
+    <div class="section-head"><h2>检索</h2>
+      <span class="note">全站 __COUNT__ 条已发布条目</span></div>
+    <div class="search-box"><input id="q" type="search" placeholder="输入关键词，如「人形机器人」「光模块」「降准」" autocomplete="off"></div>
+    <div class="filters">
+      <select id="f-track"><option value="">全部赛道</option>__TRACK_OPTS__</select>
+      <select id="f-market"><option value="">全部市场</option>__MARKET_OPTS__</select>
+      <select id="f-type"><option value="">全部类型</option><option value="fact">事实</option><option value="opinion">观点</option></select>
+      <select id="f-level"><option value="">全部重要度</option><option value="critical">关键信号</option><option value="important">重要</option><option value="normal">一般</option><option value="low">低优先级</option></select>
+    </div>
+    <div class="result-count" id="rcount"></div>
+    <div id="results"></div>
+  </div>
+</div>
+<div class="drawer-mask"></div><aside class="drawer"></aside>
+<script>window.__DATA = __DATA__;</script>
+"""
+
+
+def build_search(events: list[dict], tax: dict, week: str) -> str:
+    import json
+    track_map = {x["id"]: x for x in tax["tracks"]}
+    rows = [e for e in events if e.get("status") == "published"]
+    rows.sort(key=lambda x: x.get("published_at", ""), reverse=True)
+
+    data = [{
+        "i": e.get("id", ""),
+        "t": e.get("title", ""),
+        "s": e.get("ai_summary", ""),
+        "k": e.get("track_id", ""),
+        "m": MARKET_NAME.get(e.get("market_primary", ""), "全球"),
+        "y": e.get("content_type", "fact"),
+        "l": e.get("importance_level", "low"),
+        "v": e.get("importance_score", 0),
+        "w": str(e.get("week_key", ""))[-2:],
+        "n": e.get("source_name", ""),
+        "o": str(e.get("published_at", ""))[:10],
+        "c": e.get("classify_confidence", 1),
+        "h": drawer_inner(e, track_map),
+    } for e in rows]
+
+    track_opts = "".join(f'<option value="{_e(t["id"])}">{_e(t["name"])}</option>' for t in tax["tracks"])
+    market_opts = "".join(f'<option value="{k}">{v}</option>' for k, v in MARKET_NAME.items())
+
+    inner = (SEARCH_TPL
+             .replace("__COUNT__", str(len(rows)))
+             .replace("__TRACK_OPTS__", track_opts)
+             .replace("__MARKET_OPTS__", market_opts)
+             .replace("__DATA__", json.dumps(data, ensure_ascii=False)))
+
+    html = page("检索 · 行业洞察", "search", inner)
+    return html.replace('<div class="top-right"></div>',
+                        f'<div class="top-right">{topbar_extra(week, _ts())}</div>')
+
+
+# ---------------- 资产与入口 ----------------
+
+def write_assets(site_dir) -> None:
+    (site_dir / "assets").mkdir(parents=True, exist_ok=True)
+    (site_dir / "assets" / "style.css").write_text(site_assets.CSS, encoding="utf-8")
+    (site_dir / "assets" / "app.js").write_text(site_assets.JS, encoding="utf-8")
+
+
+def run(events: list[dict], stats: dict, weeks: list[str], current_week: str) -> None:
+    tax = util.load_taxonomy()
+    site = util.SITE_DIR
+    (site / "track").mkdir(parents=True, exist_ok=True)
+    write_assets(site)
+
+    published_weeks = sorted({e.get("week_key") for e in events
+                              if e.get("week_key") and e.get("status") == "published"})
+    display_week = published_weeks[-1] if published_weeks else current_week
+
+    (site / "index.html").write_text(build_index(events, stats, tax, display_week), encoding="utf-8")
+    (site / "analytics.html").write_text(build_analytics(events, stats, tax, display_week), encoding="utf-8")
+    (site / "search.html").write_text(build_search(events, tax, display_week), encoding="utf-8")
+
+    for t in tax["tracks"]:
+        (site / "track" / f"{t['id']}.html").write_text(
+            build_track(t, events, stats, tax, display_week), encoding="utf-8")
+
+    (site / ".nojekyll").write_text("", encoding="utf-8")
+    util.log(f"P9 建站完成：首页 + {len(tax['tracks'])} 个赛道页 + 看板 + 检索（展示周 {display_week}）")
