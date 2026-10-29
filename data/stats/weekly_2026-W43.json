@@ -1,27 +1,36 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-10-30T02:35:08+08:00",
+ "generated_at": "2026-10-30T06:43:49+08:00",
  "total": 41,
- "fact_count": 36,
- "opinion_count": 5,
+ "fact_count": 37,
+ "opinion_count": 4,
  "track_activity": [
+  {
+   "track_id": "LLM",
+   "name": "大模型",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 9,
+   "opinion_count": 0,
+   "score": 237.0
+  },
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 13,
+   "count": 7,
    "opinion_count": 1,
-   "score": 346.6
+   "score": 194.2
   },
   {
    "track_id": "TEC-SEC",
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 6,
+   "count": 5,
    "opinion_count": 0,
-   "score": 137.4
+   "score": 111.2
   },
   {
    "track_id": "MAC-DATA",
@@ -31,15 +40,6 @@
    "count": 3,
    "opinion_count": 0,
    "score": 84.6
-  },
-  {
-   "track_id": "LLM",
-   "name": "大模型",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 2,
-   "opinion_count": 0,
-   "score": 50.6
   },
   {
    "track_id": "MAC-CMD",
@@ -78,9 +78,9 @@
    "score": 24.4
   },
   {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
-   "domain": "tech",
+   "track_id": "MAC-FP",
+   "name": "财政与产业政策",
+   "domain": "macro",
    "is_focus": false,
    "count": 1,
    "opinion_count": 0,
@@ -150,6 +150,15 @@
    "score": 0.0
   },
   {
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 0,
+   "opinion_count": 0,
+   "score": 0.0
+  },
+  {
    "track_id": "TEC-AUTO",
    "name": "自动驾驶与智能车",
    "domain": "tech",
@@ -165,15 +174,6 @@
    "is_focus": false,
    "count": 0,
    "opinion_count": 0,
-   "score": 0.0
-  },
-  {
-   "track_id": "MAC-FP",
-   "name": "财政与产业政策",
-   "domain": "macro",
-   "is_focus": false,
-   "count": 0,
-   "opinion_count": 1,
    "score": 0.0
   },
   {
@@ -214,11 +214,12 @@
   }
  ],
  "market_dist": {
-  "M-GL": 38,
-  "M-A": 3
+  "M-GL": 37,
+  "M-A": 3,
+  "M-CN": 1
  },
  "importance_dist": {
-  "normal": 5,
+  "normal": 6,
   "low": 31
  },
  "source_dist": {
@@ -279,11 +280,11 @@
    "count": 2
   },
   {
-   "name": "Drones",
+   "name": "Battle",
    "count": 2
   },
   {
-   "name": "Battle",
+   "name": "Drones",
    "count": 2
   },
   {
@@ -291,7 +292,7 @@
    "count": 2
   }
  ],
- "total_score": 751.4,
- "other_count": 7,
+ "total_score": 759.2,
+ "other_count": 8,
  "other_opinion_count": 1
 }

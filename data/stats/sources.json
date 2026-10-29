@@ -1,18 +1,26 @@
 [
  {
   "name": "华尔街见闻",
-  "count": 58
+  "count": 67
  },
  {
   "name": "南华早报",
-  "count": 52
+  "count": 59
+ },
+ {
+  "name": "TechCrunch",
+  "count": 36
  },
  {
   "name": "OpenAI 官方博客",
   "count": 32
  },
  {
-  "name": "TechCrunch",
+  "name": "Techmeme",
+  "count": 31
+ },
+ {
+  "name": "The Verge",
   "count": 25
  },
  {
@@ -20,23 +28,15 @@
   "count": 22
  },
  {
-  "name": "The Verge",
-  "count": 19
- },
- {
-  "name": "Techmeme",
-  "count": 16
- },
- {
   "name": "IEEE Spectrum",
-  "count": 13
+  "count": 14
  },
  {
   "name": "The Decoder",
-  "count": 10
+  "count": 12
  },
  {
   "name": "MarkTechPost",
-  "count": 10
+  "count": 12
  }
 ]

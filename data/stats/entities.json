@@ -1,10 +1,14 @@
 [
  {
   "name": "OpenAI",
-  "count": 17
+  "count": 18
  },
  {
   "name": "Google",
+  "count": 13
+ },
+ {
+  "name": "Anthropic",
   "count": 10
  },
  {
@@ -13,14 +17,22 @@
  },
  {
   "name": "美联储",
+  "count": 9
+ },
+ {
+  "name": "Amazon",
   "count": 8
  },
  {
-  "name": "Anthropic",
-  "count": 7
+  "name": "Bloomberg",
+  "count": 8
  },
  {
   "name": "Model",
+  "count": 7
+ },
+ {
+  "name": "Gemini",
   "count": 6
  },
  {
@@ -32,23 +44,27 @@
   "count": 5
  },
  {
-  "name": "Gemini",
+  "name": "加息",
   "count": 5
  },
  {
-  "name": "收购",
-  "count": 4
+  "name": "Releases",
+  "count": 5
  },
  {
-  "name": "加息",
-  "count": 4
+  "name": "Reddit",
+  "count": 5
  },
  {
-  "name": "融资",
+  "name": "芯片",
   "count": 4
  },
  {
   "name": "Microsoft",
+  "count": 4
+ },
+ {
+  "name": "AI-powered",
   "count": 4
  },
  {
@@ -60,7 +76,7 @@
   "count": 4
  },
  {
-  "name": "Bloomberg",
+  "name": "Sources",
   "count": 4
  },
  {
@@ -72,11 +88,23 @@
   "count": 4
  },
  {
-  "name": "芯片",
+  "name": "CNBC",
+  "count": 4
+ },
+ {
+  "name": "美国经济",
   "count": 3
  },
  {
-  "name": "Amazon",
+  "name": "算力",
+  "count": 3
+ },
+ {
+  "name": "欧洲央行",
+  "count": 3
+ },
+ {
+  "name": "收购",
   "count": 3
  },
  {
@@ -84,11 +112,19 @@
   "count": 3
  },
  {
+  "name": "Apple",
+  "count": 3
+ },
+ {
   "name": "MacBook",
   "count": 3
  },
  {
-  "name": "Apple",
+  "name": "Wall",
+  "count": 3
+ },
+ {
+  "name": "融资",
   "count": 3
  },
  {
@@ -100,7 +136,15 @@
   "count": 3
  },
  {
-  "name": "AI-powered",
+  "name": "Patrick",
+  "count": 3
+ },
+ {
+  "name": "Instagram",
+  "count": 3
+ },
+ {
+  "name": "Thrive",
   "count": 3
  },
  {
@@ -112,51 +156,7 @@
   "count": 3
  },
  {
-  "name": "Download",
+  "name": "Claude",
   "count": 3
- },
- {
-  "name": "Coding",
-  "count": 3
- },
- {
-  "name": "Index",
-  "count": 3
- },
- {
-  "name": "Releases",
-  "count": 3
- },
- {
-  "name": "DeepMind",
-  "count": 3
- },
- {
-  "name": "数据中心",
-  "count": 2
- },
- {
-  "name": "美国经济",
-  "count": 2
- },
- {
-  "name": "目标价",
-  "count": 2
- },
- {
-  "name": "欧洲央行",
-  "count": 2
- },
- {
-  "name": "算力",
-  "count": 2
- },
- {
-  "name": "光模块",
-  "count": 2
- },
- {
-  "name": "Jeff",
-  "count": 2
  }
 ]
