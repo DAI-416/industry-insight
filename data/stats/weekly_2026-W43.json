@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-10-30T00:35:43+08:00",
+ "generated_at": "2026-10-30T00:41:05+08:00",
  "total": 10,
  "fact_count": 7,
  "opinion_count": 3,
@@ -15,9 +15,9 @@
    "score": 60.2
   },
   {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
-   "domain": "tech",
+   "track_id": "OTHER-1",
+   "name": "其他领域",
+   "domain": "other",
    "is_focus": false,
    "count": 2,
    "opinion_count": 1,
@@ -33,15 +33,6 @@
    "score": 31.0
   },
   {
-   "track_id": "TEC-SEMI",
-   "name": "半导体",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 1,
-   "opinion_count": 0,
-   "score": 29.8
-  },
-  {
    "track_id": "TEC-AI",
    "name": "AI 与大模型",
    "domain": "tech",
@@ -49,6 +40,15 @@
    "count": 1,
    "opinion_count": 1,
    "score": 27.4
+  },
+  {
+   "track_id": "MAC-FP",
+   "name": "财政与产业政策",
+   "domain": "macro",
+   "is_focus": false,
+   "count": 1,
+   "opinion_count": 0,
+   "score": 24.4
   },
   {
    "track_id": "INV-VC",
@@ -123,8 +123,26 @@
    "score": 0.0
   },
   {
+   "track_id": "TEC-SEMI",
+   "name": "半导体",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 0,
+   "opinion_count": 0,
+   "score": 0.0
+  },
+  {
    "track_id": "TEC-COMPUTE",
    "name": "算力与基础设施",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 0,
+   "opinion_count": 0,
+   "score": 0.0
+  },
+  {
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
    "count": 0,
@@ -137,7 +155,7 @@
    "domain": "tech",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 0,
+   "opinion_count": 1,
    "score": 0.0
   },
   {
@@ -186,15 +204,6 @@
    "score": 0.0
   },
   {
-   "track_id": "MAC-FP",
-   "name": "财政与产业政策",
-   "domain": "macro",
-   "is_focus": false,
-   "count": 0,
-   "opinion_count": 1,
-   "score": 0.0
-  },
-  {
    "track_id": "MAC-PROP",
    "name": "地产与信贷周期",
    "domain": "macro",
@@ -229,15 +238,6 @@
    "count": 0,
    "opinion_count": 0,
    "score": 0.0
-  },
-  {
-   "track_id": "OTHER-1",
-   "name": "其他领域",
-   "domain": "other",
-   "is_focus": false,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
   }
  ],
  "market_dist": {
@@ -245,8 +245,8 @@
   "M-A": 3
  },
  "importance_dist": {
-  "normal": 4,
-  "low": 3
+  "normal": 3,
+  "low": 4
  },
  "source_dist": {
   "IEEE Spectrum": 7,
@@ -258,5 +258,5 @@
    "count": 5
   }
  ],
- "total_score": 197.2
+ "total_score": 191.8
 }
