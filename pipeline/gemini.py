@@ -15,6 +15,10 @@ from . import util
 
 _LOCK = threading.Lock()
 _SPEND = {"cny": 0.0}
+# 熔断：同一个运行内连续遇到 4xx（欠费 402 / 密钥无效 401 / 型号不存在 404）时，
+# 直接关闭本次运行的 LLM 调用，避免白刷数百次请求并浪费 Actions 分钟。
+_STATE = {"fail_streak": 0, "disabled": False, "last_error": ""}
+FAIL_STREAK_LIMIT = 5
 
 
 def available(cfg: dict) -> bool:
@@ -22,7 +26,12 @@ def available(cfg: dict) -> bool:
         return False
     limit = float(cfg.get("budget", {}).get("monthly_cny_limit", 100))
     with _LOCK:
-        return _SPEND["cny"] < limit
+        return (not _STATE["disabled"]) and _SPEND["cny"] < limit
+
+
+def disabled_reason() -> str:
+    with _LOCK:
+        return _STATE["last_error"]
 
 
 def spend() -> float:
@@ -65,6 +74,8 @@ def generate(prompt: str, cfg: dict, purpose: str = "summarize") -> str | None:
             with urllib.request.urlopen(req, timeout=int(params.get("timeout_sec", 30))) as r:
                 payload = json.loads(r.read().decode("utf-8"))
             text = payload["candidates"][0]["content"]["parts"][0]["text"]
+            with _LOCK:
+                _STATE["fail_streak"] = 0
             usage = payload.get("usageMetadata", {})
             _record(int(usage.get("promptTokenCount", 0)),
                     int(usage.get("candidatesTokenCount", 0)), cfg)
@@ -72,8 +83,15 @@ def generate(prompt: str, cfg: dict, purpose: str = "summarize") -> str | None:
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", "ignore")[:220].replace("\n", " ")
             util.log(f"  Gemini HTTP {e.code}（{purpose}/{model}）：{detail}")
-            # 4xx 是确定性错误（型号不存在、密钥无效、地区不支持），重试无意义
+            # 4xx 是确定性错误（型号不存在、密钥无效、余额不足、地区不支持），重试无意义
             if 400 <= e.code < 500:
+                with _LOCK:
+                    _STATE["fail_streak"] += 1
+                    _STATE["last_error"] = f"HTTP {e.code}: {detail[:120]}"
+                    if _STATE["fail_streak"] >= FAIL_STREAK_LIMIT and not _STATE["disabled"]:
+                        _STATE["disabled"] = True
+                        util.log(f"  ⚠ 连续 {FAIL_STREAK_LIMIT} 次 4xx，"
+                                 f"本次运行关闭 LLM 调用，转为规则降级模式")
                 return None
         except Exception as e:  # noqa: BLE001
             util.log(f"  Gemini 调用异常（{type(e).__name__}: {str(e)[:80]}），"

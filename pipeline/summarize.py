@@ -71,7 +71,7 @@ def _summarize_one(it: dict, cfg: dict, use_llm: bool) -> dict:
     raw_summary = None
     method = "first_sentence"
 
-    if use_llm and int(it.get("importance_score", 0)) >= 40:
+    if use_llm and gemini.available(cfg) and int(it.get("importance_score", 0)) >= 40:
         prompt = PROMPT.format(
             title=it["title"],
             body=(it.get("content") or it.get("summary") or "")[:1500],

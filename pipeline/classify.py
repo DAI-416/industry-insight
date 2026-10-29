@@ -142,7 +142,7 @@ def run(items: list[dict], sources_cfg: dict) -> tuple[list[dict], dict]:
 
     for it in items:
         text = f"{it['title']} {it.get('summary', '')} {it.get('content', '')[:1200]}"
-        result = classify_by_llm(it, tax, cfg) if use_llm else None
+        result = classify_by_llm(it, tax, cfg) if (use_llm and gemini.available(cfg)) else None
         if result:
             stats["llm"] += 1
             track_id, conf = result["track_id"], result["confidence"]
