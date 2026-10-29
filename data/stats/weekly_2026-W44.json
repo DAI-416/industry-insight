@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-10-30T00:32:13+08:00",
+ "generated_at": "2026-10-30T00:35:43+08:00",
  "total": 152,
  "fact_count": 134,
  "opinion_count": 18,
@@ -225,6 +225,15 @@
    "track_id": "TEC-QUANT",
    "name": "量子计算",
    "domain": "tech",
+   "is_focus": false,
+   "count": 0,
+   "opinion_count": 0,
+   "score": 0.0
+  },
+  {
+   "track_id": "OTHER-1",
+   "name": "其他领域",
+   "domain": "other",
    "is_focus": false,
    "count": 0,
    "opinion_count": 0,

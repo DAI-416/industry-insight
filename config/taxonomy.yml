@@ -12,6 +12,10 @@ domains:
   name: 宏观经济
   desc: 政策 · 数据 · 全球环境
   order: 3
+- id: other
+  name: 其他
+  desc: 非三域内容
+  order: 9
 markets:
 - id: M-A
   name: A 股
@@ -803,3 +807,10 @@ tracks:
   - 非农
   - 经济衰退
   scope: 美欧日主要经济体动向
+- id: OTHER-1
+  name: 其他领域
+  domain: other
+  is_focus: false
+  keywords: []
+  strong: []
+  scope: 医药、消费、农业、地产等与投资/科技/宏观无关的行业新闻；首页不展示

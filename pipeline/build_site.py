@@ -388,7 +388,8 @@ def build_analytics(events: list[dict], stats: dict, tax: dict, week: str) -> st
 
     # V1 活跃度排行
     v1_data = [{"name": x["name"], "value": x["score"], "key": x["track_id"],
-                "sub": f"{x['count']} 条"} for x in act if x["count"] > 0][:14]
+                "sub": f"{x['count']} 条"} for x in act
+               if x["count"] > 0 and x["track_id"] != "OTHER-1"][:14]
     v1 = charts.hbar(v1_data, "本周赛道活跃度排行", highlight=focus_ids)
 
     # V5 / V6 / V7
@@ -423,7 +424,9 @@ def build_analytics(events: list[dict], stats: dict, tax: dict, week: str) -> st
     # V3 热力矩阵
     def v3_for(n: int) -> str:
         weeks = util.last_n_weeks(week, n)
-        order = [x["track_id"] for x in act if x["count"] > 0][:12] or [t["id"] for t in tax["tracks"]][:8]
+        order = [x["track_id"] for x in act
+                 if x["count"] > 0 and x["track_id"] != "OTHER-1"][:12] \
+            or [t["id"] for t in tax["tracks"] if t["id"] != "OTHER-1"][:8]
         rows = [{"name": track_map[tid]["name"], "is_focus": tid in focus_ids} for tid in order]
         matrix = []
         for tid in order:
