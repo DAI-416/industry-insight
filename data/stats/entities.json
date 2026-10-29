@@ -1,7 +1,7 @@
 [
  {
   "name": "Microsoft",
-  "count": 6
+  "count": 8
  },
  {
   "name": "Google",
@@ -12,7 +12,27 @@
   "count": 4
  },
  {
+  "name": "Amazon",
+  "count": 4
+ },
+ {
+  "name": "Alexa",
+  "count": 4
+ },
+ {
   "name": "Anthropic",
+  "count": 4
+ },
+ {
+  "name": "United",
+  "count": 4
+ },
+ {
+  "name": "States",
+  "count": 4
+ },
+ {
+  "name": "Holdings",
   "count": 4
  },
  {
@@ -28,10 +48,6 @@
   "count": 3
  },
  {
-  "name": "Amazon",
-  "count": 3
- },
- {
   "name": "Apple",
   "count": 3
  },
@@ -40,19 +56,7 @@
   "count": 3
  },
  {
-  "name": "United",
-  "count": 3
- },
- {
-  "name": "States",
-  "count": 3
- },
- {
   "name": "Singaporean",
-  "count": 3
- },
- {
-  "name": "Homeland",
   "count": 3
  }
 ]

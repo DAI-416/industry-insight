@@ -1,23 +1,23 @@
 [
  {
   "name": "华尔街见闻",
-  "count": 57
+  "count": 58
  },
  {
   "name": "南华早报",
-  "count": 49
+  "count": 51
  },
  {
   "name": "TechCrunch",
-  "count": 19
+  "count": 21
+ },
+ {
+  "name": "The Verge",
+  "count": 15
  },
  {
   "name": "IEEE Spectrum",
   "count": 13
- },
- {
-  "name": "The Verge",
-  "count": 12
  },
  {
   "name": "国家统计局",
