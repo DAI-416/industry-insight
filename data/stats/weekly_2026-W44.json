@@ -1,8 +1,8 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-10-29T23:05:45+08:00",
- "total": 142,
- "fact_count": 124,
+ "generated_at": "2026-10-29T23:18:18+08:00",
+ "total": 144,
+ "fact_count": 126,
  "opinion_count": 18,
  "track_activity": [
   {
@@ -10,9 +10,9 @@
    "name": "AI 与大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 74,
+   "count": 76,
    "opinion_count": 1,
-   "score": 2236.4
+   "score": 2296.0
   },
   {
    "track_id": "MAC-MP",
@@ -233,21 +233,21 @@
  ],
  "market_dist": {
   "M-A": 16,
-  "M-GL": 124,
+  "M-GL": 126,
   "M-HK": 1,
   "M-CN": 1
  },
  "importance_dist": {
   "important": 16,
   "critical": 12,
-  "normal": 91,
+  "normal": 93,
   "low": 5
  },
  "source_dist": {
   "华尔街见闻": 57,
   "TechCrunch": 19,
   "南华早报": 49,
-  "The Verge": 10,
+  "The Verge": 12,
   "IEEE Spectrum": 6,
   "国家统计局": 1
  },
@@ -261,16 +261,16 @@
    "count": 5
   },
   {
+   "name": "Security",
+   "count": 4
+  },
+  {
    "name": "Anthropic",
    "count": 4
   },
   {
    "name": "IEEE",
    "count": 4
-  },
-  {
-   "name": "Security",
-   "count": 3
   },
   {
    "name": "Court",
@@ -303,7 +303,11 @@
   {
    "name": "Singaporean",
    "count": 3
+  },
+  {
+   "name": "Homeland",
+   "count": 3
   }
  ],
- "total_score": 4150.0
+ "total_score": 4209.6
 }
