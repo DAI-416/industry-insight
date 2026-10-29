@@ -14,10 +14,14 @@ models:
   summarize: gemini-3.5-flash-lite
   review: gemini-3.8-flash
 
+# 实测（2026-10-29，GitHub Actions 环境）：
+#   - 列模型接口 0.2s，但 generateContent 首字延迟高达 22s
+#   - 因此 timeout 必须给到 90s，否则必然误判超时
+#   - 批量（25 条/次）把 150 条压到 6-7 次调用，是当前唯一可行解
 params:
   temperature: 0.2
-  max_output_tokens: 512
-  timeout_sec: 20
+  max_output_tokens: 900
+  timeout_sec: 90
   concurrency: 8
   max_retry: 2
 

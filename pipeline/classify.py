@@ -15,7 +15,7 @@ from . import gemini, util
 STRONG_W = 3
 WEAK_W = 1
 MIN_CONF = 0.6
-BATCH = 10
+BATCH = 25
 
 
 # ---------------- 规则分类 ----------------
@@ -97,7 +97,7 @@ PROMPT = """你是金融与科技资讯的分类助手。下面是 {n} 条资讯
 def _build_batch_prompt(batch: list[dict], tracks_desc: str) -> str:
     lines = []
     for idx, it in enumerate(batch, 1):
-        body = (it.get("content") or it.get("summary") or "")[:300].replace("\n", " ")
+        body = (it.get("content") or it.get("summary") or "")[:220].replace("\n", " ")
         lines.append(f'[{idx}] 标题：{it["title"]}\n    正文：{body}')
     return PROMPT.format(n=len(batch), tracks=tracks_desc, items="\n".join(lines))
 

@@ -16,7 +16,7 @@ from . import gemini, util
 
 SUMMARY_MAX = 140
 LLM_SCORE_THRESHOLD = 60   # 仅「重要」及以上做模型摘要
-BATCH = 5
+BATCH = 12
 
 # 只校验「有风险的数字」：多位数、小数、百分数。个位数字（1-9）容错，
 # 避免误杀"3 家企业"这类原文用汉字表述、摘要用阿拉伯数字的正常改写。
@@ -74,7 +74,7 @@ def _source_text(it: dict) -> str:
 def _build_prompt(batch: list[dict]) -> str:
     lines = []
     for idx, it in enumerate(batch, 1):
-        body = (it.get("content") or it.get("summary") or "")[:600].replace("\n", " ")
+        body = (it.get("content") or it.get("summary") or "")[:400].replace("\n", " ")
         lines.append(f'[{idx}] 标题：{it["title"]}\n    正文：{body}')
     return PROMPT.format(n=len(batch), items="\n".join(lines))
 
