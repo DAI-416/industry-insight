@@ -20,7 +20,7 @@ models:
 #   - 批量（25 条/次）把 150 条压到 6-7 次调用，是当前唯一可行解
 params:
   temperature: 0.2
-  max_output_tokens: 900
+  max_output_tokens: 2000
   timeout_sec: 90
   concurrency: 8
   max_retry: 2

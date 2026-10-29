@@ -99,6 +99,21 @@ def _summarize_batch(batch: list[dict], cfg: dict) -> dict[int, str]:
     return out
 
 
+def _summarize_recursive(batch: list[dict], cfg: dict, out: dict[int, str], offset: int) -> int:
+    """整批失败时拆半重试，避免长 JSON 被截断导致整批作废。"""
+    got = _summarize_batch(batch, cfg)
+    if got:
+        for idx, text in got.items():
+            out[offset + idx - 1] = text
+        return len(got)
+    if len(batch) <= 3:
+        return 0
+    mid = len(batch) // 2
+    n = _summarize_recursive(batch[:mid], cfg, out, offset)
+    n += _summarize_recursive(batch[mid:], cfg, out, offset + mid)
+    return n
+
+
 def run(items: list[dict]) -> tuple[list[dict], dict]:
     cfg = util.load_llm()
     use_llm = gemini.available(cfg)
@@ -127,7 +142,9 @@ def run(items: list[dict]) -> tuple[list[dict], dict]:
                 break
             idxs = targets[start:start + BATCH]
             batch = [items[i] for i in idxs]
-            got = _summarize_batch(batch, cfg)
+            buf: dict[int, str] = {}
+            _summarize_recursive(batch, cfg, buf, 0)
+            got = {k + 1: v for k, v in buf.items()}   # 转回 1-based
             stat["batches"] += 1
             util.log(f"  批次 {stat['batches']}：{len(got)}/{len(batch)} 条生成成功")
 

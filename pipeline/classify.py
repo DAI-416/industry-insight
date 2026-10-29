@@ -102,6 +102,22 @@ def _build_batch_prompt(batch: list[dict], tracks_desc: str) -> str:
     return PROMPT.format(n=len(batch), tracks=tracks_desc, items="\n".join(lines))
 
 
+def _classify_recursive(batch: list[dict], tax: dict, cfg: dict,
+                        out: dict[int, dict], offset: int) -> int:
+    """整批失败（多为输出被截断）时拆半重试，直到批次足够小。"""
+    got = classify_batch_by_llm(batch, tax, cfg)
+    if got:
+        for idx, res in got.items():
+            out[offset + idx - 1] = res
+        return len(got)
+    if len(batch) <= 6:
+        return 0
+    mid = len(batch) // 2
+    n = _classify_recursive(batch[:mid], tax, cfg, out, offset)
+    n += _classify_recursive(batch[mid:], tax, cfg, out, offset + mid)
+    return n
+
+
 def classify_batch_by_llm(batch: list[dict], tax: dict, cfg: dict) -> dict[int, dict]:
     """返回 {批次内序号(1-based): 分类结果}"""
     tracks_desc = "\n".join(
@@ -170,13 +186,13 @@ def run(items: list[dict], sources_cfg: dict) -> tuple[list[dict], dict]:
             if not gemini.available(cfg):
                 util.log("  LLM 已熔断，剩余条目走规则分类")
                 break
-            got = classify_batch_by_llm(batch, tax, cfg)
+            before = len(llm_results)
+            _classify_recursive(batch, tax, cfg, llm_results, start)
             stats["batches"] += 1
-            if not got:
-                stats["batch_failed"] += len(batch)
-            for idx, res in got.items():
-                llm_results[start + idx - 1] = res
-            util.log(f"  批次 {stats['batches']}：{len(got)}/{len(batch)} 条由模型判定")
+            got_n = len(llm_results) - before
+            if got_n < len(batch):
+                stats["batch_failed"] += len(batch) - got_n
+            util.log(f"  批次 {stats['batches']}：{got_n}/{len(batch)} 条由模型判定")
 
     for i, it in enumerate(items):
         text = f"{it['title']} {it.get('summary', '')} {it.get('content', '')[:1200]}"
