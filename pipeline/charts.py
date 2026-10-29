@@ -180,35 +180,41 @@ def heatmap(rows: list[dict], weeks: list[str], matrix: list[list[float | None]]
 
 # ---------------- V4 环比涨跌（分歧条形） ----------------
 
+def _pct(v: float) -> str:
+    """百分比格式化：超过 999% 用倍数表达，避免 2500% 这类噪声数字"""
+    a = abs(v)
+    if a >= 999:
+        return f"{v / 100:+.1f} 倍"
+    return f"{v:+.0f}%"
+
+
 def diverging(data: list[dict], title: str, w: int = 680) -> str:
     """data: [{name, value}] 正负百分比，已排序"""
     if not data:
         return _empty(title)
-    row_h, pad_t = 24, 18
-    h = pad_t + row_h * len(data) + 14
-    mid = w / 2
-    label_w = 118
+    row_h, pad_t = 26, 20
+    h = pad_t + row_h * len(data) + 16
+    label_w = 126
+    mid = label_w + (w - label_w) / 2
     max_abs = max(abs(d["value"]) for d in data) or 1
-    half = (w - label_w * 2) / 2
+    half = (w - label_w) / 2 - 54
 
-    parts = [f'<line x1="{mid}" y1="{pad_t - 6}" x2="{mid}" y2="{h - 8}" stroke="{LINE}" stroke-width="1"/>']
-    parts.append(f'<text x="{mid}" y="11" text-anchor="middle" font-size="10" fill="{MUTED}">环比变化</text>')
+    parts = [f'<line x1="{mid}" y1="{pad_t - 8}" x2="{mid}" y2="{h - 10}" stroke="{LINE}" stroke-width="1"/>']
+    parts.append(f'<text x="{mid}" y="11" text-anchor="middle" font-size="10" fill="{MUTED}">环比变化（本周 vs 上周）</text>')
     for i, d in enumerate(data):
         y = pad_t + i * row_h
         v = d["value"]
-        bw = half * abs(v) / max_abs
+        bw = max(2.0, half * abs(v) / max_abs)
         is_up = v >= 0
         color = "#2E7D5B" if is_up else MUTED
-        x = mid if is_up else mid - bw
-        arrow = "↑" if is_up else "↓"
-        tip = f'{d["name"]}：{v:+.1f}%'
         parts.append(
-            f'<g><title>{_esc(tip)}</title>'
-            f'<text x="{mid - 8 if is_up else mid + 8}" y="{y + 15}" '
-            f'text-anchor="{"end" if is_up else "start"}" font-size="11.5" fill="{TEXT}">{_esc(d["name"])}</text>'
-            f'<rect x="{x:.1f}" y="{y + 5}" width="{bw:.1f}" height="12" rx="2" fill="{color}"/>'
-            f'<text x="{(mid + bw + 6) if is_up else (mid - bw - 6):.1f}" y="{y + 15}" '
-            f'text-anchor="{"start" if is_up else "end"}" font-size="10.5" fill="{color}">{arrow}{abs(v):.1f}%</text>'
+            f'<g><title>{_esc(d["name"])}：{v:+.1f}%</title>'
+            f'<text x="{label_w - 10}" y="{y + 14}" text-anchor="end" font-size="11.5" fill="{TEXT}">'
+            f'{_esc(_short(d["name"], 10))}</text>'
+            f'<rect x="{mid if is_up else mid - bw:.1f}" y="{y + 4}" width="{bw:.1f}" height="12" rx="2" fill="{color}"/>'
+            f'<text x="{(mid + bw + 6) if is_up else (mid - bw - 6):.1f}" y="{y + 14}" '
+            f'text-anchor="{"start" if is_up else "end"}" font-size="10.5" fill="{color}">'
+            f'{"↑" if is_up else "↓"} {_esc(_pct(v).lstrip("+-"))}</text>'
             f"</g>"
         )
     return _wrap("".join(parts), w, h, title)
@@ -244,14 +250,18 @@ def stacked(parts_data: list[dict], title: str, w: int = 680,
 
     legend = ""
     if show_legend:
-        ly = pad_t + bar_h + 22
-        lx = 0
+        cols = 3
+        col_w = w / cols
         for i, p in enumerate(parts_data):
+            row, col = divmod(i, cols)
+            lx = col * col_w
+            ly = pad_t + bar_h + 20 + row * 18
             color = STACK_COLORS[i % len(STACK_COLORS)]
             label = f'{p["name"]} {p["value"]:g}'
-            legend += (f'<rect x="{lx}" y="{ly - 8}" width="9" height="9" rx="1.5" fill="{color}"/>'
-                       f'<text x="{lx + 14}" y="{ly}" font-size="11" fill="{TEXT}">{_esc(label)}</text>')
-            lx += 22 + len(label) * 8
+            legend += (f'<rect x="{lx}" y="{ly - 9}" width="9" height="9" rx="1.5" fill="{color}"/>'
+                       f'<text x="{lx + 14}" y="{ly}" font-size="11" fill="{TEXT}">{_esc(_short(label, 14))}</text>')
+        rows = (len(parts_data) + cols - 1) // cols
+        h = pad_t + bar_h + 20 + rows * 18
     return _wrap("".join(seg) + legend, w, h, title)
 
 

@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W34",
- "generated_at": "2026-10-30T00:41:05+08:00",
+ "generated_at": "2026-10-30T00:43:46+08:00",
  "total": 0,
  "fact_count": 0,
  "opinion_count": 0,
@@ -229,20 +229,13 @@
    "count": 0,
    "opinion_count": 0,
    "score": 0.0
-  },
-  {
-   "track_id": "OTHER-1",
-   "name": "其他领域",
-   "domain": "other",
-   "is_focus": false,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
   }
  ],
  "market_dist": {},
  "importance_dist": {},
  "source_dist": {},
  "top_entities": [],
- "total_score": 0.0
+ "total_score": 0.0,
+ "other_count": 0,
+ "other_opinion_count": 0
 }

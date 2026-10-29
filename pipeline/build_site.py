@@ -189,8 +189,10 @@ def build_index(events: list[dict], stats: dict, tax: dict, week: str) -> str:
         if prv <= 0:
             return '<span class="trend-down">—</span>'
         delta = (cur - prv) / prv * 100
+        # 基数极小时百分比会失真（1 条→22 条 = +2100%），超过 3 倍用倍数表达
         if delta > 15:
-            return f'<span class="trend-up">↑ {delta:.0f}%</span>'
+            txt = f"{cur / prv:.1f} 倍" if delta >= 300 else f"{delta:.0f}%"
+            return f'<span class="trend-up">↑ {txt}</span>'
         if delta < -15:
             return f'<span class="trend-down">↓ {abs(delta):.0f}%</span>'
         return '<span class="trend-down">持平</span>'

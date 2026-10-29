@@ -1,19 +1,10 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-10-30T00:41:05+08:00",
+ "generated_at": "2026-10-30T00:43:46+08:00",
  "total": 153,
  "fact_count": 136,
  "opinion_count": 17,
  "track_activity": [
-  {
-   "track_id": "OTHER-1",
-   "name": "其他领域",
-   "domain": "other",
-   "is_focus": false,
-   "count": 39,
-   "opinion_count": 0,
-   "score": 1123.2
-  },
   {
    "track_id": "TEC-AI",
    "name": "AI 与大模型",
@@ -322,5 +313,7 @@
    "count": 3
   }
  ],
- "total_score": 4376.8
+ "total_score": 3253.6,
+ "other_count": 39,
+ "other_opinion_count": 0
 }

@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-10-30T00:41:05+08:00",
+ "generated_at": "2026-10-30T00:43:46+08:00",
  "total": 10,
  "fact_count": 7,
  "opinion_count": 3,
@@ -13,15 +13,6 @@
    "count": 2,
    "opinion_count": 0,
    "score": 60.2
-  },
-  {
-   "track_id": "OTHER-1",
-   "name": "其他领域",
-   "domain": "other",
-   "is_focus": false,
-   "count": 2,
-   "opinion_count": 1,
-   "score": 48.8
   },
   {
    "track_id": "MAC-CMD",
@@ -258,5 +249,7 @@
    "count": 5
   }
  ],
- "total_score": 191.8
+ "total_score": 143.0,
+ "other_count": 2,
+ "other_opinion_count": 1
 }

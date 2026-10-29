@@ -73,8 +73,12 @@ def weekly(items: list[dict], week: str, tax: dict) -> dict:
     for i in facts:
         by_track[i.get("track_id", "")].append(i)
 
+    # OTHER-1 是兜底类，不进活跃度排行与自动摘要，避免"其他领域"霸占榜首
+    other_facts = by_track.get("OTHER-1", [])
     track_activity = []
     for t in tax["tracks"]:
+        if t["id"] == "OTHER-1":
+            continue
         f = by_track.get(t["id"], [])
         track_activity.append({
             "track_id": t["id"],
@@ -103,6 +107,8 @@ def weekly(items: list[dict], week: str, tax: dict) -> dict:
         "source_dist": dict(source_dist),
         "top_entities": _entities(wk_items, tax),
         "total_score": round(sum(t["score"] for t in track_activity), 1),
+        "other_count": len(other_facts),
+        "other_opinion_count": sum(1 for i in opinions if i.get("track_id") == "OTHER-1"),
     }
 
 
@@ -110,20 +116,15 @@ def build_all(items: list[dict], weeks: list[str], tax: dict) -> dict:
     """返回 {weekly: {...}, timeseries: {...}, sources: {...}, summaries: {...}}"""
     weekly_map = {w: weekly(items, w, tax) for w in weeks}
 
-    # 时序：每赛道逐周活跃度
-    track_ids = [t["id"] for t in tax["tracks"]]
+    # 时序：每赛道逐周活跃度（用字典查，避免 OTHER-1 被排除后 index 越界）
+    track_ids = [t["id"] for t in tax["tracks"] if t["id"] != "OTHER-1"]
+    lookup = {w: {x["track_id"]: x for x in weekly_map[w]["track_activity"]} for w in weeks}
     timeseries = {
         "weeks": weeks,
-        "tracks": {
-            tid: [weekly_map[w]["track_activity"][[x["track_id"] for x in weekly_map[w]["track_activity"]].index(tid)]["score"]
-                  for w in weeks]
-            for tid in track_ids
-        },
-        "counts": {
-            tid: [weekly_map[w]["track_activity"][[x["track_id"] for x in weekly_map[w]["track_activity"]].index(tid)]["count"]
-                  for w in weeks]
-            for tid in track_ids
-        },
+        "tracks": {tid: [lookup[w].get(tid, {}).get("score", 0) for w in weeks]
+                   for tid in track_ids},
+        "counts": {tid: [lookup[w].get(tid, {}).get("count", 0) for w in weeks]
+                   for tid in track_ids},
     }
 
     # 信源贡献（近 4 周）
