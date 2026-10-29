@@ -32,7 +32,7 @@ jobs:
       - name: 运行管线（采集 → 分类 → 打分 → 摘要 → 统计 → 建站）
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python -m pipeline.run --weeks 12
+        run: python -u -m pipeline.run --weeks 12
 
       - name: 提交数据与站点
         run: |
