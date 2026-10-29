@@ -1,9 +1,9 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-10-30T00:25:26+08:00",
+ "generated_at": "2026-10-30T00:32:13+08:00",
  "total": 10,
- "fact_count": 6,
- "opinion_count": 4,
+ "fact_count": 7,
+ "opinion_count": 3,
  "track_activity": [
   {
    "track_id": "MAC-DATA",
@@ -15,13 +15,13 @@
    "score": 60.2
   },
   {
-   "track_id": "TEC-AI",
-   "name": "AI 与大模型",
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
    "domain": "tech",
-   "is_focus": true,
+   "is_focus": false,
    "count": 2,
-   "opinion_count": 2,
-   "score": 54.8
+   "opinion_count": 1,
+   "score": 48.8
   },
   {
    "track_id": "MAC-CMD",
@@ -33,13 +33,22 @@
    "score": 31.0
   },
   {
-   "track_id": "TEC-CE",
-   "name": "消费电子与智能硬件",
+   "track_id": "TEC-SEMI",
+   "name": "半导体",
    "domain": "tech",
-   "is_focus": false,
+   "is_focus": true,
    "count": 1,
    "opinion_count": 0,
-   "score": 26.2
+   "score": 29.8
+  },
+  {
+   "track_id": "TEC-AI",
+   "name": "AI 与大模型",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 1,
+   "opinion_count": 1,
+   "score": 27.4
   },
   {
    "track_id": "INV-VC",
@@ -114,15 +123,6 @@
    "score": 0.0
   },
   {
-   "track_id": "TEC-SEMI",
-   "name": "半导体",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 0,
-   "opinion_count": 0,
-   "score": 0.0
-  },
-  {
    "track_id": "TEC-COMPUTE",
    "name": "算力与基础设施",
    "domain": "tech",
@@ -132,12 +132,12 @@
    "score": 0.0
   },
   {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
+   "track_id": "TEC-CE",
+   "name": "消费电子与智能硬件",
    "domain": "tech",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 1,
+   "opinion_count": 0,
    "score": 0.0
   },
   {
@@ -236,7 +236,7 @@
   "M-A": 3
  },
  "importance_dist": {
-  "normal": 3,
+  "normal": 4,
   "low": 3
  },
  "source_dist": {
@@ -249,5 +249,5 @@
    "count": 5
   }
  ],
- "total_score": 172.2
+ "total_score": 197.2
 }
