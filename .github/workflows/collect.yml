@@ -29,6 +29,23 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
+      - name: 诊断 Gemini 连通性
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "== 1. 列可用模型 =="
+          curl -sS -m 25 -o /tmp/models.json -w "HTTP:%{http_code} 耗时:%{time_total}s\n" \
+            "https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}" || echo "curl 失败"
+          head -c 300 /tmp/models.json 2>/dev/null; echo
+
+          echo "== 2. 实际生成一次 =="
+          curl -sS -m 25 -o /tmp/gen.json -w "HTTP:%{http_code} 耗时:%{time_total}s\n" \
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${GEMINI_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d '{"contents":[{"parts":[{"text":"用一个词回答：你好"}]}]}' || echo "curl 失败"
+          head -c 400 /tmp/gen.json 2>/dev/null; echo
+
       - name: 运行管线（采集 → 分类 → 打分 → 摘要 → 统计 → 建站）
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
