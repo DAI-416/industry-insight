@@ -647,14 +647,15 @@ def build_models(events: list[dict], stats: dict, tax: dict, week: str) -> str:
             return [{"name": m["name"], "value": transform(m[key] if key in m else 0),
                      "vendor": m["vendor"]} for m in rows]
 
-        by_index = sorted(models, key=lambda m: -m["index"])[:14]
+        by_index = sorted(models, key=lambda m: -m["index"])[:12]
         chart_index = charts.vbar(vrows(by_index, "index"), "综合智能指数", value_fmt="{:.1f}")
 
-        by_ctx = sorted(models, key=lambda m: -(m.get("context_k") or 0))[:14]
+        by_ctx = sorted(models, key=lambda m: -(m.get("context_k") or 0))[:12]
         chart_ctx = charts.vbar(vrows(by_ctx, "context_k"), "上下文窗口", unit="k")
 
-        priced = [m for m in models if m.get("price_out")][:14]
-        by_price = sorted(priced, key=lambda m: m["price_out"])
+        # 先按价格排序再截断，否则会漏掉价格最低的型号
+        by_price = sorted([m for m in models if m.get("price_out")],
+                          key=lambda m: m["price_out"])[:12]
         chart_price = charts.vbar(vrows(by_price, "price_out"),
                                   "输出价格", unit=" $/M", value_fmt="{:.2f}")
 

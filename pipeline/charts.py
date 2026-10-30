@@ -83,7 +83,8 @@ def hbar(data: list[dict], title: str, unit: str = "", w: int | None = None,
     bar_x = label_w
     bar_max = w - bar_x - 66
 
-    parts = []
+    pid, pat_svg = _scan_pattern()
+    parts = [f"<defs>{pat_svg}</defs>"]
     for i, d in enumerate(data):
         y = pad_t + i * row_h
         val = d["value"]
@@ -95,9 +96,7 @@ def hbar(data: list[dict], title: str, unit: str = "", w: int | None = None,
             f'<g><title>{_esc(tip)}</title>'
             f'<text x="{label_w - 8}" y="{y + 15}" text-anchor="end" font-size="11" '
             f'fill="{LIGHT}">{_esc(_short(d["name"], label_limit))}</text>'
-            # 1px 硬阴影 + 实心块，模拟像素条
-            f'<rect x="{bar_x}" y="{y + 6}" width="{bw:.0f}" height="10" fill="{CRIMSON}"/>'
-            f'<rect x="{bar_x}" y="{y + 5}" width="{bw:.0f}" height="10" fill="{color}"/>'
+            f'{_pixel_bar(bar_x, y + 5, bw, 11, color, pid, radius=1)}'
             f'<text x="{bar_x + bw + 8:.0f}" y="{y + 15}" font-size="10" '
             f'fill="{PAPER}">{val:g}{_esc(unit)}</text>'
             f"</g>"
@@ -354,6 +353,67 @@ def wordcloud(words: list[dict], title: str, w: int = 680, h: int = 400,
     return _wrap("".join(parts), w, h, title)
 
 
+# ---------------- 真实厂商图标（12x12 像素化后的 PNG，base64 内嵌） ----------------
+# 来源：icons8 公开图标，缩样到 12x12 并二值化 alpha，浏览器按 nearest-neighbour 放大
+PIXEL_ICONS = {
+    "Google": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAABDElEQVR42qWRsUoDARBE327ukhMkErDyC8QgCBZiZSccaGzFSvAb/AVFaz/AWgtJtBGxUCxt7K0sEixEONQkd0nGQrkYQUScbpaZ3RkW/gj7PtAyIv0kIdjFqCYnihEZICADmWEhUAA7V67z3NoFOkAEdo35lYySRsTDGDdF6TCUaq7fOgQAg76haSdoZPm2qe07mTsMevQ9osgbD3vzFgC4BN3e6FUTckCGFQIYfO1gcDleZaMe55Fa+3PW2p21CX/FozJFT4cGW0rtIKmSWMTm6dC0VY9lYx3UN+53Fi3vAFB+fqJdqfBSiKidrAmcZDJkZuGY5u0jzZ8et362qnb2kbQUiqOVhvEfvAOFOFmnl51ZDAAAAABJRU5ErkJggg==",
+    "Anthropic": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAA/UlEQVR42tWQsU4CQRRFzxuGWSasBOhspOdbqKXRgo8ghsIQ46dowVfwEyZIbUO3jWx0Z2fnWawQ/ARfdZObm3fvgf9/chKHp3v9/I7UMWKMASClRNdarnqW6/WLABiA/WquI9/DiDDue4Y+Y+gzxn2PEWHke+xXcz0HctdldyhYbLaUVU1RVhRlRVnVLDZbdoeC3HUBsAAhJgbeMZtOSCjyWzShzKYTBt4RYmo37B5uFcCZDs52OFbhYpqSZ44QG0Jq2g+iAgLOGuom4Z3FWwvAV4zUTWq9kEAvKH083ukxBAQ5V1IFRcmd4+b5Vf7wfVu21d6XLY1LffIAfgAhE2NFr4a/hQAAAABJRU5ErkJggg==",
+    "OpenAI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASUlEQVR42o1SQRIAQAQq//9ze18FJ2NIBeBDoQ6GRn5DTKgyud2YmtsQF/40VBuKhs0oI3AySBty01CBLy930cViLg5pOtzpPR7Wnyfqnz6O7gAAAABJRU5ErkJggg==",
+    "xAI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAQUlEQVR42rVQMRIAIAiCrv9/2da8hByKEQUR4CMCAKYabGDBpeVw3Cicaa4lgYpGJ6Bb7uS3P6DR2FGrqpBXp2dYGYISBlr0vjQAAAAASUVORK5CYII=",
+    "深度求索 DeepSeek": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAABUElEQVR42rWRyytEcRzFP7+foRnGlORmMx55RFaTyVhRFDYyyTOxsJGdP8BC+TcsbDw28iqUjZXGe+G5spAQQ6R079x7f18rysaKszqbU+dzDvy31JfpGT4Rz3MBhVLC8nyDAkgOpGRlsVH9CHT2HUooN4JSLsYXRAQxGZbm6lVycE+0zkHExxgf3T2UEssK4ThpntOvuO4Hnv8BOkJb166sLCQUCkRgdTGhAqXRINOTFTy/uGxuP7C+9YQx0NGa4fXNQmelRDyHr1r68cnGGE1JNMzYaCUT42U4js/NbYaW5lzyw/kI+hs6q7B4ZKrIClNbnYdtG6qrIhjjsbaR5vzyHa1zWJqLfUMHdjabVEHBvpSXhqirCTIze01/T5T7B5uDk2yM//Jj1gDA8nyDEo4kHrM4OLY5u7ojEY9wenGP7eT9fkzv8LG0J1PyZ09/Ajphi+6fSH/7AAAAAElFTkSuQmCC",
+}
+
+_PAT_SEQ = [0]
+
+
+def _mix(hex_color: str, target: str, ratio: float) -> str:
+    """按比例把颜色向 target 混合，用于生成柱体高光/阴影（不透明，避免羽化）。"""
+    c1 = hex_color.lstrip("#")
+    c2 = target.lstrip("#")
+    r1, g1, b1 = int(c1[0:2], 16), int(c1[2:4], 16), int(c1[4:6], 16)
+    r2, g2, b2 = int(c2[0:2], 16), int(c2[2:4], 16), int(c2[4:6], 16)
+    r = round(r1 + (r2 - r1) * ratio)
+    g = round(g1 + (g2 - g1) * ratio)
+    b = round(b1 + (b2 - b1) * ratio)
+    return f"#{r:02x}{g:02x}{b:02x}"
+
+
+def _lighten(c: str, r: float = 0.34) -> str:
+    return _mix(c, "#ffffff", r)
+
+
+def _darken(c: str, r: float = 0.38) -> str:
+    return _mix(c, "#000000", r)
+
+
+def _scan_pattern(line_color: str = DEEP) -> tuple[str, str]:
+    """6px 周期的扫描线 pattern，给柱体加能量条质感（不能太抢主体色）。"""
+    _PAT_SEQ[0] += 1
+    pid = f"scan{_PAT_SEQ[0]}"
+    svg = (f'<pattern id="{pid}" width="6" height="6" patternUnits="userSpaceOnUse">'
+           f'<rect width="6" height="1" fill="{line_color}"/></pattern>')
+    return pid, svg
+
+
+def _pixel_bar(x: float, y: float, w: float, h: float, color: str,
+               pid: str, radius: int = 2, scan: str | None = None) -> str:
+    """16-bit 立体柱体：主色 + 顶/左高光 + 右/底阴影 + 扫描线。"""
+    if h < 4 or w < 4:
+        return f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{color}"/>'
+    hi, lo = _lighten(color), _darken(color)
+    return (
+        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{color}"/>'
+        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" '
+        f'fill="url(#{pid})" opacity="0.999"/>'
+        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{radius}" fill="{hi}"/>'
+        f'<rect x="{x:.1f}" y="{y:.1f}" width="{radius}" height="{h - radius:.1f}" fill="{hi}"/>'
+        f'<rect x="{x + w - radius:.1f}" y="{y + radius:.1f}" width="{radius}" '
+        f'height="{h - radius:.1f}" fill="{lo}"/>'
+        f'<rect x="{x + radius:.1f}" y="{y + h - radius:.1f}" width="{w - radius:.1f}" '
+        f'height="{radius}" fill="{lo}"/>'
+    )
+
+
 # ---------------- 厂商像素图标与品牌色 ----------------
 # 8x8 字符画，最近邻放大；颜色取自 ENDESGA-32，尽量贴近各家品牌色且互相可区分
 VENDOR_STYLE = {
@@ -407,23 +467,51 @@ def _vendor_of(name: str, vendor: str) -> str:
 
 
 def _icon_svg(vendor: str, x: float, y: float, px: float) -> str:
-    """在 (x,y) 处绘制 px 大小的像素图标，作为可动画的 <g>。"""
-    color, art = VENDOR_STYLE[_vendor_of("", vendor)]
-    cell = px / 8.0
-    rects = "".join(
-        f'<rect x="{c * cell:.2f}" y="{r * cell:.2f}" width="{cell:.2f}" height="{cell:.2f}"/>'
-        for r, row in enumerate(art)
-        for c, ch in enumerate(row) if ch == "#"
-    )
-    return (f'<g class="bar-icon" transform="translate({x:.1f},{y:.1f})" fill="{color}">'
-            f"{rects}</g>")
+    """绘制图标。
+
+    结构必须是「定位层 + 动画层」两层：
+      <g class="bar-slot" transform="translate(x,y)">   ← 定位，永不被动画覆盖
+        <g class="bar-icon">...                        ← 动画层，hover 时跳动
+    否则 CSS transform 会覆盖 SVG 的 transform 属性，图标会跳到画布左上角。
+    """
+    if vendor in PIXEL_ICONS:
+        inner = (f'<image width="{px:.1f}" height="{px:.1f}" '
+                 f'href="{PIXEL_ICONS[vendor]}" style="image-rendering:pixelated"/>')
+    else:
+        color, art = VENDOR_STYLE[_vendor_of("", vendor)]
+        cell = px / 8.0
+        inner = "".join(
+            f'<rect x="{c * cell:.2f}" y="{r * cell:.2f}" width="{cell:.2f}" '
+            f'height="{cell:.2f}" fill="{color}"/>'
+            for r, row in enumerate(art)
+            for c, ch in enumerate(row) if ch == "#"
+        )
+    return (f'<g class="bar-slot" transform="translate({x:.1f},{y:.1f})">'
+            f'<g class="bar-icon">{inner}</g></g>')
+
+
+def _split2(name: str, maxlen: int = 8) -> list[str]:
+    """把模型名拆成两行，用于水平轴标签。"""
+    name = name.strip()
+    if len(name) <= maxlen:
+        return [name]
+    words = name.split()
+    if len(words) <= 1:
+        return [name[:maxlen], name[maxlen:maxlen * 2]]
+    best_i, best_diff = 1, 10 ** 9
+    for i in range(1, len(words)):
+        a, b = " ".join(words[:i]), " ".join(words[i:])
+        diff = abs(len(a) - len(b))
+        if diff < best_diff:
+            best_i, best_diff = i, diff
+    return [" ".join(words[:best_i]), " ".join(words[best_i:])]
 
 
 # ---------------- 竖向柱状图（跑分排行） ----------------
 
 def vbar(data: list[dict], title: str, demo: bool = False,
-         w: int = 680, h: int = 400, unit: str = "", value_fmt: str = "{:.0f}") -> str:
-    """竖向柱状图：柱宽撑满画布，柱顶带厂商像素图标，hover 时图标跳动。
+         w: int = 960, h: int = 380, unit: str = "", value_fmt: str = "{:.0f}") -> str:
+    """竖向柱状图：柱宽撑满，柱顶厂商图标，水平两行轴标签，柱体带 16-bit 立体高光。
 
     data: [{name, value, vendor}]
     """
@@ -431,15 +519,14 @@ def vbar(data: list[dict], title: str, demo: bool = False,
         return _empty(title)
 
     n = len(data)
-    pad_l, pad_r = 34, 6
-    pad_t, pad_b = 40, 106
+    pad_l, pad_r = 34, 8
+    pad_t, pad_b = 42, 44
     plot_w = w - pad_l - pad_r
     plot_h = h - pad_t - pad_b
-    gap = 3.0
-    bar_w = max(6.0, (plot_w - gap * (n - 1)) / n)
+    gap = 4.0
+    bar_w = max(10.0, (plot_w - gap * (n - 1)) / n)
 
     max_v = max(d["value"] for d in data) or 1
-    # y 轴上限取整到「好看」的刻度
     step = 10 if max_v > 40 else 5 if max_v > 10 else 1
     top_v = int((max_v // step + 1) * step)
 
@@ -447,6 +534,7 @@ def vbar(data: list[dict], title: str, demo: bool = False,
         return pad_t + plot_h - plot_h * v / top_v
 
     parts: list[str] = []
+    defs: list[str] = []
 
     # 网格与刻度
     ticks = 4
@@ -462,43 +550,48 @@ def vbar(data: list[dict], title: str, demo: bool = False,
         vendor = d.get("vendor", "")
         color, _art = VENDOR_STYLE[_vendor_of(d["name"], vendor)]
         x = pad_l + i * (bar_w + gap)
-        bh = max(2.0, plot_h * d["value"] / top_v)
+        bh = max(3.0, plot_h * d["value"] / top_v)
         by = pad_t + plot_h - bh
+        cx = x + bar_w / 2
 
-        tip = f'{d["name"]}（{vendor}）：{value_fmt.format(d["value"])}{unit} · hover 查看'
+        tip = f'{d["name"]}（{vendor}）：{value_fmt.format(d["value"])}{unit}'
 
-        # 整组可 hover：柱子 + 图标一起响应
+        # 每根柱一条与自身主色协调的扫描线，避免统一深蓝把柱体染灰
+        pid, pat_svg = _scan_pattern(_mix(color, "#000000", 0.22))
+        defs.append(pat_svg)
+
         parts.append(f'<g class="vbar"><title>{_esc(tip)}</title>')
 
-        # 柱体：深色描边 + 品牌色填充，底部 1px 阴影
-        parts.append(f'<rect x="{x:.1f}" y="{by:.1f}" width="{bar_w:.1f}" height="{bh:.1f}" '
-                     f'fill="{DEEP}" stroke="{DARK}" stroke-width="1"/>')
-        parts.append(f'<rect class="bar-body" x="{x + 1:.1f}" y="{by + 1:.1f}" '
-                     f'width="{bar_w - 2:.1f}" height="{bh - 2:.1f}" fill="{color}"/>')
+        # 立体柱体
+        parts.append(_pixel_bar(x, by, bar_w, bh, color, pid, radius=2))
 
-        # 柱顶图标
-        icon_px = min(bar_w - 4, 22)
-        parts.append(_icon_svg(vendor, x + (bar_w - icon_px) / 2, by - icon_px - 6, icon_px))
+        # 柱顶图标（可放大到 30px）
+        icon_px = min(bar_w - 12, 30)
+        parts.append(_icon_svg(vendor, cx - icon_px / 2, by - icon_px - 8, icon_px))
 
-        # 数值标在柱内顶部（白字），柱太矮时移到上方
+        # 数值：柱内顶部；柱太矮则移到柱顶上方
         label = value_fmt.format(d["value"])
-        if bh > 16:
-            parts.append(f'<text x="{x + bar_w / 2:.1f}" y="{by + 13:.1f}" text-anchor="middle" '
-                         f'font-size="10" fill="{DEEP}" font-weight="700">{_esc(label)}</text>')
+        if bh > 20:
+            # 白字 + 深色描边：在任意品牌色柱体上都清晰
+            parts.append(f'<text x="{cx:.1f}" y="{by + 15:.1f}" text-anchor="middle" '
+                         f'font-size="11" fill="#ffffff" stroke="{DEEP}" stroke-width="2" '
+                         f'paint-order="stroke" font-weight="700">{_esc(label)}</text>')
         else:
-            parts.append(f'<text x="{x + bar_w / 2:.1f}" y="{by - 2:.1f}" text-anchor="middle" '
-                         f'font-size="9" fill="{PAPER}">{_esc(label)}</text>')
+            parts.append(f'<text x="{cx:.1f}" y="{by - 6:.1f}" text-anchor="middle" '
+                         f'font-size="10" fill="{PAPER}">{_esc(label)}</text>')
 
-        # x 轴标签：旋转 55°，锚点末端，紧贴柱底
-        # 轴标签：去掉厂商前缀后旋转，控制长度避免相邻重叠与被裁切
-        short = (d["name"].replace("Claude ", "").replace("Gemini ", "")
-                 .replace("DeepSeek ", "DS ").replace("Qwen", "Qwen"))
-        parts.append(f'<text transform="translate({x + bar_w / 2:.1f},{pad_t + plot_h + 6}) '
-                     f'rotate(-55)" text-anchor="end" font-size="9.5" fill="{LIGHT}">'
-                     f'{_esc(_short(short, 11))}</text>')
+        # 水平两行轴标签：保留完整型号名，靠拆行而不是删词来控制宽度
+        lines = _split2(d["name"], 8)
+        base = pad_t + plot_h + 14
+        spans = f'<tspan x="{cx:.1f}" y="{base}">{_esc(lines[0])}</tspan>'
+        if len(lines) > 1:
+            spans += f'<tspan x="{cx:.1f}" y="{base + 11}">{_esc(lines[1])}</tspan>'
+        parts.append(f'<text text-anchor="middle" font-size="9" fill="{PAPER}">{spans}</text>')
+
         parts.append("</g>")
 
-    return _wrap("".join(parts), w, h, title)
+    # defs 必须放在最前，否则 pattern 引用可能失效
+    return _wrap(f"<defs>{''.join(defs)}</defs>" + "".join(parts), w, h, title)
 
 
 # ---------------- 分段条（市场/类型占比） ----------------
