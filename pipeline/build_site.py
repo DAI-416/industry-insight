@@ -643,24 +643,20 @@ def build_models(events: list[dict], stats: dict, tax: dict, week: str) -> str:
 
     # ---- 跑分图：三个维度，前端切换 ----
     if models:
-        by_index = sorted(models, key=lambda m: -m["index"])[:16]
-        chart_index = charts.hbar(
-            [{"name": f"{m['name']}", "value": m["index"], "key": m["vendor"],
-              "sub": m["vendor"]} for m in by_index],
-            "综合智能指数", label_w=236, label_limit=17)
+        def vrows(rows: list[dict], key: str, transform=lambda v: v) -> list[dict]:
+            return [{"name": m["name"], "value": transform(m[key] if key in m else 0),
+                     "vendor": m["vendor"]} for m in rows]
 
-        by_ctx = sorted(models, key=lambda m: -(m.get("context_k") or 0))[:16]
-        chart_ctx = charts.hbar(
-            [{"name": m["name"], "value": m.get("context_k") or 0, "key": m["vendor"],
-              "sub": m["vendor"]} for m in by_ctx],
-            "上下文窗口", unit="k", label_w=236, label_limit=17)
+        by_index = sorted(models, key=lambda m: -m["index"])[:14]
+        chart_index = charts.vbar(vrows(by_index, "index"), "综合智能指数", value_fmt="{:.1f}")
 
-        priced = [m for m in models if m.get("price_out")]
-        by_price = sorted(priced, key=lambda m: m["price_out"])[:16]
-        chart_price = charts.hbar(
-            [{"name": m["name"], "value": round(m["price_out"], 2), "key": m["vendor"],
-              "sub": m["vendor"]} for m in by_price],
-            "输出价格", unit=" $/M", label_w=236, label_limit=17)
+        by_ctx = sorted(models, key=lambda m: -(m.get("context_k") or 0))[:14]
+        chart_ctx = charts.vbar(vrows(by_ctx, "context_k"), "上下文窗口", unit="k")
+
+        priced = [m for m in models if m.get("price_out")][:14]
+        by_price = sorted(priced, key=lambda m: m["price_out"])
+        chart_price = charts.vbar(vrows(by_price, "price_out"),
+                                  "输出价格", unit=" $/M", value_fmt="{:.2f}")
 
         charts_html = f"""
     <div class="chart-card">

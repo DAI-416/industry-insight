@@ -407,6 +407,19 @@ a{color:inherit;text-decoration:none}
 }
 .vc-latest:hover{color:var(--accent)}
 
+/* ---------- 竖向柱状图：图标跳动 ---------- */
+.vbar{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='18'%3E%3Cpath d='M2 0h2v10H2zM4 2h2v4H4zM0 8h2v8H0zM2 14h10v2H2z' fill='%23181425'/%3E%3Cpath d='M2 1h1v9H2zM4 3h1v3H4zM1 9h1v6H1zM3 15h8v1H3z' fill='%23fee761'/%3E%3C/svg%3E") 2 0, pointer}
+.vbar .bar-body{transition:none}
+.vbar:hover .bar-body{stroke:var(--accent);stroke-width:2}
+.bar-icon{transform-box:fill-box;transform-origin:center bottom}
+.vbar:hover .bar-icon{animation:hop .4s steps(4,end) infinite}
+@keyframes hop{
+  0%,100%{transform:translateY(0)}
+  25%{transform:translateY(-3px)}
+  50%{transform:translateY(-5px)}
+  75%{transform:translateY(-3px)}
+}
+
 /* ---------- 词云 16-bit 交互 ---------- */
 .cw{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='18'%3E%3Cpath d='M2 0h2v10H2zM4 2h2v4H4zM0 8h2v8H0zM2 14h10v2H2z' fill='%23181425'/%3E%3Cpath d='M2 1h1v9H2zM4 3h1v3H4zM1 9h1v6H1zM3 15h8v1H3z' fill='%23fee761'/%3E%3C/svg%3E") 2 0, pointer}
 .cw .cw-main{transition:none}

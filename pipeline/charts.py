@@ -354,6 +354,153 @@ def wordcloud(words: list[dict], title: str, w: int = 680, h: int = 400,
     return _wrap("".join(parts), w, h, title)
 
 
+# ---------------- 厂商像素图标与品牌色 ----------------
+# 8x8 字符画，最近邻放大；颜色取自 ENDESGA-32，尽量贴近各家品牌色且互相可区分
+VENDOR_STYLE = {
+    "OpenAI": ("#c0cbdc", [
+        "..####..", ".#....#.", "#..##..#", "#.#..#.#",
+        "#..##..#", ".#....#.", "..####..", "........"]),
+    "Anthropic": ("#d77643", [
+        "...#....", ".#.#.#..", "..###...", "#######.",
+        "..###...", ".#.#.#..", "...#....", "........"]),
+    "Google": ("#0099db", [
+        "..####..", ".#....#.", "#.......", "#..###..",
+        "#....#..", ".#...##.", "..####..", "........"]),
+    "Meta": ("#2ce8f5", [
+        "........", "........", ".##..##.", "#..#..#.",
+        "#..#..#.", ".##..##.", "........", "........"]),
+    "xAI": ("#8b9bb4", [
+        "#......#", ".#....#.", "..#..#..", "...##...",
+        "...##...", "..#..#..", ".#....#.", "#......#"]),
+    "Mistral": ("#f77622", [
+        "#.#.#.#.", "#.#.#.#.", "#.#.#.#.", "#.#.#.#.",
+        "#.#.#.#.", "#.#.#.#.", "#.#.#.#.", "#.#.#.#."]),
+    "阿里 Qwen": ("#b55088", [
+        ".####...", "#....#..", "#....#..", "#....#..",
+        "#....#..", "#....#..", ".####.#.", "......#."]),
+    "月之暗面 Kimi": ("#feae34", [
+        "..####..", ".#..#...", "#...#...", "#.......",
+        "#.......", "#....#..", ".#..#...", "..####.."]),
+    "智谱 GLM": ("#63c74d", [
+        "########", "......#.", ".....#..", "....#...",
+        "...#....", "..#.....", ".#......", "########"]),
+    "深度求索 DeepSeek": ("#5a6988", [
+        "........", "........", "..####..", ".#....#.",
+        "........", "#.#.#.#.", ".#.#.#.#", "........"]),
+    "MiniMax": ("#e43b44", [
+        "#......#", "##....##", "#.#..#.#", "#..##..#",
+        "#......#", "#......#", "#......#", "........"]),
+    "字节豆包": ("#ead4aa", [
+        "..####..", ".#....#.", "#..##..#", "#..##..#",
+        "#......#", ".#....#.", "..####..", "........"]),
+    "腾讯混元": ("#3e8948", [
+        "........", ".######.", "#..##..#", "#...#..#",
+        "#..##..#", ".######.", "........", "........"]),
+    "百度文心": ("#0099db", [
+        "..#..#..", ".#.##.#.", "#..##..#", "########",
+        "#..##..#", ".#.##.#.", "..#..#..", "........"]),
+}
+
+
+def _vendor_of(name: str, vendor: str) -> str:
+    return vendor if vendor in VENDOR_STYLE else "OpenAI"
+
+
+def _icon_svg(vendor: str, x: float, y: float, px: float) -> str:
+    """在 (x,y) 处绘制 px 大小的像素图标，作为可动画的 <g>。"""
+    color, art = VENDOR_STYLE[_vendor_of("", vendor)]
+    cell = px / 8.0
+    rects = "".join(
+        f'<rect x="{c * cell:.2f}" y="{r * cell:.2f}" width="{cell:.2f}" height="{cell:.2f}"/>'
+        for r, row in enumerate(art)
+        for c, ch in enumerate(row) if ch == "#"
+    )
+    return (f'<g class="bar-icon" transform="translate({x:.1f},{y:.1f})" fill="{color}">'
+            f"{rects}</g>")
+
+
+# ---------------- 竖向柱状图（跑分排行） ----------------
+
+def vbar(data: list[dict], title: str, demo: bool = False,
+         w: int = 680, h: int = 400, unit: str = "", value_fmt: str = "{:.0f}") -> str:
+    """竖向柱状图：柱宽撑满画布，柱顶带厂商像素图标，hover 时图标跳动。
+
+    data: [{name, value, vendor}]
+    """
+    if not data:
+        return _empty(title)
+
+    n = len(data)
+    pad_l, pad_r = 34, 6
+    pad_t, pad_b = 40, 106
+    plot_w = w - pad_l - pad_r
+    plot_h = h - pad_t - pad_b
+    gap = 3.0
+    bar_w = max(6.0, (plot_w - gap * (n - 1)) / n)
+
+    max_v = max(d["value"] for d in data) or 1
+    # y 轴上限取整到「好看」的刻度
+    step = 10 if max_v > 40 else 5 if max_v > 10 else 1
+    top_v = int((max_v // step + 1) * step)
+
+    def y_of(v: float) -> float:
+        return pad_t + plot_h - plot_h * v / top_v
+
+    parts: list[str] = []
+
+    # 网格与刻度
+    ticks = 4
+    for i in range(ticks + 1):
+        v = top_v * i / ticks
+        yy = y_of(v)
+        parts.append(f'<line x1="{pad_l}" y1="{yy:.0f}" x2="{pad_l + plot_w}" y2="{yy:.0f}" '
+                     f'stroke="{DARK}" stroke-width="1" stroke-dasharray="2 3"/>')
+        parts.append(f'<text x="{pad_l - 6}" y="{yy + 3:.0f}" text-anchor="end" font-size="9" '
+                     f'fill="{SILVER}">{v:.0f}</text>')
+
+    for i, d in enumerate(data):
+        vendor = d.get("vendor", "")
+        color, _art = VENDOR_STYLE[_vendor_of(d["name"], vendor)]
+        x = pad_l + i * (bar_w + gap)
+        bh = max(2.0, plot_h * d["value"] / top_v)
+        by = pad_t + plot_h - bh
+
+        tip = f'{d["name"]}（{vendor}）：{value_fmt.format(d["value"])}{unit} · hover 查看'
+
+        # 整组可 hover：柱子 + 图标一起响应
+        parts.append(f'<g class="vbar"><title>{_esc(tip)}</title>')
+
+        # 柱体：深色描边 + 品牌色填充，底部 1px 阴影
+        parts.append(f'<rect x="{x:.1f}" y="{by:.1f}" width="{bar_w:.1f}" height="{bh:.1f}" '
+                     f'fill="{DEEP}" stroke="{DARK}" stroke-width="1"/>')
+        parts.append(f'<rect class="bar-body" x="{x + 1:.1f}" y="{by + 1:.1f}" '
+                     f'width="{bar_w - 2:.1f}" height="{bh - 2:.1f}" fill="{color}"/>')
+
+        # 柱顶图标
+        icon_px = min(bar_w - 4, 22)
+        parts.append(_icon_svg(vendor, x + (bar_w - icon_px) / 2, by - icon_px - 6, icon_px))
+
+        # 数值标在柱内顶部（白字），柱太矮时移到上方
+        label = value_fmt.format(d["value"])
+        if bh > 16:
+            parts.append(f'<text x="{x + bar_w / 2:.1f}" y="{by + 13:.1f}" text-anchor="middle" '
+                         f'font-size="10" fill="{DEEP}" font-weight="700">{_esc(label)}</text>')
+        else:
+            parts.append(f'<text x="{x + bar_w / 2:.1f}" y="{by - 2:.1f}" text-anchor="middle" '
+                         f'font-size="9" fill="{PAPER}">{_esc(label)}</text>')
+
+        # x 轴标签：旋转 55°，锚点末端，紧贴柱底
+        # 轴标签：去掉厂商前缀后旋转，控制长度避免相邻重叠与被裁切
+        short = (d["name"].replace("Claude ", "").replace("Gemini ", "")
+                 .replace("DeepSeek ", "DS ").replace("Qwen", "Qwen"))
+        parts.append(f'<text transform="translate({x + bar_w / 2:.1f},{pad_t + plot_h + 6}) '
+                     f'rotate(-55)" text-anchor="end" font-size="9.5" fill="{LIGHT}">'
+                     f'{_esc(_short(short, 11))}</text>')
+        parts.append("</g>")
+
+    return _wrap("".join(parts), w, h, title)
+
+
 # ---------------- 分段条（市场/类型占比） ----------------
 
 SEG_COLORS = [BLUE, YELLOW, GREEN, ORANGE, SILVER, RED]
