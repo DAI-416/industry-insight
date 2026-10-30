@@ -16,19 +16,24 @@ from __future__ import annotations
 import math
 from html import escape
 
-# ---- 色盘 ----
-BLACK = "#0f131a"
-DEEP = "#262b44"
-DARK = "#3a4466"
+# ---- 色盘（对齐参考图 16-bit 街机柱状图） ----
+BLACK = "#0d1017"
+DEEP = "#181c28"      # CRT 屏幕深底
+DARK = "#2c354d"      # 边框暗蓝
+GRID = "#3a5a40"      # 参考图暗绿色点状参考线
 SILVER = "#8b9bb4"
-LIGHT = "#c0cbdc"
-PAPER = "#ead4aa"
+LIGHT = "#d8e2ef"
+PAPER = "#e8e0c8"     # 参考图米白坐标轴与徽章色
 YELLOW = "#fee761"
-RED = "#e43b44"
-GREEN = "#63c74d"
-ORANGE = "#f77622"
-BLUE = "#0099db"
-CRIMSON = "#a22633"
+RED = "#e63946"       # 参考图柱 1：红
+ORANGE = "#f48c06"    # 参考图柱 2：橙
+GREEN = "#52b788"     # 参考图柱 3：绿
+BLUE = "#2ea8ff"      # 参考图柱 4：蓝
+PURPLE = "#9d4edd"    # 参考图柱 5：紫
+CRIMSON = "#9e1f2c"
+
+# 参考图五彩序列色盘
+ARCADE_BARS = [RED, ORANGE, GREEN, BLUE, PURPLE]
 
 MUTED = SILVER
 LINE = DARK
@@ -77,33 +82,50 @@ def hbar(data: list[dict], title: str, unit: str = "", w: int | None = None,
     if not data:
         return _empty(title)
     highlight = highlight or set()
-    row_h, pad_t, pad_b = 26, 8, 10
+    row_h, pad_t, pad_b = 28, 14, 18
     w = w or 680
     h = pad_t + row_h * len(data) + pad_b
     max_v = max(d["value"] for d in data) or 1
     bar_x = label_w
-    bar_max = w - bar_x - 66
+    bar_max = w - bar_x - 82
 
     parts: list[str] = []
     defs: list[str] = []
+
+    # 纵向参考图点状网格线 + 左侧米白色 Y 轴主线
+    for k in range(1, 5):
+        gx = bar_x + bar_max * k / 4
+        parts.append(f'<line x1="{gx:.0f}" y1="{pad_t - 6}" x2="{gx:.0f}" y2="{h - pad_b + 4}" '
+                     f'stroke="{GRID}" stroke-width="1.5" stroke-dasharray="2 4"/>')
+
     for i, d in enumerate(data):
         y = pad_t + i * row_h
         val = d["value"]
-        bw = max(3, bar_max * val / max_v)
+        bw = max(4, bar_max * val / max_v)
         is_hl = d.get("key") in highlight
-        color = YELLOW if is_hl else BLUE
+        # 核心关注赛道用亮黄，其余按参考图五彩序列展示
+        color = YELLOW if is_hl else ARCADE_BARS[i % len(ARCADE_BARS)]
         pid, pat_svg = _dither_pattern(color)
         defs.append(pat_svg)
         tip = f"{d['name']}：{val:g}{unit}" + (f"（{d['sub']}）" if d.get("sub") else "")
+
+        # Y 轴米白色刻度短线 (Tick mark)
+        parts.append(f'<line x1="{bar_x - 5}" y1="{y + 11}" x2="{bar_x}" y2="{y + 11}" '
+                     f'stroke="{PAPER}" stroke-width="2"/>')
         parts.append(
             f'<g><title>{_esc(tip)}</title>'
-            f'<text x="{label_w - 8}" y="{y + 15}" text-anchor="end" font-size="11" '
-            f'fill="{LIGHT}">{_esc(_short(d["name"], label_limit))}</text>'
-            f'{_pixel_bar(bar_x, y + 4, bw, 14, color, pid, dither=pid)}'
-            f'<text x="{bar_x + bw + 8:.0f}" y="{y + 15}" font-size="10" '
+            f'<text x="{label_w - 9}" y="{y + 15}" text-anchor="end" font-size="11" '
+            f'fill="{PAPER if is_hl else LIGHT}">{_esc(_short(d["name"], label_limit))}</text>'
+            f'{_pixel_bar(bar_x + 2, y + 4, bw, 14, color, pid, dither=pid)}'
+            f'<text x="{bar_x + bw + 10:.0f}" y="{y + 15}" font-size="10" font-weight="700" '
             f'fill="{PAPER}">{val:g}{_esc(unit)}</text>'
             f"</g>"
         )
+
+    # 左侧米白色坐标轴主线 + 右下角 [■ UP] 装饰徽章
+    parts.append(f'<line x1="{bar_x}" y1="{pad_t - 6}" x2="{bar_x}" y2="{h - pad_b + 4}" '
+                 f'stroke="{PAPER}" stroke-width="3"/>')
+    parts.append(_up_badge(w - 56, h - 26, "UP", GREEN))
     return _wrap(f"<defs>{''.join(defs)}</defs>" + "".join(parts), w, h, title)
 
 
@@ -396,7 +418,11 @@ def _darken(c: str, r: float = 0.38) -> str:
 
 
 def _dither_pattern(color: str) -> tuple[str, str]:
-    """棋盘格抖动网点，叠在柱体下半部，模拟参考图的 pixel dithering 渐变。"""
+    """棋盘格抖动网点，叠在柱体下半部，模拟参考图的 pixel dithering 渐变。
+
+    注意：网点取「主色提亮」而非压暗——压暗会让整根柱子发闷发灰，
+    与参考图的高饱和街机配色相反。
+    """
     _PAT_SEQ[0] += 1
     pid = f"dith{_PAT_SEQ[0]}"
     dot = _lighten(color, 0.22)
@@ -407,21 +433,12 @@ def _dither_pattern(color: str) -> tuple[str, str]:
     return pid, svg
 
 
-def _scan_pattern(line_color: str = DEEP) -> tuple[str, str]:
-    """6px 周期的扫描线 pattern，给柱体加能量条质感（不能太抢主体色）。"""
-    _PAT_SEQ[0] += 1
-    pid = f"scan{_PAT_SEQ[0]}"
-    svg = (f'<pattern id="{pid}" width="6" height="6" patternUnits="userSpaceOnUse">'
-           f'<rect width="6" height="1" fill="{line_color}"/></pattern>')
-    return pid, svg
-
-
 def _pixel_bar(x: float, y: float, w: float, h: float, color: str,
                pid: str, radius: int = 2, outline: bool = True,
                dither: str | None = None) -> str:
     """16-bit 立体柱体（对齐参考图）：
 
-    黑描边 → 主体纯色 → 下半部 dither 网点 → 顶部 5px 高光 → 左侧 1px 亮边 → 右侧 2px 暗边
+    黑描边 → 主体纯色 → 下半部 dither 网点 → 顶部高光 → 左侧亮边 → 右侧暗边
     """
     hi = _lighten(color, 0.46)
     lo = _darken(color, 0.32)
@@ -446,6 +463,23 @@ def _pixel_bar(x: float, y: float, w: float, h: float, color: str,
         parts.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="1" height="{h:.1f}" fill="{hi}"/>')
         parts.append(f'<rect x="{x + w - 2:.1f}" y="{y:.1f}" width="2" height="{h:.1f}" fill="{lo}"/>')
     return "".join(parts)
+
+
+def _up_badge(x: float, y: float, text: str = "UP", color: str = GREEN,
+              w: int = 46, h: int = 18) -> str:
+    """参考图右上角的 [■ UP] 像素徽章：黑底 + 米白描边 + 方块指示 + 标签。"""
+    return (
+        '<g class="up-badge" pointer-events="none">'
+        f'<rect x="{x:.0f}" y="{y:.0f}" width="{w}" height="{h}" fill="{BLACK}" '
+        f'stroke="{PAPER}" stroke-width="2"/>'
+        f'<rect x="{x + 6:.0f}" y="{y + 5:.0f}" width="9" height="9" fill="{color}" '
+        f'stroke="{BLACK}" stroke-width="1"/>'
+        f'<rect x="{x + 7:.0f}" y="{y + 6:.0f}" width="7" height="3" '
+        f'fill="{_lighten(color, 0.45)}"/>'
+        f'<text x="{x + 22:.0f}" y="{y + h - 5:.0f}" font-size="10" font-weight="700" '
+        f'fill="{PAPER}" font-family="DotGothic16,monospace">{_esc(text)}</text>'
+        '</g>'
+    )
 
 
 # ---------------- 厂商像素图标与品牌色 ----------------
@@ -545,23 +579,20 @@ def _split2(name: str, maxlen: int = 8) -> list[str]:
 
 def vbar(data: list[dict], title: str, demo: bool = False,
          w: int = 960, h: int = 380, unit: str = "", value_fmt: str = "{:.0f}") -> str:
-    """竖向柱状图：柱宽撑满，柱顶厂商图标，水平两行轴标签，柱体带 16-bit 立体高光。
-
-    data: [{name, value, vendor}]
-    """
+    """竖向柱状图：复刻参考图（米白粗坐标轴 + 刻度短线 + 暗绿点状网格 + 五彩抖动柱 + UP 徽章）。"""
     if not data:
         return _empty(title)
 
     n = len(data)
-    pad_l, pad_r = 34, 8
-    pad_t, pad_b = 42, 44
+    pad_l, pad_r = 44, 68
+    pad_t, pad_b = 44, 48
     plot_w = w - pad_l - pad_r
     plot_h = h - pad_t - pad_b
-    gap = 4.0
-    bar_w = max(10.0, (plot_w - gap * (n - 1)) / n)
+    gap = max(8.0, min(20.0, plot_w * 0.04))
+    bar_w = max(12.0, (plot_w - gap * (n - 1)) / n)
 
     max_v = max(d["value"] for d in data) or 1
-    step = 10 if max_v > 40 else 5 if max_v > 10 else 1
+    step = 20 if max_v > 60 else 10 if max_v > 40 else 5 if max_v > 10 else 1
     top_v = int((max_v // step + 1) * step)
 
     def y_of(v: float) -> float:
@@ -570,68 +601,78 @@ def vbar(data: list[dict], title: str, demo: bool = False,
     parts: list[str] = []
     defs: list[str] = []
 
-    # Y 轴：点状网格 + 白色像素轴线（参考图风格）
-    ticks = 4
+    # 绘图区深色屏幕底板
+    parts.append(f'<rect x="{pad_l}" y="{pad_t - 12}" width="{plot_w}" '
+                 f'height="{plot_h + 12}" fill="{DEEP}"/>')
+
+    # Y 轴：参考图同款暗绿点状网格 + 左侧米白色刻度凸起 + 像素数字
+    ticks = 5
     for i in range(ticks + 1):
         v = top_v * i / ticks
         yy = y_of(v)
-        parts.append(f'<line x1="{pad_l}" y1="{yy:.0f}" x2="{pad_l + plot_w}" y2="{yy:.0f}" '
-                     f'stroke="{DARK}" stroke-width="1" stroke-dasharray="1 4"/>')
-        parts.append(f'<text x="{pad_l - 7}" y="{yy + 3:.0f}" text-anchor="end" font-size="10" '
-                     f'fill="{PAPER}">{v:.0f}</text>')
-    # 绘图区面板底 + 外框
-    parts.insert(0, f'<rect x="{pad_l - 2}" y="{pad_t - 12}" width="{plot_w + 6}" '
-                    f'height="{plot_h + 16}" fill="{BLACK}" stroke="{DARK}" stroke-width="1"/>')
-    parts.append(f'<line x1="{pad_l}" y1="{pad_t - 2}" x2="{pad_l}" y2="{pad_t + plot_h}" '
-                 f'stroke="{PAPER}" stroke-width="2"/>')
-    parts.append(f'<line x1="{pad_l}" y1="{pad_t + plot_h}" x2="{pad_l + plot_w}" '
-                 f'y2="{pad_t + plot_h}" stroke="{PAPER}" stroke-width="2"/>')
+        if i > 0:
+            parts.append(f'<line x1="{pad_l}" y1="{yy:.0f}" x2="{pad_l + plot_w}" y2="{yy:.0f}" '
+                         f'stroke="{GRID}" stroke-width="2" stroke-dasharray="2 4"/>')
+        parts.append(f'<line x1="{pad_l - 6}" y1="{yy:.0f}" x2="{pad_l}" y2="{yy:.0f}" '
+                     f'stroke="{PAPER}" stroke-width="3"/>')
+        parts.append(f'<text x="{pad_l - 10}" y="{yy + 4:.0f}" text-anchor="end" font-size="11" '
+                     f'font-weight="700" fill="{PAPER}">{v:.0f}</text>')
 
     for i, d in enumerate(data):
         vendor = d.get("vendor", "")
-        color, _art = VENDOR_STYLE[_vendor_of(d["name"], vendor)]
+        # 未登记厂商则使用参考图红橙绿蓝紫五色循环
+        if vendor in VENDOR_STYLE:
+            color, _art = VENDOR_STYLE[vendor]
+        else:
+            color = ARCADE_BARS[i % len(ARCADE_BARS)]
         x = pad_l + i * (bar_w + gap)
-        bh = max(3.0, plot_h * d["value"] / top_v)
+        bh = max(4.0, plot_h * d["value"] / top_v)
         by = pad_t + plot_h - bh
         cx = x + bar_w / 2
 
         tip = f'{d["name"]}（{vendor}）：{value_fmt.format(d["value"])}{unit}'
-
-        # 每根柱一条与自身主色协调的 dither 网点
         pid, pat_svg = _dither_pattern(color)
         defs.append(pat_svg)
 
         parts.append(f'<g class="vbar"><title>{_esc(tip)}</title>')
-
-        # 立体柱体（黑描边 + 顶部高光 + 下半部 dither）
         parts.append(_pixel_bar(x, by, bar_w, bh, color, pid, dither=pid))
 
-        # 柱顶图标（可放大到 30px）
-        icon_px = min(bar_w - 12, 30)
-        parts.append(_icon_svg(vendor, cx - icon_px / 2, by - icon_px - 8, icon_px))
+        # 柱顶图标（仅登记过的厂商才画，避免张冠李戴）
+        icon_px = min(bar_w - 8, 28)
+        if vendor in VENDOR_STYLE and icon_px >= 10:
+            parts.append(_icon_svg(vendor, cx - icon_px / 2, by - icon_px - 8, icon_px))
 
-        # 数值：柱内顶部；柱太矮则移到柱顶上方
+        # 数值标签
         label = value_fmt.format(d["value"])
-        if bh > 20:
-            # 白字 + 深色描边：在任意品牌色柱体上都清晰
-            parts.append(f'<text x="{cx:.1f}" y="{by + 15:.1f}" text-anchor="middle" '
-                         f'font-size="11" fill="#ffffff" stroke="{DEEP}" stroke-width="2" '
+        if bh > 22:
+            parts.append(f'<text x="{cx:.1f}" y="{by + 16:.1f}" text-anchor="middle" '
+                         f'font-size="11" fill="#ffffff" stroke="{BLACK}" stroke-width="2" '
                          f'paint-order="stroke" font-weight="700">{_esc(label)}</text>')
         else:
             parts.append(f'<text x="{cx:.1f}" y="{by - 6:.1f}" text-anchor="middle" '
                          f'font-size="10" fill="{PAPER}">{_esc(label)}</text>')
 
-        # 水平两行轴标签：保留完整型号名，靠拆行而不是删词来控制宽度
+        # X 轴底部米白色刻度短线 + 型号标签
+        parts.append(f'<line x1="{cx:.1f}" y1="{pad_t + plot_h}" x2="{cx:.1f}" '
+                     f'y2="{pad_t + plot_h + 5}" stroke="{PAPER}" stroke-width="2"/>')
         lines = _split2(d["name"], 8)
-        base = pad_t + plot_h + 14
+        base = pad_t + plot_h + 18
         spans = f'<tspan x="{cx:.1f}" y="{base}">{_esc(lines[0])}</tspan>'
         if len(lines) > 1:
             spans += f'<tspan x="{cx:.1f}" y="{base + 11}">{_esc(lines[1])}</tspan>'
-        parts.append(f'<text text-anchor="middle" font-size="9" fill="{PAPER}">{spans}</text>')
-
+        parts.append(f'<text text-anchor="middle" font-size="10" font-weight="700" fill="{PAPER}">{spans}</text>')
         parts.append("</g>")
 
-    # defs 必须放在最前，否则 pattern 引用可能失效
+    # 覆盖在最上层的米白色粗 X/Y 轴线（还原参考图细节）
+    parts.append(f'<line x1="{pad_l}" y1="{pad_t - 10}" x2="{pad_l}" y2="{pad_t + plot_h + 2}" '
+                 f'stroke="{PAPER}" stroke-width="3.5"/>')
+    parts.append(f'<line x1="{pad_l - 4}" y1="{pad_t + plot_h}" x2="{pad_l + plot_w + 6}" '
+                 f'y2="{pad_t + plot_h}" stroke="{PAPER}" stroke-width="3.5"/>')
+
+    # 右上角与右下角 [■ UP] 像素徽章（对应参考图右侧 UI）
+    parts.append(_up_badge(w - 58, pad_t - 4, "UP", GREEN))
+    parts.append(_up_badge(w - 58, pad_t + plot_h - 22, "UP", PURPLE))
+
     return _wrap(f"<defs>{''.join(defs)}</defs>" + "".join(parts), w, h, title)
 
 
