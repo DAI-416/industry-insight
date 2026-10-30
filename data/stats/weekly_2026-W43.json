@@ -1,27 +1,36 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-10-30T20:49:21+08:00",
+ "generated_at": "2026-10-31T03:56:39+08:00",
  "total": 41,
- "fact_count": 36,
- "opinion_count": 5,
+ "fact_count": 35,
+ "opinion_count": 6,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 14,
+   "count": 11,
    "opinion_count": 1,
-   "score": 369.2
+   "score": 291.2
+  },
+  {
+   "track_id": "LLM",
+   "name": "大模型",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 5,
+   "opinion_count": 0,
+   "score": 131.0
   },
   {
    "track_id": "TEC-SEC",
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 5,
+   "count": 4,
    "opinion_count": 1,
-   "score": 111.2
+   "score": 86.8
   },
   {
    "track_id": "MAC-DATA",
@@ -33,15 +42,6 @@
    "score": 82.8
   },
   {
-   "track_id": "LLM",
-   "name": "大模型",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 3,
-   "opinion_count": 0,
-   "score": 78.0
-  },
-  {
    "track_id": "MAC-CMD",
    "name": "大宗商品与能源",
    "domain": "macro",
@@ -51,27 +51,27 @@
    "score": 40.0
   },
   {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
+   "track_id": "INV-EXIT",
+   "name": "退出与并购",
+   "domain": "investment",
+   "is_focus": false,
+   "count": 1,
+   "opinion_count": 0,
+   "score": 24.4
+  },
+  {
+   "track_id": "TEC-COMPUTE",
+   "name": "算力与基础设施",
    "domain": "tech",
    "is_focus": false,
    "count": 1,
-   "opinion_count": 1,
-   "score": 26.2
+   "opinion_count": 0,
+   "score": 24.4
   },
   {
    "track_id": "TEC-CE",
    "name": "消费电子与智能硬件",
    "domain": "tech",
-   "is_focus": false,
-   "count": 1,
-   "opinion_count": 0,
-   "score": 26.2
-  },
-  {
-   "track_id": "INV-EXIT",
-   "name": "退出与并购",
-   "domain": "investment",
    "is_focus": false,
    "count": 1,
    "opinion_count": 0,
@@ -110,7 +110,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 0,
+   "opinion_count": 2,
    "score": 0.0
   },
   {
@@ -141,8 +141,8 @@
    "score": 0.0
   },
   {
-   "track_id": "TEC-COMPUTE",
-   "name": "算力与基础设施",
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
    "count": 0,
@@ -173,7 +173,7 @@
    "domain": "macro",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 1,
+   "opinion_count": 0,
    "score": 0.0
   },
   {
@@ -219,7 +219,7 @@
  },
  "importance_dist": {
   "important": 1,
-  "low": 33,
+  "low": 32,
   "normal": 2
  },
  "source_dist": {
@@ -280,11 +280,11 @@
    "count": 2
   },
   {
-   "name": "Battle",
+   "name": "Drones",
    "count": 2
   },
   {
-   "name": "Drones",
+   "name": "Battle",
    "count": 2
   },
   {
@@ -292,7 +292,7 @@
    "count": 2
   }
  ],
- "total_score": 758.0,
- "other_count": 7,
- "other_opinion_count": 1
+ "total_score": 705.0,
+ "other_count": 8,
+ "other_opinion_count": 2
 }

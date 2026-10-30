@@ -1,22 +1,26 @@
 [
  {
   "name": "OpenAI",
-  "count": 18
+  "count": 22
  },
  {
   "name": "Google",
-  "count": 13
+  "count": 19
  },
  {
   "name": "Anthropic",
-  "count": 12
+  "count": 14
  },
  {
   "name": "GPT",
-  "count": 12
+  "count": 14
  },
  {
   "name": "Amazon",
+  "count": 12
+ },
+ {
+  "name": "Model",
   "count": 11
  },
  {
@@ -28,11 +32,23 @@
   "count": 10
  },
  {
-  "name": "Model",
+  "name": "Binance",
   "count": 10
  },
  {
+  "name": "Agent",
+  "count": 9
+ },
+ {
+  "name": "Reuters",
+  "count": 9
+ },
+ {
   "name": "Nvidia",
+  "count": 8
+ },
+ {
+  "name": "TechCrunch",
   "count": 8
  },
  {
@@ -40,8 +56,8 @@
   "count": 8
  },
  {
-  "name": "Agent",
-  "count": 7
+  "name": "Claude",
+  "count": 8
  },
  {
   "name": "Sources",
@@ -52,7 +68,7 @@
   "count": 7
  },
  {
-  "name": "Binance",
+  "name": "ChatGPT",
   "count": 7
  },
  {
@@ -68,11 +84,31 @@
   "count": 6
  },
  {
-  "name": "Reuters",
+  "name": "Microsoft",
   "count": 6
  },
  {
-  "name": "TechCrunch",
+  "name": "Financial",
+  "count": 6
+ },
+ {
+  "name": "Reddit",
+  "count": 6
+ },
+ {
+  "name": "Meta",
+  "count": 6
+ },
+ {
+  "name": "Prime",
+  "count": 6
+ },
+ {
+  "name": "Apple",
+  "count": 5
+ },
+ {
+  "name": "Wall",
   "count": 5
  },
  {
@@ -84,19 +120,7 @@
   "count": 5
  },
  {
-  "name": "Financial",
-  "count": 5
- },
- {
-  "name": "ChatGPT",
-  "count": 5
- },
- {
-  "name": "Reddit",
-  "count": 5
- },
- {
-  "name": "Prime",
+  "name": "Codex",
   "count": 5
  },
  {
@@ -116,6 +140,10 @@
   "count": 4
  },
  {
+  "name": "Meet",
+  "count": 4
+ },
+ {
   "name": "估值",
   "count": 4
  },
@@ -124,39 +152,11 @@
   "count": 4
  },
  {
-  "name": "Apple",
-  "count": 4
- },
- {
-  "name": "Wall",
-  "count": 4
- },
- {
   "name": "数据中心",
   "count": 4
  },
  {
-  "name": "Microsoft",
-  "count": 4
- },
- {
-  "name": "Quoting",
-  "count": 4
- },
- {
-  "name": "Claude",
-  "count": 4
- },
- {
-  "name": "Download",
-  "count": 4
- },
- {
-  "name": "Codex",
-  "count": 4
- },
- {
-  "name": "Andy",
+  "name": "Alphabet",
   "count": 4
  }
 ]
