@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-10-30T19:09:04+08:00",
+ "generated_at": "2026-10-30T19:09:49+08:00",
  "total": 354,
  "fact_count": 307,
  "opinion_count": 47,
@@ -396,11 +396,11 @@
    "count": 3
   },
   {
-   "name": "MacBook",
+   "name": "Apple",
    "count": 3
   },
   {
-   "name": "Apple",
+   "name": "MacBook",
    "count": 3
   }
  ],
