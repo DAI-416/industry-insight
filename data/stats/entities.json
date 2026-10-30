@@ -21,22 +21,46 @@
  },
  {
   "name": "Bloomberg",
-  "count": 10
+  "count": 11
  },
  {
   "name": "美联储",
-  "count": 9
+  "count": 10
  },
  {
   "name": "Model",
-  "count": 8
+  "count": 10
  },
  {
   "name": "Nvidia",
-  "count": 7
+  "count": 8
  },
  {
   "name": "加息",
+  "count": 8
+ },
+ {
+  "name": "Agent",
+  "count": 7
+ },
+ {
+  "name": "Sources",
+  "count": 7
+ },
+ {
+  "name": "Releases",
+  "count": 7
+ },
+ {
+  "name": "Binance",
+  "count": 7
+ },
+ {
+  "name": "算力",
+  "count": 6
+ },
+ {
+  "name": "融资",
   "count": 6
  },
  {
@@ -44,23 +68,15 @@
   "count": 6
  },
  {
-  "name": "Sources",
+  "name": "Reuters",
   "count": 6
  },
  {
-  "name": "Releases",
-  "count": 6
- },
- {
-  "name": "Agent",
+  "name": "TechCrunch",
   "count": 5
  },
  {
-  "name": "芯片",
-  "count": 5
- },
- {
-  "name": "融资",
+  "name": "AI-powered",
   "count": 5
  },
  {
@@ -68,11 +84,11 @@
   "count": 5
  },
  {
-  "name": "ChatGPT",
+  "name": "Financial",
   "count": 5
  },
  {
-  "name": "Binance",
+  "name": "ChatGPT",
   "count": 5
  },
  {
@@ -80,7 +96,11 @@
   "count": 5
  },
  {
-  "name": "算力",
+  "name": "Prime",
+  "count": 5
+ },
+ {
+  "name": "上市",
   "count": 4
  },
  {
@@ -92,7 +112,19 @@
   "count": 4
  },
  {
-  "name": "TechCrunch",
+  "name": "芯片",
+  "count": 4
+ },
+ {
+  "name": "估值",
+  "count": 4
+ },
+ {
+  "name": "MacBook",
+  "count": 4
+ },
+ {
+  "name": "Apple",
   "count": 4
  },
  {
@@ -108,15 +140,15 @@
   "count": 4
  },
  {
-  "name": "AI-powered",
-  "count": 4
- },
- {
   "name": "Quoting",
   "count": 4
  },
  {
-  "name": "Reuters",
+  "name": "Claude",
+  "count": 4
+ },
+ {
+  "name": "Download",
   "count": 4
  },
  {
@@ -126,37 +158,5 @@
  {
   "name": "Andy",
   "count": 4
- },
- {
-  "name": "Prime",
-  "count": 4
- },
- {
-  "name": "CNBC",
-  "count": 4
- },
- {
-  "name": "Jassy",
-  "count": 4
- },
- {
-  "name": "美国经济",
-  "count": 3
- },
- {
-  "name": "Meet",
-  "count": 3
- },
- {
-  "name": "估值",
-  "count": 3
- },
- {
-  "name": "Apple",
-  "count": 3
- },
- {
-  "name": "MacBook",
-  "count": 3
  }
 ]
