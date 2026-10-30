@@ -9,10 +9,18 @@
  },
  {
   "name": "Anthropic",
-  "count": 10
+  "count": 12
  },
  {
   "name": "GPT",
+  "count": 12
+ },
+ {
+  "name": "Amazon",
+  "count": 11
+ },
+ {
+  "name": "Bloomberg",
   "count": 10
  },
  {
@@ -20,19 +28,27 @@
   "count": 9
  },
  {
-  "name": "Amazon",
-  "count": 8
- },
- {
-  "name": "Bloomberg",
-  "count": 8
- },
- {
   "name": "Model",
+  "count": 8
+ },
+ {
+  "name": "Nvidia",
   "count": 7
  },
  {
+  "name": "加息",
+  "count": 6
+ },
+ {
   "name": "Gemini",
+  "count": 6
+ },
+ {
+  "name": "Sources",
+  "count": 6
+ },
+ {
+  "name": "Releases",
   "count": 6
  },
  {
@@ -40,15 +56,23 @@
   "count": 5
  },
  {
-  "name": "Nvidia",
+  "name": "芯片",
   "count": 5
  },
  {
-  "name": "加息",
+  "name": "融资",
   "count": 5
  },
  {
-  "name": "Releases",
+  "name": "GPT-6",
+  "count": 5
+ },
+ {
+  "name": "ChatGPT",
+  "count": 5
+ },
+ {
+  "name": "Binance",
   "count": 5
  },
  {
@@ -56,7 +80,27 @@
   "count": 5
  },
  {
-  "name": "芯片",
+  "name": "算力",
+  "count": 4
+ },
+ {
+  "name": "欧洲央行",
+  "count": 4
+ },
+ {
+  "name": "收购",
+  "count": 4
+ },
+ {
+  "name": "TechCrunch",
+  "count": 4
+ },
+ {
+  "name": "Wall",
+  "count": 4
+ },
+ {
+  "name": "数据中心",
   "count": 4
  },
  {
@@ -72,15 +116,7 @@
   "count": 4
  },
  {
-  "name": "GPT-6",
-  "count": 4
- },
- {
-  "name": "Sources",
-  "count": 4
- },
- {
-  "name": "ChatGPT",
+  "name": "Reuters",
   "count": 4
  },
  {
@@ -88,7 +124,19 @@
   "count": 4
  },
  {
+  "name": "Andy",
+  "count": 4
+ },
+ {
+  "name": "Prime",
+  "count": 4
+ },
+ {
   "name": "CNBC",
+  "count": 4
+ },
+ {
+  "name": "Jassy",
   "count": 4
  },
  {
@@ -96,23 +144,11 @@
   "count": 3
  },
  {
-  "name": "算力",
-  "count": 3
- },
- {
-  "name": "欧洲央行",
-  "count": 3
- },
- {
-  "name": "收购",
-  "count": 3
- },
- {
   "name": "Meet",
   "count": 3
  },
  {
-  "name": "Apple",
+  "name": "估值",
   "count": 3
  },
  {
@@ -120,43 +156,7 @@
   "count": 3
  },
  {
-  "name": "Wall",
-  "count": 3
- },
- {
-  "name": "融资",
-  "count": 3
- },
- {
-  "name": "Carbon",
-  "count": 3
- },
- {
-  "name": "Alphabet",
-  "count": 3
- },
- {
-  "name": "Patrick",
-  "count": 3
- },
- {
-  "name": "Instagram",
-  "count": 3
- },
- {
-  "name": "Thrive",
-  "count": 3
- },
- {
-  "name": "Mistral",
-  "count": 3
- },
- {
-  "name": "Astra",
-  "count": 3
- },
- {
-  "name": "Claude",
+  "name": "Apple",
   "count": 3
  }
 ]
