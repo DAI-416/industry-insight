@@ -434,20 +434,6 @@ def build_analytics(events: list[dict], stats: dict, tax: dict, week: str) -> st
                if x["count"] > 0 and x["track_id"] != "OTHER-1"][:14]
     v1 = charts.hbar(v1_data, "赛道活跃度排行", highlight=focus_ids)
 
-    # V2 · 核心赛道走势（阶梯线，仅有效周）
-    series = []
-    for tr in tax["tracks"]:
-        if tr["id"] not in focus_ids:
-            continue
-        vals = []
-        for w in weeks_data:
-            a = next((x for x in stats["weekly"].get(w, {}).get("track_activity", [])
-                      if x["track_id"] == tr["id"]), None)
-            vals.append(a["score"] if a else 0)
-        name = "人形机器人" if tr["id"] == "TEC-ROBO" else tr["name"]
-        series.append({"name": name, "values": vals})
-    v2 = charts.multiline(series, weeks_data, "核心赛道活跃度走势", w=680, h=250)
-
     # V3 · 热力矩阵（红=火热 绿=冷）
     order = [x["track_id"] for x in act
              if x["count"] > 0 and x["track_id"] != "OTHER-1"][:12] \
@@ -506,8 +492,6 @@ def build_analytics(events: list[dict], stats: dict, tax: dict, week: str) -> st
   <div class="section">
     <div class="section-head"><h2>时序趋势</h2>
       <span class="note">仅显示有数据的 {len(weeks_data)} 周</span></div>
-    <div class="chart-card"><h3>V2 · 核心赛道走势</h3>
-      <div class="caliber">阶梯线为像素风表达，非平滑曲线</div>{v2}</div>
     <div class="chart-card"><h3>V3 · 赛道 × 周 活跃度热力矩阵</h3>
       <div class="caliber">红=火热 绿=冷 黄橙=中间档；<b>空心格=该周无条目</b></div>{v3}</div>
     <div class="chart-card"><h3>V4 · 活跃度环比</h3>

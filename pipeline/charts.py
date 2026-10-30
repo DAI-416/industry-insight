@@ -17,6 +17,7 @@ import math
 from html import escape
 
 # ---- 色盘 ----
+BLACK = "#0f131a"
 DEEP = "#262b44"
 DARK = "#3a4466"
 SILVER = "#8b9bb4"
@@ -76,32 +77,34 @@ def hbar(data: list[dict], title: str, unit: str = "", w: int | None = None,
     if not data:
         return _empty(title)
     highlight = highlight or set()
-    row_h, pad_t, pad_b = 24, 8, 10
+    row_h, pad_t, pad_b = 26, 8, 10
     w = w or 680
     h = pad_t + row_h * len(data) + pad_b
     max_v = max(d["value"] for d in data) or 1
     bar_x = label_w
     bar_max = w - bar_x - 66
 
-    pid, pat_svg = _scan_pattern()
-    parts = [f"<defs>{pat_svg}</defs>"]
+    parts: list[str] = []
+    defs: list[str] = []
     for i, d in enumerate(data):
         y = pad_t + i * row_h
         val = d["value"]
         bw = max(3, bar_max * val / max_v)
         is_hl = d.get("key") in highlight
-        color = YELLOW if is_hl else SILVER
+        color = YELLOW if is_hl else BLUE
+        pid, pat_svg = _dither_pattern(color)
+        defs.append(pat_svg)
         tip = f"{d['name']}：{val:g}{unit}" + (f"（{d['sub']}）" if d.get("sub") else "")
         parts.append(
             f'<g><title>{_esc(tip)}</title>'
             f'<text x="{label_w - 8}" y="{y + 15}" text-anchor="end" font-size="11" '
             f'fill="{LIGHT}">{_esc(_short(d["name"], label_limit))}</text>'
-            f'{_pixel_bar(bar_x, y + 5, bw, 11, color, pid, radius=1)}'
+            f'{_pixel_bar(bar_x, y + 4, bw, 14, color, pid, dither=pid)}'
             f'<text x="{bar_x + bw + 8:.0f}" y="{y + 15}" font-size="10" '
             f'fill="{PAPER}">{val:g}{_esc(unit)}</text>'
             f"</g>"
         )
-    return _wrap("".join(parts), w, h, title)
+    return _wrap(f"<defs>{''.join(defs)}</defs>" + "".join(parts), w, h, title)
 
 
 # ---------------- 多序列折线（像素阶梯线） ----------------
@@ -207,13 +210,16 @@ def heatmap(rows: list[dict], weeks: list[str], matrix: list[list[float | None]]
             xx = label_w + c * cell_w
             color = _heat_color(v, max_v)
             if color is None:
-                # 无数据：留空，只画暗色网格格
+                # 无数据：深底 + 虚线框，与「有数据但低」明确区分
                 parts.append(f'<rect x="{xx + 1:.0f}" y="{y}" width="{cell_w - 2:.0f}" '
-                             f'height="{cell_h}" fill="none" stroke="{DARK}" stroke-width="1"/>')
+                             f'height="{cell_h}" fill="{BLACK}" stroke="{DARK}" '
+                             f'stroke-width="1" stroke-dasharray="2 2"/>')
                 tip = f'{row["name"]} · {weeks[c]}：无数据'
             else:
                 parts.append(f'<rect x="{xx + 1:.0f}" y="{y}" width="{cell_w - 2:.0f}" '
-                             f'height="{cell_h}" fill="{color}"/>')
+                             f'height="{cell_h}" fill="{color}" stroke="{BLACK}" stroke-width="1"/>')
+                parts.append(f'<rect x="{xx + 2:.0f}" y="{y + 1}" width="{cell_w - 4:.0f}" '
+                             f'height="2" fill="{_lighten(color, 0.42)}"/>')
                 tip = f'{row["name"]} · {weeks[c]}：活跃度 {v:g}'
             parts.append(f'<g><title>{_esc(tip)}</title></g>')
 
@@ -223,12 +229,15 @@ def heatmap(rows: list[dict], weeks: list[str], matrix: list[list[float | None]]
     labels = [("冷", GREEN), ("偏冷", YELLOW), ("偏热", ORANGE), ("火热", RED)]
     lx = label_w
     for name, col in labels:
-        legend.append(f'<rect x="{lx}" y="{ly - 10}" width="10" height="10" fill="{col}"/>'
-                      f'<text x="{lx + 14}" y="{ly - 1}" font-size="9" fill="{SILVER}">{name}</text>')
-        lx += 56
-    legend.append(f'<rect x="{lx}" y="{ly - 10}" width="10" height="10" fill="none" '
-                  f'stroke="{DARK}"/>'
-                  f'<text x="{lx + 14}" y="{ly - 1}" font-size="9" fill="{SILVER}">无数据</text>')
+        legend.append(f'<rect x="{lx}" y="{ly - 11}" width="11" height="11" fill="{col}" '
+                      f'stroke="{BLACK}" stroke-width="1"/>'
+                      f'<rect x="{lx + 1}" y="{ly - 10}" width="9" height="2" '
+                      f'fill="{_lighten(col, 0.42)}"/>'
+                      f'<text x="{lx + 16}" y="{ly - 1}" font-size="10" fill="{PAPER}">{name}</text>')
+        lx += 58
+    legend.append(f'<rect x="{lx}" y="{ly - 11}" width="11" height="11" fill="{BLACK}" '
+                  f'stroke="{DARK}" stroke-dasharray="2 2"/>'
+                  f'<text x="{lx + 16}" y="{ly - 1}" font-size="10" fill="{SILVER}">无数据</text>')
     return _wrap("".join(parts) + "".join(legend), w, h + 12, title)
 
 
@@ -386,6 +395,18 @@ def _darken(c: str, r: float = 0.38) -> str:
     return _mix(c, "#000000", r)
 
 
+def _dither_pattern(color: str) -> tuple[str, str]:
+    """棋盘格抖动网点，叠在柱体下半部，模拟参考图的 pixel dithering 渐变。"""
+    _PAT_SEQ[0] += 1
+    pid = f"dith{_PAT_SEQ[0]}"
+    dot = _lighten(color, 0.22)
+    svg = (f'<pattern id="{pid}" width="4" height="4" patternUnits="userSpaceOnUse">'
+           f'<rect x="0" y="0" width="2" height="2" fill="{dot}"/>'
+           f'<rect x="2" y="2" width="2" height="2" fill="{dot}"/>'
+           f"</pattern>")
+    return pid, svg
+
+
 def _scan_pattern(line_color: str = DEEP) -> tuple[str, str]:
     """6px 周期的扫描线 pattern，给柱体加能量条质感（不能太抢主体色）。"""
     _PAT_SEQ[0] += 1
@@ -396,22 +417,35 @@ def _scan_pattern(line_color: str = DEEP) -> tuple[str, str]:
 
 
 def _pixel_bar(x: float, y: float, w: float, h: float, color: str,
-               pid: str, radius: int = 2, scan: str | None = None) -> str:
-    """16-bit 立体柱体：主色 + 顶/左高光 + 右/底阴影 + 扫描线。"""
-    if h < 4 or w < 4:
-        return f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{color}"/>'
-    hi, lo = _lighten(color), _darken(color)
-    return (
-        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{color}"/>'
-        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" '
-        f'fill="url(#{pid})" opacity="0.999"/>'
-        f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{radius}" fill="{hi}"/>'
-        f'<rect x="{x:.1f}" y="{y:.1f}" width="{radius}" height="{h - radius:.1f}" fill="{hi}"/>'
-        f'<rect x="{x + w - radius:.1f}" y="{y + radius:.1f}" width="{radius}" '
-        f'height="{h - radius:.1f}" fill="{lo}"/>'
-        f'<rect x="{x + radius:.1f}" y="{y + h - radius:.1f}" width="{w - radius:.1f}" '
-        f'height="{radius}" fill="{lo}"/>'
-    )
+               pid: str, radius: int = 2, outline: bool = True,
+               dither: str | None = None) -> str:
+    """16-bit 立体柱体（对齐参考图）：
+
+    黑描边 → 主体纯色 → 下半部 dither 网点 → 顶部 5px 高光 → 左侧 1px 亮边 → 右侧 2px 暗边
+    """
+    hi = _lighten(color, 0.46)
+    lo = _darken(color, 0.32)
+    parts = []
+    if outline:
+        parts.append(f'<rect x="{x - 1:.1f}" y="{y - 1:.1f}" width="{w + 2:.1f}" '
+                     f'height="{h + 2:.1f}" fill="{BLACK}"/>')
+    parts.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{color}"/>')
+
+    if dither and h > 10:
+        dh = h * 0.58
+        parts.append(f'<rect x="{x:.1f}" y="{y + h - dh:.1f}" width="{w:.1f}" '
+                     f'height="{dh:.1f}" fill="url(#{dither})"/>')
+
+    if h > 6:
+        top_h = min(6.0, h * 0.16)
+        parts.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{top_h:.1f}" '
+                     f'fill="{hi}"/>')
+        parts.append(f'<rect x="{x:.1f}" y="{y + top_h:.1f}" width="{w:.1f}" height="1" '
+                     f'fill="{_lighten(color, 0.2)}"/>')
+    if w > 4:
+        parts.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="1" height="{h:.1f}" fill="{hi}"/>')
+        parts.append(f'<rect x="{x + w - 2:.1f}" y="{y:.1f}" width="2" height="{h:.1f}" fill="{lo}"/>')
+    return "".join(parts)
 
 
 # ---------------- 厂商像素图标与品牌色 ----------------
@@ -536,15 +570,22 @@ def vbar(data: list[dict], title: str, demo: bool = False,
     parts: list[str] = []
     defs: list[str] = []
 
-    # 网格与刻度
+    # Y 轴：点状网格 + 白色像素轴线（参考图风格）
     ticks = 4
     for i in range(ticks + 1):
         v = top_v * i / ticks
         yy = y_of(v)
         parts.append(f'<line x1="{pad_l}" y1="{yy:.0f}" x2="{pad_l + plot_w}" y2="{yy:.0f}" '
-                     f'stroke="{DARK}" stroke-width="1" stroke-dasharray="2 3"/>')
-        parts.append(f'<text x="{pad_l - 6}" y="{yy + 3:.0f}" text-anchor="end" font-size="9" '
-                     f'fill="{SILVER}">{v:.0f}</text>')
+                     f'stroke="{DARK}" stroke-width="1" stroke-dasharray="1 4"/>')
+        parts.append(f'<text x="{pad_l - 7}" y="{yy + 3:.0f}" text-anchor="end" font-size="10" '
+                     f'fill="{PAPER}">{v:.0f}</text>')
+    # 绘图区面板底 + 外框
+    parts.insert(0, f'<rect x="{pad_l - 2}" y="{pad_t - 12}" width="{plot_w + 6}" '
+                    f'height="{plot_h + 16}" fill="{BLACK}" stroke="{DARK}" stroke-width="1"/>')
+    parts.append(f'<line x1="{pad_l}" y1="{pad_t - 2}" x2="{pad_l}" y2="{pad_t + plot_h}" '
+                 f'stroke="{PAPER}" stroke-width="2"/>')
+    parts.append(f'<line x1="{pad_l}" y1="{pad_t + plot_h}" x2="{pad_l + plot_w}" '
+                 f'y2="{pad_t + plot_h}" stroke="{PAPER}" stroke-width="2"/>')
 
     for i, d in enumerate(data):
         vendor = d.get("vendor", "")
@@ -556,14 +597,14 @@ def vbar(data: list[dict], title: str, demo: bool = False,
 
         tip = f'{d["name"]}（{vendor}）：{value_fmt.format(d["value"])}{unit}'
 
-        # 每根柱一条与自身主色协调的扫描线，避免统一深蓝把柱体染灰
-        pid, pat_svg = _scan_pattern(_mix(color, "#000000", 0.22))
+        # 每根柱一条与自身主色协调的 dither 网点
+        pid, pat_svg = _dither_pattern(color)
         defs.append(pat_svg)
 
         parts.append(f'<g class="vbar"><title>{_esc(tip)}</title>')
 
-        # 立体柱体
-        parts.append(_pixel_bar(x, by, bar_w, bh, color, pid, radius=2))
+        # 立体柱体（黑描边 + 顶部高光 + 下半部 dither）
+        parts.append(_pixel_bar(x, by, bar_w, bh, color, pid, dither=pid))
 
         # 柱顶图标（可放大到 30px）
         icon_px = min(bar_w - 12, 30)
