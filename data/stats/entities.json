@@ -1,15 +1,15 @@
 [
  {
   "name": "OpenAI",
-  "count": 30
+  "count": 32
  },
  {
   "name": "Google",
-  "count": 22
+  "count": 23
  },
  {
   "name": "Anthropic",
-  "count": 18
+  "count": 19
  },
  {
   "name": "GPT",
@@ -17,7 +17,7 @@
  },
  {
   "name": "Bloomberg",
-  "count": 14
+  "count": 15
  },
  {
   "name": "Amazon",
@@ -25,10 +25,14 @@
  },
  {
   "name": "Sources",
-  "count": 12
+  "count": 13
  },
  {
   "name": "美联储",
+  "count": 11
+ },
+ {
+  "name": "Agent",
   "count": 11
  },
  {
@@ -37,15 +41,23 @@
  },
  {
   "name": "Reuters",
-  "count": 10
+  "count": 11
  },
  {
   "name": "Binance",
+  "count": 11
+ },
+ {
+  "name": "Meta",
+  "count": 11
+ },
+ {
+  "name": "Microsoft",
   "count": 10
  },
  {
-  "name": "Agent",
-  "count": 9
+  "name": "Claude",
+  "count": 10
  },
  {
   "name": "Nvidia",
@@ -56,15 +68,11 @@
   "count": 9
  },
  {
-  "name": "Microsoft",
+  "name": "Apple",
   "count": 9
  },
  {
-  "name": "Claude",
-  "count": 9
- },
- {
-  "name": "Meta",
+  "name": "融资",
   "count": 9
  },
  {
@@ -76,10 +84,6 @@
   "count": 8
  },
  {
-  "name": "融资",
-  "count": 8
- },
- {
   "name": "ChatGPT",
   "count": 8
  },
@@ -88,8 +92,8 @@
   "count": 8
  },
  {
-  "name": "Apple",
-  "count": 7
+  "name": "Prime",
+  "count": 8
  },
  {
   "name": "Financial",
@@ -101,10 +105,6 @@
  },
  {
   "name": "Reddit",
-  "count": 7
- },
- {
-  "name": "Prime",
   "count": 7
  },
  {
@@ -124,7 +124,23 @@
   "count": 5
  },
  {
+  "name": "收购",
+  "count": 5
+ },
+ {
+  "name": "芯片",
+  "count": 5
+ },
+ {
+  "name": "Meet",
+  "count": 5
+ },
+ {
   "name": "估值",
+  "count": 5
+ },
+ {
+  "name": "MacBook",
   "count": 5
  },
  {
@@ -142,21 +158,5 @@
  {
   "name": "AI-powered",
   "count": 5
- },
- {
-  "name": "GPT-6",
-  "count": 5
- },
- {
-  "name": "Codex",
-  "count": 5
- },
- {
-  "name": "Donald",
-  "count": 5
- },
- {
-  "name": "欧洲央行",
-  "count": 4
  }
 ]
