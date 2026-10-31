@@ -1,34 +1,38 @@
 [
  {
   "name": "OpenAI",
-  "count": 22
+  "count": 27
  },
  {
   "name": "Google",
-  "count": 19
+  "count": 22
  },
  {
   "name": "Anthropic",
-  "count": 14
+  "count": 17
  },
  {
   "name": "GPT",
+  "count": 15
+ },
+ {
+  "name": "Bloomberg",
   "count": 14
  },
  {
   "name": "Amazon",
-  "count": 12
+  "count": 13
  },
  {
   "name": "Model",
   "count": 11
  },
  {
-  "name": "Bloomberg",
-  "count": 11
+  "name": "美联储",
+  "count": 10
  },
  {
-  "name": "美联储",
+  "name": "Reuters",
   "count": 10
  },
  {
@@ -40,7 +44,11 @@
   "count": 9
  },
  {
-  "name": "Reuters",
+  "name": "Microsoft",
+  "count": 9
+ },
+ {
+  "name": "Sources",
   "count": 9
  },
  {
@@ -60,19 +68,31 @@
   "count": 8
  },
  {
-  "name": "Sources",
-  "count": 7
+  "name": "ChatGPT",
+  "count": 8
  },
  {
   "name": "Releases",
   "count": 7
  },
  {
-  "name": "ChatGPT",
+  "name": "Reddit",
+  "count": 7
+ },
+ {
+  "name": "Meta",
   "count": 7
  },
  {
   "name": "算力",
+  "count": 6
+ },
+ {
+  "name": "Apple",
+  "count": 6
+ },
+ {
+  "name": "Wall",
   "count": 6
  },
  {
@@ -84,19 +104,7 @@
   "count": 6
  },
  {
-  "name": "Microsoft",
-  "count": 6
- },
- {
   "name": "Financial",
-  "count": 6
- },
- {
-  "name": "Reddit",
-  "count": 6
- },
- {
-  "name": "Meta",
   "count": 6
  },
  {
@@ -104,11 +112,11 @@
   "count": 6
  },
  {
-  "name": "Apple",
-  "count": 5
+  "name": "CNBC",
+  "count": 6
  },
  {
-  "name": "Wall",
+  "name": "Alphabet",
   "count": 5
  },
  {
@@ -121,6 +129,10 @@
  },
  {
   "name": "Codex",
+  "count": 5
+ },
+ {
+  "name": "Trump",
   "count": 5
  },
  {
@@ -145,18 +157,6 @@
  },
  {
   "name": "估值",
-  "count": 4
- },
- {
-  "name": "MacBook",
-  "count": 4
- },
- {
-  "name": "数据中心",
-  "count": 4
- },
- {
-  "name": "Alphabet",
   "count": 4
  }
 ]

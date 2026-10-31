@@ -1,18 +1,18 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-10-31T03:56:39+08:00",
+ "generated_at": "2026-10-31T08:45:38+08:00",
  "total": 41,
- "fact_count": 35,
- "opinion_count": 6,
+ "fact_count": 36,
+ "opinion_count": 5,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 11,
+   "count": 10,
    "opinion_count": 1,
-   "score": 291.2
+   "score": 262.0
   },
   {
    "track_id": "LLM",
@@ -219,7 +219,7 @@
  },
  "importance_dist": {
   "important": 1,
-  "low": 32,
+  "low": 33,
   "normal": 2
  },
  "source_dist": {
@@ -292,7 +292,7 @@
    "count": 2
   }
  ],
- "total_score": 705.0,
- "other_count": 8,
- "other_opinion_count": 2
+ "total_score": 675.8,
+ "other_count": 10,
+ "other_opinion_count": 1
 }
