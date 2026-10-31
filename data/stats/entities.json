@@ -1,7 +1,7 @@
 [
  {
   "name": "OpenAI",
-  "count": 32
+  "count": 33
  },
  {
   "name": "Google",
@@ -9,11 +9,11 @@
  },
  {
   "name": "Anthropic",
-  "count": 19
+  "count": 20
  },
  {
   "name": "GPT",
-  "count": 15
+  "count": 16
  },
  {
   "name": "Bloomberg",
@@ -28,6 +28,10 @@
   "count": 13
  },
  {
+  "name": "Binance",
+  "count": 12
+ },
+ {
   "name": "美联储",
   "count": 11
  },
@@ -40,11 +44,11 @@
   "count": 11
  },
  {
-  "name": "Reuters",
+  "name": "Claude",
   "count": 11
  },
  {
-  "name": "Binance",
+  "name": "Reuters",
   "count": 11
  },
  {
@@ -53,10 +57,6 @@
  },
  {
   "name": "Microsoft",
-  "count": 10
- },
- {
-  "name": "Claude",
   "count": 10
  },
  {
@@ -72,7 +72,15 @@
   "count": 9
  },
  {
-  "name": "融资",
+  "name": "Wall",
+  "count": 9
+ },
+ {
+  "name": "ChatGPT",
+  "count": 9
+ },
+ {
+  "name": "Trump",
   "count": 9
  },
  {
@@ -80,15 +88,7 @@
   "count": 8
  },
  {
-  "name": "Wall",
-  "count": 8
- },
- {
-  "name": "ChatGPT",
-  "count": 8
- },
- {
-  "name": "Trump",
+  "name": "融资",
   "count": 8
  },
  {
@@ -112,23 +112,27 @@
   "count": 7
  },
  {
+  "name": "算力",
+  "count": 6
+ },
+ {
+  "name": "芯片",
+  "count": 6
+ },
+ {
+  "name": "数据中心",
+  "count": 6
+ },
+ {
   "name": "Gemini",
   "count": 6
  },
  {
-  "name": "上市",
-  "count": 5
- },
- {
-  "name": "算力",
-  "count": 5
+  "name": "Donald",
+  "count": 6
  },
  {
   "name": "收购",
-  "count": 5
- },
- {
-  "name": "芯片",
   "count": 5
  },
  {
@@ -145,10 +149,6 @@
  },
  {
   "name": "原油",
-  "count": 5
- },
- {
-  "name": "数据中心",
   "count": 5
  },
  {
