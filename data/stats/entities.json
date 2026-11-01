@@ -1,7 +1,7 @@
 [
  {
   "name": "OpenAI",
-  "count": 33
+  "count": 34
  },
  {
   "name": "Google",
@@ -13,10 +13,14 @@
  },
  {
   "name": "GPT",
-  "count": 16
+  "count": 18
  },
  {
   "name": "Bloomberg",
+  "count": 17
+ },
+ {
+  "name": "Binance",
   "count": 15
  },
  {
@@ -28,15 +32,15 @@
   "count": 13
  },
  {
-  "name": "Binance",
+  "name": "Reuters",
+  "count": 13
+ },
+ {
+  "name": "Agent",
   "count": 12
  },
  {
   "name": "美联储",
-  "count": 11
- },
- {
-  "name": "Agent",
   "count": 11
  },
  {
@@ -48,7 +52,7 @@
   "count": 11
  },
  {
-  "name": "Reuters",
+  "name": "ChatGPT",
   "count": 11
  },
  {
@@ -56,7 +60,23 @@
   "count": 11
  },
  {
+  "name": "TechCrunch",
+  "count": 10
+ },
+ {
+  "name": "Apple",
+  "count": 10
+ },
+ {
+  "name": "Wall",
+  "count": 10
+ },
+ {
   "name": "Microsoft",
+  "count": 10
+ },
+ {
+  "name": "Trump",
   "count": 10
  },
  {
@@ -66,26 +86,6 @@
  {
   "name": "加息",
   "count": 9
- },
- {
-  "name": "Apple",
-  "count": 9
- },
- {
-  "name": "Wall",
-  "count": 9
- },
- {
-  "name": "ChatGPT",
-  "count": 9
- },
- {
-  "name": "Trump",
-  "count": 9
- },
- {
-  "name": "TechCrunch",
-  "count": 8
  },
  {
   "name": "融资",
@@ -112,11 +112,19 @@
   "count": 7
  },
  {
+  "name": "Donald",
+  "count": 7
+ },
+ {
   "name": "算力",
   "count": 6
  },
  {
   "name": "芯片",
+  "count": 6
+ },
+ {
+  "name": "原油",
   "count": 6
  },
  {
@@ -128,7 +136,11 @@
   "count": 6
  },
  {
-  "name": "Donald",
+  "name": "AI-powered",
+  "count": 6
+ },
+ {
+  "name": "France",
   "count": 6
  },
  {
@@ -140,23 +152,11 @@
   "count": 5
  },
  {
+  "name": "Washington",
+  "count": 5
+ },
+ {
   "name": "估值",
-  "count": 5
- },
- {
-  "name": "MacBook",
-  "count": 5
- },
- {
-  "name": "原油",
-  "count": 5
- },
- {
-  "name": "Alphabet",
-  "count": 5
- },
- {
-  "name": "AI-powered",
   "count": 5
  }
 ]

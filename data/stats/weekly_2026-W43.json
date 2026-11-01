@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-11-01T05:32:08+08:00",
+ "generated_at": "2026-11-01T13:59:24+08:00",
  "total": 41,
  "fact_count": 35,
  "opinion_count": 6,
@@ -214,8 +214,9 @@
   }
  ],
  "market_dist": {
-  "M-GL": 38,
-  "M-A": 3
+  "M-GL": 37,
+  "M-A": 3,
+  "M-CN": 1
  },
  "importance_dist": {
   "normal": 3,
@@ -279,11 +280,11 @@
    "count": 2
   },
   {
-   "name": "Battle",
+   "name": "Drones",
    "count": 2
   },
   {
-   "name": "Drones",
+   "name": "Battle",
    "count": 2
   },
   {
