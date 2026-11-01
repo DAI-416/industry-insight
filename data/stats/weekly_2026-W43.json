@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-11-01T21:16:01+08:00",
+ "generated_at": "2026-11-02T03:38:54+08:00",
  "total": 41,
  "fact_count": 35,
  "opinion_count": 6,
@@ -10,18 +10,18 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 12,
+   "count": 11,
    "opinion_count": 2,
-   "score": 316.8
+   "score": 289.4
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 4,
+   "count": 5,
    "opinion_count": 0,
-   "score": 103.6
+   "score": 131.0
   },
   {
    "track_id": "TEC-SEC",
@@ -60,8 +60,8 @@
    "score": 24.4
   },
   {
-   "track_id": "TEC-COMPUTE",
-   "name": "算力与基础设施",
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
    "count": 1,
@@ -141,8 +141,8 @@
    "score": 0.0
   },
   {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
+   "track_id": "TEC-COMPUTE",
+   "name": "算力与基础设施",
    "domain": "tech",
    "is_focus": false,
    "count": 0,
@@ -280,11 +280,11 @@
    "count": 2
   },
   {
-   "name": "Drones",
+   "name": "Battle",
    "count": 2
   },
   {
-   "name": "Battle",
+   "name": "Drones",
    "count": 2
   },
   {
