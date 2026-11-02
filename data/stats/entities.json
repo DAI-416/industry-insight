@@ -1,1 +1,50 @@
-[]
+[
+ {
+  "name": "IPO",
+  "count": 3
+ },
+ {
+  "name": "数据中心",
+  "count": 3
+ },
+ {
+  "name": "Bloomberg",
+  "count": 3
+ },
+ {
+  "name": "PMI",
+  "count": 2
+ },
+ {
+  "name": "Trump",
+  "count": 2
+ },
+ {
+  "name": "Anthropic",
+  "count": 2
+ },
+ {
+  "name": "黄金",
+  "count": 2
+ },
+ {
+  "name": "Washington",
+  "count": 2
+ },
+ {
+  "name": "Iran",
+  "count": 2
+ },
+ {
+  "name": "Apec",
+  "count": 2
+ },
+ {
+  "name": "Auto",
+  "count": 2
+ },
+ {
+  "name": "Series",
+  "count": 2
+ }
+]

@@ -1,23 +1,23 @@
 [
  {
   "name": "南华早报",
-  "count": 243
+  "count": 282
  },
  {
   "name": "华尔街见闻",
-  "count": 166
+  "count": 186
  },
  {
   "name": "Techmeme",
-  "count": 106
+  "count": 121
  },
  {
   "name": "TechCrunch",
-  "count": 71
+  "count": 72
  },
  {
   "name": "The Verge",
-  "count": 64
+  "count": 65
  },
  {
   "name": "OpenAI 官方博客",
@@ -25,7 +25,7 @@
  },
  {
   "name": "The Decoder",
-  "count": 29
+  "count": 30
  },
  {
   "name": "Simon Willison",
@@ -33,7 +33,7 @@
  },
  {
   "name": "MarkTechPost",
-  "count": 20
+  "count": 22
  },
  {
   "name": "IEEE Spectrum",
