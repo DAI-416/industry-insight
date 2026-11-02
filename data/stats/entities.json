@@ -1,6 +1,46 @@
 [
  {
+  "name": "Anthropic",
+  "count": 8
+ },
+ {
+  "name": "OpenAI",
+  "count": 7
+ },
+ {
   "name": "IPO",
+  "count": 5
+ },
+ {
+  "name": "York",
+  "count": 5
+ },
+ {
+  "name": "融资",
+  "count": 5
+ },
+ {
+  "name": "Trump",
+  "count": 4
+ },
+ {
+  "name": "Bloomberg",
+  "count": 4
+ },
+ {
+  "name": "Series",
+  "count": 4
+ },
+ {
+  "name": "Claude",
+  "count": 4
+ },
+ {
+  "name": "Apple",
+  "count": 4
+ },
+ {
+  "name": "黄金",
   "count": 3
  },
  {
@@ -8,31 +48,67 @@
   "count": 3
  },
  {
-  "name": "Bloomberg",
+  "name": "算力",
   "count": 3
  },
  {
-  "name": "PMI",
+  "name": "Iran",
+  "count": 3
+ },
+ {
+  "name": "John",
+  "count": 3
+ },
+ {
+  "name": "Party",
+  "count": 3
+ },
+ {
+  "name": "Code",
+  "count": 3
+ },
+ {
+  "name": "Russian",
+  "count": 3
+ },
+ {
+  "name": "GPT",
+  "count": 3
+ },
+ {
+  "name": "Prime",
+  "count": 3
+ },
+ {
+  "name": "Grid",
+  "count": 3
+ },
+ {
+  "name": "Protectors",
+  "count": 3
+ },
+ {
+  "name": "Program",
+  "count": 3
+ },
+ {
+  "name": "分析师",
   "count": 2
  },
  {
-  "name": "Trump",
+  "name": "布伦特",
   "count": 2
  },
  {
-  "name": "Anthropic",
+  "name": "原油",
   "count": 2
  },
  {
-  "name": "黄金",
+  "name": "流动性",
   "count": 2
  },
  {
   "name": "Washington",
-  "count": 2
- },
- {
-  "name": "Iran",
   "count": 2
  },
  {
@@ -44,7 +120,43 @@
   "count": 2
  },
  {
-  "name": "Series",
+  "name": "Releases",
+  "count": 2
+ },
+ {
+  "name": "Qwen",
+  "count": 2
+ },
+ {
+  "name": "Minecraft",
+  "count": 2
+ },
+ {
+  "name": "再融资",
+  "count": 2
+ },
+ {
+  "name": "Lumentum",
+  "count": 2
+ },
+ {
+  "name": "Brave",
+  "count": 2
+ },
+ {
+  "name": "Musk",
+  "count": 2
+ },
+ {
+  "name": "Grok",
+  "count": 2
+ },
+ {
+  "name": "Amazon",
+  "count": 2
+ },
+ {
+  "name": "Raising",
   "count": 2
  }
 ]
