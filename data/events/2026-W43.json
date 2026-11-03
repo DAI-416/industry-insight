@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-11-03T05:42:28+08:00",
+ "generated_at": "2026-11-03T14:43:26+08:00",
  "events": [
   {
    "id": "2ee31f3d9c92",
@@ -12,7 +12,7 @@
    "summary": "I step into the warm moist air\namong the columns of the pines,\ntheir net of twigs and roots\ncomplex as any lines of code.\nThe trees purify and anchor.\nTheir branches balance my restlessness.\nTheir calling is to be present,\nmine to develop apps. Our tasks\nverge toward a common logic:\nliving filaments of root, of interface.",
    "content": "I step into the warm moist air\namong the columns of the pines,\ntheir net of twigs and roots\ncomplex as any lines of code.\nThe trees purify and anchor.\nTheir branches balance my restlessness.\nTheir calling is to be present,\nmine to develop apps. Our tasks\nverge toward a common logic:\nliving filaments of root, of interface.",
    "published_at": "2026-10-25T12:00:02+00:00",
-   "fetched_at": "2026-11-03T05:41:29.055910+08:00",
+   "fetched_at": "2026-11-03T14:42:21.135397+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -544,7 +544,7 @@
    "summary": "Tool: Seam Cutter\n\n I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each other. Effectively it lets you crop out a section in the middle of an image.\n\nI wanted this because I often use Tailor on my iPhone to stitch several screenshots together into lot long image, but sometimes I find myself wanting to crop out a section in the middle - to redact an irrelevant prompt from a transcript, for example.\n\n \n \n Tags: tools",
    "content": "Tool: Seam Cutter\n\n I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each other. Effectively it lets you crop out a section in the middle of an image.\n\nI wanted this because I often use Tailor on my iPhone to stitch several screenshots together into lot long image, but sometimes I find myself wanting to crop out a section in the middle - to redact an irrelevant prompt from a transcript, for example.\n\n \n \n Tags: tools",
    "published_at": "2026-10-25T15:10:19+00:00",
-   "fetched_at": "2026-11-03T05:41:30.805099+08:00",
+   "fetched_at": "2026-11-03T14:42:21.761002+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -561,11 +561,11 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "OTHER-1",
+   "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 25,
