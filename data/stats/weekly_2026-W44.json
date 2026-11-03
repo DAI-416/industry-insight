@@ -1,8 +1,8 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-04T01:01:19+08:00",
- "total": 763,
- "fact_count": 660,
+ "generated_at": "2026-11-04T07:18:34+08:00",
+ "total": 764,
+ "fact_count": 661,
  "opinion_count": 103,
  "track_activity": [
   {
@@ -10,9 +10,18 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 91,
-   "opinion_count": 17,
-   "score": 2750.2
+   "count": 88,
+   "opinion_count": 16,
+   "score": 2662.6
+  },
+  {
+   "track_id": "LLM",
+   "name": "大模型",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 44,
+   "opinion_count": 6,
+   "score": 1277.6
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -24,13 +33,13 @@
    "score": 1238.6
   },
   {
-   "track_id": "LLM",
-   "name": "大模型",
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
    "domain": "tech",
-   "is_focus": true,
-   "count": 41,
-   "opinion_count": 5,
-   "score": 1186.4
+   "is_focus": false,
+   "count": 40,
+   "opinion_count": 2,
+   "score": 1092.4
   },
   {
    "track_id": "INV-VC",
@@ -40,15 +49,6 @@
    "count": 38,
    "opinion_count": 0,
    "score": 1078.4
-  },
-  {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 39,
-   "opinion_count": 2,
-   "score": 1071.6
   },
   {
    "track_id": "INV-FLOW",
@@ -64,9 +64,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 33,
+   "count": 32,
    "opinion_count": 1,
-   "score": 861.0
+   "score": 840.2
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -109,9 +109,9 @@
    "name": "消费电子与智能硬件",
    "domain": "tech",
    "is_focus": false,
-   "count": 22,
+   "count": 23,
    "opinion_count": 6,
-   "score": 614.2
+   "score": 636.8
   },
   {
    "track_id": "MAC-MP",
@@ -127,9 +127,9 @@
    "name": "自动驾驶与智能车",
    "domain": "tech",
    "is_focus": false,
-   "count": 18,
+   "count": 19,
    "opinion_count": 2,
-   "score": 532.8
+   "score": 559.0
   },
   {
    "track_id": "MAC-DATA",
@@ -215,12 +215,12 @@
  ],
  "market_dist": {
   "M-A": 61,
-  "M-GL": 573,
+  "M-GL": 574,
   "M-HK": 67,
   "M-CN": 62
  },
  "importance_dist": {
-  "normal": 153,
+  "normal": 154,
   "important": 53,
   "critical": 25,
   "low": 429
@@ -233,7 +233,7 @@
   "IEEE Spectrum": 9,
   "国家统计局": 4,
   "Simon Willison": 16,
-  "OpenAI 官方博客": 19,
+  "OpenAI 官方博客": 20,
   "The Decoder": 29,
   "Techmeme": 111,
   "MIT 科技评论": 11,
@@ -253,11 +253,11 @@
    "count": 27
   },
   {
-   "name": "Anthropic",
-   "count": 21
+   "name": "GPT",
+   "count": 22
   },
   {
-   "name": "GPT",
+   "name": "Anthropic",
    "count": 21
   },
   {
@@ -273,6 +273,10 @@
    "count": 15
   },
   {
+   "name": "ChatGPT",
+   "count": 15
+  },
+  {
    "name": "Agent",
    "count": 14
   },
@@ -282,10 +286,6 @@
   },
   {
    "name": "Reuters",
-   "count": 14
-  },
-  {
-   "name": "ChatGPT",
    "count": 14
   },
   {
@@ -405,7 +405,7 @@
    "count": 6
   }
  ],
- "total_score": 15090.0,
- "other_count": 159,
+ "total_score": 15142.4,
+ "other_count": 158,
  "other_opinion_count": 10
 }

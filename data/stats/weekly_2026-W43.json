@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-11-04T01:01:19+08:00",
+ "generated_at": "2026-11-04T07:18:34+08:00",
  "total": 41,
  "fact_count": 34,
  "opinion_count": 7,
@@ -42,18 +42,18 @@
    "score": 86.8
   },
   {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 2,
-   "opinion_count": 0,
-   "score": 43.4
-  },
-  {
    "track_id": "INV-EXIT",
    "name": "退出与并购",
    "domain": "investment",
+   "is_focus": false,
+   "count": 1,
+   "opinion_count": 0,
+   "score": 24.4
+  },
+  {
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
+   "domain": "tech",
    "is_focus": false,
    "count": 1,
    "opinion_count": 0,
@@ -292,7 +292,7 @@
    "count": 2
   }
  ],
- "total_score": 687.0,
- "other_count": 7,
+ "total_score": 668.0,
+ "other_count": 8,
  "other_opinion_count": 1
 }
