@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-04T22:34:13+08:00",
+ "generated_at": "2026-11-05T05:22:12+08:00",
  "total": 764,
  "fact_count": 662,
  "opinion_count": 102,
@@ -10,9 +10,9 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 86,
+   "count": 83,
    "opinion_count": 15,
-   "score": 2594.0
+   "score": 2526.2
   },
   {
    "track_id": "LLM",
@@ -20,8 +20,8 @@
    "domain": "tech",
    "is_focus": true,
    "count": 47,
-   "opinion_count": 7,
-   "score": 1360.4
+   "opinion_count": 6,
+   "score": 1356.2
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -37,9 +37,9 @@
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 40,
+   "count": 41,
    "opinion_count": 1,
-   "score": 1096.0
+   "score": 1119.2
   },
   {
    "track_id": "INV-VC",
@@ -64,9 +64,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 32,
+   "count": 33,
    "opinion_count": 1,
-   "score": 840.2
+   "score": 861.0
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -109,9 +109,9 @@
    "name": "消费电子与智能硬件",
    "domain": "tech",
    "is_focus": false,
-   "count": 22,
+   "count": 23,
    "opinion_count": 6,
-   "score": 612.4
+   "score": 636.8
   },
   {
    "track_id": "MAC-MP",
@@ -127,9 +127,9 @@
    "name": "自动驾驶与智能车",
    "domain": "tech",
    "is_focus": false,
-   "count": 19,
+   "count": 18,
    "opinion_count": 2,
-   "score": 559.0
+   "score": 532.8
   },
   {
    "track_id": "MAC-DATA",
@@ -209,7 +209,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 28,
+   "opinion_count": 29,
    "score": 0.0
   }
  ],
@@ -220,10 +220,10 @@
   "M-CN": 62
  },
  "importance_dist": {
-  "normal": 152,
+  "normal": 151,
   "important": 53,
   "critical": 25,
-  "low": 432
+  "low": 433
  },
  "source_dist": {
   "华尔街见闻": 163,
@@ -405,7 +405,7 @@
    "count": 6
   }
  ],
- "total_score": 15104.8,
- "other_count": 160,
+ "total_score": 15075.0,
+ "other_count": 161,
  "other_opinion_count": 10
 }
