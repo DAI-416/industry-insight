@@ -1,42 +1,50 @@
 [
  {
+  "name": "Trump",
+  "count": 25
+ },
+ {
   "name": "OpenAI",
-  "count": 23
+  "count": 24
+ },
+ {
+  "name": "Anthropic",
+  "count": 20
  },
  {
   "name": "Apple",
   "count": 20
  },
  {
-  "name": "Anthropic",
-  "count": 19
- },
- {
-  "name": "Trump",
-  "count": 18
- },
- {
   "name": "Donald",
+  "count": 14
+ },
+ {
+  "name": "Bloomberg",
   "count": 12
+ },
+ {
+  "name": "John",
+  "count": 11
  },
  {
   "name": "York",
   "count": 11
  },
  {
-  "name": "Bloomberg",
+  "name": "Google",
   "count": 10
  },
  {
-  "name": "John",
+  "name": "Sources",
   "count": 10
  },
  {
-  "name": "融资",
+  "name": "数据中心",
   "count": 9
  },
  {
-  "name": "Google",
+  "name": "融资",
   "count": 9
  },
  {
@@ -44,15 +52,19 @@
   "count": 9
  },
  {
-  "name": "Sources",
+  "name": "Claude",
   "count": 8
+ },
+ {
+  "name": "芯片",
+  "count": 7
  },
  {
   "name": "黄金",
   "count": 7
  },
  {
-  "name": "Claude",
+  "name": "IPO",
   "count": 7
  },
  {
@@ -60,15 +72,15 @@
   "count": 7
  },
  {
-  "name": "IPO",
-  "count": 6
- },
- {
-  "name": "数据中心",
-  "count": 6
- },
- {
   "name": "Series",
+  "count": 6
+ },
+ {
+  "name": "Code",
+  "count": 6
+ },
+ {
+  "name": "Prime",
   "count": 6
  },
  {
@@ -80,7 +92,19 @@
   "count": 6
  },
  {
-  "name": "芯片",
+  "name": "Wall",
+  "count": 6
+ },
+ {
+  "name": "SCMP",
+  "count": 6
+ },
+ {
+  "name": "算力",
+  "count": 5
+ },
+ {
+  "name": "Washington",
   "count": 5
  },
  {
@@ -88,11 +112,15 @@
   "count": 5
  },
  {
-  "name": "Party",
+  "name": "上市",
   "count": 5
  },
  {
-  "name": "Code",
+  "name": "Democrats",
+  "count": 5
+ },
+ {
+  "name": "Party",
   "count": 5
  },
  {
@@ -104,7 +132,11 @@
   "count": 5
  },
  {
-  "name": "Prime",
+  "name": "CNBC",
+  "count": 5
+ },
+ {
+  "name": "Meta",
   "count": 5
  },
  {
@@ -116,7 +148,7 @@
   "count": 5
  },
  {
-  "name": "Wall",
+  "name": "Nvidia",
   "count": 5
  },
  {
@@ -124,39 +156,7 @@
   "count": 5
  },
  {
-  "name": "算力",
-  "count": 4
- },
- {
-  "name": "Washington",
-  "count": 4
- },
- {
   "name": "Releases",
-  "count": 4
- },
- {
-  "name": "CNBC",
-  "count": 4
- },
- {
-  "name": "Meta",
-  "count": 4
- },
- {
-  "name": "Communist",
-  "count": 4
- },
- {
-  "name": "Summit",
-  "count": 4
- },
- {
-  "name": "ChatGPT",
-  "count": 4
- },
- {
-  "name": "Reuters",
   "count": 4
  }
 ]

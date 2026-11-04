@@ -1,23 +1,23 @@
 [
  {
   "name": "南华早报",
-  "count": 400
+  "count": 417
  },
  {
   "name": "华尔街见闻",
-  "count": 264
+  "count": 281
  },
  {
   "name": "Techmeme",
-  "count": 179
+  "count": 191
  },
  {
   "name": "TechCrunch",
-  "count": 117
+  "count": 118
  },
  {
   "name": "The Verge",
-  "count": 97
+  "count": 101
  },
  {
   "name": "OpenAI 官方博客",
@@ -33,7 +33,7 @@
  },
  {
   "name": "MarkTechPost",
-  "count": 29
+  "count": 30
  },
  {
   "name": "MIT 科技评论",
