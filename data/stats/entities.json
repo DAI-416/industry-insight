@@ -1,11 +1,11 @@
 [
  {
   "name": "Trump",
-  "count": 25
+  "count": 30
  },
  {
   "name": "OpenAI",
-  "count": 24
+  "count": 25
  },
  {
   "name": "Anthropic",
@@ -17,11 +17,23 @@
  },
  {
   "name": "Donald",
-  "count": 14
+  "count": 16
  },
  {
   "name": "Bloomberg",
+  "count": 15
+ },
+ {
+  "name": "Google",
+  "count": 14
+ },
+ {
+  "name": "融资",
   "count": 12
+ },
+ {
+  "name": "数据中心",
+  "count": 11
  },
  {
   "name": "John",
@@ -32,7 +44,19 @@
   "count": 11
  },
  {
-  "name": "Google",
+  "name": "Democrats",
+  "count": 11
+ },
+ {
+  "name": "SCMP",
+  "count": 11
+ },
+ {
+  "name": "黄金",
+  "count": 10
+ },
+ {
+  "name": "TechCrunch",
   "count": 10
  },
  {
@@ -40,31 +64,31 @@
   "count": 10
  },
  {
-  "name": "数据中心",
+  "name": "Follow",
   "count": 9
  },
  {
-  "name": "融资",
-  "count": 9
- },
- {
-  "name": "TechCrunch",
-  "count": 9
+  "name": "芯片",
+  "count": 8
  },
  {
   "name": "Claude",
   "count": 8
  },
  {
-  "name": "芯片",
+  "name": "Prime",
+  "count": 8
+ },
+ {
+  "name": "Washington",
   "count": 7
  },
  {
-  "name": "黄金",
+  "name": "Series",
   "count": 7
  },
  {
-  "name": "IPO",
+  "name": "Code",
   "count": 7
  },
  {
@@ -72,19 +96,23 @@
   "count": 7
  },
  {
-  "name": "Series",
-  "count": 6
- },
- {
-  "name": "Code",
-  "count": 6
- },
- {
-  "name": "Prime",
-  "count": 6
- },
- {
   "name": "Codex",
+  "count": 7
+ },
+ {
+  "name": "Congress",
+  "count": 7
+ },
+ {
+  "name": "IPO",
+  "count": 6
+ },
+ {
+  "name": "算力",
+  "count": 6
+ },
+ {
+  "name": "CNBC",
   "count": 6
  },
  {
@@ -92,23 +120,23 @@
   "count": 6
  },
  {
+  "name": "National",
+  "count": 6
+ },
+ {
+  "name": "Nvidia",
+  "count": 6
+ },
+ {
   "name": "Wall",
   "count": 6
  },
  {
-  "name": "SCMP",
-  "count": 6
- },
- {
-  "name": "算力",
-  "count": 5
- },
- {
-  "name": "Washington",
-  "count": 5
- },
- {
   "name": "Iran",
+  "count": 5
+ },
+ {
+  "name": "Agent",
   "count": 5
  },
  {
@@ -116,11 +144,11 @@
   "count": 5
  },
  {
-  "name": "Democrats",
+  "name": "Party",
   "count": 5
  },
  {
-  "name": "Party",
+  "name": "收购",
   "count": 5
  },
  {
@@ -130,33 +158,5 @@
  {
   "name": "Ternus",
   "count": 5
- },
- {
-  "name": "CNBC",
-  "count": 5
- },
- {
-  "name": "Meta",
-  "count": 5
- },
- {
-  "name": "Super",
-  "count": 5
- },
- {
-  "name": "National",
-  "count": 5
- },
- {
-  "name": "Nvidia",
-  "count": 5
- },
- {
-  "name": "Binance",
-  "count": 5
- },
- {
-  "name": "Releases",
-  "count": 4
  }
 ]
