@@ -1,38 +1,50 @@
 [
  {
   "name": "Trump",
-  "count": 31
+  "count": 34
  },
  {
   "name": "OpenAI",
-  "count": 29
- },
- {
-  "name": "Apple",
-  "count": 24
+  "count": 33
  },
  {
   "name": "Anthropic",
-  "count": 23
+  "count": 25
+ },
+ {
+  "name": "Apple",
+  "count": 25
  },
  {
   "name": "Bloomberg",
-  "count": 20
+  "count": 24
  },
  {
   "name": "Google",
-  "count": 18
+  "count": 19
  },
  {
   "name": "Donald",
-  "count": 17
+  "count": 18
  },
  {
-  "name": "融资",
-  "count": 12
+  "name": "数据中心",
+  "count": 15
  },
  {
   "name": "Democrats",
+  "count": 15
+ },
+ {
+  "name": "Sources",
+  "count": 15
+ },
+ {
+  "name": "GPT",
+  "count": 14
+ },
+ {
+  "name": "融资",
   "count": 12
  },
  {
@@ -40,12 +52,8 @@
   "count": 12
  },
  {
-  "name": "Sources",
+  "name": "Congress",
   "count": 12
- },
- {
-  "name": "数据中心",
-  "count": 11
  },
  {
   "name": "John",
@@ -56,11 +64,11 @@
   "count": 11
  },
  {
-  "name": "GPT",
+  "name": "Codex",
   "count": 11
  },
  {
-  "name": "黄金",
+  "name": "Claude",
   "count": 10
  },
  {
@@ -68,27 +76,31 @@
   "count": 10
  },
  {
-  "name": "Claude",
-  "count": 9
- },
- {
-  "name": "Meta",
-  "count": 9
- },
- {
-  "name": "Codex",
-  "count": 9
- },
- {
-  "name": "Congress",
+  "name": "黄金",
   "count": 9
  },
  {
   "name": "Washington",
+  "count": 9
+ },
+ {
+  "name": "Reuters",
+  "count": 9
+ },
+ {
+  "name": "Code",
+  "count": 8
+ },
+ {
+  "name": "Meta",
   "count": 8
  },
  {
   "name": "Prime",
+  "count": 8
+ },
+ {
+  "name": "ChatGPT",
   "count": 8
  },
  {
@@ -108,11 +120,27 @@
   "count": 7
  },
  {
-  "name": "Code",
+  "name": "Intelligence",
   "count": 7
  },
  {
+  "name": "原油",
+  "count": 6
+ },
+ {
   "name": "IPO",
+  "count": 6
+ },
+ {
+  "name": "Iran",
+  "count": 6
+ },
+ {
+  "name": "Releases",
+  "count": 6
+ },
+ {
+  "name": "Democratic",
   "count": 6
  },
  {
@@ -120,19 +148,7 @@
   "count": 6
  },
  {
-  "name": "ChatGPT",
-  "count": 6
- },
- {
-  "name": "Intelligence",
-  "count": 6
- },
- {
   "name": "National",
-  "count": 6
- },
- {
-  "name": "Reuters",
   "count": 6
  },
  {
@@ -142,21 +158,5 @@
  {
   "name": "Wall",
   "count": 6
- },
- {
-  "name": "Financial",
-  "count": 6
- },
- {
-  "name": "Binance",
-  "count": 6
- },
- {
-  "name": "算力",
-  "count": 5
- },
- {
-  "name": "Iran",
-  "count": 5
  }
 ]

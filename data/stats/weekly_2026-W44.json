@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-05T05:22:12+08:00",
+ "generated_at": "2026-11-05T09:29:32+08:00",
  "total": 764,
  "fact_count": 662,
  "opinion_count": 102,
@@ -10,18 +10,9 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 83,
+   "count": 91,
    "opinion_count": 15,
-   "score": 2526.2
-  },
-  {
-   "track_id": "LLM",
-   "name": "大模型",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 47,
-   "opinion_count": 6,
-   "score": 1356.2
+   "score": 2741.8
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -33,13 +24,22 @@
    "score": 1238.6
   },
   {
+   "track_id": "LLM",
+   "name": "大模型",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 42,
+   "opinion_count": 5,
+   "score": 1222.8
+  },
+  {
    "track_id": "TEC-CLOUD",
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
    "count": 41,
    "opinion_count": 1,
-   "score": 1119.2
+   "score": 1115.6
   },
   {
    "track_id": "INV-VC",
@@ -64,9 +64,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 33,
+   "count": 32,
    "opinion_count": 1,
-   "score": 861.0
+   "score": 836.6
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -109,9 +109,9 @@
    "name": "消费电子与智能硬件",
    "domain": "tech",
    "is_focus": false,
-   "count": 23,
-   "opinion_count": 6,
-   "score": 636.8
+   "count": 22,
+   "opinion_count": 7,
+   "score": 612.4
   },
   {
    "track_id": "MAC-MP",
@@ -163,9 +163,9 @@
    "name": "人形机器人与具身智能",
    "domain": "tech",
    "is_focus": true,
-   "count": 5,
-   "opinion_count": 1,
-   "score": 172.4
+   "count": 4,
+   "opinion_count": 2,
+   "score": 145.0
   },
   {
    "track_id": "MAC-FX",
@@ -209,7 +209,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 29,
+   "opinion_count": 28,
    "score": 0.0
   }
  ],
@@ -405,7 +405,7 @@
    "count": 6
   }
  ],
- "total_score": 15075.0,
+ "total_score": 15077.4,
  "other_count": 161,
  "other_opinion_count": 10
 }
