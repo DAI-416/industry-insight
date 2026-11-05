@@ -1,8 +1,8 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-05T18:54:50+08:00",
- "total": 764,
- "fact_count": 674,
+ "generated_at": "2026-11-06T03:55:45+08:00",
+ "total": 765,
+ "fact_count": 675,
  "opinion_count": 90,
  "track_activity": [
   {
@@ -10,18 +10,18 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 74,
+   "count": 75,
    "opinion_count": 7,
-   "score": 2272.4
+   "score": 2300.4
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 73,
+   "count": 72,
    "opinion_count": 3,
-   "score": 2015.2
+   "score": 1981.2
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -138,16 +138,16 @@
    "is_focus": false,
    "count": 15,
    "opinion_count": 0,
-   "score": 503.4
+   "score": 501.6
   },
   {
    "track_id": "TEC-ROBO",
    "name": "人形机器人与具身智能",
    "domain": "tech",
    "is_focus": true,
-   "count": 12,
+   "count": 13,
    "opinion_count": 1,
-   "score": 369.0
+   "score": 396.4
   },
   {
    "track_id": "MAC-CMD",
@@ -215,22 +215,22 @@
  ],
  "market_dist": {
   "M-A": 57,
-  "M-GL": 578,
+  "M-GL": 579,
   "M-HK": 67,
   "M-CN": 62
  },
  "importance_dist": {
-  "normal": 153,
+  "normal": 152,
   "important": 53,
   "critical": 25,
-  "low": 443
+  "low": 445
  },
  "source_dist": {
   "华尔街见闻": 163,
   "TechCrunch": 71,
   "南华早报": 240,
   "The Verge": 65,
-  "IEEE Spectrum": 9,
+  "IEEE Spectrum": 10,
   "国家统计局": 4,
   "Simon Willison": 16,
   "OpenAI 官方博客": 20,
@@ -405,7 +405,7 @@
    "count": 6
   }
  ],
- "total_score": 15507.4,
+ "total_score": 15527.0,
  "other_count": 157,
  "other_opinion_count": 10
 }
