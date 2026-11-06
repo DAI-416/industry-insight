@@ -1,71 +1,79 @@
 [
  {
   "name": "OpenAI",
-  "count": 45
+  "count": 50
  },
  {
   "name": "Trump",
-  "count": 38
- },
- {
-  "name": "Bloomberg",
-  "count": 31
+  "count": 40
  },
  {
   "name": "Anthropic",
-  "count": 30
+  "count": 33
+ },
+ {
+  "name": "Bloomberg",
+  "count": 33
  },
  {
   "name": "Apple",
   "count": 27
  },
  {
+  "name": "Sources",
+  "count": 27
+ },
+ {
   "name": "Google",
-  "count": 23
+  "count": 25
  },
  {
   "name": "GPT",
-  "count": 22
- },
- {
-  "name": "Sources",
-  "count": 22
+  "count": 25
  },
  {
   "name": "数据中心",
-  "count": 21
+  "count": 24
  },
  {
   "name": "Donald",
-  "count": 20
+  "count": 22
  },
  {
   "name": "Democrats",
-  "count": 19
+  "count": 21
  },
  {
   "name": "Meta",
-  "count": 17
+  "count": 19
  },
  {
   "name": "Claude",
-  "count": 14
+  "count": 15
+ },
+ {
+  "name": "Congress",
+  "count": 15
  },
  {
   "name": "Reuters",
-  "count": 14
+  "count": 15
+ },
+ {
+  "name": "IPO",
+  "count": 13
+ },
+ {
+  "name": "York",
+  "count": 13
  },
  {
   "name": "TechCrunch",
   "count": 13
  },
  {
-  "name": "Congress",
+  "name": "Codex",
   "count": 13
- },
- {
-  "name": "IPO",
-  "count": 12
  },
  {
   "name": "John",
@@ -76,19 +84,15 @@
   "count": 12
  },
  {
-  "name": "黄金",
-  "count": 11
- },
- {
   "name": "Washington",
   "count": 11
  },
  {
-  "name": "York",
+  "name": "ChatGPT",
   "count": 11
  },
  {
-  "name": "Codex",
+  "name": "Wall",
   "count": 11
  },
  {
@@ -97,7 +101,27 @@
  },
  {
   "name": "芯片",
-  "count": 9
+  "count": 10
+ },
+ {
+  "name": "黄金",
+  "count": 10
+ },
+ {
+  "name": "Releases",
+  "count": 10
+ },
+ {
+  "name": "Democratic",
+  "count": 10
+ },
+ {
+  "name": "California",
+  "count": 10
+ },
+ {
+  "name": "GPT-6",
+  "count": 10
  },
  {
   "name": "Agent",
@@ -112,15 +136,7 @@
   "count": 9
  },
  {
-  "name": "Democratic",
-  "count": 9
- },
- {
   "name": "Code",
-  "count": 9
- },
- {
-  "name": "ChatGPT",
   "count": 9
  },
  {
@@ -128,35 +144,19 @@
   "count": 9
  },
  {
-  "name": "Releases",
+  "name": "Information",
+  "count": 9
+ },
+ {
+  "name": "原油",
   "count": 8
  },
  {
-  "name": "GPT-6",
+  "name": "CNBC",
   "count": 8
  },
  {
   "name": "Prime",
   "count": 8
- },
- {
-  "name": "Nvidia",
-  "count": 8
- },
- {
-  "name": "Follow",
-  "count": 8
- },
- {
-  "name": "原油",
-  "count": 7
- },
- {
-  "name": "Iran",
-  "count": 7
- },
- {
-  "name": "Russian",
-  "count": 7
  }
 ]
