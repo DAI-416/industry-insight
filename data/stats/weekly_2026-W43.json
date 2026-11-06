@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W43",
- "generated_at": "2026-11-06T18:48:04+08:00",
+ "generated_at": "2026-11-07T03:21:24+08:00",
  "total": 41,
  "fact_count": 34,
  "opinion_count": 7,
@@ -280,11 +280,11 @@
    "count": 2
   },
   {
-   "name": "Drones",
+   "name": "Battle",
    "count": 2
   },
   {
-   "name": "Battle",
+   "name": "Drones",
    "count": 2
   },
   {
