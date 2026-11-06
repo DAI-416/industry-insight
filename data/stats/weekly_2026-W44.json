@@ -1,9 +1,9 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-06T09:32:08+08:00",
+ "generated_at": "2026-11-06T18:48:04+08:00",
  "total": 765,
- "fact_count": 663,
- "opinion_count": 102,
+ "fact_count": 665,
+ "opinion_count": 100,
  "track_activity": [
   {
    "track_id": "TEC-AI",
@@ -11,17 +11,17 @@
    "domain": "tech",
    "is_focus": true,
    "count": 84,
-   "opinion_count": 16,
-   "score": 2539.2
+   "opinion_count": 13,
+   "score": 2548.8
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 50,
-   "opinion_count": 5,
-   "score": 1427.6
+   "count": 51,
+   "opinion_count": 3,
+   "score": 1440.6
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -33,6 +33,15 @@
    "score": 1238.6
   },
   {
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 40,
+   "opinion_count": 1,
+   "score": 1096.6
+  },
+  {
    "track_id": "INV-VC",
    "name": "一级市场投融资",
    "domain": "investment",
@@ -40,15 +49,6 @@
    "count": 38,
    "opinion_count": 0,
    "score": 1078.4
-  },
-  {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 39,
-   "opinion_count": 2,
-   "score": 1075.8
   },
   {
    "track_id": "INV-FLOW",
@@ -114,15 +114,6 @@
    "score": 612.4
   },
   {
-   "track_id": "TEC-AUTO",
-   "name": "自动驾驶与智能车",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 19,
-   "opinion_count": 2,
-   "score": 559.0
-  },
-  {
    "track_id": "MAC-MP",
    "name": "货币政策与利率",
    "domain": "macro",
@@ -132,13 +123,22 @@
    "score": 558.4
   },
   {
+   "track_id": "TEC-AUTO",
+   "name": "自动驾驶与智能车",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 18,
+   "opinion_count": 2,
+   "score": 532.8
+  },
+  {
    "track_id": "MAC-DATA",
    "name": "增长与景气数据",
    "domain": "macro",
    "is_focus": false,
-   "count": 14,
+   "count": 15,
    "opinion_count": 0,
-   "score": 470.6
+   "score": 499.8
   },
   {
    "track_id": "MAC-CMD",
@@ -209,7 +209,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 28,
+   "opinion_count": 32,
    "score": 0.0
   }
  ],
@@ -220,10 +220,10 @@
   "M-CN": 62
  },
  "importance_dist": {
-  "normal": 147,
+  "normal": 145,
   "important": 53,
   "critical": 25,
-  "low": 438
+  "low": 442
  },
  "source_dist": {
   "华尔街见闻": 163,
@@ -405,7 +405,7 @@
    "count": 6
   }
  ],
- "total_score": 15120.2,
+ "total_score": 15166.6,
  "other_count": 160,
  "other_opinion_count": 10
 }
