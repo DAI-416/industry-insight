@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-07T18:00:37+08:00",
+ "generated_at": "2026-11-08T01:45:07+08:00",
  "total": 765,
  "fact_count": 664,
  "opinion_count": 101,
@@ -10,9 +10,9 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 81,
-   "opinion_count": 11,
-   "score": 2458.2
+   "count": 82,
+   "opinion_count": 13,
+   "score": 2485.6
   },
   {
    "track_id": "LLM",
@@ -20,7 +20,7 @@
    "domain": "tech",
    "is_focus": true,
    "count": 54,
-   "opinion_count": 5,
+   "opinion_count": 6,
    "score": 1521.6
   },
   {
@@ -28,9 +28,9 @@
    "name": "算力与基础设施",
    "domain": "tech",
    "is_focus": false,
-   "count": 41,
+   "count": 42,
    "opinion_count": 4,
-   "score": 1238.6
+   "score": 1263.0
   },
   {
    "track_id": "INV-VC",
@@ -46,9 +46,9 @@
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 39,
+   "count": 38,
    "opinion_count": 1,
-   "score": 1077.0
+   "score": 1052.6
   },
   {
    "track_id": "INV-FLOW",
@@ -110,7 +110,7 @@
    "domain": "tech",
    "is_focus": false,
    "count": 22,
-   "opinion_count": 7,
+   "opinion_count": 6,
    "score": 612.4
   },
   {
@@ -209,7 +209,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 32,
+   "opinion_count": 30,
    "score": 0.0
   }
  ],
@@ -405,7 +405,7 @@
    "count": 6
   }
  ],
- "total_score": 15106.4,
- "other_count": 161,
+ "total_score": 15133.8,
+ "other_count": 160,
  "other_opinion_count": 10
 }

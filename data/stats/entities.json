@@ -1,19 +1,19 @@
 [
  {
   "name": "OpenAI",
-  "count": 58
+  "count": 60
  },
  {
   "name": "Trump",
-  "count": 48
+  "count": 49
  },
  {
   "name": "Anthropic",
-  "count": 42
+  "count": 44
  },
  {
   "name": "Bloomberg",
-  "count": 42
+  "count": 43
  },
  {
   "name": "Sources",
@@ -37,7 +37,7 @@
  },
  {
   "name": "GPT",
-  "count": 26
+  "count": 27
  },
  {
   "name": "Donald",
@@ -53,27 +53,27 @@
  },
  {
   "name": "IPO",
+  "count": 20
+ },
+ {
+  "name": "York",
+  "count": 19
+ },
+ {
+  "name": "融资",
   "count": 19
  },
  {
   "name": "Democratic",
+  "count": 19
+ },
+ {
+  "name": "芯片",
   "count": 18
- },
- {
-  "name": "York",
-  "count": 17
- },
- {
-  "name": "融资",
-  "count": 17
  },
  {
   "name": "Reuters",
   "count": 17
- },
- {
-  "name": "芯片",
-  "count": 16
  },
  {
   "name": "Washington",
@@ -84,15 +84,15 @@
   "count": 16
  },
  {
+  "name": "Nvidia",
+  "count": 16
+ },
+ {
   "name": "Financial",
   "count": 16
  },
  {
   "name": "TechCrunch",
-  "count": 14
- },
- {
-  "name": "Nvidia",
   "count": 14
  },
  {
@@ -113,6 +113,14 @@
  },
  {
   "name": "John",
+  "count": 12
+ },
+ {
+  "name": "Series",
+  "count": 12
+ },
+ {
+  "name": "Party",
   "count": 12
  },
  {
@@ -140,7 +148,7 @@
   "count": 11
  },
  {
-  "name": "Series",
+  "name": "GPT-6",
   "count": 11
  },
  {
@@ -150,13 +158,5 @@
  {
   "name": "After",
   "count": 11
- },
- {
-  "name": "Party",
-  "count": 10
- },
- {
-  "name": "Elon",
-  "count": 10
  }
 ]
