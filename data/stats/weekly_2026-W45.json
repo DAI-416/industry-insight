@@ -1,36 +1,36 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-08T01:45:07+08:00",
- "total": 1263,
- "fact_count": 1090,
- "opinion_count": 173,
+ "generated_at": "2026-11-08T05:50:55+08:00",
+ "total": 1272,
+ "fact_count": 1096,
+ "opinion_count": 176,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 142,
-   "opinion_count": 12,
-   "score": 4328.2
+   "count": 141,
+   "opinion_count": 11,
+   "score": 4269.0
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 83,
-   "opinion_count": 4,
-   "score": 2504.6
+   "count": 89,
+   "opinion_count": 5,
+   "score": 2666.0
   },
   {
    "track_id": "MAC-GLOBAL",
    "name": "全球宏观",
    "domain": "macro",
    "is_focus": false,
-   "count": 61,
-   "opinion_count": 23,
-   "score": 1822.6
+   "count": 65,
+   "opinion_count": 25,
+   "score": 1898.0
   },
   {
    "track_id": "INV-VC",
@@ -39,7 +39,7 @@
    "is_focus": false,
    "count": 61,
    "opinion_count": 0,
-   "score": 1815.4
+   "score": 1809.4
   },
   {
    "track_id": "INV-EXIT",
@@ -48,61 +48,61 @@
    "is_focus": false,
    "count": 50,
    "opinion_count": 1,
-   "score": 1643.6
-  },
-  {
-   "track_id": "INV-FLOW",
-   "name": "资金流向与配置",
-   "domain": "investment",
-   "is_focus": false,
-   "count": 39,
-   "opinion_count": 12,
-   "score": 1598.4
+   "score": 1640.6
   },
   {
    "track_id": "TEC-COMPUTE",
    "name": "算力与基础设施",
    "domain": "tech",
    "is_focus": false,
-   "count": 48,
-   "opinion_count": 4,
-   "score": 1524.0
+   "count": 49,
+   "opinion_count": 5,
+   "score": 1544.2
   },
   {
    "track_id": "MAC-TRADE",
    "name": "国际贸易与地缘",
    "domain": "macro",
    "is_focus": false,
-   "count": 55,
+   "count": 57,
    "opinion_count": 18,
-   "score": 1475.2
+   "score": 1527.6
+  },
+  {
+   "track_id": "INV-FLOW",
+   "name": "资金流向与配置",
+   "domain": "investment",
+   "is_focus": false,
+   "count": 37,
+   "opinion_count": 11,
+   "score": 1500.4
   },
   {
    "track_id": "TEC-CE",
    "name": "消费电子与智能硬件",
    "domain": "tech",
    "is_focus": false,
-   "count": 50,
-   "opinion_count": 4,
-   "score": 1351.4
+   "count": 49,
+   "opinion_count": 5,
+   "score": 1322.2
   },
   {
    "track_id": "TEC-CLOUD",
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 47,
+   "count": 45,
    "opinion_count": 2,
-   "score": 1250.6
+   "score": 1210.2
   },
   {
    "track_id": "TEC-SEC",
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 41,
+   "count": 40,
    "opinion_count": 1,
-   "score": 1106.0
+   "score": 1085.2
   },
   {
    "track_id": "TEC-AUTO",
@@ -111,7 +111,7 @@
    "is_focus": false,
    "count": 32,
    "opinion_count": 0,
-   "score": 935.0
+   "score": 933.2
   },
   {
    "track_id": "TEC-SEMI",
@@ -129,25 +129,25 @@
    "is_focus": false,
    "count": 20,
    "opinion_count": 2,
-   "score": 762.2
+   "score": 780.2
   },
   {
    "track_id": "MAC-MP",
    "name": "货币政策与利率",
    "domain": "macro",
    "is_focus": false,
-   "count": 16,
+   "count": 17,
    "opinion_count": 4,
-   "score": 683.2
+   "score": 726.2
   },
   {
    "track_id": "MAC-CMD",
    "name": "大宗商品与能源",
    "domain": "macro",
    "is_focus": false,
-   "count": 16,
+   "count": 15,
    "opinion_count": 8,
-   "score": 576.4
+   "score": 545.4
   },
   {
    "track_id": "MAC-FP",
@@ -156,52 +156,52 @@
    "is_focus": false,
    "count": 16,
    "opinion_count": 1,
-   "score": 523.0
-  },
-  {
-   "track_id": "INV-POLICY",
-   "name": "投资政策与监管",
-   "domain": "investment",
-   "is_focus": false,
-   "count": 8,
-   "opinion_count": 4,
-   "score": 237.2
+   "score": 536.8
   },
   {
    "track_id": "TEC-ROBO",
    "name": "人形机器人与具身智能",
    "domain": "tech",
    "is_focus": true,
-   "count": 7,
+   "count": 8,
    "opinion_count": 1,
-   "score": 217.6
-  },
-  {
-   "track_id": "MAC-FX",
-   "name": "汇率与资本流动",
-   "domain": "macro",
-   "is_focus": false,
-   "count": 7,
-   "opinion_count": 1,
-   "score": 202.6
+   "score": 247.4
   },
   {
    "track_id": "INV-FUND",
    "name": "基金与募资",
    "domain": "investment",
    "is_focus": false,
-   "count": 6,
+   "count": 7,
    "opinion_count": 0,
-   "score": 190.8
+   "score": 221.8
+  },
+  {
+   "track_id": "INV-POLICY",
+   "name": "投资政策与监管",
+   "domain": "investment",
+   "is_focus": false,
+   "count": 6,
+   "opinion_count": 2,
+   "score": 171.0
+  },
+  {
+   "track_id": "MAC-FX",
+   "name": "汇率与资本流动",
+   "domain": "macro",
+   "is_focus": false,
+   "count": 5,
+   "opinion_count": 1,
+   "score": 145.4
   },
   {
    "track_id": "INV-VIEW",
    "name": "赛道投资观点",
    "domain": "investment",
    "is_focus": false,
-   "count": 1,
-   "opinion_count": 56,
-   "score": 40.0
+   "count": 2,
+   "opinion_count": 57,
+   "score": 71.0
   },
   {
    "track_id": "MAC-PROP",
@@ -214,25 +214,25 @@
   }
  ],
  "market_dist": {
-  "M-GL": 1005,
-  "M-A": 75,
-  "M-HK": 85,
-  "M-CN": 98
+  "M-GL": 1026,
+  "M-A": 69,
+  "M-HK": 86,
+  "M-CN": 91
  },
  "importance_dist": {
-  "normal": 304,
-  "critical": 53,
-  "low": 647,
-  "important": 86
+  "normal": 310,
+  "critical": 54,
+  "low": 651,
+  "important": 81
  },
  "source_dist": {
   "华尔街见闻": 295,
-  "南华早报": 421,
+  "南华早报": 424,
   "The Decoder": 50,
   "MIT 科技评论": 16,
-  "MarkTechPost": 20,
-  "Techmeme": 210,
-  "TechCrunch": 109,
+  "MarkTechPost": 21,
+  "Techmeme": 213,
+  "TechCrunch": 111,
   "The Verge": 99,
   "OpenAI 官方博客": 25,
   "Simon Willison": 9,
@@ -249,15 +249,15 @@
   },
   {
    "name": "Trump",
-   "count": 49
+   "count": 50
   },
   {
    "name": "Anthropic",
-   "count": 44
+   "count": 45
   },
   {
    "name": "Bloomberg",
-   "count": 43
+   "count": 44
   },
   {
    "name": "Sources",
@@ -285,7 +285,7 @@
   },
   {
    "name": "Donald",
-   "count": 24
+   "count": 25
   },
   {
    "name": "Meta",
@@ -320,15 +320,15 @@
    "count": 17
   },
   {
+   "name": "Nvidia",
+   "count": 17
+  },
+  {
    "name": "Washington",
    "count": 16
   },
   {
    "name": "Claude",
-   "count": 16
-  },
-  {
-   "name": "Nvidia",
    "count": 16
   },
   {
@@ -340,6 +340,10 @@
    "count": 14
   },
   {
+   "name": "House",
+   "count": 14
+  },
+  {
    "name": "黄金",
    "count": 13
   },
@@ -348,7 +352,7 @@
    "count": 13
   },
   {
-   "name": "House",
+   "name": "Information",
    "count": 13
   },
   {
@@ -380,10 +384,6 @@
    "count": 12
   },
   {
-   "name": "Information",
-   "count": 12
-  },
-  {
    "name": "SCMP",
    "count": 12
   },
@@ -404,7 +404,7 @@
    "count": 11
   }
  ],
- "total_score": 25648.8,
- "other_count": 259,
- "other_opinion_count": 15
+ "total_score": 25712.0,
+ "other_count": 260,
+ "other_opinion_count": 16
 }

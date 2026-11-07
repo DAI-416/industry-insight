@@ -5,15 +5,15 @@
  },
  {
   "name": "Trump",
-  "count": 49
+  "count": 50
  },
  {
   "name": "Anthropic",
-  "count": 44
+  "count": 45
  },
  {
   "name": "Bloomberg",
-  "count": 43
+  "count": 44
  },
  {
   "name": "Sources",
@@ -41,7 +41,7 @@
  },
  {
   "name": "Donald",
-  "count": 24
+  "count": 25
  },
  {
   "name": "Meta",
@@ -76,15 +76,15 @@
   "count": 17
  },
  {
+  "name": "Nvidia",
+  "count": 17
+ },
+ {
   "name": "Washington",
   "count": 16
  },
  {
   "name": "Claude",
-  "count": 16
- },
- {
-  "name": "Nvidia",
   "count": 16
  },
  {
@@ -96,6 +96,10 @@
   "count": 14
  },
  {
+  "name": "House",
+  "count": 14
+ },
+ {
   "name": "黄金",
   "count": 13
  },
@@ -104,7 +108,7 @@
   "count": 13
  },
  {
-  "name": "House",
+  "name": "Information",
   "count": 13
  },
  {
@@ -133,10 +137,6 @@
  },
  {
   "name": "ChatGPT",
-  "count": 12
- },
- {
-  "name": "Information",
   "count": 12
  },
  {

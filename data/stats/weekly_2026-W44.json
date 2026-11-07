@@ -1,36 +1,36 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-08T01:45:07+08:00",
+ "generated_at": "2026-11-08T05:50:55+08:00",
  "total": 765,
- "fact_count": 664,
- "opinion_count": 101,
+ "fact_count": 665,
+ "opinion_count": 100,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 82,
-   "opinion_count": 13,
-   "score": 2485.6
+   "count": 84,
+   "opinion_count": 12,
+   "score": 2534.4
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 54,
-   "opinion_count": 6,
-   "score": 1521.6
+   "count": 53,
+   "opinion_count": 5,
+   "score": 1493.6
   },
   {
    "track_id": "TEC-COMPUTE",
    "name": "算力与基础设施",
    "domain": "tech",
    "is_focus": false,
-   "count": 42,
+   "count": 41,
    "opinion_count": 4,
-   "score": 1263.0
+   "score": 1238.6
   },
   {
    "track_id": "INV-VC",
@@ -46,9 +46,9 @@
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 38,
+   "count": 39,
    "opinion_count": 1,
-   "score": 1052.6
+   "score": 1077.6
   },
   {
    "track_id": "INV-FLOW",
@@ -136,9 +136,9 @@
    "name": "增长与景气数据",
    "domain": "macro",
    "is_focus": false,
-   "count": 14,
+   "count": 15,
    "opinion_count": 0,
-   "score": 468.8
+   "score": 498.0
   },
   {
    "track_id": "MAC-CMD",
@@ -209,7 +209,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 30,
+   "opinion_count": 31,
    "score": 0.0
   }
  ],
@@ -220,10 +220,10 @@
   "M-CN": 62
  },
  "importance_dist": {
-  "normal": 145,
+  "normal": 144,
   "important": 53,
   "critical": 25,
-  "low": 441
+  "low": 443
  },
  "source_dist": {
   "华尔街见闻": 163,
@@ -405,7 +405,7 @@
    "count": 6
   }
  ],
- "total_score": 15133.8,
- "other_count": 160,
+ "total_score": 15184.4,
+ "other_count": 159,
  "other_opinion_count": 10
 }
