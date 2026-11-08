@@ -1,27 +1,27 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-08T21:19:04+08:00",
+ "generated_at": "2026-11-09T03:40:27+08:00",
  "total": 765,
- "fact_count": 666,
- "opinion_count": 99,
+ "fact_count": 665,
+ "opinion_count": 100,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 90,
-   "opinion_count": 14,
-   "score": 2680.8
+   "count": 85,
+   "opinion_count": 13,
+   "score": 2561.8
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 48,
+   "count": 51,
    "opinion_count": 5,
-   "score": 1368.6
+   "score": 1438.8
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -64,9 +64,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 30,
+   "count": 31,
    "opinion_count": 1,
-   "score": 791.4
+   "score": 810.4
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -209,7 +209,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 28,
+   "opinion_count": 30,
    "score": 0.0
   }
  ],
@@ -223,7 +223,7 @@
   "normal": 144,
   "important": 53,
   "critical": 25,
-  "low": 444
+  "low": 443
  },
  "source_dist": {
   "华尔街见闻": 163,
@@ -405,7 +405,7 @@
    "count": 6
   }
  ],
- "total_score": 15183.2,
+ "total_score": 15153.4,
  "other_count": 160,
  "other_opinion_count": 10
 }
