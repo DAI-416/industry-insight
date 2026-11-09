@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-09T19:25:01+08:00",
+ "generated_at": "2026-11-10T06:19:15+08:00",
  "events": [
   {
    "id": "1ec6ed903a96",
@@ -7427,7 +7427,7 @@
    "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
    "content": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
    "published_at": "2026-11-02T15:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040471+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652197+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -7444,14 +7444,14 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-COMPUTE",
+   "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 37,
+   "importance_score": 39,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -7459,8 +7459,8 @@
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
-    "focus_boost": false
+    "timeliness": 2,
+    "focus_boost": true
    },
    "ai_summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer ele…",
    "ai_summary_raw": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer ele…",
@@ -8377,7 +8377,7 @@
    "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies, a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis, and then to experiment with Claude's new Code Interpreter. I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434, aka the asinine Super Intelligence one.\n\nFirst",
    "content": "I was reminded today of AI Adoption Rate Trending Down for Large Companies, a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis, and then to experiment with Claude's new Code Interpreter. I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434, aka the asinine Super Intelligence one.\n\nFirst, the updated chart\nEvery two weeks the U.S. Census Bureau runs a survey called the Business Trends and Outlook Survey (aka BTOS). Each time it goes to 200,000 businesses out of 1.2 million total - the surveyed group (a \"panel\") cycles such that an individual business only completes the survey every twelve weeks.\n\nThe latest data is published on alternating Thursdays at 10am.\n\nI used the most recent numbers (published October 22, 2026) to create a new version (GPT-6 Astra Extra High transcript) of the AI adoption chart, updated to reflect both the last twelve months and a change that was made to the survey question sent out by the Bureau:\n\nHere's a link to the larger image.\n\nFor comparison, here's that AI adoption chart from last year (my GPT-5 version):\n\nIn September 2025 the largest (250+ employees) companies answered \"yes\" around 12% of the time to the question about whether they used AI in \"producing goods or services\".\n\nUnder the new \"any business function\" wording, by February 2026, those same large companies answered \"yes\" around 30% of the time, and by October 2026 that had increased to around 40%.\n\nThe data in the above chart comes from the \"Employment size class\" XLSX file, available from here. Here's a copy of the file I used.\n\nYou can view the survey document that is sent out to businesses - here's my snapshot copy of that 346KB PDF.\n\nThe changing language of the questions\nAs the chart demonstrates, the question asked by the Bureau changed in a material way on November 17th, 2025. Prior to that date, the question they asked was this (emphasis mine):\n\nIn the last two weeks, did this business use Artificial Intelligence (AI) in producing goods or services? (Examples of AI: machine learning, natural language processing, virtual agents, voice recognition, etc.)\n\nOn December 3rd, 2025, the Bureau announced a significant change to that question. Here's the replacement:\n\nIn the last two weeks, did this business use Artificial Intelligence (AI) in any of its business functions? (Examples of AI: machine learning, natural language processing, virtual agents, voice recognition, etc.)\n\nNo more \"producing goods or services\" - now it's \"in any of its business functions\"! This means that the answers to the question before and after November 17th are not directly comparable.\n\nFrom October 19, 2026, they ask about Super Intelligence\nWhen I went looking for the updated question language in the latest XLSX file, I couldn't find it. I found this instead:\n\nIn the last two weeks, did this business use Super Intelligence or SI (formerly referred to as Artificial Intelligence or AI) in any of its business functions? (Examples of SI use include: SI-powered data analysis; generative SI for marketing, product design, or coding; virtual SI agents for customer service; SI-powered forecasting or pricing; SI-driven computer vision for quality control, etc.)\n\nThe BTOS about page explains what happened:\n\nBeginning with the October 19, 2026 collection, instrument wording was updated due to Executive Order 14434.\n\nThe current numbers reflect the old Artificial Intelligence survey wording - the first survey results reflecting the Super Intelligence wording are due for publication on Thursday.\n\nIs this going to affect the survey?\nThe obvious open question here is whether this wording change is going to affect the survey results.\n\nThe businesses answering this sur",
    "published_at": "2026-11-02T13:31:26+00:00",
-   "fetched_at": "2026-11-09T19:23:58.026666+08:00",
+   "fetched_at": "2026-11-10T06:16:44.769144+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -8394,7 +8394,7 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "MAC-DATA",
+   "track_id": "INV-VIEW",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
@@ -10203,7 +10203,7 @@
    "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
    "content": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
    "published_at": "2026-11-02T09:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040530+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652253+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -10258,7 +10258,7 @@
    "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
    "content": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
    "published_at": "2026-11-02T00:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040572+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652296+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -12092,7 +12092,7 @@
    "summary": "I discovered a sound that leaks your exact location (and it&#x27;s everywhere) - YouTube\n\nGenius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, then cross reference them against ADS-B data to find the exact location of the video based on their speed, distance, and gaps between different flights.\n\n \n\n Via Lobste.rs\n\n Tags: privacy, youtube",
    "content": "I discovered a sound that leaks your exact location (and it&#x27;s everywhere) - YouTube\n\nGenius piece of OSINT by Colsto, who demonstrates how you can take almost imperceptible background noise of planes from a video soundtrack, figure out their Doppler curves, then cross reference them against ADS-B data to find the exact location of the video based on their speed, distance, and gaps between different flights.\n\n \n\n Via Lobste.rs\n\n Tags: privacy, youtube",
    "published_at": "2026-11-03T05:32:25+00:00",
-   "fetched_at": "2026-11-09T19:23:58.026310+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768805+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -12109,7 +12109,7 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-SEC",
+   "track_id": "OTHER-1",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
@@ -12147,7 +12147,7 @@
    "summary": "I sent out the October edition of my sponsors-only monthly newsletter. If you are a sponsor (or start a sponsorship now) you can access it here. This month:\n\nThe October inflection point for vibe game development\nThe vulnerability apocalypse gets hot\nLLM releases\nAPI credits for $100+/month subscriptions\nWhat I'm using right now\nMy software releases\n\nMy September newsletter can now be seen here, as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy!\n\n Tags: newsletter",
    "content": "I sent out the October edition of my sponsors-only monthly newsletter. If you are a sponsor (or start a sponsorship now) you can access it here. This month:\n\nThe October inflection point for vibe game development\nThe vulnerability apocalypse gets hot\nLLM releases\nAPI credits for $100+/month subscriptions\nWhat I'm using right now\nMy software releases\n\nMy September newsletter can now be seen here, as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy!\n\n Tags: newsletter",
    "published_at": "2026-11-03T05:28:59+00:00",
-   "fetched_at": "2026-11-09T19:23:58.026363+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768848+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -12164,16 +12164,24 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "OTHER-1",
    "market_primary": "M-GL",
    "market_related": [],
-   "content_type": "opinion",
-   "classify_confidence": 0.85,
+   "content_type": "fact",
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 0,
-   "importance_level": "opinion",
-   "event_type": "观点评论",
+   "importance_score": 28,
+   "importance_level": "low",
+   "event_type": "常规经营",
+   "score_detail": {
+    "source": 8,
+    "event": 10,
+    "breadth": 5,
+    "density": 0,
+    "timeliness": 5,
+    "focus_boost": false
+   },
    "ai_summary": "I sent out the October edition of my sponsors-only monthly newsletter.",
    "ai_summary_raw": "I sent out the October edition of my sponsors-only monthly newsletter.",
    "summary_method": "first_sentence",
@@ -13846,7 +13854,7 @@
    "summary": "Release: llm 0.37\n\n There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes.\n\nI added gpt-6.1-sol and gpt-6.1-terra, plus a new llm openai endpoint add command to make it easier to configure additional models that use OpenAI-compatible endpoints.\n\nI switched the default model (if you have not set your own default) to gpt-6-luna - half the price of the previous default, gpt-5.6-luna.\n\nLLM's support for embeddings now accepts that different binary content may have different content-type - necessary for mod",
    "content": "Release: llm 0.37\n\n There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes.\n\nI added gpt-6.1-sol and gpt-6.1-terra, plus a new llm openai endpoint add command to make it easier to configure additional models that use OpenAI-compatible endpoints.\n\nI switched the default model (if you have not set your own default) to gpt-6-luna - half the price of the previous default, gpt-5.6-luna.\n\nLLM's support for embeddings now accepts that different binary content may have different content-type - necessary for models like Gemini Embedding 2, which can embed text, audio, images, and video.\n\nA lot of open source maintainers complain about a flood of AI-assisted PRs. LLM is my project that has been most affected by this and, to be honest, I'm not finding it to be a problem. That's mainly because I have Opus 5.5 or GPT-6 Astra help me with triage to spot the most useful fixes!\n\nThis release includes fixes from 12 authors - almost all AI-assisted - and the burden of reviewing them wasn't nearly as great as I expected. I really see them as bug reports with attached examples - sometimes I land them, sometimes I implement my own fix.\n\nSo thanks to 0d00ciallo0721, ac1982, Allen Flux, Bian Yuhan, Bishop Kammeraad, Chen Yufeiyang, Christopher Krah, Ethan Stoner, Jiachen Xie, Olamide Faniyan, Sharat Chandra Sai Boddu, nosmile99 for helping out with (or spending tokens on) this release!\n\n \n \n Tags: open-source, projects, ai, annotated-release-notes, generative-ai, llms, embeddings, llm",
    "published_at": "2026-11-02T23:49:30+00:00",
-   "fetched_at": "2026-11-09T19:23:58.026452+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768934+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -13871,11 +13879,11 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 40,
@@ -14845,7 +14853,7 @@
    "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
    "content": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
    "published_at": "2026-11-02T18:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040511+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652216+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -14869,7 +14877,7 @@
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 37,
+   "importance_score": 34,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -14877,7 +14885,7 @@
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
+    "timeliness": 2,
     "focus_boost": false
    },
    "ai_summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent securi…",
@@ -14900,7 +14908,7 @@
    "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
    "content": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
    "published_at": "2026-11-02T18:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040490+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652235+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -14917,14 +14925,14 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-SEC",
+   "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 37,
+   "importance_score": 39,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -14932,8 +14940,8 @@
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
-    "focus_boost": false
+    "timeliness": 2,
+    "focus_boost": true
    },
    "ai_summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
    "ai_summary_raw": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
@@ -15286,7 +15294,7 @@
    "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
    "content": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
    "published_at": "2026-11-02T15:30:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040449+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652176+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -15303,14 +15311,14 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-CLOUD",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 37,
+   "importance_score": 39,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -15318,8 +15326,8 @@
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
-    "focus_boost": false
+    "timeliness": 2,
+    "focus_boost": true
    },
    "ai_summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
    "ai_summary_raw": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
@@ -15341,7 +15349,7 @@
    "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
    "content": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
    "published_at": "2026-11-02T00:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040552+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652273+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -15362,8 +15370,8 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.62,
-   "classify_method": "rules:source_hint",
+   "classify_confidence": 0.9,
+   "classify_method": "llm",
    "status": "published",
    "importance_score": 39,
    "importance_level": "low",
@@ -16191,7 +16199,7 @@
    "summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop ",
    "content": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well!\n\nWeight-Space Programming\nHere's the highlight from their abstract, describing impressive capabilities for GPT-6 Astra and coining the term Weight-Space Programming for when LLMs analyze and modify model weights:\n\nJust by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do. And without any environment feedback, it has no trouble writing, from scratch, small game-playing networks that outplay networks trained with PPO for 100 million steps.\n\nLikewise, asked to make Qwen3.5-0.8B better at math without gradients, Astra identifies an issue in its weights causing reasoning loops that Qwen’s own model card warns about, and fixes this by natively editing 0.016% of the weights. With the same sampling settings, this weight correction raises MATH-500 from 7.9% to 48.1% and generalizes out of the box to instruction following, raising IFEval by 3x.\n\nAll of this is possible without allowing Astra to write training loops. It uses its reasoning to figure out what each part of a neural network computes, or should compute, and changes the weights accordingly. We call this Weight-Space Programming.\n\nThe paper combines two topics that I think deserve to be treated separately. The first is what models can do with raw weights without running tools or executing code. The second explores how well models, once armed with code, can run operations to update and improve other models.\n\nspaCy author Matthew Honnibal called the paper misleading for conflating the two, and Sean Goedecke deconstructed the Qwen3.5-0.8B update example as taking the same steps that a human ML researcher would use.\n\nI'm going to focus on the no-tools question, which I think is the more interesting of the two.\n\nThe paper presents the first question as Can LLMs understand model behaviors from weights? They trained four neural networks to play simplified 10x10 grid versions of four classic computer games - Breakout, Pong, Pac-Man, and Freeway (I had to look that one up, it's an Atari 2600 game from 1981). Then they fed those weights (as floating point numbers) to an LLM along with the following question:\n\nThe weights below belong to one policy network that was trained with reinforcement learning to play a game on this grid. Which game was it trained on? Work from the weights. You have no tools: no code execution, no calculator, nothing to run. This is a single response.\n\nThe GitHub repository that accompanies the paper is RikiyaT/lm_understand-logs. The exp1_which_game folder contains the prompts they used, with weights for the four games:\n\nbreakout/prompt.txt\nfreeway/prompt.txt\npacman/prompt.txt\npong/prompt.txt\n\nI checked and, aside from the weights, each prompt is identical to the others.\n\nTrying it out with Qwen 3.8 27B and other models\nThe prompts on GitHub are self-contained. My LLM tool has a -f/--fragment option which can be passed the URL to a text file to use as a prompt, which means I can run any of the above like this:\n\nllm -f https://raw.githubusercontent.com/RikiyaT/lm_understand-logs/refs/heads/main/exp1_which_game/runs/breakout/prompt.txt \\\n -m openrouter/moonshotai/kimi-k3.1-pro\nThis example requires the llm-openrouter plugin installed, and runs the Breakout prompt against Kimi K3.1 Pro via OpenRouter. Here's what I got back from Kimi K3.1 Pro, which successfully guessed Breakout after 9m 41s and 19,493 reasoning tokens.\n\nBut h",
    "published_at": "2026-11-03T16:29:48+00:00",
-   "fetched_at": "2026-11-09T19:23:58.026263+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768759+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -16211,21 +16219,13 @@
    "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
-   "content_type": "fact",
-   "classify_confidence": 0.9,
+   "content_type": "opinion",
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 32,
-   "importance_level": "low",
-   "event_type": "常规经营",
-   "score_detail": {
-    "source": 8,
-    "event": 10,
-    "breadth": 5,
-    "density": 0,
-    "timeliness": 5,
-    "focus_boost": true
-   },
+   "importance_score": 0,
+   "importance_level": "opinion",
+   "event_type": "观点评论",
    "ai_summary": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayde…",
    "ai_summary_raw": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayde…",
    "summary_method": "first_sentence",
@@ -20635,7 +20635,7 @@
    "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
    "content": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
    "published_at": "2026-11-03T08:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040410+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652139+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -23018,7 +23018,7 @@
    "summary": "To help engineers keep up with emerging technologies such as AI, cloud computing, and sustainable infrastructure, and learn how they can be applied in practice, the IEEE Computer Society’s Central Indiana Chapter recently launched its Tech Talk Series.\nThe live webinar series connects IEEE members, undergrad and graduate students, and engineering professionals from IEEE Region 4 with industry practitioners. The monthly sessions have covered AI governance and security, agentic systems, and related topics. The sessions featured speakers from Apple, software company Tavant, and cybersecurity conc",
    "content": "To help engineers keep up with emerging technologies such as AI, cloud computing, and sustainable infrastructure, and learn how they can be applied in practice, the IEEE Computer Society’s Central Indiana Chapter recently launched its Tech Talk Series.\nThe live webinar series connects IEEE members, undergrad and graduate students, and engineering professionals from IEEE Region 4 with industry practitioners. The monthly sessions have covered AI governance and security, agentic systems, and related topics. The sessions featured speakers from Apple, software company Tavant, and cybersecurity concern Zscaler.\nUpcoming sessions and registration details are available on the IEEE Region 4 virtual events calendar.\nTechnical discussions grounded in engineeringRather than presenting on emerging technologies only at a conceptual level, speakers discussed the design decisions behind specific tools and systems, how the systems are structured, and implementation challenges. They also shared lessons learned from using the tools in their daily work.\nSessions also include technical walkthroughs and practical examples.\nThe live format allows attendees to discuss and compare their approaches when evaluating and implementing new technologies with those used by other organizations.\nExtending access through a virtual formatThe organizers chose to make the series virtual so that chapter members and other attendees could participate in technical discussions with engineers from major technology companies and eliminate the need to travel.\nFor young professionals, the sessions connect what they’ve learned in a classroom with the realities of the workplace.\nTechnical programs such as the Tech Talk Series give professionals and students access to expertise, help create connections across career levels, and make important engineering discussions available to a broader community.\nAttendees learn how practitioners approach projects such as system architecture, reliability, security, governance, and product delivery. For experienced professionals, the talks offer a forum to examine new ways of designing, securing, and operating software systems, and compare technical approaches. They can ask questions relevant to systems being evaluated or deployed within their organization.\nExamining governed AI agentsThe most recent webinar, Feeding and Fencing AI Agents: Engineering Governed Agentic Systems on Real-Time Data, featured Gajendra Babu Thokala, a senior engineering leader at Apple in Seattle.\nThe IEEE senior member explained how teams can move beyond adding isolated AI features to applications and instead build governed AI-agent systems that use real-time business data to complete multistep business workflows.\nAnother recent session, Building AI Native Products: A Playbook for Agentic Systems, explored how products built around AI agents differ from traditional software. It also covered how agentic systems can help users complete multistep tasks and workflows. IEEE Senior Member Sandeep Shivam, a product and technology leader at Tavant in Dallas, led the webinar.\nThose two sessions illustrate the series’ purpose: helping participants understand what a technology can do and what is required to use it responsibly.\nBuilding a continuing technical programFuture sessions are being planned on areas including enterprise AI, software reliability, and responsible AI usage. In addition to speakers from technology companies, the chapter also plans to invite speakers from startups, universities, and research organizations.\nUpcoming sessions are expected to cover cloud platforms, enterprise integrations, and the responsible development of AI systems. \nTechnical programs such as the Tech Talk Series give professionals and students access to expertise, help create connections across career levels, and make important engineering discussions available to a broader community.\nUndergraduate and graduate students are invited to participate to gain exposure to technical decision-m",
    "published_at": "2026-11-03T19:00:02+00:00",
-   "fetched_at": "2026-11-09T19:23:56.384108+08:00",
+   "fetched_at": "2026-11-10T06:16:43.387772+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -23037,16 +23037,24 @@
     "TEC-BCI",
     "TEC-QUANT"
    ],
-   "track_id": "TEC-CLOUD",
+   "track_id": "OTHER-1",
    "market_primary": "M-GL",
    "market_related": [],
-   "content_type": "opinion",
+   "content_type": "fact",
    "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 0,
-   "importance_level": "opinion",
-   "event_type": "观点评论",
+   "importance_score": 37,
+   "importance_level": "low",
+   "event_type": "常规经营",
+   "score_detail": {
+    "source": 17,
+    "event": 10,
+    "breadth": 5,
+    "density": 0,
+    "timeliness": 5,
+    "focus_boost": false
+   },
    "ai_summary": "To help engineers keep up with emerging technologies such as AI, cloud computing, and sustainable infrastructure, and learn how they can be…",
    "ai_summary_raw": "To help engineers keep up with emerging technologies such as AI, cloud computing, and sustainable infrastructure, and learn how they can be…",
    "summary_method": "first_sentence",
@@ -24780,7 +24788,7 @@
    "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
    "content": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
    "published_at": "2026-11-03T12:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040369+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652098+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -24835,7 +24843,7 @@
    "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
    "content": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
    "published_at": "2026-11-03T08:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040388+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652118+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -24852,15 +24860,15 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-SEC",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 37,
-   "importance_level": "low",
+   "importance_score": 43,
+   "importance_level": "normal",
    "event_type": "常规经营",
    "score_detail": {
     "source": 17,
@@ -24868,7 +24876,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 5,
-    "focus_boost": false
+    "focus_boost": true
    },
    "ai_summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security.",
    "ai_summary_raw": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security.",
@@ -24890,7 +24898,7 @@
    "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
    "content": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
    "published_at": "2026-11-03T00:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040431+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652159+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -24907,15 +24915,15 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "OTHER-1",
+   "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.7,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 37,
-   "importance_level": "low",
+   "importance_score": 43,
+   "importance_level": "normal",
    "event_type": "常规经营",
    "score_detail": {
     "source": 17,
@@ -24923,7 +24931,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 5,
-    "focus_boost": false
+    "focus_boost": true
    },
    "ai_summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
    "ai_summary_raw": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
@@ -25497,7 +25505,7 @@
    "summary": "<![CDATA[涓浗缁熻淇℃伅鏈嶅姟涓績銆鍗撳垱璧勮鈥傘銆鎹鍏ㄥ浗娴侀氶鍩9澶х被50绉嶉噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍肩殑鐩戞祴鏄剧ず锛2026骞10鏈堜笅鏃笌10鏈堜腑鏃浉姣旓紝17绉嶄骇鍝佷环鏍间笂娑紝28绉嶄笅闄嶏紝5绉嶆寔骞炽傗2026骞10鏈堜笅鏃祦閫氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍煎彉鍔ㄦ儏鍐碘備骇鍝佸悕绉板崟浣嶆湰鏈熶环鏍硷紙鍏冿級姣斾笂鏈熶环鏍兼定璺岋紙鍏冿級娑ㄨ穼骞咃紙%锛変竴銆侀粦鑹查噾灞炩傗傗傗傝灪绾归挗...",
    "content": "涓浗缁熻淇℃伅鏈嶅姟涓績銆鍗撳垱璧勮鈥傘銆鎹鍏ㄥ浗娴侀氶鍩9澶х被50绉嶉噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍肩殑鐩戞祴鏄剧ず锛2026骞10鏈堜笅鏃笌10鏈堜腑鏃浉姣旓紝17绉嶄骇鍝佷环鏍间笂娑紝28绉嶄笅闄嶏紝5绉嶆寔骞炽傗2026骞10鏈堜笅鏃祦閫氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍煎彉鍔ㄦ儏鍐碘備骇鍝佸悕绉板崟浣嶆湰鏈熶环鏍硷紙鍏冿級姣斾笂鏈熶环鏍兼定璺岋紙鍏冿級娑ㄨ穼骞咃紙%锛変竴銆侀粦鑹查噾灞炩傗傗傗傝灪绾归挗锛埼20mm锛孒RB400E锛夊惃3167.3-20.5-0.6绾挎潗锛埼8鈥10mm锛孒PB300锛夊惃3378.3-8.6-0.3鏅氫腑鏉匡紙20mm锛孮235锛夊惃3466.5-43.4-1.2鐑涧鏅氭澘鍗凤紙4.75鈥11.5mm锛孮235锛夊惃3236.1-32.0-1.0鏃犵紳閽㈢锛219*6锛20#锛夊惃4005.6-6.6-0.2瑙掗挗锛5#锛夊惃3393.25.20.2浜屻佹湁鑹查噾灞炩傗傗傗傜數瑙ｉ摐锛1#锛夊惃110175.0-746.4-0.7閾濋敪锛圓00锛夊惃23787.1217.10.9閾呴敪锛1#锛夊惃16128.617.90.1閿岄敪锛0#锛夊惃25635.0-74.3-0.3涓夈佸寲宸ヤ骇鍝佲傗傗傗傜～閰革紙98%锛夊惃1595.1-51.9-3.2鐑х⒈锛堟恫纰憋紝32%锛夊惃617.2-35.0-5.4鐢查唶锛堜紭绛夊搧锛夊惃3600.830.00.8绾嫰锛堢煶娌硅嫰锛屽伐涓氱骇锛夊惃10406.4-86.0-0.8涔欓唶锛95.0%锛夊惃5549.655.21.0鑱氫箼鐑紙LLDPE锛岀啍铻嶆寚鏁2钖勮啘鏂欙級鍚10201.4202.42.0鑱氫笝鐑紙鎷変笣鏂欙級鍚10947.4281.02.6鍐伴唻閰革紙99.5%鍙婁互涓婏級鍚4326.9-310.7-6.7椤轰竵鑳讹紙BR9000锛夊惃16209.511.90.1娑ょ憾闀夸笣锛圥OY150D/48F锛夊惃9382.1-321.5-3.3纾烽吀閾侀攤锛堟櫘閫氬姩鍔涘瀷锛夊惃44613.7-1392.2-3.0鍥涖佺煶娌瑰ぉ鐒舵皵鈥傗傗傗傛恫鍖栧ぉ鐒舵皵锛圠NG锛夊惃7481.9732.510.9娑插寲鐭虫补姘旓紙LPG锛夊惃7906.2-62.4-0.8姹芥补锛95#鍥絍I锛夊惃10922.616.10.1鏌存补锛0#鍥絍I锛夊惃9395.124.40.3鐭宠湣锛58#鍗婏級鍚7720.735.70.5浜斻佺叅鐐傗傗傗傛棤鐑熺叅锛堟礂涓潡锛夊惃1514.517.81.2灞辫タ浼樻贩锛5500澶у崱锛夊惃1029.310.31.0鐒︾叅锛堜富鐒︾叅锛夊惃2260.728.61.3鐒︾偔锛堝噯涓绾у喍閲戠劍锛夊惃1896.40.00.0鍏侀潪閲戝睘鐭跨墿鍒跺搧鈥傗傗傗傛櫘閫氱閰哥洂姘存偿锛圥.O 42.5鏁ｈ锛夊惃270.93.91.5娴硶骞虫澘鐜荤拑锛5/6mm锛夊惃1069.9-8.2-0.8澶氭櫠纭咃紙鑷村瘑鏂欙級鍗冨厠41.00.00.0涓冦佸啘浜у搧锛堜富瑕佺敤浜庡姞宸ワ級鈥傗傗傗傜ɑ绫筹紙绮崇ɑ绫筹級鍚3986.9-3.4-0.1灏忛害锛堝浗鏍囦笁绛夛級鍚2448.310.40.4鐜夌背锛堥粍鐜夌背浜岀瓑锛夊惃2131.7-3.9-0.2妫夎姳锛堢毊妫夛紝鐧芥涓夌骇锛夊惃16723.6-263.0-1.5鐢熺尓锛堝涓夊厓锛夊崈鍏9.3-0.5-5.1澶ц眴锛堥粍璞嗭級鍚4958.2-29.9-0.6璞嗙矔锛堢矖铔嬬櫧鍚噺鈮43%锛夊惃3249.8-96.3-2.9鑺辩敓锛堟补鏂欒姳鐢熺背锛夊惃7427.42.40.0鐧界硸锛堝浗鏍囦竴绾х櫧鐮傜硸锛夊惃5201.4-68.6-1.3鍏佸啘涓氱敓浜ц祫鏂欌傗傗傗傚翱绱狅紙涓皬棰楃矑锛夊惃1749.8-0.10.0纾疯偉锛55%纾烽吀涓閾碉級鍚3696.4-32.4-0.9閽捐偉锛堟腐鍙62%鐧借壊姘寲閽撅級鍚2778.6-119.3-4.1澶嶅悎鑲ワ紙纭吀閽惧鍚堣偉锛屾爱纾烽捑鍚噺45%锛夊惃3488.9-63.5-1.8鍐滆嵂锛堣崏鐢樿啨锛95%鍘熻嵂锛夊惃29035.70.00.0涔濄佹灄浜у搧鈥傗傗傗傚ぉ鐒舵鑳讹紙鏍囧噯鑳禨CRWF锛夊惃19116.7-501.2-2.6绾告祮锛堣繘鍙ｉ拡鍙舵祮锛夊惃4861.6-7.1-0.1鐡︽绾革紙AA绾120g锛夊惃3027.3-71.5-2.3娉細涓婃湡涓2026骞10鏈堜腑鏃傗傘銆闄勬敞鈥傘銆1.鎸囨爣瑙ｉ噴鈥傘銆娴侀氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍硷紝鏄寚閲嶈鐢熶骇璧勬枡缁忚惀浼佷笟鐨勬壒鍙戝拰閿鍞环鏍笺備笌鍑哄巶浠锋牸涓嶅悓锛岀敓浜ц祫鏂欏競鍦轰环鏍兼棦鍖呭惈鍑哄巶浠锋牸锛屼篃鍖呭惈鏈夌粡钀ヤ紒涓氱殑娴侀氳垂鐢ㄣ佸埄娑﹀拰绋庤垂绛夈傚嚭鍘備环鏍间笌甯傚満浠锋牸浜掔浉褰卞搷锛屽瓨鍦ㄦ椂婊烇紝涓よ呯殑鍙樺姩瓒嬪娍鍦ㄦ煇涓鏃堕棿娈靛唴鏈夊彲鑳戒細鍑虹幇涓嶅畬鍏ㄤ竴鑷寸殑鎯呭喌銆傗傘銆2.鐩戞祴鍐呭鈥傘銆娴侀氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍肩洃娴嬪唴瀹瑰寘鎷9澶х被50绉嶄骇鍝佺殑浠锋牸銆傜被鍒笌浜у搧瑙勬牸璇存槑璇﹁闄勮〃銆傗傘銆3.鐩戞祴鑼冨洿鈥傘銆鐩戞祴鑼冨洿娑电洊鍏ㄥ浗31涓渷锛堝尯銆佸競锛300澶氫釜浜ゆ槗甯傚満鐨勮繎2000瀹舵壒鍙戝晢銆佷唬鐞嗗晢銆佺粡閿鍟嗙瓑缁忚惀浼佷笟銆傗傘銆4.鐩戞祴鏂规硶鈥傘銆浠锋牸鐩戞祴鏂规硶鍖呮嫭淇℃伅鍛樼幇鍦洪噰浠凤紝鐢佃瘽銆佸嵆鏃堕氳宸ュ叿鍜岀數瀛愰偖浠惰浠风瓑銆傗傘銆5.娑ㄨ穼涓暟鐨勭粺璁♀傘銆浜у搧浠锋牸涓婃定銆佷笅闄嶃佹寔骞充釜鏁版寜鐓ф定璺屽箙锛%锛夎繘琛岀粺璁°傗傞檮琛 娴侀氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍肩洃娴嬩骇鍝佽鏍艰鏄庤〃鈥傚簭鍙风洃娴嬩骇鍝佽鏍煎瀷鍙疯鏄庘備竴銆侀粦鑹查噾灞炩傗傗1铻虹汗閽⑽20mm锛孒RB400E灞堟湇寮哄害鈮400MPa鈥2绾挎潗桅8-10mm锛孒PB300灞堟湇寮哄害鈮300MPa鈥3鏅氫腑鏉20mm锛孮235灞堟湇寮哄害鈮235MPa鈥4鐑涧鏅氭澘鍗4.75-11.5mm锛孮235灞堟湇寮哄害鈮235MPa锛屽搴1500mm鈥5鏃犵紳閽㈢219*6锛20#20#閽㈡潗锛屽眻鏈嶅己搴︹墺245MPa鈥6瑙掗挗5#灞堟湇寮哄害鈮235MPa鈥備簩銆佹湁鑹查噾灞炩傗傗7鐢佃В閾1#閾滀笌閾惰川閲忓垎鏁扳墺99.95%鈥8閾濋敪A00閾濊川閲忓垎鏁扳墺99.7%鈥9閾呴敪1#閾呰川閲忓垎鏁扳墺99.994%10閿岄敪0#閿岃川閲忓垎鏁扳墺99.995%鈥備笁銆佸寲宸ヤ骇鍝佲傗11纭吀98%H2SO4璐ㄩ噺鍒嗘暟鈮98%12鐑х⒈锛堟恫纰憋級32%NaOH璐ㄩ噺鍒嗘暟鈮32%鐨勭瀛愯啘纰13鐢查唶浼樼瓑鍝佹按璐ㄩ噺鍚噺鈮0.10%14绾嫰锛堢煶娌硅嫰锛夊伐涓氱骇鑻函搴︹墺99.8%15涔欓唶95.0%鏅骇涔欓唶16鑱氫箼鐑紙LLDPE锛夌啍铻嶆寚鏁2钖勮啘鏂欑啍铻嶆寚鏁帮細2.0卤0.5g/10min17鑱氫笝鐑媺涓濇枡鐔旇瀺鎸囨暟锛3.0卤0.9g/10min18鍐伴唻閰99.5%鍙婁互涓婇唻閰哥函搴︹墺99.5%19椤轰竵鑳禕R9000鍧楃姸銆佷钩鐧借壊锛岀伆鍒嗏墹0.20%20娑ょ憾闀夸笣POY150D/48F鍗婂厜167鍒嗙壒锛孉A绾21纾烽吀閾侀攤鏅氬姩鍔涘瀷鑳介噺瀵嗗害鈮120Wh/kg鈥傚洓銆佺煶娌瑰ぉ鐒舵皵鈥傗22娑插寲澶╃劧姘擫NG鐢茬兎鍚噺鈮75%锛屽瘑搴︹墺430kg/m323娑插寲鐭虫补姘擫PG楗卞拰钂告苯鍘1380-1430kPa24姹芥补95#鍥絍I鍥絍I鏍囧噯25鏌存补0#鍥絍I鍥絍I鏍囧噯26鐭宠湣58#鍗婄啍鐐逛笉浣庝簬58鈩冣備簲銆佺叅鐐傗27鏃犵儫鐓ゆ礂涓潡鎸ュ彂鍒嗏墹8%28灞辫タ浼樻贩5500澶у崱浼樿川鐨勬贩鐓わ紝鐑5500澶у崱29鐒︾叅涓荤劍鐓ゅ惈纭噺<1%30鐒︾偔鍑嗕竴绾у喍閲戠劍12.01%鈮ょ伆鍒嗏墹13.50%鈥傚叚銆侀潪閲戝睘鐭跨墿鍒跺搧鈥傗31鏅氱閰哥洂姘存偿P.O 42.5鏁ｈ鎶楀帇寮哄害42.5MPa32娴硶骞虫澘鐜荤拑5/6mm鍘氬害涓5/6mm鐨勬棤鑹查忔槑鐜荤拑33澶氭櫠纭呰嚧瀵嗘枡绾害6N-9N鈥備竷銆佸啘浜у搧锛堜富瑕佺敤浜庡姞宸ワ級鈥傗34绋荤背绮崇ɑ绫虫潅璐ㄢ墹0.25%锛屾按鍒嗏墹15.5%35灏忛害鍥芥爣涓夌瓑鏉傝川鈮1.0%锛屾按鍒嗏墹12.5%36鐜夌背榛勭帀绫充簩绛夋潅璐ㄢ墹1.0%锛屾按鍒嗏墹14.0%37妫夎姳锛堢毊妫夛級鐧芥涓夌骇绾ょ淮闀垮害鈮28mm锛岀櫧鎴栦钩鐧借壊38鐢熺尓澶栦笁鍏冧笁绉嶅鍥界尓鏉備氦鐨勮倝椋熺尓39澶ц眴榛勮眴鏉傝川鈮1.0%锛屾按鍒嗏墹13.0%40璞嗙矔绮楄泲鐧藉惈閲忊墺43%绮楄泲鐧解墺43%锛屾按鍒嗏墹13.0%41鑺辩敓娌规枡鑺辩敓绫虫潅璐ㄢ墹1.0%锛屾按鍒嗏墹9.0%42鐧界硸鍥芥爣涓绾х櫧鐮傜硸钄楃硸鍒嗏墺99.6g/100g鈥傚叓銆佸啘涓氱敓浜ц祫鏂欌傗43灏跨礌涓皬棰楃矑鎬绘爱鈮46%锛屾按鍒嗏墹1.0%44纾疯偉纾烽吀涓閾垫诲吇鍒(N+P2O5)=55%45閽捐偉姘寲閽綤2O=62%46澶嶅悎鑲ョ～閰搁捑澶嶅悎鑲ユ爱纾烽捑鍚噺45%47鍐滆嵂锛堣崏鐢樿啨锛95%鍘熻嵂鑽夌敇鑶﹁川閲忓垎鏁扳墺95%鈥備節銆佹灄浜у搧鈥傗48澶╃劧姗¤兌鏍囧噯鑳禨CRWF鏉傝川鍚噺鈮0.05%锛岀伆鍒嗏墹0.5%49绾告祮杩涘彛閽堝彾娴嗘姉寮犳寚鏁扳墺85.0N路m/g锛岃愮牬鎸囨暟鈮6.5KPa路m2/g锛屾挄瑁傛寚鏁扳墺9.0mN路m2/g50鐡︽绾窤A绾120g12",
    "published_at": "2026-11-04T09:30:00+08:00",
-   "fetched_at": "2026-11-09T19:24:07.892799+08:00",
+   "fetched_at": "2026-11-10T06:16:52.669426+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -25518,7 +25526,7 @@
    "market_primary": "M-A",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 45,
@@ -32836,7 +32844,7 @@
    "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
    "content": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
    "published_at": "2026-11-03T17:01:49+00:00",
-   "fetched_at": "2026-11-09T03:39:29.059545+08:00",
+   "fetched_at": "2026-11-10T06:16:43.887071+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -32857,7 +32865,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 43,
@@ -33801,7 +33809,7 @@
    "summary": "Texas is the fastest-growing data center market in the US and ground zero for Big Tech&#8217;s largest AI buildouts. But the blue wave that swept the Lone Star State may jeopardize that position. Democrat James Talarico won the US Senate seat against Ken Paxton. Gina Hinojosa won the race for governor against the Republican incumbent,&#8230;",
    "content": "Texas is the fastest-growing data center market in the US and ground zero for Big Tech&#8217;s largest AI buildouts. But the blue wave that swept the Lone Star State may jeopardize that position.\n\nDemocrat James Talarico won the US Senate seat against Ken Paxton. Gina Hinojosa won the race for governor against the Republican incumbent, Greg Abbott. At the state level, Democrats will take control of the Texas House for the first time in 24 years. Talarico and Hinojosa made data centers a central issue, discussing them constantly on the campaign trail.\n\nEven before the polls closed, insiders in the data center industry noticed that the times were changing. At the industry&#8217;s DCD conference in Ashburn, Virginia, on Tuesday, panelists lamented that Texas had been the easiest place to build for years—until September. That&#8217;s when Abbott, perhaps seeing the increasingly bipartisan distaste for these facilities, began changing course himself. \n\nDevelopers said the governor’s office had stopped responding to their emails. On September 21, Abbott directed a key state regulator to halt data center permits. Many panelists at the conference were expecting this to mean that existing projects might be slowed and new ones could be halted altogether. \n\nThe governor-elect indeed seems eager to do that. Hinojosa supported tax breaks for data centers in 2023 as a way to boost construction jobs, but during her campaign she began pushing for a full-fledged moratorium.\n\nThat would be a problem for the hyperscalers of Big Tech, which have ambitious plans for AI training facilities in the state. The scale of projects already underway in Texas is massive. The Stargate Frontier data center in Shackelford County is projected to serve 1,820 megawatts—about as much as the nation’s largest data center, SpaceX’s Colossus 2 in Tennessee, and more than twice as much as the largest data center currently operating in Texas. Nexus Hubbard, also under construction and intended mostly to serve Anthropic, has a planned size of 6,400 megawatts and is the second-largest data center being built in the US, behind only Meta’s Hyperion project in Louisiana. \n\nThe potential for Democrats to order delays to these projects or moratoriums on new ones adds to growing anxiety that the AI buildout could stall. Banks and lenders are already getting pickier about the projects they back. And given the extent to which the data center buildout is underpinning growth in the economy right now, those forces combined could have ripple effects.\n\nVoters around the country, though, were unambiguous in the midterms, sending a similar message on everything from state ballot questions to national offices. Voters supported efforts to protect ratepayers from increases in their electricity bills caused by data centers, and they favored some larger bans on new data centers altogether. If we needed any more convincing that Big Tech has fumbled its effort to sell voters on the idea that AI-powered abundance will make health care better, goods cheaper, and scientific breakthroughs more common, this was it.\n\nA key question is whether the Texas counties with the largest data center presence were part of the reason these Democrats got elected, or if the anti-data-center vote came from elsewhere. \n\nIt’s complicated: The counties where much of the data center buildout is happening are around Dallas. Dallas County and others closest to it predictably went blue, but nearby Ellis County, which leads in permitting requests for data centers, went for Greg Abbott and Ken Paxton. Cameron County, near the state’s southern border, is a hot spot for data centers and voted blue in the midterms, which was a shift. But Mitchell County and Scurry County, where a bunch of projects in west Texas are located, went red. \n\nThis is a big deal, because no single office in the state decides whether a project goes ahead or is halted. Decisions often reflect an interplay between city governments, county officials, and",
    "published_at": "2026-11-04T18:50:55+00:00",
-   "fetched_at": "2026-11-09T19:23:57.554476+08:00",
+   "fetched_at": "2026-11-10T06:16:44.594325+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -33821,21 +33829,13 @@
    "track_id": "TEC-COMPUTE",
    "market_primary": "M-GL",
    "market_related": [],
-   "content_type": "fact",
-   "classify_confidence": 0.85,
+   "content_type": "opinion",
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 32,
-   "importance_level": "low",
-   "event_type": "常规经营",
-   "score_detail": {
-    "source": 12,
-    "event": 10,
-    "breadth": 5,
-    "density": 0,
-    "timeliness": 5,
-    "focus_boost": false
-   },
+   "importance_score": 0,
+   "importance_level": "opinion",
+   "event_type": "观点评论",
    "ai_summary": "Texas is the fastest-growing data center market in the US and ground zero for Big Tech&#8217;",
    "ai_summary_raw": "Texas is the fastest-growing data center market in the US and ground zero for Big Tech&#8217;",
    "summary_method": "first_sentence",
@@ -34982,7 +34982,7 @@
    "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
    "content": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
    "published_at": "2026-11-04T14:30:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040265+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651996+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -36082,7 +36082,7 @@
    "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
    "content": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
    "published_at": "2026-11-04T07:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040285+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652016+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -36099,15 +36099,15 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-SEC",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 37,
-   "importance_level": "low",
+   "importance_score": 43,
+   "importance_level": "normal",
    "event_type": "常规经营",
    "score_detail": {
     "source": 17,
@@ -36115,7 +36115,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 5,
-    "focus_boost": false
+    "focus_boost": true
    },
    "ai_summary": "Daybreak Red brings GPT-5.",
    "ai_summary_raw": "Daybreak Red brings GPT-5.",
@@ -36137,7 +36137,7 @@
    "summary": "Release: datasette-apps 0.3a0\n\n Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette.\n\nThese can be created by hand, but it's easier to create them using LLMs via Datasette Agent. This release improves that integration:\n\nApps can now be tagged in Datasette Agent chat messages by typing #, which autocompletes from the apps the user has permission to view.\nNew app_add_stored_queries() and app_remove_stored_queries() tools let the agent manage which stored queries an app is allowed to call. Granting a write query requires approval from the user first.\na",
    "content": "Release: datasette-apps 0.3a0\n\n Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette.\n\nThese can be created by hand, but it's easier to create them using LLMs via Datasette Agent. This release improves that integration:\n\nApps can now be tagged in Datasette Agent chat messages by typing #, which autocompletes from the apps the user has permission to view.\nNew app_add_stored_queries() and app_remove_stored_queries() tools let the agent manage which stored queries an app is allowed to call. Granting a write query requires approval from the user first.\napp_create() now checks that each requested stored query exists and that the user can view it, and asks the user to approve any write queries before the app is created.\nThe \"View app\" buttons shown by the agent tools, and the links on # app references, now open the app full screen in the Datasette Agent panel.\n\n \n \n Tags: datasette, datasette-agent, datasette-apps",
    "published_at": "2026-11-04T00:29:36+00:00",
-   "fetched_at": "2026-11-09T19:23:58.025771+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768277+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -36158,7 +36158,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 28,
@@ -36192,7 +36192,7 @@
    "summary": "Release: datasette-agent 0.5a0\n\n This is a significant release of Datasette Agent. The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page.\n\nWhen combined with datasette-apps this means you can prompt a database-backed app into existence and then modify it from the chat that sits next to that app.\n\nYou can try it by signing in with your GitHub account to agent.datasette.io.\n\n \n \n Tags: projects, datasette, datasette-agent",
    "content": "Release: datasette-agent 0.5a0\n\n This is a significant release of Datasette Agent. The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page.\n\nWhen combined with datasette-apps this means you can prompt a database-backed app into existence and then modify it from the chat that sits next to that app.\n\nYou can try it by signing in with your GitHub account to agent.datasette.io.\n\n \n \n Tags: projects, datasette, datasette-agent",
    "published_at": "2026-11-03T23:13:45+00:00",
-   "fetched_at": "2026-11-09T19:23:58.025816+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768322+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -36209,14 +36209,14 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 32,
+   "importance_score": 28,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -36225,7 +36225,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 5,
-    "focus_boost": true
+    "focus_boost": false
    },
    "ai_summary": "Release: datasette-agent 0.",
    "ai_summary_raw": "Release: datasette-agent 0.",
@@ -38721,7 +38721,7 @@
    "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
    "content": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
    "published_at": "2026-11-04T08:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040304+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652040+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -38776,7 +38776,7 @@
    "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
    "content": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
    "published_at": "2026-11-04T00:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040322+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652059+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -38797,7 +38797,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 43,
@@ -38831,7 +38831,7 @@
    "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
    "content": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
    "published_at": "2026-11-04T00:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040341+08:00",
+   "fetched_at": "2026-11-10T06:16:43.652080+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -40442,7 +40442,7 @@
    "summary": "A sweeping bit of legislation designed to cut red tape could speed up the buildout of energy infrastructure in the US. With the dust barely settled on this week’s momentous midterms, the Senate is set to vote on the Bipartisan American Affordability and Jobs Act (BAAJA) on November 9. It’s a plan that could finally&#8230;",
    "content": "A sweeping bit of legislation designed to cut red tape could speed up the buildout of energy infrastructure in the US.\n\nWith the dust barely settled on this week’s momentous midterms, the Senate is set to vote on the Bipartisan American Affordability and Jobs Act (BAAJA) on November 9. It’s a plan that could finally start an overhaul of the slow, complicated process for getting energy projects approved, as part of something called permitting reform. People on both sides of the political aisle have been pushing for this type of change for some years.\n\nThe key question is whether this will cut greenhouse-gas emissions from the US energy sector or push them higher still. \n\nThe federal permitting system is designed to protect the environment against industrial pollution from large projects like power plants, transmission lines, and natural-gas pipelines. Today, permitting is governed by a range of laws, including the National Environmental Policy Act and the Clean Water Act. And if there’s one thing you might know about the current state of permitting in the US it’s that it’s slow and incredibly complicated.\n\nSo in its 417 pages, BAAJA attempts to tighten things up. The bill has provisions that narrow the sorts of projects that need to apply for federal permits and others that enact deadlines in hopes of speeding up a process that today can take years. (There are also specific provisions about transmission planning, mining, and the rest of the kitchen sink; this thing is dense.)\n\nOne thing to know about this bill is that it’s largely technology neutral: It opens the doors for the buildout of projects involving both fossil fuels and renewables. So there’s a weird mishmash of legislators and outside groups supporting it.\n\nThe bill’s four sponsors in the Senate are two Republicans and two Democrats. The White House has backed this permitting reform bill, with its Council of Economic Advisors finding that it would reduce review times and have economic benefits like boosting GDP.\n\nClean energy groups like the American Clean Power Association have largely come out in favor of the bill too, with the group’s analysis finding that it could unlock 350 gigawatts of new clean energy for the grid.\n\nSome environmental groups, however, oppose the bill, or parts of it. An assessment from the Natural Resources Defense Council says the parts about transmission could have substantial benefits for the grid, but the narrowing of environmental reviews could be damaging for public and private lands.\n\nMany in the climate world have long been calling for permitting reform, arguing that renewables stand to benefit more than fossil fuels. The thinking is that solar and wind power are some of the cheapest sources available today, so if we unlock the ability to build more energy, they are likely to win out economically.\n\nA few early analyses have tried to quantify just what BAAJA would mean for emissions in the US. One, from the think tank Rhodium Group, found that in the best-case scenario, the bill would cut economy-wide emissions by 4%, reduce annual energy bills by $78 per household, and add 200 gigawatts of new clean energy by 2040. In the worst case, emissions would stay about the same.\n\nAnother report, from the nonprofit research group Resources for the Future, found that the bill could cut power-sector emissions 6% by 2041 and save more than $350 billion on system costs by midcentury.\n\nBut there are some concerns that this permitting bill’s real effect would be to open the floodgates for new natural-gas plants. As data centers have put more pressure on the grid, a wave of such plants have been announced.\n\n“You get down to a trade-off between essentially growing the clean electricity industry on the one hand and then, as a compromise, growing the fossil-fuel industry on the other,” says Kevin Kircher, an energy modeler and assistant professor of mechanical engineering at Purdue.\n\nTo quantify that trade-off, Kircher also modeled the potential emissions ",
    "published_at": "2026-11-05T10:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.554236+08:00",
+   "fetched_at": "2026-11-10T06:16:44.594120+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -40463,7 +40463,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 32,
@@ -42753,7 +42753,7 @@
    "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
    "content": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
    "published_at": "2026-11-05T02:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040205+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651935+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -42774,7 +42774,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 37,
@@ -44784,7 +44784,7 @@
    "summary": "The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day.\n\n&mdash; Paul Ford, The Web Is More Than Enough\n\n Tags: browsers, paul-ford, web-development",
    "content": "The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day.\n\n&mdash; Paul Ford, The Web Is More Than Enough\n\n Tags: browsers, paul-ford, web-development",
    "published_at": "2026-11-05T17:34:03+00:00",
-   "fetched_at": "2026-11-09T19:23:58.025678+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768186+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -44801,7 +44801,7 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "OTHER-1",
+   "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
@@ -44999,7 +44999,7 @@
    "summary": "Text \"Gemini Introducing Gemini Omni 1.2 Flash\" surroudned by images of a beehive, animals in conversation, a squid, and a woman walking down a street",
    "content": "Text \"Gemini Introducing Gemini Omni 1.2 Flash\" surroudned by images of a beehive, animals in conversation, a squid, and a woman walking down a street",
    "published_at": "2026-11-05T17:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.175783+08:00",
+   "fetched_at": "2026-11-10T06:16:43.907369+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -45020,7 +45020,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 43,
@@ -45165,7 +45165,7 @@
    "summary": "This article is crossposted from IEEE Spectrum’s careers newsletter. Sign up now to get insider tips, expert advice, and practical strategies, written in partnership with tech career development company Parsity and delivered to your inbox for free!\nHard work rarely speaks for itself.\nWhen I landed my first job as a software engineer, I had a simple plan: Work hard and somebody would notice. Eventually a manager would tap me on the shoulder and hand me a promotion (probably with a nice little speech).\nThat plan stalled my career for about five years.\nI switched jobs twice, kept my head down, re",
    "content": "This article is crossposted from IEEE Spectrum’s careers newsletter. Sign up now to get insider tips, expert advice, and practical strategies, written in partnership with tech career development company Parsity and delivered to your inbox for free!\nHard work rarely speaks for itself.\nWhen I landed my first job as a software engineer, I had a simple plan: Work hard and somebody would notice. Eventually a manager would tap me on the shoulder and hand me a promotion (probably with a nice little speech).\nThat plan stalled my career for about five years.\nI switched jobs twice, kept my head down, read a stack of programming books, and sometimes pulled 12-hour days. I was never promoted. At my third job, out of frustration, I started interviewing at other companies and almost immediately got an offer for a senior engineer role.\nSo I went back to my job and quit. My team was blindsided. I liked my manager and the people I worked with, and they came back with a counteroffer. Then someone from HR asked me, “Why didn’t you just ask us?”\nHonestly, it never occurred to me.\nI took the counteroffer and stayed. Three jobs in, I finally got promoted, and all it took was asking (in the most dramatic way possible).\nToday, I would take a different approach. \nYear-end review discussions are a great time to push for a promotion. But at most companies, raises and promotions are largely settled before the formal review conversation happens. If the year-end review is the first time your manager hears you want a promotion, you’re usually too late. \nNow is a great time to start the conversation.\nHard work is invisible by defaultEngineers tend to believe good work speaks for itself. It rarely does. Your manager is juggling a team, a roadmap, and their own boss. They see a fraction of what you do, and the work they don’t see might as well not exist when raises get decided.\nPerception is reality, so you have to shape it. That means learning to brag a little.\nA “brag document” is a running list of what you accomplished, when, and why it mattered. Add to it every two weeks or once a month, and write each entry so your manager’s manager would understand it.\nEngineers tend to write things like “migrated the billing service.” A better entry reads “migrated the billing service, which cut failed payments by 30 percent and unblocked the Q3 pricing launch.” If there’s no number, name who benefited and how.\nInclude the work people forget to count, too: handling incidents, mentoring new hires, interviewing candidates, and writing the docs everyone else relies on. If you helped your team adopt AI tools this year, write that down. (It counts as leadership, whether or not anyone called it that.)\nThe document does two jobs. It gives you ammunition when you make your case, and it gives your manager something to ctrl + c then ctrl + v when they argue for you in meetings you’ll never attend.\nJust askBragging builds the case. Asking forces action.\nIf your goal is a promotion or a raise, you might ask: “What would it take for me to get to [the next level] in the next year?”\nA good manager will give you an outline that can turn into a plan. Push for specifics until you have deliverables you can work toward, then send a short recap email so the plan exists somewhere besides your manager’s memory. (Managers change jobs too.)\nWhen the answer is “no”Sometimes the answer will still be “not this year,” and the reason may have nothing to do with you. \nBudgets get frozen, promotion slots get capped, and decisions get made above your manager’s head where even a manager who wants to help can’t.\nDon’t read too much into that. But be honest with yourself, too. Most of the time, a no means there’s something you aren’t doing yet. Find out what it is instead of guessing for five years like I did.\nAsking costs you one slightly awkward conversation. Sitting back and waiting to be noticed can cost you years.\n—Brian\nI Used AI to Fake a Scientific Paper. Here’s What HappenedDon’t try this at home",
    "published_at": "2026-11-05T16:08:03+00:00",
-   "fetched_at": "2026-11-09T19:23:56.383065+08:00",
+   "fetched_at": "2026-11-10T06:16:43.386801+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -45269,7 +45269,7 @@
    "summary": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
    "content": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
    "published_at": "2026-11-05T16:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:52.977157+08:00",
+   "fetched_at": "2026-11-10T06:16:39.698865+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -45291,7 +45291,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 45,
@@ -46700,7 +46700,7 @@
    "summary": "The sun hangs low over the plains of Castile and León, in the north-central region of Spain. But from a slope of the mountain Pico Trigaza, it appears that a few puffy white clouds have started to block the sun. That’s vexing.\nA group of researchers, some wearing cardboard eclipse glasses, is clustered around sets of portable telescopes and cameras connected to laptops. All this gear is scattered on tabletops perched on the mountainside. On the computer screens, the sun’s disk looks like a deep orange crescent that is slowly waning. That’s because the moon began to crawl across it about half a",
    "content": "The sun hangs low over the plains of Castile and León, in the north-central region of Spain. But from a slope of the mountain Pico Trigaza, it appears that a few puffy white clouds have started to block the sun. That’s vexing.\nA group of researchers, some wearing cardboard eclipse glasses, is clustered around sets of portable telescopes and cameras connected to laptops. All this gear is scattered on tabletops perched on the mountainside. On the computer screens, the sun’s disk looks like a deep orange crescent that is slowly waning. That’s because the moon began to crawl across it about half an hour ago. In 25 minutes, it will obscure the sun completely, producing an eerie and wondrous phenomenon—a total solar eclipse.\nIn the late-summer, late-afternoon heat, the researchers watch anxiously as those fluffy clouds linger around the sun. From an abandoned hut on the slope a few meters above, where the researchers have set up camp, one of the grad students emerges and nods toward the cloud formation. “Do you think it will dissolve?” he blurts out.\n“It will.” Miloslav Druckmüller glances calmly at his group of doctoral candidates, now making final checks of the equipment in preparation for totality. Here in Spain, on this 12th day of August, Druckmüller is getting ready for his 19th solar eclipse. He knows from long experience that weather can turn quickly when the moon’s shadow suddenly pushes the temperature down. Plus, there’s no sense in riling up the grad students any more than they already are.\n Miloslav Druckmüller led the design and construction of a unique optical instrument that incorporates eight astrocameras. Each is equipped with a spectral filter for sensing and recording specific emission spectra from the solar corona. Each of those spectra, in turn, is associated with a particular ionic species of iron atoms. Because the temperature needed to ionize iron varies depending on the ionic species, analyzing the locations and relative abundance of these ionic species offers valuable insights into the distribution of heat in the corona.Václav Široký\nDuring totality, the moon blocks the overwhelming glare of the solar disk, revealing delicate structures in the sun’s outer atmosphere, the corona. Using custom-built telescope systems and image-processing techniques that Druckmüller has spent decades developing, the researchers aim to gain insights into the processes in this enigmatic region that is otherwise hard to study. In addition to imaging the visible coronal light, the team will try to track the dispersal of superhot ions of iron into interplanetary space, which could give rare insights into the pattern of heat emanating from the corona.\nAnd they’ll have 107 seconds to do all that.\nA Mathematician’s Path to Solar Eclipse PhotographyDruckmüller is a professor of mathematics and image processing at the Brno University of Technology in the Czech Republic and a leading figure in the Solar Wind Sherpas, an international team that studies the sun’s corona during total eclipses. In the solar eclipse world, he is nothing short of a legend, albeit a reluctant one.\n\nAn image from Miloslav Druckmüller’s first solar-eclipse expedition, to Hungary, vividly shows Baily’s Beads. These elongated white lights along a piece of the left edge of the blacked-out solar disk are caused by beams of sunlight shining through gaps in the irregular lunar surface during the eclipse. The pink shapes are solar prominences, which are jets of plasma extending out into space and held in place by the sun’s intense magnetic field.\nMiloslav Druckmüller\n\nHe photographed his first solar eclipse in 1999, in what he thought would be a one-off lark. During that eclipse, the moon’s deep shadow missed Druckmüller’s native Czechia by just a few tens of kilometers, so he chased it to Hungary with a 30-year-old Soviet MTO 1,000-millimeter lens. All he remembers from that day is the rush of adrenaline he felt while trying to find the sun in the sky with the lens’s ",
    "published_at": "2026-11-05T14:00:02+00:00",
-   "fetched_at": "2026-11-09T19:23:56.383920+08:00",
+   "fetched_at": "2026-11-10T06:16:43.387593+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -47147,7 +47147,7 @@
    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Texas was the new epicenter of the AI data center buildout. That might be kaput. Texas is the fastest-growing data center market in the US and ground zero for Big Tech&#8217;s&#8230;",
    "content": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology.\n\nTexas was the new epicenter of the AI data center buildout. That might be kaput.\n\nTexas is the fastest-growing data center market in the US and ground zero for Big Tech&#8217;s largest AI buildouts. But the blue wave that swept the Lone Star State may jeopardize that position.\n\nDemocrat James Talarico won the US Senate seat, Gina Hinojosa won the race for governor, and Democrats will take control of the Texas House for the first time in 24 years. They won after making data centers a central issue on the campaign trail.\n\nThe swings could spell trouble for hyperscalers with ambitious plans in the state. They also add to growing anxiety that America’s AI buildout could stall.\n\nHere’s how the election results could reshape AI’s future.\n\n—James O&#8217;Donnell\n\nWhat’s next for US energy policy after the midterm elections?\n\nDemocrats have taken control of both the House and the Senate, but we probably won’t see major federal climate and energy legislation while Trump remains president. The midterm elections could, however, be a big deal for energy at the state and local level.\n\nThe results could shape everything from the state grid and data center development to renewable energy and greenhouse gas emissions.\n\nFind out what the midterms could mean for the future of US energy.\n\n—Casey Crownhart\n\nThis story is from The Spark, our weekly climate tech newsletter. Sign up to receive it in your inbox every Wednesday.\n\nA new bill could change how the US builds energy infrastructure \n\nA sweeping bit of legislation designed to cut red tape could speed up the buildout of energy infrastructure in the US.\n\nOn November 9, the Senate is set to vote on the Bipartisan American Affordability and Jobs Act (BAAJA). It’s a plan that could start an overhaul of the slow, complicated process for getting energy projects approved. But some environmental groups oppose the bill, or parts of it.\n\nExplore the trade-offs behind America&#8217;s proposed permitting overhaul.\n\n—Casey Crownhart\n\nThe must-reads\n\nI’ve combed the internet to find you today’s most fun/important/scary/fascinating stories about technology.\n\n1 America’s data center boom has hit a political wall\nVoters opposed them in 40 of 41 midterm ballot measures. (CNBC)\n+ Six cities voted to ban data centers outright. (404 Media)\n+ Meta says building data centers has just become much harder. (WSJ $)\n+ The midterm results could also boost China’s AI ambitions. (SCMP)\n+ No one wants a data center in their backyard. (MIT Technology Review)\n\n2 Blood banks have become the latest victims of fridge hacks\nHackers raised the temperatures at three stores in France. (Guardian)\n+ Alarms alerted staff before any blood products were lost. (CBS)\n+ It’s an escalation after hundreds of supermarket fridge hacks. (CNBC)\n+ Experts are split over who’s behind the attacks. (BBC)\n\n3 Democrats are preparing to investigate Elon Musk\nHis firms have won over $16 billion in government contracts. (NPR)\n+ His unprecedented spending may even have hurt Republicans. (Atlantic $)\n+ Texas’s blue wave has rattled Musk and SpaceX. (Ars Technica)\n\n4 The new Congress could challenge Trump’s science cuts\nBut he can still veto any bills they pass. (Nature)\n+ Trump has already dealt many blows to science. (MIT Technology Review)\n\n5 China is luring AI expertise in while blocking it from leaving\nIt just blocked SoftBank’s bid for ABB Robotics. (WSJ $)\n+ Its chipmakers are poaching engineers from foreign rivals. (CNBC)\n+ A star mathematician has left the US to develop AI in China. (SCMP)\n\n6 Watchdogs have sued over tech titans advising the Pentagon\nMusk and Palmer Luckey could profit from their advice. (Military.com)\n\n7 New research tests whether AI knows its own “thoughts”\nIt’s trying to map out AI’s capacity for introspection. (Quanta)\n+ AI consciousness debates are a trap. (MIT Technology Review)",
    "published_at": "2026-11-05T13:10:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.553985+08:00",
+   "fetched_at": "2026-11-10T06:16:44.593890+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -47168,7 +47168,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 32,
@@ -48840,7 +48840,7 @@
    "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
    "content": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
    "published_at": "2026-11-05T09:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040158+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651891+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -48857,15 +48857,15 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-SEC",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 37,
-   "importance_level": "low",
+   "importance_score": 43,
+   "importance_level": "normal",
    "event_type": "常规经营",
    "score_detail": {
     "source": 17,
@@ -48873,7 +48873,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 5,
-    "focus_boost": false
+    "focus_boost": true
    },
    "ai_summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within …",
    "ai_summary_raw": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within …",
@@ -51260,7 +51260,7 @@
    "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
    "content": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
    "published_at": "2026-11-05T20:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040134+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651867+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -51281,7 +51281,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 43,
@@ -52469,7 +52469,7 @@
    "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
    "content": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
    "published_at": "2026-11-05T08:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040182+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651912+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -52524,7 +52524,7 @@
    "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
    "content": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
    "published_at": "2026-11-05T00:45:15+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040225+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651955+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -52545,7 +52545,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 43,
@@ -52579,7 +52579,7 @@
    "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
    "content": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
    "published_at": "2026-11-05T00:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040245+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651976+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -52600,7 +52600,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 43,
@@ -54300,7 +54300,7 @@
    "summary": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed&#8230;",
    "content": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed up for the waitlist. I wanted my apartment to feel like The Jetsons, even if just for an hour.\n\nI was also motivated by journalistic interest. In order to ensure an authentic experience, I didn’t tell Tau Robotics, the startup behind the X post, that I was a journalist—though I did use my real name, so it’s possible someone looked me up. Tau’s long-term goal is to make autonomous cleaning robots a reality, but they’re not quite there yet: For now, the robots are piloted remotely by humans, who watch what’s going on via cameras mounted in the robots’ heads and wrists. As the robots clean, they collect data that Tau will use to train up their more independent descendants. Every counter successfully wiped and T-shirt successfully folded will help the models that power the robots learn to do better on the next go-round.\n\nBecause this data is so valuable to Tau, the company charges less for cleaning than one might expect for such a cutting-edge product. At the time I booked, Tau was offering $30 for an hourlong cleaning with a single robot; now the charge is $60 per weekly cleaning with two robots, or $100 for a one-time visit. But even at the cheaper rate of $30 per hour, Tau’s robots aren’t a great bargain. They are thorough but slow, so if you, like me, are tempted to stand around watching them for their entire visit, it would probably be a better use of your time to just take care of the cleaning yourself. \n\nBut the robots are physically capable of cleaning, and they’re undeniably cute. Tau has armed each four-and-a-half-foot-tall robot with a 3D-printed “head” with antennae that allow it to communicate with Tau’s headquarters, as well as two 3D-printed claw “hands” (the more humanlike alternatives apparently aren’t durable enough, and claws do surprisingly well for most cleaning tasks). Mine was wearing a Tau Robotics shirt, and grippy socks so that it didn’t scratch hardwood floors.\n\nWith all the human support they need, the robots are closer to radio-controlled cars than Waymos. Many tasks, such as making the bed and folding laundry, require what’s called kinematic guidance: The human pilot performs the necessary motions, and sensors transmit those movements to the robot, which copies them. These kinematically guided tasks produce especially valuable training data. Tau’s AI models might not have solved laundry folding yet, but learning from the examples of robots that have completed the task in the real world is how they’ll get there.\n\nBut according to Tau cofounder Cornelia Weinzierl, to whom I came clean as a journalist a few weeks after the cleaning, the robot can already complete some other tasks—such as vacuuming and mopping—without any human help. If Tau succeeds in using all the data it is collecting to train truly autonomous cleaning robots, they could even become San Francisco’s newest tech tourist attraction as Waymos become more commonplace countrywide.\n\nThe cleaning robot that came to my building last month was already a bit of a spectacle. It arrived in a blue minivan, out of which it was helped by Weinzierl and another Tau employee. That’s when the robot encountered its first obstacle: the eight stairs leading up to the building’s front door. I’d come down to greet Weinzierl and the robot, so I had a front-row seat to its struggles with my steps. It climbed as if it were drunk. Each successful step was as likely as not to be followed by a stumbling backward stagger that erased all its progress—though, impressively, it never entirely lost its footing.\n\nWhen I later discussed my experience with Weinzierl, she explained that the robot sometimes walks strangely because it is operated remotely from Tau’s headquarters, and the short signal t",
    "published_at": "2026-11-06T10:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.553637+08:00",
+   "fetched_at": "2026-11-10T06:16:44.593573+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -54321,7 +54321,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 37,
@@ -56989,7 +56989,7 @@
    "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
    "content": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
    "published_at": "2026-11-05T17:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040111+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651847+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -57006,15 +57006,15 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "OTHER-1",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 43,
-   "importance_level": "normal",
+   "importance_score": 37,
+   "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
     "source": 17,
@@ -57022,7 +57022,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 5,
-    "focus_boost": true
+    "focus_boost": false
    },
    "ai_summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled wo…",
    "ai_summary_raw": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled wo…",
@@ -57982,7 +57982,7 @@
    "summary": "The products aren't good enough to sell people on the costs.\n\nYou cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history.\n\nIt's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies are spending more than they're making on these products. Refrigerators holding blood storage in Europe are being hacked.\n\nThe costs are too high. The benefits are not real. And if you connect that to",
    "content": "The products aren't good enough to sell people on the costs.\n\nYou cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history.\n\nIt's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies are spending more than they're making on these products. Refrigerators holding blood storage in Europe are being hacked.\n\nThe costs are too high. The benefits are not real. And if you connect that to corruption, you're like, in order to impose these costs on me, these CEOs are in the White House shaking Trump's hand, renaming it to the Gulf of America, paying for this ballroom that we don't want. It's obvious crypto-corruption, and it's still slop. \n\nThe AI industry will not get out of it until they make better products. Until everyone can see without needing to be convinced, without needing an ad campaign, without any of this stuff that just using these products makes your life better.\n\n&mdash; Nilay Patel, The Vergecast: Big Tech lost big in the 2026 election\n\n Tags: nilay-patel, slop, ai, generative-ai, ai-ethics",
    "published_at": "2026-11-06T17:13:12+00:00",
-   "fetched_at": "2026-11-09T19:23:58.025645+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768154+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -57999,7 +57999,7 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "INV-VIEW",
+   "track_id": "OTHER-1",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
@@ -58579,7 +58579,7 @@
    "summary": "Last August, looking up from the edge of an ancient river delta on Mars, the Perseverance rover’s electronic eye spied an oblong shadow crossing the distant, glowing Sun. Phobos, the Martian moon named for the Greek god of fear and panic, was transiting the solar disk. Too small to darken the pale, dust-tinged sky, but orbiting close enough to eclipse a significant fraction of the Sun, Phobos passed in less than a minute.\n NASA’s Perseverance rover captured Phobos passing in front of the Sun from the surface of Mars.ASU/MSSS/SSI/JPL-Caltech/NASA\nThe tiny moon, with its murky origins, is an eni",
    "content": "Last August, looking up from the edge of an ancient river delta on Mars, the Perseverance rover’s electronic eye spied an oblong shadow crossing the distant, glowing Sun. Phobos, the Martian moon named for the Greek god of fear and panic, was transiting the solar disk. Too small to darken the pale, dust-tinged sky, but orbiting close enough to eclipse a significant fraction of the Sun, Phobos passed in less than a minute.\n NASA’s Perseverance rover captured Phobos passing in front of the Sun from the surface of Mars.ASU/MSSS/SSI/JPL-Caltech/NASA\nThe tiny moon, with its murky origins, is an enigma, and one whose makeup and history could tell us much about Mars and the wider solar system. And now the international Martian Moons eXploration (MMX) mission, which successfully launched on 20 October, seeks to explore that mystery with an unprecedented series of landings on the unknown surface of Phobos.\nThis mission brings unusual challenges—for example, designing an orbit to study a microgravity moon orbiting a much larger planet. Engineers also had to figure out how to assess and land on this low-gravity pile of loosely assembled dirt and rock, how a rover might rove across it, and how the spacecraft might take samples and return them to Earth.\n“I often say that landing on Phobos is like trying to land a balloon,” says Yasuhiro Kawakatsu, project manager of MMX at the Japan Aerospace Exploration Agency (JAXA). “It’s very difficult to drop a balloon to the ground and prevent it from tilting or bouncing.”\nWhy Phobos Is Such a Strange MoonPhobos is one of two small Martian moons; the other is Deimos, named after the Greek god of dread and terror. Their cosmic origins are unknown, though there are two prevailing theories. One holds that the moons were once asteroids from the belt between Mars and Jupiter, captured by the smaller planet’s gravity. In the other theory, Phobos and Deimos formed when a large celestial body slammed into Mars, sending debris into orbit. Some models suggest the pair are the last survivors from a cluster of satellites.\n The enormous Stickney crater, roughly 9 kilometers across, dominates this view of Phobos taken by NASA’s Mars Reconnaissance Orbiter.University of Arizona/JPL-Caltech/NASA\nScientifically speaking, Phobos is considered a rubble pile, a loosely consolidated aggregate of rock and dust. Far too small to become spherical under its own mass, it’s shaped like a lumpy potato, roughly 27 kilometers in length, with only 1/1,800th of Earth’s gravity. On Phobos, a typical adult would weigh about as much as a tennis ball does on Earth.\nMore than 10 years in the making, MMX launched on Japan’s flagship H3 rocket from Tanegashima spaceport on 20 October local time. It will arrive at Mars in 2027 carrying scientific payloads from several space agencies, including NASA, and a new rover called Idefix developed by the French and German space agencies (CNES and DLR) in collaboration with JAXA.\n Engineers assembled MMX’s modules at Japan’s Tanegashima Space Center before the spacecraft’s October 2026 launch.JAXA\nMMX consists of three modules: a propulsion module to power its journey to Mars and apply the brakes to enter orbit around the red planet; an exploration module carrying the rover, sampling gear, and other scientific instruments; and a return module, attached to the exploration module, that harbors the capsule destined for a high-speed reentry into Earth’s atmosphere. After collecting samples on Phobos, the exploration and return modules will lift off together. The exploration module will then be jettisoned while the return module sets a course back home.\nIf all goes according to plan, MMX will deliver a 10-gram sample to Earth in the second half of 2031. But the mission will face a series of daunting challenges to reach that end point, including navigating complex orbits around Phobos and landing on its surface while Mars periodically blocks communications with Earth.\n The MMX’s modular design includes th",
    "published_at": "2026-11-06T15:00:02+00:00",
-   "fetched_at": "2026-11-09T19:23:56.382547+08:00",
+   "fetched_at": "2026-11-10T06:16:43.386273+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -58602,7 +58602,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 37,
@@ -59625,7 +59625,7 @@
    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. I watched a humanoid robot clean my apartment. It felt like a taste of the future. —Grace Huckins When I saw an X post about a new humanoid-robot cleaning service in&#8230;",
    "content": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology.\n\nI watched a humanoid robot clean my apartment. It felt like a taste of the future.\n\n—Grace Huckins\n\nWhen I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed up for the waitlist. I wanted my apartment to feel like The Jetsons, even if just for an hour.\n\nThe device that arrived at my building belongs to Tau Robotics, a local startup. Its long-term goal is to make autonomous cleaning robots a reality, but the technology isn’t quite there yet. For now, humans pilot the robots remotely, watching them work through onboard cameras.\n\nThere were some unexpected challenges along the way, but also moments that felt like a glimpse of the future.\n\nFind out how well the machine cleaned my home—and how close we are to truly autonomous domestic robots.\n\nA visit to Samsung’s massive new semiconductor hub\n\nGenerative AI models depend on stacks of specialized memory chips. To meet soaring demand, Samsung is building a vast new semiconductor manufacturing campus in Pyeongtaek, South Korea.\n\nI visited the sprawling campus south of Seoul, where three fabs already operate around the clock, a fourth is coming online, and thousands of workers are racing to build a fifth.\n\nStep inside the vast chipmaking complex powering the AI boom.\n\n—Michelle Kim\n\nThis story is from the Impossible edition of our print magazine. Subscribe now to get every issue as soon as it lands.\n\nThe must-reads\n\nI’ve combed the internet to find you today’s most fun/important/scary/fascinating stories about technology.\n\n1 Almost $2.5 trillion has been wiped off tech stocks\nThe Nasdaq suffered its worst day since April 2025 amid fears of an AI slowdown. (CNN)\n+ The Magnificent Seven lost over $1 trillion. (WSJ $)\n+ Tesla and SpaceX lost over $420 billion combined. (CNBC)\n+ Wall Street’s AI sell-off has spread to Asia and Europe. (WP $)\n+ The AI stock bubble may finally be bursting. (FT $)\n+ What even is the AI bubble? (MIT Technology Review)\n\n2 Emboldened Democrats are lining up to rein in Big Tech\nThey’re preparing to haul tech CEOs before Congress. (Verge)\n+ Bernie Sanders wants a national data center moratorium. (Quartz)\n+ Yassamin Ansari plans to pause advanced AI development. (CNBC)\n+ The backlash could delay Anthropic’s IPO. (Reuters $)\n+ No one wants a data center in their backyard. (MIT Technology Review)\n\n3 The US has warned of an “ongoing cyber threat” to fridges\nA spate of hacks has hit commercial freezers. (Reuters $)\n+ Russia has denied claims it’s behind the attacks. (Politico)\n\n4 AI is helping Anthropic’s models improve nearly twice as fast\nResearchers say Claude is speeding up its successors.(Information $)\n+ But recursive self-improvement will take time. (MIT Technology Review)\n\n5 Scientists have new evidence of active volcanoes on Mars\nThey may boost chances of finding life on the planet. (BBC)\n\n6 Covid vaccines’ economic benefits may be double what we thought\nNew analysis places their value at up to $64 trillion. (New Scientist $)\n\n7 The Great Pacific Garbage Patch is changing the ocean’s color\nThe infamous debris has brightened the water. (Scientific American)\n\n8 NASA has unveiled a mysterious new experimental aircraft\nThe X-70 is expected to take flight within two years. (Ars Technica)\n\n9 Elon Musk has signaled the end for the Cybertruck\nTesla is winding down production in Texas next year. (FT $)\n+ It was one of last year’s biggest tech flops. (MIT Technology Review)\n\n10 Three-hour movies have sent viewers rushing to a pee break app\n7,000 RunPee users signed up for You Can See Everything. (WSJ $)\n\nQuote of the day\n\n&#8220;The steamroller showed up today.&#8221;\n\n—Jim Carroll, a senior wealth adviser at Ballast Rock Private Wealth, tells Reuters how investors feel as the AI trade unravels and $2.5 trillion is wiped off tech stocks.\n\nOne more thing\n\nEMILY NAJERA\n\nHow a c",
    "published_at": "2026-11-06T13:10:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.553271+08:00",
+   "fetched_at": "2026-11-10T06:16:44.593254+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -59646,7 +59646,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 37,
@@ -61166,7 +61166,7 @@
    "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
    "content": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
    "published_at": "2026-11-06T08:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040051+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651805+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -61442,7 +61442,7 @@
    "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
    "content": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
    "published_at": "2026-11-06T00:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:57.040087+08:00",
+   "fetched_at": "2026-11-10T06:16:43.651826+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -61497,7 +61497,7 @@
    "summary": "Now in their third year, the IEEE TryEngineering educator sessions continue to empower preuniversity teachers with specialized professional development programs on engineering topics and classroom-tested lessons.\nThis year’s sessions, held across the United States, have focused on educating teachers about artificial intelligence and semiconductor technology. One session was held in Egypt.\nIn all, 54 educators learned about the engineering design process this year. They received an overview of TryEngineering resources including the Making of a Microchip and Train Your Tree lesson plans.\nWorksho",
    "content": "Now in their third year, the IEEE TryEngineering educator sessions continue to empower preuniversity teachers with specialized professional development programs on engineering topics and classroom-tested lessons.\nThis year’s sessions, held across the United States, have focused on educating teachers about artificial intelligence and semiconductor technology. One session was held in Egypt.\nIn all, 54 educators learned about the engineering design process this year. They received an overview of TryEngineering resources including the Making of a Microchip and Train Your Tree lesson plans.\nWorkshops are scheduled this year in Greece and Guatemala.\nThe TryEngineering program is administered by IEEE Educational Activities. \n These teachers and guest speakers attended the two-day session held at the Florida Semiconductor Institute and SkyWater Technology chip manufacturing facility.IEEE Educational Activities\nA network of host universitiesCentral to the educator session program’s success is its university network. Host campuses welcome teachers into their facilities, where faculty provide background information about some of the technologies being taught, as well as possible engineering career paths and job opportunities for students.\nThis year’s sessions involved the educators in hands-on projects. Facilitators at each location were selected based on their experience in engineering education, and they worked with the TryEngineering staff on their presentations.\nGEMS International School \nSixteen teachers from nine schools participated in the session, held in Cairo. It was facilitated by Marwa Soudi, an IEEE member, and Senior Member Stamatis Dragoumanos. Both are past chairs of the IEEE preuniversity coordinating committee. GEMS provided outstanding STEM facilities for teachers, Saudi and Dragoumanos said. Participants received an overview of the Working With Wind Energy and Tall Tower Challenge lesson plans.\nAnother educator session is scheduled for later this year.\nUniversity of Florida\nEducators from across the state gathered at the university’s Florida Semiconductor Institute, headquartered in Gainesville, and FSI’s NeoCity high-tech manufacturing campus near Orlando. The session was hosted by Roseanne Perez, an FSI workforce development program specialist, and Sophia Watson, FSI’s assistant director of workforce development. The two-day experience featured an inside look at microelectronics through a guided tour of a SkyWater Technology chip manufacturing facility.\nEngineering instructor Mary Acken facilitated hands-on lesson demonstrations for the 15 attending teachers.\nReflecting on the workshop’s impact, one participant said the SkyWater tour was excellent, the instructors were great, and the teachers enjoyed learning from like-minded educators.\nArizona State University\nMichael Kozicki, an IEEE member, and Stefan Myhajlenko from the university’s engineering school welcomed 11 Arizona teachers to the Tempe campus.\nThe session was facilitated by Janet Hartkopf, an Arizona school leader and a former TryEngineering educator session participant. Hartkopf highlighted collaborative learning, the need for diverse perspectives in engineering education, and career paths.\nThe teachers received instruction on how to implement the hands-on lessons in their classrooms, and they toured the university’s NanoFab facility to observe microelectronics research.\n“This training was amazing!” said a participant who leads an elementary after-school STEM club. “I loved the hands-on lessons and e-books, which I will definitely be using with my students. I am excited to explore all the resources on the TryEngineering website. The experts from ASU were great.”\nUniversity of Minnesota\nSixteen STEM educators attended this session, held at the university’s International Institute for Biosensing in Minneapolis. Its director, Patricia Khashayar, an IEEE member, introduced participants to the capabilities of the university’s Supercomputing Institute and Nano",
    "published_at": "2026-11-05T19:00:02+00:00",
-   "fetched_at": "2026-11-09T19:23:56.382826+08:00",
+   "fetched_at": "2026-11-10T06:16:43.386561+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -64847,7 +64847,7 @@
    "summary": "Buoyant has released Kinference, an Apache 2.0 inference control plane for vLLM on Kubernetes. It adds declarative routing policies, KV-cache-aware load balancing and per-tenant metrics, and cut median TTFT 95% in Buoyant’s own benchmark.\n\nThe post Buoyant Releases Kinference: An Open Source Inference Control Plane for Kubernetes and vLLM appeared first on MarkTechPost.",
    "content": "Buoyant, the company behind Linkerd, has released Kinference, an open source project for building inference platforms on Kubernetes. Kinference is an inference control plane for Kubernetes and vLLM. It sits in front of a fleet of vLLM workers and decides where each request goes. It applies routing policies, token rate limits, KV-cache-aware load balancing and per-tenant metrics in one layer. For dev teams serving many open-weight models to many internal clients, it targets the layer above the model server. The project is Apache 2.0 licensed on GitHub. The current release is v0.1.0-alpha.7.\n\nTL;DR\n\nSize: v0.1.0-alpha.7, written in Rust, Apache 2.0, configured through 5 Kubernetes CRDs.\n\nRuns on: any GPU-enabled Kubernetes cluster running vLLM. Buoyant&#8217;s benchmark used 3 L40S GPUs per pool.\n\nPerformance: large gains on prefix-heavy traffic versus plain Kubernetes Service routing (self-reported).\n\nBest: median TTFT fell from 6.88 s to 0.31 s (95%) on a shared-prefix workload.\n\nWorst: no median TTFT gain on prompts without shared prefixes (6.92 s vs 6.83 s).\n\nWhat is Kinference?\n\nKinference is a policy-driven control plane that turns Kubernetes plus vLLM into a multi-tenant inference platform. Buoyant&#8217;s FAQ puts it simply: vLLM is the data plane and Kinference is the control plane.\n\nHow does Kinference work?\n\nThe system has 2 parts: a traffic gateway and an inference handler. The GitHub README states that the handler exposes a gRPC interface. It takes a request and returns the chosen endpoint plus a possibly mutated body. It pairs with a proxy such as the Buoyant Gateway.\n\nKinference watches vLLM KV-cache events and engine metrics. It currently uses NVIDIA&#8217;s dynamo-kv-router crate to process cache events. Configuration lives in 5 CRDs: GatewayBackend, InferencePolicy, InferencePool, InferenceProvider and InferenceWorkerSet.\n\nWhat are inference policies?\n\nInference policies are declarative rules for how each request is routed or rejected. Rules can match on tenant, requested model, GPU pool state and semantic tags. Example policies on the project site cover 5 patterns:\n\nSimple to cheaper: route low-complexity prompts to a smaller model, unless cache overlap makes the large model faster.\n\nBurst to cloud: skip workers with over 2 queued prompts, then fall back to providers like Bedrock.\n\nPII stays local: remove external providers when a PII tag fires, and fail closed with onEmpty: Reject.\n\nBatch on idle GPUs: send batch requests only to workers under 70% KV-cache usage.\n\nModel aliasing: publish one stable name, such as standard-model, backed by several models.\n\nMost rules end with minimize: PredictedTTFT. Kinference predicts time-to-first-token for each candidate endpoint, using cache overlap and queue length. Policies live in git and can be validated offline with the kinfctl CLI.\n\n \n\nHow fast is Kinference in benchmarks?\n\nBuoyant published a benchmark against plain Kubernetes load balancing. Each arm used 3 vLLM 0.31.0 pods, each on 1 L40S GPU. The model was Qwen3.8-27B-FP8. Load came from GuideLLM 0.8.1. The baseline was a ClusterIP Service, where kube-proxy picks a random pod per connection.\n\nUnloaded latency results (median TTFT):\n\nWorkloadKubernetes ServiceKinferenceChangeControl (no shared prefix)6.92 s6.83 sNo significant differenceShared-prefix6.88 s0.31 sabout -95%Multiturn1.70 s0.59 sabout -65%\n\nMedian end-to-end latency fell 45% on shared-prefix and 32% on multiturn. On control traffic, p95 TTFT still dropped from 21.46 s to 12.33 s. Buoyant attributes this to queue-aware balancing.\n\nThe capacity test measured goodput: requests per minute meeting a TTFT SLO. Peak goodput was 103.0 vs 14.0 req/min on shared-prefix, about 7.4x. On multiturn it was 82.7 vs 23.8, about 3.5x. The Service baseline never met the SLO at any tested concurrency.\n\nThese numbers are self-reported. The baseline is random routing, not another cache-aware router like llm-d or Dynamo. Buoyant also notes its SLOs (8 s and 4 s) suit offlin",
    "published_at": "2026-11-07T08:16:33+00:00",
-   "fetched_at": "2026-11-09T19:23:57.428809+08:00",
+   "fetched_at": "2026-11-10T06:16:44.065462+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -64868,7 +64868,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 32,
@@ -69114,7 +69114,7 @@
    "summary": "Explore a comprehensive coding guide for NVIDIA's Dory 1.0 4B looped language model. Learn how to build the pinned llama.cpp branch, analyze loop-by-loop compute costs, test memory caching, and run paired evaluations.\n\nThe post How to Run NVIDIA Dory 4B with llama.cpp: Loop by Loop Guide appeared first on MarkTechPost.",
    "content": "In this tutorial, we work with Dory 1.0 4B, a small reasoning model from NVIDIA&#8217;s Nemotron Labs whose middle layers form a shared block that can be applied once, twice, three, or four times for every token. Each extra pass, or loop, spends more computation per token without adding a single parameter, so one checkpoint can run at four different compute budgets with no retraining. We build the llama.cpp branch that NVIDIA&#8217;s model card pins, download the 3.7 GB GGUF, and read the architecture straight from the file to predict what each loop should cost in parameters and cache memory. We then check those predictions against the running server, measure decode speed at every loop count, test whether the cheaper last-loop cache changes the model&#8217;s predictions, and run a paired GSM8K evaluation to see how accuracy, answer length, and time per solved question move as the loops increase.\n\nCopy CodeCopiedUse a different Browserimport os\nimport re\nimport sys\nimport json\nimport time\nimport math\nimport random\nimport signal\nimport shutil\nimport hashlib\nimport platform\nimport statistics\nimport traceback\nimport subprocess\nimport collections\nimport urllib.request\nfrom pathlib import Path\n \nRESULTS = {} # step -> one-line result, for the summary table\nCLAIMS = [] # (step, claim, held)\nCURRENT = [\"1\"]\n \n \ndef banner(title):\n print(\"\\n\" + \"=\" * 78)\n print(title)\n print(\"=\" * 78)\n \n \ndef section(name):\n def wrap(fn):\n def run(*a, **kw):\n CURRENT[0] = name.split(\".\")[0]\n banner(name)\n t0 = time.time()\n try:\n out = fn(*a, **kw)\n RESULTS[name] = out if isinstance(out, str) else \"ok\"\n return out\n except Exception as e:\n RESULTS[name] = f\"SKIPPED / FAILED -> {type(e).__name__}: {e}\"\n print(f\"\\n[!] {name} did not complete: {type(e).__name__}: {e}\")\n traceback.print_exc(limit=3)\n return None\n finally:\n print(f\"\\n[{time.time() - t0:.1f} s]\")\n return run\n return wrap\n \n \ndef claim(text, held):\n CLAIMS.append((CURRENT[0], text, bool(held)))\n return held\n \n \nbanner(\"1. Build the pinned Dory llama.cpp fork and record the environment\")\nFORK = \"https://github.com/brianchmielNV/llama.cpp.git\"\nFORK_COMMIT = \"98a74c97ea09ac72f6ceda1559808fc0a2f447ce\" # the commit NVIDIA's model card pins; ggml-org PR #30306 is still a draft\nGGUF_REPO = \"nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF\"\nGGUF_REV = \"df53755cb8741843af8e019e088819fbef17e29b\"\nGGUF_FILE = \"NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf\" # the card's commands call it dory-q5_k_m.gguf\nGGUF_SIZE = 3_673_288_864\nGGUF_SHA256 = \"96080be49ffd67b916018b7bdef8c484762576fb52780e10ab98ac4978a660e0\"\nGSM8K_REV = \"740312add88f781978c0658806c59bc2815b9866\"\nWORK = Path(os.environ.get(\"DORY_WORK\") or (\"/content/dory\" if os.path.isdir(\"/content\") else \"dory_work\")).resolve()\nWORK.mkdir(parents=True, exist_ok=True)\n(WORK / \"logs\").mkdir(exist_ok=True)\nsubprocess.run([sys.executable, \"-m\", \"pip\", \"install\", \"-q\", \"gguf==0.19.0\", \"huggingface_hub\", \"pandas\", \"pyarrow\"], check=True)\n \nSYSTEM = platform.system()\nGPU = \"\"\nif shutil.which(\"nvidia-smi\"):\n q = subprocess.run([\"nvidia-smi\", \"--query-gpu=name,memory.total,compute_cap\", \"--format=csv,noheader\"],\n capture_output=True, text=True)\n GPU = q.stdout.strip().splitlines()[0] if q.returncode == 0 and q.stdout.strip() else \"\"\nBACKEND = \"metal\" if SYSTEM == \"Darwin\" else (\"cuda\" if GPU else \"cpu\")\nSRC = WORK / \"llama.cpp-dory\"\nSERVER_BIN = SRC / \"build\" / \"bin\" / \"llama-server\"\nfree_gb = shutil.disk_usage(WORK).free / 1e9\nprint(f\"{SYSTEM} {platform.machine()}, Python {platform.python_version()}, {os.cpu_count()} CPU cores, \"\n f\"backend {BACKEND}{' (' + GPU + ')' if GPU else ''}, {free_gb:.1f} GB free disk\")\n \nif not SERVER_BIN.exists():\n t0 = time.time()\n if not (SRC / \".git\").exists():\n subprocess.run([\"git\", \"init\", \"-q\", str(SRC)], check=True)\n subprocess.run([\"git\", \"-C\", str(SRC), \"remote\", \"add\", \"origin\", FORK], check=True)\n subprocess.run([\"git\", \"-C\", str(SRC), \"fetch\", \"-q\", \"--depth\", \"1\", \"origin\", FORK_COMMIT], check=True)\n subprocess.run([\"git\", \"-C\", s",
    "published_at": "2026-11-07T19:22:44+00:00",
-   "fetched_at": "2026-11-09T19:23:57.428396+08:00",
+   "fetched_at": "2026-11-10T06:16:44.065054+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -69446,7 +69446,7 @@
    "summary": "美国中期选举民主党大胜，多州新当选州长随即对数据中心开出强硬条件，宣布在新法规出台前全面暂停发放新建许可。这一政策转向直接引爆市场，英伟达、特斯拉、AMD、Micron等科技股在选后遭遇史上单日最大市值蒸发，涉及金额接近4万亿美元。\n\n知名博客All-In Podcast联合主持人、硅谷投资人Chamath Palihapitiya在11月8日播出的节目中披露，真正的“核弹级”变量隐藏在SpaceX与Anthropic的算力供应合同之中——双方均持有&#34;90天相互退出条款&#34;。一旦市场算力供给因各州许可冻结而骤然收紧，SpaceX理论上可以终止合约并以现货价格2至3倍重新定价，届时整个AI产业的力量格局将被彻底改写。\n\n(All-In Podcast节目截图)\n\n超大规模云厂商坐拥存量算力稳居“包租公”地位，而严重依赖外部租借的新云（Neoclouds）与前沿模型公司则面临生死存亡之局。\n\n与此同时，All-In Podcast联合主持人Jason Calacanis、David Sacks和David Friedberg等也在节目中警告，若各州持续设置审批壁垒，价值500亿美元以上的吉瓦级数据中心项目将被迫迁往加拿大、墨西哥、马来西亚乃至中东，美国将从&#34;全球算力出口国&#34;沦为昂贵的&#34;Token进口国&#34;，对科技竞争力和就业的战略冲击不可忽视",
    "content": "美国中期选举民主党大胜，多州新当选州长随即对数据中心开出强硬条件，宣布在新法规出台前全面暂停发放新建许可。这一政策转向直接引爆市场，英伟达、特斯拉、AMD、Micron等科技股在选后遭遇史上单日最大市值蒸发，涉及金额接近4万亿美元。\n\n知名博客All-In Podcast联合主持人、硅谷投资人Chamath Palihapitiya在11月8日播出的节目中披露，真正的“核弹级”变量隐藏在SpaceX与Anthropic的算力供应合同之中——双方均持有&#34;90天相互退出条款&#34;。一旦市场算力供给因各州许可冻结而骤然收紧，SpaceX理论上可以终止合约并以现货价格2至3倍重新定价，届时整个AI产业的力量格局将被彻底改写。\n\n(All-In Podcast节目截图)\n\n超大规模云厂商坐拥存量算力稳居“包租公”地位，而严重依赖外部租借的新云（Neoclouds）与前沿模型公司则面临生死存亡之局。\n\n与此同时，All-In Podcast联合主持人Jason Calacanis、David Sacks和David Friedberg等也在节目中警告，若各州持续设置审批壁垒，价值500亿美元以上的吉瓦级数据中心项目将被迫迁往加拿大、墨西哥、马来西亚乃至中东，美国将从&#34;全球算力出口国&#34;沦为昂贵的&#34;Token进口国&#34;，对科技竞争力和就业的战略冲击不可忽视。\n\n许可冻结：草根民意对“AI寡头”的强力反扑\n选举结果公布后，新当选得克萨斯州长Gina Ino Hosa随即公开表态：在专项立法出台之前，将暂停发放所有新数据中心许可证。据All-In Podcast联合主持人在节目中讨论，多个新当选州的候选人持有类似立场。\n\n这一民意基础并非凭空而来。Chamath在节目中援引一段在X平台广泛流传的视频——SpaceX团队赴亚利桑那州科奇斯县为其6GW数据中心项目做说明会，两名SpaceX员工Riley与Katie当场承诺：项目将使当地电费降低、不消耗水资源、减少房产税20%，并为县域债券提供偿还资金。然而，台下居民的反应是持续的喧嚣与对抗。\n\nChamath指出，这种情绪并非源于对事实的理性判断，而是对“经济鸿沟”的一种图腾式投射。社区居民极度反感的，是科技巨头一边享受地方政府慷慨提供的高额税收减免，一边推高本地电价与水资源消耗。David Sacks亦直言，居民的核心逻辑是：“AI寡头拿着税收优惠发大财，我们却在替他们支付更高的电费。”\n\nDavid Sacks进一步指出，许可冻结的政治动力几乎是刚性的：“在上一次选举中，民主党和共和党都把批准数据中心的政客当作攻击对象。任何一个有政治抱负的人，都没有理由在未来四年里为任何项目盖章。”他的基准判断是：已获全部许可的在建项目大概率能在2027年完工，但尚未获批的新项目将面临极大的不确定性，而到2028年，整个项目管线可能已基本关闭或大幅萎缩。\n\n“包租公”与“租客”：算力格局的生死分化\nChamath将当前算力市场的参与者明确划分为两个截然不同的阵营，并直言双方在新形势下命运迥异。\n\n超大规模云厂商（Hyperscalers）——包括谷歌、Meta、微软、亚马逊和SpaceX——自建电厂、坐拥大量存量算力，属于真正的“包租公”。 新建数据中心许可的收紧，对他们构成的冲击有限，反而带来重要的战略机遇：通过将增量算力转向自有产品，可以有效压制外部竞争对手的成长速度。正如Chamath所言，谷歌近期收购Crusoe数据中心，就是这一逻辑的直接体现——&#34;他们把租户赶走了，把整个资产收入囊中。&#34;\n\n与之相对，新兴云服务商（Neoclouds）和前沿模型公司（如Anthropic、OpenAI）严重依赖外部租借算力，是名副其实的&#34;租客阶级&#34;。 一旦新增供给被各州法规锁死，现货GPU时价将大幅飙升，这些公司要么被迫接受高得多的报价，要么在激烈的模型迭代竞争中因算力不足而逐渐落后。\n\n值得注意的是，Anthropic和OpenAI目前正处于60至90天一个循环的高速模型迭代节奏之中。一旦算力供给收紧，这一节奏将被强制减速，给谷歌Gemini等超大规模厂商旗下模型留出追赶的时间窗口。\n\nSpaceX的“90天核按钮”：一份合同决定AI江湖\n在所有变量之中，Chamath认为最具决定性的，是一份鲜为外界所知的合同条款。\n\n据Chamath披露，SpaceX与Anthropic之间的算力供应协议中，含有“双向90天退出条款”——双方均可提前90天通知对方终止合约。 这一条款在市场平稳时期看似是标准的商业安排，但在算力供给骤然收紧的背景下，却演变成一枚随时可引爆的“核弹”。\n\nChamath的推演逻辑如下：\n\n若各州许可冻结导致市场可用算力大幅减少，现货算力价格将急剧攀升。SpaceX届时有充分的经济动机终止现有合约，以现货市价——大概率是原合约价格的2至3倍——重新定价。Anthropic别无选择，只能吞下这一价格，或面临算力断供的生死危机。\n\n这一动作的连锁反应远不止于此。Chamath指出，它将迫使所有超大规模云厂商重新审视自身的算力分配策略——究竟是继续按现价租给外部客户，还是全部留用于自家模型？同时，它将逼迫Neoclouds动用全部融资储备，在价格高点抢购一切可用算力，以免被彻底挤出市场。\n\n“我认为所有的博弈论，就浓缩在这一笔交易里。如果Elon决定撕毁这份合同，后果将是整个AI产业格局的彻底洗牌。”Chamath如此总结。\n\n算力出海：美国面临从“出口国”变“进口国”的战略风险\n节目中，Jason Calacanis和David Sacks均对数据中心外迁的前景发出警告。\n\n核心逻辑是：数据中心不必非在美国境内不可。500亿美元量级、吉瓦级别的超大型数据中心，完全可以落地加拿大、墨西哥、马来西亚、新加坡，战争结束后甚至可以落地中东。谷歌已在马来西亚布局大型数据中心。凭借现有的海底光缆、CDN技术和Starlink网络，算力跨境交付的延迟和效率已不再是重大障碍。\n\nDavid Sacks明确指出，如果美国不建这些数据中心，美国将为进口“Token”付出高昂代价。Jason Calacanis则补充了更直接的本土代价：数以十万计的年薪30至40万美元的数据中心建设岗位将随之流失，原本归属美国地方政府的税收将流向马来西亚等地。\n\n&#34;这些州长将在全球化中上一堂非常沉重的课。&#34;Jason Calacanis说。\n\nDavid Friedberg则提出了更为激进的政策风险——部分极左翼政治人士已在讨论，不仅要限制数据中心建设，还要限制AI模型的开发、部署乃至使用本身。他认为，这背后的深层逻辑是国家权力与AI技术控制权之间的根本博弈：谁掌握了最强的AI能力，谁就掌握了对公民和市场的绝对优势。\n本文来自华尔街见闻，欢迎下载APP查看更多",
    "published_at": "2026-11-08T12:37:06+08:00",
-   "fetched_at": "2026-11-09T19:23:54.932046+08:00",
+   "fetched_at": "2026-11-10T06:16:41.563188+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -69465,29 +69465,22 @@
     "MAC-MP"
    ],
    "track_id": "TEC-COMPUTE",
-   "market_primary": "M-GL",
+   "market_primary": "M-CN",
    "market_related": [],
-   "content_type": "fact",
-   "classify_confidence": 0.9,
+   "content_type": "opinion",
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 70,
-   "importance_level": "important",
-   "event_type": "政策与监管",
-   "score_detail": {
-    "source": 20,
-    "event": 25,
-    "breadth": 20,
-    "density": 0,
-    "timeliness": 5,
-    "focus_boost": false
-   },
+   "importance_score": 0,
+   "importance_level": "opinion",
+   "event_type": "观点评论",
    "ai_summary": "美国中期选举民主党大胜，多州新当选州长随即对数据中心开出强硬条件，宣布在新法规出台前全面暂停发放新建许可。",
    "ai_summary_raw": "美国中期选举民主党大胜，多州新当选州长随即对数据中心开出强硬条件，宣布在新法规出台前全面暂停发放新建许可。",
-   "summary_method": "llm",
+   "summary_method": "first_sentence",
    "audit": {
     "pass": true,
-    "issues": []
+    "issues": [],
+    "note": "原文首句，不经模型"
    },
    "week_key": "2026-W45"
   },
@@ -69882,7 +69875,7 @@
    "summary": "Nous Research released Arete-27B, an Apache 2.0 fine-tune of Qwen3.8-27B. On Nous’s 803-prompt eval, propaganda answers fell from 22% to 0.9% while Hermes Bench stayed flat at 65.60%.\n\nThe post Nous Research Releases Arete-27B that Cuts Qwen3.8-27B Propaganda From 22% to 0.9% appeared first on MarkTechPost.",
    "content": "Nous Research has released Arete-27B, a supervised fine-tune of Alibaba&#8217;s Qwen3.8-27B. Arete-27B is a 27B open-weight model that strips Chinese state framing from Qwen&#8217;s answers. On Nous&#8217;s own 803-prompt eval, answers containing propaganda fell from 22% to 0.9%. Developers get Qwen-class agentic skill without state-aligned answers. The weights, eval and training data are all public.\n\nTL;DR\n\nSize: 27B dense parameters (all active). Trained at 64k context. Base Qwen3.8-27B supports 262,144 tokens natively.\n\nRuns on: BF16 weights are 53.81 GB. A community Q4_K_M quant is 17.20 GB, sized for 24 GB consumer GPUs.\n\nPerformance: Capability unchanged on the benchmarks Nous ran; political framing now matches Western models.\n\nBest: Propaganda rate 0.9%, down from 22% for base Qwen3.8-27B.\n\nWorst: Fact score 2.98 of 5; 216 of 803 answers still score 0.\n\nWhat is Arete-27B?\n\nArete-27B is Qwen3.8-27B after supervised fine-tuning only. Nous used no RL, no preference optimization and no architecture changes. The license is Apache 2.0, matching the base model.\n\nNous team states that it saw refusals, deflections and CCP-framed answers on sensitive topics in the base model. It picked Qwen3.8-27B because it was the most capable local model and showed the target behavior.\n\nHow was Arete-27B trained?\n\nThe teacher was Inkling, an open model from Thinking Machines. Nous chose an open teacher to avoid terms-of-use limits on distillation. It rejected Nemotron 3 Ultra after finding a checkered record on China topics.\n\nTraining covered about 52.8 million tokens at 64k context, without sequence packing. The run took 2 epochs and 1,202 steps at batch size 48. It used AdamW, a 1e-5 peak learning rate and tensor parallel 4.\n\nAll language-model weights were trained. The vision encoder stayed frozen, since the data is text-only. The multi-token-prediction head was disabled.\n\nThe released arete-data-pairs set holds 34,878 prompts across 7 topics. Each prompt has both an Inkling answer and a Qwen answer. 29,236 accepted teacher answers form the SFT split.\n\nHow does the propaganda eval work?\n\nThe Propaganda_Eval set has 803 prompts across 7 value categories. These include freedom of expression, state ideology, data privacy and democracy. Each prompt carries 2 to 4 required facts from a cited source.\n\nA Grok 4.7 judge grades two things separately:\n\nFact mean (0 to 5): how many required facts the answer states. One opposed fact scores 0.\n\nAny propaganda: share of answers that adopt the state&#8217;s account as their own.\n\nThe judge must quote the exact phrase to flag propaganda. Nous removed every training prompt that overlapped the eval. The eval is MIT licensed and includes grading scripts.\n\n \n\nWhat do the benchmarks show?\n\nOn the model card page, Arete-27B raised fact mean from 2.32 to 2.98. Propaganda fell from 22% to 0.9%. Answers scoring 0 dropped from 359 to 216 of 803.\n\nThe biggest change came in freedom of expression. Fact score rose from 0.89 to 2.44, and propaganda fell from 60% to 1%.\n\nCapability held on Nous&#8217;s tests. Hermes Bench moved from 65.77% to 65.60%, which Nous calls noise. Terminal-Bench-2.1 rose from 67% to 70% in Nous&#8217;s harness. Nous does not claim credit for that gain.\n\nHow does Arete-27B compare?\n\nMetricsArete-27BQwen3.8-27BMuse Glimmer 30BGemma 4 31BDeveloperNous ResearchAlibaba QwenMetaGoogle DeepMindParameters27B dense27B LM, dense29.6B incl. vision, dense30.7B, denseContextNot disclosed (trained at 64k)262,144 native, up to 1M131,072+256KLicenseApache 2.0Apache 2.0Apache 2.0Apache 2.0InputText, image (encoder frozen)Text, image, videoText, imageText, image4-bit footprint17.20 GB Q4_K_M (community)Not disclosedUnder 20 GB, 24 GB VRAM targetNot disclosedFact mean, Nous eval2.982.323.022.58Any propaganda, Nous eval0.9%22%0.5%0.5%Terminal-Bench 2.170% (Nous harness)67% Nous harness; 73.0 official51.7 (Meta, terminus2)Not disclosed by GoogleGPQA DiamondNot disclosed89.283.584.3\n\nNote: Arete and Qwen ran at temp",
    "published_at": "2026-11-08T04:45:59+00:00",
-   "fetched_at": "2026-11-09T19:23:57.426689+08:00",
+   "fetched_at": "2026-11-10T06:16:44.063409+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -70609,7 +70602,7 @@
    "summary": "datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages\n\nI was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table.\n\nThis was happening because Datasette pages serve an HTTP link header like this:\n\nlink: <https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv>; rel=\"next\"\n\nThis is bad. A tiny fraction of the visitors to one of those pages will click the \"next\" link, which means for everyone else their browser is fetching",
    "content": "datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages\n\nI was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table.\n\nThis was happening because Datasette pages serve an HTTP link header like this:\n\nlink: <https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv>; rel=\"next\"\n\nThis is bad. A tiny fraction of the visitors to one of those pages will click the \"next\" link, which means for everyone else their browser is fetching unnecessary data and the Datasette server is having to render an entire page that then gets thrown away.\n\nI dug in and learned that Firefox has an issue that has been open for 24 years about this behavior...\n\nAnd one of the early comments on that issue links to my blog post from 2002 complaining about this feature. I hadn't just forgotten that I had written about it, I had forgotten the feature entirely!\n\n Tags: firefox, html, mozilla, datasette",
    "published_at": "2026-11-07T23:57:46+00:00",
-   "fetched_at": "2026-11-09T19:23:58.025512+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768024+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -70630,7 +70623,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.7,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 28,
@@ -70989,7 +70982,7 @@
    "summary": "AI独角兽Anthropic正以前所未有的力度直接介入能源基础设施领域。\n\n据英国《金融时报》11月8日报道，Anthropic于9月下旬斥资34亿美元，从得克萨斯州圣安东尼奥设备供应商OnePWR Solutions购得1.7吉瓦燃气重型发电机组的采购承诺，成为迄今已知AI实验室单笔最大规模的发电设备采购交易。此次交易还涵盖安装发电机所需的工程与施工能力，但Anthropic并未收购OnePWR公司本身，OnePWR员工亦未随之转入Anthropic。\n\n直接采购：绕开中间商抢占稀缺资源\n据报道，知情人士透露，OnePWR此前已向卡特彼勒（Caterpillar）下单订购发电机，但需要融资支持才能完成交易。Anthropic最初计划以客户身份向OnePWR采购，但最终选择直接接手其在卡特彼勒的设备订单。\n\n这一安排使Anthropic得以锁定数年前以较低价格下单、近期及未来两年内即可交付的发电机组，有效规避了当前燃气轮机和发电机需求激增、制造交货期延伸至数年之后的市场困境。\n\nAI开发商通常依赖公用事业商和专业电力公司供电，但随着相关设备日趋稀缺，直接掌控生产资源已成为头部科技公司的共同选择。\n\n马斯克旗下SpaceX此前正是通过直接采购发电设备，快速建立起大规模数据中心；xAI今年早些时候斥资20亿美元购入移动式燃气轮机；谷歌母公司Alphabet则于2025年底收购了能源开发",
    "content": "AI独角兽Anthropic正以前所未有的力度直接介入能源基础设施领域。\n\n据英国《金融时报》11月8日报道，Anthropic于9月下旬斥资34亿美元，从得克萨斯州圣安东尼奥设备供应商OnePWR Solutions购得1.7吉瓦燃气重型发电机组的采购承诺，成为迄今已知AI实验室单笔最大规模的发电设备采购交易。此次交易还涵盖安装发电机所需的工程与施工能力，但Anthropic并未收购OnePWR公司本身，OnePWR员工亦未随之转入Anthropic。\n\n直接采购：绕开中间商抢占稀缺资源\n据报道，知情人士透露，OnePWR此前已向卡特彼勒（Caterpillar）下单订购发电机，但需要融资支持才能完成交易。Anthropic最初计划以客户身份向OnePWR采购，但最终选择直接接手其在卡特彼勒的设备订单。\n\n这一安排使Anthropic得以锁定数年前以较低价格下单、近期及未来两年内即可交付的发电机组，有效规避了当前燃气轮机和发电机需求激增、制造交货期延伸至数年之后的市场困境。\n\nAI开发商通常依赖公用事业商和专业电力公司供电，但随着相关设备日趋稀缺，直接掌控生产资源已成为头部科技公司的共同选择。\n\n马斯克旗下SpaceX此前正是通过直接采购发电设备，快速建立起大规模数据中心；xAI今年早些时候斥资20亿美元购入移动式燃气轮机；谷歌母公司Alphabet则于2025年底收购了能源开发商Intersect。\n\n基础设施布局：近9000亿美元的计算承诺\n此次采购是Anthropic加速掌控自身运营基础设施这一更宏观战略的组成部分。该公司本周披露，其通过2045年的计算承诺规模已接近9000亿美元，此前一直高度依赖合作伙伴在电力、芯片、数据中心及土地方面提供支持，并为锁定产能支付了溢价。\n\n直接购置发电机，将使Anthropic对这些设施所需电力拥有更强的掌控力。Stifel清洁能源与电力业务董事总经理Arash Nazhad表示：\n\n“通过自有部分电力基础设施并具备内部能力，企业相信能够更好地抵御超出自身控制范围的供应中断风险。”\n\n值得注意的是，Anthropic同时也是SpaceX的重要客户，向其租用计算资源的月度付款预计到年底将达到31亿美元。\n\nAnthropic正筹备最早于本月启动IPO，此次上市有望成为史上规模最大的上市交易之一，旨在为其2045年前逾8950亿美元的计算基础设施支出提供资金支持。 Anthropic计划最快于11月9日当周启动IPO正式路演，AI交易暴跌后，该公司的IPO计划正面临严峻考验。潜在投资者对这家AI公司的估值预期大幅下调至1.5万亿美元以下。\n\n然而，这一宏大计划面临障碍。黑石（Blackstone）已向投资者发出警告，Anthropic可能获得垃圾级信用评级，而非此前预期的投资级评级。这一表态为Anthropic的上市之路增添了不确定性。\n本文来自华尔街见闻，欢迎下载APP查看更多",
    "published_at": "2026-11-08T20:33:42+08:00",
-   "fetched_at": "2026-11-09T19:23:54.931288+08:00",
+   "fetched_at": "2026-11-10T06:16:41.562430+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71007,30 +71000,31 @@
     "MAC-GLOBAL",
     "MAC-MP"
    ],
-   "track_id": "TEC-COMPUTE",
+   "track_id": "INV-VC",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 60,
-   "importance_level": "important",
+   "importance_score": 55,
+   "importance_level": "normal",
    "event_type": "并购重组",
    "score_detail": {
     "source": 20,
     "event": 25,
     "breadth": 5,
     "density": 0,
-    "timeliness": 10,
+    "timeliness": 5,
     "focus_boost": false
    },
    "ai_summary": "AI独角兽Anthropic正以前所未有的力度直接介入能源基础设施领域。",
    "ai_summary_raw": "AI独角兽Anthropic正以前所未有的力度直接介入能源基础设施领域。",
-   "summary_method": "llm",
+   "summary_method": "first_sentence",
    "audit": {
     "pass": true,
-    "issues": []
+    "issues": [],
+    "note": "原文首句，不经模型"
    },
    "week_key": "2026-W45"
   },
@@ -71044,7 +71038,7 @@
    "summary": "德意志银行最新研报认为，尽管中期选举后外界对SpaceX的政治风险存在诸多担忧，但该公司整体处于相对稳固的位置——核心业务受国会干预的空间有限，潜在的AI算力监管收紧甚至可能反向推高公司收入。不过，该行同时指出，得克萨斯州新任州长的政策立场、轨道数据中心的商业化进程，以及SpaceX与特斯拉潜在合并的监管走向，仍是需要持续跟踪的多个变量。\n\n据追风交易台消息，德意志银行分析师Edison Yu在11月6日发布的报告中，对中期选举后SpaceX所面临的政治风险进行了系统梳理。报告指出，马斯克为共和党提供了大量财务支持，市场由此产生了对政治报复风险的担忧，但这一担忧在很大程度上被高估。\n\n报告同时提示，得克萨斯州候任州长对数据中心的强硬表态，是目前最值得关注的近期风险点。若得克萨斯州对AI数据中心实施更严格审查，SpaceX在该州的算力扩张节奏可能放缓、成本上升，但预计这一影响在2027年之前对公司整体估算的冲击有限。\n\n报告维持对SpaceX的“买入”评级，目标价250美元，而该股11月5日收盘价为123.62美元。\n\n国会干预空间有限，核心合同难以被替代\n报告指出，SpaceX的火箭发射及卫星通信合同均与联邦行政机构签订，包括NASA、太空军（Space Force）等，国会对这些合同的直接干预渠道极为有限。\n\n更关键的是，在许多业务领域，目前市场上并不存在可行的替代供应商。报告以",
    "content": "德意志银行最新研报认为，尽管中期选举后外界对SpaceX的政治风险存在诸多担忧，但该公司整体处于相对稳固的位置——核心业务受国会干预的空间有限，潜在的AI算力监管收紧甚至可能反向推高公司收入。不过，该行同时指出，得克萨斯州新任州长的政策立场、轨道数据中心的商业化进程，以及SpaceX与特斯拉潜在合并的监管走向，仍是需要持续跟踪的多个变量。\n\n据追风交易台消息，德意志银行分析师Edison Yu在11月6日发布的报告中，对中期选举后SpaceX所面临的政治风险进行了系统梳理。报告指出，马斯克为共和党提供了大量财务支持，市场由此产生了对政治报复风险的担忧，但这一担忧在很大程度上被高估。\n\n报告同时提示，得克萨斯州候任州长对数据中心的强硬表态，是目前最值得关注的近期风险点。若得克萨斯州对AI数据中心实施更严格审查，SpaceX在该州的算力扩张节奏可能放缓、成本上升，但预计这一影响在2027年之前对公司整体估算的冲击有限。\n\n报告维持对SpaceX的“买入”评级，目标价250美元，而该股11月5日收盘价为123.62美元。\n\n国会干预空间有限，核心合同难以被替代\n报告指出，SpaceX的火箭发射及卫星通信合同均与联邦行政机构签订，包括NASA、太空军（Space Force）等，国会对这些合同的直接干预渠道极为有限。\n\n更关键的是，在许多业务领域，目前市场上并不存在可行的替代供应商。报告以&#34;星盾&#34;（Starshield）在乌克兰的应用为例指出，若国会试图削减相关预算，最终损害的可能是美国自身利益，而非SpaceX。\n\n在AI算力领域，报告提及政府与SpaceX之间存在一项传闻中的算力合作协议，对方为美国国防部（DoW）。\n\n此外，报告还指出，若SpaceX与特斯拉寻求合并，国会无权直接阻止，因为反垄断事务由联邦贸易委员会（FTC）和司法部（DOJ）负责，但国会听证程序可能对合并进程造成一定拖延。\n\n得克萨斯州新州长的表态是最直接的近期变量\n德意志银行将得克萨斯州候任州长的政策立场列为目前最具实质性影响的政治风险。该候任州长在接受CNN采访时明确表示：\n\n“得克萨斯州一直是一个亲商业的州，但当我担任州长时，有所改变的是，这必须是一种让得克萨斯人受益的合作关系……数据中心进入了大多数农村社区，却没有任何规则和法律来保护德克萨斯人……我们需要在建立这些保护措施之前，停止在数据中心方面的行动……我不是讨厌数据中心，我讨厌的是它们利用德克萨斯的方式，这种情况在我担任州长时将会停止。”\n\n德意志银行认为，这一表态更可能导致得克萨斯州对数据中心项目进行更严格的审查，而非全面禁止。报告预计，SpaceX 2027年的绝大多数算力将部署在得克萨斯州以外（规模为8至10吉瓦），因此短期内对公司估算影响不大。但2028年及以后的扩张计划存在不确定性，路易斯安那州等SpaceX正在积极布局的地区或成为替代选项。\n\n在成本层面，德意志银行提示，若德克萨斯州的监管环境趋严，SpaceX在该州新增算力的建设成本可能超过每瓦35美元。\n\n算力供给收紧或反向利好SpaceX收入\n与此同时，德意志银行在报告中提出了一个值得关注的反向逻辑：若得到克萨斯州政策导致美国整体算力扩张明显放缓，SpaceX反而可能从中受益。\n\n报告指出，SpaceX已展现出比竞争对手更快、更低成本的算力建设能力。其与客户签订的新云（neocloud）合同设有90天取消条款，这使公司能够在现货市场价格大幅上涨时灵活捕捉上行空间。\n\n德意志银行认为，若行业整体算力供给受限，SpaceX有能力在未来数年内大幅提高定价，从而推动收入和EBITDA上升，同时资本支出下降。报告将这一情景描述为“奇特的动态”——公司基本面改善，但投资者可能因此给予其较低的“AI估值倍数”。\n\n针对德克萨斯州的政策不确定性，马斯克近期公开表示：“太空中的数据中心现在看起来相当有吸引力。”这一表态令轨道数据中心（ODC）再度进入市场视野。\n\n德意志银行指出，投资者目前对轨道数据中心的商业可行性普遍持怀疑态度。报告认为，星舰（Starship）的快速可复用性，以及太阳能电池板和散热器的大规模国内生产，将是解锁轨道数据中心经济性的关键。德意志银行的基准预测为，到2029年底，轨道数据中心的部署规模可达500兆瓦。\n\n在火箭发射业务层面，德意志银行指出，商业航天发射的许可证审批及公共安全监管属于联邦职责，主要由联邦航空管理局（FAA）负责，德克萨斯州州长无法直接干预。\n\n但报告同时提示，州长可通过土地使用权、州级许可证、激励政策调整，以及未来可能的海滩关闭规则立法修改等手段，对星际基地（Starbase）的扩张制造摩擦，增加扩建难度。\n\n \n\n本文来自华尔街见闻，欢迎下载APP查看更多",
    "published_at": "2026-11-08T20:00:09+08:00",
-   "fetched_at": "2026-11-09T19:23:54.931365+08:00",
+   "fetched_at": "2026-11-10T06:16:41.562494+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71063,7 +71057,7 @@
     "MAC-MP"
    ],
    "track_id": "INV-VIEW",
-   "market_primary": "M-GL",
+   "market_primary": "M-CN",
    "market_related": [],
    "content_type": "opinion",
    "classify_confidence": 0.9,
@@ -71092,7 +71086,7 @@
    "summary": "当地时间周六，美国总统特朗普在其社交媒体平台Truth Social上发文，宣布已向终极格斗冠军赛（UFC）首席执行官达纳·怀特（Dana White）提供白宫新闻发言人一职。\n\n我很高兴地宣布，伟大的达纳·怀特——一位勇猛的格斗者和战士——已被提供美国新闻发言人一职。\n\n他随帖附上六名UFC格斗手的照片，并点名要求怀特带上这些“助手”一同上任。“我们需要这些人来对抗疯狂的左派。达纳将会是一位与众不同的新闻发言人。达纳，请接受这份工作！”白宫通讯主任随即转发了这条帖子。\n\n怀特回避表态，知情人士：已婉拒\n然而，据CNN引述的一位知情人士透露，怀特实际上已拒绝了这一提议。\n\n在周六的一场新闻发布会上，怀特对相关问题避而不答，仅表示计划于周一飞往华盛顿与特朗普会面。\n\n一名白宫助手称，特朗普发帖只是“开玩笑”。\n\n新闻发言人职位为何难填？\n特朗普之所以向怀特抛出这一邀约，背景是白宫新闻发言人一职已陷入持续的人事困境。\n\n此前担任该职一年半的卡罗琳·莱维特（Karoline Claire Leavitt）于今年8月离职，对外称希望多陪伴年幼的孩子，此后加入福克斯新闻担任评论员。\n\n接替她的凯蒂·扎卡里亚（Katie Sharon Zacharia）仅撑过了一次“磕磕绊绊”的新闻发布会，随即遭特朗普解雇，任期仅五天，创下该职位历史最短纪录。\n\n对于特朗普而言，新闻发言人并非一般职位——他本",
    "content": "当地时间周六，美国总统特朗普在其社交媒体平台Truth Social上发文，宣布已向终极格斗冠军赛（UFC）首席执行官达纳·怀特（Dana White）提供白宫新闻发言人一职。\n\n我很高兴地宣布，伟大的达纳·怀特——一位勇猛的格斗者和战士——已被提供美国新闻发言人一职。\n\n他随帖附上六名UFC格斗手的照片，并点名要求怀特带上这些“助手”一同上任。“我们需要这些人来对抗疯狂的左派。达纳将会是一位与众不同的新闻发言人。达纳，请接受这份工作！”白宫通讯主任随即转发了这条帖子。\n\n怀特回避表态，知情人士：已婉拒\n然而，据CNN引述的一位知情人士透露，怀特实际上已拒绝了这一提议。\n\n在周六的一场新闻发布会上，怀特对相关问题避而不答，仅表示计划于周一飞往华盛顿与特朗普会面。\n\n一名白宫助手称，特朗普发帖只是“开玩笑”。\n\n新闻发言人职位为何难填？\n特朗普之所以向怀特抛出这一邀约，背景是白宫新闻发言人一职已陷入持续的人事困境。\n\n此前担任该职一年半的卡罗琳·莱维特（Karoline Claire Leavitt）于今年8月离职，对外称希望多陪伴年幼的孩子，此后加入福克斯新闻担任评论员。\n\n接替她的凯蒂·扎卡里亚（Katie Sharon Zacharia）仅撑过了一次“磕磕绊绊”的新闻发布会，随即遭特朗普解雇，任期仅五天，创下该职位历史最短纪录。\n\n对于特朗普而言，新闻发言人并非一般职位——他本人对此高度关注。尤其是在民主党赢得国会两院控制权、宣布将对其政府展开调查之后，这一职位的重要性愈发凸显。\n\n怀特与特朗普：多年盟友关系\n达纳·怀特与特朗普之间的渊源由来已久。他曾连续三届在共和党全国代表大会上为特朗普站台发言，并帮助共和党在年轻男性选民群体中扩大影响力——这一群体被视为特朗普重返白宫的关键票仓。\n\n今年夏天，特朗普还在白宫草坪上举办了一场UFC赛事，作为美国建国250周年庆典活动的一部分，意在进一步拉拢男性选民。\n\n然而，这些努力并未奏效。在本周二的中期选举中，选民整体向民主党倾斜，帮助民主党赢得了国会参众两院的多数席位。\n\n白宫人事震荡持续\n新闻发言人职位空缺只是白宫近期人事动荡的一个缩影。\n\n周五，特朗普解雇了长期担任幕僚长的苏西·怀尔斯（Susie Wiles），由强硬派核心幕僚斯蒂芬·米勒（Stephen Miller）接任，后者将于周一正式上任。\n\n“我可能会做一些人事调整，”特朗普周五在接受CBS新闻采访时说。\n本文来自华尔街见闻，欢迎下载APP查看更多",
    "published_at": "2026-11-08T18:45:38+08:00",
-   "fetched_at": "2026-11-09T19:23:54.931411+08:00",
+   "fetched_at": "2026-11-10T06:16:41.562555+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71148,7 +71142,7 @@
    "summary": "科技股本周遭遇抛售，高盛最新警告称，AI债务的激增，信用市场的压力正在悄然积聚。\n\n在2026美国国会中选中，民主党在参众两院及多个州长选举中全面胜出，大量当选候选人承诺限制数据中心建设、加强行业监管，市场由此担忧人工智能基础设施投资将受到政策压制。周四（11月5日）标普500指数单日重挫4.4%，纳斯达克100指数暴跌6.4%，市值蒸发逾3万亿美元，创下新冠疫情以来科技股最惨烈的单日跌幅。\n\n然而，股市的剧震或许只是序章——高盛信贷策略师Amanda Lynam在最新报告中警告，AI债务供给正以远超任何人预期的速度涌入市场，信用利差在未来数周内的风险“明确偏向进一步走阔”。\n\n报告称，在科技股暴跌之后，信用市场的压力正在悄然积聚：截至11月4日收盘，美元投资级信用利差已收窄至距3月高点仅4个基点，高收益债利差距3月高点仅11个基点——而这还是在周四股市暴跌之前的数据。\n\n就在选举结果出炉前的短短一周内，Alphabet、亚马逊、微软、Meta和甲骨文五大超大规模云计算商（Hyperscaler）合计完成了五笔债券发行，总规模高达670亿美元，将年内累计发债规模推至2960亿美元。这一数字已超越高盛对2026年全年的预测上限——250亿美元。换言之，高盛的预测模型每48小时就被现实击穿一次。\n\n670亿美元一周，全年预测提前报废\n高盛的预测失效速度令人咋舌。据Amanda Lyna",
    "content": "科技股本周遭遇抛售，高盛最新警告称，AI债务的激增，信用市场的压力正在悄然积聚。\n\n在2026美国国会中选中，民主党在参众两院及多个州长选举中全面胜出，大量当选候选人承诺限制数据中心建设、加强行业监管，市场由此担忧人工智能基础设施投资将受到政策压制。周四（11月5日）标普500指数单日重挫4.4%，纳斯达克100指数暴跌6.4%，市值蒸发逾3万亿美元，创下新冠疫情以来科技股最惨烈的单日跌幅。\n\n然而，股市的剧震或许只是序章——高盛信贷策略师Amanda Lynam在最新报告中警告，AI债务供给正以远超任何人预期的速度涌入市场，信用利差在未来数周内的风险“明确偏向进一步走阔”。\n\n报告称，在科技股暴跌之后，信用市场的压力正在悄然积聚：截至11月4日收盘，美元投资级信用利差已收窄至距3月高点仅4个基点，高收益债利差距3月高点仅11个基点——而这还是在周四股市暴跌之前的数据。\n\n就在选举结果出炉前的短短一周内，Alphabet、亚马逊、微软、Meta和甲骨文五大超大规模云计算商（Hyperscaler）合计完成了五笔债券发行，总规模高达670亿美元，将年内累计发债规模推至2960亿美元。这一数字已超越高盛对2026年全年的预测上限——250亿美元。换言之，高盛的预测模型每48小时就被现实击穿一次。\n\n670亿美元一周，全年预测提前报废\n高盛的预测失效速度令人咋舌。据Amanda Lynam周二发布的报告，截至10月29日以来，五大超大规模云计算商已完成三笔合计417亿美元的债券交易，年内累计发债规模达2710亿美元。仅仅两天后，又有两笔交易落地，总规模再增250亿美元——相当于高盛每48小时就被“打脸”一次。\n\n单笔交易的体量同样震撼市场。微软完成了自2017年以来首笔美元债券发行，规模逾250亿美元，一举打破了高盛此前“微软至少在本季度不需要举债”的判断，该判断在不到一天内即告作废。甲骨文则在宣布融资计划仅五天后，于单个上午便耗尽了其原定四年的融资“上限”。\n\n高盛对这一超预期现象给出了两点解释：其一，五大超大规模云计算商在2026年三季度整体出现自由现金流为负的情况，资本支出已超过经营性现金流入；其二，部分发行属于对原定2027年融资计划的“提前锁定”。用高盛的话说，“借款人深知发行窗口未必会一直敞开”。\n\n年内发债规模已相当于超大规模云计算商2026年资本支出的36%，高于高盛最初假设的33%债务融资比例。展望2027年，高盛预计超大规模云计算商直接发债规模将达4400亿美元，叠加投资级与高收益项目融资约3000亿美元，AI相关债务供给管道总规模将逼近7400亿美元——这还不包括任何新兴云计算商、芯片制造商或公用事业公司。\n\n利差承压，信用市场“饱和”警报拉响\n高盛明确表示，在现在至12月初之间，信用利差风险“明确偏向进一步走阔”。在美元市场，高盛预计利差将小幅超越3月高点（投资级93个基点，高收益335个基点）；在欧元市场，则将2025年4月水平视为近期下行情景的参照（投资级128个基点，高收益446个基点）。\n\n高盛的年末目标隐含利差较当前水平略有收窄，但Lynam在报告中坦承，这主要反映的是12月供给枯竭时的季节性收紧规律，“而供给技术面今年尤为关键”。\n\n从超额回报来看，今年美元投资级债券相对国债的超额回报仅为0.1%，高收益债为0.0%，欧元高收益债甚至为-1.0%。十个月的创纪录供给之后，信用投资者几乎颗粒无收。 这或许也解释了为何高盛近期悄然放弃了对投资级债券相对高收益债的偏好，转而青睐BBB级相对A级和AA级的配置。\n\n大额交易的定价压力同样不容忽视。今年以来，美元投资级市场已出现27笔规模在100亿美元以上的交易，合计规模达5010亿美元，约为去年同类交易规模的2.5倍。其中14笔、占总金额约66%（约3300亿美元）与AI相关。AI相关交易的新发溢价（new issue concession）在11月迄今平均约为18个基点，远高于非AI交易的不足7个基点，也显著高于2025年初以来AI交易约8个基点的均值。换言之，全球信用评级最高的借款人正在支付接近垃圾债水平的溢价来完成发行，而每一笔溢价都会将二级市场曲线进一步推宽。\n\n选举冲击：数据中心暂停令与私募信贷的最后防线\n在政策层面，高盛经济学家认为，本次选举结果不太可能从联邦层面改变数据中心及AI监管框架——相关立法仍需两党参议院支持并须通过否决关。近期风险主要来自地方层面：民主党在州及地方选举中的胜利，可能在短期内引发数据中心建设暂停令，潜在影响约45%的美国规划数据中心产能，仅得克萨斯州一地便占其中25%。高盛经济学家预计，这些暂停令将是短暂的，长期来看相关问题有望淡出。\n\n然而信用市场并不打算等待结果揭晓。Lynam表示，高收益债一级市场近期可能处于“价格发现阶段”，市场将高度关注项目融资交易的结构设计，“近期价格走势已充分说明了购电方（offtaker）质量的重要性”。\n\n当银团贷款市场出现拥堵时，高盛将私募资本视为备用出口。私募市场目前管理规模达17万亿美元（不含二级市场及母基金），拥有4.6万亿美元的待投资金，自2025年初以来已完成逾2250亿美元的数据中心融资（不含GPU及芯片抵押交易）。但高盛也承认，私募信贷选择在自身违约率刚刚创下历史新高的年份成为AI融资的&#34;最后贷款人&#34;，时机颇为微妙。\n\n货币化时钟与饱和时钟的赛跑\n高盛的分析框架最终归结为两个变量的赛跑：AI货币化加速意味着更少的债务；货币化延迟与采购承诺增长则意味着更多的债务——“取决于市场条件”。\n\n前者最快也是2028年的故事，后者则每48小时就在推进：2960亿美元的超大规模云计算商债券已经落地，全球AI相关债务总量达6870亿美元，明年还有4400亿美元的超大规模云计算商直接发行加上3000亿美元的项目融资在等待，更有数万亿美元的表外承诺尚未进入债务统计。\n\n高盛的基准情景是，12月惯常的供给淡季将为其年末利差目标提供喘息空间。但正如Lynam所言，在现在至12月初之间，风险天平已明确倒向利差走阔一侧。信用市场曾是AI交易中最后一个仍给予“疑点利益”的资产类别；随着超额回报归零、发行人公开竞相锁定融资窗口，这一“疑点利益”正在快速消耗殆尽。\n\n表外负债：冰山之下的万亿隐忧\n债券发行数据所呈现的，仅是冰山一角。Lynam在周二的报告中，首次对超大规模云计算商的表外义务进行了系统性量化：\n\n1.7万亿美元的经营性和融资性租赁承诺，其中逾75%涉及尚未开始执行的租约，依据租赁会计准则，这些义务目前尚未体现在任何一方的资产负债表上；\n\n1.9万亿美元的其他无条件采购承诺（涵盖第三方云容量、服务器、网络、电力合同及建设项目），其中6850亿美元将于2027年底前到期，且不含或有&#34;兜底&#34;义务。\n\n高盛承认，上述部分承诺已被纳入市场一致预期的资本支出中，但仍将其视为额外的现金使用——每一笔无法由经营性现金流覆盖的承诺，最终都将转化为债券、贷款或股权融资。高盛的表述是：“货币化延迟与采购承诺增长……是推动更多债务发行的关键风险。”\n\n全球顶级评级机构已开始发出警示。穆迪于9月22日指出，超大规模云计算商的整体财务承诺自2023年以来增长了八倍，达到2.8万亿美元。标普于10月15日警告称，AI融资生态系统的“容错空间正在收窄”，或有担保及新型表外融资工具可能进一步扩张并对评级构成压力。10月下旬，标普下调了博通和Meta的评级展望，均援引了表外义务因素。\n\n高盛的结论是：“2028年前货币化的证据至关重要”，否则评级将面临下滑压力。不过高盛也指出，AI相关企业普遍处于投资级评级的较高档位，即便遭遇多档下调，也不太可能被切断市场融资渠道，并将其类比为十年前制药行业评级的缓慢下移。\n\n值得注意的是，Meta在其SEC文件中明确表示，公司&#34;认识到时机至关重要，需要在竞争对手耗尽各类融资渠道之前锁定资本&#34;。当发行人自己都在公开抢跑债券市场的资产负债表，这一资产负债表本身便成为了稀缺资源。\n\n \n本文来自华尔街见闻，欢迎下载APP查看更多",
    "published_at": "2026-11-08T18:20:57+08:00",
-   "fetched_at": "2026-11-09T19:23:54.931516+08:00",
+   "fetched_at": "2026-11-10T06:16:41.562656+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71167,29 +71161,22 @@
     "MAC-MP"
    ],
    "track_id": "INV-FLOW",
-   "market_primary": "M-GL",
+   "market_primary": "M-CN",
    "market_related": [],
-   "content_type": "fact",
+   "content_type": "opinion",
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 70,
-   "importance_level": "important",
-   "event_type": "业绩与风险",
-   "score_detail": {
-    "source": 20,
-    "event": 25,
-    "breadth": 20,
-    "density": 0,
-    "timeliness": 5,
-    "focus_boost": false
-   },
+   "importance_score": 0,
+   "importance_level": "opinion",
+   "event_type": "观点评论",
    "ai_summary": "科技股本周遭遇抛售，高盛最新警告称，AI债务的激增，信用市场的压力正在悄然积聚。",
    "ai_summary_raw": "科技股本周遭遇抛售，高盛最新警告称，AI债务的激增，信用市场的压力正在悄然积聚。",
-   "summary_method": "llm",
+   "summary_method": "first_sentence",
    "audit": {
     "pass": true,
-    "issues": []
+    "issues": [],
+    "note": "原文首句，不经模型"
    },
    "week_key": "2026-W45"
   },
@@ -71203,7 +71190,7 @@
    "summary": "本周美股AI交易重挫、纳斯达克综合指数跌入调整区间之际，ARK Invest掌门人Cathie Wood选择逆势加仓。\n\n11月6日周五，Cathie Wood接受CNBC采访时表示，投资者的普遍担忧非但没有动摇她的信心，反而强化了她对牛市延续的判断。\n\n市场越担忧，我越乐观，因为这往往意味着牛市更具持续性。我不认为这轮牛市已经脱轨。\n\n周五科技股出现小幅反弹，但市场情绪仍然脆弱。Wood认为，当前的波动是技术革命进程中“前进两步、后退一步”的正常节奏，并预计2027年股市仍将延续涨势。Wood建议投资者在反弹时适度获利了结，在下跌时加仓高确信度持仓，ARK已在近期加仓SpaceX等核心头寸。\n\n本轮下跌因何而起\n周四的抛售，直接导火索是市场对民主党主导国会后数据中心建设可能放缓的担忧。\n\n但Wood指出，围绕AI的不安情绪贯穿了今年大部分时间——投资者持续质疑科技公司在AI上的资本支出规模、烧钱速度，以及超大规模云计算企业（hyperscalers）从极高正自由现金流转向负自由现金流的趋势。“这已经让市场不安了相当长一段时间，”她说。\n\n与此同时，宏观层面的压力也在加剧。美伊战争推升全球通胀，美国利率与债券收益率今年以来大幅攀升，企业债收益率随之走高。“这轮调整，部分原因就在于债券市场正在发生的事情，”Wood说。\n\n“忧虑之墙”让牛市更健康\nWood将当前市场弥漫的悲观情绪称为",
    "content": "本周美股AI交易重挫、纳斯达克综合指数跌入调整区间之际，ARK Invest掌门人Cathie Wood选择逆势加仓。\n\n11月6日周五，Cathie Wood接受CNBC采访时表示，投资者的普遍担忧非但没有动摇她的信心，反而强化了她对牛市延续的判断。\n\n市场越担忧，我越乐观，因为这往往意味着牛市更具持续性。我不认为这轮牛市已经脱轨。\n\n周五科技股出现小幅反弹，但市场情绪仍然脆弱。Wood认为，当前的波动是技术革命进程中“前进两步、后退一步”的正常节奏，并预计2027年股市仍将延续涨势。Wood建议投资者在反弹时适度获利了结，在下跌时加仓高确信度持仓，ARK已在近期加仓SpaceX等核心头寸。\n\n本轮下跌因何而起\n周四的抛售，直接导火索是市场对民主党主导国会后数据中心建设可能放缓的担忧。\n\n但Wood指出，围绕AI的不安情绪贯穿了今年大部分时间——投资者持续质疑科技公司在AI上的资本支出规模、烧钱速度，以及超大规模云计算企业（hyperscalers）从极高正自由现金流转向负自由现金流的趋势。“这已经让市场不安了相当长一段时间，”她说。\n\n与此同时，宏观层面的压力也在加剧。美伊战争推升全球通胀，美国利率与债券收益率今年以来大幅攀升，企业债收益率随之走高。“这轮调整，部分原因就在于债券市场正在发生的事情，”Wood说。\n\n“忧虑之墙”让牛市更健康\nWood将当前市场弥漫的悲观情绪称为“忧虑之墙”（wall of worry），但她的解读与多数人截然不同。她以亲身经历作对比：\n\n我经历过科技和电信泡沫，那时候几乎没有人担忧。那是80年代和90年代，是一轮牛市，人们只是想当然地认为会一路涨到天上去。但AI交易的演变方式完全不是这样。\n\n在她看来，正是这堵“忧虑之墙”让当前的牛市更为健康。她还点名了这堵墙的“建造者”：\n\n这堵忧虑之墙，是金融界的高层领导们建起来的——他们在泡沫时期还很年轻。正是行业里的元老们让这堵墙屹立不倒，这并不是坏事。现在，债券投资者也加入进来了。\n\n她进一步解释，债券投资者过去并不需要深入了解科技行业，因为那时候是软件，是低固定成本、病毒式传播的应用，利润率极高。\n\n但AI是高固定成本的，所以债券投资者正在经历一次进入科技世界的旅程，这对他们来说其实是相当陌生的。\n\n利率冲击有限，成长逻辑未变\n面对利率上行的压力，Wood认为AI超大规模云计算企业有其独特的缓冲机制。\n\n如果一家公司认为举债能够加速自身的增长势头，也就是提升增长率，那么利率怎么变对这些公司来说几乎无关紧要。\n\n被问及牛市是否接近尾声时，Wood的回答简短而直接：“我不这么认为。”\n\n“我认为我们正处于一场技术革命的中途，”她说，并列举了无人驾驶出租车和AI智能体等技术的发展作为佐证。\n\nARK的实际操作：加仓高确信度头寸\nWood不只是口头乐观，ARK在近期的波动中已付诸行动。\n\n她透露，ARK在过去一周左右持续向最高确信度的标的集中仓位。\n\n我们的SpaceX头寸已经增加了。如果说地球上的数据中心争议有什么影响，那就是给太空数据中心带来了更大的机遇。\n\n对于普通投资者，她给出了具体的操作框架：\n\n在波动环境中看到反弹时，适度获利了结；看到下跌时，如果你之前已经获利了结，就有了心理底气重新入场。\n\n展望2027年，Wood维持乐观判断：“革命会越来越清晰，我认为市场会表现良好。”\n\n值得一提的是，Wood旗舰产品ARK Innovation ETF在2025年涨幅超过35%，远超标普500指数同期16.4%的涨幅和纳斯达克综合指数20.5%的涨幅。\n本文来自华尔街见闻，欢迎下载APP查看更多",
    "published_at": "2026-11-08T17:35:22+08:00",
-   "fetched_at": "2026-11-09T19:23:54.931577+08:00",
+   "fetched_at": "2026-11-10T06:16:41.562715+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71222,7 +71209,7 @@
     "MAC-MP"
    ],
    "track_id": "INV-VIEW",
-   "market_primary": "M-GL",
+   "market_primary": "M-CN",
    "market_related": [],
    "content_type": "opinion",
    "classify_confidence": 0.9,
@@ -71251,7 +71238,7 @@
    "summary": "特朗普正在为一场更具对抗性的政治战做准备。在白宫新闻秘书一职连续出现人事动荡之后，他将目光投向了一个出人意料的人选——UFC终极格斗冠军赛总裁达纳·怀特（Dana White）。\n\n据新华社报道，美国总统特朗普7日在社交媒体上发文说，他已邀请美国终极格斗冠军赛总裁达纳·怀特担任白宫新闻秘书一职。特朗普说，达纳·怀特将会是一名“与众不同”的新闻秘书。美媒报道说，目前尚不清楚达纳·怀特是否接受了特朗普的邀请。\n\n当地时间周六，美国总统特朗普在其社交媒体平台Truth Social上发文，宣布已向终极格斗冠军赛（UFC）首席执行官达纳·怀特（Dana White）提供白宫新闻发言人一职。\n\n“我很高兴地宣布，伟大的达纳·怀特——一位勇猛的格斗者和战士——已被提供美国新闻发言人一职。”\n\n达纳·怀特本人随后表示，计划于周一与特朗普会面，就这一职位进行讨论，但在UFC新闻发布会上被问及此事时，他仅回应称“我已经有很多工作了”，态度暧昧，目前尚不清楚他是否会接受邀请。\n\n特朗普还随帖附上六名UFC格斗手的照片，并点名要求怀特带上这些“助手”一同上任。“我们需要这些人来对抗疯狂的左派。达纳将会是一位与众不同的新闻发言人。达纳，请接受这份工作！”白宫通讯主任随即转发了这条帖子。\n\n新闻秘书一职接连生变，特朗普急需“能打的人”\n白宫新闻秘书的职位空缺，是此次达纳·怀特被提名的直接背景。\n\n今年8月，",
    "content": "特朗普正在为一场更具对抗性的政治战做准备。在白宫新闻秘书一职连续出现人事动荡之后，他将目光投向了一个出人意料的人选——UFC终极格斗冠军赛总裁达纳·怀特（Dana White）。\n\n据新华社报道，美国总统特朗普7日在社交媒体上发文说，他已邀请美国终极格斗冠军赛总裁达纳·怀特担任白宫新闻秘书一职。特朗普说，达纳·怀特将会是一名“与众不同”的新闻秘书。美媒报道说，目前尚不清楚达纳·怀特是否接受了特朗普的邀请。\n\n当地时间周六，美国总统特朗普在其社交媒体平台Truth Social上发文，宣布已向终极格斗冠军赛（UFC）首席执行官达纳·怀特（Dana White）提供白宫新闻发言人一职。\n\n“我很高兴地宣布，伟大的达纳·怀特——一位勇猛的格斗者和战士——已被提供美国新闻发言人一职。”\n\n达纳·怀特本人随后表示，计划于周一与特朗普会面，就这一职位进行讨论，但在UFC新闻发布会上被问及此事时，他仅回应称“我已经有很多工作了”，态度暧昧，目前尚不清楚他是否会接受邀请。\n\n特朗普还随帖附上六名UFC格斗手的照片，并点名要求怀特带上这些“助手”一同上任。“我们需要这些人来对抗疯狂的左派。达纳将会是一位与众不同的新闻发言人。达纳，请接受这份工作！”白宫通讯主任随即转发了这条帖子。\n\n新闻秘书一职接连生变，特朗普急需“能打的人”\n白宫新闻秘书的职位空缺，是此次达纳·怀特被提名的直接背景。\n\n今年8月，原新闻秘书Karoline Leavitt宣布离职，此后该职位一直悬而未决。10月9日，特朗普宣布任命保守派评论员Katie Zacharia接任，但这一安排几乎在上任之初便宣告失败。据媒体报道，Zacharia仅在职五天便宣告离任，原因是其首次新闻发布会表现遭到广泛批评，加之此前曾以&#34;律师&#34;身份自居，却被披露实际上并未通过律师资格考试。\n\n《华尔街日报》此前曾报道，特朗普私下抱怨，他在电视上缺乏足够多的政治盟友为其发声。这一背景使得他此次转向Dana White的逻辑更加清晰——他需要的不仅是一名新闻官员，更是一位能够在媒体战场上主动出击的&#34;战士&#34;。\n\n特朗普在社交媒体帖子中的措辞耐人寻味。他将达纳·怀特称为“violent Fighter and Warrior”（勇猛的战士），并明确表示需要他带来UFC选手助阵，“尽管其中一些人并非来自我们国家”，以此“抵御疯狂的左翼势力”。\n\n这一表述与特朗普同期的一系列动作共同构成了一个清晰的政治信号：在民主党即将于明年掌控国会、并誓言就腐败指控展开调查的背景下，特朗普正在主动强化其执政团队的对抗性色彩。\n\n与此同时，一位接近达纳·怀特的知情人士透露，特朗普此前已就这一职位向其抛出过橄榄枝，此次并非首次接触。这意味着双方之间的讨论已有一定铺垫，但达纳·怀特最终是否接受，仍有待周一会面后揭晓。\n\n特朗普与UFC的深厚渊源\n特朗普与达纳·怀特及UFC之间的关系，可以追溯至二十余年前。\n\n早在2000年代初期，特朗普旗下位于大西洋城的特朗普泰姬陵赌场便曾承办UFC赛事。彼时UFC因格斗风格过于激烈，在许多场馆遭到拒绝，特朗普的场馆是为数不多愿意接纳这项赛事的地方。这段早期合作奠定了两人关系的基础。\n\n此后，达纳·怀特多次在政治场合公开力挺特朗普。他曾在2016年共和党全国代表大会上为特朗普站台发言，并在2024年共和党全国代表大会上亲自为其介绍出场。特朗普本人也多次以候选人和总统身份出席UFC赛事，这一系列公开亮相被认为帮助他在年轻男性选民群体中积累了支持。\n\n今年6月，特朗普在白宫南草坪举办了一场笼中格斗赛事，作为美国建国250周年庆典活动的一部分。这场活动恰逢特朗普80岁生日，达纳·怀特坐在总统身旁，现场汇聚了军人、政府官员及特朗普盟友，被外界视为一次高调的政治展示。据报道，达纳·怀特此前曾就这一活动创意与特朗普会面，特朗普本人也亲自参与了活动细节的安排。\n本文来自华尔街见闻，欢迎下载APP查看更多",
    "published_at": "2026-11-08T15:20:41+08:00",
-   "fetched_at": "2026-11-09T19:23:54.931637+08:00",
+   "fetched_at": "2026-11-10T06:16:41.562773+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71307,7 +71294,7 @@
    "summary": "加密货币行业在华盛顿享受了两年的政治红利，如今随着民主党横扫国会中期选举，这一局面戛然而止。\n\n据彭博11月7日报道，民主党赢得国会控制权后，加密行业将面临更严苛的立法条件、更密集的国会调查，以及对特朗普家族加密利益的深度审查。行业此前押注共和党换来的政策红利，正面临被重新定价的风险。\n\n这一转折来得并不突然。今年9月，参议院未能推进《清晰法案》（Clarity Act）——这项本可为交易所和数字资产企业确立监管框架的立法，因特朗普的加密利益纠葛、稳定币收益分配争议及投资者保护分歧而陷入僵局。如今选举结果落定，这场争论的底层逻辑已经改变。\n\n两年政治红利，一夜风云变\n过去两年，加密行业在华盛顿获得了大多数行业梦寐以求的政治环境：一位将数字资产列为国家优先议题的总统、为更广泛应用铺路的监管机构，以及一个对行业议程高度同情的共和党国会。\n\n特朗普不仅亲自推出数字资产产品，还多次邀请加密高管进驻白宫，将行业诉求纳入其政治议程。然而，他个人的加密财务利益也让行业在争取更广泛政治支持时屡屡受阻。\n\n纽约大学斯特恩商学院兼职教授、前银行家Austin Campbell直言：“加密领域许多重要人物将自己与特朗普家族深度绑定，这些代价现在很可能要一一兑现。”\n\n民主党接管，监管天平将向哪里倾\n民主党控制国会后，已明确提出要对《清晰法案》进行重大修改，核心诉求包括：更严格的伦理限制、更强的消费者保护",
    "content": "加密货币行业在华盛顿享受了两年的政治红利，如今随着民主党横扫国会中期选举，这一局面戛然而止。\n\n据彭博11月7日报道，民主党赢得国会控制权后，加密行业将面临更严苛的立法条件、更密集的国会调查，以及对特朗普家族加密利益的深度审查。行业此前押注共和党换来的政策红利，正面临被重新定价的风险。\n\n这一转折来得并不突然。今年9月，参议院未能推进《清晰法案》（Clarity Act）——这项本可为交易所和数字资产企业确立监管框架的立法，因特朗普的加密利益纠葛、稳定币收益分配争议及投资者保护分歧而陷入僵局。如今选举结果落定，这场争论的底层逻辑已经改变。\n\n两年政治红利，一夜风云变\n过去两年，加密行业在华盛顿获得了大多数行业梦寐以求的政治环境：一位将数字资产列为国家优先议题的总统、为更广泛应用铺路的监管机构，以及一个对行业议程高度同情的共和党国会。\n\n特朗普不仅亲自推出数字资产产品，还多次邀请加密高管进驻白宫，将行业诉求纳入其政治议程。然而，他个人的加密财务利益也让行业在争取更广泛政治支持时屡屡受阻。\n\n纽约大学斯特恩商学院兼职教授、前银行家Austin Campbell直言：“加密领域许多重要人物将自己与特朗普家族深度绑定，这些代价现在很可能要一一兑现。”\n\n民主党接管，监管天平将向哪里倾\n民主党控制国会后，已明确提出要对《清晰法案》进行重大修改，核心诉求包括：更严格的伦理限制、更强的消费者保护，以及赋予美国证券交易委员会（SEC）更大的数字资产监管权限。\n\n这一方向与加密行业在共和党主导下争取的监管框架存在明显分歧。但Hyperliquid Policy Center首席政策官Adam Minehardt认为，这并非完全没有转机：“行业至少在初期会进入防御姿态，等待适应新的领导层。”\n\n与此同时，民主党在国会的权力格局也在重塑。加密行业的强硬批评者、加利福尼亚州众议员Maxine Waters将在众议院金融服务委员会获得更大影响力；马萨诸塞州民主党参议员Elizabeth Warren预计将出任参议院银行委员会主席。\n\nMinehardt说，“你将看到一个真正有实权的监督议程……我们已经从不同议员办公室收到信号——他们会拉动各种线头，看看通向哪里。”\n\n昔日盟友，今成调查对象\n加密行业的政治豪赌，如今也面临反噬。\n\n2024年，加密游说团体向俄亥俄州参议员竞选投入数百万美元，试图击败民主党人Sherrod Brown。然而选举结果显示，Brown成功击败共和党参议员Jon Husted，重返参议院。据研究机构Capstone分析，Brown有望出任参议院农业委员会要职——该委员会负责监管商品期货交易委员会（CFTC），而CFTC正是加密行业的关键监管机构之一。\n\n民主党控制国会还意味着对特朗普商业利益的调查权大幅增强。国会议员此前已就总统及其家族相关项目寻求信息披露。特朗普方面一贯否认其商业利益与总统职责存在冲突。\n\nHealthy Markets Association首席执行官Tyler Gellasch指出，国会对监管机构拥有多种施压工具，包括预算权——可限制机构在特定政策议题上的资源投入。他表示，共和党此前曾用这一手段多年阻止SEC推行政治支出披露规则，民主党同样可以如法炮制。\n\n既有成果难以逆转，但市场挑战犹存\n尽管政治风向逆转，加密行业此前积累的部分成果并不容易被推翻。联邦稳定币法律的废除需要新立法，SEC和CFTC正在推进的数字资产规则制定工作也可在特朗普任期内继续推进，尽管未来政府可能重新审视相关机构决定。\n\n市场层面的挑战同样不容忽视。比特币价格目前仍远低于历史高点，尽管特朗普执政期间的监管松绑和政治支持曾激发市场对&#34;数字资产黄金时代&#34;的预期。\n\n安全问题也再度敲响警钟。币安近期遭遇黑客攻击，损失达63亿美元，此后通过企业财库资金及两只保险基金的组合方式基本补足了被盗加密货币。\n\n威廉与玛丽学院兼职经济学教授Peter Atwater表示：&#34;加密行业需要让黑客攻击从头条新闻中消失。重复曝光会产生影响。这是否会推动民主党将监管钟摆拨回，更加强调安全性和稳健性，值得关注。&#34;\n\n跨党派路线，或成行业新出路\n从更长远的视角看，加密行业的前景并不完全取决于与特朗普的政治同盟。数字资产已延伸至投资基金、稳定币支付和金融基础设施等领域，涉及众多机构投资者，其利益诉求超越任何一届政府的任期。\n\n行业倡导者已开始主动强调跨党派立场。加密创新委员会首席执行官Ji Kim表示：&#34;数字资产始终是两党共同的议题，我们随时准备与两党新老议员携手合作。&#34;\n\n对于一个寻求跨越政治光谱、拓展用户群体的行业而言，减少党派标签，或许是一条比继续押注单一政治力量更为稳健的路径。\n本文来自华尔街见闻，欢迎下载APP查看更多",
    "published_at": "2026-11-08T15:17:01+08:00",
-   "fetched_at": "2026-11-09T19:23:54.931701+08:00",
+   "fetched_at": "2026-11-10T06:16:41.562834+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71328,27 +71315,20 @@
    "track_id": "INV-POLICY",
    "market_primary": "M-GL",
    "market_related": [],
-   "content_type": "fact",
-   "classify_confidence": 0.9,
+   "content_type": "opinion",
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 70,
-   "importance_level": "important",
-   "event_type": "政策与监管",
-   "score_detail": {
-    "source": 20,
-    "event": 25,
-    "breadth": 20,
-    "density": 0,
-    "timeliness": 5,
-    "focus_boost": false
-   },
+   "importance_score": 0,
+   "importance_level": "opinion",
+   "event_type": "观点评论",
    "ai_summary": "加密货币行业在华盛顿享受了两年的政治红利，如今随着民主党横扫国会中期选举，这一局面戛然而止。",
    "ai_summary_raw": "加密货币行业在华盛顿享受了两年的政治红利，如今随着民主党横扫国会中期选举，这一局面戛然而止。",
-   "summary_method": "llm",
+   "summary_method": "first_sentence",
    "audit": {
     "pass": true,
-    "issues": []
+    "issues": [],
+    "note": "原文首句，不经模型"
    },
    "week_key": "2026-W45"
   },
@@ -71362,7 +71342,7 @@
    "summary": "据新华社报道，俄罗斯总统新闻秘书佩斯科夫11月3日确认，俄美乌三方围绕乌克兰问题的会谈将于11月10日至11日在阿联酋阿布扎比举行。这是迄今为止各方就此次会谈时间和地点最为明确的官方表态。\n\n据媒体报道，会谈前夕，特朗普展开密集外交斡旋。他在白宫单独会见了俄罗斯总统普京特使Kirill Dmitriev，并表示，乌克兰战争“接近解决”，预计即将达成的协议将是一份“大协议”（very big settlement），影响范围可能涵盖整个欧洲。与此同时，特朗普特使Jared Kushner率团赴布鲁塞尔，与乌克兰、北约及欧洲伙伴就安全保障和欧洲安全架构举行磋商，并公开阐述了美方谈判的五大核心目标。\n\n然而，据央视新闻报道，多名俄方政治专家在接受采访时明确表示，此次阿布扎比会谈属于技术性磋商而非实质性谈判，在领土等核心问题上几乎没有谈判空间，预计难以取得重大突破。\n\n特朗普会前密集出牌，称协议将涉及&#34;整个欧洲&#34;\n会谈前夕，特朗普的外交动作异常密集。\n\n据报道，特朗普在白宫与俄罗斯总统普京特使Kirill Dmitriev进行了私下会面，但拒绝透露具体谈话内容。同日，他表示：“我今天已经打了电话，明天还有电话要打。我们周一和周二有一个会议。”\n\n特朗普再度将可能达成的协议描述为一份“非常大的和解”（very big settlement），并强调：“这将是一份大的、美好的协",
    "content": "据新华社报道，俄罗斯总统新闻秘书佩斯科夫11月3日确认，俄美乌三方围绕乌克兰问题的会谈将于11月10日至11日在阿联酋阿布扎比举行。这是迄今为止各方就此次会谈时间和地点最为明确的官方表态。\n\n据媒体报道，会谈前夕，特朗普展开密集外交斡旋。他在白宫单独会见了俄罗斯总统普京特使Kirill Dmitriev，并表示，乌克兰战争“接近解决”，预计即将达成的协议将是一份“大协议”（very big settlement），影响范围可能涵盖整个欧洲。与此同时，特朗普特使Jared Kushner率团赴布鲁塞尔，与乌克兰、北约及欧洲伙伴就安全保障和欧洲安全架构举行磋商，并公开阐述了美方谈判的五大核心目标。\n\n然而，据央视新闻报道，多名俄方政治专家在接受采访时明确表示，此次阿布扎比会谈属于技术性磋商而非实质性谈判，在领土等核心问题上几乎没有谈判空间，预计难以取得重大突破。\n\n特朗普会前密集出牌，称协议将涉及&#34;整个欧洲&#34;\n会谈前夕，特朗普的外交动作异常密集。\n\n据报道，特朗普在白宫与俄罗斯总统普京特使Kirill Dmitriev进行了私下会面，但拒绝透露具体谈话内容。同日，他表示：“我今天已经打了电话，明天还有电话要打。我们周一和周二有一个会议。”\n\n特朗普再度将可能达成的协议描述为一份“非常大的和解”（very big settlement），并强调：“这将是一份大的、美好的协议，所有人都会感到满意。它不仅仅涉及乌克兰……我甚至可以说，它可能涉及整个欧洲。”\n\nDmitriev此前还出席了白宫一场由第一夫人梅拉尼娅·特朗普组织的活动。该活动旨在纪念梅拉尼娅参与斡旋的俄控城市阿列什基（Oleshky）六天停火协议——尽管该协议已于上周日到期。乌克兰议员大卫·阿拉哈米亚（David Arakhamia）及人权专员德米特罗·卢比内茨（Dmytro Lubinets）也出席了活动。双方代表均向梅拉尼娅赠送礼物，并呼吁她继续推动和平努力。梅拉尼娅则向双方代表团转交了分别致普京和泽连斯基的信函。梅拉尼娅在活动上表示：“我们已经选择了人道而非战争，我们必须用带到阿列什基的勇气，通过对无辜者苦难的共同关切来寻求共识。”\n\n值得注意的是，此次俄美官员的白宫会面，是美国中期选举后双方的首次面对面接触。民主党在此次中期选举中夺回国会控制权，预计将推动加大对乌援助并审视特朗普对俄政策。\n\n库什纳布鲁塞尔磋商：五大目标，尊重主权，北约地位不变\n据媒体报道，就在特朗普会见Dmitriev的同一天，特朗普特使库什纳（Jared Kushner）率团赴布鲁塞尔，与乌克兰、北约及欧洲伙伴就安全保障和欧洲安全架构举行磋商。库什纳称此次磋商“富有成效且实质性”。\n\n库什纳随后在社交媒体上发文，系统阐述了美方谈判的五大核心目标：\n\n建立永久性安全磋商机制（permanent security consultations）\n\n建立可靠的危机沟通渠道（reliable crisis communications）\n\n提升军事透明度（greater military transparency）\n\n采取相互降低升级风险的措施（reciprocal measures to reduce escalation risks）\n\n构建欧洲长期安全稳定的持久框架（an enduring framework for long-term European security and stability）\n\n在主权与北约问题上，库什纳措辞明确：\n\n“任何安排都必须充分尊重每个国家的主权、领土完整和独立决策权。每个国家将保留对自身安全和联盟关系的决定权，任何国家都不得对另一国的主权选择拥有否决权。北约将继续作为欧洲集体防御的核心，这一倡议将在现有机构和承诺的基础上推进。”\n\n“大和解”路径：库什纳框架被认为现实，但关键在于美方是否愿意施压\n围绕库什纳公开阐述的五大目标，分析人士指出，这一框架为俄乌冲突后的欧洲安全架构提供了相对现实的基础。\n\n据分析，库什纳强调“充分尊重每个国家的独立决策权”，意味着美方不会明确要求1997年前加入北约的成员国将军队从1997年后加入的成员国撤出，但可能通过其他方式对欧洲施加间接压力。\n\n一种可能的路径是：美国宣布在近期某一时间节点前大幅削减对欧能源出口，以将燃料重新导向国内市场，同时告知欧洲恢复俄罗斯管道进口——美方将在相关管道中持有部分股份，作为“政治保障”。这一安排的前提是欧盟释放其冻结的俄罗斯资产。\n\n对于乌克兰，美方可能以宣布削减欧盟资助的&#34;优先乌克兰需求清单&#34;（PURL）武器出口为筹码，推动乌克兰在语言权利和宗教问题上作出让步——这些正是俄方所谓&#34;去纳粹化&#34;议程的一部分。削减对乌武器供应同时也契合特朗普补充美国自身库存的政策目标。\n\n分析认为，上述手段符合“美国优先”的政策逻辑，且对美方而言具有&#34;合理推诿&#34;的空间。但这一路径能否实现，关键在于特朗普是否真正有意愿对欧洲和乌克兰施加实质性压力。\n\n普京此前已明确表态：只有当乌克兰将军队从顿涅茨克、卢甘斯克、扎波罗热和赫尔松地区撤出，并宣布不加入北约，俄方才会宣布停火并开始谈判。这一立场与乌克兰及欧洲的底线之间，仍存在巨大鸿沟。\n\n俄方专家：这是技术磋商，领土问题没有谈判空间\n尽管特朗普方面释放出强烈的乐观信号，俄方的预期却明显保守。据央视新闻报道，多名俄方政治专家在接受总台记者采访时，将此次阿布扎比会谈定性为&#34;技术性磋商&#34;，而非真正意义上的谈判。\n\n俄罗斯国际事务委员会主席特列宁表示：\n\n“这不是谈判，而是磋商。讨论的是一些重要但原则上属于技术性的问题。也就是说，不谈领土，不谈政权性质，也不谈乌克兰内部涉及语言及俄罗斯文化的规定。”\n\n据央视新闻报道，俄罗斯总统普京已于11月6日在与联邦安全会议成员的会议中，邀请俄方谈判小组成员与会，并专门讨论了即将举行的三方会谈。\n\n谈判背景：多轮磋商均未突破核心分歧\n此次阿布扎比会谈并非首次尝试。据央视新闻梳理，自2022年俄乌冲突爆发以来，双方已经历多轮谈判，但核心分歧始终未能弥合。\n\n2022年3月，俄乌双方在土耳其伊斯坦布尔举行第五轮谈判，一度在多个关键问题上接近达成一致——俄方承诺大幅减少在基辅和切尔尼戈夫方向的军事行动，乌方提出在国际安全保障下确立中立地位。然而，谈判于当年4月中断。\n\n2025年3月，美国分别与俄罗斯、乌克兰在沙特利雅得举行穿梭会谈。美方声称各方在黑海航行安全及禁止攻击能源设施问题上达成一致，但三方在停火条件和安全保障等实质性问题上分歧依然明显。\n\n此后，俄乌两国代表团于2025年5月至7月间在土耳其伊斯坦布尔进行了三轮直接谈判，双方未能在停火和首脑会面等核心议题上实现突破，仅同意继续交换战俘及阵亡士兵遗体。\n\n2026年1月至2月，俄美乌三方先后在阿布扎比和日内瓦举行三轮会谈，但因美国和以色列对伊朗发起军事行动而中断，且除交换战俘外几乎未取得实质进展。\n\n2026年10月，谈判出现新动向。美国总统特使Steve Witkoff先后在奥斯陆会见泽连斯基及欧洲国家领导人，并在圣彼得堡与普京会晤。此后，俄方宣布准备于11月中期选举后重启三方会谈，乌克兰方面也表态支持尽快启动。\n本文来自华尔街见闻，欢迎下载APP查看更多",
    "published_at": "2026-11-08T14:17:40+08:00",
-   "fetched_at": "2026-11-09T19:23:54.931803+08:00",
+   "fetched_at": "2026-11-10T06:16:41.562936+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71398,8 +71378,8 @@
     "timeliness": 5,
     "focus_boost": false
    },
-   "ai_summary": "据新华社报道，俄罗斯总统新闻秘书佩斯科夫11月3日确认，俄美乌三方围绕乌克兰问题的会谈将于11月10日至11日在阿联酋阿布扎比举行。",
-   "ai_summary_raw": "据新华社报道，俄罗斯总统新闻秘书佩斯科夫11月3日确认，俄美乌三方围绕乌克兰问题的会谈将于11月10日至11日在阿联酋阿布扎比举行。",
+   "ai_summary": "俄罗斯总统新闻秘书佩斯科夫确认，俄美乌三方围绕乌克兰问题的会谈将于11月10日至11日在阿联酋阿布扎比举行。",
+   "ai_summary_raw": "俄罗斯总统新闻秘书佩斯科夫确认，俄美乌三方围绕乌克兰问题的会谈将于11月10日至11日在阿联酋阿布扎比举行。",
    "summary_method": "llm",
    "audit": {
     "pass": true,
@@ -71417,7 +71397,7 @@
    "summary": "选举夜的结果，比多数人预期的更彻底。\n\n民主党不仅拿下众议院和参议院，还在堪萨斯州（自1932年以来首次翻蓝）、南卡罗来纳州（自1998年以来首次）、得克萨斯州（自1994年以来首次）赢得参议院席位。这个胜利幅度，尤其是参议院的表现，“比预期更为显著”。\n\n市场的反应是直接的。\n\n巴克莱在11月6日的股票市场周报中写道：“历史性的蓝色浪潮加速了‘特朗普交易（Trump交易）’的平仓，监管担忧重创AI板块。”\n\n周三，标普500上涨1.6%，纳斯达克上涨1.4%，市场短暂庆祝了选举结果的确定性。但到了周四，情绪急转直下。标普500单日下跌4.4%，为2025年4月以来最大单日跌幅；纳斯达克100下跌6.4%，创下自2020年3月新冠疫情冲击以来的最大单日跌幅。VIX恐慌指数单日飙升超过11个点，收于28，为3月底以来最高。\n\n巴克莱的描述是：“中期选举通常是市场的‘出清事件’，但这一次，它更像是引发一场暴力轮动的触发器。”\n\n巴克莱认为，AI建设不会被叫停，而是变得“更贵、更慢”——稀缺电力和审批许可正在重塑AI竞争格局，行业竞争可能从“囚徒困境”转向“消耗战”，资金实力更雄厚的企业更有优势。\n\n而大跌之后，AI股票是否已经跌出了抄底机会？巴克莱认为，部分抛售可能超出了实际政策风险所能解释的范围；但杰富瑞对半导体板块的判断更为谨慎，认为估值和行业周期尚不足以支持明确的抄底判断。换言之",
    "content": "选举夜的结果，比多数人预期的更彻底。\n\n民主党不仅拿下众议院和参议院，还在堪萨斯州（自1932年以来首次翻蓝）、南卡罗来纳州（自1998年以来首次）、得克萨斯州（自1994年以来首次）赢得参议院席位。这个胜利幅度，尤其是参议院的表现，“比预期更为显著”。\n\n市场的反应是直接的。\n\n巴克莱在11月6日的股票市场周报中写道：“历史性的蓝色浪潮加速了‘特朗普交易（Trump交易）’的平仓，监管担忧重创AI板块。”\n\n周三，标普500上涨1.6%，纳斯达克上涨1.4%，市场短暂庆祝了选举结果的确定性。但到了周四，情绪急转直下。标普500单日下跌4.4%，为2025年4月以来最大单日跌幅；纳斯达克100下跌6.4%，创下自2020年3月新冠疫情冲击以来的最大单日跌幅。VIX恐慌指数单日飙升超过11个点，收于28，为3月底以来最高。\n\n巴克莱的描述是：“中期选举通常是市场的‘出清事件’，但这一次，它更像是引发一场暴力轮动的触发器。”\n\n巴克莱认为，AI建设不会被叫停，而是变得“更贵、更慢”——稀缺电力和审批许可正在重塑AI竞争格局，行业竞争可能从“囚徒困境”转向“消耗战”，资金实力更雄厚的企业更有优势。\n\n而大跌之后，AI股票是否已经跌出了抄底机会？巴克莱认为，部分抛售可能超出了实际政策风险所能解释的范围；但杰富瑞对半导体板块的判断更为谨慎，认为估值和行业周期尚不足以支持明确的抄底判断。换言之，股价下跌本身还不是调整结束的信号。\n\n与此同时，全球AI交易也开始出现分化：美国数据中心建设面临更多政策不确定性，欧洲因AI敞口相对较低获得相对优势，中国AI自主可控主题则有望获得国内政策和产业需求的进一步支持。\n\nAI为何成为震中\n这场轮动，AI站在了风暴眼的正中央。\n\n问题的直接来源是民主党候选人的竞选纲领。巴克莱指出：“许多民主党候选人将暂停数据中心审批或提高审批门槛作为竞选主张，投资者因此开始计入科技股面临更大监管阻力的风险，同时加深了对AI资本支出周期可能见顶的担忧。”\n\n数字更直观。在全美47项涉及数据中心的地方投票中，选民在44项中选择了限制数据中心运营，措施从分区限制、临时暂停到彻底禁止新建不等。这一结果被汇丰可持续研究主管Nneka Chike-Obi解读为“公众情绪相当清晰的信号”。\n\n得克萨斯州候任州长吉娜·伊诺霍萨（Gina Hinojosa）的表态被市场广泛引用。她承诺暂停新数据中心审批，直到立法机构建立更严格的电力、水资源和社区保护措施。她说：“我不是讨厌数据中心。我讨厌的是它们利用得克萨斯州的方式，而这种情况在我担任州长时会停止。”\n\n得克萨斯州和佐治亚州合计占美国AI数据中心支出的约三分之一。巴克莱信用策略报告指出，到2027年，美国公用事业公司报告的高概率数据中心项目储备中，约80%将位于民主党州长执政的州，而2026年这一比例不到30%。\n\n市场的另一条担忧主线，是AI资本支出周期是否已经见顶。此前两年，市场增长和盈利高度集中在科技、AI和资本支出相关领域，消费者板块明显落后。巴克莱写道，市场正在预期，“近年来这种增长和盈利集中在科技、AI及资本支出相关领域，而消费者板块持续落后的两速经济格局，可能开始逆转”。\n\n抛售过度了吗？\n问题在于，这场抛售是否已经超出了实际政策风险所能解释的范围。\n\n巴克莱的判断是：相对于可能的政策结果，“无差别抛售看起来有些过度”。\n\n原因在于政治僵局。即便民主党控制两院，要通过激进的联邦数据中心立法仍面临总统否决的高门槛。巴克莱公共政策分析师明确表示，投资者应区分“竞选纲领”与“可能的政策结果”，并认为“全国性的数据中心禁令不太可能出现”。\n\n但这并不意味着市场会立刻企稳。\n\n巴克莱指出，“特朗普交易”相关资产的抛售已经演变为一场波动性冲击，可能促使系统性和杠杆型投资者集中卖出，散户投资者也可能跟随。这解释了周四那场“无差别平仓”的性质——它更多是投资者被迫调整仓位，而非企业基本面已经出现实质性恶化。\n\n基本面的数据目前仍在支撑AI。巴克莱写道：“迄今为止，盈利基本面继续支持AI和科技板块，消费者板块每股收益出现明显上行的证据仍然有限。”\n\n但巴克莱也警告，若要形成持续的“市场领涨者向落后者切换”，仍需要“实际政策行动来推动更严格的AI/科技监管和数据中心限制”，而不仅仅是选举结果本身。考虑到市场两端的仓位差距依然极端，“从落后者转向科技和资本支出相关板块的轮动，可能还有进一步空间”。\n\n因此，当前市场需要区分两个问题：一是选举带来的短期情绪冲击是否过度，二是数据中心审批和融资条件的变化是否会影响AI产业的中长期投资回报。前者可能随着仓位调整而缓和，后者则仍需要时间观察。\n\nAI建设：不会停，但会更贵\n对于AI基础设施的长期走向，巴克莱信用策略给出了一个更具结构性的判断。\n\n“更严格的许可审批和公用事业审查，可能给本已面临资金和电力约束的AI建设增加阻力。我们认为，这更可能使项目开发成本上升、建设时间推迟，而不是从根本上破坏投资。”\n\n这背后有几个支撑：首先，大多数监管和决策“在地方而非华盛顿作出”，包括项目许可、电力协议和电价安排；其次，项目可以迁移到政策环境更友好的州；第三，联邦层面仍在推动大型电力用户接入电网。\n\n但摩擦成本是真实的。巴克莱信用报告援引的数据显示，META和甲骨文（Oracle）在近期投资级债券发行中，新发行让利高达30个基点，苹果（Apple）约为10-15个基点。这反映出市场对大型科技公司持续融资需求的关注。\n\n汇丰的可持续研究报告也指出，数据中心相关的“资产搁浅、能源燃料结构、土地使用和网络安全风险”，将日益成为投资者和政府关注的重要因素。亚马逊于2026年10月2日发布社区投资承诺，OpenAI于11月2日推出“电网保护计划”——这些行动本身就说明，行业正在努力争取当地社区和政府的支持，以维持项目建设所需的社会认可。\n\n谁在这场消耗战中占优\n竞争格局的变化，可能比短期股价波动更深远。\n\n巴克莱信用策略报告用了一个直接的比喻：“AI竞赛正在从囚徒困境转向消耗战。更强的资产负债表意味着企业有更多能力承受项目延期，而已经获得电力资源的资产则更具稀缺价值。”\n\n这意味着，在新的环境下，已经通电或接近通电的数据中心资产将获得溢价；超大规模云厂商因资产负债表强健，受到的基本面冲击相对有限；而新兴云服务商（neoclouds）和仍处于规划阶段的数据中心开发商，因为更加依赖审批和电力资源，将承受更大的延期和成本压力。\n\n报告明确指出：“我们预计，监管变化对最大型超大规模云厂商的基本面影响有限，但持续的融资需求仍会对其信用利差形成压力。”\n\n对于德意志银行覆盖的SpaceX，分析师Edison Yu提出了一个反直觉的逻辑：如果美国整体算力增长放缓，SpaceX反而可能提高定价。“SpaceX展示了比竞争对手更快、更便宜地建设的能力。其新兴云服务合同在90天内可取消，因此当现货市场价格显著上涨时，它能够捕捉上行空间。”\n\n杰富瑞：半导体现在抄底还太早\n对于半导体投资者来说，这一周的数据令人目眩。\n\nSOX指数在选举周前四天下跌15%，从6月中旬的峰值累计下跌38%，但年初至今仍上涨27%。全球半导体销售在2026年8月增速达到144.3%，为有记录以来最高，2026年以来累计销售额已超过1万亿美元。\n\n然而，杰富瑞（Jefferies）的分析师Janardan Menon等人给出了明确的判断：“尽管出现了显著回调，我们认为现在抄底可能还为时过早。”\n\n理由有两层。\n\n从周期角度，杰富瑞预计增长率将在10月前后见顶，原因是2025年第四季度存储价格大涨后的基数效应开始显现。从估值角度，“在周期的这个阶段，我们不预期半导体估值倍数会出现持续反弹。尽管短期反弹是可能的，但之后仍可能出现进一步回调。”\n\n不过，杰富瑞也指出，对于很多股票而言，估值已接近周期低点，“在盈利动能转负之前，进一步下行空间可能有限”。\n\n内部分化同样显著。Melexis、Nordic Semiconductor、爱立信等因数据中心敞口较低，相对抗跌；而ams OSRAM、Soitec等当周跌幅更大。\n\n这也意味着，半导体板块的调整不能简单理解为AI需求全面转弱。不同公司的业务结构、终端需求和估值水平存在差异，AI相关芯片与传统消费电子芯片面临的周期环境也并不相同。对于市场而言，后续需要观察的不只是股价是否反弹，还包括订单、存储价格和盈利预期能否继续得到基本面支撑。\n\n欧洲：低AI敞口的意外受益者\n巴克莱在上周就提示了这一逻辑：“对更广泛AI交易的怀疑情绪，可能相对利好欧洲股票，因为它们对这一主题的敞口较低。”\n\n欧洲的相对优势，主要来自其与美国AI交易的关联度较低。当市场开始担忧美国科技公司的资本支出、数据中心审批和融资压力时，欧洲市场受到的直接冲击相对有限。不过，这并不意味着欧洲AI产业本身没有机会，而是其股市整体对美国AI投资周期的依赖程度较低，因而在这轮风格切换中可能获得相对优势。\n\n油价走势是另一个关键变量。巴克莱指出，此前油价飙升推高通胀、收紧货币条件、加剧社会动荡，并在法国、意大利等资产负债表较紧张的国家引发债市抛售。随着民主党胜选降低了美国对伊朗采取军事行动的可能性，油价风险溢价开始回落。“从我们的角度来看，油价长期大幅上涨的尾部风险可能已经降低，这对欧洲是利好，可能缓解法国或意大利债市的部分压力。”\n\n但巴克莱同时提醒：“我们对冲突轻易解决的可能性持怀疑态度，某种程度的再升级也不能排除。”\n\n中国AI：自给自足主题逆风上扬\n在美国AI交易遭遇监管冲击的同时，中国AI的投资逻辑正在发生方向性的分化。\n\n摩根士丹利亚",
    "published_at": "2026-11-08T14:00:34+08:00",
-   "fetched_at": "2026-11-09T19:23:54.931951+08:00",
+   "fetched_at": "2026-11-10T06:16:41.563098+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71436,7 +71416,7 @@
     "MAC-MP"
    ],
    "track_id": "INV-VIEW",
-   "market_primary": "M-GL",
+   "market_primary": "M-CN",
    "market_related": [],
    "content_type": "opinion",
    "classify_confidence": 0.9,
@@ -71737,7 +71717,7 @@
    "summary": "Turing Award winner Richard Sutton reaffirms that raw compute alone isn't enough for intelligence and that fundamentally new learning methods are needed. Ex-OpenAI researcher Tworek agrees, saying blind transformer scaling \"has reward hacked brains of a whole generation of scientists.\" A growing wave of startups is already betting on exactly this gap.\n\nThe article The inventor of the bitter lesson has a bitter lesson for LLM scaling enthusiasts appeared first on The Decoder.",
    "content": "Turing Award winner Richard Sutton reaffirms that raw compute alone isn't enough for intelligence and that fundamentally new learning methods are needed. Ex-OpenAI researcher Tworek agrees, saying blind transformer scaling \"has reward hacked brains of a whole generation of scientists.\" A growing wave of startups is already betting on exactly this gap.\n\nThe article The inventor of the bitter lesson has a bitter lesson for LLM scaling enthusiasts appeared first on The Decoder.",
    "published_at": "2026-11-08T11:44:41+00:00",
-   "fetched_at": "2026-11-09T19:23:58.687127+08:00",
+   "fetched_at": "2026-11-10T06:16:45.623112+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71896,7 +71876,7 @@
    "summary": "Google's Elephant-Goldfish Model plugin makes coding agents draft specs, then runs 5 zero-context review stages before any code.\n\nThe post Google AI Releases Elephant-Goldfish Model Plugin for Spec-First Coding appeared first on MarkTechPost.",
    "content": "Google has open-sourced the Elephant-Goldfish Model (EGM) plugin, a design-and-review layer for AI coding agents. The Elephant-Goldfish Model plugin makes an agent write a specification before it writes code. Fresh subagents with no conversation history then attack that spec. Google says thousands of its engineers use it. It is quite simple: catch wrong assumptions in a Markdown file, not in a pull request.\n\nTL;DR\n\nSize: 7 skills, 9 reviewer personas, 6 brainstorm lenses, 5 review stages. No model weights; your agent supplies the LLM.\n\nRuns on: any harness that can spawn fresh subagents: Antigravity, Claude Code 2.1.271+, Claude Cowork, Codex, ChatGPT. Uses your existing model quota.\n\nPerformance: no accuracy benchmark published. Evidence is adoption and end-to-end harness test runs.\n\nBest: Codex 0.163.0 completed 15 native fresh-context reviewers in order. 2 live tests passed in 573.13s.\n\nWorst: the Claude Cowork run stopped after stages 5 to 7 on a usage limit. Issue #237 reports AGENTS.md leaking into Codex reviewers.\n\nBottom line: best thing, forced independent review before code. Worst thing, heavy token use and unverified isolation on some hosts.\n\nWhat is Google&#8217;s Elephant-Goldfish Model plugin?\n\nEGM is an Apache 2.0 plugin of skills, reviewer personas and document standards. It is not a new language model. The method comes from Dave Rensin&#8217;s essay on elephants and goldfish. The Google Open Source blog frames it as a fix for AI &#8220;slop&#8221; and session context collapse. The README states it is not an officially supported Google product.\n\nHow does the Elephant-Goldfish workflow work?\n\nThe Elephant is a long session holding project context and earlier decisions. It drafts the spec and writes no code. Each Goldfish is a stateless subagent. It reads only the draft and the files it references. You resolve trade-offs and approve the design.\n\nThe core loop has 3 commands:\n\n/egm-brainstorm clarifies the idea, then runs a 6-lens Goldfish swarm. Lenses cover YAGNI, token cost, UX, migration, observability and tech debt. Output: concepts_brief.md.\n\n/egm-draft turns the brief into a design doc under docs/designs/, section by section.\n\n/egm-review runs the Goldfish review.\n\n/egm-drift-report later compares code with the spec. The docs recommend running it weekly.\n\nWhat happens in the 5-stage Goldfish review?\n\nThe review skill runs 5 sequential stages:\n\nInitial Zoom Out: checks the whole document at a high level.\n\nComprehension Test: a Goldfish paraphrases the design. A wrong paraphrase means the doc is ambiguous.\n\nCritic Review: design, structural and style reviewers hunt gaps and edge cases.\n\nIntermediate Zoom Out: rechecks architecture after fixes.\n\nImplementation Readiness: checks file paths, data structures and signatures.\n\nEach stage allows at most 1 re-audit. Findings are ranked Blocker, Major or Nit. If a host has no subagent tool, EGM stops. A same-context review is not a Goldfish review.\n\n \n\nWhich coding agents does EGM support?\n\nLaunch coverage described Antigravity-only support, with more coming. The current harness guide covers Antigravity CLI and App, Claude Code, Claude Cowork, Codex, ChatGPT, omp and Muse. Antigravity CLI, Claude Code and Codex pass automated end-to-end fixtures.\n\nClaude Code needs version 2.1.271 or later. Reviewers there get only Read, Grep and Glob tools. CLAUDE.md files are excluded from their context.\n\nThe test record gives concrete run data:\n\nAntigravity CLI 1.4.5: 16 native reviewers ran, stages in order.\n\nCodex 0.163.0: 15 native reviewers, 2 live tests in 573.13s.\n\nCodex CLI with the v0.1.0 ZIP: full suite passed in 482.30s.\n\nHow does EGM compare with Spec Kit, Kiro and Superpowers?\n\nFeatureGoogle EGMGitHub Spec KitKiro SpecsSuperpowersTypePlugin (skills + personas)Toolkit + Specify CLIFeature of an agentic IDE/CLI/webSkills pluginLicenseApache 2.0MITCommercial (pricing)MITWorkflowBrainstorm, draft, review, drift reportConstitution, specify, plan, tasks, implement, convergeRe",
    "published_at": "2026-11-08T10:46:18+00:00",
-   "fetched_at": "2026-11-09T19:23:57.425575+08:00",
+   "fetched_at": "2026-11-10T06:16:44.062298+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -71951,7 +71931,7 @@
    "summary": "A config-verified comparison of how 10 open MoE models route tokens: total and active parameters, expert counts, top-k, shared experts, gating functions and load-balancing methods.\n\nThe post Which Routing Does Each MoE Model Use? DeepSeek, Qwen, Mixtral, Llama 4, gpt-oss Compared appeared first on MarkTechPost.",
    "content": "Open Mixture-of-Experts (MoE) models share one idea but disagree on almost every routing detail. Expert counts range from 8 to 384. Top-k ranges from 1 to 8. Some models keep an always-on shared expert; others drop it. \n\nTL;DR\n\nSize: 10 models, from Qwen3.6-35B-A3B (35B total, 3B active) to DeepSeek-V4-Pro (1.6T total, 49B active).\n\nRuns on: gpt-oss-120b fits one 80 GB GPU with MXFP4; DeepSeek-V4-Pro and Kimi K2 need multi-GPU expert parallelism.\n\nPerformance: Routed sparsity spans 4x in Mixtral (8 experts, top-2) to 128x in Llama 4 Maverick (128, top-1).\n\nBest: Kimi K2 found sparsity 48 needed 1.69x fewer FLOPs than sparsity 8 at equal validation loss.\n\nWorst: Llama 4 Maverick and gpt-oss do not publish their gating or balancing method in config.json.\n\nBottom line: Best thing: configs make routing fully auditable. Worst thing: names like &#8220;17B active&#8221; hide very different routers.\n\nHow do open MoE models route tokens?\n\nEvery model below uses token-choice routing: each token selects its own experts. They differ on 5 knobs. These are expert count, experts per token, shared experts, the scoring function and the load-balancing method. The table lists each knob per model.\n\nMoE routing comparison table (November 2026)\n\nModelTotal / active paramsRouted expertsTop-kShared expertsGatingLoad balancingMixtral 8x7B47B / 13B820Softmax over top-kAux loss, coef 0.02 (config)gpt-oss-120b117B / 5.1B12840Softmax over selectedNot disclosedQwen3-235B-A22B235B / 22B12880Softmax, top-k normalizedGlobal-batch aux loss, coef 0.001Qwen3.6-35B-A3B35B / 3B25681Not disclosedAux loss, coef 0.001 (config)Llama 4 Maverick400B / 17B12811Not disclosedNot disclosedDeepSeek-V3671B / 37B25681SigmoidAux-loss-free bias (noaux_tc)DeepSeek-V4-Pro1.6T / 49B38461sqrtsoftplusnoaux_tc; hash routing in 3 layersDeepSeek-V4-Flash284B / 13B25661sqrtsoftplusnoaux_tc; hash routing in 3 layersKimi K21.04T / 32B38481Sigmoidnoaux_tc + sequence aux, alpha 0.001GLM-4.5355B / 32B16081SigmoidLoss-free balance routing\n\nSources: each model&#8217;s Hugging Face config.json, model card or technical report, verified November 7, 2026. Configs and cards for Qwen3.6 and Llama 4 omit gating. gpt-oss and Llama 4 omit the balancing method. \n\n \n\nHow does DeepSeek-V3 routing work?\n\nDeepSeek-V3 scores 256 routed experts with a sigmoid, then normalizes the selected scores. A per-expert bias steers the top-8 selection without touching the mixing weights. Experts sit in 8 groups, and the router keeps 4 groups first. Each token reaches at most 4 nodes, according to the technical report. One shared expert runs for every token.\n\nWhat changed in DeepSeek-V4 routing?\n\nDeepSeek-V4 raises Pro to 384 routed experts but lowers top-k from 8 to 6. The score function becomes sqrtsoftplus. The first 3 MoE layers use hash routing, a fixed token-to-expert map. Bias-based noaux_tc balancing stays.\n\nHow many experts does Qwen3 MoE use?\n\nBoth original Qwen3 MoE models use 128 experts and route each token to 8. Qwen3 dropped the shared experts of Qwen2.5-MoE and adopted a global-batch balancing loss. Qwen3.6-35B-A3B changes course: 256 experts, 8 routed plus 1 shared, per its model card.\n\nHow does Llama 4 Maverick routing differ?\n\nLlama 4 Maverick alternates dense and MoE layers. In each MoE layer, a token goes to 1 shared expert and 1 of 128 routed experts. That top-1 design echoes the Switch Transformer. It keeps 17B active parameters despite 400B in total.\n\nHow does gpt-oss route tokens?\n\ngpt-oss-120b uses a linear router over 128 experts and keeps the top 4. Its config lists no shared expert. Its MoE weights ship in MXFP4, which lets the 117B model fit on a single 80 GB GPU.\n\nWhy do Kimi K2 and GLM-4.5 look like DeepSeek-V3?\n\nKimi K2 ships with the DeepseekV3ForCausalLM architecture class and the noaux_tc router. It raises routed experts to 384 at the same top-8. The Kimi K2 report found that higher sparsity lowered loss at fixed active compute. GLM-4.5 chose 160 experts and more layers instead, favorin",
    "published_at": "2026-11-08T10:27:27+00:00",
-   "fetched_at": "2026-11-09T19:23:57.425913+08:00",
+   "fetched_at": "2026-11-10T06:16:44.062651+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -72613,7 +72593,7 @@
    "summary": "MoE routing strategies decide which experts process each token. This guide explains 7 methods, from Mixtral's top-2 softmax to DeepSeek-V4's hash routing, with the models that use each one.\n\nThe post MoE Routing Strategies Explained: Top-K, Expert-Choice, Sigmoid Gating and Dynamic Routing (2026 Guide) appeared first on MarkTechPost.",
    "content": "Every Mixture-of-Experts (MoE) model repeats one decision for every token: which experts should process it. That decision belongs to the router. MoE routing strategies shape quality, load balance and serving cost in every major open model. This guide explains the 7 routing strategies used in production, and the models that use each one.\n\nTL;DR\n\nSize: Routers choose from 8 experts (Mixtral) to 384 (DeepSeek-V4-Pro), activating 1 to 8 per token.\n\nRuns on: Routing cost shows up in multi-GPU expert parallelism, where each choice becomes all-to-all network traffic.\n\nPerformance: Sigmoid scoring with aux-loss-free bias balancing is the dominant 2026 recipe for frontier open MoE models.\n\nBest: Loss-free balancing cut MaxVio from 0.72 to 0.04 at 1B, with lower perplexity.\n\nWorst: Expert choice leaks future tokens in causal models; one test showed a roughly 10% abnormal loss drop.\n\nBottom line: Best thing: bias-based balancing adds no interfering gradients. Worst thing: no router removes the need for serving-time load fixes.\n\nWhat is MoE routing?\n\nMoE routing is the mechanism that sends each token to a small subset of expert networks. A router scores every expert, keeps the top candidates and weights their outputs. Only the selected experts run. Mixtral 8x7B, for example, gives each token access to 47B parameters but uses 13B active parameters.\n\nvideo created by marktechpost.com\n\nThe 7 MoE routing strategies used in production\n\n1. Softmax top-k token choice\n\nEach token scores all experts with a linear layer and keeps the k highest. A softmax over those k scores sets the mixing weights. Mixtral picks 2 of 8 experts. gpt-oss-120b picks 4 of 128. Qwen3-235B-A22B picks 8 of 128. An auxiliary loss usually keeps expert load even.\n\nUsed by: Mixtral, gpt-oss, Qwen3.\n\n2. Top-1 switch routing with a capacity factor\n\nSwitch Transformer showed that routing each token to 1 expert preserves quality and cuts router compute. Each expert gets a fixed buffer: tokens per batch divided by experts, times a capacity factor. Overflow tokens skip the layer through the residual connection. Llama 4 Maverick also sends each token to 1 routed expert, plus a shared expert.\n\nUsed by: Switch Transformer, Llama 4 Maverick (with a shared expert).\n\n3. Shared plus routed experts\n\nDeepSeekMoE splits each layer into always-on shared experts and sparsely routed experts. The shared expert captures common knowledge, so routed experts can specialize. DeepSeek-V3 uses 1 shared and 256 routed experts, activating 8. Kimi K2, GLM-4.5 and Qwen3.6-35B-A3B follow the same pattern. Qwen3 went the other way and removed shared experts.\n\nUsed by: DeepSeek-V3 and V4, Kimi K2, GLM-4.5, Qwen3.6, Llama 4.\n\n4. Sigmoid gating with aux-loss-free bias\n\nDeepSeek-V3 scores experts with a sigmoid instead of a softmax. It adds a per-expert bias only when choosing the top-k. After each step, the bias drops for overloaded experts and rises for idle ones. Mixing weights still come from the raw scores. GLM-4.5 uses loss-free balance routing with sigmoid gates. DeepSeek-V4 switches the score to sqrtsoftplus but keeps bias balancing.\n\nUsed by: DeepSeek-V3, DeepSeek-V4, GLM-4.5, Kimi K2.\n\n5. Group-limited and node-limited routing\n\nSending one token to experts on many nodes is expensive. DeepSeek-V3 caps each token at 4 nodes, chosen by their highest affinity scores. Its config splits experts into 8 groups and keeps 4 before the final top-8 pick. DeepSeek says this cap lets training nearly fully overlap computation and communication. Kimi K2 drops grouping entirely, with n_group set to 1.\n\nUsed by: DeepSeek-V2 and V3.\n\n6. Expert choice routing\n\nGoogle&#8217;s expert choice routing flips the direction. Each expert picks its top-k tokens, so every expert gets a fixed bucket size. Tokens can receive a variable number of experts. The paper reports more than 2x faster training convergence. The catch is causality: a token&#8217;s expert can depend on later tokens. DeepSeek researchers measured an abnormal loss d",
    "published_at": "2026-11-08T06:18:33+00:00",
-   "fetched_at": "2026-11-09T19:23:57.426313+08:00",
+   "fetched_at": "2026-11-10T06:16:44.063044+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -73765,7 +73745,7 @@
    "summary": "OpenAI co-founder Andrej Karpathy used Claude's Opus 5.5 to filter 43 million Hacker News comments into 6,454 curated videos. The result beats YouTube's own recommendations, he says.\n\nThe article Andrej Karpathy built a curated video platform in a weekend using Claude and 20 years of Hacker News appeared first on The Decoder.",
    "content": "OpenAI co-founder Andrej Karpathy used Claude's Opus 5.5 to filter 43 million Hacker News comments into 6,454 curated videos. The result beats YouTube's own recommendations, he says.\n\nThe article Andrej Karpathy built a curated video platform in a weekend using Claude and 20 years of Hacker News appeared first on The Decoder.",
    "published_at": "2026-11-08T14:23:00+00:00",
-   "fetched_at": "2026-11-09T19:23:58.687029+08:00",
+   "fetched_at": "2026-11-10T06:16:45.623043+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -73789,7 +73769,7 @@
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 48,
+   "importance_score": 43,
    "importance_level": "normal",
    "event_type": "常规经营",
    "score_detail": {
@@ -73797,7 +73777,7 @@
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 10,
+    "timeliness": 5,
     "focus_boost": true
    },
    "ai_summary": "OpenAI co-founder Andrej Karpathy used Claude's Opus 5.",
@@ -74043,7 +74023,7 @@
    "summary": "Consciousness researchers Anil Seth, Ned Block, and Giulio Tononi argue in a Nature commentary that today's AI systems aren't conscious and won't become so on silicon hardware. They consider the assumption that consciousness depends on computation alone \"fatally flawed\" and warn against granting rights to AI systems.\n\nThe article The brain-as-computer metaphor shaped modern AI but may be misleading the consciousness debate appeared first on The Decoder.",
    "content": "Consciousness researchers Anil Seth, Ned Block, and Giulio Tononi argue in a Nature commentary that today's AI systems aren't conscious and won't become so on silicon hardware. They consider the assumption that consciousness depends on computation alone \"fatally flawed\" and warn against granting rights to AI systems.\n\nThe article The brain-as-computer metaphor shaped modern AI but may be misleading the consciousness debate appeared first on The Decoder.",
    "published_at": "2026-11-08T13:49:21+00:00",
-   "fetched_at": "2026-11-09T19:23:58.687083+08:00",
+   "fetched_at": "2026-11-10T06:16:45.623077+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -74060,11 +74040,11 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "LLM",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 0,
@@ -74647,7 +74627,7 @@
    "summary": "Research: parse_number() as a SQLite extension: C vs Rust\n\n I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted.\n\nI fired up regular Claude chat (Opus 5.5) and prompted:\n\nI'm thinking about a SQLite custom function 'parse_number(value)' that strips ',', '$', '£' and '%', handles a leading '-', and returns 'NULL' for anything it can’t parse\n\nExplore the difference between building this as a SQLite exten",
    "content": "Research: parse_number() as a SQLite extension: C vs Rust\n\n I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted.\n\nI fired up regular Claude chat (Opus 5.5) and prompted:\n\nI'm thinking about a SQLite custom function 'parse_number(value)' that strips ',', '$', '£' and '%', handles a leading '-', and returns 'NULL' for anything it can’t parse\n\nExplore the difference between building this as a SQLite extension in C v.s. in Rust - I want to compare performance and code complexity and size of the resulting.so(or whatever) file\n\nThis gave me a solid starting point - the Rust extension was 321 KB (using Rusqlite) and 298 KB (using sqlite-loadable-rs), while the C extension was 14 KB. But the Rust extension was faster!\n\nTurns out that's because the Rust equivalent of C's strtod is \"twice as fast\". So I prompted:\n\nTry writing your own C function for parsing text into a decimal number that catches up to or beats the Rust implementation\n\nAnd it did, using \"Clinger's fast path\":\n\nNet cost per row over 2 million rows, lower is better:\n\nfirst C\nnew C\nrusqlite\nsqlite-loadable\n\nMixed data\n67 ns\n19 ns\n46 ns\n41 ns\n\nIntegers only\n25 ns\n16 ns\n36 ns\n32 ns\n\nDecimals only\n106 ns\n18 ns\n55 ns\n47 ns\n\nFinally, I had it rewrite the prototype as a research report to match the others in simonw/research by prompting this:\n\nClone simonw/research from GitHub and turn your above investigation into a research report as seen in that repository - you can give me a zip file to download that contains your new folder\n\nHere's the resulting report.\n\n \n \n Tags: c, research, sqlite, rust, claude",
    "published_at": "2026-11-08T22:26:00+00:00",
-   "fetched_at": "2026-11-09T19:23:58.025438+08:00",
+   "fetched_at": "2026-11-10T06:16:44.767951+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -74667,13 +74647,21 @@
    "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
-   "content_type": "opinion",
+   "content_type": "fact",
    "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 0,
-   "importance_level": "opinion",
-   "event_type": "观点评论",
+   "importance_score": 33,
+   "importance_level": "low",
+   "event_type": "常规经营",
+   "score_detail": {
+    "source": 8,
+    "event": 10,
+    "breadth": 5,
+    "density": 0,
+    "timeliness": 10,
+    "focus_boost": false
+   },
    "ai_summary": "Research: parse_number() as a SQLite extension: C vs Rust\n\n I was out walking the dog when I got curious about how easy/difficult it would …",
    "ai_summary_raw": "Research: parse_number() as a SQLite extension: C vs Rust\n\n I was out walking the dog when I got curious about how easy/difficult it would …",
    "summary_method": "first_sentence",
@@ -74750,7 +74738,7 @@
    "summary": "It's hard to break the cycle of doomscrolling, but there are plenty of apps that can help you spend more time on content that’s engaging and productive.",
    "content": "It's hard to break the cycle of doomscrolling, but there are plenty of apps that can help you spend more time on content that’s engaging and productive.",
    "published_at": "2026-11-08T22:00:00+00:00",
-   "fetched_at": "2026-11-09T19:23:56.626991+08:00",
+   "fetched_at": "2026-11-10T06:16:43.363141+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -74768,24 +74756,16 @@
     "TEC-AI",
     "INV-VC"
    ],
-   "track_id": "OTHER-1",
+   "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
-   "content_type": "fact",
-   "classify_confidence": 0.9,
+   "content_type": "opinion",
+   "classify_confidence": 0.7,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 37,
-   "importance_level": "low",
-   "event_type": "常规经营",
-   "score_detail": {
-    "source": 12,
-    "event": 10,
-    "breadth": 5,
-    "density": 0,
-    "timeliness": 10,
-    "focus_boost": false
-   },
+   "importance_score": 0,
+   "importance_level": "opinion",
+   "event_type": "观点评论",
    "ai_summary": "It's hard to break the cycle of doomscrolling, but there are plenty of apps that can help you spend more time on content that’s engaging an…",
    "ai_summary_raw": "It's hard to break the cycle of doomscrolling, but there are plenty of apps that can help you spend more time on content that’s engaging an…",
    "summary_method": "first_sentence",
@@ -75679,7 +75659,7 @@
    "summary": "My comment on Terry Pratchett&#x27;s Study &mdash; Hacker News.\nTerry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on the things you liked before you got rich: https://chibuikeani.blogspot.com/2017/02/the-price-of-happin...\n\nBut horizontal wealth means not letting your increased income dictate your tastes. You like books and now you have money? Buy more books! Change those catenary bookshelves for good hardwood ones! In my case, build a library ",
    "content": "My comment on Terry Pratchett&#x27;s Study &mdash; Hacker News.\nTerry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on the things you liked before you got rich: https://chibuikeani.blogspot.com/2017/02/the-price-of-happin...\n\nBut horizontal wealth means not letting your increased income dictate your tastes. You like books and now you have money? Buy more books! Change those catenary bookshelves for good hardwood ones! In my case, build a library extension to your office. And, of course, you buy what will be useful for that most wonderful of pursuits, blind research, which is research without direction for the sheer joy of it.\n\n(Original source is his book A Slip of the Keyboard - this linked blog post quotes that bit.)\n\n \n \n Tags: hacker-news, terry-pratchett",
    "published_at": "2026-11-07T19:34:24+00:00",
-   "fetched_at": "2026-11-09T19:23:58.025573+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768083+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -75700,7 +75680,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 0,
@@ -75726,7 +75706,7 @@
    "summary": "My comment on AI is destroying my CS degree &mdash; Hacker News.\nI don't envy educators right now.\n\nAI clearly means you need to change how you teach and evaluate students. We are only a few years in though, and it's still extremely unclear what effective teaching with these tools looks like.\n\nThe worst part is that the evaluation loop is measured in multiple years! If you start trying some new education mechanism today you won't get a robust idea of how well it works until your current cohort graduate in 3-6 years time.\n\nStudents effectively all become guinea pigs for untested new ways of lea",
    "content": "My comment on AI is destroying my CS degree &mdash; Hacker News.\nI don't envy educators right now.\n\nAI clearly means you need to change how you teach and evaluate students. We are only a few years in though, and it's still extremely unclear what effective teaching with these tools looks like.\n\nThe worst part is that the evaluation loop is measured in multiple years! If you start trying some new education mechanism today you won't get a robust idea of how well it works until your current cohort graduate in 3-6 years time.\n\nStudents effectively all become guinea pigs for untested new ways of learning and teaching.\n\n \n \n Tags: education, hacker-news, ai, ai-ethics",
    "published_at": "2026-11-03T16:42:02+00:00",
-   "fetched_at": "2026-11-09T19:23:58.025894+08:00",
+   "fetched_at": "2026-11-10T06:16:44.768397+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -75743,11 +75723,11 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "OTHER-1",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.7,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 0,
@@ -75755,6 +75735,62 @@
    "event_type": "观点评论",
    "ai_summary": "My comment on AI is destroying my CS degree &mdash;",
    "ai_summary_raw": "My comment on AI is destroying my CS degree &mdash;",
+   "summary_method": "first_sentence",
+   "audit": {
+    "pass": true,
+    "issues": [],
+    "note": "原文首句，不经模型"
+   },
+   "week_key": "2026-W45"
+  },
+  {
+   "id": "bc55171edc52",
+   "source_id": "techcrunch",
+   "source_name": "TechCrunch",
+   "source_level": "D",
+   "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+   "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+   "summary": "In a memo to the company, Huang admitted that he had an affair.",
+   "content": "In a memo to the company, Huang admitted that he had an affair.",
+   "published_at": "2026-11-08T21:00:11+00:00",
+   "fetched_at": "2026-11-10T06:16:43.363160+08:00",
+   "date_assumed": false,
+   "thin": true,
+   "sources": [
+    {
+     "id": "techcrunch",
+     "name": "TechCrunch",
+     "level": "D",
+     "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+     "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+     "published_at": "2026-11-08T21:00:11+00:00"
+    }
+   ],
+   "source_count": 1,
+   "tracks_hint": [
+    "TEC-AI",
+    "INV-VC"
+   ],
+   "track_id": "TEC-COMPUTE",
+   "market_primary": "M-GL",
+   "market_related": [],
+   "content_type": "fact",
+   "classify_confidence": 0.8,
+   "classify_method": "llm",
+   "status": "published",
+   "importance_score": 32,
+   "importance_level": "low",
+   "event_type": "常规经营",
+   "score_detail": {
+    "source": 12,
+    "event": 10,
+    "breadth": 5,
+    "density": 0,
+    "timeliness": 5,
+    "focus_boost": false
+   },
+   "ai_summary": "In a memo to the company, Huang admitted that he had an affair.",
+   "ai_summary_raw": "In a memo to the company, Huang admitted that he had an affair.",
    "summary_method": "first_sentence",
    "audit": {
     "pass": true,

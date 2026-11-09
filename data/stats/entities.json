@@ -1,30 +1,146 @@
 [
  {
+  "name": "Nvidia",
+  "count": 15
+ },
+ {
   "name": "Jensen",
-  "count": 7
+  "count": 14
  },
  {
   "name": "Huang",
-  "count": 7
+  "count": 14
  },
  {
-  "name": "Nvidia",
+  "name": "Anthropic",
+  "count": 9
+ },
+ {
+  "name": "Mythos",
   "count": 6
  },
  {
-  "name": "Financial",
-  "count": 4
+  "name": "Fable",
+  "count": 6
+ },
+ {
+  "name": "Iran",
+  "count": 6
+ },
+ {
+  "name": "Meta",
+  "count": 5
  },
  {
   "name": "Bloomberg",
-  "count": 3
+  "count": 5
  },
  {
-  "name": "Sources",
-  "count": 3
+  "name": "Financial",
+  "count": 5
  },
  {
   "name": "Trump",
+  "count": 4
+ },
+ {
+  "name": "Turkey",
+  "count": 4
+ },
+ {
+  "name": "OpenAI",
+  "count": 4
+ },
+ {
+  "name": "Sources",
+  "count": 4
+ },
+ {
+  "name": "IPO",
+  "count": 4
+ },
+ {
+  "name": "Verge",
+  "count": 4
+ },
+ {
+  "name": "Donald",
+  "count": 3
+ },
+ {
+  "name": "上市",
+  "count": 3
+ },
+ {
+  "name": "数据中心",
+  "count": 3
+ },
+ {
+  "name": "芯片",
+  "count": 3
+ },
+ {
+  "name": "Agent",
+  "count": 3
+ },
+ {
+  "name": "Cop31",
+  "count": 3
+ },
+ {
+  "name": "York",
+  "count": 3
+ },
+ {
+  "name": "Prime",
+  "count": 3
+ },
+ {
+  "name": "Megaspeed",
+  "count": 3
+ },
+ {
+  "name": "Claude",
+  "count": 3
+ },
+ {
+  "name": "Google",
+  "count": 3
+ },
+ {
+  "name": "Ember",
+  "count": 3
+ },
+ {
+  "name": "Muse",
+  "count": 3
+ },
+ {
+  "name": "France",
+  "count": 3
+ },
+ {
+  "name": "GPT",
+  "count": 3
+ },
+ {
+  "name": "Uber",
+  "count": 3
+ },
+ {
+  "name": "Parking",
+  "count": 3
+ },
+ {
+  "name": "After",
+  "count": 3
+ },
+ {
+  "name": "融资",
+  "count": 2
+ },
+ {
+  "name": "黄金",
   "count": 2
  },
  {
@@ -36,35 +152,11 @@
   "count": 2
  },
  {
-  "name": "芯片",
+  "name": "美联储",
   "count": 2
  },
  {
   "name": "Manila",
-  "count": 2
- },
- {
-  "name": "Open-Sources",
-  "count": 2
- },
- {
-  "name": "Agent",
-  "count": 2
- },
- {
-  "name": "Cop31",
-  "count": 2
- },
- {
-  "name": "Harness",
-  "count": 2
- },
- {
-  "name": "When",
-  "count": 2
- },
- {
-  "name": "York",
   "count": 2
  }
 ]
