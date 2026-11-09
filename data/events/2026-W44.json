@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-09T03:40:27+08:00",
+ "generated_at": "2026-11-09T08:51:06+08:00",
  "events": [
   {
    "id": "0acdde362938",
@@ -21739,7 +21739,7 @@
    "summary": "銆銆鎹鍏ㄥ浗8.3涓囧瑙勬ā浠ヤ笂鏂囧寲鍙婄浉鍏充骇涓氫紒涓氾紙浠ヤ笅绠绉扳滄枃鍖栦紒涓氣濓級璋冩煡锛2026骞村墠涓夊搴︼紝鏂囧寲浼佷笟瀹炵幇钀ヤ笟鏀跺叆108210浜垮厓锛屾寜鍙瘮鍙ｅ緞璁＄畻锛堣瑙侀檮娉2锛夛紝鍚屾瘮澧為暱4.3%[1]銆傚叾涓紝鏂囧寲鏂颁笟鎬佺壒寰佽緝涓烘槑鏄剧殑16涓涓氬皬绫籟2]瀹炵幇钀ヤ笟鏀跺叆53827浜垮厓锛屽悓姣斿闀8.9%锛屽揩浜庡叏閮ㄨ妯′互涓婃枃鍖栦紒涓4.6涓櫨鍒嗙偣銆傗傘銆鍒...",
    "content": "銆銆鎹鍏ㄥ浗8.3涓囧瑙勬ā浠ヤ笂鏂囧寲鍙婄浉鍏充骇涓氫紒涓氾紙浠ヤ笅绠绉扳滄枃鍖栦紒涓氣濓級璋冩煡锛2026骞村墠涓夊搴︼紝鏂囧寲浼佷笟瀹炵幇钀ヤ笟鏀跺叆108210浜垮厓锛屾寜鍙瘮鍙ｅ緞璁＄畻锛堣瑙侀檮娉2锛夛紝鍚屾瘮澧為暱4.3%[1]銆傚叾涓紝鏂囧寲鏂颁笟鎬佺壒寰佽緝涓烘槑鏄剧殑16涓涓氬皬绫籟2]瀹炵幇钀ヤ笟鏀跺叆53827浜垮厓锛屽悓姣斿闀8.9%锛屽揩浜庡叏閮ㄨ妯′互涓婃枃鍖栦紒涓4.6涓櫨鍒嗙偣銆傗傘銆鍒...",
    "published_at": "2026-10-30T09:30:01+08:00",
-   "fetched_at": "2026-11-09T03:39:36.914720+08:00",
+   "fetched_at": "2026-11-09T08:50:15.643733+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -26399,7 +26399,7 @@
    "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
    "content": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
    "published_at": "2026-10-30T09:30:00+00:00",
-   "fetched_at": "2026-11-09T03:39:28.999014+08:00",
+   "fetched_at": "2026-11-09T08:49:56.464932+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -26557,7 +26557,7 @@
    "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
    "content": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
    "published_at": "2026-10-30T09:00:00+00:00",
-   "fetched_at": "2026-11-09T03:39:28.999033+08:00",
+   "fetched_at": "2026-11-09T08:49:56.464968+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -27163,7 +27163,7 @@
    "summary": "dbreunig/nesformer\n\nInspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super Mario Bros (very slowly) running inside Qwen!\n\nIn a comment on Hacker News Drew reveals the Opus 5.5 prompts he used to build this system:\n\nRead this article and any relevant source code: https://divagr.com/blog/qwenputer. Then explore if you could emulate the chip and ram in a Nintendo Entertainment System (as people do today with FPGAs in MISTRs) using this technique. If so, wh",
    "content": "dbreunig/nesformer\n\nInspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super Mario Bros (very slowly) running inside Qwen!\n\nIn a comment on Hacker News Drew reveals the Opus 5.5 prompts he used to build this system:\n\nRead this article and any relevant source code: https://divagr.com/blog/qwenputer. Then explore if you could emulate the chip and ram in a Nintendo Entertainment System (as people do today with FPGAs in MISTRs) using this technique. If so, what size model would you have to build and if you could use smaller faster ones, could you get it to be at the standard clockspeed.\n\nFollowed by:\n\nI think we should build it! Just for fun. It's okay if it's not fast. We want to be able to have the weights, and a cli to run them that we can point at a ROM.\n\nApparently Opus found and then used this collection of conformance tests for the NES CPU released 15 years ago by Christopher Pow.\n\n Via Hacker News\n\n Tags: games, ai, generative-ai, llms, drew-breunig, qwen, conformance-suites",
    "published_at": "2026-10-30T21:59:22+00:00",
-   "fetched_at": "2026-11-09T03:39:29.479827+08:00",
+   "fetched_at": "2026-11-09T08:49:57.141854+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -27184,7 +27184,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.95,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 29,
@@ -29239,7 +29239,7 @@
    "summary": "<![CDATA[鍥藉缁熻灞鏈嶅姟涓氳皟鏌ヤ腑蹇冧腑鍥界墿娴佷笌閲囪喘鑱斿悎浼氣傘銆涓銆佷腑鍥藉埗閫犱笟閲囪喘缁忕悊鎸囨暟杩愯鎯呭喌鈥傘銆10鏈堜唤锛屽埗閫犱笟閲囪喘缁忕悊鎸囨暟锛圥MI锛変负49.3%锛屾瘮涓婃湀涓嬮檷0.8涓櫨鍒嗙偣锛屽埗閫犱笟鏅皵姘村钩鏈夋墍鍥炶惤銆傗傗傘銆浠庝紒涓氳妯＄湅锛屽ぇ鍨嬩紒涓歅MI涓50.2%锛屾瘮涓婃湀涓嬮檷0.4涓櫨鍒嗙偣锛屼粛楂樹簬涓寸晫鐐癸紱涓佸皬鍨嬩紒涓歅MI鍒嗗埆涓48.4%鍜47.5%锛屾瘮涓...",
    "content": "<![CDATA[鍥藉缁熻灞鏈嶅姟涓氳皟鏌ヤ腑蹇冧腑鍥界墿娴佷笌閲囪喘鑱斿悎浼氣傘銆涓銆佷腑鍥藉埗閫犱笟閲囪喘缁忕悊鎸囨暟杩愯鎯呭喌鈥傘銆10鏈堜唤锛屽埗閫犱笟閲囪喘缁忕悊鎸囨暟锛圥MI锛変负49.3%锛屾瘮涓婃湀涓嬮檷0.8涓櫨鍒嗙偣锛屽埗閫犱笟鏅皵姘村钩鏈夋墍鍥炶惤銆傗傗傘銆浠庝紒涓氳妯＄湅锛屽ぇ鍨嬩紒涓歅MI涓50.2%锛屾瘮涓婃湀涓嬮檷0.4涓櫨鍒嗙偣锛屼粛楂樹簬涓寸晫鐐癸紱涓佸皬鍨嬩紒涓歅MI鍒嗗埆涓48.4%鍜47.5%锛屾瘮涓...",
    "published_at": "2026-10-31T09:30:01+08:00",
-   "fetched_at": "2026-11-09T03:39:36.914638+08:00",
+   "fetched_at": "2026-11-09T08:50:15.643538+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -32966,7 +32966,7 @@
    "summary": "At the turn of the last century, the automobile industry was still new and evolving rapidly. In 1898, there were about 50 carmakers in the United States. A decade later, that number had increased fivefold. In 1901, the companies produced 7,000 vehicles. By 1910, production had reached 181,000.\nFor several decades, electric cars vied with those powered by steam and internal combustion, and nobody was sure which technology would come out on top. Steam had the legacy of locomotive technology behind it but came with a risk of fire. Steam-powered vehicles could also become exceedingly hot, dependin",
    "content": "At the turn of the last century, the automobile industry was still new and evolving rapidly. In 1898, there were about 50 carmakers in the United States. A decade later, that number had increased fivefold. In 1901, the companies produced 7,000 vehicles. By 1910, production had reached 181,000.\nFor several decades, electric cars vied with those powered by steam and internal combustion, and nobody was sure which technology would come out on top. Steam had the legacy of locomotive technology behind it but came with a risk of fire. Steam-powered vehicles could also become exceedingly hot, depending on the placement of the boiler and the steam piping. Both gasoline and electric cars faced logistical challenges: How far could you travel without refueling or charging? You could always throw an extra can of gasoline in the back of the car, but charging a battery involved more planning. The infrastructure for long-distance travel was not yet in place.\nBefore the invention of the electric starter in 1911, gasoline-powered engines had to be started with a hand crank; once running, they were loud and emitted noxious fumes. Fully electric vehicles, by contrast, were easy to start; you just turned on the main battery switch, often with a key, and there was no foul exhaust to deal with. \nElectric carmakers looking for a way to differentiate their products decided that these attributes made their vehicles perfect for women. (Electric cars were also marketed to doctors so that they could make house calls in the middle of the night without waking the neighbors.) General Electric, which made car chargers based on mercury-arc rectifiers, was so captivated by the idea of women driving electric cars that the company created a series of advertisements featuring stylishly dressed women plugging in their cars and posing with their charging stations.\n In ads for its electric car chargers, General Electric featured women using the equipment.miSci—Museum of Innovation and Science\nA young woman named Fannie Goodnow was an early EV adopter. She owned a 1908 Bailey Victoria Phaeton, an open two-seater that really did look like a horseless carriage, and she used a GE mercury-arc rectifier to charge it. \nWho Invented the Mercury-Arc Rectifier? Electrical engineer Peter Cooper Hewitt invented the mercury vapor lamp, which became the basis for the mercury-arc rectifier used in car-charging systems. Bettmann/Getty Images\nElectrical engineer Peter Cooper Hewitt is generally credited with the invention of the mercury-arc rectifier. During the first decade of the 20th century, Hewitt received several U.S. patents for electric lamps and other apparatus for transmitting and using electric currents. U.S. patents 968,896 and 1,163,706, granted to Percy H. Thomas, advanced Hewitt’s designs. Thomas was chief electrician for the Cooper Hewitt Electric Co., which Hewitt had cofounded with George Westinghouse to manufacture and sell his lamps.\nThe mercury-arc rectifier functioned as a diode. In a car charger like the one Fannie Goodnow used, it converted alternating current from the power grid into direct current needed to charge the car’s battery. A small amount of liquid mercury contained in a glass tube would vaporize and glow as electricity passed through it. Coupled with the carbon anodes, the vapor allowed current to flow in only one direction. This unit took about 12 hours to charge a drained battery. \nA Carriage Maker Pivots to Electric CarsI couldn’t find any records as to why Fannie Goodnow opted for an electric car. But as a well-to-do woman living in the Boston area, she had more than a half dozen automobile producers to choose from. The one she chose was S.R. Bailey & Co. of Amesbury, Mass.\n This early electric car charger used a mercury-arc rectifier to convert AC to DC.Heritage Museums & Gardens\nAccording to Galen Handy, who maintains the Early Electric Vehicles website, Samuel Robinson Bailey started in the carriage and sleigh business as a teenager, winning",
    "published_at": "2026-10-31T13:00:02+00:00",
-   "fetched_at": "2026-11-09T03:39:28.277420+08:00",
+   "fetched_at": "2026-11-09T08:49:55.924037+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -36535,7 +36535,7 @@
    "summary": "How We Took Over ChatGPT Accounts\n\nParameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews), where interactive custom HTML apps are displayed in a sandboxed iframe.\n\nIt's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data.\n\nParameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes it",
    "content": "How We Took Over ChatGPT Accounts\n\nParameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews), where interactive custom HTML apps are displayed in a sandboxed iframe.\n\nIt's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data.\n\nParameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes its own virtual keyboard, which can be triggered in the parent page via postMessage() from the sandboxed iframe.\n\nThat message receiving code uses innerHTML, so anything that sends a message can add custom HTML to the parent - and there was no mechanism to prevent other sandboxed frames, including HTML preview frames, from calling that method.\n\nThis meant untrusted code in an iframe could insert HTML, and while innerHTML doesn't directly execute script elements it could be used to inject a new iframe without sandbox restrictions.\n\nOpenAI’s CSP rules blocked inline scripts entirely, and only allowed script loading from a handful of domains, but one of those was YouTube - and the YouTube oEmbed endpoint could be used to reflect JavaScript back in a way that executed it.\n\nOnce the attack had JavaScript execution on ChatGPT, it was trivial to fetch private user data from APIs and exfiltrate it via an image reference.\n\nThe end result: you could create a ChatGPT share URL which, when visited by another signed-in user, could exfiltrate their private data or take actions on their behalf.\n\nOpenAI closed the hole and paid out a $5,000 bug bounty, which I think was a bit cheap for a vulnerability this serious.\n\n Via Hacker News\n\n Tags: iframes, javascript, sandboxing, security, xss, openai, chatgpt, content-security-policy",
    "published_at": "2026-10-31T23:15:22+00:00",
-   "fetched_at": "2026-11-09T03:39:29.479712+08:00",
+   "fetched_at": "2026-11-09T08:49:57.141586+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -36645,7 +36645,7 @@
    "summary": "Release: datasette-llm 0.1a9\n\n I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. \n\nIt now picks up the default model used by LLM, which means you can start using Datasette Agent without needing to explicitly configure a default model:\n\nuvx --with datasette-agent datasette content.db --internal internal.db\n\nPreviously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra.\n\n \n \n Tags: datasette, llm, datasette-agent",
    "content": "Release: datasette-llm 0.1a9\n\n I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. \n\nIt now picks up the default model used by LLM, which means you can start using Datasette Agent without needing to explicitly configure a default model:\n\nuvx --with datasette-agent datasette content.db --internal internal.db\n\nPreviously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra.\n\n \n \n Tags: datasette, llm, datasette-agent",
    "published_at": "2026-10-31T22:10:01+00:00",
-   "fetched_at": "2026-11-09T03:39:29.479756+08:00",
+   "fetched_at": "2026-11-09T08:49:57.141716+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -39203,7 +39203,7 @@
    "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...]\n\nIn the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?\n\n&mdash; Kyle Kingsbury, Jepsen results for ParticleDB 1.1.4\n\n Tags: kyle-kingsbury, llms, ai, generative-ai, ai-misuse",
    "content": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...]\n\nIn the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?\n\n&mdash; Kyle Kingsbury, Jepsen results for ParticleDB 1.1.4\n\n Tags: kyle-kingsbury, llms, ai, generative-ai, ai-misuse",
    "published_at": "2026-11-01T16:49:04+00:00",
-   "fetched_at": "2026-11-09T03:39:29.479605+08:00",
+   "fetched_at": "2026-11-09T08:49:57.141399+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -39220,11 +39220,11 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "INV-VIEW",
+   "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 0,
@@ -39744,7 +39744,7 @@
    "summary": "A recent scroll through social media got me thinking about trust. About half my feed was filled with AI slop that astute users would call out as being machine-generated, often to the embarrassment of the rube who unknowingly spread it and sometimes to the delight of the poster who shared it deliberately because they found it amusing or useful for sowing confusion.\nRemember the good old days of GPT-3 when we could ask the chatbot anything and it would almost instantly and very confidently spit back a plausible but false answer? That’s when the word “hallucination” as applied to AI answers enter",
    "content": "A recent scroll through social media got me thinking about trust. About half my feed was filled with AI slop that astute users would call out as being machine-generated, often to the embarrassment of the rube who unknowingly spread it and sometimes to the delight of the poster who shared it deliberately because they found it amusing or useful for sowing confusion.\nRemember the good old days of GPT-3 when we could ask the chatbot anything and it would almost instantly and very confidently spit back a plausible but false answer? That’s when the word “hallucination” as applied to AI answers entered the lexicon. Six years and several versions of a few different chatbots later, I still can’t trust the answers I get, even though Claude or Gemini often do useful work for me. That’s the thing about current AI: Trust but verify. And verify you must.\nApply that maxim at scale to maintain the integrity of the scientific record and you get an idea of the challenge facing publishers of peer-reviewed scholarship. In “I Used AI to Fake a Scientific Paper,” freelance writer and doctor of applied mathematics Benjamin Skuse tells the story of the human gatekeepers trying to beat back the rising tide of AI slop by attempting to get his own AI-generated papers past IEEE’s defenses.\n“He basically hit ‘run experiment’ and ‘write paper.’ And then he didn’t do a damn thing to it.” —Eliza Strickland\nAs features and AI beat editor Eliza Strickland told me, Skuse was surprised at just how effortless it was to generate a paper that was more or less plausible and more or less science. For one of his experiments, “he basically hit ‘run experiment’ and ‘write paper,’” she said. “And then he didn’t do a damn thing to it. He just launched it into the maw of the publishing engine.”\nSkuse discovered that the combination of IEEE’s human-review processes and research-integrity checker programs are currently keeping pace in what amounts to a cat-and-mouse game against people using free tools. But the more advanced LLMs are no longer making the same dumb mistakes the free versions do. That leaves publishers locked in an arms race between increasingly plausible slop and the systems aimed at detecting it.\nScholarly publishers aren’t the only ones trying to hold the line against slop. So is that global depository of human-generated knowledge, Wikipedia. For this month’s Five Questions, Strickland interviewed Ellia Lebleu, a founding member of WikiProject AI Cleanup, a volunteer effort to detect and delete AI-generated material from the platform. Lebleu’s team is confronting the same problem as commercial publishers, but with fewer people and fewer tools.\n“Wikipedia is known as a repository of human-generated information, and they want to hold on to that,” says Strickland. “Who knows how long they’ll be able to do that.”\nIf we can’t collectively assume that the scientific record is trustworthy or that basic facts about the world are accurate, then our understanding of what is real unspools into uncertainty. Perhaps that delights quantum scientists and the grifters who thrive in an information environment where there is no shared reality. But that uncertainty ultimately undermines trust in the institutions that exist to curate the corpus of human knowledge and to promote the advancement of science and technology for the benefit of humanity.\nOr maybe in a world where AI is doing the science and writing the papers, it won’t matter whether or not humans trust the outputs. As Strickland put it, “Doesn’t it just feel crazy that we’ll have AI writing for other AIs at some point? We’ll just get left out of the loop.”",
    "published_at": "2026-11-01T14:00:01+00:00",
-   "fetched_at": "2026-11-09T03:39:28.277022+08:00",
+   "fetched_at": "2026-11-09T08:49:55.923334+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -39763,11 +39763,11 @@
     "TEC-BCI",
     "TEC-QUANT"
    ],
-   "track_id": "INV-VIEW",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 0,
@@ -40508,7 +40508,7 @@
    "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:\n\nIf in doubt, delete the uv.lock file\n\nMost of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it.\n\nRunning uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories.\n\nBut... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An e",
    "content": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:\n\nIf in doubt, delete the uv.lock file\n\nMost of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it.\n\nRunning uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories.\n\nBut... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An example from earlier today:\n\nerror: Failed to build `watchfiles==1.1.1`\n cause: Call to `maturin.build_wheel` failed\n\nerror: the configured Python interpreter version (3.15) is newer\nthan PyO3's maximum supported version (3.14)\n\nDeleting that file and running uv run pytest again usually fixes the problem.\n\n Tags: uv, til, python",
    "published_at": "2026-11-01T23:24:22+00:00",
-   "fetched_at": "2026-11-09T03:39:29.479555+08:00",
+   "fetched_at": "2026-11-09T08:49:57.141308+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -40529,10 +40529,10 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 28,
+   "importance_score": 25,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -40540,7 +40540,7 @@
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
+    "timeliness": 2,
     "focus_boost": false
    },
    "ai_summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.",
@@ -41766,7 +41766,7 @@
    "summary": "Advances in sensing, manufacturing, computational resources, and data-driven methods are enabling new approaches to electromagnetic sensing, non-destructive evaluation, and advanced materials processing. This webinar will demonstrate how the COMSOL Multiphysics software supports predictive modeling by coupling electromagnetic fields with thermal, chemical, mechanical, and transport phenomena across multiple length and time scales.\nThe first application we will show focuses on eddy-current thermometry for reconstructing three-dimensional temperature fields in metal plates. Temperature-dependent",
    "content": "Advances in sensing, manufacturing, computational resources, and data-driven methods are enabling new approaches to electromagnetic sensing, non-destructive evaluation, and advanced materials processing. This webinar will demonstrate how the COMSOL Multiphysics software supports predictive modeling by coupling electromagnetic fields with thermal, chemical, mechanical, and transport phenomena across multiple length and time scales.\nThe first application we will show focuses on eddy-current thermometry for reconstructing three-dimensional temperature fields in metal plates. Temperature-dependent electrical conductivity alters induced currents and magnetic fields, enabling volumetric thermal inference. COMSOL simulations of defects and laser-induced transient heating will support validation of reconstruction algorithms. Multifrequency excitation will be investigated to improve depth discrimination through frequency-dependent penetration depths and sensitivities.\nThe second application examines microwave-enabled volumetric additive manufacturing of ceramic components. A high-power microwave beamforming array delivers localized energy into three-dimensional volumes, enabling processing of opaque, particle-laden resins. Coupled COMSOL models of electromagnetic propagation, microwave absorption, heat transfer, and ceramic sintering kinetics are used to predict temperature evolution, reaction progression, spatial resolution, and processing scalability. Future extensions will incorporate pulsed excitation, fluid flow, resin viscosity, convection, shrinkage, and solid mechanics.\nTogether, these examples demonstrate how the COMSOL software can integrate multiphysics modeling with sensing, manufacturing, and data inversion. This webinar will present two applications of coupled electromagnetic and thermal modeling in COMSOL Multiphysics: eddy-current thermometry in metal plates and microwave-assisted processing of ceramic-loaded resins. By connecting simulation with practical engineering systems, COMSOL-based modeling can accelerate technology development, reduce experimental iteration, and support reliable scale-up of next-generation electromagnetic technologies. \nRegister now for this free webinar!",
    "published_at": "2026-10-30T12:29:43+00:00",
-   "fetched_at": "2026-11-09T03:39:28.277506+08:00",
+   "fetched_at": "2026-11-09T08:49:55.924192+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -41789,7 +41789,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 34,
