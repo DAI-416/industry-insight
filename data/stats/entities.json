@@ -1,1 +1,70 @@
-[]
+[
+ {
+  "name": "Jensen",
+  "count": 7
+ },
+ {
+  "name": "Huang",
+  "count": 7
+ },
+ {
+  "name": "Nvidia",
+  "count": 6
+ },
+ {
+  "name": "Financial",
+  "count": 4
+ },
+ {
+  "name": "Bloomberg",
+  "count": 3
+ },
+ {
+  "name": "Sources",
+  "count": 3
+ },
+ {
+  "name": "Trump",
+  "count": 2
+ },
+ {
+  "name": "Code",
+  "count": 2
+ },
+ {
+  "name": "半导体",
+  "count": 2
+ },
+ {
+  "name": "芯片",
+  "count": 2
+ },
+ {
+  "name": "Manila",
+  "count": 2
+ },
+ {
+  "name": "Open-Sources",
+  "count": 2
+ },
+ {
+  "name": "Agent",
+  "count": 2
+ },
+ {
+  "name": "Cop31",
+  "count": 2
+ },
+ {
+  "name": "Harness",
+  "count": 2
+ },
+ {
+  "name": "When",
+  "count": 2
+ },
+ {
+  "name": "York",
+  "count": 2
+ }
+]
