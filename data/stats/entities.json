@@ -1,26 +1,54 @@
 [
  {
   "name": "Nvidia",
-  "count": 15
+  "count": 26
  },
  {
   "name": "Jensen",
-  "count": 14
+  "count": 26
  },
  {
   "name": "Huang",
-  "count": 14
+  "count": 26
  },
  {
   "name": "Anthropic",
+  "count": 11
+ },
+ {
+  "name": "Trump",
+  "count": 10
+ },
+ {
+  "name": "Bloomberg",
   "count": 9
  },
  {
-  "name": "Mythos",
-  "count": 6
+  "name": "IPO",
+  "count": 9
  },
  {
   "name": "Fable",
+  "count": 8
+ },
+ {
+  "name": "Meta",
+  "count": 6
+ },
+ {
+  "name": "Donald",
+  "count": 6
+ },
+ {
+  "name": "芯片",
+  "count": 6
+ },
+ {
+  "name": "Claude",
+  "count": 6
+ },
+ {
+  "name": "Mythos",
   "count": 6
  },
  {
@@ -28,11 +56,11 @@
   "count": 6
  },
  {
-  "name": "Meta",
+  "name": "OpenAI",
   "count": 5
  },
  {
-  "name": "Bloomberg",
+  "name": "Reuters",
   "count": 5
  },
  {
@@ -40,7 +68,15 @@
   "count": 5
  },
  {
-  "name": "Trump",
+  "name": "Megaspeed",
+  "count": 5
+ },
+ {
+  "name": "Wall",
+  "count": 5
+ },
+ {
+  "name": "数据中心",
   "count": 4
  },
  {
@@ -48,7 +84,15 @@
   "count": 4
  },
  {
-  "name": "OpenAI",
+  "name": "Agent",
+  "count": 4
+ },
+ {
+  "name": "York",
+  "count": 4
+ },
+ {
+  "name": "Alice",
   "count": 4
  },
  {
@@ -56,7 +100,23 @@
   "count": 4
  },
  {
-  "name": "IPO",
+  "name": "Google",
+  "count": 4
+ },
+ {
+  "name": "Muse",
+  "count": 4
+ },
+ {
+  "name": "Ember",
+  "count": 4
+ },
+ {
+  "name": "France",
+  "count": 4
+ },
+ {
+  "name": "California",
   "count": 4
  },
  {
@@ -64,7 +124,7 @@
   "count": 4
  },
  {
-  "name": "Donald",
+  "name": "融资",
   "count": 3
  },
  {
@@ -72,15 +132,7 @@
   "count": 3
  },
  {
-  "name": "数据中心",
-  "count": 3
- },
- {
-  "name": "芯片",
-  "count": 3
- },
- {
-  "name": "Agent",
+  "name": "美联储",
   "count": 3
  },
  {
@@ -88,35 +140,7 @@
   "count": 3
  },
  {
-  "name": "York",
-  "count": 3
- },
- {
   "name": "Prime",
-  "count": 3
- },
- {
-  "name": "Megaspeed",
-  "count": 3
- },
- {
-  "name": "Claude",
-  "count": 3
- },
- {
-  "name": "Google",
-  "count": 3
- },
- {
-  "name": "Ember",
-  "count": 3
- },
- {
-  "name": "Muse",
-  "count": 3
- },
- {
-  "name": "France",
   "count": 3
  },
  {
@@ -124,39 +148,15 @@
   "count": 3
  },
  {
-  "name": "Uber",
-  "count": 3
- },
- {
   "name": "Parking",
   "count": 3
  },
  {
-  "name": "After",
+  "name": "Uber",
   "count": 3
  },
  {
-  "name": "融资",
-  "count": 2
- },
- {
-  "name": "黄金",
-  "count": 2
- },
- {
-  "name": "Code",
-  "count": 2
- },
- {
-  "name": "半导体",
-  "count": 2
- },
- {
-  "name": "美联储",
-  "count": 2
- },
- {
-  "name": "Manila",
-  "count": 2
+  "name": "Research",
+  "count": 3
  }
 ]

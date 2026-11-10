@@ -1,18 +1,18 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-10T06:19:15+08:00",
+ "generated_at": "2026-11-10T15:14:43+08:00",
  "total": 1389,
- "fact_count": 1193,
- "opinion_count": 196,
+ "fact_count": 1195,
+ "opinion_count": 194,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 154,
-   "opinion_count": 11,
-   "score": 4648.6
+   "count": 149,
+   "opinion_count": 13,
+   "score": 4493.0
   },
   {
    "track_id": "LLM",
@@ -21,7 +21,7 @@
    "is_focus": true,
    "count": 88,
    "opinion_count": 7,
-   "score": 2619.4
+   "score": 2609.2
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -33,6 +33,15 @@
    "score": 2047.8
   },
   {
+   "track_id": "TEC-COMPUTE",
+   "name": "算力与基础设施",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 60,
+   "opinion_count": 6,
+   "score": 1869.0
+  },
+  {
    "track_id": "INV-VC",
    "name": "一级市场投融资",
    "domain": "investment",
@@ -40,15 +49,6 @@
    "count": 64,
    "opinion_count": 0,
    "score": 1859.2
-  },
-  {
-   "track_id": "TEC-COMPUTE",
-   "name": "算力与基础设施",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 58,
-   "opinion_count": 7,
-   "score": 1821.4
   },
   {
    "track_id": "INV-EXIT",
@@ -92,17 +92,17 @@
    "domain": "tech",
    "is_focus": false,
    "count": 49,
-   "opinion_count": 3,
-   "score": 1290.4
+   "opinion_count": 2,
+   "score": 1296.4
   },
   {
    "track_id": "TEC-SEC",
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 43,
+   "count": 48,
    "opinion_count": 1,
-   "score": 1150.0
+   "score": 1279.2
   },
   {
    "track_id": "TEC-AUTO",
@@ -199,9 +199,9 @@
    "name": "赛道投资观点",
    "domain": "investment",
    "is_focus": false,
-   "count": 2,
-   "opinion_count": 62,
-   "score": 77.0
+   "count": 3,
+   "opinion_count": 61,
+   "score": 103.2
   },
   {
    "track_id": "MAC-PROP",
@@ -220,9 +220,9 @@
   "M-CN": 107
  },
  "importance_dist": {
-  "normal": 325,
+  "normal": 318,
   "critical": 48,
-  "low": 732,
+  "low": 741,
   "important": 88
  },
  "source_dist": {
@@ -404,7 +404,7 @@
    "count": 12
   }
  ],
- "total_score": 27289.6,
- "other_count": 298,
- "other_opinion_count": 24
+ "total_score": 27332.8,
+ "other_count": 297,
+ "other_opinion_count": 23
 }
