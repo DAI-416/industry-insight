@@ -1,70 +1,130 @@
 [
  {
   "name": "Nvidia",
-  "count": 26
- },
- {
-  "name": "Jensen",
-  "count": 26
+  "count": 33
  },
  {
   "name": "Huang",
-  "count": 26
+  "count": 30
+ },
+ {
+  "name": "Jensen",
+  "count": 30
  },
  {
   "name": "Anthropic",
-  "count": 11
- },
- {
-  "name": "Trump",
-  "count": 10
- },
- {
-  "name": "Bloomberg",
-  "count": 9
+  "count": 16
  },
  {
   "name": "IPO",
-  "count": 9
+  "count": 14
  },
  {
-  "name": "Fable",
-  "count": 8
+  "name": "Trump",
+  "count": 13
  },
  {
-  "name": "Meta",
-  "count": 6
- },
- {
-  "name": "Donald",
-  "count": 6
- },
- {
-  "name": "芯片",
-  "count": 6
- },
- {
-  "name": "Claude",
-  "count": 6
- },
- {
-  "name": "Mythos",
-  "count": 6
- },
- {
-  "name": "Iran",
-  "count": 6
+  "name": "Bloomberg",
+  "count": 12
  },
  {
   "name": "OpenAI",
-  "count": 5
+  "count": 10
+ },
+ {
+  "name": "Google",
+  "count": 10
+ },
+ {
+  "name": "Fable",
+  "count": 10
+ },
+ {
+  "name": "Meta",
+  "count": 9
+ },
+ {
+  "name": "芯片",
+  "count": 9
+ },
+ {
+  "name": "Iran",
+  "count": 9
+ },
+ {
+  "name": "Donald",
+  "count": 8
+ },
+ {
+  "name": "Claude",
+  "count": 8
+ },
+ {
+  "name": "Verge",
+  "count": 8
+ },
+ {
+  "name": "数据中心",
+  "count": 7
  },
  {
   "name": "Reuters",
-  "count": 5
+  "count": 7
+ },
+ {
+  "name": "Mythos",
+  "count": 7
+ },
+ {
+  "name": "Muse",
+  "count": 7
+ },
+ {
+  "name": "美联储",
+  "count": 6
  },
  {
   "name": "Financial",
+  "count": 6
+ },
+ {
+  "name": "Wall",
+  "count": 6
+ },
+ {
+  "name": "Ember",
+  "count": 6
+ },
+ {
+  "name": "GPT",
+  "count": 6
+ },
+ {
+  "name": "Adobe",
+  "count": 6
+ },
+ {
+  "name": "融资",
+  "count": 5
+ },
+ {
+  "name": "上市",
+  "count": 5
+ },
+ {
+  "name": "Turkey",
+  "count": 5
+ },
+ {
+  "name": "CPI",
+  "count": 5
+ },
+ {
+  "name": "Agent",
+  "count": 5
+ },
+ {
+  "name": "Alice",
   "count": 5
  },
  {
@@ -72,43 +132,19 @@
   "count": 5
  },
  {
-  "name": "Wall",
+  "name": "Sources",
   "count": 5
  },
  {
-  "name": "数据中心",
-  "count": 4
- },
- {
-  "name": "Turkey",
-  "count": 4
- },
- {
-  "name": "Agent",
-  "count": 4
+  "name": "Apple",
+  "count": 5
  },
  {
   "name": "York",
   "count": 4
  },
  {
-  "name": "Alice",
-  "count": 4
- },
- {
-  "name": "Sources",
-  "count": 4
- },
- {
-  "name": "Google",
-  "count": 4
- },
- {
-  "name": "Muse",
-  "count": 4
- },
- {
-  "name": "Ember",
+  "name": "估值",
   "count": 4
  },
  {
@@ -120,43 +156,7 @@
   "count": 4
  },
  {
-  "name": "Verge",
+  "name": "Firefly",
   "count": 4
- },
- {
-  "name": "融资",
-  "count": 3
- },
- {
-  "name": "上市",
-  "count": 3
- },
- {
-  "name": "美联储",
-  "count": 3
- },
- {
-  "name": "Cop31",
-  "count": 3
- },
- {
-  "name": "Prime",
-  "count": 3
- },
- {
-  "name": "GPT",
-  "count": 3
- },
- {
-  "name": "Parking",
-  "count": 3
- },
- {
-  "name": "Uber",
-  "count": 3
- },
- {
-  "name": "Research",
-  "count": 3
  }
 ]

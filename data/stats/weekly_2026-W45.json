@@ -1,27 +1,27 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-10T15:14:43+08:00",
+ "generated_at": "2026-11-11T01:04:00+08:00",
  "total": 1389,
- "fact_count": 1195,
- "opinion_count": 194,
+ "fact_count": 1193,
+ "opinion_count": 196,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 149,
-   "opinion_count": 13,
-   "score": 4493.0
+   "count": 152,
+   "opinion_count": 11,
+   "score": 4575.2
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 88,
-   "opinion_count": 7,
-   "score": 2609.2
+   "count": 90,
+   "opinion_count": 9,
+   "score": 2656.2
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -33,15 +33,6 @@
    "score": 2047.8
   },
   {
-   "track_id": "TEC-COMPUTE",
-   "name": "算力与基础设施",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 60,
-   "opinion_count": 6,
-   "score": 1869.0
-  },
-  {
    "track_id": "INV-VC",
    "name": "一级市场投融资",
    "domain": "investment",
@@ -49,6 +40,15 @@
    "count": 64,
    "opinion_count": 0,
    "score": 1859.2
+  },
+  {
+   "track_id": "TEC-COMPUTE",
+   "name": "算力与基础设施",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 59,
+   "opinion_count": 6,
+   "score": 1844.6
   },
   {
    "track_id": "INV-EXIT",
@@ -91,18 +91,18 @@
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 49,
+   "count": 48,
    "opinion_count": 2,
-   "score": 1296.4
+   "score": 1272.0
   },
   {
    "track_id": "TEC-SEC",
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 48,
+   "count": 47,
    "opinion_count": 1,
-   "score": 1279.2
+   "score": 1247.6
   },
   {
    "track_id": "TEC-AUTO",
@@ -163,9 +163,9 @@
    "name": "人形机器人与具身智能",
    "domain": "tech",
    "is_focus": true,
-   "count": 11,
-   "opinion_count": 0,
-   "score": 355.4
+   "count": 10,
+   "opinion_count": 1,
+   "score": 329.2
   },
   {
    "track_id": "INV-POLICY",
@@ -199,9 +199,9 @@
    "name": "赛道投资观点",
    "domain": "investment",
    "is_focus": false,
-   "count": 3,
-   "opinion_count": 61,
-   "score": 103.2
+   "count": 2,
+   "opinion_count": 62,
+   "score": 77.0
   },
   {
    "track_id": "MAC-PROP",
@@ -220,9 +220,9 @@
   "M-CN": 107
  },
  "importance_dist": {
-  "normal": 318,
+  "normal": 317,
   "critical": 48,
-  "low": 741,
+  "low": 740,
   "important": 88
  },
  "source_dist": {
@@ -404,7 +404,7 @@
    "count": 12
   }
  ],
- "total_score": 27332.8,
- "other_count": 297,
+ "total_score": 27329.2,
+ "other_count": 295,
  "other_opinion_count": 23
 }

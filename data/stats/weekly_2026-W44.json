@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-10T15:14:43+08:00",
+ "generated_at": "2026-11-11T01:04:00+08:00",
  "total": 765,
  "fact_count": 665,
  "opinion_count": 100,
@@ -11,7 +11,7 @@
    "domain": "tech",
    "is_focus": true,
    "count": 85,
-   "opinion_count": 14,
+   "opinion_count": 13,
    "score": 2561.8
   },
   {
@@ -20,7 +20,7 @@
    "domain": "tech",
    "is_focus": true,
    "count": 52,
-   "opinion_count": 6,
+   "opinion_count": 5,
    "score": 1465.0
   },
   {
@@ -209,7 +209,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 0,
-   "opinion_count": 28,
+   "opinion_count": 30,
    "score": 0.0
   }
  ],
