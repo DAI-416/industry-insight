@@ -1,50 +1,62 @@
 [
  {
   "name": "Nvidia",
-  "count": 33
+  "count": 37
  },
  {
   "name": "Huang",
-  "count": 30
+  "count": 34
  },
  {
   "name": "Jensen",
-  "count": 30
+  "count": 33
  },
  {
   "name": "Anthropic",
-  "count": 16
+  "count": 28
  },
  {
   "name": "IPO",
-  "count": 14
- },
- {
-  "name": "Trump",
-  "count": 13
- },
- {
-  "name": "Bloomberg",
-  "count": 12
- },
- {
-  "name": "OpenAI",
-  "count": 10
+  "count": 21
  },
  {
   "name": "Google",
-  "count": 10
+  "count": 18
+ },
+ {
+  "name": "Bloomberg",
+  "count": 17
+ },
+ {
+  "name": "OpenAI",
+  "count": 16
+ },
+ {
+  "name": "Trump",
+  "count": 14
+ },
+ {
+  "name": "Claude",
+  "count": 12
  },
  {
   "name": "Fable",
-  "count": 10
+  "count": 11
+ },
+ {
+  "name": "GPT",
+  "count": 11
  },
  {
   "name": "Meta",
+  "count": 10
+ },
+ {
+  "name": "美联储",
   "count": 9
  },
  {
-  "name": "芯片",
+  "name": "Sources",
   "count": 9
  },
  {
@@ -52,15 +64,23 @@
   "count": 9
  },
  {
+  "name": "Verge",
+  "count": 9
+ },
+ {
   "name": "Donald",
   "count": 8
  },
  {
-  "name": "Claude",
+  "name": "芯片",
   "count": 8
  },
  {
-  "name": "Verge",
+  "name": "CPI",
+  "count": 8
+ },
+ {
+  "name": "York",
   "count": 8
  },
  {
@@ -72,6 +92,10 @@
   "count": 7
  },
  {
+  "name": "Financial",
+  "count": 7
+ },
+ {
   "name": "Mythos",
   "count": 7
  },
@@ -80,11 +104,31 @@
   "count": 7
  },
  {
-  "name": "美联储",
+  "name": "Adobe",
+  "count": 7
+ },
+ {
+  "name": "加息",
+  "count": 7
+ },
+ {
+  "name": "Series",
+  "count": 7
+ },
+ {
+  "name": "Gemini",
+  "count": 7
+ },
+ {
+  "name": "融资",
   "count": 6
  },
  {
-  "name": "Financial",
+  "name": "Agent",
+  "count": 6
+ },
+ {
+  "name": "Megaspeed",
   "count": 6
  },
  {
@@ -96,67 +140,23 @@
   "count": 6
  },
  {
-  "name": "GPT",
+  "name": "ChatGPT",
   "count": 6
  },
  {
-  "name": "Adobe",
+  "name": "Apple",
   "count": 6
  },
  {
-  "name": "融资",
-  "count": 5
- },
- {
-  "name": "上市",
-  "count": 5
+  "name": "After",
+  "count": 6
  },
  {
   "name": "Turkey",
   "count": 5
  },
  {
-  "name": "CPI",
-  "count": 5
- },
- {
-  "name": "Agent",
-  "count": 5
- },
- {
   "name": "Alice",
   "count": 5
- },
- {
-  "name": "Megaspeed",
-  "count": 5
- },
- {
-  "name": "Sources",
-  "count": 5
- },
- {
-  "name": "Apple",
-  "count": 5
- },
- {
-  "name": "York",
-  "count": 4
- },
- {
-  "name": "估值",
-  "count": 4
- },
- {
-  "name": "France",
-  "count": 4
- },
- {
-  "name": "California",
-  "count": 4
- },
- {
-  "name": "Firefly",
-  "count": 4
  }
 ]
