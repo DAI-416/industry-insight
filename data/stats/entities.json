@@ -1,70 +1,78 @@
 [
  {
   "name": "Nvidia",
-  "count": 37
+  "count": 39
  },
  {
   "name": "Huang",
-  "count": 34
+  "count": 36
  },
  {
   "name": "Jensen",
-  "count": 33
+  "count": 35
  },
  {
   "name": "Anthropic",
-  "count": 28
+  "count": 31
  },
  {
   "name": "IPO",
-  "count": 21
+  "count": 27
+ },
+ {
+  "name": "OpenAI",
+  "count": 18
+ },
+ {
+  "name": "Bloomberg",
+  "count": 18
  },
  {
   "name": "Google",
   "count": 18
  },
  {
-  "name": "Bloomberg",
-  "count": 17
- },
- {
-  "name": "OpenAI",
-  "count": 16
- },
- {
   "name": "Trump",
   "count": 14
  },
  {
-  "name": "Claude",
+  "name": "GPT",
   "count": 12
+ },
+ {
+  "name": "Meta",
+  "count": 11
+ },
+ {
+  "name": "美联储",
+  "count": 11
+ },
+ {
+  "name": "Sources",
+  "count": 11
+ },
+ {
+  "name": "Claude",
+  "count": 11
  },
  {
   "name": "Fable",
   "count": 11
  },
  {
-  "name": "GPT",
-  "count": 11
- },
- {
-  "name": "Meta",
+  "name": "CPI",
   "count": 10
  },
  {
-  "name": "美联储",
-  "count": 9
- },
- {
-  "name": "Sources",
-  "count": 9
- },
- {
-  "name": "Iran",
-  "count": 9
- },
- {
   "name": "Verge",
+  "count": 10
+ },
+ {
+  "name": "York",
+  "count": 9
+ },
+ {
+  "name": "加息",
   "count": 9
  },
  {
@@ -76,11 +84,23 @@
   "count": 8
  },
  {
-  "name": "CPI",
+  "name": "Financial",
   "count": 8
  },
  {
-  "name": "York",
+  "name": "Wall",
+  "count": 8
+ },
+ {
+  "name": "算力",
+  "count": 8
+ },
+ {
+  "name": "Iran",
+  "count": 8
+ },
+ {
+  "name": "Series",
   "count": 8
  },
  {
@@ -92,10 +112,6 @@
   "count": 7
  },
  {
-  "name": "Financial",
-  "count": 7
- },
- {
   "name": "Mythos",
   "count": 7
  },
@@ -104,15 +120,15 @@
   "count": 7
  },
  {
+  "name": "ChatGPT",
+  "count": 7
+ },
+ {
   "name": "Adobe",
   "count": 7
  },
  {
-  "name": "加息",
-  "count": 7
- },
- {
-  "name": "Series",
+  "name": "Apple",
   "count": 7
  },
  {
@@ -132,7 +148,7 @@
   "count": 6
  },
  {
-  "name": "Wall",
+  "name": "Alice",
   "count": 6
  },
  {
@@ -140,23 +156,7 @@
   "count": 6
  },
  {
-  "name": "ChatGPT",
-  "count": 6
- },
- {
-  "name": "Apple",
-  "count": 6
- },
- {
   "name": "After",
   "count": 6
- },
- {
-  "name": "Turkey",
-  "count": 5
- },
- {
-  "name": "Alice",
-  "count": 5
  }
 ]
