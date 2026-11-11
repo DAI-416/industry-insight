@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-11T22:19:35+08:00",
+ "generated_at": "2026-11-12T06:00:33+08:00",
  "events": [
   {
    "id": "0acdde362938",
@@ -40508,7 +40508,7 @@
    "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:\n\nIf in doubt, delete the uv.lock file\n\nMost of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it.\n\nRunning uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories.\n\nBut... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An e",
    "content": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:\n\nIf in doubt, delete the uv.lock file\n\nMost of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it.\n\nRunning uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories.\n\nBut... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An example from earlier today:\n\nerror: Failed to build `watchfiles==1.1.1`\n cause: Call to `maturin.build_wheel` failed\n\nerror: the configured Python interpreter version (3.15) is newer\nthan PyO3's maximum supported version (3.14)\n\nDeleting that file and running uv run pytest again usually fixes the problem.\n\n Tags: uv, til, python",
    "published_at": "2026-11-01T23:24:22+00:00",
-   "fetched_at": "2026-11-11T22:12:48.703496+08:00",
+   "fetched_at": "2026-11-12T05:59:22.991667+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -40528,21 +40528,13 @@
    "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
-   "content_type": "fact",
+   "content_type": "opinion",
    "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 25,
-   "importance_level": "low",
-   "event_type": "常规经营",
-   "score_detail": {
-    "source": 8,
-    "event": 10,
-    "breadth": 5,
-    "density": 0,
-    "timeliness": 2,
-    "focus_boost": false
-   },
+   "importance_score": 0,
+   "importance_level": "opinion",
+   "event_type": "观点评论",
    "ai_summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.",
    "ai_summary_raw": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.",
    "summary_method": "first_sentence",

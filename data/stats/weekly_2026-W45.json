@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-11T22:19:35+08:00",
+ "generated_at": "2026-11-12T06:00:33+08:00",
  "total": 1390,
  "fact_count": 1195,
  "opinion_count": 195,
@@ -10,18 +10,18 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 148,
-   "opinion_count": 13,
-   "score": 4462.6
+   "count": 152,
+   "opinion_count": 10,
+   "score": 4562.6
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 93,
-   "opinion_count": 8,
-   "score": 2738.4
+   "count": 87,
+   "opinion_count": 9,
+   "score": 2577.0
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -57,7 +57,7 @@
    "is_focus": false,
    "count": 51,
    "opinion_count": 1,
-   "score": 1669.8
+   "score": 1668.0
   },
   {
    "track_id": "INV-FLOW",
@@ -91,18 +91,18 @@
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 48,
+   "count": 50,
    "opinion_count": 3,
-   "score": 1270.2
+   "score": 1319.0
   },
   {
    "track_id": "TEC-SEC",
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 47,
+   "count": 48,
    "opinion_count": 1,
-   "score": 1247.6
+   "score": 1268.4
   },
   {
    "track_id": "TEC-AUTO",
@@ -128,7 +128,7 @@
    "domain": "macro",
    "is_focus": false,
    "count": 22,
-   "opinion_count": 2,
+   "opinion_count": 3,
    "score": 838.6
   },
   {
@@ -154,9 +154,9 @@
    "name": "财政与产业政策",
    "domain": "macro",
    "is_focus": false,
-   "count": 17,
+   "count": 18,
    "opinion_count": 1,
-   "score": 537.2
+   "score": 563.4
   },
   {
    "track_id": "TEC-ROBO",
@@ -200,7 +200,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 2,
-   "opinion_count": 61,
+   "opinion_count": 63,
    "score": 77.0
   },
   {
@@ -214,15 +214,15 @@
   }
  ],
  "market_dist": {
-  "M-GL": 1110,
+  "M-GL": 1111,
   "M-A": 76,
   "M-HK": 96,
-  "M-CN": 108
+  "M-CN": 107
  },
  "importance_dist": {
-  "normal": 317,
+  "normal": 315,
   "critical": 48,
-  "low": 742,
+  "low": 744,
   "important": 88
  },
  "source_dist": {
@@ -404,7 +404,7 @@
    "count": 12
   }
  ],
- "total_score": 27319.6,
- "other_count": 297,
- "other_opinion_count": 22
+ "total_score": 27352.2,
+ "other_count": 295,
+ "other_opinion_count": 21
 }
