@@ -1,39 +1,47 @@
 [
  {
   "name": "Nvidia",
-  "count": 39
+  "count": 42
  },
  {
   "name": "Huang",
-  "count": 36
- },
- {
-  "name": "Jensen",
-  "count": 35
+  "count": 39
  },
  {
   "name": "Anthropic",
-  "count": 31
+  "count": 38
+ },
+ {
+  "name": "Jensen",
+  "count": 37
  },
  {
   "name": "IPO",
-  "count": 27
- },
- {
-  "name": "OpenAI",
-  "count": 18
+  "count": 34
  },
  {
   "name": "Bloomberg",
-  "count": 18
+  "count": 22
+ },
+ {
+  "name": "OpenAI",
+  "count": 20
  },
  {
   "name": "Google",
-  "count": 18
+  "count": 20
  },
  {
   "name": "Trump",
+  "count": 15
+ },
+ {
+  "name": "Sources",
   "count": 14
+ },
+ {
+  "name": "美联储",
+  "count": 12
  },
  {
   "name": "GPT",
@@ -41,14 +49,6 @@
  },
  {
   "name": "Meta",
-  "count": 11
- },
- {
-  "name": "美联储",
-  "count": 11
- },
- {
-  "name": "Sources",
   "count": 11
  },
  {
@@ -60,7 +60,27 @@
   "count": 11
  },
  {
-  "name": "CPI",
+  "name": "数据中心",
+  "count": 10
+ },
+ {
+  "name": "芯片",
+  "count": 10
+ },
+ {
+  "name": "York",
+  "count": 10
+ },
+ {
+  "name": "Wall",
+  "count": 10
+ },
+ {
+  "name": "算力",
+  "count": 10
+ },
+ {
+  "name": "Iran",
   "count": 10
  },
  {
@@ -68,47 +88,55 @@
   "count": 10
  },
  {
-  "name": "York",
-  "count": 9
- },
- {
   "name": "加息",
-  "count": 9
+  "count": 10
  },
  {
   "name": "Donald",
-  "count": 8
- },
- {
-  "name": "芯片",
-  "count": 8
- },
- {
-  "name": "Financial",
-  "count": 8
- },
- {
-  "name": "Wall",
-  "count": 8
- },
- {
-  "name": "算力",
-  "count": 8
- },
- {
-  "name": "Iran",
-  "count": 8
- },
- {
-  "name": "Series",
-  "count": 8
- },
- {
-  "name": "数据中心",
-  "count": 7
+  "count": 9
  },
  {
   "name": "Reuters",
+  "count": 9
+ },
+ {
+  "name": "Financial",
+  "count": 9
+ },
+ {
+  "name": "Series",
+  "count": 9
+ },
+ {
+  "name": "融资",
+  "count": 8
+ },
+ {
+  "name": "上市",
+  "count": 8
+ },
+ {
+  "name": "CPI",
+  "count": 8
+ },
+ {
+  "name": "估值",
+  "count": 8
+ },
+ {
+  "name": "Adobe",
+  "count": 8
+ },
+ {
+  "name": "Apple",
+  "count": 8
+ },
+ {
+  "name": "House",
+  "count": 7
+ },
+ {
+  "name": "Alice",
   "count": 7
  },
  {
@@ -124,39 +152,11 @@
   "count": 7
  },
  {
-  "name": "Adobe",
-  "count": 7
- },
- {
-  "name": "Apple",
+  "name": "After",
   "count": 7
  },
  {
   "name": "Gemini",
   "count": 7
- },
- {
-  "name": "融资",
-  "count": 6
- },
- {
-  "name": "Agent",
-  "count": 6
- },
- {
-  "name": "Megaspeed",
-  "count": 6
- },
- {
-  "name": "Alice",
-  "count": 6
- },
- {
-  "name": "Ember",
-  "count": 6
- },
- {
-  "name": "After",
-  "count": 6
  }
 ]

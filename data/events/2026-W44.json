@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W44",
- "generated_at": "2026-11-11T14:08:02+08:00",
+ "generated_at": "2026-11-11T22:19:35+08:00",
  "events": [
   {
    "id": "0acdde362938",
@@ -39203,7 +39203,7 @@
    "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...]\n\nIn the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?\n\n&mdash; Kyle Kingsbury, Jepsen results for ParticleDB 1.1.4\n\n Tags: kyle-kingsbury, llms, ai, generative-ai, ai-misuse",
    "content": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...]\n\nIn the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users?\n\n&mdash; Kyle Kingsbury, Jepsen results for ParticleDB 1.1.4\n\n Tags: kyle-kingsbury, llms, ai, generative-ai, ai-misuse",
    "published_at": "2026-11-01T16:49:04+00:00",
-   "fetched_at": "2026-11-11T14:06:35.301952+08:00",
+   "fetched_at": "2026-11-11T22:12:48.703541+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -39220,11 +39220,11 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "INV-VIEW",
+   "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 0,
@@ -40508,7 +40508,7 @@
    "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:\n\nIf in doubt, delete the uv.lock file\n\nMost of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it.\n\nRunning uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories.\n\nBut... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An e",
    "content": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:\n\nIf in doubt, delete the uv.lock file\n\nMost of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it.\n\nRunning uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories.\n\nBut... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An example from earlier today:\n\nerror: Failed to build `watchfiles==1.1.1`\n cause: Call to `maturin.build_wheel` failed\n\nerror: the configured Python interpreter version (3.15) is newer\nthan PyO3's maximum supported version (3.14)\n\nDeleting that file and running uv run pytest again usually fixes the problem.\n\n Tags: uv, til, python",
    "published_at": "2026-11-01T23:24:22+00:00",
-   "fetched_at": "2026-11-11T14:06:35.301803+08:00",
+   "fetched_at": "2026-11-11T22:12:48.703496+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -40529,7 +40529,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 25,
