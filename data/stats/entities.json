@@ -1,50 +1,66 @@
 [
  {
   "name": "Nvidia",
-  "count": 77
+  "count": 87
  },
  {
   "name": "Huang",
-  "count": 74
+  "count": 85
  },
  {
   "name": "Jensen",
-  "count": 67
+  "count": 76
  },
  {
   "name": "Anthropic",
-  "count": 41
+  "count": 44
  },
  {
   "name": "IPO",
-  "count": 36
+  "count": 38
  },
  {
   "name": "Google",
-  "count": 32
+  "count": 37
  },
  {
   "name": "Bloomberg",
-  "count": 30
+  "count": 35
  },
  {
   "name": "Trump",
-  "count": 28
- },
- {
-  "name": "OpenAI",
-  "count": 26
+  "count": 31
  },
  {
   "name": "Sources",
-  "count": 24
+  "count": 30
+ },
+ {
+  "name": "OpenAI",
+  "count": 28
+ },
+ {
+  "name": "Gemini",
+  "count": 19
  },
  {
   "name": "Wall",
   "count": 16
  },
  {
+  "name": "GPT",
+  "count": 15
+ },
+ {
   "name": "Meta",
+  "count": 14
+ },
+ {
+  "name": "Donald",
+  "count": 14
+ },
+ {
+  "name": "芯片",
   "count": 14
  },
  {
@@ -52,15 +68,19 @@
   "count": 14
  },
  {
+  "name": "Reuters",
+  "count": 14
+ },
+ {
+  "name": "York",
+  "count": 14
+ },
+ {
   "name": "Verge",
   "count": 14
  },
  {
-  "name": "Donald",
-  "count": 13
- },
- {
-  "name": "York",
+  "name": "数据中心",
   "count": 13
  },
  {
@@ -68,27 +88,19 @@
   "count": 13
  },
  {
+  "name": "Alice",
+  "count": 13
+ },
+ {
+  "name": "Claude",
+  "count": 13
+ },
+ {
   "name": "算力",
   "count": 13
  },
  {
-  "name": "GPT",
-  "count": 13
- },
- {
-  "name": "Gemini",
-  "count": 13
- },
- {
-  "name": "数据中心",
-  "count": 12
- },
- {
-  "name": "芯片",
-  "count": 12
- },
- {
-  "name": "Alice",
+  "name": "House",
   "count": 12
  },
  {
@@ -100,19 +112,11 @@
   "count": 12
  },
  {
-  "name": "House",
-  "count": 11
- },
- {
   "name": "上市",
   "count": 11
  },
  {
   "name": "Megaspeed",
-  "count": 11
- },
- {
-  "name": "Claude",
   "count": 11
  },
  {
@@ -124,6 +128,14 @@
   "count": 11
  },
  {
+  "name": "首席",
+  "count": 10
+ },
+ {
+  "name": "Microsoft",
+  "count": 10
+ },
+ {
   "name": "融资",
   "count": 9
  },
@@ -132,7 +144,7 @@
   "count": 9
  },
  {
-  "name": "Reuters",
+  "name": "Congress",
   "count": 9
  },
  {
@@ -140,23 +152,11 @@
   "count": 9
  },
  {
-  "name": "Apple",
+  "name": "Muse",
   "count": 9
  },
  {
-  "name": "After",
+  "name": "Secretary",
   "count": 9
- },
- {
-  "name": "首席",
-  "count": 9
- },
- {
-  "name": "Agent",
-  "count": 8
- },
- {
-  "name": "Congress",
-  "count": 8
  }
 ]
