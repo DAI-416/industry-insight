@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-12T06:00:33+08:00",
+ "generated_at": "2026-11-12T15:07:28+08:00",
  "total": 1390,
  "fact_count": 1195,
  "opinion_count": 195,
@@ -10,18 +10,18 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 152,
+   "count": 151,
    "opinion_count": 10,
-   "score": 4562.6
+   "score": 4536.4
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 87,
-   "opinion_count": 9,
-   "score": 2577.0
+   "count": 89,
+   "opinion_count": 8,
+   "score": 2628.2
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -33,6 +33,15 @@
    "score": 2047.8
   },
   {
+   "track_id": "TEC-COMPUTE",
+   "name": "算力与基础设施",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 60,
+   "opinion_count": 6,
+   "score": 1867.2
+  },
+  {
    "track_id": "INV-VC",
    "name": "一级市场投融资",
    "domain": "investment",
@@ -40,15 +49,6 @@
    "count": 64,
    "opinion_count": 0,
    "score": 1859.2
-  },
-  {
-   "track_id": "TEC-COMPUTE",
-   "name": "算力与基础设施",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 59,
-   "opinion_count": 6,
-   "score": 1842.8
   },
   {
    "track_id": "INV-EXIT",
@@ -100,9 +100,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 48,
+   "count": 47,
    "opinion_count": 1,
-   "score": 1268.4
+   "score": 1242.2
   },
   {
    "track_id": "TEC-AUTO",
@@ -127,9 +127,9 @@
    "name": "增长与景气数据",
    "domain": "macro",
    "is_focus": false,
-   "count": 22,
-   "opinion_count": 3,
-   "score": 838.6
+   "count": 23,
+   "opinion_count": 2,
+   "score": 867.8
   },
   {
    "track_id": "MAC-MP",
@@ -145,18 +145,18 @@
    "name": "大宗商品与能源",
    "domain": "macro",
    "is_focus": false,
-   "count": 19,
+   "count": 18,
    "opinion_count": 8,
-   "score": 664.0
+   "score": 634.8
   },
   {
    "track_id": "MAC-FP",
    "name": "财政与产业政策",
    "domain": "macro",
    "is_focus": false,
-   "count": 18,
+   "count": 17,
    "opinion_count": 1,
-   "score": 563.4
+   "score": 537.2
   },
   {
    "track_id": "TEC-ROBO",
@@ -200,7 +200,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 2,
-   "opinion_count": 63,
+   "opinion_count": 64,
    "score": 77.0
   },
   {
@@ -220,9 +220,9 @@
   "M-CN": 107
  },
  "importance_dist": {
-  "normal": 315,
+  "normal": 314,
   "critical": 48,
-  "low": 744,
+  "low": 745,
   "important": 88
  },
  "source_dist": {
@@ -404,7 +404,7 @@
    "count": 12
   }
  ],
- "total_score": 27352.2,
+ "total_score": 27349.2,
  "other_count": 295,
- "other_opinion_count": 21
+ "other_opinion_count": 22
 }
