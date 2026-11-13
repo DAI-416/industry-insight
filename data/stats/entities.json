@@ -1,78 +1,86 @@
 [
  {
   "name": "Nvidia",
-  "count": 110
+  "count": 119
  },
  {
   "name": "Huang",
-  "count": 105
+  "count": 112
  },
  {
   "name": "Jensen",
-  "count": 95
+  "count": 103
  },
  {
   "name": "Anthropic",
-  "count": 47
+  "count": 49
  },
  {
   "name": "Bloomberg",
-  "count": 42
+  "count": 45
  },
  {
   "name": "IPO",
-  "count": 42
+  "count": 44
+ },
+ {
+  "name": "Trump",
+  "count": 41
  },
  {
   "name": "Sources",
-  "count": 39
+  "count": 41
  },
  {
   "name": "Google",
   "count": 39
  },
  {
-  "name": "Trump",
+  "name": "OpenAI",
   "count": 37
  },
  {
-  "name": "OpenAI",
-  "count": 34
+  "name": "美联储",
+  "count": 22
+ },
+ {
+  "name": "Wall",
+  "count": 22
+ },
+ {
+  "name": "GPT",
+  "count": 22
  },
  {
   "name": "Gemini",
   "count": 21
  },
  {
-  "name": "GPT",
-  "count": 19
- },
- {
   "name": "Meta",
-  "count": 18
- },
- {
-  "name": "美联储",
-  "count": 18
- },
- {
-  "name": "Wall",
-  "count": 18
+  "count": 20
  },
  {
   "name": "Donald",
-  "count": 17
+  "count": 19
+ },
+ {
+  "name": "York",
+  "count": 19
+ },
+ {
+  "name": "加息",
+  "count": 18
  },
  {
   "name": "芯片",
   "count": 17
  },
  {
-  "name": "York",
+  "name": "Verge",
   "count": 17
  },
  {
-  "name": "算力",
+  "name": "Microsoft",
   "count": 17
  },
  {
@@ -84,31 +92,31 @@
   "count": 16
  },
  {
-  "name": "Verge",
-  "count": 16
- },
- {
-  "name": "加息",
-  "count": 16
- },
- {
   "name": "Claude",
+  "count": 16
+ },
+ {
+  "name": "算力",
+  "count": 16
+ },
+ {
+  "name": "Alice",
   "count": 15
+ },
+ {
+  "name": "上市",
+  "count": 14
  },
  {
   "name": "数据中心",
   "count": 14
  },
  {
-  "name": "Alice",
-  "count": 14
+  "name": "融资",
+  "count": 13
  },
  {
-  "name": "Microsoft",
-  "count": 14
- },
- {
-  "name": "上市",
+  "name": "House",
   "count": 13
  },
  {
@@ -116,19 +124,19 @@
   "count": 13
  },
  {
+  "name": "ChatGPT",
+  "count": 13
+ },
+ {
   "name": "Series",
   "count": 13
  },
  {
-  "name": "融资",
-  "count": 12
- },
- {
-  "name": "House",
-  "count": 12
- },
- {
   "name": "Megaspeed",
+  "count": 12
+ },
+ {
+  "name": "After",
   "count": 12
  },
  {
@@ -140,23 +148,15 @@
   "count": 12
  },
  {
+  "name": "估值",
+  "count": 11
+ },
+ {
   "name": "Fable",
   "count": 11
  },
  {
   "name": "Muse",
-  "count": 11
- },
- {
-  "name": "ChatGPT",
-  "count": 11
- },
- {
-  "name": "After",
-  "count": 11
- },
- {
-  "name": "首席",
   "count": 11
  }
 ]
