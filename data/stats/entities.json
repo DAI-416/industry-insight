@@ -1,43 +1,43 @@
 [
  {
   "name": "Nvidia",
-  "count": 121
+  "count": 123
  },
  {
   "name": "Huang",
-  "count": 115
+  "count": 117
  },
  {
   "name": "Jensen",
-  "count": 106
+  "count": 108
  },
  {
   "name": "Anthropic",
-  "count": 50
- },
- {
-  "name": "Bloomberg",
-  "count": 46
+  "count": 51
  },
  {
   "name": "IPO",
-  "count": 46
+  "count": 49
+ },
+ {
+  "name": "Bloomberg",
+  "count": 47
  },
  {
   "name": "Sources",
-  "count": 43
+  "count": 44
  },
  {
   "name": "Trump",
   "count": 42
  },
  {
-  "name": "Google",
-  "count": 39
+  "name": "OpenAI",
+  "count": 40
  },
  {
-  "name": "OpenAI",
-  "count": 38
+  "name": "Google",
+  "count": 39
  },
  {
   "name": "美联储",
@@ -60,7 +60,7 @@
   "count": 20
  },
  {
-  "name": "Donald",
+  "name": "芯片",
   "count": 19
  },
  {
@@ -72,19 +72,31 @@
   "count": 19
  },
  {
+  "name": "Financial",
+  "count": 19
+ },
+ {
   "name": "加息",
   "count": 19
+ },
+ {
+  "name": "Donald",
+  "count": 18
+ },
+ {
+  "name": "Microsoft",
+  "count": 18
  },
  {
   "name": "上市",
   "count": 17
  },
  {
-  "name": "芯片",
+  "name": "Alice",
   "count": 17
  },
  {
-  "name": "Financial",
+  "name": "算力",
   "count": 17
  },
  {
@@ -92,20 +104,16 @@
   "count": 17
  },
  {
-  "name": "Microsoft",
+  "name": "Series",
   "count": 17
- },
- {
-  "name": "Alice",
-  "count": 16
  },
  {
   "name": "Claude",
   "count": 16
  },
  {
-  "name": "算力",
-  "count": 16
+  "name": "融资",
+  "count": 15
  },
  {
   "name": "House",
@@ -116,10 +124,6 @@
   "count": 14
  },
  {
-  "name": "融资",
-  "count": 13
- },
- {
   "name": "Iran",
   "count": 13
  },
@@ -128,11 +132,15 @@
   "count": 13
  },
  {
-  "name": "Series",
+  "name": "Releases",
   "count": 13
  },
  {
   "name": "Megaspeed",
+  "count": 12
+ },
+ {
+  "name": "估值",
   "count": 12
  },
  {
@@ -146,14 +154,6 @@
  {
   "name": "首席",
   "count": 12
- },
- {
-  "name": "Releases",
-  "count": 12
- },
- {
-  "name": "估值",
-  "count": 11
  },
  {
   "name": "Fable",

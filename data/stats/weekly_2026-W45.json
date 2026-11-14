@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-14T14:14:48+08:00",
+ "generated_at": "2026-11-14T21:29:34+08:00",
  "total": 1391,
  "fact_count": 1196,
  "opinion_count": 195,
@@ -11,7 +11,7 @@
    "domain": "tech",
    "is_focus": true,
    "count": 153,
-   "opinion_count": 10,
+   "opinion_count": 11,
    "score": 4581.6
   },
   {
@@ -47,7 +47,7 @@
    "domain": "tech",
    "is_focus": false,
    "count": 59,
-   "opinion_count": 7,
+   "opinion_count": 6,
    "score": 1842.8
   },
   {
@@ -92,7 +92,7 @@
    "domain": "tech",
    "is_focus": false,
    "count": 49,
-   "opinion_count": 2,
+   "opinion_count": 3,
    "score": 1294.6
   },
   {
@@ -154,9 +154,9 @@
    "name": "财政与产业政策",
    "domain": "macro",
    "is_focus": false,
-   "count": 17,
+   "count": 18,
    "opinion_count": 1,
-   "score": 537.2
+   "score": 561.6
   },
   {
    "track_id": "TEC-ROBO",
@@ -172,9 +172,9 @@
    "name": "投资政策与监管",
    "domain": "investment",
    "is_focus": false,
-   "count": 9,
+   "count": 8,
    "opinion_count": 4,
-   "score": 234.0
+   "score": 209.6
   },
   {
    "track_id": "INV-FUND",
@@ -406,5 +406,5 @@
  ],
  "total_score": 27385.4,
  "other_count": 294,
- "other_opinion_count": 24
+ "other_opinion_count": 23
 }
