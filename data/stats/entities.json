@@ -1,23 +1,23 @@
 [
  {
   "name": "Nvidia",
-  "count": 123
+  "count": 125
  },
  {
   "name": "Huang",
-  "count": 117
+  "count": 121
  },
  {
   "name": "Jensen",
-  "count": 108
+  "count": 112
  },
  {
   "name": "Anthropic",
-  "count": 51
+  "count": 53
  },
  {
   "name": "IPO",
-  "count": 49
+  "count": 50
  },
  {
   "name": "Bloomberg",
@@ -29,11 +29,11 @@
  },
  {
   "name": "Trump",
-  "count": 42
+  "count": 43
  },
  {
   "name": "OpenAI",
-  "count": 40
+  "count": 43
  },
  {
   "name": "Google",
@@ -41,22 +41,34 @@
  },
  {
   "name": "美联储",
-  "count": 23
+  "count": 24
  },
  {
   "name": "GPT",
-  "count": 23
+  "count": 24
  },
  {
   "name": "Wall",
-  "count": 22
+  "count": 23
  },
  {
   "name": "Gemini",
-  "count": 21
+  "count": 22
  },
  {
   "name": "Meta",
+  "count": 21
+ },
+ {
+  "name": "Reuters",
+  "count": 20
+ },
+ {
+  "name": "Financial",
+  "count": 20
+ },
+ {
+  "name": "加息",
   "count": 20
  },
  {
@@ -64,23 +76,23 @@
   "count": 19
  },
  {
-  "name": "Reuters",
-  "count": 19
- },
- {
   "name": "York",
   "count": 19
  },
  {
-  "name": "Financial",
-  "count": 19
- },
- {
-  "name": "加息",
-  "count": 19
- },
- {
   "name": "Donald",
+  "count": 18
+ },
+ {
+  "name": "Alice",
+  "count": 18
+ },
+ {
+  "name": "Claude",
+  "count": 18
+ },
+ {
+  "name": "Series",
   "count": 18
  },
  {
@@ -92,10 +104,6 @@
   "count": 17
  },
  {
-  "name": "Alice",
-  "count": 17
- },
- {
   "name": "算力",
   "count": 17
  },
@@ -104,16 +112,8 @@
   "count": 17
  },
  {
-  "name": "Series",
-  "count": 17
- },
- {
-  "name": "Claude",
-  "count": 16
- },
- {
   "name": "融资",
-  "count": 15
+  "count": 14
  },
  {
   "name": "House",
@@ -121,6 +121,14 @@
  },
  {
   "name": "数据中心",
+  "count": 14
+ },
+ {
+  "name": "Apple",
+  "count": 14
+ },
+ {
+  "name": "Releases",
   "count": 14
  },
  {
@@ -132,15 +140,7 @@
   "count": 13
  },
  {
-  "name": "Releases",
-  "count": 13
- },
- {
   "name": "Megaspeed",
-  "count": 12
- },
- {
-  "name": "估值",
   "count": 12
  },
  {
@@ -148,12 +148,12 @@
   "count": 12
  },
  {
-  "name": "Apple",
+  "name": "首席",
   "count": 12
  },
  {
-  "name": "首席",
-  "count": 12
+  "name": "估值",
+  "count": 11
  },
  {
   "name": "Fable",
