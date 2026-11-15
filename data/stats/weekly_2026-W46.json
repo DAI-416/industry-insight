@@ -1,45 +1,45 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-15T09:04:35+08:00",
- "total": 1263,
- "fact_count": 1094,
- "opinion_count": 169,
+ "generated_at": "2026-11-15T18:46:41+08:00",
+ "total": 1308,
+ "fact_count": 1125,
+ "opinion_count": 183,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 135,
-   "opinion_count": 10,
-   "score": 3989.4
+   "count": 128,
+   "opinion_count": 11,
+   "score": 3798.2
   },
   {
    "track_id": "TEC-COMPUTE",
    "name": "算力与基础设施",
    "domain": "tech",
    "is_focus": false,
-   "count": 82,
+   "count": 79,
    "opinion_count": 13,
-   "score": 2459.2
+   "score": 2374.6
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 74,
+   "count": 77,
    "opinion_count": 4,
-   "score": 2231.0
+   "score": 2335.4
   },
   {
    "track_id": "MAC-TRADE",
    "name": "国际贸易与地缘",
    "domain": "macro",
    "is_focus": false,
-   "count": 78,
-   "opinion_count": 12,
-   "score": 2034.0
+   "count": 81,
+   "opinion_count": 11,
+   "score": 2115.6
   },
   {
    "track_id": "INV-EXIT",
@@ -48,7 +48,7 @@
    "is_focus": false,
    "count": 57,
    "opinion_count": 2,
-   "score": 1943.4
+   "score": 1936.2
   },
   {
    "track_id": "TEC-SEMI",
@@ -56,8 +56,8 @@
    "domain": "tech",
    "is_focus": true,
    "count": 47,
-   "opinion_count": 11,
-   "score": 1610.0
+   "opinion_count": 13,
+   "score": 1587.8
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -65,17 +65,17 @@
    "domain": "macro",
    "is_focus": false,
    "count": 54,
-   "opinion_count": 14,
-   "score": 1568.4
+   "opinion_count": 18,
+   "score": 1557.6
   },
   {
    "track_id": "TEC-CLOUD",
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 51,
-   "opinion_count": 3,
-   "score": 1391.4
+   "count": 53,
+   "opinion_count": 2,
+   "score": 1433.0
   },
   {
    "track_id": "TEC-CE",
@@ -84,25 +84,34 @@
    "is_focus": false,
    "count": 51,
    "opinion_count": 1,
-   "score": 1350.6
+   "score": 1342.8
   },
   {
    "track_id": "INV-VC",
    "name": "一级市场投融资",
    "domain": "investment",
    "is_focus": false,
-   "count": 46,
-   "opinion_count": 1,
-   "score": 1283.2
+   "count": 48,
+   "opinion_count": 2,
+   "score": 1335.6
+  },
+  {
+   "track_id": "INV-FLOW",
+   "name": "资金流向与配置",
+   "domain": "investment",
+   "is_focus": false,
+   "count": 25,
+   "opinion_count": 5,
+   "score": 979.0
   },
   {
    "track_id": "TEC-AUTO",
    "name": "自动驾驶与智能车",
    "domain": "tech",
    "is_focus": false,
-   "count": 32,
-   "opinion_count": 2,
-   "score": 1017.8
+   "count": 30,
+   "opinion_count": 3,
+   "score": 957.6
   },
   {
    "track_id": "MAC-MP",
@@ -114,31 +123,31 @@
    "score": 850.2
   },
   {
-   "track_id": "INV-FLOW",
-   "name": "资金流向与配置",
-   "domain": "investment",
-   "is_focus": false,
-   "count": 21,
-   "opinion_count": 5,
-   "score": 810.0
-  },
-  {
    "track_id": "MAC-DATA",
    "name": "增长与景气数据",
    "domain": "macro",
    "is_focus": false,
    "count": 18,
-   "opinion_count": 2,
-   "score": 682.2
+   "opinion_count": 3,
+   "score": 668.4
   },
   {
    "track_id": "TEC-SEC",
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 22,
+   "count": 25,
    "opinion_count": 2,
-   "score": 579.4
+   "score": 658.0
+  },
+  {
+   "track_id": "TEC-ROBO",
+   "name": "人形机器人与具身智能",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 15,
+   "opinion_count": 0,
+   "score": 512.4
   },
   {
    "track_id": "MAC-CMD",
@@ -148,15 +157,6 @@
    "count": 15,
    "opinion_count": 3,
    "score": 465.0
-  },
-  {
-   "track_id": "TEC-ROBO",
-   "name": "人形机器人与具身智能",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 13,
-   "opinion_count": 0,
-   "score": 459.4
   },
   {
    "track_id": "INV-POLICY",
@@ -172,71 +172,71 @@
    "name": "财政与产业政策",
    "domain": "macro",
    "is_focus": false,
-   "count": 9,
+   "count": 11,
    "opinion_count": 2,
-   "score": 275.4
+   "score": 329.6
   },
   {
    "track_id": "INV-VIEW",
    "name": "赛道投资观点",
    "domain": "investment",
    "is_focus": false,
-   "count": 5,
-   "opinion_count": 55,
-   "score": 135.8
-  },
-  {
-   "track_id": "MAC-FX",
-   "name": "汇率与资本流动",
-   "domain": "macro",
-   "is_focus": false,
    "count": 4,
-   "opinion_count": 1,
-   "score": 115.6
+   "opinion_count": 58,
+   "score": 129.4
   },
   {
    "track_id": "INV-FUND",
    "name": "基金与募资",
    "domain": "investment",
    "is_focus": false,
-   "count": 4,
+   "count": 5,
    "opinion_count": 0,
-   "score": 98.8
+   "score": 125.0
+  },
+  {
+   "track_id": "MAC-FX",
+   "name": "汇率与资本流动",
+   "domain": "macro",
+   "is_focus": false,
+   "count": 3,
+   "opinion_count": 2,
+   "score": 89.4
   },
   {
    "track_id": "MAC-PROP",
    "name": "地产与信贷周期",
    "domain": "macro",
    "is_focus": false,
-   "count": 1,
-   "opinion_count": 0,
-   "score": 46.0
+   "count": 2,
+   "opinion_count": 1,
+   "score": 72.2
   }
  ],
  "market_dist": {
-  "M-CN": 90,
-  "M-GL": 1009,
-  "M-A": 68,
-  "M-HK": 96
+  "M-CN": 91,
+  "M-GL": 1038,
+  "M-A": 72,
+  "M-HK": 107
  },
  "importance_dist": {
-  "normal": 334,
-  "critical": 30,
-  "low": 654,
-  "important": 76
+  "normal": 337,
+  "critical": 29,
+  "low": 680,
+  "important": 79
  },
  "source_dist": {
-  "华尔街见闻": 276,
-  "南华早报": 395,
+  "华尔街见闻": 282,
+  "南华早报": 425,
   "MIT 科技评论": 14,
   "国家统计局": 3,
   "MarkTechPost": 24,
-  "Techmeme": 233,
+  "Techmeme": 241,
   "The Verge": 103,
   "TechCrunch": 107,
   "量子位": 1,
   "Simon Willison": 18,
-  "The Decoder": 47,
+  "The Decoder": 48,
   "美联储": 5,
   "OpenAI 官方博客": 20,
   "IEEE Spectrum": 6,
@@ -246,43 +246,47 @@
  "top_entities": [
   {
    "name": "Nvidia",
-   "count": 129
+   "count": 136
   },
   {
    "name": "Huang",
-   "count": 125
+   "count": 129
   },
   {
    "name": "Jensen",
-   "count": 116
+   "count": 121
   },
   {
    "name": "Anthropic",
-   "count": 53
+   "count": 54
   },
   {
    "name": "Bloomberg",
-   "count": 49
+   "count": 50
   },
   {
    "name": "IPO",
-   "count": 49
+   "count": 50
+  },
+  {
+   "name": "Trump",
+   "count": 44
   },
   {
    "name": "Sources",
    "count": 44
   },
   {
-   "name": "Trump",
-   "count": 43
-  },
-  {
    "name": "OpenAI",
-   "count": 43
+   "count": 42
   },
   {
    "name": "Google",
-   "count": 39
+   "count": 40
+  },
+  {
+   "name": "Wall",
+   "count": 24
   },
   {
    "name": "GPT",
@@ -290,10 +294,6 @@
   },
   {
    "name": "美联储",
-   "count": 23
-  },
-  {
-   "name": "Wall",
    "count": 23
   },
   {
@@ -305,23 +305,27 @@
    "count": 22
   },
   {
+   "name": "芯片",
+   "count": 21
+  },
+  {
+   "name": "Financial",
+   "count": 21
+  },
+  {
    "name": "Reuters",
    "count": 20
   },
   {
-   "name": "Financial",
+   "name": "York",
    "count": 20
   },
   {
-   "name": "芯片",
-   "count": 19
-  },
-  {
-   "name": "York",
-   "count": 19
-  },
-  {
    "name": "加息",
+   "count": 19
+  },
+  {
+   "name": "Series",
    "count": 19
   },
   {
@@ -334,10 +338,6 @@
   },
   {
    "name": "Claude",
-   "count": 18
-  },
-  {
-   "name": "Series",
    "count": 18
   },
   {
@@ -362,7 +362,11 @@
   },
   {
    "name": "House",
-   "count": 14
+   "count": 15
+  },
+  {
+   "name": "Iran",
+   "count": 15
   },
   {
    "name": "数据中心",
@@ -373,15 +377,11 @@
    "count": 14
   },
   {
-   "name": "首席",
-   "count": 14
-  },
-  {
    "name": "Releases",
    "count": 14
   },
   {
-   "name": "Iran",
+   "name": "估值",
    "count": 13
   },
   {
@@ -393,19 +393,19 @@
    "count": 13
   },
   {
+   "name": "首席",
+   "count": 13
+  },
+  {
+   "name": "Apec",
+   "count": 13
+  },
+  {
    "name": "Megaspeed",
-   "count": 12
-  },
-  {
-   "name": "估值",
-   "count": 12
-  },
-  {
-   "name": "SpaceX",
    "count": 12
   }
  ],
- "total_score": 25755.0,
- "other_count": 242,
- "other_opinion_count": 18
+ "total_score": 26011.8,
+ "other_count": 264,
+ "other_opinion_count": 19
 }
