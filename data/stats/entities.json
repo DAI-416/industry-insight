@@ -1,27 +1,27 @@
 [
  {
   "name": "Nvidia",
-  "count": 125
+  "count": 129
  },
  {
   "name": "Huang",
-  "count": 121
+  "count": 125
  },
  {
   "name": "Jensen",
-  "count": 112
+  "count": 116
  },
  {
   "name": "Anthropic",
   "count": 53
  },
  {
-  "name": "IPO",
-  "count": 50
+  "name": "Bloomberg",
+  "count": 49
  },
  {
-  "name": "Bloomberg",
-  "count": 47
+  "name": "IPO",
+  "count": 49
  },
  {
   "name": "Sources",
@@ -40,24 +40,24 @@
   "count": 39
  },
  {
-  "name": "美联储",
+  "name": "GPT",
   "count": 24
  },
  {
-  "name": "GPT",
-  "count": 24
+  "name": "美联储",
+  "count": 23
  },
  {
   "name": "Wall",
   "count": 23
  },
  {
-  "name": "Gemini",
+  "name": "Meta",
   "count": 22
  },
  {
-  "name": "Meta",
-  "count": 21
+  "name": "Gemini",
+  "count": 22
  },
  {
   "name": "Reuters",
@@ -68,15 +68,15 @@
   "count": 20
  },
  {
-  "name": "加息",
-  "count": 20
- },
- {
   "name": "芯片",
   "count": 19
  },
  {
   "name": "York",
+  "count": 19
+ },
+ {
+  "name": "加息",
   "count": 19
  },
  {
@@ -113,7 +113,7 @@
  },
  {
   "name": "融资",
-  "count": 14
+  "count": 15
  },
  {
   "name": "House",
@@ -125,6 +125,10 @@
  },
  {
   "name": "Apple",
+  "count": 14
+ },
+ {
+  "name": "首席",
   "count": 14
  },
  {
@@ -140,23 +144,19 @@
   "count": 13
  },
  {
+  "name": "After",
+  "count": 13
+ },
+ {
   "name": "Megaspeed",
   "count": 12
  },
  {
-  "name": "After",
-  "count": 12
- },
- {
-  "name": "首席",
-  "count": 12
- },
- {
   "name": "估值",
-  "count": 11
+  "count": 12
  },
  {
-  "name": "Fable",
-  "count": 11
+  "name": "SpaceX",
+  "count": 12
  }
 ]
