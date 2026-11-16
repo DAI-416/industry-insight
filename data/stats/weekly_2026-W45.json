@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-16T09:00:19+08:00",
+ "generated_at": "2026-11-16T19:06:20+08:00",
  "total": 1391,
  "fact_count": 1196,
  "opinion_count": 195,
@@ -20,7 +20,7 @@
    "domain": "tech",
    "is_focus": true,
    "count": 93,
-   "opinion_count": 8,
+   "opinion_count": 9,
    "score": 2715.0
   },
   {
@@ -163,9 +163,9 @@
    "name": "人形机器人与具身智能",
    "domain": "tech",
    "is_focus": true,
-   "count": 13,
+   "count": 12,
    "opinion_count": 0,
-   "score": 410.2
+   "score": 382.8
   },
   {
    "track_id": "INV-POLICY",
@@ -200,7 +200,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 3,
-   "opinion_count": 63,
+   "opinion_count": 62,
    "score": 101.4
   },
   {
@@ -404,7 +404,7 @@
    "count": 12
   }
  ],
- "total_score": 27406.2,
- "other_count": 293,
+ "total_score": 27378.8,
+ "other_count": 294,
  "other_opinion_count": 23
 }

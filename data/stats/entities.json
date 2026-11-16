@@ -1,1 +1,74 @@
-[]
+[
+ {
+  "name": "Qwen",
+  "count": 4
+ },
+ {
+  "name": "CDATA",
+  "count": 3
+ },
+ {
+  "name": "Qwen4-Max",
+  "count": 3
+ },
+ {
+  "name": "Alibaba",
+  "count": 3
+ },
+ {
+  "name": "Apec",
+  "count": 3
+ },
+ {
+  "name": "Trump",
+  "count": 3
+ },
+ {
+  "name": "大宗商品",
+  "count": 2
+ },
+ {
+  "name": "原油",
+  "count": 2
+ },
+ {
+  "name": "黄金",
+  "count": 2
+ },
+ {
+  "name": "豆包",
+  "count": 2
+ },
+ {
+  "name": "加息",
+  "count": 2
+ },
+ {
+  "name": "美联储",
+  "count": 2
+ },
+ {
+  "name": "Agent",
+  "count": 2
+ },
+ {
+  "name": "Releases",
+  "count": 2
+ },
+ {
+  "name": "Donald",
+  "count": 2
+ },
+ {
+  "name": "Washington",
+  "count": 2
+ },
+ {
+  "name": "Apple",
+  "count": 2
+ },
+ {
+  "name": "Financial",
+  "count": 2
+ }
+]
