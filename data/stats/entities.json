@@ -1,6 +1,66 @@
 [
  {
+  "name": "OpenAI",
+  "count": 14
+ },
+ {
+  "name": "Apec",
+  "count": 9
+ },
+ {
+  "name": "Trump",
+  "count": 9
+ },
+ {
+  "name": "Jensen",
+  "count": 8
+ },
+ {
+  "name": "Huang",
+  "count": 8
+ },
+ {
+  "name": "Nvidia",
+  "count": 7
+ },
+ {
+  "name": "Apple",
+  "count": 6
+ },
+ {
+  "name": "GPT",
+  "count": 6
+ },
+ {
   "name": "Qwen",
+  "count": 5
+ },
+ {
+  "name": "美联储",
+  "count": 4
+ },
+ {
+  "name": "Qwen4-Max",
+  "count": 4
+ },
+ {
+  "name": "Alibaba",
+  "count": 4
+ },
+ {
+  "name": "Putin",
+  "count": 4
+ },
+ {
+  "name": "Anthropic",
+  "count": 4
+ },
+ {
+  "name": "ChatGPT",
+  "count": 4
+ },
+ {
+  "name": "Energy",
   "count": 4
  },
  {
@@ -8,19 +68,55 @@
   "count": 3
  },
  {
-  "name": "Qwen4-Max",
+  "name": "Kimi",
   "count": 3
  },
  {
-  "name": "Alibaba",
+  "name": "Donald",
   "count": 3
  },
  {
-  "name": "Apec",
+  "name": "Washington",
   "count": 3
  },
  {
-  "name": "Trump",
+  "name": "Democrats",
+  "count": 3
+ },
+ {
+  "name": "Bloomberg",
+  "count": 3
+ },
+ {
+  "name": "York",
+  "count": 3
+ },
+ {
+  "name": "Health",
+  "count": 3
+ },
+ {
+  "name": "Series",
+  "count": 3
+ },
+ {
+  "name": "Face",
+  "count": 3
+ },
+ {
+  "name": "Google",
+  "count": 3
+ },
+ {
+  "name": "Altman",
+  "count": 3
+ },
+ {
+  "name": "Apollo",
+  "count": 3
+ },
+ {
+  "name": "Research",
   "count": 3
  },
  {
@@ -36,6 +132,10 @@
   "count": 2
  },
  {
+  "name": "半导体",
+  "count": 2
+ },
+ {
   "name": "豆包",
   "count": 2
  },
@@ -44,31 +144,19 @@
   "count": 2
  },
  {
-  "name": "美联储",
-  "count": 2
- },
- {
   "name": "Agent",
   "count": 2
  },
  {
-  "name": "Releases",
+  "name": "融资",
   "count": 2
  },
  {
-  "name": "Donald",
+  "name": "Before",
   "count": 2
  },
  {
-  "name": "Washington",
-  "count": 2
- },
- {
-  "name": "Apple",
-  "count": 2
- },
- {
-  "name": "Financial",
+  "name": "Under",
   "count": 2
  }
 ]
