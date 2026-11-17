@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-17T06:00:06+08:00",
+ "generated_at": "2026-11-17T15:53:03+08:00",
  "total": 1391,
  "fact_count": 1196,
  "opinion_count": 195,
@@ -91,9 +91,9 @@
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 49,
+   "count": 48,
    "opinion_count": 3,
-   "score": 1291.0
+   "score": 1272.0
   },
   {
    "track_id": "TEC-SEC",
@@ -404,7 +404,7 @@
    "count": 12
   }
  ],
- "total_score": 27378.8,
- "other_count": 294,
+ "total_score": 27359.8,
+ "other_count": 295,
  "other_opinion_count": 23
 }
