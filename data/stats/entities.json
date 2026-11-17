@@ -1,38 +1,82 @@
 [
  {
-  "name": "OpenAI",
-  "count": 16
- },
- {
-  "name": "Trump",
-  "count": 13
- },
- {
   "name": "Nvidia",
-  "count": 13
+  "count": 24
  },
  {
-  "name": "Apec",
-  "count": 11
+  "name": "OpenAI",
+  "count": 23
  },
  {
   "name": "Huang",
-  "count": 11
+  "count": 21
+ },
+ {
+  "name": "Trump",
+  "count": 20
  },
  {
   "name": "Jensen",
-  "count": 10
+  "count": 19
  },
  {
-  "name": "Apple",
-  "count": 6
- },
- {
-  "name": "Anthropic",
-  "count": 6
+  "name": "Apec",
+  "count": 16
  },
  {
   "name": "GPT",
+  "count": 12
+ },
+ {
+  "name": "Donald",
+  "count": 9
+ },
+ {
+  "name": "Series",
+  "count": 8
+ },
+ {
+  "name": "Anthropic",
+  "count": 8
+ },
+ {
+  "name": "Apple",
+  "count": 7
+ },
+ {
+  "name": "ChatGPT",
+  "count": 7
+ },
+ {
+  "name": "美联储",
+  "count": 6
+ },
+ {
+  "name": "Reuters",
+  "count": 6
+ },
+ {
+  "name": "Manila",
+  "count": 6
+ },
+ {
+  "name": "GPT-6",
+  "count": 6
+ },
+ {
+  "name": "Astra",
+  "count": 6
+ },
+ {
+  "name": "CNBC",
+  "count": 6
+ },
+ {
+  "name": "Megaspeed",
+  "count": 6
+ },
+ {
+  "name": "Sources",
   "count": 6
  },
  {
@@ -40,11 +84,19 @@
   "count": 5
  },
  {
+  "name": "IPO",
+  "count": 5
+ },
+ {
   "name": "Qwen",
   "count": 5
  },
  {
-  "name": "Donald",
+  "name": "Washington",
+  "count": 5
+ },
+ {
+  "name": "Bloomberg",
   "count": 5
  },
  {
@@ -52,11 +104,31 @@
   "count": 5
  },
  {
-  "name": "Reuters",
+  "name": "Financial",
   "count": 5
  },
  {
-  "name": "美联储",
+  "name": "Wall",
+  "count": 5
+ },
+ {
+  "name": "Putin",
+  "count": 5
+ },
+ {
+  "name": "Face",
+  "count": 5
+ },
+ {
+  "name": "Google",
+  "count": 5
+ },
+ {
+  "name": "加息",
+  "count": 4
+ },
+ {
+  "name": "Releases",
   "count": 4
  },
  {
@@ -68,95 +140,23 @@
   "count": 4
  },
  {
-  "name": "Washington",
+  "name": "GPU",
   "count": 4
  },
  {
-  "name": "Series",
+  "name": "Russian",
   "count": 4
  },
  {
-  "name": "Putin",
+  "name": "Jong-un",
+  "count": 4
+ },
+ {
+  "name": "半导体",
   "count": 4
  },
  {
   "name": "Altman",
   "count": 4
- },
- {
-  "name": "ChatGPT",
-  "count": 4
- },
- {
-  "name": "CNBC",
-  "count": 4
- },
- {
-  "name": "Energy",
-  "count": 4
- },
- {
-  "name": "大宗商品",
-  "count": 3
- },
- {
-  "name": "加息",
-  "count": 3
- },
- {
-  "name": "融资",
-  "count": 3
- },
- {
-  "name": "CDATA",
-  "count": 3
- },
- {
-  "name": "Kimi",
-  "count": 3
- },
- {
-  "name": "Democrats",
-  "count": 3
- },
- {
-  "name": "Bloomberg",
-  "count": 3
- },
- {
-  "name": "Financial",
-  "count": 3
- },
- {
-  "name": "Wall",
-  "count": 3
- },
- {
-  "name": "Health",
-  "count": 3
- },
- {
-  "name": "Tech",
-  "count": 3
- },
- {
-  "name": "Amazon",
-  "count": 3
- },
- {
-  "name": "IPO",
-  "count": 3
- },
- {
-  "name": "GPU",
-  "count": 3
- },
- {
-  "name": "算力",
-  "count": 3
- },
- {
-  "name": "Russian",
-  "count": 3
  }
 ]

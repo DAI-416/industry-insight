@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W45",
- "generated_at": "2026-11-17T15:53:03+08:00",
+ "generated_at": "2026-11-18T02:34:19+08:00",
  "events": [
   {
    "id": "1ec6ed903a96",
@@ -70618,7 +70618,7 @@
    "summary": "datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages\n\nI was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table.\n\nThis was happening because Datasette pages serve an HTTP link header like this:\n\nlink: <https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv>; rel=\"next\"\n\nThis is bad. A tiny fraction of the visitors to one of those pages will click the \"next\" link, which means for everyone else their browser is fetching",
    "content": "datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages\n\nI was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table.\n\nThis was happening because Datasette pages serve an HTTP link header like this:\n\nlink: <https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv>; rel=\"next\"\n\nThis is bad. A tiny fraction of the visitors to one of those pages will click the \"next\" link, which means for everyone else their browser is fetching unnecessary data and the Datasette server is having to render an entire page that then gets thrown away.\n\nI dug in and learned that Firefox has an issue that has been open for 24 years about this behavior...\n\nAnd one of the early comments on that issue links to my blog post from 2002 complaining about this feature. I hadn't just forgotten that I had written about it, I had forgotten the feature entirely!\n\n Tags: firefox, html, mozilla, datasette",
    "published_at": "2026-11-07T23:57:46+00:00",
-   "fetched_at": "2026-11-17T15:50:08.289602+08:00",
+   "fetched_at": "2026-11-18T02:31:43.138846+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -70635,11 +70635,11 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-CLOUD",
+   "track_id": "OTHER-1",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 25,
@@ -74635,7 +74635,7 @@
    "summary": "Research: parse_number() as a SQLite extension: C vs Rust\n\n I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted.\n\nI fired up regular Claude chat (Opus 5.5) and prompted:\n\nI'm thinking about a SQLite custom function 'parse_number(value)' that strips ',', '$', '£' and '%', handles a leading '-', and returns 'NULL' for anything it can’t parse\n\nExplore the difference between building this as a SQLite exten",
    "content": "Research: parse_number() as a SQLite extension: C vs Rust\n\n I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted.\n\nI fired up regular Claude chat (Opus 5.5) and prompted:\n\nI'm thinking about a SQLite custom function 'parse_number(value)' that strips ',', '$', '£' and '%', handles a leading '-', and returns 'NULL' for anything it can’t parse\n\nExplore the difference between building this as a SQLite extension in C v.s. in Rust - I want to compare performance and code complexity and size of the resulting.so(or whatever) file\n\nThis gave me a solid starting point - the Rust extension was 321 KB (using Rusqlite) and 298 KB (using sqlite-loadable-rs), while the C extension was 14 KB. But the Rust extension was faster!\n\nTurns out that's because the Rust equivalent of C's strtod is \"twice as fast\". So I prompted:\n\nTry writing your own C function for parsing text into a decimal number that catches up to or beats the Rust implementation\n\nAnd it did, using \"Clinger's fast path\":\n\nNet cost per row over 2 million rows, lower is better:\n\nfirst C\nnew C\nrusqlite\nsqlite-loadable\n\nMixed data\n67 ns\n19 ns\n46 ns\n41 ns\n\nIntegers only\n25 ns\n16 ns\n36 ns\n32 ns\n\nDecimals only\n106 ns\n18 ns\n55 ns\n47 ns\n\nFinally, I had it rewrite the prototype as a research report to match the others in simonw/research by prompting this:\n\nClone simonw/research from GitHub and turn your above investigation into a research report as seen in that repository - you can give me a zip file to download that contains your new folder\n\nHere's the resulting report.\n\n \n \n Tags: research, c, rust, sqlite, claude",
    "published_at": "2026-11-08T22:26:00+00:00",
-   "fetched_at": "2026-11-17T15:50:08.289476+08:00",
+   "fetched_at": "2026-11-18T02:31:43.138781+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -74656,7 +74656,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 25,
@@ -75667,7 +75667,7 @@
    "summary": "My comment on Terry Pratchett&#x27;s Study &mdash; Hacker News.\nTerry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on the things you liked before you got rich: https://chibuikeani.blogspot.com/2017/02/the-price-of-happin...\n\nBut horizontal wealth means not letting your increased income dictate your tastes. You like books and now you have money? Buy more books! Change those catenary bookshelves for good hardwood ones! In my case, build a library ",
    "content": "My comment on Terry Pratchett&#x27;s Study &mdash; Hacker News.\nTerry Pratchett once wrote about the concept of \"horizontal wealth\". Vertical wealth is where you spend money on rich people stuff - yachts and suchlike. Horizontal wealth is where you spend more money on the things you liked before you got rich: https://chibuikeani.blogspot.com/2017/02/the-price-of-happin...\n\nBut horizontal wealth means not letting your increased income dictate your tastes. You like books and now you have money? Buy more books! Change those catenary bookshelves for good hardwood ones! In my case, build a library extension to your office. And, of course, you buy what will be useful for that most wonderful of pursuits, blind research, which is research without direction for the sheer joy of it.\n\n(Original source is his book A Slip of the Keyboard - this linked blog post quotes that bit.)\n\n \n \n Tags: hacker-news, terry-pratchett",
    "published_at": "2026-11-07T19:34:24+00:00",
-   "fetched_at": "2026-11-17T15:50:08.289701+08:00",
+   "fetched_at": "2026-11-18T02:31:43.139140+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
