@@ -1,11 +1,15 @@
 [
  {
   "name": "Nvidia",
-  "count": 38
+  "count": 40
  },
  {
   "name": "Huang",
-  "count": 34
+  "count": 36
+ },
+ {
+  "name": "Trump",
+  "count": 31
  },
  {
   "name": "Jensen",
@@ -13,30 +17,34 @@
  },
  {
   "name": "OpenAI",
-  "count": 26
+  "count": 27
  },
  {
-  "name": "Trump",
+  "name": "Apec",
   "count": 24
  },
  {
   "name": "GPT",
-  "count": 19
- },
- {
-  "name": "Apec",
-  "count": 18
+  "count": 20
  },
  {
   "name": "Donald",
-  "count": 12
+  "count": 15
  },
  {
   "name": "Anthropic",
-  "count": 12
+  "count": 14
  },
  {
   "name": "IPO",
+  "count": 13
+ },
+ {
+  "name": "Bloomberg",
+  "count": 11
+ },
+ {
+  "name": "Putin",
   "count": 11
  },
  {
@@ -44,7 +52,15 @@
   "count": 11
  },
  {
+  "name": "Sources",
+  "count": 11
+ },
+ {
   "name": "Apple",
+  "count": 10
+ },
+ {
+  "name": "Series",
   "count": 10
  },
  {
@@ -52,23 +68,31 @@
   "count": 10
  },
  {
+  "name": "York",
+  "count": 9
+ },
+ {
   "name": "Google",
   "count": 9
  },
  {
-  "name": "Sources",
+  "name": "ChatGPT",
   "count": 9
  },
  {
-  "name": "Bloomberg",
+  "name": "Jinping",
+  "count": 9
+ },
+ {
+  "name": "芯片",
   "count": 8
  },
  {
-  "name": "Series",
+  "name": "融资",
   "count": 8
  },
  {
-  "name": "ChatGPT",
+  "name": "Manila",
   "count": 8
  },
  {
@@ -80,15 +104,35 @@
   "count": 7
  },
  {
-  "name": "York",
-  "count": 7
- },
- {
   "name": "Reuters",
   "count": 7
  },
  {
-  "name": "芯片",
+  "name": "Financial",
+  "count": 7
+ },
+ {
+  "name": "Claude",
+  "count": 7
+ },
+ {
+  "name": "Megaspeed",
+  "count": 7
+ },
+ {
+  "name": "Prime",
+  "count": 7
+ },
+ {
+  "name": "Colette",
+  "count": 7
+ },
+ {
+  "name": "黄金",
+  "count": 6
+ },
+ {
+  "name": "Releases",
   "count": 6
  },
  {
@@ -96,11 +140,7 @@
   "count": 6
  },
  {
-  "name": "Manila",
-  "count": 6
- },
- {
-  "name": "Putin",
+  "name": "Russian",
   "count": 6
  },
  {
@@ -116,47 +156,7 @@
   "count": 6
  },
  {
-  "name": "Megaspeed",
-  "count": 6
- },
- {
-  "name": "Colette",
-  "count": 6
- },
- {
-  "name": "GPT-6.2",
-  "count": 6
- },
- {
-  "name": "Qwen",
-  "count": 5
- },
- {
-  "name": "Releases",
-  "count": 5
- },
- {
-  "name": "Financial",
-  "count": 5
- },
- {
-  "name": "Amazon",
-  "count": 5
- },
- {
-  "name": "Altman",
-  "count": 5
- },
- {
-  "name": "Claude",
-  "count": 5
- },
- {
   "name": "Microsoft",
-  "count": 5
- },
- {
-  "name": "Jinping",
-  "count": 5
+  "count": 6
  }
 ]
