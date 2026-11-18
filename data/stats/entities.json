@@ -1,58 +1,98 @@
 [
  {
   "name": "Nvidia",
-  "count": 24
- },
- {
-  "name": "OpenAI",
-  "count": 23
+  "count": 38
  },
  {
   "name": "Huang",
-  "count": 21
- },
- {
-  "name": "Trump",
-  "count": 20
+  "count": 34
  },
  {
   "name": "Jensen",
+  "count": 29
+ },
+ {
+  "name": "OpenAI",
+  "count": 26
+ },
+ {
+  "name": "Trump",
+  "count": 24
+ },
+ {
+  "name": "GPT",
   "count": 19
  },
  {
   "name": "Apec",
-  "count": 16
- },
- {
-  "name": "GPT",
-  "count": 12
+  "count": 18
  },
  {
   "name": "Donald",
+  "count": 12
+ },
+ {
+  "name": "Anthropic",
+  "count": 12
+ },
+ {
+  "name": "IPO",
+  "count": 11
+ },
+ {
+  "name": "Astra",
+  "count": 11
+ },
+ {
+  "name": "Apple",
+  "count": 10
+ },
+ {
+  "name": "GPT-6",
+  "count": 10
+ },
+ {
+  "name": "Google",
   "count": 9
+ },
+ {
+  "name": "Sources",
+  "count": 9
+ },
+ {
+  "name": "Bloomberg",
+  "count": 8
  },
  {
   "name": "Series",
   "count": 8
  },
  {
-  "name": "Anthropic",
+  "name": "ChatGPT",
   "count": 8
  },
  {
-  "name": "Apple",
-  "count": 7
- },
- {
-  "name": "ChatGPT",
-  "count": 7
- },
- {
   "name": "美联储",
-  "count": 6
+  "count": 7
+ },
+ {
+  "name": "Washington",
+  "count": 7
+ },
+ {
+  "name": "York",
+  "count": 7
  },
  {
   "name": "Reuters",
+  "count": 7
+ },
+ {
+  "name": "芯片",
+  "count": 6
+ },
+ {
+  "name": "Wall",
   "count": 6
  },
  {
@@ -60,11 +100,15 @@
   "count": 6
  },
  {
-  "name": "GPT-6",
+  "name": "Putin",
   "count": 6
  },
  {
-  "name": "Astra",
+  "name": "Face",
+  "count": 6
+ },
+ {
+  "name": "Instagram",
   "count": 6
  },
  {
@@ -76,31 +120,19 @@
   "count": 6
  },
  {
-  "name": "Sources",
+  "name": "Colette",
   "count": 6
  },
  {
-  "name": "芯片",
-  "count": 5
- },
- {
-  "name": "IPO",
-  "count": 5
+  "name": "GPT-6.2",
+  "count": 6
  },
  {
   "name": "Qwen",
   "count": 5
  },
  {
-  "name": "Washington",
-  "count": 5
- },
- {
-  "name": "Bloomberg",
-  "count": 5
- },
- {
-  "name": "York",
+  "name": "Releases",
   "count": 5
  },
  {
@@ -108,55 +140,23 @@
   "count": 5
  },
  {
-  "name": "Wall",
+  "name": "Amazon",
   "count": 5
- },
- {
-  "name": "Putin",
-  "count": 5
- },
- {
-  "name": "Face",
-  "count": 5
- },
- {
-  "name": "Google",
-  "count": 5
- },
- {
-  "name": "加息",
-  "count": 4
- },
- {
-  "name": "Releases",
-  "count": 4
- },
- {
-  "name": "Alibaba",
-  "count": 4
- },
- {
-  "name": "Qwen4-Max",
-  "count": 4
- },
- {
-  "name": "GPU",
-  "count": 4
- },
- {
-  "name": "Russian",
-  "count": 4
- },
- {
-  "name": "Jong-un",
-  "count": 4
- },
- {
-  "name": "半导体",
-  "count": 4
  },
  {
   "name": "Altman",
-  "count": 4
+  "count": 5
+ },
+ {
+  "name": "Claude",
+  "count": 5
+ },
+ {
+  "name": "Microsoft",
+  "count": 5
+ },
+ {
+  "name": "Jinping",
+  "count": 5
  }
 ]

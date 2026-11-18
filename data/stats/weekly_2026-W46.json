@@ -1,36 +1,36 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-18T02:34:19+08:00",
+ "generated_at": "2026-11-18T10:56:15+08:00",
  "total": 1379,
- "fact_count": 1187,
- "opinion_count": 192,
+ "fact_count": 1190,
+ "opinion_count": 189,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 140,
-   "opinion_count": 10,
-   "score": 4110.2
+   "count": 144,
+   "opinion_count": 8,
+   "score": 4218.6
   },
   {
    "track_id": "TEC-COMPUTE",
    "name": "算力与基础设施",
    "domain": "tech",
    "is_focus": false,
-   "count": 83,
+   "count": 82,
    "opinion_count": 15,
-   "score": 2479.4
+   "score": 2456.2
   },
   {
    "track_id": "LLM",
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 80,
+   "count": 78,
    "opinion_count": 5,
-   "score": 2384.0
+   "score": 2324.4
   },
   {
    "track_id": "MAC-TRADE",
@@ -55,9 +55,9 @@
    "name": "半导体",
    "domain": "tech",
    "is_focus": true,
-   "count": 51,
+   "count": 52,
    "opinion_count": 12,
-   "score": 1698.0
+   "score": 1724.2
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -73,9 +73,9 @@
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 56,
+   "count": 57,
    "opinion_count": 2,
-   "score": 1481.0
+   "score": 1505.4
   },
   {
    "track_id": "TEC-CE",
@@ -136,9 +136,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 23,
-   "opinion_count": 3,
-   "score": 603.8
+   "count": 24,
+   "opinion_count": 2,
+   "score": 628.2
   },
   {
    "track_id": "TEC-ROBO",
@@ -222,7 +222,7 @@
  "importance_dist": {
   "normal": 338,
   "critical": 29,
-  "low": 744,
+  "low": 747,
   "important": 76
  },
  "source_dist": {
@@ -405,7 +405,7 @@
    "count": 13
   }
  ],
- "total_score": 27158.8,
- "other_count": 280,
+ "total_score": 27259.4,
+ "other_count": 279,
  "other_opinion_count": 21
 }
