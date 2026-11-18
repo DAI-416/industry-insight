@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-18T19:34:25+08:00",
+ "generated_at": "2026-11-19T04:28:51+08:00",
  "events": [
   {
    "id": "30ee268cdefa",
@@ -1763,7 +1763,7 @@
    "summary": "銆銆2026骞10鏈堜唤锛屽叏鍥藉眳姘戞秷璐逛环鏍煎悓姣斾笂娑0.7%銆傚叾涓紝鍩庡競涓婃定0.7%锛屽啘鏉戜笂娑0.7%锛涢鍝佷环鏍间笅闄2.9%锛岄潪椋熷搧浠锋牸涓婃定1.5%锛涙秷璐瑰搧浠锋牸涓婃定0.8%锛屾湇鍔′环鏍间笂娑0.7%銆1鈥10鏈堝钩鍧囷紝鍏ㄥ浗灞呮皯娑堣垂浠锋牸姣斾笂骞村悓鏈熶笂娑0.9%銆傗傘銆10鏈堜唤锛屽叏鍥藉眳姘戞秷璐逛环鏍肩幆姣旀寔骞炽傚叾涓紝鍩庡競鎸佸钩锛屽啘鏉戜笅闄0.1%锛涢鍝佷环鏍间笅闄1.0%锛岄潪...",
    "content": "銆銆2026骞10鏈堜唤锛屽叏鍥藉眳姘戞秷璐逛环鏍煎悓姣斾笂娑0.7%銆傚叾涓紝鍩庡競涓婃定0.7%锛屽啘鏉戜笂娑0.7%锛涢鍝佷环鏍间笅闄2.9%锛岄潪椋熷搧浠锋牸涓婃定1.5%锛涙秷璐瑰搧浠锋牸涓婃定0.8%锛屾湇鍔′环鏍间笂娑0.7%銆1鈥10鏈堝钩鍧囷紝鍏ㄥ浗灞呮皯娑堣垂浠锋牸姣斾笂骞村悓鏈熶笂娑0.9%銆傗傘銆10鏈堜唤锛屽叏鍥藉眳姘戞秷璐逛环鏍肩幆姣旀寔骞炽傚叾涓紝鍩庡競鎸佸钩锛屽啘鏉戜笅闄0.1%锛涢鍝佷环鏍间笅闄1.0%锛岄潪...",
    "published_at": "2026-11-09T09:30:02+08:00",
-   "fetched_at": "2026-11-18T19:33:30.551155+08:00",
+   "fetched_at": "2026-11-19T04:27:23.225453+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -1784,7 +1784,7 @@
    "market_primary": "M-A",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.99,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 42,
@@ -1818,7 +1818,7 @@
    "summary": "銆銆2026骞10鏈堜唤锛屽叏鍥藉伐涓氱敓浜ц呭嚭鍘備环鏍煎悓姣斾笂娑5.7%锛岀幆姣斾笂娑0.7%銆傚伐涓氱敓浜ц呰喘杩涗环鏍煎悓姣斾笂娑7.9%锛岀幆姣斾笂娑1.1%銆1鈥10鏈堝钩鍧囷紝宸ヤ笟鐢熶骇鑰呭嚭鍘備环鏍兼瘮涓婂勾鍚屾湡涓婃定2.7%锛屽伐涓氱敓浜ц呰喘杩涗环鏍间笂娑4.0%銆傗傗傗傘銆涓銆佸伐涓氱敓浜ц呬环鏍煎悓姣斿彉鍔ㄦ儏鍐碘傘銆10鏈堜唤锛屽伐涓氱敓浜ц呭嚭鍘備环鏍间腑锛岀敓浜ц祫鏂欎环鏍煎悓姣斾笂娑7.4%锛屽奖...",
    "content": "銆銆2026骞10鏈堜唤锛屽叏鍥藉伐涓氱敓浜ц呭嚭鍘備环鏍煎悓姣斾笂娑5.7%锛岀幆姣斾笂娑0.7%銆傚伐涓氱敓浜ц呰喘杩涗环鏍煎悓姣斾笂娑7.9%锛岀幆姣斾笂娑1.1%銆1鈥10鏈堝钩鍧囷紝宸ヤ笟鐢熶骇鑰呭嚭鍘備环鏍兼瘮涓婂勾鍚屾湡涓婃定2.7%锛屽伐涓氱敓浜ц呰喘杩涗环鏍间笂娑4.0%銆傗傗傗傘銆涓銆佸伐涓氱敓浜ц呬环鏍煎悓姣斿彉鍔ㄦ儏鍐碘傘銆10鏈堜唤锛屽伐涓氱敓浜ц呭嚭鍘備环鏍间腑锛岀敓浜ц祫鏂欎环鏍煎悓姣斾笂娑7.4%锛屽奖...",
    "published_at": "2026-11-09T09:30:01+08:00",
-   "fetched_at": "2026-11-18T19:33:30.551241+08:00",
+   "fetched_at": "2026-11-19T04:27:23.225507+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -1839,7 +1839,7 @@
    "market_primary": "M-A",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.99,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 42,
@@ -3487,7 +3487,7 @@
    "summary": "My comment on The Web Is More Than Enough, by Paul Ford &mdash; Hacker News.\nOK, this comment convinced me to give that a shot.\n\nHere's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (77KB)\n\nI just asked Claude (Opus 5.5 Medium running in regular Claude Chat) to port that to Vanilla JS, in the same thread where it had built it, and got this: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (98KB)\n\nThey aren't identical - you can see what Claude said about that in the transcript (I don't f",
    "content": "My comment on The Web Is More Than Enough, by Paul Ford &mdash; Hacker News.\nOK, this comment convinced me to give that a shot.\n\nHere's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (77KB)\n\nI just asked Claude (Opus 5.5 Medium running in regular Claude Chat) to port that to Vanilla JS, in the same thread where it had built it, and got this: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (98KB)\n\nThey aren't identical - you can see what Claude said about that in the transcript (I don't fully understand why it differed): https://claude.ai/share/e56d163e-2793-4677-aa11-191d5058b414\n\nBut yeah, it turns out Claude Opus 5.5 is perfectly capable of 3D modeling in Vanilla JS + WebGL without Three.js.\n\nIn eyeballing the code I find the Three.js slightly easier to understand myself, but I rarely look at the code for these 3D projects so that isn't a particularly big deal.\n\n \n \n Tags: claude, javascript, three-js, hacker-news, generative-ai, ai, llms",
    "published_at": "2026-11-09T04:32:33+00:00",
-   "fetched_at": "2026-11-18T19:33:18.247928+08:00",
+   "fetched_at": "2026-11-19T04:27:15.851306+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -3508,7 +3508,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 0,
@@ -3646,7 +3646,7 @@
    "summary": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions.\n\nThey're too good at describing the work\nThe problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it. That's a lot of information t",
    "content": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions.\n\nThey're too good at describing the work\nThe problem is that they are too good. An agent-written PR description is accurate and comprehensive. It describes the problem, the detailed solution, and the steps taken to verify it. That's a lot of information to absorb.\n\nIt's not necessarily slop, but it reads like slop!\n\nIt's very easy to spot an AI-written PR, and as with other forms of AI writing my instant reaction is best summarized as \"I'm not reading all of that\". It doesn't matter how accurate or useful the information is, I'm instantly put off by the thought that it will take me longer to read than it took the driving author to write... even when that driving author is me!\n\nI want human editorial judgement. I want someone to have thought just long enough about the PR to give me a human-approved introduction that helps me understand, at a high level, what the PR is for and whether it deserves more of my attention.\n\nI think I've found a low-effort way to do this that feels right.\n\nHide most of it in a details/summary\nThe HTML <details><summary> elements render as a collapsed heading (the summary) that can be expanded to view the larger piece of text. The code looks like this:\n\n<details>\n <summary>Claude Opus 5.5</summary>\n <h2>The hook</h2>\n Plugins implement <code>register_agent_reference_types(datasette)</code>...\n</details>\nWhen rendered, it looks like this:\n\nCrucially, <details><summary> is supported in GitHub Markdown. You can drop those tags directly into an issue comment or PR description and GitHub will hide the details and display just the summary plus an expansion arrow.\n\nI've started using this for my AI-generated pull requests.\n\nThe opening paragraph of my PRs will be carefully selected to act as a high-level explanation of what's going on - the shortest text a human can read that will help get them up to speed.\n\nI'll sometimes throw in a screenshot as well, since images are often the best way to quickly illustrate a new feature.\n\nThe full agent-written essay then follows in a <details><summary>. I use the model name and often the effort level as that summary, to make it abundantly clear what is going on - \"Claude Opus 5.5 Medium\" for example.\n\nMy PRs don't feel nearly as sloppy now! The information is all still there, but a reader can glance at it and get the top, human-curated information without their eyes glazing over at multiple paragraphs of agent-written details.\n\nI don't always write the introduction myself - sometimes the agent has given me what I need already, hidden away in the avalanche of other text. My promise to the reader is that the short opener will represent my human judgement as to what is definitely worth their time.\n\nHere are some recent examples where I've used this pattern, including the opener I used:\n\ndatasette PR #3052: Redesign row page as a vertical list of fields - \"The row page showed its single row as a one-row table. For wide tables, like a 46-column GitHub repos table, that scrolled far off to the right and left most of the page blank.\" (then a screenshot)\n\ndatasette PR #3043: Pagination bar showing which rows are on the current page - \"Table pages that span more than one page now make it obvious where you are, and offer navigation at the top of the page as well as the bottom.\" (plus screenshot)\n\ndatasette PR #3042: Load edit-tools.js on demand via a small loader - \"edit-tools.js (~220KB) was loaded on every table, row and database page, even for users who couldn't edit anything. Now only load it for users who can edit when they first interact with an edit feature (including mouse over an edit link).\"\n\ndatasette-agent PR #51: register_agent_r",
    "published_at": "2026-11-09T04:25:05+00:00",
-   "fetched_at": "2026-11-18T19:33:18.248242+08:00",
+   "fetched_at": "2026-11-19T04:27:15.851550+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -5458,7 +5458,7 @@
    "summary": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
    "content": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
    "published_at": "2026-11-09T21:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:13.300889+08:00",
+   "fetched_at": "2026-11-19T04:27:11.031227+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -5480,7 +5480,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.95,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 42,
@@ -6400,7 +6400,7 @@
    "summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
    "content": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
    "published_at": "2026-11-09T19:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613827+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049527+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -6421,7 +6421,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.95,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 34,
@@ -7225,7 +7225,7 @@
    "summary": "This article is brought to you by Queen’s University Belfast.\nSeveral teams around the globe are leveraging AI by creating a task force of agents managed by an orchestrator and creating applications to support risk assessment, client profiling, match making, and information yield with a slight overview of decision making. One of the important components for these agents is to ensure that the logs are managed and historic relevance is not being used to avoid skewing towards same decision making. Thus, the system is expected to keep checkpoints in place where agents are prompted to delete such h",
    "content": "This article is brought to you by Queen’s University Belfast.\nSeveral teams around the globe are leveraging AI by creating a task force of agents managed by an orchestrator and creating applications to support risk assessment, client profiling, match making, and information yield with a slight overview of decision making. One of the important components for these agents is to ensure that the logs are managed and historic relevance is not being used to avoid skewing towards same decision making. Thus, the system is expected to keep checkpoints in place where agents are prompted to delete such historic relevance.\nHowever, despite such methodology in place, a future prompt could make the agents bring forward the information that was supposed to be deleted and can be tricked into revealing more information, which is a classic case of context recovery attack. So, the question raised here is: How can we trust that our instructions have been followed? And where is the proof?\nThere is an element of utilizing zero-trust architectures (ZTA) for orchestrating and managing agentic activity, which simply means all agentic interactions use the core principle of “never trust,” “always verify.” ZTA components include a policy enforcement point (PEP) that has to be trusted to maintain trust across the system, so the question that remains is where is the component of zero-trust, and shall we trust the policies enforced by PEP?\nHaving a pro-agentic approach and utilizing agents could be helpful with the right guardrails in place. Opening our systems to random agents that are being trained on off-the-shelf models and blindly relying on them can pose significant cyber risks. For example, vibe coding by using an AI model to help develop software, giving away the entire codebase to an untrusted entity outside the organization can lead to vulnerability sweeping across multiple surfaces.\nVibe coding by using an AI model to help develop software, giving away the entire codebase to an untrusted entity outside the organization can lead to vulnerability sweeping across multiple surfaces.\nThis opens critical discussions towards how vibe coding could interfere with the positioning and implementation of trusted execution of the agentic queries. Consider an autonomous web of agents that relies on agents’ inputs to drive the operations. When the system is operating under low tolerance of failure and with non-tracking based agentic workflows, it could be computationally expensive to trust and verify each query in real-time that leads to the common trade-offs of memory vs execution.\nAnother risk to consider is the zero-day attack. When it happens, how will the system react? Would such an event be manageable without a total infrastructure breakdown? The scale of impact can be observed from over reliance on agentic ecosystems with only one trusted layer. This could mean that when failure occurs, the entire ecosystem could be exposed, just like there will be no autonomy if the backbone network is not available, which essentially means no layer to place trust.\nHow quickly can de-authentication attacks occur?An in-house experiment done at Queen’s University Belfast (QUB) provided an initial understanding of how the scale of agentic attacks could mean a lower window of vulnerability. The team focused on very popular de-authentication attacks and with agentic orchestration, the swift rate to do de-authentication attacks could go as low as 2 to 3 seconds. This gives little to no time to react and decide on patching the system.\nThere is another aspect of the large-scale agentic system, which establishes trust under asynchronous autonomy. Trust serves as a critical foundation for traceability. How would you ensure that all the agents operating towards a common goal are aligned and understand the delays associated with their goals?\nOur team worked around this space, which at first involved demonstrating that the problem exists, and its impact and scale can be huge when you",
    "published_at": "2026-11-09T16:25:06+00:00",
-   "fetched_at": "2026-11-18T19:33:17.215392+08:00",
+   "fetched_at": "2026-11-19T04:27:14.368494+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -7244,11 +7244,11 @@
     "TEC-BCI",
     "TEC-QUANT"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "TEC-SEC",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "opinion",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.85,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 0,
@@ -9128,7 +9128,7 @@
    "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
    "content": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
    "published_at": "2026-11-09T13:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613859+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049550+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -9145,7 +9145,7 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "LLM",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
@@ -10174,7 +10174,7 @@
    "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
    "content": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
    "published_at": "2026-11-09T08:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613885+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049569+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -10195,7 +10195,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 39,
@@ -10229,7 +10229,7 @@
    "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
    "content": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
    "published_at": "2026-11-09T08:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613913+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049589+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -11853,7 +11853,7 @@
    "summary": "Claude Fable 5.2 pays close attention to who owns the code it works on. In Anthropic’s testing on small coding tasks, the model tended to add to the existing structure when the prompt said nothing about ownership or presented the code base as someone else’s, even when that duplicated existing code. When the prompt said the code base was the model’s own, it often consolidated duplicated code and sometimes made related fixes without being asked.\n\nIf you want the model to improve the structure as it works, say that the code is its own:\n\nYou are the owner and long-term maintainer of this codebase,",
    "content": "Claude Fable 5.2 pays close attention to who owns the code it works on. In Anthropic’s testing on small coding tasks, the model tended to add to the existing structure when the prompt said nothing about ownership or presented the code base as someone else’s, even when that duplicated existing code. When the prompt said the code base was the model’s own, it often consolidated duplicated code and sometimes made related fixes without being asked.\n\nIf you want the model to improve the structure as it works, say that the code is its own:\n\nYou are the owner and long-term maintainer of this codebase, and its design is up to you.\n\nThe ownership sentence makes the model much more likely to consolidate duplicated code into one shared function. In Anthropic’s testing on small coding tasks, the model consolidated duplicated code in under 10 percent of runs without the sentence and in about 75 percent of runs with it.\n\n&mdash; Prompting Claude Fable 5.2, Anthropic documentation\n\n Tags: prompt-engineering, anthropic, generative-ai, ai, llms, claude-mythos-fable",
    "published_at": "2026-11-10T05:34:14+00:00",
-   "fetched_at": "2026-11-18T19:33:18.247095+08:00",
+   "fetched_at": "2026-11-19T04:27:15.850638+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -12348,7 +12348,7 @@
    "summary": "Tool: Yonkers Rises\n\n I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to:\n\nMake a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn, use openstreetmap mapping data\n\nIt correctly deduced that \"átomos\" was a mobile keyboard typo for \"stomps\":\n\n \n\n \n \n Tags: three-js, llms, ai, generative-ai, yonkers-rising, claude-mythos-fable",
    "content": "Tool: Yonkers Rises\n\n I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to:\n\nMake a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn, use openstreetmap mapping data\n\nIt correctly deduced that \"átomos\" was a mobile keyboard typo for \"stomps\":\n\n \n\n \n \n Tags: three-js, llms, ai, generative-ai, yonkers-rising, claude-mythos-fable",
    "published_at": "2026-11-10T03:53:04+00:00",
-   "fetched_at": "2026-11-18T19:33:18.247162+08:00",
+   "fetched_at": "2026-11-19T04:27:15.850691+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -13224,7 +13224,7 @@
    "summary": "Release: llm-anthropic 0.31\n\n Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis. Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have become more ambitious!\n\nI've added the new models to llm-anthropic, so you can now run prompts through Fable 5.2 like this:\n\nuv tool install llm\nllm install llm-anthropic\nllm keys set anthropic\n# paste key here\nllm -m claude-fable-5.2 \"Generate an SVG of a pelican riding a bicycle\"\n\nI ran pelicans at all five reasoning levels - low, medium,",
    "content": "Release: llm-anthropic 0.31\n\n Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis. Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have become more ambitious!\n\nI've added the new models to llm-anthropic, so you can now run prompts through Fable 5.2 like this:\n\nuv tool install llm\nllm install llm-anthropic\nllm keys set anthropic\n# paste key here\nllm -m claude-fable-5.2 \"Generate an SVG of a pelican riding a bicycle\"\n\nI ran pelicans at all five reasoning levels - low, medium, high, xhigh, and max. You can see them all here - here's the best result I got, from xhigh:\n\nmax failed to return an image at all, running out of tokens after spending 128,000 thinking about them. That's the same bug that I saw with Opus 5.5 - but it's new for the Fable series, both Fable 5 and Fable 5.1 returned max effort pelicans just fine.\n\nIt's priced at $8/million input and $40/million output, which is a 20% discount on the previous Fable 5.1 ($10/$50).\n\nI also used Fable 5.2 to help identify the source of a mysterious beep.\n\n \n \n Tags: llm-release, llm, anthropic, claude, generative-ai, pelican-riding-a-bicycle, ai, llms, claude-mythos-fable",
    "published_at": "2026-11-09T23:58:46+00:00",
-   "fetched_at": "2026-11-18T19:33:18.247260+08:00",
+   "fetched_at": "2026-11-19T04:27:15.850770+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -13279,7 +13279,7 @@
    "summary": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping. The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator, a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room.\n\nHere's what Beep Locator looks like after it has been running for a while:\n\nYou run",
    "content": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping. The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator, a software system for triangulating the source of a mysterious beep using multiple devices scattered around the room.\n\nHere's what Beep Locator looks like after it has been running for a while:\n\nYou run Python web server to show the primary UI, and then use the QR code or URL to connect as many devices as you can spare to act as listeners - I was using two iPads, a phone, a MacBook Pro and a Surface Ultra.\n\nThe devices then play noises to each other to help estimate their locations. This didn't work particularly well, so I added a \"Rough mode\" where you can drag their icons around in the space to provide rough locations which are then adjusted based on those sounds.\n\nOnce that's set up, the devices all listen for the beep!\n\nI added a clapping mode too so I could test it by clapping my hands in different locations around the room - displayed as diamonds on the map. This helped me gain confidence that it was capable of locating a sound.\n\nBeeps show up on the map as an X, plus a line in the \"Sounds located\" log. You can replay these sounds (from each device in turn) to confirm they are the mysterious beep you are looking for, then click \"This is the mystery beep\" to mark them as such.\n\nOnce you've confirmed the mysterious beep frequency the system will listen out for it, measure the interval between beeps, and use the triangulated locations to lock down the most likely location on the map.\n\nThe system worked as intended. It gave me the position of the beep to within about 40cm, then I dug through that specific pile of boxes and found an ancient carbon monoxide detector that desperately wanted its batteries replaced.\n\nHow it works\nWhen I started working through this problem with Claude it quickly dug up BeepBeep: A High-Accuracy Acoustic-Based System for Ranging and Localization Using COTS Devices, a 2007 paper by Chunyi Peng, Guobin Shen, Yongguang Zhang, Yanlin Li, and Kun Tan. Here's that paper's abstract:\n\nWe present the design, implementation, and evaluation of BeepBeep, a high-accuracy acoustic-based ranging system. It operates in a spontaneous, ad-hoc, and device-to-device context without leveraging any pre-planned infrastructure. It is a pure software-based solution and uses only the most basic set of commodity hardware – a speaker, a microphone, and some form of device-to-device communication – so that it is readily applicable to many low-cost sensor platforms and to most commercial-off-the-shelf mobile devices like cell phones and PDAs. It achieves high accuracy through a combination of three techniques: two-way sensing, self-recording, and sample counting.\n\nThat sounded exactly like what we needed to build!\n\nBeep Locator runs a Python web application server that does most of the work. The listening devices then connect to that server via WebSockets and present a UI which requests browser microphone access. The listeners mainly work by recording a 60 second buffer of recent audio. They also run a simple beep detection algorithm (see detector.js), which uses Fast Fourier Transform and a high-pass filter to identify potential beeps. It sends these events to the main server.\n\nWhen a beep is reported, the server has a device play a short chirp (the device with the lowest round-trip time to the server), then asks every listener upload a clip from about 0.6s before the beep to 0.8s after that chirp. This chirp allows the clips to be aligned with each other, a crucial step in locating the beep.\n\nHow I built it\nI started this project using Claude Code Cloud via my iPhone, with Opus 5.5 running in Extra thinking effort mode. Here's that sh",
    "published_at": "2026-11-09T23:57:21+00:00",
-   "fetched_at": "2026-11-18T19:33:18.247843+08:00",
+   "fetched_at": "2026-11-19T04:27:15.851244+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -13300,7 +13300,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 29,
@@ -16618,7 +16618,7 @@
    "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
    "content": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
    "published_at": "2026-11-10T14:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.863245+08:00",
+   "fetched_at": "2026-11-19T04:27:15.166422+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -16639,7 +16639,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 39,
@@ -17160,7 +17160,7 @@
    "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
    "content": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
    "published_at": "2026-11-10T13:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.863271+08:00",
+   "fetched_at": "2026-11-19T04:27:15.166468+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -17486,7 +17486,7 @@
    "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
    "content": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
    "published_at": "2026-11-10T12:02:28+00:00",
-   "fetched_at": "2026-11-18T19:33:17.721203+08:00",
+   "fetched_at": "2026-11-19T04:27:15.622753+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -17503,7 +17503,7 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
@@ -17597,7 +17597,7 @@
    "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
    "content": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
    "published_at": "2026-11-10T12:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613672+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049378+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -17618,7 +17618,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.95,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 39,
@@ -18583,7 +18583,7 @@
    "summary": "Learn how guided virtual shock and drop analysis helps engineering teams identify reliability risks before physical testing, reduce qualification iterations, optimize packaging designs, and accelerate electronics product development.\nWhat you will learn about: \nWhy shock failures found during physical qualification are costly, and how coupled electrical, mechanical, thermal, and packaging effects make them hard to predict.How physical drop testing and traditional simulation each leave gaps in timing, expertise, setup effort, and diagnostic detail.How guided, template-based virtual workflows mo",
    "content": "Learn how guided virtual shock and drop analysis helps engineering teams identify reliability risks before physical testing, reduce qualification iterations, optimize packaging designs, and accelerate electronics product development.\nWhat you will learn about: \nWhy shock failures found during physical qualification are costly, and how coupled electrical, mechanical, thermal, and packaging effects make them hard to predict.How physical drop testing and traditional simulation each leave gaps in timing, expertise, setup effort, and diagnostic detail.How guided, template-based virtual workflows model tilt drops, ball impacts, and packaged drops using IEC 60068-2-27 and IEC 60068-2-31 profiles.How running the full drop orientation matrix as one validation plan supports packaging optimization, and how correlation with physical tests builds confidence before hardware is committed.Download this free whitepaper now!",
    "published_at": "2026-11-10T11:00:02+00:00",
-   "fetched_at": "2026-11-18T19:33:17.214900+08:00",
+   "fetched_at": "2026-11-19T04:27:14.368112+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -18602,7 +18602,7 @@
     "TEC-BCI",
     "TEC-QUANT"
    ],
-   "track_id": "TEC-CE",
+   "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
@@ -19848,7 +19848,7 @@
    "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
    "content": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
    "published_at": "2026-11-10T09:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613723+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049423+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -20285,7 +20285,7 @@
    "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember\n\nMeta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as:\n\n[...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing.\n\nFor shorter prompts it's priced the same as GPT-6 Luna and Claude Haiku 5.5 - both are $0.10/million input tokens and $0.50/million output. Today's other big model release, Claude Fable 5.2, is 80x that price at $8/$40.\n\nThe pricin",
    "content": "Introducing Our Smallest, Most Efficient Model: Muse Ember\n\nMeta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as:\n\n[...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing.\n\nFor shorter prompts it's priced the same as GPT-6 Luna and Claude Haiku 5.5 - both are $0.10/million input tokens and $0.50/million output. Today's other big model release, Claude Fable 5.2, is 80x that price at $8/$40.\n\nThe pricing is a little less straightforward as prompts get longer, though. Luna, Ember, and Haiku all support up to a million input tokens, but they also all have a threshold after which the price goes up. Taking that threshold into account Ember is priced between the two others:\n\n \n \n Model\n Prompt size\n Input ($/M)\n Cached input\n Output\n \n \n \n \n GPT-6 Luna\n ≤272k\n $0.10\n $0.01\n $0.50\n \n \n >272k\n $0.20\n $0.02\n $0.75\n \n \n Muse Ember 1.0\n ≤200k\n $0.10\n $0.004\n $0.50\n \n \n >200k\n $0.30\n $0.012\n $1.50\n \n \n Claude Haiku 5.5\n ≤100k\n $0.10\n $0.01\n $0.50\n \n \n >100k\n $0.50\n $0.05\n $2.50\n \n \n\nBut comparing price-per-token doesn't really make sense these days, when reasoning tokens mean that different models might use dramatically different numbers of tokens to solve the same problem.\n\nFor that, one measure that's useful is the Artificial Analysis. \n\nAnd even more useful than that is their Intelligence Index vs. Cost per Task chart, which shows the following for those three models:\n\nThe Muse Ember models sit right on that Pareto line - the line at which you can only improve one dimension by giving up another. Meta call this out in their announcement:\n\nIt also sits on the efficiency frontier of the full Artificial Analysis leaderboard: no model scores higher for less per task.\n\n(That grey dot on the Pareto line in the middle of the green area is GPT-6.1 Terra (low) - clearly I should be paying more attention to the Terra family!)\n\nMuse Ember has six reasoning levels - minimal, low, medium, high, xhigh, and max - so I rendered six pelicans riding bicycles. The \"high\" reasoning level failed to return a full SVG, and the other SVGs were surprising in that the reasoning level didn't cleanly map to the visual quality of the response.\n\nHere's the \"max\" one, but the others are worth a look too:\n\nThe Ember pelicans are comparable in quality to those I got from Muse Wonder, which is 40x the price of Muse Ember.\n\n Tags: ai, generative-ai, llms, meta, llm-pricing, llm-release, artificial-analysis, muse",
    "published_at": "2026-11-10T07:28:21+00:00",
-   "fetched_at": "2026-11-18T19:33:18.246991+08:00",
+   "fetched_at": "2026-11-19T04:27:15.850567+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -20340,7 +20340,7 @@
    "summary": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
    "content": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
    "published_at": "2026-11-10T07:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613777+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049486+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -20451,7 +20451,7 @@
    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
    "content": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
    "published_at": "2026-11-09T19:51:47+00:00",
-   "fetched_at": "2026-11-18T19:33:17.721256+08:00",
+   "fetched_at": "2026-11-19T04:27:15.622791+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -22443,7 +22443,7 @@
    "summary": "Bishnu Saroop Atal\nAcoustics and signal processing pioneer\nLife Fellow, 93; died 19 August\nAtal was an acoustics and signal processing researcher at Bell Labs in Murray Hill, N.J., and later at AT&T’s Shannon Laboratory, in Florham Park, N.J. His pioneering work on voice-coding techniques became the foundation for efficient, high-quality voice transmission over cellular networks. He received the 2013 IEEE Jack S. Kilby Signal Processing Medal for “fundamental and pioneering contributions to speech coding.”\nHe joined Bell Labs in 1961 as a communications researcher, and his early work there foc",
    "content": "Bishnu Saroop Atal\nAcoustics and signal processing pioneer\nLife Fellow, 93; died 19 August\nAtal was an acoustics and signal processing researcher at Bell Labs in Murray Hill, N.J., and later at AT&T’s Shannon Laboratory, in Florham Park, N.J. His pioneering work on voice-coding techniques became the foundation for efficient, high-quality voice transmission over cellular networks. He received the 2013 IEEE Jack S. Kilby Signal Processing Medal for “fundamental and pioneering contributions to speech coding.”\nHe joined Bell Labs in 1961 as a communications researcher, and his early work there focused on speaker identification technology. During the 1960s he helped develop linear predictive coding, a powerful method for analyzing and compressing speech. LPC is now the most widely used method for encoding speech at a low bit rate.\nAtal developed increasingly sophisticated low-bit-rate speech-coding techniques. They included multipulse LPC, which improved the quality of compressed speech.\n Bishnu Saroop AtalNokia Bell Labs\nHe also worked with his colleague Manfred R. Schroeder to develop code-excited linear prediction, a method for producing high-quality speech at very low bit rates. CELP became a foundational technique in modern speech coding, letting digital communications systems carry voice using less bandwidth. The extra efficiency expanded cellular capacity, allowing wireless networks to handle more simultaneous calls.\nLater in his career, he led the acoustics and speech research departments at Bell.\nThe company named him a Fellow in 1994. When AT&T Bell Laboratories split into separate research organizations in 1996, Atal continued his career at the AT&T Florham Park headquarters, and he was named a Fellow the following year.\nHe retired in 2002 and became an affiliate professor of electrical engineering at the University of Washington, in Seattle. There he continued his research in speech processing, speech recognition, and high-dimensional computing.\nAtal was elected to the National Academy of Engineering in 1987 and the National Academy of Sciences in 1993. He received numerous awards including the 2018 International Speech Communication Association Medal for Scientific Achievement and a 2003 medal from the Franklin Institute.\nHe received a bachelor’s degree in physics in 1952 from the University of Lucknow, in India, and a master’s degree in 1955 in electrical engineering from the Indian Institute of Science, in Bengaluru. While working full time at Bell he earned a Ph.D. in EE in 1968 from the Polytechnic Institute of Brooklyn (now New York University’s Tandon engineering school), in New York City.\nDarryl Palmer Jr.\nChair of the IEEE Central Illinois Section\nSenior member, 55; died 30 August\nPalmer was a dedicated IEEE volunteer, serving as chair of the Central Illinois Section and as the government relations chair of Region 4. He was a member of the IEEE Industrial Electronics Society and its industrial activity committee. He also served as associate editor of the IEEE Transactions on Industrial Informatics.\nIn 1986, at age 16, Palmer completed a summer internship at NASA’s Glenn Research Center, in Cleveland. He helped develop FoilSim, an interactive educational software program that introduces aerodynamic engineering to preuniversity students.\nWhile studying computer science at Cleveland State University in 1996, he joined the university’s Allen-Bradley PLC lab as a research assistant. He designed hardware and software systems for the Glenn Research Center to collect and process thermal wave imaging data. He also designed software for General Motors’ North American robotic and welding division.\nIn 1999 he completed a second internship at the research center and helped develop EngineSim, an educational software program that models jet engine design and testing.\nFor his work, NASA recognized him with a Space Act Award.\nIn 2000 he earned his bachelor’s degree in computer science and became a software engineer at the Danfo",
    "published_at": "2026-11-10T19:00:02+00:00",
-   "fetched_at": "2026-11-18T19:33:17.214830+08:00",
+   "fetched_at": "2026-11-19T04:27:14.368062+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -22500,7 +22500,7 @@
    "summary": "A man speaks into a phone. Text on the screen reads 'Gemini Intelligence'",
    "content": "A man speaks into a phone. Text on the screen reads 'Gemini Intelligence'",
    "published_at": "2026-11-10T19:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.863208+08:00",
+   "fetched_at": "2026-11-19T04:27:15.166387+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -22517,11 +22517,11 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 39,
@@ -24646,7 +24646,7 @@
    "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
    "content": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
    "published_at": "2026-11-10T10:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613697+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049403+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -24701,7 +24701,7 @@
    "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
    "content": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
    "published_at": "2026-11-12T00:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613593+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049319+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -25542,7 +25542,7 @@
    "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
    "content": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
    "published_at": "2026-11-11T08:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613621+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049338+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -27605,7 +27605,7 @@
    "summary": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
    "content": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
    "published_at": "2026-11-10T00:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613801+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049506+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -27622,14 +27622,14 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-SEC",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 34,
+   "importance_score": 39,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -27638,7 +27638,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 2,
-    "focus_boost": false
+    "focus_boost": true
    },
    "ai_summary": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
    "ai_summary_raw": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
@@ -31047,7 +31047,7 @@
    "summary": "A portrait of Dr Nontobeko Ntombela, Senior Lecturer, Department of Curatorial, Public and Visual Cultures, Wits School of Arts, University of the Witwatersrand",
    "content": "A portrait of Dr Nontobeko Ntombela, Senior Lecturer, Department of Curatorial, Public and Visual Cultures, Wits School of Arts, University of the Witwatersrand",
    "published_at": "2026-11-11T09:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.863184+08:00",
+   "fetched_at": "2026-11-19T04:27:15.166366+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -33063,7 +33063,7 @@
    "summary": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
    "content": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
    "published_at": "2026-11-10T08:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613750+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049463+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -33699,7 +33699,7 @@
    "summary": "aws-emulator\n\nFinally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so.\n\nIt's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog.\n\nIt currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other lang",
    "content": "aws-emulator\n\nFinally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so.\n\nIt's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog.\n\nIt currently requires Docker to run on macOS or Windows. I'm hoping they fix that in the future - it would be great if you could download a single binary and use that as part of a standard test suite in other languages and on other platforms.\n\n Tags: amazon, amazon-web-services, testing, werner-vogels, ai, rust, docker, generative-ai, llms, agentic-engineering",
    "published_at": "2026-11-11T21:18:30+00:00",
-   "fetched_at": "2026-11-18T19:33:18.246374+08:00",
+   "fetched_at": "2026-11-19T04:27:15.850042+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -33720,7 +33720,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 28,
@@ -34479,7 +34479,7 @@
    "summary": "Browse tools.simonwillison.net by tag\n\nI've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter to analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool.\n\nThe homepage now features tag clouds for browsing by each of those categories of tag:\n\n Tags: javascript, tools, ai, generative-ai, llms, claude, vibe-coding",
    "content": "Browse tools.simonwillison.net by tag\n\nI've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while. I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter to analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool.\n\nThe homepage now features tag clouds for browsing by each of those categories of tag:\n\n Tags: javascript, tools, ai, generative-ai, llms, claude, vibe-coding",
    "published_at": "2026-11-11T18:42:50+00:00",
-   "fetched_at": "2026-11-18T19:33:18.246433+08:00",
+   "fetched_at": "2026-11-19T04:27:15.850085+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -34503,7 +34503,7 @@
    "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 32,
+   "importance_score": 29,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -34511,7 +34511,7 @@
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
+    "timeliness": 2,
     "focus_boost": true
    },
    "ai_summary": "I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while.",
@@ -34589,7 +34589,7 @@
    "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
    "content": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
    "published_at": "2026-11-11T18:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.863124+08:00",
+   "fetched_at": "2026-11-19T04:27:15.166310+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -34613,15 +34613,15 @@
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 43,
-   "importance_level": "normal",
+   "importance_score": 39,
+   "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
     "source": 17,
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
+    "timeliness": 2,
     "focus_boost": true
    },
    "ai_summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
@@ -35081,7 +35081,7 @@
    "summary": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.",
    "content": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.",
    "published_at": "2026-11-11T16:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.863156+08:00",
+   "fetched_at": "2026-11-19T04:27:15.166338+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -35105,15 +35105,15 @@
    "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 43,
-   "importance_level": "normal",
+   "importance_score": 39,
+   "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
     "source": 17,
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
+    "timeliness": 2,
     "focus_boost": true
    },
    "ai_summary": "Tabletop is a new Google Labs experiment for group collaboration.",
@@ -35301,7 +35301,7 @@
    "summary": "Anthropic&#x27;s IPO roadshow video\n\nAnthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works.\n\nThe section on \"Approach to compute\" with co-founder Tom Brown is particularly interesting, describing how Anthropic train and serve Claude across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.\n\nI'm not sure why there's no official video transcript, but here's one that I extracted using MacWhisper. Highlights below:\n\nWe train and serve Claude now across all four major chip families. That's only possib",
    "content": "Anthropic&#x27;s IPO roadshow video\n\nAnthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works.\n\nThe section on \"Approach to compute\" with co-founder Tom Brown is particularly interesting, describing how Anthropic train and serve Claude across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.\n\nI'm not sure why there's no official video transcript, but here's one that I extracted using MacWhisper. Highlights below:\n\nWe train and serve Claude now across all four major chip families. That's only possible because early on we made an unconventional bet on a multi-chip strategy. At the time, many people thought that running AI models on different chips wasn't worth the effort. Each chip needs its own tailored software stack and inference stack, which is expensive and difficult to build. We've now been doing it for years, and we've gotten incredibly good at it. [...]\n\nAs an example, this year, we started working with AMD GPUs for the first time. In the past, bringing on a new chip platform took dozens of engineers months of work This time, we had Mythos try it out. It got Claude running on AMD in just three days, with basically no human intervention. Claude ported or wrote almost 100% of the kernels. [...]\n\nThe second driver of our compute advantage is our rate of discovery of compute multipliers. We focus on total effective compute, which is the multiplicative product of physical capacity times the compute multipliers that we discover. Each one we discover makes our pool of total effective compute bigger. For example, say you need 100 units of compute to train a model of a certain intelligence. A 4x compute multiplier means you can use 25 units of compute to train the exact same model. Or you can use those hundred physical units to train an even more intelligent model that would have previously required 400 units.\n\nCompute multipliers create a competitive advantage for us that's hard to replicate. They build on each other. Each new multiplier we discover has a positive effect on the multipliers before it. They stack. We believe that this can accelerate even further as we approach recursive self-improvement. Claude will be able to discover compute multipliers entirely by itself, allowing the number of compute multipliers to grow faster and faster.\n\nWe got a hint at Anthropic's multi-chip strategy last September in their postmortem of three recent issues, where they described bugs that affected just their TPU deployments.\n\n Tags: ai, generative-ai, llms, anthropic, gpus, claude-mythos-fable, recursive-self-improvement",
    "published_at": "2026-11-11T15:11:59+00:00",
-   "fetched_at": "2026-11-18T19:33:18.246642+08:00",
+   "fetched_at": "2026-11-19T04:27:15.850263+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -35325,7 +35325,7 @@
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 38,
+   "importance_score": 35,
    "importance_level": "low",
    "event_type": "资本动作",
    "score_detail": {
@@ -35333,7 +35333,7 @@
     "event": 20,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
+    "timeliness": 2,
     "focus_boost": false
    },
    "ai_summary": "Anthropic&#x27;s IPO roadshow video\n\nAnthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unrele…",
@@ -35412,7 +35412,7 @@
    "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
    "content": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
    "published_at": "2026-11-11T15:00:15+00:00",
-   "fetched_at": "2026-11-18T19:33:17.721145+08:00",
+   "fetched_at": "2026-11-19T04:27:15.622712+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -35429,23 +35429,23 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "OTHER-1",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 43,
-   "importance_level": "normal",
+   "importance_score": 34,
+   "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
     "source": 17,
     "event": 10,
     "breadth": 5,
     "density": 0,
-    "timeliness": 5,
-    "focus_boost": true
+    "timeliness": 2,
+    "focus_boost": false
    },
    "ai_summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
    "ai_summary_raw": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
@@ -36123,7 +36123,7 @@
    "summary": "This article is brought to you by Innomotics.\nIn the annals of industrial history, few innovations have demonstrated such remarkable staying power as the dynamo-electric principle. Discovered by Werner von Siemens in 1866, this groundbreaking principle remains fundamental to modern electrical engineering more than a century and a half later – and continues to shape the technology portfolio of Innomotics, a globally leading provider of electric motors and large drive systems. What began as a breakthrough in electromechanical energy conversion has evolved into a cornerstone of global industry – ",
    "content": "This article is brought to you by Innomotics.\nIn the annals of industrial history, few innovations have demonstrated such remarkable staying power as the dynamo-electric principle. Discovered by Werner von Siemens in 1866, this groundbreaking principle remains fundamental to modern electrical engineering more than a century and a half later – and continues to shape the technology portfolio of Innomotics, a globally leading provider of electric motors and large drive systems. What began as a breakthrough in electromechanical energy conversion has evolved into a cornerstone of global industry – powering everything from brewery operations in Qingdao to high-voltage drive systems in petrochemical plants.\n1866: The breakthrough that powered the futureThe year 1866 marked a decisive turning point, not only in the broader arc of industrial transformation but specifically in the realm of electric motion. At a time when Europe was entering a new phase of industrial transformation, Werner von Siemens pioneered the dynamo-electric principle – a breakthrough that enabled electric machines to generate their own magnetic field through self-excitation. This innovation transformed electric machines from laboratory curiosities into practical power sources, enabling the widespread electrification of industry and infrastructure that defined the late 19th century.\n This electric motor from Innomotics was installed in the early 1900s at the historic Tsingtao Brewery in China and supported production processes for more than 90 years, operating continuously under industrial conditions.Innomotics\nThe principle itself is elegantly simple: an iron core generates a stable magnetic field; a rotating coil is placed within this field; movement in the magnetic field induces an electric current; part of this current strengthens the magnetic field; and electrical energy is continuously converted into motion. This self-reinforcing cycle made efficient and reliable electric motion possible – and it remains the foundation of modern motors today.\nOne principle. Millions of motors.More than 160 years later, the same fundamental idea continues to power industrial applications around the world. Millions of motors operate reliably under demanding conditions, keeping production running across generations. The dynamo-electric principle made it possible for electric machines to convert electrical energy into motion (and motion back into electrical energy), creating the technological foundation for modern electric motors and drive systems.\n Active Vibration Control System (AVCS) enhances stability and reliability by actively reducing vibrations.Innomotics\nPerhaps no example illustrates this longevity better than the electric motor from Innomotics at the historic Tsingtao Brewery in China. Installed in the early 1900s during the early electrification of industrial brewing, this motor supported production processes for more than 90 years, operating continuously under industrial conditions. It became a powerful example of long-term reliability in real-world applications – a testament to how engineering ensures reliable motion across decades.\nAward-winning innovationsContinuity, however, does not mean stagnation. Sixteen decades after the original breakthrough, innovations continue to emerge that build upon this proven foundation. Two recent developments – the Active Vibration Control System (AVCS) and oil-lubricated rolling bearings (OLRB) – carry this spirit of innovation and ingenuity forward, a commitment that has been recognized with the German Innovation Award.\n Innomotics’ patented Oil-Lubricated Rolling Bearing (OLRB) technology enhances reliability and reduces maintenance requirements.Innomotics\nAVCS helps optimize high-voltage motor performance by actively decoupling motors from their foundations to reduce vibration issues. OLRB helps prevent rolling bearing failures from the start with continuous lubrication, supporting higher availability, less downtime, and long",
    "published_at": "2026-11-11T11:00:02+00:00",
-   "fetched_at": "2026-11-18T19:33:17.214231+08:00",
+   "fetched_at": "2026-11-19T04:27:14.367578+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -36145,21 +36145,13 @@
    "track_id": "OTHER-1",
    "market_primary": "M-GL",
    "market_related": [],
-   "content_type": "fact",
+   "content_type": "opinion",
    "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
-   "importance_score": 34,
-   "importance_level": "low",
-   "event_type": "常规经营",
-   "score_detail": {
-    "source": 17,
-    "event": 10,
-    "breadth": 5,
-    "density": 0,
-    "timeliness": 2,
-    "focus_boost": false
-   },
+   "importance_score": 0,
+   "importance_level": "opinion",
+   "event_type": "观点评论",
    "ai_summary": "This article is brought to you by Innomotics.",
    "ai_summary_raw": "This article is brought to you by Innomotics.",
    "summary_method": "first_sentence",
@@ -36679,7 +36671,7 @@
    "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
    "content": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
    "published_at": "2026-11-11T00:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613647+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049359+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -36700,7 +36692,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.85,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 39,
@@ -39914,7 +39906,7 @@
    "summary": "Gemini Decisions API\n\nGoogle join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question.\n\nIt's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.\n\nJev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, au",
    "content": "Gemini Decisions API\n\nGoogle join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question.\n\nIt's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.\n\nJev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs.\n\nI tested it against video by passing these questions to it along with my Yonkers stomping robot video file:\n\ndragon: Does this video have a dragon in it?\nrobot: Does this video have a robot in it?\nfrance: Is this video set in France?\nusa: Is this video set in the USA?\n\nJev and OpenAI both return 1.0 or 0.0 for yes/no questions, but Gemini insists on being a little less confident than that:\n\n{\n \"dragon\": {\n \"type\": \"yes_no\",\n \"probability\": 0.04976021841520312\n },\n \"robot\": {\n \"type\": \"yes_no\",\n \"probability\": 0.9234055387792485\n },\n \"france\": {\n \"type\": \"yes_no\",\n \"probability\": 0.08329171353166241\n },\n \"usa\": {\n \"type\": \"yes_no\",\n \"probability\": 0.9230459995157706\n }\n}\n\n Via Hacker News\n\n Tags: ai, generative-ai, gemini, llm-release, jev, decision-models",
    "published_at": "2026-11-11T22:03:25+00:00",
-   "fetched_at": "2026-11-18T19:33:18.246305+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849989+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -42195,7 +42187,7 @@
    "summary": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
    "content": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
    "published_at": "2026-11-12T16:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:13.300859+08:00",
+   "fetched_at": "2026-11-19T04:27:11.031204+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -45717,7 +45709,7 @@
    "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
    "content": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
    "published_at": "2026-11-12T09:30:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613515+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049254+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -46554,7 +46546,7 @@
    "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
    "content": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
    "published_at": "2026-11-12T00:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613543+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049277+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -46571,7 +46563,7 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "TEC-AI",
+   "track_id": "LLM",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
@@ -48426,7 +48418,7 @@
    "summary": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
    "content": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
    "published_at": "2026-11-12T18:30:00+00:00",
-   "fetched_at": "2026-11-18T19:33:13.300798+08:00",
+   "fetched_at": "2026-11-19T04:27:11.031158+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -48482,7 +48474,7 @@
    "summary": "Rotating carousel of cards with text \"Gemini 4 Hydrogen\" \"Now in Google Search\" and examples from the Google Search UI",
    "content": "Rotating carousel of cards with text \"Gemini 4 Hydrogen\" \"Now in Google Search\" and examples from the Google Search UI",
    "published_at": "2026-11-12T18:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.863076+08:00",
+   "fetched_at": "2026-11-19T04:27:15.166286+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -48593,7 +48585,7 @@
    "summary": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
    "content": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
    "published_at": "2026-11-12T17:45:00+00:00",
-   "fetched_at": "2026-11-18T19:33:13.300831+08:00",
+   "fetched_at": "2026-11-19T04:27:11.031181+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -50010,7 +50002,7 @@
    "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
    "content": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
    "published_at": "2026-11-12T12:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613490+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049233+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -52697,7 +52689,7 @@
    "summary": "Release: llm-gemini 0.37\n\n Google launched Gemini 4 Hydrogen today - the lowest cost member of the Gemini 4 family.\n\nIt's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini 4's pricing really confusing. Here's the pricing scheme:\n\n \n \n Model\n Dates\n Input ($/M)\n Cached input\n Output\n \n \n \n \n Gemini 4 Carbon\n Through Nov 30, 2026\n $2.00\n $0.10\n $10.00\n \n \n From Dec 1, 2026\n $4.00\n $0.20\n $20.00\n \n \n Gemini 4 Argon\n Through Nov 30, 2026\n $2.00\n $0.10\n $10.00\n \n \n From Dec 1, 2026\n $4.00\n $0.20\n $20.00\n \n \n Gemini 4 Hydrogen\n \n $1.50\n $0.075\n $7.5",
    "content": "Release: llm-gemini 0.37\n\n Google launched Gemini 4 Hydrogen today - the lowest cost member of the Gemini 4 family.\n\nIt's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini 4's pricing really confusing. Here's the pricing scheme:\n\n \n \n Model\n Dates\n Input ($/M)\n Cached input\n Output\n \n \n \n \n Gemini 4 Carbon\n Through Nov 30, 2026\n $2.00\n $0.10\n $10.00\n \n \n From Dec 1, 2026\n $4.00\n $0.20\n $20.00\n \n \n Gemini 4 Argon\n Through Nov 30, 2026\n $2.00\n $0.10\n $10.00\n \n \n From Dec 1, 2026\n $4.00\n $0.20\n $20.00\n \n \n Gemini 4 Hydrogen\n \n $1.50\n $0.075\n $7.50\n \n \n\nCarbon and Argon are the same price, and both are scheduled to double in price on December 1st. If they're the same price, why have two different models? Google says that Argon \"delivers Gemini 4 intelligence with faster responses and lower token spend per turn compared to Gemini 4 Carbon\" - so it may be priced the same, but it will use less tokens per task.\n\nHydrogen, supposedly the cheap model, is currently only a 25% discount on its more capable peers. The Hydrogen price will make more sense after December 1st, when it will represent a 75% discount. It's still considerably more expensive than Claude Haiku 5.5 and GPT-6 Luna - they're both $0.10/$0.50, so Hydrogen is 15x that.\n\nI had Hydrogen generate some pelicans. Here's a full comparison grid showing the pelicans for all three members of the Gemini 4 family at their three supported effort levels:\n\nConsidering how close they are in price, the difference in pelican quality for Hydrogen is quite stark.\n\nHere's how Google describe Hydrogen's intended position in their mix of models:\n\nIn real-world software development, while teams rely on frontier models like Carbon and Argon for deep architectural judgment when designing systems or untangling subtle bugs, they still need a fast, disciplined execution model for writing code, running tests, and verifying changes. Hydrogen is built to stand on its own as a model for everyday work — or to pair with Carbon and Argon as the high-efficiency execution engine in multi-model workflows.\n\nMost notably, Hydrogen is the new free tier model, and is the model that will power AI features in Google Search.\n\n \n \n Tags: gemini, llm, google, pelican-riding-a-bicycle, llm-pricing, ai, llms",
    "published_at": "2026-11-12T22:55:19+00:00",
-   "fetched_at": "2026-11-18T19:33:18.246196+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849901+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -53090,7 +53082,7 @@
    "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
    "content": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
    "published_at": "2026-11-12T20:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613463+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049210+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -57077,7 +57069,7 @@
    "summary": "This White Paper explains how ice, wind and vegetation load overhead distribution lines at the same time. It shows engineers how to assess the complete line and compare resilience options.\nWhat you will learn about:\nHow freezing rain, rime ice and wet snow add weight to conductors and change their shape in the wind.Why a moderate wind on a heavily iced line can govern design, and how galloping and vegetation contact create outages.How a messenger-supported spacer cable separates the electrical function of covered conductors from the main mechanical load path.How monitored severe-weather test d",
    "content": "This White Paper explains how ice, wind and vegetation load overhead distribution lines at the same time. It shows engineers how to assess the complete line and compare resilience options.\nWhat you will learn about:\nHow freezing rain, rime ice and wet snow add weight to conductors and change their shape in the wind.Why a moderate wind on a heavily iced line can govern design, and how galloping and vegetation contact create outages.How a messenger-supported spacer cable separates the electrical function of covered conductors from the main mechanical load path.How monitored severe-weather test data compares tension changes in bare, covered and spacer cable systems.What utility records from the December 2008 Northeast ice storm show about circuit availability and restoration.How to compare options at corridor level, check the full load path of poles, brackets and foundations, and apply energized-line safety rules.Download this free whitepaper now!",
    "published_at": "2026-11-13T11:00:02+00:00",
-   "fetched_at": "2026-11-18T19:33:17.213870+08:00",
+   "fetched_at": "2026-11-19T04:27:14.367294+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -59375,7 +59367,7 @@
    "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
    "content": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
    "published_at": "2026-11-10T11:13:04+00:00",
-   "fetched_at": "2026-11-18T19:33:17.721230+08:00",
+   "fetched_at": "2026-11-19T04:27:15.622772+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -60455,7 +60447,7 @@
    "summary": "Agencies extend comment period for proposed third-party risk management guidance",
    "content": "Agencies extend comment period for proposed third-party risk management guidance",
    "published_at": "2026-11-13T21:15:00+00:00",
-   "fetched_at": "2026-11-18T19:33:13.300742+08:00",
+   "fetched_at": "2026-11-19T04:27:11.031124+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -60477,7 +60469,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.7,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 45,
@@ -60782,7 +60774,7 @@
    "summary": "Engineering teams are moving at breakneck speed to integrate artificial intelligence, but they are running into a formidable new barrier: compliance issues. Translating high-level AI ethics, governance, and auditing into daily operational workflows has become one of the industry’s toughest challenges.\n“AI ethics” refers to the principles developers use to govern and operate workflows. “Governance” refers to the rules and procedures an organization establishes for AI workflows and how they interact with organizational data. Auditing is the process of assessing and validating systems to ensure s",
    "content": "Engineering teams are moving at breakneck speed to integrate artificial intelligence, but they are running into a formidable new barrier: compliance issues. Translating high-level AI ethics, governance, and auditing into daily operational workflows has become one of the industry’s toughest challenges.\n“AI ethics” refers to the principles developers use to govern and operate workflows. “Governance” refers to the rules and procedures an organization establishes for AI workflows and how they interact with organizational data. Auditing is the process of assessing and validating systems to ensure safety, fairness, transparency, and legal compliance.\nTechnology leads and systems engineers are responsible for adhering to a structured set of guidelines for standards and processes usually issued by a governing body such as the European Union, the U.S. National Institute of Standards and Technology, and the International Organization for Standardization.\nThe regulations aim to mitigate issues such as systemic bias, security vulnerabilities, and transparency risks, but they also highlight a critical skills gap.\nMost traditional computer science, software, and electrical engineering degree programs were built around technical design and system architecture. They do not yet include training in AI auditing, data tracking, or safety protocols for how AI systems interact with people and other technologies.\nExpecting mid-career engineers to leave their job to attend a full-time two- or four-year program to learn about the topics is not feasible. Yet treating safety and governance as an afterthought can lead to costly product delays, legal exposure, and broken public trust.\nTargeted microcredential programs can bridge the knowledge gap by helping engineers build skills in compliance, AI ethics, and governance.\nThe benefits of microcredentialsSkills-based microcredentials represent the mastery of expertise gained through a learning program. To earn them, learners must demonstrate the skill through a validation assessment. The microcredentials can be stacked, showing a growing skill set in a defined area and allowing learners to earn several microcredentials in one program.\nMicrocredentials also allow engineers to upskill and master critical competencies, such as bias mitigation, algorithmic transparency, and risk auditing, without interrupting their career. Through rigorous skills-validation assessments, microcredentials give tech leaders verifiable proof that their teams can audit systems effectively before deployment.\nFor engineering organizations, microcredentialing creates an agile upskilling pathway. It connects software engineering and hardware design directly to regulatory frameworks, empowering teams to certify systems for safety and compliance within their development life cycles.\nTranslating standards into microcredentialsBridging technical capability and ethical responsibility requires a trusted foundation. IEEE has long been a pioneer in socio-technical standards, most notably through the IEEE 7000 series for ethics in AI system design, a framework created to address ethical considerations during the development life cycle.\nThe IEEE Credentialing Program translates the organization’s world-class standards into actionable, industry-aligned microcredentials. For more than three decades, IEEE has set the gold standard for technical validation and professional certification. By pairing cutting-edge AI governance standards with targeted microcredential programs, IEEE provides engineers and IT leaders with clear, standardized road maps to build systems that are not just technically advanced but also safe, compliant, and worthy of public trust.\nTo learn more about the credentialing program, explore the offerings or connect with an IEEE expert.",
    "published_at": "2026-11-13T19:00:03+00:00",
-   "fetched_at": "2026-11-18T19:33:17.213803+08:00",
+   "fetched_at": "2026-11-19T04:27:14.367241+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -62669,7 +62661,7 @@
    "summary": "<![CDATA[涓浗缁熻淇℃伅鏈嶅姟涓績銆鍗撳垱璧勮鈥傘銆鎹鍏ㄥ浗娴侀氶鍩9澶х被50绉嶉噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍肩殑鐩戞祴鏄剧ず锛2026骞11鏈堜笂鏃笌10鏈堜笅鏃浉姣旓紝16绉嶄骇鍝佷环鏍间笂娑紝32绉嶄笅闄嶏紝2绉嶆寔骞炽傗2026骞11鏈堜笂鏃祦閫氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍煎彉鍔ㄦ儏鍐碘備骇鍝佸悕绉板崟浣嶆湰鏈熶环鏍硷紙鍏冿級姣斾笂鏈熶环鏍兼定璺岋紙鍏冿級娑ㄨ穼骞咃紙%锛変竴銆侀粦鑹查噾灞炩傗傗傗傝灪绾归挗...",
    "content": "涓浗缁熻淇℃伅鏈嶅姟涓績銆鍗撳垱璧勮鈥傘銆鎹鍏ㄥ浗娴侀氶鍩9澶х被50绉嶉噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍肩殑鐩戞祴鏄剧ず锛2026骞11鏈堜笂鏃笌10鏈堜笅鏃浉姣旓紝16绉嶄骇鍝佷环鏍间笂娑紝32绉嶄笅闄嶏紝2绉嶆寔骞炽傗2026骞11鏈堜笂鏃祦閫氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍煎彉鍔ㄦ儏鍐碘備骇鍝佸悕绉板崟浣嶆湰鏈熶环鏍硷紙鍏冿級姣斾笂鏈熶环鏍兼定璺岋紙鍏冿級娑ㄨ穼骞咃紙%锛変竴銆侀粦鑹查噾灞炩傗傗傗傝灪绾归挗锛埼20mm锛孒RB400E锛夊惃3152.4-14.9-0.5绾挎潗锛埼8鈥10mm锛孒PB300锛夊惃3362.0-16.3-0.5鏅氫腑鏉匡紙20mm锛孮235锛夊惃3387.9-78.6-2.3鐑涧鏅氭澘鍗凤紙4.75鈥11.5mm锛孮235锛夊惃3207.3-28.8-0.9鏃犵紳閽㈢锛219*6锛20#锛夊惃4003.1-2.5-0.1瑙掗挗锛5#锛夊惃3397.03.80.1浜屻佹湁鑹查噾灞炩傗傗傗傜數瑙ｉ摐锛1#锛夊惃109779.3-395.7-0.4閾濋敪锛圓00锛夊惃23407.1-380.0-1.6閾呴敪锛1#锛夊惃15942.9-185.7-1.2閿岄敪锛0#锛夊惃25501.4-133.6-0.5涓夈佸寲宸ヤ骇鍝佲傗傗傗傜～閰革紙98%锛夊惃1484.6-110.5-6.9鐑х⒈锛堟恫纰憋紝32%锛夊惃584.2-33.0-5.3鐢查唶锛堜紭绛夊搧锛夊惃3591.5-9.3-0.3绾嫰锛堢煶娌硅嫰锛屽伐涓氱骇锛夊惃8717.2-1689.2-16.2涔欓唶锛95.0%锛夊惃5579.630.00.5鑱氫箼鐑紙LLDPE锛岀啍铻嶆寚鏁2钖勮啘鏂欙級鍚10318.6117.21.1鑱氫笝鐑紙鎷変笣鏂欙級鍚11275.0327.63.0鍐伴唻閰革紙99.5%鍙婁互涓婏級鍚4089.3-237.6-5.5椤轰竵鑳讹紙BR9000锛夊惃16116.7-92.8-0.6娑ょ憾闀夸笣锛圥OY150D/48F锛夊惃9157.1-225.0-2.4纾烽吀閾侀攤锛堟櫘閫氬姩鍔涘瀷锛夊惃43304.2-1309.5-2.9鍥涖佺煶娌瑰ぉ鐒舵皵鈥傗傗傗傛恫鍖栧ぉ鐒舵皵锛圠NG锛夊惃7600.5118.61.6娑插寲鐭虫补姘旓紙LPG锛夊惃7872.2-34.0-0.4姹芥补锛95#鍥絍I锛夊惃11067.3144.71.3鏌存补锛0#鍥絍I锛夊惃9729.4334.33.6鐭宠湣锛58#鍗婏級鍚7779.658.90.8浜斻佺叅鐐傗傗傗傛棤鐑熺叅锛堟礂涓潡锛夊惃1517.42.90.2灞辫タ浼樻贩锛5500澶у崱锛夊惃1015.9-13.4-1.3鐒︾叅锛堜富鐒︾叅锛夊惃2253.6-7.1-0.3鐒︾偔锛堝噯涓绾у喍閲戠劍锛夊惃1896.40.00.0鍏侀潪閲戝睘鐭跨墿鍒跺搧鈥傗傗傗傛櫘閫氱閰哥洂姘存偿锛圥.O 42.5鏁ｈ锛夊惃273.32.40.9娴硶骞虫澘鐜荤拑锛5/6mm锛夊惃1073.53.60.3澶氭櫠纭咃紙鑷村瘑鏂欙級鍗冨厠41.00.00.0涓冦佸啘浜у搧锛堜富瑕佺敤浜庡姞宸ワ級鈥傗傗傗傜ɑ绫筹紙绮崇ɑ绫筹級鍚3978.9-8.0-0.2灏忛害锛堝浗鏍囦笁绛夛級鍚2454.36.00.2鐜夌背锛堥粍鐜夌背浜岀瓑锛夊惃2152.620.91.0妫夎姳锛堢毊妫夛紝鐧芥涓夌骇锛夊惃16261.9-461.7-2.8鐢熺尓锛堝涓夊厓锛夊崈鍏8.7-0.6-6.5澶ц眴锛堥粍璞嗭級鍚4866.5-91.7-1.8璞嗙矔锛堢矖铔嬬櫧鍚噺鈮43%锛夊惃3144.1-105.7-3.3鑺辩敓锛堟补鏂欒姳鐢熺背锛夊惃7483.355.90.8鐧界硸锛堝浗鏍囦竴绾х櫧鐮傜硸锛夊惃5155.7-45.7-0.9鍏佸啘涓氱敓浜ц祫鏂欌傗傗傗傚翱绱狅紙涓皬棰楃矑锛夊惃1770.020.21.2纾疯偉锛55%纾烽吀涓閾碉級鍚3630.2-66.2-1.8閽捐偉锛堟腐鍙62%鐧借壊姘寲閽撅級鍚2769.5-9.1-0.3澶嶅悎鑲ワ紙纭吀閽惧鍚堣偉锛屾爱纾烽捑鍚噺45%锛夊惃3406.0-82.9-2.4鍐滆嵂锛堣崏鐢樿啨锛95%鍘熻嵂锛夊惃29000.0-35.7-0.1涔濄佹灄浜у搧鈥傗傗傗傚ぉ鐒舵鑳讹紙鏍囧噯鑳禨CRWF锛夊惃18542.9-573.8-3.0绾告祮锛堣繘鍙ｉ拡鍙舵祮锛夊惃4887.726.10.5鐡︽绾革紙AA绾120g锛夊惃2959.6-67.7-2.2娉細涓婃湡涓2026骞10鏈堜笅鏃傗傘銆闄勬敞鈥傘銆1.鎸囨爣瑙ｉ噴鈥傘銆娴侀氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍硷紝鏄寚閲嶈鐢熶骇璧勬枡缁忚惀浼佷笟鐨勬壒鍙戝拰閿鍞环鏍笺備笌鍑哄巶浠锋牸涓嶅悓锛岀敓浜ц祫鏂欏競鍦轰环鏍兼棦鍖呭惈鍑哄巶浠锋牸锛屼篃鍖呭惈鏈夌粡钀ヤ紒涓氱殑娴侀氳垂鐢ㄣ佸埄娑﹀拰绋庤垂绛夈傚嚭鍘備环鏍间笌甯傚満浠锋牸浜掔浉褰卞搷锛屽瓨鍦ㄦ椂婊烇紝涓よ呯殑鍙樺姩瓒嬪娍鍦ㄦ煇涓鏃堕棿娈靛唴鏈夊彲鑳戒細鍑虹幇涓嶅畬鍏ㄤ竴鑷寸殑鎯呭喌銆傗傘銆2.鐩戞祴鍐呭鈥傘銆娴侀氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍肩洃娴嬪唴瀹瑰寘鎷9澶х被50绉嶄骇鍝佺殑浠锋牸銆傜被鍒笌浜у搧瑙勬牸璇存槑璇﹁闄勮〃銆傗傘銆3.鐩戞祴鑼冨洿鈥傘銆鐩戞祴鑼冨洿娑电洊鍏ㄥ浗31涓渷锛堝尯銆佸競锛300澶氫釜浜ゆ槗甯傚満鐨勮繎2000瀹舵壒鍙戝晢銆佷唬鐞嗗晢銆佺粡閿鍟嗙瓑缁忚惀浼佷笟銆傗傘銆4.鐩戞祴鏂规硶鈥傘銆浠锋牸鐩戞祴鏂规硶鍖呮嫭淇℃伅鍛樼幇鍦洪噰浠凤紝鐢佃瘽銆佸嵆鏃堕氳宸ュ叿鍜岀數瀛愰偖浠惰浠风瓑銆傗傘銆5.娑ㄨ穼涓暟鐨勭粺璁♀傘銆浜у搧浠锋牸涓婃定銆佷笅闄嶃佹寔骞充釜鏁版寜鐓ф定璺屽箙锛%锛夎繘琛岀粺璁°傗傞檮琛 娴侀氶鍩熼噸瑕佺敓浜ц祫鏂欏競鍦轰环鏍肩洃娴嬩骇鍝佽鏍艰鏄庤〃鈥傚簭鍙风洃娴嬩骇鍝佽鏍煎瀷鍙疯鏄庘備竴銆侀粦鑹查噾灞炩傗傗1铻虹汗閽⑽20mm锛孒RB400E灞堟湇寮哄害鈮400MPa鈥2绾挎潗桅8-10mm锛孒PB300灞堟湇寮哄害鈮300MPa鈥3鏅氫腑鏉20mm锛孮235灞堟湇寮哄害鈮235MPa鈥4鐑涧鏅氭澘鍗4.75-11.5mm锛孮235灞堟湇寮哄害鈮235MPa锛屽搴1500mm鈥5鏃犵紳閽㈢219*6锛20#20#閽㈡潗锛屽眻鏈嶅己搴︹墺245MPa鈥6瑙掗挗5#灞堟湇寮哄害鈮235MPa鈥備簩銆佹湁鑹查噾灞炩傗傗7鐢佃В閾1#閾滀笌閾惰川閲忓垎鏁扳墺99.95%鈥8閾濋敪A00閾濊川閲忓垎鏁扳墺99.7%鈥9閾呴敪1#閾呰川閲忓垎鏁扳墺99.994%10閿岄敪0#閿岃川閲忓垎鏁扳墺99.995%鈥備笁銆佸寲宸ヤ骇鍝佲傗11纭吀98%H2SO4璐ㄩ噺鍒嗘暟鈮98%12鐑х⒈锛堟恫纰憋級32%NaOH璐ㄩ噺鍒嗘暟鈮32%鐨勭瀛愯啘纰13鐢查唶浼樼瓑鍝佹按璐ㄩ噺鍚噺鈮0.10%14绾嫰锛堢煶娌硅嫰锛夊伐涓氱骇鑻函搴︹墺99.8%15涔欓唶95.0%鏅骇涔欓唶16鑱氫箼鐑紙LLDPE锛夌啍铻嶆寚鏁2钖勮啘鏂欑啍铻嶆寚鏁帮細2.0卤0.5g/10min17鑱氫笝鐑媺涓濇枡鐔旇瀺鎸囨暟锛3.0卤0.9g/10min18鍐伴唻閰99.5%鍙婁互涓婇唻閰哥函搴︹墺99.5%19椤轰竵鑳禕R9000鍧楃姸銆佷钩鐧借壊锛岀伆鍒嗏墹0.20%20娑ょ憾闀夸笣POY150D/48F鍗婂厜167鍒嗙壒锛孉A绾21纾烽吀閾侀攤鏅氬姩鍔涘瀷鑳介噺瀵嗗害鈮120Wh/kg鈥傚洓銆佺煶娌瑰ぉ鐒舵皵鈥傗22娑插寲澶╃劧姘擫NG鐢茬兎鍚噺鈮75%锛屽瘑搴︹墺430kg/m323娑插寲鐭虫补姘擫PG楗卞拰钂告苯鍘1380-1430kPa24姹芥补95#鍥絍I鍥絍I鏍囧噯25鏌存补0#鍥絍I鍥絍I鏍囧噯26鐭宠湣58#鍗婄啍鐐逛笉浣庝簬58鈩冣備簲銆佺叅鐐傗27鏃犵儫鐓ゆ礂涓潡鎸ュ彂鍒嗏墹8%28灞辫タ浼樻贩5500澶у崱浼樿川鐨勬贩鐓わ紝鐑5500澶у崱29鐒︾叅涓荤劍鐓ゅ惈纭噺<1%30鐒︾偔鍑嗕竴绾у喍閲戠劍12.01%鈮ょ伆鍒嗏墹13.50%鈥傚叚銆侀潪閲戝睘鐭跨墿鍒跺搧鈥傗31鏅氱閰哥洂姘存偿P.O 42.5鏁ｈ鎶楀帇寮哄害42.5MPa32娴硶骞虫澘鐜荤拑5/6mm鍘氬害涓5/6mm鐨勬棤鑹查忔槑鐜荤拑33澶氭櫠纭呰嚧瀵嗘枡绾害6N-9N鈥備竷銆佸啘浜у搧锛堜富瑕佺敤浜庡姞宸ワ級鈥傗34绋荤背绮崇ɑ绫虫潅璐ㄢ墹0.25%锛屾按鍒嗏墹15.5%35灏忛害鍥芥爣涓夌瓑鏉傝川鈮1.0%锛屾按鍒嗏墹12.5%36鐜夌背榛勭帀绫充簩绛夋潅璐ㄢ墹1.0%锛屾按鍒嗏墹14.0%37妫夎姳锛堢毊妫夛級鐧芥涓夌骇绾ょ淮闀垮害鈮28mm锛岀櫧鎴栦钩鐧借壊38鐢熺尓澶栦笁鍏冧笁绉嶅鍥界尓鏉備氦鐨勮倝椋熺尓39澶ц眴榛勮眴鏉傝川鈮1.0%锛屾按鍒嗏墹13.0%40璞嗙矔绮楄泲鐧藉惈閲忊墺43%绮楄泲鐧解墺43%锛屾按鍒嗏墹13.0%41鑺辩敓娌规枡鑺辩敓绫虫潅璐ㄢ墹1.0%锛屾按鍒嗏墹9.0%42鐧界硸鍥芥爣涓绾х櫧鐮傜硸钄楃硸鍒嗏墺99.6g/100g鈥傚叓銆佸啘涓氱敓浜ц祫鏂欌傗43灏跨礌涓皬棰楃矑鎬绘爱鈮46%锛屾按鍒嗏墹1.0%44纾疯偉纾烽吀涓閾垫诲吇鍒(N+P2O5)=55%45閽捐偉姘寲閽綤2O=62%46澶嶅悎鑲ョ～閰搁捑澶嶅悎鑲ユ爱纾烽捑鍚噺45%47鍐滆嵂锛堣崏鐢樿啨锛95%鍘熻嵂鑽夌敇鑶﹁川閲忓垎鏁扳墺95%鈥備節銆佹灄浜у搧鈥傗48澶╃劧姗¤兌鏍囧噯鑳禨CRWF鏉傝川鍚噺鈮0.05%锛岀伆鍒嗏墹0.5%49绾告祮杩涘彛閽堝彾娴嗘姉寮犳寚鏁扳墺85.0N路m/g锛岃愮牬鎸囨暟鈮6.5KPa路m2/g锛屾挄瑁傛寚鏁扳墺9.0mN路m2/g5",
    "published_at": "2026-11-14T09:30:00+08:00",
-   "fetched_at": "2026-11-18T19:33:30.551064+08:00",
+   "fetched_at": "2026-11-19T04:27:23.225392+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -64046,7 +64038,7 @@
    "summary": "Release: datasette-cluster-map 0.19\n\n One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header.\n\nHere's a map of power plants owned by California's PG&E, also demonstrating Datasette's recently redesigned facets:\n\n \n \n Tags: datasette, geospatial, openstreetmap",
    "content": "Release: datasette-cluster-map 0.19\n\n One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header.\n\nHere's a map of power plants owned by California's PG&E, also demonstrating Datasette's recently redesigned facets:\n\n \n \n Tags: datasette, geospatial, openstreetmap",
    "published_at": "2026-11-13T23:02:45+00:00",
-   "fetched_at": "2026-11-18T19:33:18.245937+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849700+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -64067,7 +64059,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 28,
@@ -64156,7 +64148,7 @@
    "summary": "Release: datasette-leaflet 0.3\n\n OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header. Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy.\n\ndatasette-leaflet is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on it. It now sets the referrer policy on the tile requests themselves to strict-origin-when-cross-origin, passing the host but not the full path to the page.\n\n \n \n Tags: leaflet, datasette, openstreetmap",
    "content": "Release: datasette-leaflet 0.3\n\n OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header. Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy.\n\ndatasette-leaflet is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on it. It now sets the referrer policy on the tile requests themselves to strict-origin-when-cross-origin, passing the host but not the full path to the page.\n\n \n \n Tags: leaflet, datasette, openstreetmap",
    "published_at": "2026-11-13T22:30:54+00:00",
-   "fetched_at": "2026-11-18T19:33:18.245992+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849751+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -64177,7 +64169,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.8,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 28,
@@ -64644,7 +64636,7 @@
    "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
    "content": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
    "published_at": "2026-11-13T08:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613433+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049180+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -68346,7 +68338,7 @@
    "summary": "Release: datasette-llm 0.1a11\n\n datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins.\n\nThis release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol.\n\nThis means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0) you can run Datasette via uvx like this:\n\nwget https://datasette.io/content.db\n\nuvx --with datasette-agent datasette \\\n --root --secret 1 \\\n -s plugins.datasette",
    "content": "Release: datasette-llm 0.1a11\n\n datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins.\n\nThis release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol.\n\nThis means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0) you can run Datasette via uvx like this:\n\nwget https://datasette.io/content.db\n\nuvx --with datasette-agent datasette \\\n --root --secret 1 \\\n -s plugins.datasette-llm.default_model '{\n \"model\": \"lmstudio-qwen\",\n \"model_name\": \"qwen/qwen3.8-27b\",\n \"api_base\": \"http://localhost:1234/v1\"\n }' content.db\n\nAnd you'll get a local server running a Datasette Agent instance powered by your local model!\n\n \n \n Tags: uv, datasette-agent, llm, datasette, llms, ai, generative-ai",
    "published_at": "2026-11-14T23:59:28+00:00",
-   "fetched_at": "2026-11-18T19:33:18.245824+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849592+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -68672,7 +68664,7 @@
    "summary": "Release: datasette-vega 0.7\n\n A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite) against data in a table or custom query. The last release was in July 2018!\n\nI finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better with Datasette Lite.\n\n(Datasette Lite just gained the ability to run JavaScript plugins like this! I'll write more about that soon.)\n\nSince it works with Datasette Lite, the live demo in the README now links to this demo on Datasette Lite.\n\n \n \n Tags: datasette, datasette-lite",
    "content": "Release: datasette-vega 0.7\n\n A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite) against data in a table or custom query. The last release was in July 2018!\n\nI finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better with Datasette Lite.\n\n(Datasette Lite just gained the ability to run JavaScript plugins like this! I'll write more about that soon.)\n\nSince it works with Datasette Lite, the live demo in the README now links to this demo on Datasette Lite.\n\n \n \n Tags: datasette, datasette-lite",
    "published_at": "2026-11-14T17:09:09+00:00",
-   "fetched_at": "2026-11-18T19:33:18.245882+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849646+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -73483,7 +73475,7 @@
    "summary": "Release: datasette 1.0a43\n\n I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone, which is now 53% complete.\n\nThe biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mechanisms now use this as well, and plugins can register themselves as capable of streaming every row in a table in one go via the new Response.stream() method.\n\nThere are a couple of security fixes, one of which I deemed deserving of a GitHub advisory: private stored queries could be exposed, granting access to the title and SQL of the qu",
    "content": "Release: datasette 1.0a43\n\n I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone, which is now 53% complete.\n\nThe biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mechanisms now use this as well, and plugins can register themselves as capable of streaming every row in a table in one go via the new Response.stream() method.\n\nThere are a couple of security fixes, one of which I deemed deserving of a GitHub advisory: private stored queries could be exposed, granting access to the title and SQL of the query (but not allowing that query to be executed).\n\nThere are dozens of smaller improvements. The row page JSON representation finally has a design suitable for 1.0. A new <datasette-copy-button> Web Component provides copy-schema in various places. JSON in columns on the row page can be pretty-printed. There's a new DatasetteModal.confirm() JavaScript utility method. Plus dozens of bug fixes, including contributions by Zihan Dai, Peter Olkhovets, Ilya Khalafi, and Ankita Advitot.\n\nThe feature I'm most excited about is a pretty tiny one: I've added CSS multi-page view transitions to Datasette! Here's the commit - key CSS is as follows:\n\n/* Enable cross-document view transitions,\n for anyone without prefers-reduced-motion */\n@media (prefers-reduced-motion: no-preference) {\n @view-transition {\n navigation: auto;\n }\n}\n/* .facet-results should morph from old position to new */\nhtml:active-view-transition .content > .facet-results {\n view-transition-name: facet-results;\n}\n/* So should a .table-wrapper, provided it contains .rows-and-columns */\nhtml:active-view-transition .table-wrapper:has(> table.rows-and-columns) {\n view-transition-name: rows-table;\n}\n\nWith that in place, navigations within Datasette - still staunchly a multi-page application - feel more like an SPA. This works on Safari and Chrome at the moment and I believe supports for Firefox is due to land in Firefox 162 on December 8th 2026 (seeing as they are no longer feature-flagged in Firefox Nightly.)\n\n \n\n \n \n Tags: security, datasette, css, browsers, annotated-release-notes, firefox, javascript, safari, chrome",
    "published_at": "2026-11-15T23:20:27+00:00",
-   "fetched_at": "2026-11-18T19:33:18.245595+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849371+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -73538,7 +73530,7 @@
    "summary": "Release: datasette 0.65.6\n\n I backported a minor security fix from 1.0a43:\n\nFixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /<route>.db by actors who were denied access to it. [...]\n\n \n \n Tags: security, datasette",
    "content": "Release: datasette 0.65.6\n\n I backported a minor security fix from 1.0a43:\n\nFixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /<route>.db by actors who were denied access to it. [...]\n\n \n \n Tags: security, datasette",
    "published_at": "2026-11-15T23:18:17+00:00",
-   "fetched_at": "2026-11-18T19:33:18.245641+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849410+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -73745,7 +73737,7 @@
    "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
    "content": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
    "published_at": "2026-11-15T22:00:01+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613357+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049114+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -73762,11 +73754,11 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "LLM",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 43,
@@ -73800,7 +73792,7 @@
    "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
    "content": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
    "published_at": "2026-11-15T22:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613381+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049135+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -74760,7 +74752,7 @@
    "summary": "Release: datasette-apps 0.4a0\n\n Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data.\n\n0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help write apps that link to each other.\n\nThis means you can have e.g. an app that shows details about a specific record, and a completely separate app that searches those records and links to their represen",
    "content": "Release: datasette-apps 0.4a0\n\n Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data.\n\n0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help write apps that link to each other.\n\nThis means you can have e.g. an app that shows details about a specific record, and a completely separate app that searches those records and links to their representations in the first app.\n\n \n \n Tags: datasette-agent, datasette-apps, datasette, urls",
    "published_at": "2026-11-15T04:02:45+00:00",
-   "fetched_at": "2026-11-18T19:33:18.245702+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849478+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -74815,7 +74807,7 @@
    "summary": "Release: datasette-agent 0.6a0\n\n Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries:\n\n \n \n Tags: datasette-agent, llm, datasette, llms, ai, generative-ai",
    "content": "Release: datasette-agent 0.6a0\n\n Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries:\n\n \n \n Tags: datasette-agent, llm, datasette, llms, ai, generative-ai",
    "published_at": "2026-11-15T03:49:47+00:00",
-   "fetched_at": "2026-11-18T19:33:18.245748+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849518+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -74870,7 +74862,7 @@
    "summary": "Release: datasette-maplibre 0.1a0\n\n The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap, the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub.)\n\nI built most of this with a single prompt to Claude Fable 5.2:\n\nLook at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outsid",
    "content": "Release: datasette-maplibre 0.1a0\n\n The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap, the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub.)\n\nI built most of this with a single prompt to Claude Fable 5.2:\n\nLook at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outside the box for other useful features the plugin might have\n\n\"Be creative and think outside the box\" resulted in a few neat ideas - my favorite is that it displays SVG previews of GeoJSON shapes, then loads a WebGL preview only when they scroll into view.\n\nI also had Claude build a comprehensive demo which works in the latest Datasette Lite, so you can visit this link to load the plugin and a demo database in your browser via Pyodide and WebAssembly.\n\nI like this demo page showing both GeoJSON shapes and lat/lon points on the same map:\n\n \n \n Tags: visualization, generative-ai, datasette-lite, claude-mythos-fable, ai, llms, geospatial, openstreetmap, datasette",
    "published_at": "2026-11-15T23:58:36+00:00",
-   "fetched_at": "2026-11-18T19:33:18.245442+08:00",
+   "fetched_at": "2026-11-19T04:27:15.849163+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -75146,7 +75138,7 @@
    "summary": "Aleph selected as ChatGPT Ads’ exclusive reseller in 44 countries to offer local invoicing, in-person support and local market expertise to brands and agencies",
    "content": "Aleph selected as ChatGPT Ads’ exclusive reseller in 44 countries to offer local invoicing, in-person support and local market expertise to brands and agencies",
    "published_at": "2026-11-12T00:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613570+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049301+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -75167,7 +75159,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.9,
+   "classify_confidence": 0.8,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 43,
@@ -75201,7 +75193,7 @@
    "summary": "Small business owners preparing for a launch or an event often know what they want to accomplish before they know what to print. VistaPrint uses ChatGPT Ads to show how products like signs and branded merchandise can help them get the word out.",
    "content": "Small business owners preparing for a launch or an event often know what they want to accomplish before they know what to print. VistaPrint uses ChatGPT Ads to show how products like signs and branded merchandise can help them get the word out.",
    "published_at": "2026-11-09T00:00:00+00:00",
-   "fetched_at": "2026-11-18T19:33:17.613946+08:00",
+   "fetched_at": "2026-11-19T04:27:15.049613+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -75222,7 +75214,7 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.85,
+   "classify_confidence": 0.9,
    "classify_method": "llm",
    "status": "published",
    "importance_score": 39,

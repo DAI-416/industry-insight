@@ -1,18 +1,18 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-18T19:34:25+08:00",
+ "generated_at": "2026-11-19T04:28:51+08:00",
  "total": 1379,
- "fact_count": 1186,
- "opinion_count": 193,
+ "fact_count": 1185,
+ "opinion_count": 194,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 143,
-   "opinion_count": 12,
-   "score": 4188.2
+   "count": 142,
+   "opinion_count": 11,
+   "score": 4154.2
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -28,9 +28,9 @@
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 79,
+   "count": 80,
    "opinion_count": 5,
-   "score": 2351.8
+   "score": 2376.8
   },
   {
    "track_id": "MAC-TRADE",
@@ -48,7 +48,7 @@
    "is_focus": false,
    "count": 58,
    "opinion_count": 1,
-   "score": 1980.4
+   "score": 1978.6
   },
   {
    "track_id": "TEC-SEMI",
@@ -69,22 +69,22 @@
    "score": 1610.4
   },
   {
-   "track_id": "TEC-CE",
-   "name": "消费电子与智能硬件",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 56,
-   "opinion_count": 2,
-   "score": 1463.0
-  },
-  {
    "track_id": "TEC-CLOUD",
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 54,
+   "count": 55,
    "opinion_count": 2,
-   "score": 1434.0
+   "score": 1458.4
+  },
+  {
+   "track_id": "TEC-CE",
+   "name": "消费电子与智能硬件",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 55,
+   "opinion_count": 2,
+   "score": 1438.6
   },
   {
    "track_id": "INV-VC",
@@ -136,9 +136,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 23,
-   "opinion_count": 2,
-   "score": 603.8
+   "count": 22,
+   "opinion_count": 3,
+   "score": 579.4
   },
   {
    "track_id": "TEC-ROBO",
@@ -220,9 +220,9 @@
   "M-HK": 113
  },
  "importance_dist": {
-  "normal": 336,
+  "normal": 333,
   "critical": 29,
-  "low": 745,
+  "low": 747,
   "important": 76
  },
  "source_dist": {
@@ -405,7 +405,7 @@
    "count": 13
   }
  ],
- "total_score": 27157.6,
+ "total_score": 27122.4,
  "other_count": 279,
- "other_opinion_count": 21
+ "other_opinion_count": 22
 }

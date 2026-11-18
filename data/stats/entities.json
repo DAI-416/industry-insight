@@ -1,50 +1,74 @@
 [
  {
   "name": "Nvidia",
-  "count": 40
+  "count": 49
  },
  {
   "name": "Huang",
-  "count": 36
+  "count": 39
  },
  {
   "name": "Trump",
-  "count": 31
- },
- {
-  "name": "Jensen",
-  "count": 29
+  "count": 37
  },
  {
   "name": "OpenAI",
-  "count": 27
+  "count": 34
+ },
+ {
+  "name": "Jensen",
+  "count": 31
  },
  {
   "name": "Apec",
-  "count": 24
+  "count": 28
  },
  {
   "name": "GPT",
-  "count": 20
+  "count": 21
  },
  {
   "name": "Donald",
-  "count": 15
+  "count": 19
  },
  {
   "name": "Anthropic",
-  "count": 14
+  "count": 18
  },
  {
   "name": "IPO",
+  "count": 16
+ },
+ {
+  "name": "Google",
+  "count": 15
+ },
+ {
+  "name": "Jinping",
+  "count": 15
+ },
+ {
+  "name": "Putin",
   "count": 13
  },
  {
   "name": "Bloomberg",
+  "count": 12
+ },
+ {
+  "name": "Sources",
+  "count": 12
+ },
+ {
+  "name": "融资",
   "count": 11
  },
  {
-  "name": "Putin",
+  "name": "Series",
+  "count": 11
+ },
+ {
+  "name": "GPT-6",
   "count": 11
  },
  {
@@ -52,19 +76,15 @@
   "count": 11
  },
  {
-  "name": "Sources",
-  "count": 11
+  "name": "美联储",
+  "count": 10
  },
  {
   "name": "Apple",
   "count": 10
  },
  {
-  "name": "Series",
-  "count": 10
- },
- {
-  "name": "GPT-6",
+  "name": "Prime",
   "count": 10
  },
  {
@@ -72,7 +92,7 @@
   "count": 9
  },
  {
-  "name": "Google",
+  "name": "Manila",
   "count": 9
  },
  {
@@ -80,23 +100,39 @@
   "count": 9
  },
  {
-  "name": "Jinping",
+  "name": "Colette",
   "count": 9
  },
  {
+  "name": "Financial",
+  "count": 8
+ },
+ {
+  "name": "Face",
+  "count": 8
+ },
+ {
+  "name": "Altman",
+  "count": 8
+ },
+ {
+  "name": "Instagram",
+  "count": 8
+ },
+ {
+  "name": "Claude",
+  "count": 8
+ },
+ {
   "name": "芯片",
-  "count": 8
+  "count": 7
  },
  {
-  "name": "融资",
-  "count": 8
+  "name": "加息",
+  "count": 7
  },
  {
-  "name": "Manila",
-  "count": 8
- },
- {
-  "name": "美联储",
+  "name": "Takaichi",
   "count": 7
  },
  {
@@ -108,55 +144,19 @@
   "count": 7
  },
  {
-  "name": "Financial",
+  "name": "Russian",
   "count": 7
  },
  {
-  "name": "Claude",
+  "name": "CNBC",
+  "count": 7
+ },
+ {
+  "name": "Microsoft",
   "count": 7
  },
  {
   "name": "Megaspeed",
   "count": 7
- },
- {
-  "name": "Prime",
-  "count": 7
- },
- {
-  "name": "Colette",
-  "count": 7
- },
- {
-  "name": "黄金",
-  "count": 6
- },
- {
-  "name": "Releases",
-  "count": 6
- },
- {
-  "name": "Wall",
-  "count": 6
- },
- {
-  "name": "Russian",
-  "count": 6
- },
- {
-  "name": "Face",
-  "count": 6
- },
- {
-  "name": "Instagram",
-  "count": 6
- },
- {
-  "name": "CNBC",
-  "count": 6
- },
- {
-  "name": "Microsoft",
-  "count": 6
  }
 ]
