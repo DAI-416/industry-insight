@@ -1,62 +1,66 @@
 [
  {
   "name": "Nvidia",
-  "count": 54
+  "count": 57
  },
  {
   "name": "Trump",
-  "count": 50
+  "count": 53
  },
  {
   "name": "Apec",
-  "count": 42
+  "count": 47
  },
  {
   "name": "Huang",
-  "count": 42
+  "count": 43
  },
  {
   "name": "OpenAI",
-  "count": 38
+  "count": 40
  },
  {
   "name": "Jensen",
-  "count": 34
- },
- {
-  "name": "Donald",
-  "count": 30
+  "count": 35
  },
  {
   "name": "IPO",
-  "count": 26
+  "count": 34
  },
  {
   "name": "Anthropic",
-  "count": 25
+  "count": 33
  },
  {
-  "name": "GPT",
-  "count": 22
- },
- {
-  "name": "Jinping",
-  "count": 22
+  "name": "Donald",
+  "count": 31
  },
  {
   "name": "Google",
-  "count": 21
+  "count": 29
  },
  {
   "name": "Bloomberg",
-  "count": 19
+  "count": 24
+ },
+ {
+  "name": "Jinping",
+  "count": 24
+ },
+ {
+  "name": "GPT",
+  "count": 23
  },
  {
   "name": "Sources",
-  "count": 16
+  "count": 17
  },
  {
   "name": "York",
+  "count": 16
+ },
+ {
+  "name": "Putin",
   "count": 15
  },
  {
@@ -64,15 +68,27 @@
   "count": 14
  },
  {
-  "name": "Putin",
+  "name": "Series",
+  "count": 14
+ },
+ {
+  "name": "Gemini",
   "count": 14
  },
  {
   "name": "融资",
-  "count": 12
+  "count": 13
+ },
+ {
+  "name": "Apple",
+  "count": 13
  },
  {
   "name": "Financial",
+  "count": 12
+ },
+ {
+  "name": "Prime",
   "count": 12
  },
  {
@@ -80,11 +96,11 @@
   "count": 11
  },
  {
-  "name": "Series",
+  "name": "Manila",
   "count": 11
  },
  {
-  "name": "Manila",
+  "name": "Musk",
   "count": 11
  },
  {
@@ -96,15 +112,11 @@
   "count": 11
  },
  {
+  "name": "ChatGPT",
+  "count": 11
+ },
+ {
   "name": "Microsoft",
-  "count": 11
- },
- {
-  "name": "Prime",
-  "count": 11
- },
- {
-  "name": "Gemini",
   "count": 11
  },
  {
@@ -112,15 +124,19 @@
   "count": 10
  },
  {
-  "name": "Apple",
+  "name": "Washington",
   "count": 10
  },
  {
-  "name": "Musk",
+  "name": "Reuters",
   "count": 10
  },
  {
-  "name": "ChatGPT",
+  "name": "Wall",
+  "count": 10
+ },
+ {
+  "name": "Elon",
   "count": 10
  },
  {
@@ -128,15 +144,7 @@
   "count": 10
  },
  {
-  "name": "Reuters",
-  "count": 9
- },
- {
-  "name": "Wall",
-  "count": 9
- },
- {
-  "name": "Russian",
+  "name": "Takaichi",
   "count": 9
  },
  {
@@ -144,19 +152,11 @@
   "count": 9
  },
  {
-  "name": "Elon",
+  "name": "Instagram",
   "count": 9
  },
  {
-  "name": "黄金",
-  "count": 8
- },
- {
-  "name": "Takaichi",
-  "count": 8
- },
- {
-  "name": "Democrats",
-  "count": 8
+  "name": "Asia-Pacific",
+  "count": 9
  }
 ]
