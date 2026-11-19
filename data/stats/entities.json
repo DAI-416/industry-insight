@@ -1,74 +1,82 @@
 [
  {
   "name": "Nvidia",
-  "count": 53
+  "count": 54
+ },
+ {
+  "name": "Trump",
+  "count": 50
+ },
+ {
+  "name": "Apec",
+  "count": 42
  },
  {
   "name": "Huang",
   "count": 42
  },
  {
-  "name": "Trump",
-  "count": 41
- },
- {
   "name": "OpenAI",
-  "count": 37
+  "count": 38
  },
  {
   "name": "Jensen",
   "count": 34
  },
  {
-  "name": "Apec",
-  "count": 31
+  "name": "Donald",
+  "count": 30
  },
  {
-  "name": "Donald",
-  "count": 23
+  "name": "IPO",
+  "count": 26
+ },
+ {
+  "name": "Anthropic",
+  "count": 25
  },
  {
   "name": "GPT",
   "count": 22
  },
  {
-  "name": "IPO",
-  "count": 20
- },
- {
-  "name": "Anthropic",
-  "count": 20
+  "name": "Jinping",
+  "count": 22
  },
  {
   "name": "Google",
-  "count": 19
+  "count": 21
  },
  {
   "name": "Bloomberg",
-  "count": 16
- },
- {
-  "name": "Jinping",
-  "count": 16
- },
- {
-  "name": "Putin",
-  "count": 13
+  "count": 19
  },
  {
   "name": "Sources",
-  "count": 13
- },
- {
-  "name": "美联储",
-  "count": 12
+  "count": 16
  },
  {
   "name": "York",
-  "count": 12
+  "count": 15
+ },
+ {
+  "name": "美联储",
+  "count": 14
+ },
+ {
+  "name": "Putin",
+  "count": 14
  },
  {
   "name": "融资",
+  "count": 12
+ },
+ {
+  "name": "Financial",
+  "count": 12
+ },
+ {
+  "name": "加息",
   "count": 11
  },
  {
@@ -76,7 +84,7 @@
   "count": 11
  },
  {
-  "name": "Astra",
+  "name": "Manila",
   "count": 11
  },
  {
@@ -84,11 +92,31 @@
   "count": 11
  },
  {
+  "name": "Astra",
+  "count": 11
+ },
+ {
   "name": "Microsoft",
   "count": 11
  },
  {
+  "name": "Prime",
+  "count": 11
+ },
+ {
+  "name": "Gemini",
+  "count": 11
+ },
+ {
+  "name": "芯片",
+  "count": 10
+ },
+ {
   "name": "Apple",
+  "count": 10
+ },
+ {
+  "name": "Musk",
   "count": 10
  },
  {
@@ -96,23 +124,19 @@
   "count": 10
  },
  {
-  "name": "Prime",
-  "count": 10
- },
- {
   "name": "Colette",
   "count": 10
  },
  {
-  "name": "芯片",
+  "name": "Reuters",
   "count": 9
  },
  {
-  "name": "Financial",
+  "name": "Wall",
   "count": 9
  },
  {
-  "name": "Manila",
+  "name": "Russian",
   "count": 9
  },
  {
@@ -120,43 +144,19 @@
   "count": 9
  },
  {
-  "name": "Gemini",
+  "name": "Elon",
   "count": 9
+ },
+ {
+  "name": "黄金",
+  "count": 8
+ },
+ {
+  "name": "Takaichi",
+  "count": 8
  },
  {
   "name": "Democrats",
   "count": 8
- },
- {
-  "name": "Washington",
-  "count": 8
- },
- {
-  "name": "Reuters",
-  "count": 8
- },
- {
-  "name": "Wall",
-  "count": 8
- },
- {
-  "name": "Russian",
-  "count": 8
- },
- {
-  "name": "Face",
-  "count": 8
- },
- {
-  "name": "Instagram",
-  "count": 8
- },
- {
-  "name": "Claude",
-  "count": 8
- },
- {
-  "name": "加息",
-  "count": 7
  }
 ]
