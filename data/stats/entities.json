@@ -1,62 +1,70 @@
 [
  {
   "name": "Nvidia",
-  "count": 49
+  "count": 53
  },
  {
   "name": "Huang",
-  "count": 39
+  "count": 42
  },
  {
   "name": "Trump",
-  "count": 37
+  "count": 41
  },
  {
   "name": "OpenAI",
-  "count": 34
+  "count": 37
  },
  {
   "name": "Jensen",
-  "count": 31
+  "count": 34
  },
  {
   "name": "Apec",
-  "count": 28
- },
- {
-  "name": "GPT",
-  "count": 21
+  "count": 31
  },
  {
   "name": "Donald",
-  "count": 19
+  "count": 23
  },
  {
-  "name": "Anthropic",
-  "count": 18
+  "name": "GPT",
+  "count": 22
  },
  {
   "name": "IPO",
-  "count": 16
+  "count": 20
+ },
+ {
+  "name": "Anthropic",
+  "count": 20
  },
  {
   "name": "Google",
-  "count": 15
+  "count": 19
+ },
+ {
+  "name": "Bloomberg",
+  "count": 16
  },
  {
   "name": "Jinping",
-  "count": 15
+  "count": 16
  },
  {
   "name": "Putin",
   "count": 13
  },
  {
-  "name": "Bloomberg",
+  "name": "Sources",
+  "count": 13
+ },
+ {
+  "name": "美联储",
   "count": 12
  },
  {
-  "name": "Sources",
+  "name": "York",
   "count": 12
  },
  {
@@ -68,19 +76,23 @@
   "count": 11
  },
  {
-  "name": "GPT-6",
-  "count": 11
- },
- {
   "name": "Astra",
   "count": 11
  },
  {
-  "name": "美联储",
-  "count": 10
+  "name": "GPT-6",
+  "count": 11
+ },
+ {
+  "name": "Microsoft",
+  "count": 11
  },
  {
   "name": "Apple",
+  "count": 10
+ },
+ {
+  "name": "ChatGPT",
   "count": 10
  },
  {
@@ -88,7 +100,15 @@
   "count": 10
  },
  {
-  "name": "York",
+  "name": "Colette",
+  "count": 10
+ },
+ {
+  "name": "芯片",
+  "count": 9
+ },
+ {
+  "name": "Financial",
   "count": 9
  },
  {
@@ -96,23 +116,35 @@
   "count": 9
  },
  {
-  "name": "ChatGPT",
+  "name": "Altman",
   "count": 9
  },
  {
-  "name": "Colette",
+  "name": "Gemini",
   "count": 9
  },
  {
-  "name": "Financial",
+  "name": "Democrats",
+  "count": 8
+ },
+ {
+  "name": "Washington",
+  "count": 8
+ },
+ {
+  "name": "Reuters",
+  "count": 8
+ },
+ {
+  "name": "Wall",
+  "count": 8
+ },
+ {
+  "name": "Russian",
   "count": 8
  },
  {
   "name": "Face",
-  "count": 8
- },
- {
-  "name": "Altman",
   "count": 8
  },
  {
@@ -124,39 +156,7 @@
   "count": 8
  },
  {
-  "name": "芯片",
-  "count": 7
- },
- {
   "name": "加息",
-  "count": 7
- },
- {
-  "name": "Takaichi",
-  "count": 7
- },
- {
-  "name": "Washington",
-  "count": 7
- },
- {
-  "name": "Reuters",
-  "count": 7
- },
- {
-  "name": "Russian",
-  "count": 7
- },
- {
-  "name": "CNBC",
-  "count": 7
- },
- {
-  "name": "Microsoft",
-  "count": 7
- },
- {
-  "name": "Megaspeed",
   "count": 7
  }
 ]

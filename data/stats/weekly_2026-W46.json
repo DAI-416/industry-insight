@@ -1,18 +1,18 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-19T04:28:51+08:00",
+ "generated_at": "2026-11-19T10:33:15+08:00",
  "total": 1379,
- "fact_count": 1185,
- "opinion_count": 194,
+ "fact_count": 1187,
+ "opinion_count": 192,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 142,
-   "opinion_count": 11,
-   "score": 4154.2
+   "count": 145,
+   "opinion_count": 10,
+   "score": 4231.6
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -28,9 +28,9 @@
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 80,
+   "count": 79,
    "opinion_count": 5,
-   "score": 2376.8
+   "score": 2343.4
   },
   {
    "track_id": "MAC-TRADE",
@@ -69,22 +69,22 @@
    "score": 1610.4
   },
   {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 55,
-   "opinion_count": 2,
-   "score": 1458.4
-  },
-  {
    "track_id": "TEC-CE",
    "name": "消费电子与智能硬件",
    "domain": "tech",
    "is_focus": false,
-   "count": 55,
+   "count": 56,
    "opinion_count": 2,
-   "score": 1438.6
+   "score": 1463.0
+  },
+  {
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 54,
+   "opinion_count": 2,
+   "score": 1435.8
   },
   {
    "track_id": "INV-VC",
@@ -118,9 +118,9 @@
    "name": "货币政策与利率",
    "domain": "macro",
    "is_focus": false,
-   "count": 22,
+   "count": 21,
    "opinion_count": 8,
-   "score": 879.4
+   "score": 848.4
   },
   {
    "track_id": "MAC-DATA",
@@ -159,6 +159,15 @@
    "score": 472.8
   },
   {
+   "track_id": "INV-POLICY",
+   "name": "投资政策与监管",
+   "domain": "investment",
+   "is_focus": false,
+   "count": 12,
+   "opinion_count": 0,
+   "score": 358.8
+  },
+  {
    "track_id": "MAC-FP",
    "name": "财政与产业政策",
    "domain": "macro",
@@ -166,15 +175,6 @@
    "count": 11,
    "opinion_count": 2,
    "score": 347.6
-  },
-  {
-   "track_id": "INV-POLICY",
-   "name": "投资政策与监管",
-   "domain": "investment",
-   "is_focus": false,
-   "count": 11,
-   "opinion_count": 0,
-   "score": 327.8
   },
   {
    "track_id": "INV-VIEW",
@@ -220,9 +220,9 @@
   "M-HK": 113
  },
  "importance_dist": {
-  "normal": 333,
+  "normal": 331,
   "critical": 29,
-  "low": 747,
+  "low": 751,
   "important": 76
  },
  "source_dist": {
@@ -405,7 +405,7 @@
    "count": 13
   }
  ],
- "total_score": 27122.4,
+ "total_score": 27168.2,
  "other_count": 279,
- "other_opinion_count": 22
+ "other_opinion_count": 21
 }
