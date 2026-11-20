@@ -1,50 +1,54 @@
 [
  {
   "name": "Nvidia",
-  "count": 60
+  "count": 62
  },
  {
   "name": "Trump",
-  "count": 55
+  "count": 60
  },
  {
   "name": "Apec",
-  "count": 48
+  "count": 52
+ },
+ {
+  "name": "IPO",
+  "count": 45
  },
  {
   "name": "Huang",
-  "count": 44
+  "count": 45
  },
  {
   "name": "OpenAI",
   "count": 42
  },
  {
-  "name": "IPO",
-  "count": 38
- },
- {
   "name": "Anthropic",
-  "count": 38
+  "count": 40
  },
  {
   "name": "Jensen",
-  "count": 36
+  "count": 37
  },
  {
   "name": "Donald",
-  "count": 32
- },
- {
-  "name": "Google",
-  "count": 30
+  "count": 36
  },
  {
   "name": "Bloomberg",
-  "count": 25
+  "count": 31
+ },
+ {
+  "name": "Google",
+  "count": 31
  },
  {
   "name": "Jinping",
+  "count": 28
+ },
+ {
+  "name": "Sources",
   "count": 24
  },
  {
@@ -52,31 +56,39 @@
   "count": 23
  },
  {
-  "name": "Sources",
-  "count": 20
+  "name": "融资",
+  "count": 17
  },
  {
   "name": "York",
   "count": 17
  },
  {
-  "name": "美联储",
-  "count": 16
- },
- {
   "name": "Apple",
   "count": 16
  },
  {
-  "name": "融资",
+  "name": "Putin",
+  "count": 16
+ },
+ {
+  "name": "美联储",
   "count": 15
  },
  {
-  "name": "Putin",
-  "count": 15
+  "name": "Reuters",
+  "count": 14
+ },
+ {
+  "name": "Financial",
+  "count": 14
  },
  {
   "name": "Series",
+  "count": 14
+ },
+ {
+  "name": "Prime",
   "count": 14
  },
  {
@@ -84,11 +96,19 @@
   "count": 14
  },
  {
-  "name": "Financial",
-  "count": 13
+  "name": "上市",
+  "count": 14
  },
  {
   "name": "加息",
+  "count": 13
+ },
+ {
+  "name": "芯片",
+  "count": 12
+ },
+ {
+  "name": "黄金",
   "count": 12
  },
  {
@@ -100,27 +120,23 @@
   "count": 12
  },
  {
-  "name": "Prime",
+  "name": "Microsoft",
   "count": 12
  },
  {
-  "name": "芯片",
-  "count": 11
- },
- {
-  "name": "Reuters",
-  "count": 11
+  "name": "Asia-Pacific",
+  "count": 12
  },
  {
   "name": "Manila",
   "count": 11
  },
  {
-  "name": "GPT-6",
+  "name": "Astra",
   "count": 11
  },
  {
-  "name": "Astra",
+  "name": "GPT-6",
   "count": 11
  },
  {
@@ -132,11 +148,7 @@
   "count": 11
  },
  {
-  "name": "Microsoft",
-  "count": 11
- },
- {
-  "name": "黄金",
+  "name": "Takaichi",
   "count": 10
  },
  {
@@ -145,18 +157,6 @@
  },
  {
   "name": "Wall",
-  "count": 10
- },
- {
-  "name": "Asia-Pacific",
-  "count": 10
- },
- {
-  "name": "Colette",
-  "count": 10
- },
- {
-  "name": "上市",
   "count": 10
  }
 ]
