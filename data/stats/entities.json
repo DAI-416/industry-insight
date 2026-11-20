@@ -1,47 +1,47 @@
 [
  {
   "name": "Nvidia",
-  "count": 57
+  "count": 60
  },
  {
   "name": "Trump",
-  "count": 53
+  "count": 55
  },
  {
   "name": "Apec",
-  "count": 47
+  "count": 48
  },
  {
   "name": "Huang",
-  "count": 43
+  "count": 44
  },
  {
   "name": "OpenAI",
-  "count": 40
- },
- {
-  "name": "Jensen",
-  "count": 35
+  "count": 42
  },
  {
   "name": "IPO",
-  "count": 34
+  "count": 38
  },
  {
   "name": "Anthropic",
-  "count": 33
+  "count": 38
+ },
+ {
+  "name": "Jensen",
+  "count": 36
  },
  {
   "name": "Donald",
-  "count": 31
+  "count": 32
  },
  {
   "name": "Google",
-  "count": 29
+  "count": 30
  },
  {
   "name": "Bloomberg",
-  "count": 24
+  "count": 25
  },
  {
   "name": "Jinping",
@@ -53,19 +53,27 @@
  },
  {
   "name": "Sources",
-  "count": 17
+  "count": 20
  },
  {
   "name": "York",
+  "count": 17
+ },
+ {
+  "name": "美联储",
   "count": 16
+ },
+ {
+  "name": "Apple",
+  "count": 16
+ },
+ {
+  "name": "融资",
+  "count": 15
  },
  {
   "name": "Putin",
   "count": 15
- },
- {
-  "name": "美联储",
-  "count": 14
  },
  {
   "name": "Series",
@@ -76,15 +84,19 @@
   "count": 14
  },
  {
-  "name": "融资",
-  "count": 13
- },
- {
-  "name": "Apple",
-  "count": 13
- },
- {
   "name": "Financial",
+  "count": 13
+ },
+ {
+  "name": "加息",
+  "count": 12
+ },
+ {
+  "name": "Meta",
+  "count": 12
+ },
+ {
+  "name": "Musk",
   "count": 12
  },
  {
@@ -92,15 +104,15 @@
   "count": 12
  },
  {
-  "name": "加息",
+  "name": "芯片",
+  "count": 11
+ },
+ {
+  "name": "Reuters",
   "count": 11
  },
  {
   "name": "Manila",
-  "count": 11
- },
- {
-  "name": "Musk",
   "count": 11
  },
  {
@@ -116,11 +128,15 @@
   "count": 11
  },
  {
+  "name": "Elon",
+  "count": 11
+ },
+ {
   "name": "Microsoft",
   "count": 11
  },
  {
-  "name": "芯片",
+  "name": "黄金",
   "count": 10
  },
  {
@@ -128,15 +144,11 @@
   "count": 10
  },
  {
-  "name": "Reuters",
-  "count": 10
- },
- {
   "name": "Wall",
   "count": 10
  },
  {
-  "name": "Elon",
+  "name": "Asia-Pacific",
   "count": 10
  },
  {
@@ -144,19 +156,7 @@
   "count": 10
  },
  {
-  "name": "Takaichi",
-  "count": 9
- },
- {
-  "name": "Altman",
-  "count": 9
- },
- {
-  "name": "Instagram",
-  "count": 9
- },
- {
-  "name": "Asia-Pacific",
-  "count": 9
+  "name": "上市",
+  "count": 10
  }
 ]
