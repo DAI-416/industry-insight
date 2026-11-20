@@ -1,55 +1,55 @@
 [
  {
-  "name": "Nvidia",
-  "count": 62
+  "name": "Trump",
+  "count": 68
  },
  {
-  "name": "Trump",
-  "count": 60
+  "name": "Nvidia",
+  "count": 67
  },
  {
   "name": "Apec",
-  "count": 52
- },
- {
-  "name": "IPO",
-  "count": 45
+  "count": 53
  },
  {
   "name": "Huang",
-  "count": 45
+  "count": 51
  },
  {
-  "name": "OpenAI",
-  "count": 42
+  "name": "IPO",
+  "count": 48
  },
  {
   "name": "Anthropic",
+  "count": 46
+ },
+ {
+  "name": "OpenAI",
+  "count": 44
+ },
+ {
+  "name": "Donald",
   "count": 40
  },
  {
   "name": "Jensen",
-  "count": 37
- },
- {
-  "name": "Donald",
-  "count": 36
+  "count": 40
  },
  {
   "name": "Bloomberg",
-  "count": 31
+  "count": 38
  },
  {
   "name": "Google",
-  "count": 31
+  "count": 36
  },
  {
   "name": "Jinping",
-  "count": 28
+  "count": 30
  },
  {
   "name": "Sources",
-  "count": 24
+  "count": 26
  },
  {
   "name": "GPT",
@@ -57,34 +57,42 @@
  },
  {
   "name": "融资",
-  "count": 17
+  "count": 19
  },
  {
   "name": "York",
-  "count": 17
+  "count": 19
  },
  {
   "name": "Apple",
-  "count": 16
+  "count": 19
  },
  {
   "name": "Putin",
-  "count": 16
+  "count": 18
  },
  {
   "name": "美联储",
+  "count": 16
+ },
+ {
+  "name": "Gemini",
+  "count": 16
+ },
+ {
+  "name": "Meta",
   "count": 15
  },
  {
   "name": "Reuters",
-  "count": 14
- },
- {
-  "name": "Financial",
-  "count": 14
+  "count": 15
  },
  {
   "name": "Series",
+  "count": 15
+ },
+ {
+  "name": "Financial",
   "count": 14
  },
  {
@@ -92,15 +100,19 @@
   "count": 14
  },
  {
-  "name": "Gemini",
-  "count": 14
+  "name": "加息",
+  "count": 13
+ },
+ {
+  "name": "Musk",
+  "count": 13
+ },
+ {
+  "name": "Claude",
+  "count": 13
  },
  {
   "name": "上市",
-  "count": 14
- },
- {
-  "name": "加息",
   "count": 13
  },
  {
@@ -112,11 +124,7 @@
   "count": 12
  },
  {
-  "name": "Meta",
-  "count": 12
- },
- {
-  "name": "Musk",
+  "name": "Elon",
   "count": 12
  },
  {
@@ -128,11 +136,19 @@
   "count": 12
  },
  {
+  "name": "Washington",
+  "count": 11
+ },
+ {
+  "name": "Wall",
+  "count": 11
+ },
+ {
   "name": "Manila",
   "count": 11
  },
  {
-  "name": "Astra",
+  "name": "Russian",
   "count": 11
  },
  {
@@ -140,23 +156,7 @@
   "count": 11
  },
  {
-  "name": "ChatGPT",
+  "name": "Astra",
   "count": 11
- },
- {
-  "name": "Elon",
-  "count": 11
- },
- {
-  "name": "Takaichi",
-  "count": 10
- },
- {
-  "name": "Washington",
-  "count": 10
- },
- {
-  "name": "Wall",
-  "count": 10
  }
 ]
