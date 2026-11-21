@@ -1,7 +1,7 @@
 [
  {
   "name": "Trump",
-  "count": 72
+  "count": 73
  },
  {
   "name": "Nvidia",
@@ -9,7 +9,7 @@
  },
  {
   "name": "Apec",
-  "count": 53
+  "count": 54
  },
  {
   "name": "Huang",
@@ -21,15 +21,15 @@
  },
  {
   "name": "OpenAI",
-  "count": 46
+  "count": 47
  },
  {
   "name": "Anthropic",
-  "count": 46
+  "count": 47
  },
  {
   "name": "Donald",
-  "count": 43
+  "count": 44
  },
  {
   "name": "Bloomberg",
@@ -41,39 +41,47 @@
  },
  {
   "name": "Google",
-  "count": 36
+  "count": 37
  },
  {
   "name": "Sources",
-  "count": 33
+  "count": 35
  },
  {
   "name": "Jinping",
-  "count": 30
+  "count": 31
  },
  {
   "name": "GPT",
   "count": 25
  },
  {
-  "name": "York",
-  "count": 20
+  "name": "融资",
+  "count": 21
  },
  {
-  "name": "融资",
-  "count": 19
+  "name": "York",
+  "count": 21
  },
  {
   "name": "美联储",
-  "count": 19
+  "count": 20
  },
  {
   "name": "Apple",
-  "count": 19
+  "count": 20
  },
  {
   "name": "Putin",
   "count": 18
+ },
+ {
+  "name": "芯片",
+  "count": 16
+ },
+ {
+  "name": "加息",
+  "count": 16
  },
  {
   "name": "Reuters",
@@ -96,14 +104,6 @@
   "count": 15
  },
  {
-  "name": "加息",
-  "count": 14
- },
- {
-  "name": "Claude",
-  "count": 14
- },
- {
   "name": "Prime",
   "count": 14
  },
@@ -120,7 +120,15 @@
   "count": 13
  },
  {
+  "name": "Russian",
+  "count": 13
+ },
+ {
   "name": "GPT-6",
+  "count": 13
+ },
+ {
+  "name": "Claude",
   "count": 13
  },
  {
@@ -128,15 +136,19 @@
   "count": 13
  },
  {
-  "name": "芯片",
+  "name": "Microsoft",
+  "count": 13
+ },
+ {
+  "name": "Asia-Pacific",
+  "count": 13
+ },
+ {
+  "name": "Washington",
   "count": 12
  },
  {
   "name": "Manila",
-  "count": 12
- },
- {
-  "name": "Russian",
   "count": 12
  },
  {
@@ -146,17 +158,5 @@
  {
   "name": "Elon",
   "count": 12
- },
- {
-  "name": "Microsoft",
-  "count": 12
- },
- {
-  "name": "Asia-Pacific",
-  "count": 12
- },
- {
-  "name": "黄金",
-  "count": 11
  }
 ]

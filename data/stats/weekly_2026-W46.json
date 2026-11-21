@@ -1,18 +1,18 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-21T10:11:37+08:00",
+ "generated_at": "2026-11-21T18:56:47+08:00",
  "total": 1379,
- "fact_count": 1187,
- "opinion_count": 192,
+ "fact_count": 1188,
+ "opinion_count": 191,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 145,
-   "opinion_count": 11,
-   "score": 4220.2
+   "count": 143,
+   "opinion_count": 10,
+   "score": 4160.6
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -28,9 +28,9 @@
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 78,
+   "count": 82,
    "opinion_count": 5,
-   "score": 2311.8
+   "score": 2422.0
   },
   {
    "track_id": "MAC-TRADE",
@@ -78,15 +78,6 @@
    "score": 1463.0
   },
   {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 54,
-   "opinion_count": 2,
-   "score": 1432.2
-  },
-  {
    "track_id": "INV-VC",
    "name": "一级市场投融资",
    "domain": "investment",
@@ -94,6 +85,15 @@
    "count": 51,
    "opinion_count": 2,
    "score": 1411.2
+  },
+  {
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 52,
+   "opinion_count": 2,
+   "score": 1387.0
   },
   {
    "track_id": "INV-FLOW",
@@ -222,7 +222,7 @@
  "importance_dist": {
   "normal": 325,
   "critical": 29,
-  "low": 757,
+  "low": 758,
   "important": 76
  },
  "source_dist": {
@@ -405,7 +405,7 @@
    "count": 13
   }
  ],
- "total_score": 27163.2,
- "other_count": 278,
+ "total_score": 27168.6,
+ "other_count": 279,
  "other_opinion_count": 21
 }
