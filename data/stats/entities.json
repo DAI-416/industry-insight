@@ -1,6 +1,102 @@
 [
  {
+  "name": "Bloomberg",
+  "count": 7
+ },
+ {
+  "name": "美联储",
+  "count": 5
+ },
+ {
+  "name": "黄金",
+  "count": 3
+ },
+ {
+  "name": "芯片",
+  "count": 3
+ },
+ {
   "name": "IPO",
+  "count": 3
+ },
+ {
+  "name": "Trump",
+  "count": 3
+ },
+ {
+  "name": "Washington",
+  "count": 3
+ },
+ {
+  "name": "National",
+  "count": 3
+ },
+ {
+  "name": "募资",
+  "count": 2
+ },
+ {
+  "name": "数据中心",
+  "count": 2
+ },
+ {
+  "name": "After",
+  "count": 2
+ },
+ {
+  "name": "GLM",
+  "count": 2
+ },
+ {
+  "name": "加息",
+  "count": 2
+ },
+ {
+  "name": "融资",
+  "count": 2
+ },
+ {
+  "name": "首席",
+  "count": 2
+ },
+ {
+  "name": "评级",
+  "count": 2
+ },
+ {
+  "name": "Australia",
+  "count": 2
+ },
+ {
+  "name": "Meta",
+  "count": 2
+ },
+ {
+  "name": "Nvidia",
+  "count": 2
+ },
+ {
+  "name": "Lightspeed",
+  "count": 2
+ },
+ {
+  "name": "Huang",
+  "count": 2
+ },
+ {
+  "name": "Jensen",
+  "count": 2
+ },
+ {
+  "name": "Financial",
+  "count": 2
+ },
+ {
+  "name": "Association",
+  "count": 2
+ },
+ {
+  "name": "Axios",
   "count": 2
  }
 ]
