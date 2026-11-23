@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-23T03:33:39+08:00",
+ "generated_at": "2026-11-23T09:39:29+08:00",
  "total": 1379,
  "fact_count": 1187,
  "opinion_count": 192,
@@ -10,9 +10,9 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 142,
+   "count": 143,
    "opinion_count": 11,
-   "score": 4135.6
+   "score": 4163.0
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -28,9 +28,9 @@
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 82,
+   "count": 81,
    "opinion_count": 5,
-   "score": 2409.4
+   "score": 2377.2
   },
   {
    "track_id": "MAC-TRADE",
@@ -93,7 +93,7 @@
    "is_focus": false,
    "count": 52,
    "opinion_count": 2,
-   "score": 1385.2
+   "score": 1379.8
   },
   {
    "track_id": "INV-FLOW",
@@ -118,9 +118,9 @@
    "name": "货币政策与利率",
    "domain": "macro",
    "is_focus": false,
-   "count": 22,
+   "count": 21,
    "opinion_count": 8,
-   "score": 874.0
+   "score": 844.8
   },
   {
    "track_id": "MAC-DATA",
@@ -159,6 +159,15 @@
    "score": 471.0
   },
   {
+   "track_id": "INV-POLICY",
+   "name": "投资政策与监管",
+   "domain": "investment",
+   "is_focus": false,
+   "count": 12,
+   "opinion_count": 0,
+   "score": 357.0
+  },
+  {
    "track_id": "MAC-FP",
    "name": "财政与产业政策",
    "domain": "macro",
@@ -166,15 +175,6 @@
    "count": 11,
    "opinion_count": 2,
    "score": 347.6
-  },
-  {
-   "track_id": "INV-POLICY",
-   "name": "投资政策与监管",
-   "domain": "investment",
-   "is_focus": false,
-   "count": 11,
-   "opinion_count": 0,
-   "score": 327.8
   },
   {
    "track_id": "INV-FUND",
@@ -220,9 +220,9 @@
   "M-HK": 113
  },
  "importance_dist": {
-  "normal": 325,
+  "normal": 323,
   "critical": 29,
-  "low": 757,
+  "low": 759,
   "important": 76
  },
  "source_dist": {
@@ -405,7 +405,7 @@
    "count": 13
   }
  ],
- "total_score": 27129.2,
+ "total_score": 27119.0,
  "other_count": 279,
  "other_opinion_count": 21
 }
