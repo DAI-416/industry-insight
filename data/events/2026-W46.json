@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-24T21:38:11+08:00",
+ "generated_at": "2026-11-25T07:54:44+08:00",
  "events": [
   {
    "id": "30ee268cdefa",
@@ -68354,7 +68354,7 @@
    "summary": "Release: datasette-llm 0.1a11\n\n datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins.\n\nThis release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol.\n\nThis means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0) you can run Datasette via uvx like this:\n\nwget https://datasette.io/content.db\n\nuvx --with datasette-agent datasette \\\n --root --secret 1 \\\n -s plugins.datasette",
    "content": "Release: datasette-llm 0.1a11\n\n datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins.\n\nThis release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol.\n\nThis means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0) you can run Datasette via uvx like this:\n\nwget https://datasette.io/content.db\n\nuvx --with datasette-agent datasette \\\n --root --secret 1 \\\n -s plugins.datasette-llm.default_model '{\n \"model\": \"lmstudio-qwen\",\n \"model_name\": \"qwen/qwen3.8-27b\",\n \"api_base\": \"http://localhost:1234/v1\"\n }' content.db\n\nAnd you'll get a local server running a Datasette Agent instance powered by your local model!\n\n \n \n Tags: uv, datasette-agent, llm, datasette, llms, ai, generative-ai",
    "published_at": "2026-11-14T23:59:28+00:00",
-   "fetched_at": "2026-11-24T21:35:32.570940+08:00",
+   "fetched_at": "2026-11-25T07:52:06.602488+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -68375,8 +68375,8 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.892,
-   "classify_method": "rules",
+   "classify_confidence": 0.9,
+   "classify_method": "llm",
    "status": "published",
    "importance_score": 29,
    "importance_level": "low",
@@ -73491,7 +73491,7 @@
    "summary": "Release: datasette 1.0a43\n\n I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone, which is now 53% complete.\n\nThe biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mechanisms now use this as well, and plugins can register themselves as capable of streaming every row in a table in one go via the new Response.stream() method.\n\nThere are a couple of security fixes, one of which I deemed deserving of a GitHub advisory: private stored queries could be exposed, granting access to the title and SQL of the qu",
    "content": "Release: datasette 1.0a43\n\n I've been leaning hard into Claude Fable 5.2 to help knock things off the 1.0 milestone, which is now 53% complete.\n\nThe biggest 1.0 item in this release is streaming support for output renderers - the built-in TSV and CSV export mechanisms now use this as well, and plugins can register themselves as capable of streaming every row in a table in one go via the new Response.stream() method.\n\nThere are a couple of security fixes, one of which I deemed deserving of a GitHub advisory: private stored queries could be exposed, granting access to the title and SQL of the query (but not allowing that query to be executed).\n\nThere are dozens of smaller improvements. The row page JSON representation finally has a design suitable for 1.0. A new <datasette-copy-button> Web Component provides copy-schema in various places. JSON in columns on the row page can be pretty-printed. There's a new DatasetteModal.confirm() JavaScript utility method. Plus dozens of bug fixes, including contributions by Zihan Dai, Peter Olkhovets, Ilya Khalafi, and Ankita Advitot.\n\nThe feature I'm most excited about is a pretty tiny one: I've added CSS multi-page view transitions to Datasette! Here's the commit - key CSS is as follows:\n\n/* Enable cross-document view transitions,\n for anyone without prefers-reduced-motion */\n@media (prefers-reduced-motion: no-preference) {\n @view-transition {\n navigation: auto;\n }\n}\n/* .facet-results should morph from old position to new */\nhtml:active-view-transition .content > .facet-results {\n view-transition-name: facet-results;\n}\n/* So should a .table-wrapper, provided it contains .rows-and-columns */\nhtml:active-view-transition .table-wrapper:has(> table.rows-and-columns) {\n view-transition-name: rows-table;\n}\n\nWith that in place, navigations within Datasette - still staunchly a multi-page application - feel more like an SPA. This works on Safari and Chrome at the moment and I believe supports for Firefox is due to land in Firefox 162 on December 8th 2026 (seeing as they are no longer feature-flagged in Firefox Nightly.)\n\n \n\n \n \n Tags: security, datasette, css, browsers, annotated-release-notes, firefox, javascript, safari, chrome",
    "published_at": "2026-11-15T23:20:27+00:00",
-   "fetched_at": "2026-11-24T21:35:32.570654+08:00",
+   "fetched_at": "2026-11-25T07:52:06.602267+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -73508,14 +73508,14 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "LLM",
+   "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
-   "classify_method": "rules",
+   "classify_confidence": 0.9,
+   "classify_method": "llm",
    "status": "published",
-   "importance_score": 29,
+   "importance_score": 25,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -73524,7 +73524,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 2,
-    "focus_boost": true
+    "focus_boost": false
    },
    "ai_summary": "Release: datasette 1.",
    "ai_summary_raw": "Release: datasette 1.",
@@ -73546,7 +73546,7 @@
    "summary": "Release: datasette 0.65.6\n\n I backported a minor security fix from 1.0a43:\n\nFixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /<route>.db by actors who were denied access to it. [...]\n\n \n \n Tags: security, datasette",
    "content": "Release: datasette 0.65.6\n\n I backported a minor security fix from 1.0a43:\n\nFixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /<route>.db by actors who were denied access to it. [...]\n\n \n \n Tags: security, datasette",
    "published_at": "2026-11-15T23:18:17+00:00",
-   "fetched_at": "2026-11-24T21:35:32.570717+08:00",
+   "fetched_at": "2026-11-25T07:52:06.602311+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -73563,14 +73563,14 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "LLM",
+   "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.62,
-   "classify_method": "rules:source_hint",
+   "classify_confidence": 0.9,
+   "classify_method": "llm",
    "status": "published",
-   "importance_score": 29,
+   "importance_score": 25,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -73579,7 +73579,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 2,
-    "focus_boost": true
+    "focus_boost": false
    },
    "ai_summary": "Release: datasette 0.",
    "ai_summary_raw": "Release: datasette 0.",
@@ -73753,7 +73753,7 @@
    "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
    "content": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
    "published_at": "2026-11-15T22:00:01+00:00",
-   "fetched_at": "2026-11-24T21:35:31.745830+08:00",
+   "fetched_at": "2026-11-25T07:52:05.710060+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -73770,12 +73770,12 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "LLM",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.894,
-   "classify_method": "rules",
+   "classify_confidence": 0.8,
+   "classify_method": "llm",
    "status": "published",
    "importance_score": 39,
    "importance_level": "low",
@@ -73808,7 +73808,7 @@
    "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
    "content": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
    "published_at": "2026-11-15T22:00:00+00:00",
-   "fetched_at": "2026-11-24T21:35:31.745857+08:00",
+   "fetched_at": "2026-11-25T07:52:05.710083+08:00",
    "date_assumed": false,
    "thin": true,
    "sources": [
@@ -73825,12 +73825,12 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "LLM",
+   "track_id": "TEC-AI",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.62,
-   "classify_method": "rules:source_hint",
+   "classify_confidence": 0.9,
+   "classify_method": "llm",
    "status": "published",
    "importance_score": 39,
    "importance_level": "low",
@@ -74768,7 +74768,7 @@
    "summary": "Release: datasette-apps 0.4a0\n\n Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data.\n\n0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help write apps that link to each other.\n\nThis means you can have e.g. an app that shows details about a specific record, and a completely separate app that searches those records and links to their represen",
    "content": "Release: datasette-apps 0.4a0\n\n Datasette Apps are sandboxed HTML and JavaScript applications that live inside Datasette - think Claude Artifacts, but these ones can run SQL queries against your data.\n\n0.4a0 adds support for linking: you can link to an app with #fragments in the URL and the app can see and use those, plus supported URL schemes are reported back to Datasette Agent so it can help write apps that link to each other.\n\nThis means you can have e.g. an app that shows details about a specific record, and a completely separate app that searches those records and links to their representations in the first app.\n\n \n \n Tags: datasette-agent, datasette-apps, datasette, urls",
    "published_at": "2026-11-15T04:02:45+00:00",
-   "fetched_at": "2026-11-24T21:35:32.570792+08:00",
+   "fetched_at": "2026-11-25T07:52:06.602368+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -74785,14 +74785,14 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "LLM",
+   "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.894,
-   "classify_method": "rules",
+   "classify_confidence": 0.9,
+   "classify_method": "llm",
    "status": "published",
-   "importance_score": 29,
+   "importance_score": 25,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -74801,7 +74801,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 2,
-    "focus_boost": true
+    "focus_boost": false
    },
    "ai_summary": "Release: datasette-apps 0.",
    "ai_summary_raw": "Release: datasette-apps 0.",
@@ -74823,7 +74823,7 @@
    "summary": "Release: datasette-agent 0.6a0\n\n Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries:\n\n \n \n Tags: datasette-agent, llm, datasette, llms, ai, generative-ai",
    "content": "Release: datasette-agent 0.6a0\n\n Accumulated small fixes for Datasette Agent, my agent plugin for Datasette that lets you ask questions about your data. Most notably, it now adds an agent prompt directly to the Datasette homepage, with support for hash-mentions of tables and queries:\n\n \n \n Tags: datasette-agent, llm, datasette, llms, ai, generative-ai",
    "published_at": "2026-11-15T03:49:47+00:00",
-   "fetched_at": "2026-11-24T21:35:32.570849+08:00",
+   "fetched_at": "2026-11-25T07:52:06.602413+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -74844,8 +74844,8 @@
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.892,
-   "classify_method": "rules",
+   "classify_confidence": 0.9,
+   "classify_method": "llm",
    "status": "published",
    "importance_score": 29,
    "importance_level": "low",
@@ -74878,7 +74878,7 @@
    "summary": "Release: datasette-maplibre 0.1a0\n\n The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap, the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub.)\n\nI built most of this with a single prompt to Claude Fable 5.2:\n\nLook at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outsid",
    "content": "Release: datasette-maplibre 0.1a0\n\n The first new Datasette geospatial plugin in quite a while! This one combines the excellent MapLibre GL library with OpenFreeMap, the free vector map server operated by Zsolt Ero (you should sponsor Zsolt on GitHub.)\n\nI built most of this with a single prompt to Claude Fable 5.2:\n\nLook at datasette-cluster-map and datasette-leaflet-geojson plugins, then look at ~/dev/tools/openfreemap-demo.html - then build a brand new Datasette plugin that uses maplibreGL and openfreemap and combines the features of those other two plugins - but be creative and think outside the box for other useful features the plugin might have\n\n\"Be creative and think outside the box\" resulted in a few neat ideas - my favorite is that it displays SVG previews of GeoJSON shapes, then loads a WebGL preview only when they scroll into view.\n\nI also had Claude build a comprehensive demo which works in the latest Datasette Lite, so you can visit this link to load the plugin and a demo database in your browser via Pyodide and WebAssembly.\n\nI like this demo page showing both GeoJSON shapes and lat/lon points on the same map:\n\n \n \n Tags: visualization, generative-ai, datasette-lite, claude-mythos-fable, ai, llms, geospatial, openstreetmap, datasette",
    "published_at": "2026-11-15T23:58:36+00:00",
-   "fetched_at": "2026-11-24T21:35:32.570463+08:00",
+   "fetched_at": "2026-11-25T07:52:06.602117+08:00",
    "date_assumed": false,
    "thin": false,
    "sources": [
@@ -74895,14 +74895,14 @@
    "tracks_hint": [
     "LLM"
    ],
-   "track_id": "LLM",
+   "track_id": "TEC-CLOUD",
    "market_primary": "M-GL",
    "market_related": [],
    "content_type": "fact",
-   "classify_confidence": 0.95,
-   "classify_method": "rules",
+   "classify_confidence": 0.9,
+   "classify_method": "llm",
    "status": "published",
-   "importance_score": 29,
+   "importance_score": 25,
    "importance_level": "low",
    "event_type": "常规经营",
    "score_detail": {
@@ -74911,7 +74911,7 @@
     "breadth": 5,
     "density": 0,
     "timeliness": 2,
-    "focus_boost": true
+    "focus_boost": false
    },
    "ai_summary": "Release: datasette-maplibre 0.",
    "ai_summary_raw": "Release: datasette-maplibre 0.",

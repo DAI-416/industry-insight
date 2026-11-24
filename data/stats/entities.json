@@ -1,58 +1,82 @@
 [
  {
   "name": "Huang",
-  "count": 26
+  "count": 37
  },
  {
   "name": "Jensen",
-  "count": 22
+  "count": 33
  },
  {
   "name": "Nvidia",
-  "count": 21
+  "count": 31
  },
  {
   "name": "Trump",
-  "count": 15
- },
- {
-  "name": "Bloomberg",
-  "count": 14
+  "count": 20
  },
  {
   "name": "Anthropic",
-  "count": 10
+  "count": 18
  },
  {
-  "name": "首席",
-  "count": 8
- },
- {
-  "name": "Claude",
-  "count": 8
- },
- {
-  "name": "Sources",
-  "count": 8
- },
- {
-  "name": "芯片",
-  "count": 7
- },
- {
-  "name": "美联储",
-  "count": 7
+  "name": "Bloomberg",
+  "count": 17
  },
  {
   "name": "OpenAI",
-  "count": 7
+  "count": 12
+ },
+ {
+  "name": "Claude",
+  "count": 10
+ },
+ {
+  "name": "Sources",
+  "count": 10
+ },
+ {
+  "name": "GPT",
+  "count": 9
  },
  {
   "name": "Washington",
-  "count": 7
+  "count": 9
+ },
+ {
+  "name": "芯片",
+  "count": 8
+ },
+ {
+  "name": "美联储",
+  "count": 8
+ },
+ {
+  "name": "Meta",
+  "count": 8
  },
  {
   "name": "IPO",
+  "count": 7
+ },
+ {
+  "name": "首席",
+  "count": 7
+ },
+ {
+  "name": "York",
+  "count": 6
+ },
+ {
+  "name": "Amazon",
+  "count": 6
+ },
+ {
+  "name": "GPT-6",
+  "count": 6
+ },
+ {
+  "name": "上市",
   "count": 5
  },
  {
@@ -64,11 +88,23 @@
   "count": 5
  },
  {
-  "name": "Meta",
+  "name": "Financial",
   "count": 5
  },
  {
-  "name": "Financial",
+  "name": "Axios",
+  "count": 5
+ },
+ {
+  "name": "Donald",
+  "count": 5
+ },
+ {
+  "name": "Google",
+  "count": 5
+ },
+ {
+  "name": "Uber",
   "count": 5
  },
  {
@@ -76,15 +112,19 @@
   "count": 4
  },
  {
-  "name": "上市",
-  "count": 4
- },
- {
   "name": "After",
   "count": 4
  },
  {
-  "name": "GPT",
+  "name": "收购",
+  "count": 4
+ },
+ {
+  "name": "加息",
+  "count": 4
+ },
+ {
+  "name": "Astra",
   "count": 4
  },
  {
@@ -92,15 +132,11 @@
   "count": 4
  },
  {
+  "name": "Muse",
+  "count": 4
+ },
+ {
   "name": "Dutch",
-  "count": 4
- },
- {
-  "name": "Amazon",
-  "count": 4
- },
- {
-  "name": "Axios",
   "count": 4
  },
  {
@@ -116,47 +152,11 @@
   "count": 4
  },
  {
-  "name": "Donald",
-  "count": 4
- },
- {
   "name": "Megaspeed",
   "count": 4
  },
  {
-  "name": "Wall",
+  "name": "Russian",
   "count": 4
- },
- {
-  "name": "Google",
-  "count": 4
- },
- {
-  "name": "Uber",
-  "count": 4
- },
- {
-  "name": "Prime",
-  "count": 4
- },
- {
-  "name": "黄金",
-  "count": 3
- },
- {
-  "name": "募资",
-  "count": 3
- },
- {
-  "name": "并购",
-  "count": 3
- },
- {
-  "name": "收购",
-  "count": 3
- },
- {
-  "name": "加息",
-  "count": 3
  }
 ]
