@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-23T20:29:07+08:00",
+ "generated_at": "2026-11-24T10:16:41+08:00",
  "total": 1379,
  "fact_count": 1188,
  "opinion_count": 191,
@@ -10,18 +10,9 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 143,
+   "count": 144,
    "opinion_count": 10,
-   "score": 4157.0
-  },
-  {
-   "track_id": "LLM",
-   "name": "大模型",
-   "domain": "tech",
-   "is_focus": true,
-   "count": 85,
-   "opinion_count": 5,
-   "score": 2468.8
+   "score": 4190.4
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -31,6 +22,15 @@
    "count": 82,
    "opinion_count": 15,
    "score": 2456.2
+  },
+  {
+   "track_id": "LLM",
+   "name": "大模型",
+   "domain": "tech",
+   "is_focus": true,
+   "count": 82,
+   "opinion_count": 5,
+   "score": 2392.6
   },
   {
    "track_id": "MAC-TRADE",
@@ -91,9 +91,9 @@
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 48,
+   "count": 50,
    "opinion_count": 2,
-   "score": 1303.8
+   "score": 1341.8
   },
   {
    "track_id": "INV-FLOW",
@@ -405,7 +405,7 @@
    "count": 13
   }
  ],
- "total_score": 27156.0,
+ "total_score": 27151.2,
  "other_count": 279,
  "other_opinion_count": 21
 }

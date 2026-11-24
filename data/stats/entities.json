@@ -1,18 +1,78 @@
 [
  {
+  "name": "Huang",
+  "count": 21
+ },
+ {
+  "name": "Jensen",
+  "count": 19
+ },
+ {
+  "name": "Nvidia",
+  "count": 17
+ },
+ {
+  "name": "Trump",
+  "count": 11
+ },
+ {
   "name": "Bloomberg",
-  "count": 7
+  "count": 11
  },
  {
   "name": "美联储",
-  "count": 5
- },
- {
-  "name": "黄金",
-  "count": 3
+  "count": 7
  },
  {
   "name": "芯片",
+  "count": 6
+ },
+ {
+  "name": "Anthropic",
+  "count": 6
+ },
+ {
+  "name": "首席",
+  "count": 6
+ },
+ {
+  "name": "OpenAI",
+  "count": 6
+ },
+ {
+  "name": "GLM",
+  "count": 5
+ },
+ {
+  "name": "Claude",
+  "count": 5
+ },
+ {
+  "name": "Sources",
+  "count": 5
+ },
+ {
+  "name": "After",
+  "count": 4
+ },
+ {
+  "name": "GPT",
+  "count": 4
+ },
+ {
+  "name": "Washington",
+  "count": 4
+ },
+ {
+  "name": "Meta",
+  "count": 4
+ },
+ {
+  "name": "Google",
+  "count": 4
+ },
+ {
+  "name": "黄金",
   "count": 3
  },
  {
@@ -20,11 +80,19 @@
   "count": 3
  },
  {
-  "name": "Trump",
+  "name": "上市",
   "count": 3
  },
  {
-  "name": "Washington",
+  "name": "募资",
+  "count": 3
+ },
+ {
+  "name": "Grok",
+  "count": 3
+ },
+ {
+  "name": "Tech",
   "count": 3
  },
  {
@@ -32,71 +100,63 @@
   "count": 3
  },
  {
-  "name": "募资",
-  "count": 2
+  "name": "Dutch",
+  "count": 3
  },
  {
-  "name": "数据中心",
-  "count": 2
+  "name": "Z.ai",
+  "count": 3
  },
  {
-  "name": "After",
-  "count": 2
+  "name": "GLM-5.4",
+  "count": 3
  },
  {
-  "name": "GLM",
-  "count": 2
+  "name": "Loop",
+  "count": 3
  },
  {
-  "name": "加息",
-  "count": 2
+  "name": "Transformer",
+  "count": 3
  },
  {
-  "name": "融资",
-  "count": 2
- },
- {
-  "name": "首席",
-  "count": 2
- },
- {
-  "name": "评级",
-  "count": 2
- },
- {
-  "name": "Australia",
-  "count": 2
- },
- {
-  "name": "Meta",
-  "count": 2
- },
- {
-  "name": "Nvidia",
-  "count": 2
- },
- {
-  "name": "Lightspeed",
-  "count": 2
- },
- {
-  "name": "Huang",
-  "count": 2
- },
- {
-  "name": "Jensen",
-  "count": 2
- },
- {
-  "name": "Financial",
-  "count": 2
- },
- {
-  "name": "Association",
-  "count": 2
+  "name": "Amazon",
+  "count": 3
  },
  {
   "name": "Axios",
-  "count": 2
+  "count": 3
+ },
+ {
+  "name": "Series",
+  "count": 3
+ },
+ {
+  "name": "算力",
+  "count": 3
+ },
+ {
+  "name": "Ship",
+  "count": 3
+ },
+ {
+  "name": "Department",
+  "count": 3
+ },
+ {
+  "name": "Donald",
+  "count": 3
+ },
+ {
+  "name": "Megaspeed",
+  "count": 3
+ },
+ {
+  "name": "Alice",
+  "count": 3
+ },
+ {
+  "name": "Search",
+  "count": 3
  }
 ]
