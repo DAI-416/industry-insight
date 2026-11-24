@@ -1,27 +1,27 @@
 [
  {
   "name": "南华早报",
-  "count": 1519
+  "count": 1569
  },
  {
   "name": "华尔街见闻",
-  "count": 978
+  "count": 1015
  },
  {
   "name": "Techmeme",
-  "count": 747
+  "count": 762
  },
  {
   "name": "TechCrunch",
-  "count": 374
+  "count": 375
  },
  {
   "name": "The Verge",
-  "count": 333
+  "count": 334
  },
  {
   "name": "The Decoder",
-  "count": 167
+  "count": 169
  },
  {
   "name": "MarkTechPost",
@@ -33,10 +33,10 @@
  },
  {
   "name": "Simon Willison",
-  "count": 56
+  "count": 57
  },
  {
   "name": "MIT 科技评论",
-  "count": 48
+  "count": 50
  }
 ]
