@@ -1,38 +1,54 @@
 [
  {
   "name": "Huang",
-  "count": 43
+  "count": 47
  },
  {
   "name": "Jensen",
-  "count": 39
+  "count": 43
  },
  {
   "name": "Nvidia",
-  "count": 34
+  "count": 41
  },
  {
   "name": "Trump",
-  "count": 24
+  "count": 27
  },
  {
   "name": "Bloomberg",
-  "count": 20
+  "count": 23
  },
  {
   "name": "Anthropic",
-  "count": 18
+  "count": 21
  },
  {
   "name": "Sources",
-  "count": 14
+  "count": 18
  },
  {
   "name": "OpenAI",
+  "count": 15
+ },
+ {
+  "name": "Meta",
   "count": 13
  },
  {
+  "name": "美联储",
+  "count": 12
+ },
+ {
   "name": "Washington",
+  "count": 12
+ },
+ {
+  "name": "Claude",
+  "count": 11
+ },
+ {
+  "name": "Financial",
   "count": 11
  },
  {
@@ -40,7 +56,7 @@
   "count": 10
  },
  {
-  "name": "Claude",
+  "name": "Amazon",
   "count": 10
  },
  {
@@ -48,31 +64,35 @@
   "count": 9
  },
  {
-  "name": "美联储",
-  "count": 9
- },
- {
-  "name": "Meta",
-  "count": 9
- },
- {
-  "name": "Financial",
-  "count": 9
- },
- {
   "name": "IPO",
-  "count": 8
- },
- {
-  "name": "首席",
-  "count": 7
+  "count": 9
  },
  {
   "name": "York",
+  "count": 9
+ },
+ {
+  "name": "首席",
+  "count": 8
+ },
+ {
+  "name": "Muse",
+  "count": 8
+ },
+ {
+  "name": "Alice",
+  "count": 8
+ },
+ {
+  "name": "Google",
+  "count": 8
+ },
+ {
+  "name": "半导体",
   "count": 7
  },
  {
-  "name": "Amazon",
+  "name": "Wall",
   "count": 7
  },
  {
@@ -80,7 +100,11 @@
   "count": 7
  },
  {
-  "name": "半导体",
+  "name": "Verge",
+  "count": 7
+ },
+ {
+  "name": "加息",
   "count": 6
  },
  {
@@ -92,7 +116,15 @@
   "count": 6
  },
  {
-  "name": "Alice",
+  "name": "Department",
+  "count": 6
+ },
+ {
+  "name": "CNBC",
+  "count": 6
+ },
+ {
+  "name": "Huawei",
   "count": 6
  },
  {
@@ -101,6 +133,10 @@
  },
  {
   "name": "上市",
+  "count": 5
+ },
+ {
+  "name": "数据中心",
   "count": 5
  },
  {
@@ -120,43 +156,7 @@
   "count": 5
  },
  {
-  "name": "Muse",
-  "count": 5
- },
- {
   "name": "Axios",
   "count": 5
- },
- {
-  "name": "Anwar",
-  "count": 5
- },
- {
-  "name": "Google",
-  "count": 5
- },
- {
-  "name": "Uber",
-  "count": 5
- },
- {
-  "name": "CNBC",
-  "count": 5
- },
- {
-  "name": "Huawei",
-  "count": 5
- },
- {
-  "name": "数据中心",
-  "count": 4
- },
- {
-  "name": "加息",
-  "count": 4
- },
- {
-  "name": "Australia",
-  "count": 4
  }
 ]
