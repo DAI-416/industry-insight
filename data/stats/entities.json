@@ -1,18 +1,22 @@
 [
  {
   "name": "Huang",
-  "count": 37
+  "count": 43
  },
  {
   "name": "Jensen",
-  "count": 33
+  "count": 39
  },
  {
   "name": "Nvidia",
-  "count": 31
+  "count": 34
  },
  {
   "name": "Trump",
+  "count": 24
+ },
+ {
+  "name": "Bloomberg",
   "count": 20
  },
  {
@@ -20,44 +24,44 @@
   "count": 18
  },
  {
-  "name": "Bloomberg",
-  "count": 17
+  "name": "Sources",
+  "count": 14
  },
  {
   "name": "OpenAI",
-  "count": 12
+  "count": 13
+ },
+ {
+  "name": "Washington",
+  "count": 11
+ },
+ {
+  "name": "GPT",
+  "count": 10
  },
  {
   "name": "Claude",
   "count": 10
  },
  {
-  "name": "Sources",
-  "count": 10
- },
- {
-  "name": "GPT",
-  "count": 9
- },
- {
-  "name": "Washington",
-  "count": 9
- },
- {
   "name": "芯片",
-  "count": 8
+  "count": 9
  },
  {
   "name": "美联储",
-  "count": 8
+  "count": 9
  },
  {
   "name": "Meta",
-  "count": 8
+  "count": 9
+ },
+ {
+  "name": "Financial",
+  "count": 9
  },
  {
   "name": "IPO",
-  "count": 7
+  "count": 8
  },
  {
   "name": "首席",
@@ -65,18 +69,46 @@
  },
  {
   "name": "York",
-  "count": 6
+  "count": 7
  },
  {
   "name": "Amazon",
-  "count": 6
+  "count": 7
  },
  {
   "name": "GPT-6",
+  "count": 7
+ },
+ {
+  "name": "半导体",
   "count": 6
  },
  {
+  "name": "Tech",
+  "count": 6
+ },
+ {
+  "name": "Donald",
+  "count": 6
+ },
+ {
+  "name": "Alice",
+  "count": 6
+ },
+ {
+  "name": "黄金",
+  "count": 5
+ },
+ {
   "name": "上市",
+  "count": 5
+ },
+ {
+  "name": "After",
+  "count": 5
+ },
+ {
+  "name": "收购",
   "count": 5
  },
  {
@@ -84,11 +116,11 @@
   "count": 5
  },
  {
-  "name": "Tech",
+  "name": "Astra",
   "count": 5
  },
  {
-  "name": "Financial",
+  "name": "Muse",
   "count": 5
  },
  {
@@ -96,7 +128,7 @@
   "count": 5
  },
  {
-  "name": "Donald",
+  "name": "Anwar",
   "count": 5
  },
  {
@@ -108,15 +140,15 @@
   "count": 5
  },
  {
-  "name": "半导体",
-  "count": 4
+  "name": "CNBC",
+  "count": 5
  },
  {
-  "name": "After",
-  "count": 4
+  "name": "Huawei",
+  "count": 5
  },
  {
-  "name": "收购",
+  "name": "数据中心",
   "count": 4
  },
  {
@@ -124,39 +156,7 @@
   "count": 4
  },
  {
-  "name": "Astra",
-  "count": 4
- },
- {
-  "name": "National",
-  "count": 4
- },
- {
-  "name": "Muse",
-  "count": 4
- },
- {
-  "name": "Dutch",
-  "count": 4
- },
- {
-  "name": "Ship",
-  "count": 4
- },
- {
-  "name": "Anwar",
-  "count": 4
- },
- {
-  "name": "Department",
-  "count": 4
- },
- {
-  "name": "Megaspeed",
-  "count": 4
- },
- {
-  "name": "Russian",
+  "name": "Australia",
   "count": 4
  }
 ]

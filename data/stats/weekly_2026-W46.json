@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W46",
- "generated_at": "2026-11-25T07:54:44+08:00",
+ "generated_at": "2026-11-25T16:27:32+08:00",
  "total": 1379,
  "fact_count": 1188,
  "opinion_count": 191,
@@ -10,9 +10,9 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 145,
+   "count": 143,
    "opinion_count": 10,
-   "score": 4211.8
+   "score": 4157.0
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -28,9 +28,9 @@
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 82,
+   "count": 84,
    "opinion_count": 5,
-   "score": 2392.6
+   "score": 2447.4
   },
   {
    "track_id": "MAC-TRADE",
