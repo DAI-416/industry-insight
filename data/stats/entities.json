@@ -1,11 +1,11 @@
 [
  {
   "name": "Huang",
-  "count": 54
+  "count": 56
  },
  {
   "name": "Nvidia",
-  "count": 53
+  "count": 55
  },
  {
   "name": "Jensen",
@@ -13,38 +13,46 @@
  },
  {
   "name": "Trump",
-  "count": 35
+  "count": 37
  },
  {
   "name": "Bloomberg",
-  "count": 30
+  "count": 34
+ },
+ {
+  "name": "Sources",
+  "count": 27
  },
  {
   "name": "Anthropic",
   "count": 26
  },
  {
-  "name": "Sources",
-  "count": 25
- },
- {
   "name": "OpenAI",
-  "count": 22
+  "count": 25
  },
  {
   "name": "美联储",
   "count": 17
  },
  {
-  "name": "GPT",
-  "count": 15
+  "name": "Meta",
+  "count": 17
  },
  {
-  "name": "Meta",
-  "count": 15
+  "name": "GPT",
+  "count": 16
+ },
+ {
+  "name": "Financial",
+  "count": 16
  },
  {
   "name": "York",
+  "count": 16
+ },
+ {
+  "name": "Black",
   "count": 15
  },
  {
@@ -52,27 +60,23 @@
   "count": 14
  },
  {
-  "name": "Financial",
+  "name": "Google",
   "count": 14
  },
  {
-  "name": "首席",
-  "count": 12
+  "name": "Amazon",
+  "count": 13
+ },
+ {
+  "name": "Donald",
+  "count": 13
  },
  {
   "name": "Claude",
   "count": 12
  },
  {
-  "name": "Amazon",
-  "count": 12
- },
- {
-  "name": "Donald",
-  "count": 12
- },
- {
-  "name": "Google",
+  "name": "Verge",
   "count": 12
  },
  {
@@ -80,7 +84,23 @@
   "count": 11
  },
  {
-  "name": "Black",
+  "name": "首席",
+  "count": 11
+ },
+ {
+  "name": "Alice",
+  "count": 11
+ },
+ {
+  "name": "Apple",
+  "count": 11
+ },
+ {
+  "name": "黄金",
+  "count": 10
+ },
+ {
+  "name": "Reuters",
   "count": 10
  },
  {
@@ -100,11 +120,11 @@
   "count": 9
  },
  {
-  "name": "Department",
+  "name": "Muse",
   "count": 9
  },
  {
-  "name": "Alice",
+  "name": "Department",
   "count": 9
  },
  {
@@ -112,20 +132,12 @@
   "count": 9
  },
  {
-  "name": "Verge",
-  "count": 9
- },
- {
-  "name": "Reuters",
-  "count": 9
- },
- {
   "name": "Prime",
   "count": 9
  },
  {
-  "name": "黄金",
-  "count": 8
+  "name": "Huawei",
+  "count": 9
  },
  {
   "name": "半导体",
@@ -140,23 +152,11 @@
   "count": 8
  },
  {
-  "name": "Muse",
+  "name": "Megaspeed",
   "count": 8
  },
  {
-  "name": "Huawei",
+  "name": "Russian",
   "count": 8
- },
- {
-  "name": "融资",
-  "count": 7
- },
- {
-  "name": "估值",
-  "count": 7
- },
- {
-  "name": "Party",
-  "count": 7
  }
 ]

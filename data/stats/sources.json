@@ -1,15 +1,15 @@
 [
  {
   "name": "南华早报",
-  "count": 1780
+  "count": 1794
  },
  {
   "name": "华尔街见闻",
-  "count": 1177
+  "count": 1192
  },
  {
   "name": "Techmeme",
-  "count": 846
+  "count": 856
  },
  {
   "name": "TechCrunch",
@@ -17,11 +17,11 @@
  },
  {
   "name": "The Verge",
-  "count": 379
+  "count": 388
  },
  {
   "name": "The Decoder",
-  "count": 190
+  "count": 197
  },
  {
   "name": "MarkTechPost",
@@ -37,6 +37,6 @@
  },
  {
   "name": "MIT 科技评论",
-  "count": 58
+  "count": 59
  }
 ]

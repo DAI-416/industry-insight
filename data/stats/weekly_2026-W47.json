@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W47",
- "generated_at": "2026-11-27T20:08:36+08:00",
+ "generated_at": "2026-11-28T05:12:14+08:00",
  "total": 1440,
  "fact_count": 1259,
  "opinion_count": 181,
@@ -10,9 +10,9 @@
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 131,
-   "opinion_count": 16,
-   "score": 3940.4
+   "count": 133,
+   "opinion_count": 12,
+   "score": 3989.2
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -73,9 +73,9 @@
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 64,
+   "count": 65,
    "opinion_count": 4,
-   "score": 1799.2
+   "score": 1823.6
   },
   {
    "track_id": "TEC-CE",
@@ -91,9 +91,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 50,
+   "count": 47,
    "opinion_count": 6,
-   "score": 1299.8
+   "score": 1232.0
   },
   {
    "track_id": "INV-FLOW",
@@ -120,7 +120,7 @@
    "is_focus": false,
    "count": 21,
    "opinion_count": 8,
-   "score": 932.4
+   "score": 930.6
   },
   {
    "track_id": "MAC-DATA",
@@ -209,7 +209,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 1,
-   "opinion_count": 43,
+   "opinion_count": 44,
    "score": 49.0
   }
  ],
@@ -404,7 +404,7 @@
    "count": 13
   }
  ],
- "total_score": 29524.0,
+ "total_score": 29527.6,
  "other_count": 286,
- "other_opinion_count": 19
+ "other_opinion_count": 22
 }
