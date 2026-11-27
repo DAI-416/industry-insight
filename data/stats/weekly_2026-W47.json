@@ -1,18 +1,18 @@
 {
  "week_key": "2026-W47",
- "generated_at": "2026-11-27T00:51:01+08:00",
+ "generated_at": "2026-11-27T09:42:53+08:00",
  "total": 1440,
- "fact_count": 1259,
- "opinion_count": 181,
+ "fact_count": 1260,
+ "opinion_count": 180,
  "track_activity": [
   {
    "track_id": "TEC-AI",
    "name": "AI 应用与智能体",
    "domain": "tech",
    "is_focus": true,
-   "count": 137,
-   "opinion_count": 11,
-   "score": 4101.8
+   "count": 131,
+   "opinion_count": 12,
+   "score": 3940.4
   },
   {
    "track_id": "MAC-GLOBAL",
@@ -37,9 +37,9 @@
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 83,
+   "count": 85,
    "opinion_count": 8,
-   "score": 2469.2
+   "score": 2524.0
   },
   {
    "track_id": "INV-EXIT",
@@ -60,22 +60,22 @@
    "score": 1873.2
   },
   {
-   "track_id": "TEC-COMPUTE",
-   "name": "算力与基础设施",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 61,
-   "opinion_count": 8,
-   "score": 1837.0
-  },
-  {
    "track_id": "TEC-CLOUD",
    "name": "云计算与软件",
    "domain": "tech",
    "is_focus": false,
-   "count": 64,
+   "count": 66,
    "opinion_count": 4,
-   "score": 1799.2
+   "score": 1842.6
+  },
+  {
+   "track_id": "TEC-COMPUTE",
+   "name": "算力与基础设施",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 60,
+   "opinion_count": 8,
+   "score": 1812.6
   },
   {
    "track_id": "TEC-CE",
@@ -91,9 +91,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 47,
-   "opinion_count": 7,
-   "score": 1232.0
+   "count": 50,
+   "opinion_count": 6,
+   "score": 1299.8
   },
   {
    "track_id": "INV-FLOW",
@@ -220,9 +220,9 @@
   "M-HK": 120
  },
  "importance_dist": {
-  "normal": 292,
+  "normal": 289,
   "critical": 51,
-  "low": 809,
+  "low": 813,
   "important": 107
  },
  "source_dist": {
@@ -404,7 +404,7 @@
    "count": 13
   }
  ],
- "total_score": 29617.0,
- "other_count": 283,
- "other_opinion_count": 21
+ "total_score": 29597.2,
+ "other_count": 284,
+ "other_opinion_count": 20
 }
