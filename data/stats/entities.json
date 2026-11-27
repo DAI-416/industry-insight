@@ -1,23 +1,23 @@
 [
  {
   "name": "Huang",
-  "count": 53
+  "count": 54
  },
  {
   "name": "Nvidia",
-  "count": 51
+  "count": 53
  },
  {
   "name": "Jensen",
-  "count": 49
+  "count": 50
  },
  {
   "name": "Trump",
-  "count": 31
+  "count": 35
  },
  {
   "name": "Bloomberg",
-  "count": 29
+  "count": 30
  },
  {
   "name": "Anthropic",
@@ -33,7 +33,7 @@
  },
  {
   "name": "美联储",
-  "count": 18
+  "count": 17
  },
  {
   "name": "GPT",
@@ -44,16 +44,20 @@
   "count": 15
  },
  {
+  "name": "York",
+  "count": 15
+ },
+ {
+  "name": "Washington",
+  "count": 14
+ },
+ {
   "name": "Financial",
   "count": 14
  },
  {
-  "name": "Washington",
-  "count": 13
- },
- {
-  "name": "York",
-  "count": 13
+  "name": "首席",
+  "count": 12
  },
  {
   "name": "Claude",
@@ -61,6 +65,10 @@
  },
  {
   "name": "Amazon",
+  "count": 12
+ },
+ {
+  "name": "Donald",
   "count": 12
  },
  {
@@ -72,11 +80,15 @@
   "count": 11
  },
  {
-  "name": "首席",
+  "name": "Black",
   "count": 10
  },
  {
   "name": "IPO",
+  "count": 9
+ },
+ {
+  "name": "上市",
   "count": 9
  },
  {
@@ -88,7 +100,7 @@
   "count": 9
  },
  {
-  "name": "Donald",
+  "name": "Department",
   "count": 9
  },
  {
@@ -108,6 +120,18 @@
   "count": 9
  },
  {
+  "name": "Prime",
+  "count": 9
+ },
+ {
+  "name": "黄金",
+  "count": 8
+ },
+ {
+  "name": "半导体",
+  "count": 8
+ },
+ {
   "name": "数据中心",
   "count": 8
  },
@@ -120,23 +144,11 @@
   "count": 8
  },
  {
-  "name": "Department",
+  "name": "Huawei",
   "count": 8
  },
  {
-  "name": "Prime",
-  "count": 8
- },
- {
-  "name": "黄金",
-  "count": 7
- },
- {
-  "name": "半导体",
-  "count": 7
- },
- {
-  "name": "上市",
+  "name": "融资",
   "count": 7
  },
  {
@@ -145,18 +157,6 @@
  },
  {
   "name": "Party",
-  "count": 7
- },
- {
-  "name": "Black",
-  "count": 7
- },
- {
-  "name": "Axios",
-  "count": 7
- },
- {
-  "name": "Series",
   "count": 7
  }
 ]
