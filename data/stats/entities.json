@@ -32,8 +32,12 @@
   "count": 25
  },
  {
+  "name": "Black",
+  "count": 20
+ },
+ {
   "name": "美联储",
-  "count": 17
+  "count": 18
  },
  {
   "name": "Meta",
@@ -52,16 +56,16 @@
   "count": 16
  },
  {
-  "name": "Black",
-  "count": 15
- },
- {
   "name": "Washington",
   "count": 14
  },
  {
   "name": "Google",
   "count": 14
+ },
+ {
+  "name": "Claude",
+  "count": 13
  },
  {
   "name": "Amazon",
@@ -72,16 +76,12 @@
   "count": 13
  },
  {
-  "name": "Claude",
+  "name": "芯片",
   "count": 12
  },
  {
   "name": "Verge",
   "count": 12
- },
- {
-  "name": "芯片",
-  "count": 11
  },
  {
   "name": "首席",
@@ -100,15 +100,15 @@
   "count": 10
  },
  {
+  "name": "上市",
+  "count": 10
+ },
+ {
   "name": "Reuters",
   "count": 10
  },
  {
   "name": "IPO",
-  "count": 9
- },
- {
-  "name": "上市",
   "count": 9
  },
  {
@@ -125,6 +125,10 @@
  },
  {
   "name": "Department",
+  "count": 9
+ },
+ {
+  "name": "Russian",
   "count": 9
  },
  {
@@ -153,10 +157,6 @@
  },
  {
   "name": "Megaspeed",
-  "count": 8
- },
- {
-  "name": "Russian",
   "count": 8
  }
 ]
