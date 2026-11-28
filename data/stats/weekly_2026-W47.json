@@ -1,6 +1,6 @@
 {
  "week_key": "2026-W47",
- "generated_at": "2026-11-28T11:17:52+08:00",
+ "generated_at": "2026-11-28T19:51:38+08:00",
  "total": 1440,
  "fact_count": 1258,
  "opinion_count": 182,
@@ -11,7 +11,7 @@
    "domain": "tech",
    "is_focus": true,
    "count": 130,
-   "opinion_count": 13,
+   "opinion_count": 12,
    "score": 3907.0
   },
   {
@@ -37,9 +37,9 @@
    "name": "大模型",
    "domain": "tech",
    "is_focus": true,
-   "count": 85,
+   "count": 86,
    "opinion_count": 8,
-   "score": 2521.6
+   "score": 2549.0
   },
   {
    "track_id": "INV-EXIT",
@@ -51,15 +51,6 @@
    "score": 2196.6
   },
   {
-   "track_id": "TEC-CLOUD",
-   "name": "云计算与软件",
-   "domain": "tech",
-   "is_focus": false,
-   "count": 68,
-   "opinion_count": 4,
-   "score": 1891.4
-  },
-  {
    "track_id": "INV-VC",
    "name": "一级市场投融资",
    "domain": "investment",
@@ -67,6 +58,15 @@
    "count": 60,
    "opinion_count": 1,
    "score": 1873.2
+  },
+  {
+   "track_id": "TEC-CLOUD",
+   "name": "云计算与软件",
+   "domain": "tech",
+   "is_focus": false,
+   "count": 67,
+   "opinion_count": 4,
+   "score": 1872.4
   },
   {
    "track_id": "TEC-COMPUTE",
@@ -91,9 +91,9 @@
    "name": "网络安全",
    "domain": "tech",
    "is_focus": false,
-   "count": 47,
+   "count": 46,
    "opinion_count": 6,
-   "score": 1232.0
+   "score": 1207.6
   },
   {
    "track_id": "INV-FLOW",
@@ -118,9 +118,9 @@
    "name": "货币政策与利率",
    "domain": "macro",
    "is_focus": false,
-   "count": 21,
+   "count": 20,
    "opinion_count": 8,
-   "score": 930.6
+   "score": 901.4
   },
   {
    "track_id": "MAC-DATA",
@@ -181,9 +181,9 @@
    "name": "投资政策与监管",
    "domain": "investment",
    "is_focus": false,
-   "count": 9,
+   "count": 10,
    "opinion_count": 0,
-   "score": 280.2
+   "score": 309.4
   },
   {
    "track_id": "INV-FUND",
@@ -209,7 +209,7 @@
    "domain": "investment",
    "is_focus": false,
    "count": 1,
-   "opinion_count": 45,
+   "opinion_count": 44,
    "score": 49.0
   }
  ],
@@ -404,7 +404,7 @@
    "count": 13
   }
  ],
- "total_score": 29540.6,
- "other_count": 284,
- "other_opinion_count": 21
+ "total_score": 29524.6,
+ "other_count": 285,
+ "other_opinion_count": 23
 }

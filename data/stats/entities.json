@@ -1,15 +1,15 @@
 [
  {
   "name": "Huang",
-  "count": 56
+  "count": 57
  },
  {
   "name": "Nvidia",
-  "count": 55
+  "count": 56
  },
  {
   "name": "Jensen",
-  "count": 50
+  "count": 51
  },
  {
   "name": "Trump",
@@ -20,12 +20,12 @@
   "count": 34
  },
  {
-  "name": "Sources",
-  "count": 27
+  "name": "Anthropic",
+  "count": 28
  },
  {
-  "name": "Anthropic",
-  "count": 26
+  "name": "Sources",
+  "count": 27
  },
  {
   "name": "OpenAI",
@@ -33,19 +33,19 @@
  },
  {
   "name": "Black",
-  "count": 20
+  "count": 21
  },
  {
   "name": "美联储",
-  "count": 18
+  "count": 19
+ },
+ {
+  "name": "GPT",
+  "count": 17
  },
  {
   "name": "Meta",
   "count": 17
- },
- {
-  "name": "GPT",
-  "count": 16
  },
  {
   "name": "Financial",
@@ -56,15 +56,19 @@
   "count": 16
  },
  {
+  "name": "Claude",
+  "count": 15
+ },
+ {
+  "name": "Google",
+  "count": 15
+ },
+ {
   "name": "Washington",
   "count": 14
  },
  {
-  "name": "Google",
-  "count": 14
- },
- {
-  "name": "Claude",
+  "name": "芯片",
   "count": 13
  },
  {
@@ -76,12 +80,16 @@
   "count": 13
  },
  {
-  "name": "芯片",
+  "name": "Verge",
   "count": 12
  },
  {
-  "name": "Verge",
+  "name": "Apple",
   "count": 12
+ },
+ {
+  "name": "黄金",
+  "count": 11
  },
  {
   "name": "首席",
@@ -92,15 +100,15 @@
   "count": 11
  },
  {
-  "name": "Apple",
+  "name": "Prime",
   "count": 11
  },
  {
-  "name": "黄金",
+  "name": "IPO",
   "count": 10
  },
  {
-  "name": "上市",
+  "name": "After",
   "count": 10
  },
  {
@@ -108,11 +116,15 @@
   "count": 10
  },
  {
-  "name": "IPO",
+  "name": "半导体",
   "count": 9
  },
  {
-  "name": "After",
+  "name": "上市",
+  "count": 9
+ },
+ {
+  "name": "数据中心",
   "count": 9
  },
  {
@@ -132,11 +144,11 @@
   "count": 9
  },
  {
-  "name": "GPT-6",
+  "name": "Wall",
   "count": 9
  },
  {
-  "name": "Prime",
+  "name": "GPT-6",
   "count": 9
  },
  {
@@ -144,19 +156,7 @@
   "count": 9
  },
  {
-  "name": "半导体",
-  "count": 8
- },
- {
-  "name": "数据中心",
-  "count": 8
- },
- {
   "name": "Astra",
-  "count": 8
- },
- {
-  "name": "Megaspeed",
   "count": 8
  }
 ]
